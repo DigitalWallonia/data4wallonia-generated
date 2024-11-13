@@ -1,0 +1,2413 @@
+{
+  "@context": {
+    "affiliation": {
+      "@id": "http://schema.org/affiliation"
+    },
+    "authors": {
+      "@id": "foaf:maker",
+      "@type": "foaf:Person"
+    },
+    "classes": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "contributors": {
+      "@id": "dcterms:contributor",
+      "@type": "foaf:Person"
+    },
+    "datatypes": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "domain": {
+      "@id": "rdfs:domain"
+    },
+    "editors": {
+      "@id": "rec:editor",
+      "@type": "foaf:Person"
+    },
+    "externals": {
+      "@id": "rdfs:seeAlso",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class"
+    },
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "generalization": {
+      "@id": "rdfs:subPropertyOf"
+    },
+    "issued": {
+      "@id": "dcterms:issued"
+    },
+    "label": {
+      "@container": "@language",
+      "@id": "rdfs:label"
+    },
+    "maxCardinality": {
+      "@id": "sh:maxCount"
+    },
+    "minCardinality": {
+      "@id": "sh:minCount"
+    },
+    "modified": {
+      "@id": "dcterms:modified",
+      "@type": "xsd:date"
+    },
+    "name": {
+      "@id": "rdfs:label"
+    },
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "person": "http://www.w3.org/ns/person#",
+    "properties": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "qb": "http://purl.org/linked-data/cube#",
+    "range": {
+      "@id": "rdfs:range"
+    },
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rec": "http://www.w3.org/2001/02pd/rec54#",
+    "sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
+    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+    "sh": "http://w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "vann": "http://purl.org/vocab/vann/",
+    "vlaanderen": "http://data.vlaanderen.be/ns/",
+    "void": "http://rdfs.org/ns/void#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "https://data.europa.eu/m8g",
+  "@type": "http://www.w3.org/2002/07/owl#Ontology",
+  "authors": [],
+  "baseURI": "https://data.europa.eu/m8g/",
+  "branchtag": "ReSpecCV",
+  "classes": [],
+  "config": "config/config-ap.json",
+  "contributors": [],
+  "contributors-column": "D4WTA-AP",
+  "contributors-file": "stakeholders.csv",
+  "diagram": "Model",
+  "documentcommit": "0b4567238b5ed3242ee5f86d1a6560ff02fae02c",
+  "documentconfig": {
+    "editorDocumentroot": "https://DigitalWallonia.github.io/data4wallonia-generated/D4WMO-AP/releases/1.0.0",
+    "statuslabel": "Draft"
+  },
+  "dummy": "1",
+  "eap": "Data4WalloniaModel.eap",
+  "editors": [
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "PwC EU Services"
+      },
+      "foaf:firstName": "Emidio",
+      "foaf:lastName": "Stani"
+    }
+  ],
+  "externalproperties": [
+    {
+      "@id": "http://data.europa.eu/m8g/contactPage",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{5D20DD4D-0394-44fa-9F2E-50FE53D98036}",
+      "ap-definition-en": {
+        "en": "A web page that could be used to reach out the Contact Point."
+      },
+      "ap-label-en": {
+        "en": "contact page"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A web page that could be used to reach out the Contact Point."
+      },
+      "domain": [
+        {
+          "EA-Name": "ContactPoint",
+          "uri": "http://data.europa.eu/m8g/ContactPoint"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "ContactPoint",
+        "EA-Domain-Guid": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
+        "EA-Guid": "{5D20DD4D-0394-44fa-9F2E-50FE53D98036}",
+        "EA-Name": "contactPage",
+        "EA-Package": "cv",
+        "EA-Range": "Document",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{39C8A551-9263-4b6d-B7CC-2B940A957CB0}",
+          "EA-Name": "Document",
+          "EA-Package": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/Document"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "contact page"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://data.europa.eu/m8g/contactPage"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "A web page that could be used to reach out the Contact Point."
+          },
+          {
+            "key": "property-usage-scope",
+            "note": "null",
+            "value": "optional"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A web page that could be used to reach out the Contact Point."
+        },
+        "ap-label-en": {
+          "en": "contact page"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A web page that could be used to reach out the Contact Point."
+        },
+        "label": {
+          "en": "contact page"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "contact page"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "contactPage",
+      "range": [
+        {
+          "EA-GUID": "{39C8A551-9263-4b6d-B7CC-2B940A957CB0}",
+          "EA-Name": "Document",
+          "EA-Package": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/Document"
+        }
+      ]
+    },
+    {
+      "@id": "http://data.europa.eu/m8g/contactPoint",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{C68F32B3-08BC-4d04-BDD6-D9AB4D195AD3}",
+      "ap-definition-en": {
+        "en": "The main contact information of the resource."
+      },
+      "ap-label-en": {
+        "en": "contact point"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "The main contact information of the resource."
+      },
+      "domain": [
+        {
+          "EA-Name": "Person",
+          "uri": "http://www.w3.org/ns/person#Person"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "label-en",
+            "note": "contact point",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://data.europa.eu/m8g/contactPoint",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "The main contact information of the resource.",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "NOTE$ea_notes=Usually a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization's homepage that may or may not provide contact information.",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Person",
+        "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
+        "EA-Guid": "{C68F32B3-08BC-4d04-BDD6-D9AB4D195AD3}",
+        "EA-Name": "contactPoint",
+        "EA-Package": "",
+        "EA-Range": "ContactPoint",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
+          "EA-Name": "ContactPoint",
+          "EA-Package": "cv",
+          "uri": "http://data.europa.eu/m8g/ContactPoint"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "contact point",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://data.europa.eu/m8g/contactPoint",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "The main contact information of the resource.",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "NOTE$ea_notes=Usually a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization's homepage that may or may not provide contact information.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "The main contact information of the resource."
+        },
+        "ap-label-en": {
+          "en": "contact point"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "The main contact information of the resource."
+        },
+        "derived": "false",
+        "destRole": "contactPoint",
+        "label": {
+          "en": "contact point"
+        },
+        "sourceRole": "null",
+        "usage": {
+          "en": "Usually a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization's homepage that may or may not provide contact information."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "contact point"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "contactPoint",
+      "range": [
+        {
+          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
+          "EA-Name": "ContactPoint",
+          "EA-Package": "cv",
+          "uri": "http://data.europa.eu/m8g/ContactPoint"
+        }
+      ],
+      "usage": {
+        "en": "Usually a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization's homepage that may or may not provide contact information."
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/m8g/email",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{96650740-0F20-4feb-8374-D1047960A92B}",
+      "ap-definition-en": {
+        "en": "An electronic address through which the Contact Point can be contacted."
+      },
+      "ap-label-en": {
+        "en": "has email"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "An electronic address through which the Contact Point can be contacted."
+      },
+      "domain": [
+        {
+          "EA-Name": "ContactPoint",
+          "uri": "http://data.europa.eu/m8g/ContactPoint"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "ContactPoint",
+        "EA-Domain-Guid": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
+        "EA-Guid": "{96650740-0F20-4feb-8374-D1047960A92B}",
+        "EA-Name": "hasEmail",
+        "EA-Package": "cv",
+        "EA-Range": "Literal",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "has email"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "An electronic address through which the Contact Point can be contacted."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://data.europa.eu/m8g/email"
+          },
+          {
+            "key": "property-usage-scope",
+            "note": "null",
+            "value": "optional"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "An electronic address through which the Contact Point can be contacted."
+        },
+        "ap-label-en": {
+          "en": "has email"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "An electronic address through which the Contact Point can be contacted."
+        },
+        "label": {
+          "en": "has email"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "has email"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "hasEmail",
+      "range": [
+        {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      ]
+    },
+    {
+      "@id": "http://data.europa.eu/m8g/telephone",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{5070AB88-E8EE-4f4f-9B41-77636A71F877}",
+      "ap-definition-en": {
+        "en": "A telephone number through which the Contact Point can be contacted."
+      },
+      "ap-label-en": {
+        "en": "has telephone"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A telephone number through which the Contact Point can be contacted."
+      },
+      "domain": [
+        {
+          "EA-Name": "ContactPoint",
+          "uri": "http://data.europa.eu/m8g/ContactPoint"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "ContactPoint",
+        "EA-Domain-Guid": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
+        "EA-Guid": "{5070AB88-E8EE-4f4f-9B41-77636A71F877}",
+        "EA-Name": "telephone",
+        "EA-Package": "cv",
+        "EA-Range": "Literal",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "has telephone"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "A telephone number through which the Contact Point can be contacted."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://data.europa.eu/m8g/telephone"
+          },
+          {
+            "key": "property-usage-scope",
+            "note": "null",
+            "value": "optional"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A telephone number through which the Contact Point can be contacted."
+        },
+        "ap-label-en": {
+          "en": "has telephone"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A telephone number through which the Contact Point can be contacted."
+        },
+        "label": {
+          "en": "has telephone"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "has telephone"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "hasTelephone",
+      "range": [
+        {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      ]
+    },
+    {
+      "@id": "http://data4wallonia.com/model/contactPoint",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{DAA82E0B-5BB4-4b29-AF1E-EF91E1BB4FD9}",
+      "ap-definition-en": {
+        "en": "An image taken with a camera of a resource."
+      },
+      "ap-label-en": {
+        "en": "photo"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "An image taken with a camera of a resource."
+      },
+      "domain": [
+        {
+          "EA-Name": "Person",
+          "uri": "http://www.w3.org/ns/person#Person"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "uri",
+            "note": "http://data4wallonia.com/model/contactPoint",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "photo",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "An image taken with a camera of a resource.",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Person",
+        "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
+        "EA-Guid": "{DAA82E0B-5BB4-4b29-AF1E-EF91E1BB4FD9}",
+        "EA-Name": "photo",
+        "EA-Package": "",
+        "EA-Range": "ImageObject",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{9E0A534F-5918-4cbc-ADF4-5BBCD03359AE}",
+          "EA-Name": "ImageObject",
+          "EA-Package": "cv",
+          "uri": "http://data.europa.eu/m8g/ImageObject"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "http://data4wallonia.com/model/contactPoint",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "photo",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "An image taken with a camera of a resource.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "An image taken with a camera of a resource."
+        },
+        "ap-label-en": {
+          "en": "photo"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "An image taken with a camera of a resource."
+        },
+        "derived": "false",
+        "destRole": "photo",
+        "label": {
+          "en": "photo"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "photo"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "photo",
+      "range": [
+        {
+          "EA-GUID": "{9E0A534F-5918-4cbc-ADF4-5BBCD03359AE}",
+          "EA-Name": "ImageObject",
+          "EA-Package": "cv",
+          "uri": "http://data.europa.eu/m8g/ImageObject"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.org/dc/terms/alternative",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{52320F1F-7A7C-4e64-BC29-82DCDF393FA0}",
+      "ap-definition-en": {
+        "en": "Any name by which a Person is known, other than their full name."
+      },
+      "ap-label-en": {
+        "en": "alternative name"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "Any name by which a Person is known, other than their full name."
+      },
+      "domain": [
+        {
+          "EA-Name": "Person",
+          "uri": "http://www.w3.org/ns/person#Person"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Person",
+        "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
+        "EA-Guid": "{52320F1F-7A7C-4e64-BC29-82DCDF393FA0}",
+        "EA-Name": "alternativeName",
+        "EA-Package": "cv",
+        "EA-Range": "Text",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "Any name by which a Person is known, other than their full name."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://purl.org/dc/terms/alternative"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "Many individuals use a short form of their name, a 'middle' name as a 'first' name or a professional name. For example, the British politician and former UN High Representative for Bosnia and Herzegovina, Jeremy John Durham Ashdown, Baron Ashdown of Norton-sub-Hamdon, is usually referred to simply as 'Paddy Ashdown' or 'Lord Ashdown.' It is not the role of the alternative name property to record nick names, pet names or other 'familiar names' that will be of no consequence in public sector data exchange. Furthermore, some individuals have more than one legal name in which case the full name property should be used multiple times. Alternative name gives a means of recording names by which an individual is generally known, or professionally known, even though such names are no more than secondary from a legal point of view.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "alternative name"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "Any name by which a Person is known, other than their full name."
+        },
+        "ap-label-en": {
+          "en": "alternative name"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "Any name by which a Person is known, other than their full name."
+        },
+        "label": {
+          "en": "alternative name"
+        },
+        "usage": {
+          "en": "Many individuals use a short form of their name, a 'middle' name as a 'first' name or a professional name. For example, the British politician and former UN High Representative for Bosnia and Herzegovina, Jeremy John Durham Ashdown, Baron Ashdown of Norton-sub-Hamdon, is usually referred to simply as 'Paddy Ashdown' or 'Lord Ashdown.' It is not the role of the alternative name property to record nick names, pet names or other 'familiar names' that will be of no consequence in public sector data exchange. Furthermore, some individuals have more than one legal name in which case the full name property should be used multiple times. Alternative name gives a means of recording names by which an individual is generally known, or professionally known, even though such names are no more than secondary from a legal point of view."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "alternative name"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "alternativeName",
+      "range": [
+        {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "usage": {
+        "en": "Many individuals use a short form of their name, a 'middle' name as a 'first' name or a professional name. For example, the British politician and former UN High Representative for Bosnia and Herzegovina, Jeremy John Durham Ashdown, Baron Ashdown of Norton-sub-Hamdon, is usually referred to simply as 'Paddy Ashdown' or 'Lord Ashdown.' It is not the role of the alternative name property to record nick names, pet names or other 'familiar names' that will be of no consequence in public sector data exchange. Furthermore, some individuals have more than one legal name in which case the full name property should be used multiple times. Alternative name gives a means of recording names by which an individual is generally known, or professionally known, even though such names are no more than secondary from a legal point of view."
+      }
+    },
+    {
+      "@id": "http://www.w3.org/ns/locn#address",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{DD214B21-3E3E-4fc7-B1FA-8FE6E196D60C}",
+      "ap-definition-en": {
+        "en": "The Address of a Resource."
+      },
+      "ap-label-en": {
+        "en": "address"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "The Address of a Resource."
+      },
+      "domain": [
+        {
+          "EA-Name": "Person",
+          "uri": "http://www.w3.org/ns/person#Person"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "uri",
+            "note": "http://www.w3.org/ns/locn#address",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "The Address of a Resource.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "address",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Person",
+        "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
+        "EA-Guid": "{DD214B21-3E3E-4fc7-B1FA-8FE6E196D60C}",
+        "EA-Name": "address",
+        "EA-Package": "",
+        "EA-Range": "Address",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
+          "EA-Name": "Address",
+          "EA-Package": "locn",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "http://www.w3.org/ns/locn#address",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "The Address of a Resource.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "address",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "The Address of a Resource."
+        },
+        "ap-label-en": {
+          "en": "address"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "The Address of a Resource."
+        },
+        "derived": "false",
+        "destRole": "address",
+        "label": {
+          "en": "address"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "UNKNOWN",
+      "label": {
+        "en": "address"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "address",
+      "range": [
+        {
+          "EA-GUID": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
+          "EA-Name": "Address",
+          "EA-Package": "locn",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/ns/locn#addressArea",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{42A3291F-2C59-4432-9003-3E6719430A52}",
+      "ap-definition-en": {
+        "en": "The name of a geographic area that groups Addresses."
+      },
+      "ap-label-en": {
+        "en": "address area"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "The name of a geographic area that groups Addresses."
+      },
+      "domain": [
+        {
+          "EA-Name": "Address",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Address",
+        "EA-Domain-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
+        "EA-Guid": "{42A3291F-2C59-4432-9003-3E6719430A52}",
+        "EA-Name": "addressArea",
+        "EA-Package": "locn",
+        "EA-Range": "Text",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "usageNote-en",
+            "note": "This would typically be part of a city, a neighbourhood or village, e.g. Montmartre. Address area is not an administrative unit.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#addressArea"
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "address area"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "The name of a geographic area that groups Addresses."
+          },
+          {
+            "key": "property-usage-scope",
+            "note": "null",
+            "value": "optional"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "The name of a geographic area that groups Addresses."
+        },
+        "ap-label-en": {
+          "en": "address area"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "The name of a geographic area that groups Addresses."
+        },
+        "label": {
+          "en": "address area"
+        },
+        "usage": {
+          "en": "This would typically be part of a city, a neighbourhood or village, e.g. Montmartre. Address area is not an administrative unit."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "address area"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "addressArea",
+      "range": [
+        {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "usage": {
+        "en": "This would typically be part of a city, a neighbourhood or village, e.g. Montmartre. Address area is not an administrative unit."
+      }
+    },
+    {
+      "@id": "http://www.w3.org/ns/locn#addressId",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{54C88647-E707-48f6-8433-7328EB434759}",
+      "ap-definition-en": {
+        "en": "A globally unique identifier for each instance of an Address."
+      },
+      "ap-label-en": {
+        "en": "address ID"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A globally unique identifier for each instance of an Address."
+      },
+      "domain": [
+        {
+          "EA-Name": "Address",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Address",
+        "EA-Domain-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
+        "EA-Guid": "{54C88647-E707-48f6-8433-7328EB434759}",
+        "EA-Name": "addressID",
+        "EA-Package": "locn",
+        "EA-Range": "Literal",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "RawTags": [
+          {
+            "key": "usageNote-en",
+            "note": "The concept of adding a globally unique identifier for each instance of an address is a crucial part of the INSPIRE data spec. A number of EU countries have already implemented an ID (a UUID) in their Address Register/gazetteer, among them Denmark. <a href=\"https://www.oasis-open.org/committees/ciq/ciq.html#6\">OASIS xAL</a> also includes an address identifier. It is the address Identifier that allows an address to be represented in a format other than INSPIRE whilst remaining conformant to the Core Vocabulary.\r\n<br/><br/>\r\nThe INSPIRE method of representing addresses is very detailed, designed primarily for use in databases of addresses. Whilst data that is published in full conformance with the INSPIRE data structure can be made available using the Core  Location Vocabulary the reverse is not true since the Core Vocabulary allows much greater flexibility.\r\n<br/><br/>\r\nMany datasets that include address data as one piece of information about something else are likely to have that data in simpler formats. These might be tailored to the specific need of the dataset, follow a national norm, or make use of a standard like <a href=\"https://www.w3.org/TR/vcard-rdf\">vCard</a>.\r\n<br/><br/>\r\nTo provide maximum flexibility in the Core Vocabulary, whilst remaining interoperable with <a href=\"https://joinup.ec.europa.eu/collection/inspire/solution/inspire-data-specifications-addresses-guidelines-v301\">INSPIRE Address Guidelines</a> (which EU Member States are obliged to use), the Core Location  Vocabulary provides the extra property of full address and makes use of INSPIRE's addressID.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#addressId"
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "address ID"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "A globally unique identifier for each instance of an Address."
+          },
+          {
+            "key": "property-usage-scope",
+            "note": "null",
+            "value": "optional"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A globally unique identifier for each instance of an Address."
+        },
+        "ap-label-en": {
+          "en": "address ID"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A globally unique identifier for each instance of an Address."
+        },
+        "label": {
+          "en": "address ID"
+        },
+        "usage": {
+          "en": "The concept of adding a globally unique identifier for each instance of an address is a crucial part of the INSPIRE data spec. A number of EU countries have already implemented an ID (a UUID) in their Address Register/gazetteer, among them Denmark. <a href=\"https://www.oasis-open.org/committees/ciq/ciq.html#6\">OASIS xAL</a> also includes an address identifier. It is the address Identifier that allows an address to be represented in a format other than INSPIRE whilst remaining conformant to the Core Vocabulary.\r\n<br/><br/>\r\nThe INSPIRE method of representing addresses is very detailed, designed primarily for use in databases of addresses. Whilst data that is published in full conformance with the INSPIRE data structure can be made available using the Core  Location Vocabulary the reverse is not true since the Core Vocabulary allows much greater flexibility.\r\n<br/><br/>\r\nMany datasets that include address data as one piece of information about something else are likely to have that data in simpler formats. These might be tailored to the specific need of the dataset, follow a national norm, or make use of a standard like <a href=\"https://www.w3.org/TR/vcard-rdf\">vCard</a>.\r\n<br/><br/>\r\nTo provide maximum flexibility in the Core Vocabulary, whilst remaining interoperable with <a href=\"https://joinup.ec.europa.eu/collection/inspire/solution/inspire-data-specifications-addresses-guidelines-v301\">INSPIRE Address Guidelines</a> (which EU Member States are obliged to use), the Core Location  Vocabulary provides the extra property of full address and makes use of INSPIRE's addressID."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "address ID"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "addressId",
+      "range": [
+        {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      ],
+      "usage": {
+        "en": "The concept of adding a globally unique identifier for each instance of an address is a crucial part of the INSPIRE data spec. A number of EU countries have already implemented an ID (a UUID) in their Address Register/gazetteer, among them Denmark. <a href=\"https://www.oasis-open.org/committees/ciq/ciq.html#6\">OASIS xAL</a> also includes an address identifier. It is the address Identifier that allows an address to be represented in a format other than INSPIRE whilst remaining conformant to the Core Vocabulary.\r\n<br/><br/>\r\nThe INSPIRE method of representing addresses is very detailed, designed primarily for use in databases of addresses. Whilst data that is published in full conformance with the INSPIRE data structure can be made available using the Core  Location Vocabulary the reverse is not true since the Core Vocabulary allows much greater flexibility.\r\n<br/><br/>\r\nMany datasets that include address data as one piece of information about something else are likely to have that data in simpler formats. These might be tailored to the specific need of the dataset, follow a national norm, or make use of a standard like <a href=\"https://www.w3.org/TR/vcard-rdf\">vCard</a>.\r\n<br/><br/>\r\nTo provide maximum flexibility in the Core Vocabulary, whilst remaining interoperable with <a href=\"https://joinup.ec.europa.eu/collection/inspire/solution/inspire-data-specifications-addresses-guidelines-v301\">INSPIRE Address Guidelines</a> (which EU Member States are obliged to use), the Core Location  Vocabulary provides the extra property of full address and makes use of INSPIRE's addressID."
+      }
+    },
+    {
+      "@id": "http://www.w3.org/ns/locn#adminUnitL1",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{EFCE2B24-F154-487f-BDC4-0C162CA80935}",
+      "ap-definition-en": {
+        "en": "The name of the uppermost level of the address, almost always a country."
+      },
+      "ap-label-en": {
+        "en": "administrative unit level 1"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "The name of the uppermost level of the address, almost always a country."
+      },
+      "domain": [
+        {
+          "EA-Name": "Address",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Address",
+        "EA-Domain-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
+        "EA-Guid": "{EFCE2B24-F154-487f-BDC4-0C162CA80935}",
+        "EA-Name": "adminUnitL1",
+        "EA-Package": "locn",
+        "EA-Range": "Text",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "usageNote-en",
+            "note": "Best practice is to use the <a href=\"https://www.iso.org/standard/72482.html\">ISO 3166-1 code</a> but if this is inappropriate for the context, country names should be provided in a consistent manner to reduce ambiguity. For example, either write 'France' or 'FRA' consistently throughout the dataset and avoid mixing the two. The <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country\">Country controlled vocabulary</a> from the Publications Office can be reused for this.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#adminUnitL1"
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "administrative unit level 1"
+          },
+          {
+            "key": "definition-en",
+            "note": "The name of the uppermost level of the address, almost always a country.",
+            "value": "NOTE"
+          },
+          {
+            "key": "property-usage-scope",
+            "note": "null",
+            "value": "optional"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "The name of the uppermost level of the address, almost always a country."
+        },
+        "ap-label-en": {
+          "en": "administrative unit level 1"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "The name of the uppermost level of the address, almost always a country."
+        },
+        "label": {
+          "en": "administrative unit level 1"
+        },
+        "usage": {
+          "en": "Best practice is to use the <a href=\"https://www.iso.org/standard/72482.html\">ISO 3166-1 code</a> but if this is inappropriate for the context, country names should be provided in a consistent manner to reduce ambiguity. For example, either write 'France' or 'FRA' consistently throughout the dataset and avoid mixing the two. The <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country\">Country controlled vocabulary</a> from the Publications Office can be reused for this."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "administrative unit level 1"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "administrativeUnitLevel1",
+      "range": [
+        {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "usage": {
+        "en": "Best practice is to use the <a href=\"https://www.iso.org/standard/72482.html\">ISO 3166-1 code</a> but if this is inappropriate for the context, country names should be provided in a consistent manner to reduce ambiguity. For example, either write 'France' or 'FRA' consistently throughout the dataset and avoid mixing the two. The <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country\">Country controlled vocabulary</a> from the Publications Office can be reused for this."
+      }
+    },
+    {
+      "@id": "http://www.w3.org/ns/locn#adminUnitL2",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{958C6E0B-EB04-416c-BC1A-5B3459FD355A}",
+      "ap-definition-en": {
+        "en": "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."
+      },
+      "ap-label-en": {
+        "en": "administrative unit level 2"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."
+      },
+      "domain": [
+        {
+          "EA-Name": "Address",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Address",
+        "EA-Domain-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
+        "EA-Guid": "{958C6E0B-EB04-416c-BC1A-5B3459FD355A}",
+        "EA-Name": "adminUnitL2",
+        "EA-Package": "locn",
+        "EA-Range": "Text",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "usageNote-en",
+            "note": "Values could be a region or province, more granular than level 1.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#adminUnitL2"
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "administrative unit level 2"
+          },
+          {
+            "key": "definition-en",
+            "note": "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities.",
+            "value": "NOTE"
+          },
+          {
+            "key": "property-usage-scope",
+            "note": "null",
+            "value": "optional"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."
+        },
+        "ap-label-en": {
+          "en": "administrative unit level 2"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."
+        },
+        "label": {
+          "en": "administrative unit level 2"
+        },
+        "usage": {
+          "en": "Values could be a region or province, more granular than level 1."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "administrative unit level 2"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "administrativeUnitLevel2",
+      "range": [
+        {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "usage": {
+        "en": "Values could be a region or province, more granular than level 1."
+      }
+    },
+    {
+      "@id": "http://www.w3.org/ns/locn#fullAddress",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{CACD1A53-7E91-4570-BE69-F842DE505549}",
+      "ap-definition-en": {
+        "en": "The complete address written as a string."
+      },
+      "ap-label-en": {
+        "en": "full address"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "The complete address written as a string."
+      },
+      "domain": [
+        {
+          "EA-Name": "Address",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Address",
+        "EA-Domain-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
+        "EA-Guid": "{CACD1A53-7E91-4570-BE69-F842DE505549}",
+        "EA-Name": "fullAddress",
+        "EA-Package": "locn",
+        "EA-Range": "Text",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#fullAddress"
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "full address"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "The complete address written as a string."
+          },
+          {
+            "key": "usageNote-en",
+            "note": "Use of this property is not recommended as it will suffer any misunderstandings that might arise through the breaking up of an address into its component parts. This property is analogous to <a href=\"https://www.w3.org/TR/vcard-rdf/#d4e953\">vCard's label property</a> but with two important differences: (1) formatting is not assumed so that, unlike vCard label, it may not be suitable to print this on an address label, (2) <a href=\"https://www.w3.org/TR/vcard-rdf/#d4e953\">vCard's label</a> has a domain of <a href=\"https://www.w3.org/TR/vcard-rdf/#d4e1292\">vCard Address</a>; the fullAddress property has no such restriction. An example of a full address is \"Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France\".",
+            "value": "NOTE"
+          },
+          {
+            "key": "property-usage-scope",
+            "note": "null",
+            "value": "optional"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "The complete address written as a string."
+        },
+        "ap-label-en": {
+          "en": "full address"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "The complete address written as a string."
+        },
+        "label": {
+          "en": "full address"
+        },
+        "usage": {
+          "en": "Use of this property is not recommended as it will suffer any misunderstandings that might arise through the breaking up of an address into its component parts. This property is analogous to <a href=\"https://www.w3.org/TR/vcard-rdf/#d4e953\">vCard's label property</a> but with two important differences: (1) formatting is not assumed so that, unlike vCard label, it may not be suitable to print this on an address label, (2) <a href=\"https://www.w3.org/TR/vcard-rdf/#d4e953\">vCard's label</a> has a domain of <a href=\"https://www.w3.org/TR/vcard-rdf/#d4e1292\">vCard Address</a>; the fullAddress property has no such restriction. An example of a full address is \"Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France\"."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "full address"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "fullAddress",
+      "range": [
+        {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "usage": {
+        "en": "Use of this property is not recommended as it will suffer any misunderstandings that might arise through the breaking up of an address into its component parts. This property is analogous to <a href=\"https://www.w3.org/TR/vcard-rdf/#d4e953\">vCard's label property</a> but with two important differences: (1) formatting is not assumed so that, unlike vCard label, it may not be suitable to print this on an address label, (2) <a href=\"https://www.w3.org/TR/vcard-rdf/#d4e953\">vCard's label</a> has a domain of <a href=\"https://www.w3.org/TR/vcard-rdf/#d4e1292\">vCard Address</a>; the fullAddress property has no such restriction. An example of a full address is \"Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France\"."
+      }
+    },
+    {
+      "@id": "http://www.w3.org/ns/locn#locatorDesignator",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{509BF1D0-4E76-4bee-B17F-AC883B236548}",
+      "ap-definition-en": {
+        "en": "A number or sequence of characters that uniquely identifies the locator within the relevant scope."
+      },
+      "ap-label-en": {
+        "en": "locator designator"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A number or sequence of characters that uniquely identifies the locator within the relevant scope."
+      },
+      "domain": [
+        {
+          "EA-Name": "Address",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Address",
+        "EA-Domain-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
+        "EA-Guid": "{509BF1D0-4E76-4bee-B17F-AC883B236548}",
+        "EA-Name": "locatorDesignator",
+        "EA-Package": "locn",
+        "EA-Range": "Literal",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "RawTags": [
+          {
+            "key": "usageNote-en",
+            "note": "In simpler terms, this is the building number, apartment number, etc. For an address such as \"Flat 3, 17 Bridge Street\", the locator is \"flat 3, 17\".",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#locatorDesignator"
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "locator designator"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "A number or sequence of characters that uniquely identifies the locator within the relevant scope."
+          },
+          {
+            "key": "property-usage-scope",
+            "note": "null",
+            "value": "optional"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A number or sequence of characters that uniquely identifies the locator within the relevant scope."
+        },
+        "ap-label-en": {
+          "en": "locator designator"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A number or sequence of characters that uniquely identifies the locator within the relevant scope."
+        },
+        "label": {
+          "en": "locator designator"
+        },
+        "usage": {
+          "en": "In simpler terms, this is the building number, apartment number, etc. For an address such as \"Flat 3, 17 Bridge Street\", the locator is \"flat 3, 17\"."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "locator designator"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "locatorDesignator",
+      "range": [
+        {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      ],
+      "usage": {
+        "en": "In simpler terms, this is the building number, apartment number, etc. For an address such as \"Flat 3, 17 Bridge Street\", the locator is \"flat 3, 17\"."
+      }
+    },
+    {
+      "@id": "http://www.w3.org/ns/locn#locatorName",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{BD85C372-1378-4b22-9DA6-B4897A7F0106}",
+      "ap-definition-en": {
+        "en": "Proper noun(s) applied to the real world entity identified by the locator."
+      },
+      "ap-label-en": {
+        "en": "locator name"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "Proper noun(s) applied to the real world entity identified by the locator."
+      },
+      "domain": [
+        {
+          "EA-Name": "Address",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Address",
+        "EA-Domain-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
+        "EA-Guid": "{BD85C372-1378-4b22-9DA6-B4897A7F0106}",
+        "EA-Name": "locatorName",
+        "EA-Package": "locn",
+        "EA-Range": "Text",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "usageNote-en",
+            "note": "The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building.\r\n<br/><br/>\r\nThe key difference between a locator and a locator name is that the latter is a proper name and is unlikely to include digits. For example, \"Shumann, Berlaymont\" is a meeting room within the European Commission headquarters for which locator name is more appropriate than locator.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#locatorName"
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "locator name"
+          },
+          {
+            "key": "definition-en",
+            "note": "Proper noun(s) applied to the real world entity identified by the locator.",
+            "value": "NOTE"
+          },
+          {
+            "key": "property-usage-scope",
+            "note": "null",
+            "value": "optional"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "Proper noun(s) applied to the real world entity identified by the locator."
+        },
+        "ap-label-en": {
+          "en": "locator name"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "Proper noun(s) applied to the real world entity identified by the locator."
+        },
+        "label": {
+          "en": "locator name"
+        },
+        "usage": {
+          "en": "The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building.\r\n<br/><br/>\r\nThe key difference between a locator and a locator name is that the latter is a proper name and is unlikely to include digits. For example, \"Shumann, Berlaymont\" is a meeting room within the European Commission headquarters for which locator name is more appropriate than locator."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "locator name"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "locatorName",
+      "range": [
+        {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "usage": {
+        "en": "The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building.\r\n<br/><br/>\r\nThe key difference between a locator and a locator name is that the latter is a proper name and is unlikely to include digits. For example, \"Shumann, Berlaymont\" is a meeting room within the European Commission headquarters for which locator name is more appropriate than locator."
+      }
+    },
+    {
+      "@id": "http://www.w3.org/ns/locn#poBox",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{BD696942-96FF-49f8-9712-8C00CAC1493B}",
+      "ap-definition-en": {
+        "en": "A location designator for a postal delivery point at a post office, usually a number."
+      },
+      "ap-label-en": {
+        "en": "post office box"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A location designator for a postal delivery point at a post office, usually a number."
+      },
+      "domain": [
+        {
+          "EA-Name": "Address",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Address",
+        "EA-Domain-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
+        "EA-Guid": "{BD696942-96FF-49f8-9712-8C00CAC1493B}",
+        "EA-Name": "poBox",
+        "EA-Package": "locn",
+        "EA-Range": "Literal",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#poBox"
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "post office box"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "A location designator for a postal delivery point at a post office, usually a number."
+          },
+          {
+            "key": "usageNote-en",
+            "note": "INSPIRE's name for this is \"postalDeliveryIdentifier\" for which it uses the locator designator property with a type attribute of that name. This vocabulary separates out the Post Office Box for greater independence of technology. An example post office box number is \"9383\".",
+            "value": "NOTE"
+          },
+          {
+            "key": "property-usage-scope",
+            "note": "null",
+            "value": "optional"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A location designator for a postal delivery point at a post office, usually a number."
+        },
+        "ap-label-en": {
+          "en": "post office box"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A location designator for a postal delivery point at a post office, usually a number."
+        },
+        "label": {
+          "en": "post office box"
+        },
+        "usage": {
+          "en": "INSPIRE's name for this is \"postalDeliveryIdentifier\" for which it uses the locator designator property with a type attribute of that name. This vocabulary separates out the Post Office Box for greater independence of technology. An example post office box number is \"9383\"."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "post office box"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "postOfficeBox",
+      "range": [
+        {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      ],
+      "usage": {
+        "en": "INSPIRE's name for this is \"postalDeliveryIdentifier\" for which it uses the locator designator property with a type attribute of that name. This vocabulary separates out the Post Office Box for greater independence of technology. An example post office box number is \"9383\"."
+      }
+    },
+    {
+      "@id": "http://www.w3.org/ns/locn#postCode",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{2EF6D767-8E3F-461c-AC37-772819BA21B6}",
+      "ap-definition-en": {
+        "en": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
+      },
+      "ap-label-en": {
+        "en": "post code"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
+      },
+      "domain": [
+        {
+          "EA-Name": "Address",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Address",
+        "EA-Domain-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
+        "EA-Guid": "{2EF6D767-8E3F-461c-AC37-772819BA21B6}",
+        "EA-Name": "postCode",
+        "EA-Package": "locn",
+        "EA-Range": "Literal",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "RawTags": [
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "Post codes are common elements in many countries' postal address systems. One of the many post codes of Paris is for example \"75000\"."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#postCode"
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "post code"
+          },
+          {
+            "key": "definition-en",
+            "note": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.",
+            "value": "NOTE"
+          },
+          {
+            "key": "property-usage-scope",
+            "note": "null",
+            "value": "optional"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
+        },
+        "ap-label-en": {
+          "en": "post code"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
+        },
+        "label": {
+          "en": "post code"
+        },
+        "usage": {
+          "en": "Post codes are common elements in many countries' postal address systems. One of the many post codes of Paris is for example \"75000\"."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "post code"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "postCode",
+      "range": [
+        {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      ],
+      "usage": {
+        "en": "Post codes are common elements in many countries' postal address systems. One of the many post codes of Paris is for example \"75000\"."
+      }
+    },
+    {
+      "@id": "http://www.w3.org/ns/locn#postName",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{F0699A53-4F4C-4e83-AF49-34E33744BF36}",
+      "ap-definition-en": {
+        "en": "A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
+      },
+      "ap-label-en": {
+        "en": "post name"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
+      },
+      "domain": [
+        {
+          "EA-Name": "Address",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Address",
+        "EA-Domain-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
+        "EA-Guid": "{F0699A53-4F4C-4e83-AF49-34E33744BF36}",
+        "EA-Name": "postName",
+        "EA-Package": "locn",
+        "EA-Range": "Text",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#postName"
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "post name"
+          },
+          {
+            "key": "definition-en",
+            "note": "A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "Usually a city, for example \"Paris\"."
+          },
+          {
+            "key": "property-usage-scope",
+            "note": "null",
+            "value": "optional"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
+        },
+        "ap-label-en": {
+          "en": "post name"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
+        },
+        "label": {
+          "en": "post name"
+        },
+        "usage": {
+          "en": "Usually a city, for example \"Paris\"."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "post name"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "postName",
+      "range": [
+        {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "usage": {
+        "en": "Usually a city, for example \"Paris\"."
+      }
+    },
+    {
+      "@id": "http://www.w3.org/ns/locn#thoroughfare",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{2D384BE4-CFED-4f52-B1EC-3C84511ACCC6}",
+      "ap-definition-en": {
+        "en": "The name of a passage or way through from one location to another."
+      },
+      "ap-label-en": {
+        "en": "thoroughfare"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "The name of a passage or way through from one location to another."
+      },
+      "domain": [
+        {
+          "EA-Name": "Address",
+          "uri": "http://www.w3.org/ns/locn#Address"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Address",
+        "EA-Domain-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
+        "EA-Guid": "{2D384BE4-CFED-4f52-B1EC-3C84511ACCC6}",
+        "EA-Name": "thoroughfare",
+        "EA-Package": "locn",
+        "EA-Range": "Text",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#thoroughfare"
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "thoroughfare"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "The name of a passage or way through from one location to another."
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "A thoroughfare is usually a street, but it might be a waterway or some other feature. For example, \"Avenue des Champs-Élysées\"."
+          },
+          {
+            "key": "property-usage-scope",
+            "note": "null",
+            "value": "optional"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "The name of a passage or way through from one location to another."
+        },
+        "ap-label-en": {
+          "en": "thoroughfare"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "The name of a passage or way through from one location to another."
+        },
+        "label": {
+          "en": "thoroughfare"
+        },
+        "usage": {
+          "en": "A thoroughfare is usually a street, but it might be a waterway or some other feature. For example, \"Avenue des Champs-Élysées\"."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "thoroughfare"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "thoroughfare",
+      "range": [
+        {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "usage": {
+        "en": "A thoroughfare is usually a street, but it might be a waterway or some other feature. For example, \"Avenue des Champs-Élysées\"."
+      }
+    },
+    {
+      "@id": "http://xmlns.com/foaf/0.1/familyName",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{55EFC170-D6B1-4c09-AB67-8DB5158E63AB}",
+      "ap-definition-en": {
+        "en": "The hereditary surname of a family."
+      },
+      "ap-label-en": {
+        "en": "family name"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "The hereditary surname of a family."
+      },
+      "domain": [
+        {
+          "EA-Name": "Person",
+          "uri": "http://www.w3.org/ns/person#Person"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Person",
+        "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
+        "EA-Guid": "{55EFC170-D6B1-4c09-AB67-8DB5158E63AB}",
+        "EA-Name": "familyName",
+        "EA-Package": "cv",
+        "EA-Range": "Text",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "usageNote-en",
+            "note": "Usually referring to a group of people related by blood, marriage or adoption. This attribute also carries prefixes or suffixes which are part of the family name, e.g. \"de Boer\", \"van de Putte\", \"von und zu Orlow\". Multiple family names, such as are commonly found in Hispanic countries, are recorded in the single family name property so that, for example, Miguel de Cervantes Saavedra's family name would be recorded as \"de Cervantes Saavedra\".",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://xmlns.com/foaf/0.1/familyName"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "The hereditary surname of a family."
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "family name"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "The hereditary surname of a family."
+        },
+        "ap-label-en": {
+          "en": "family name"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "The hereditary surname of a family."
+        },
+        "label": {
+          "en": "family name"
+        },
+        "usage": {
+          "en": "Usually referring to a group of people related by blood, marriage or adoption. This attribute also carries prefixes or suffixes which are part of the family name, e.g. \"de Boer\", \"van de Putte\", \"von und zu Orlow\". Multiple family names, such as are commonly found in Hispanic countries, are recorded in the single family name property so that, for example, Miguel de Cervantes Saavedra's family name would be recorded as \"de Cervantes Saavedra\"."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "family name"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "familyName",
+      "range": [
+        {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "usage": {
+        "en": "Usually referring to a group of people related by blood, marriage or adoption. This attribute also carries prefixes or suffixes which are part of the family name, e.g. \"de Boer\", \"van de Putte\", \"von und zu Orlow\". Multiple family names, such as are commonly found in Hispanic countries, are recorded in the single family name property so that, for example, Miguel de Cervantes Saavedra's family name would be recorded as \"de Cervantes Saavedra\"."
+      }
+    },
+    {
+      "@id": "http://xmlns.com/foaf/0.1/givenName",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{3294B598-781F-41c6-BD28-E08D60696660}",
+      "ap-definition-en": {
+        "en": "The name(s) that identify the Person within a family with a common surname."
+      },
+      "ap-label-en": {
+        "en": "given name"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "The name(s) that identify the Person within a family with a common surname."
+      },
+      "domain": [
+        {
+          "EA-Name": "Person",
+          "uri": "http://www.w3.org/ns/person#Person"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Person",
+        "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
+        "EA-Guid": "{3294B598-781F-41c6-BD28-E08D60696660}",
+        "EA-Name": "givenName",
+        "EA-Package": "cv",
+        "EA-Range": "Text",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "The name(s) that identify the Person within a family with a common surname."
+          },
+          {
+            "key": "usageNote-en",
+            "note": "Usually a first name or forename. Given to a person by his or her parents at birth or legally recognised as 'given names' through a formal process. All given names are ordered in one property so that, for example, the given name for Johann Sebastian Bach is \"Johann Sebastian\".",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://xmlns.com/foaf/0.1/givenName"
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "given name"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "The name(s) that identify the Person within a family with a common surname."
+        },
+        "ap-label-en": {
+          "en": "given name"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "The name(s) that identify the Person within a family with a common surname."
+        },
+        "label": {
+          "en": "given name"
+        },
+        "usage": {
+          "en": "Usually a first name or forename. Given to a person by his or her parents at birth or legally recognised as 'given names' through a formal process. All given names are ordered in one property so that, for example, the given name for Johann Sebastian Bach is \"Johann Sebastian\"."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "given name"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "givenName",
+      "range": [
+        {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "usage": {
+        "en": "Usually a first name or forename. Given to a person by his or her parents at birth or legally recognised as 'given names' through a formal process. All given names are ordered in one property so that, for example, the given name for Johann Sebastian Bach is \"Johann Sebastian\"."
+      }
+    }
+  ],
+  "externals": [
+    {
+      "@id": "http://data.europa.eu/m8g/ContactPoint",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
+      "ap-definition-en": {
+        "en": "Information (e.g. e-mail address, telephone number) of a person or department through which the user can get in touch with."
+      },
+      "ap-label-en": {
+        "en": "Contact Point"
+      },
+      "definition": {
+        "en": "Information (e.g. e-mail address, telephone number) of a person or department through which the user can get in touch with."
+      },
+      "extra": {
+        "EA-Guid": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
+        "EA-Name": "ContactPoint",
+        "EA-Package": "cv",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "definition-en",
+            "note": "Information (e.g. e-mail address, telephone number) of a person or department through which the user can get in touch with.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://data.europa.eu/m8g/ContactPoint"
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "Contact Point"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "Similarly to the Channel class, a Contact Point may have regular opening hours that are then overridden by, for example, public holidays, using the Temporal Entity class.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "Information (e.g. e-mail address, telephone number) of a person or department through which the user can get in touch with."
+        },
+        "ap-label-en": {
+          "en": "Contact Point"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "Information (e.g. e-mail address, telephone number) of a person or department through which the user can get in touch with."
+        },
+        "label": {
+          "en": "Contact Point"
+        },
+        "parentclasses": "",
+        "usage": {
+          "en": "Similarly to the Channel class, a Contact Point may have regular opening hours that are then overridden by, for example, public holidays, using the Temporal Entity class."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "Contact Point"
+      },
+      "name": "ContactPoint",
+      "usage": {
+        "en": "Similarly to the Channel class, a Contact Point may have regular opening hours that are then overridden by, for example, public holidays, using the Temporal Entity class."
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/m8g/ImageObject",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{9E0A534F-5918-4cbc-ADF4-5BBCD03359AE}",
+      "ap-definition-en": {
+        "en": "A logo to describe / represent an entity."
+      },
+      "ap-label-en": {
+        "en": "Image Object"
+      },
+      "definition": {
+        "en": "A logo to describe / represent an entity."
+      },
+      "extra": {
+        "EA-Guid": "{9E0A534F-5918-4cbc-ADF4-5BBCD03359AE}",
+        "EA-Name": "ImageObject",
+        "EA-Package": "cv",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "A logo to describe / represent an entity."
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "Image Object"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://data.europa.eu/m8g/ImageObject"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A logo to describe / represent an entity."
+        },
+        "ap-label-en": {
+          "en": "Image Object"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A logo to describe / represent an entity."
+        },
+        "label": {
+          "en": "Image Object"
+        },
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "Image Object"
+      },
+      "name": "ImageObject"
+    },
+    {
+      "@id": "http://www.w3.org/ns/locn#Address",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
+      "ap-definition-en": {
+        "en": "A spatial object that in a human-readable way identifies a fixed location."
+      },
+      "ap-label-en": {
+        "en": "Address"
+      },
+      "definition": {
+        "en": "A spatial object that in a human-readable way identifies a fixed location."
+      },
+      "extra": {
+        "EA-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
+        "EA-Name": "Address",
+        "EA-Package": "locn",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "definition-en",
+            "note": "A spatial object that in a human-readable way identifies a fixed location.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "Address"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/locn#Address"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "<p>\r\nAn \"address representation\" as conceptually defined by the <a href=\"https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/ScopeObjectDetail.action?objectDetailId=9353\r\n\">INSPIRE Address Representation data type</a>: \"Representation of an address spatial object for use in external application schemas that need to include the basic, address information in a readable way.\"\r\n</p></br>\r\n\r\n<p>\r\nThe representation of Addresses varies widely from one country's postal system to another. Even within countries, there are almost always examples of Addresses that do not conform to the stated national standard. However, <a href=\"https://www.iso.org/standard/61710.html\">ISO 19160-1</a> provides a method through which different Addresses can be converted from one conceptual model to another.\r\n</p></br>\r\n\r\n<p>\r\nThis specification was heavily based on the INSPIRE Address Representation data type. It is noteworthy that if an Address is provided using the detailed breakdown suggested by the properties for this class, then it will be INSPIRE-conformant. To this very granular set of\r\nproperties, we add two further properties:\r\n<ul>\r\n  <li> full address (the complete address as a formatted string)</li>\r\n  <li> addressID (a unique identifier for the address)</li>\r\n</ul>\r\nThe first of these allows publishers to simply provide the complete Address as one string, with or without formatting. This is analogous to <a href=\"https://www.w3.org/TR/vcard-rdf/#d4e953\">vCard's label property</a>.\r\n</p></br>\r\n\r\n<p>\r\nThe addressID is part of the <a href=\"https://knowledge-base.inspire.ec.europa.eu/index_en\">INSPIRE guidelines</a> and provides a hook that can be used to link the Address to an alternative representation, such as <a href=\"https://www.w3.org/TR/vcard-rdf\">vCard</a> or <a href=\"https://www.oasis-open.org/committees/ciq/ciq.html#6\">OASIS xAL</a>.\r\n</p></br>\r\n\r\nThis class belongs to <a href=\"https://semiceu.github.io/Core-Location-Vocabulary/releases/2.00/#Address\">Core Location Vocabulary</a>",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A spatial object that in a human-readable way identifies a fixed location."
+        },
+        "ap-label-en": {
+          "en": "Address"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A spatial object that in a human-readable way identifies a fixed location."
+        },
+        "label": {
+          "en": "Address"
+        },
+        "parentclasses": "",
+        "usage": {
+          "en": "<p>\r\nAn \"address representation\" as conceptually defined by the <a href=\"https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/ScopeObjectDetail.action?objectDetailId=9353\r\n\">INSPIRE Address Representation data type</a>: \"Representation of an address spatial object for use in external application schemas that need to include the basic, address information in a readable way.\"\r\n</p></br>\r\n\r\n<p>\r\nThe representation of Addresses varies widely from one country's postal system to another. Even within countries, there are almost always examples of Addresses that do not conform to the stated national standard. However, <a href=\"https://www.iso.org/standard/61710.html\">ISO 19160-1</a> provides a method through which different Addresses can be converted from one conceptual model to another.\r\n</p></br>\r\n\r\n<p>\r\nThis specification was heavily based on the INSPIRE Address Representation data type. It is noteworthy that if an Address is provided using the detailed breakdown suggested by the properties for this class, then it will be INSPIRE-conformant. To this very granular set of\r\nproperties, we add two further properties:\r\n<ul>\r\n  <li> full address (the complete address as a formatted string)</li>\r\n  <li> addressID (a unique identifier for the address)</li>\r\n</ul>\r\nThe first of these allows publishers to simply provide the complete Address as one string, with or without formatting. This is analogous to <a href=\"https://www.w3.org/TR/vcard-rdf/#d4e953\">vCard's label property</a>.\r\n</p></br>\r\n\r\n<p>\r\nThe addressID is part of the <a href=\"https://knowledge-base.inspire.ec.europa.eu/index_en\">INSPIRE guidelines</a> and provides a hook that can be used to link the Address to an alternative representation, such as <a href=\"https://www.w3.org/TR/vcard-rdf\">vCard</a> or <a href=\"https://www.oasis-open.org/committees/ciq/ciq.html#6\">OASIS xAL</a>.\r\n</p></br>\r\n\r\nThis class belongs to <a href=\"https://semiceu.github.io/Core-Location-Vocabulary/releases/2.00/#Address\">Core Location Vocabulary</a>"
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "Address"
+      },
+      "name": "Address",
+      "usage": {
+        "en": "<p>\r\nAn \"address representation\" as conceptually defined by the <a href=\"https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/ScopeObjectDetail.action?objectDetailId=9353\r\n\">INSPIRE Address Representation data type</a>: \"Representation of an address spatial object for use in external application schemas that need to include the basic, address information in a readable way.\"\r\n</p></br>\r\n\r\n<p>\r\nThe representation of Addresses varies widely from one country's postal system to another. Even within countries, there are almost always examples of Addresses that do not conform to the stated national standard. However, <a href=\"https://www.iso.org/standard/61710.html\">ISO 19160-1</a> provides a method through which different Addresses can be converted from one conceptual model to another.\r\n</p></br>\r\n\r\n<p>\r\nThis specification was heavily based on the INSPIRE Address Representation data type. It is noteworthy that if an Address is provided using the detailed breakdown suggested by the properties for this class, then it will be INSPIRE-conformant. To this very granular set of\r\nproperties, we add two further properties:\r\n<ul>\r\n  <li> full address (the complete address as a formatted string)</li>\r\n  <li> addressID (a unique identifier for the address)</li>\r\n</ul>\r\nThe first of these allows publishers to simply provide the complete Address as one string, with or without formatting. This is analogous to <a href=\"https://www.w3.org/TR/vcard-rdf/#d4e953\">vCard's label property</a>.\r\n</p></br>\r\n\r\n<p>\r\nThe addressID is part of the <a href=\"https://knowledge-base.inspire.ec.europa.eu/index_en\">INSPIRE guidelines</a> and provides a hook that can be used to link the Address to an alternative representation, such as <a href=\"https://www.w3.org/TR/vcard-rdf\">vCard</a> or <a href=\"https://www.oasis-open.org/committees/ciq/ciq.html#6\">OASIS xAL</a>.\r\n</p></br>\r\n\r\nThis class belongs to <a href=\"https://semiceu.github.io/Core-Location-Vocabulary/releases/2.00/#Address\">Core Location Vocabulary</a>"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/ns/person#Person",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
+      "ap-definition-en": {
+        "en": "A individual human being who may be dead or alive,but not imaginary."
+      },
+      "ap-label-en": {
+        "en": "Person"
+      },
+      "definition": {
+        "en": "A individual human being who may be dead or alive,but not imaginary."
+      },
+      "extra": {
+        "EA-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
+        "EA-Name": "Person",
+        "EA-Package": "cv",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "class-usage-scope",
+            "note": "null",
+            "value": "main"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "A individual human being who may be dead or alive,but not imaginary."
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "Person"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/person#Person"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "The fact that a person in the context of Core Person Vocabulary cannot be imaginary makes person:Person a subclass of foaf:Person which cover imaginary characters as well as real people. The Person Class is a subclass of the more general <a href=\"#Agent\">'Agent' class</a>.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A individual human being who may be dead or alive,but not imaginary."
+        },
+        "ap-label-en": {
+          "en": "Person"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A individual human being who may be dead or alive,but not imaginary."
+        },
+        "label": {
+          "en": "Person"
+        },
+        "parentclasses": "",
+        "usage": {
+          "en": "The fact that a person in the context of Core Person Vocabulary cannot be imaginary makes person:Person a subclass of foaf:Person which cover imaginary characters as well as real people. The Person Class is a subclass of the more general <a href=\"#Agent\">'Agent' class</a>."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "Person"
+      },
+      "name": "Person",
+      "usage": {
+        "en": "The fact that a person in the context of Core Person Vocabulary cannot be imaginary makes person:Person a subclass of foaf:Person which cover imaginary characters as well as real people. The Person Class is a subclass of the more general <a href=\"#Agent\">'Agent' class</a>."
+      }
+    }
+  ],
+  "extra": {
+    "EA-Guid": "{7A28E3BF-AB15-430f-9039-691F06A10F1B}",
+    "EA-Name": "Data4Wallonia",
+    "RawTags": [
+      {
+        "key": "baseURI",
+        "note": "null",
+        "value": "https://data.europa.eu/m8g/"
+      }
+    ],
+    "baseURI": "https://data.europa.eu/m8g/",
+    "issued": "TODO",
+    "license": "TODO"
+  },
+  "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-AP/issues",
+  "filename": "config/data4wallonia.json",
+  "hostname": "https://DigitalWallonia.github.io",
+  "issued": "TODO",
+  "label": {
+    "en": "d4wmo-ap",
+    "nl": "d4wmo-ap"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "name": "d4wmo-ap",
+  "navigation": {
+    "prev": "https://DigitalWallonia.github.io/data4wallonia-generated/D4WMO-AP/releases/1.0.0"
+  },
+  "properties": [],
+  "publication-date": "2024-09-04",
+  "publication-state": "Draft",
+  "repository": "git@github.com:DigitalWallonia/data4wallonia-thema.git",
+  "repourl": "https://github.com/DigitalWallonia/D4WMO-AP/tree/master/releases/1.0.0",
+  "site": "site-skeleton/d4wmo-ap",
+  "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-AP/blob/master/releases/1.0.0/Changelog.md",
+  "template": "d4wmo-ap_en.j2",
+  "title": "Data4Wallonia Model Application Profile (D4WMO-AP)",
+  "toolchaincommit": "d347270419300012d225e25ea80e56e73f702fcc",
+  "toolchainversion": "3",
+  "translation": [
+    {
+      "language": "en",
+      "mergefile": "d4wmo-ap_en_merged.jsonld",
+      "template": "d4wmo-ap_en.j2",
+      "title": "Data4Wallonia Model Application Profile (D4WMO-AP)",
+      "translationjson": "d4wmo-ap_en.json"
+    }
+  ],
+  "type": "ap",
+  "urlref": "/D4WMO-AP/releases/1.0.0/",
+  "versionurl": "https://github.com/DigitalWallonia/D4WMO-AP/tree/master/releases/1.0.0"
+}

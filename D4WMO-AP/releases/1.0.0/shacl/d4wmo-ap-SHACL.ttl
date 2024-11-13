@@ -1,0 +1,335 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix shacl: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/> rdfs:member <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#ContactPointShape>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#ImageObjectShape>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/006de06965023999963c4307153479c8629991d9>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/03690748629ed1c685fc6a365780375be09bce76>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/17384dfa4a75117e7dd2bc0f2bbf61ac91fd8676>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/256ffe464f9c7682e950f7853ef0b6060580435b>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/362b7c3261b1d5eb024e72e4868babc25ed0c7ce>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/3a0fcecd9e5f4e8deb4d102b9d072a4b067b773e>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/470060a15e97aeacd56fcc5beb701e647a6aa56e>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/6f98d6d917a0e0b73d8614923f953e1ee2533918>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/854a17171901a9c000eff34a7ccd77814891e3d5>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/8b4c4bdd61e921f78483a3141338773693d4b2ef>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/9097b947404def8604330ec2fc5a0bd405128b35>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/98016263ed1fd03fc2066e397f3ae3343ce3bf79>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/9aaaf1750887d905949d78ac718f18c02809a28e>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/9c278b09ca17b0ef710224829c0354dc4c2f9a40>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/9c2d6af39a55e5e6a76f6b852bbcbada029c21af>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/a9a46434014b93624ab68c9a56a5bc66a38da9a4>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/aa9622c05f497ef1b06496716742dd5cbfc6f0c9>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/ac2d62a08fd924f88a79f0e70cda9fca4d484fd2>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/ae24e9fc95115753cabe5ad6bd3c05b9751cd13c>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/b35e8c8ed2d85ea47f163d53cafca733ecb29389>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/c0a2b78a80a731301e2f54d040ca9aa2c9b125b1>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/d75b5d4c221e6b0bf47c853c0be92d078c39e391>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/dee03556e405a14f1e410c960b43b8eee149efe7>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/f1144df3e852614939e86f2e427788162aa7cb72>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/f8d38c3580ea5d4e47ea9e1ad447a47ebe91d5fa>;
+  shacl:targetClass <http://www.w3.org/ns/locn#Address> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/006de06965023999963c4307153479c8629991d9> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.locatorname";
+  shacl:description "Proper noun(s) applied to the real world entity identified by the locator."@en;
+  shacl:name "locator name"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://www.w3.org/ns/locn#locatorName> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/03690748629ed1c685fc6a365780375be09bce76> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.administrativeunitlevel1";
+  shacl:description "The name of the uppermost level of the address, almost always a country."@en;
+  shacl:name "administrative unit level 1"@en;
+  shacl:path <http://www.w3.org/ns/locn#adminUnitL1>;
+  shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/17384dfa4a75117e7dd2bc0f2bbf61ac91fd8676> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.thoroughfare";
+  shacl:datatype rdf:langString;
+  shacl:description "The name of a passage or way through from one location to another."@en;
+  shacl:name "thoroughfare"@en;
+  shacl:path <http://www.w3.org/ns/locn#thoroughfare> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/256ffe464f9c7682e950f7853ef0b6060580435b> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.administrativeunitlevel2";
+  shacl:description "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."@en;
+  shacl:name "administrative unit level 2"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://www.w3.org/ns/locn#adminUnitL2> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/362b7c3261b1d5eb024e72e4868babc25ed0c7ce> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.administrativeunitlevel1";
+  shacl:datatype rdf:langString;
+  shacl:description "The name of the uppermost level of the address, almost always a country."@en;
+  shacl:name "administrative unit level 1"@en;
+  shacl:path <http://www.w3.org/ns/locn#adminUnitL1> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/3a0fcecd9e5f4e8deb4d102b9d072a4b067b773e> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.fulladdress";
+  shacl:description "The complete address written as a string."@en;
+  shacl:name "full address"@en;
+  shacl:path <http://www.w3.org/ns/locn#fullAddress>;
+  shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/470060a15e97aeacd56fcc5beb701e647a6aa56e> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.addressarea";
+  shacl:datatype rdf:langString;
+  shacl:description "The name of a geographic area that groups Addresses."@en;
+  shacl:name "address area"@en;
+  shacl:path <http://www.w3.org/ns/locn#addressArea> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/6f98d6d917a0e0b73d8614923f953e1ee2533918> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.locatorname";
+  shacl:description "Proper noun(s) applied to the real world entity identified by the locator."@en;
+  shacl:name "locator name"@en;
+  shacl:path <http://www.w3.org/ns/locn#locatorName>;
+  shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/854a17171901a9c000eff34a7ccd77814891e3d5> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.administrativeunitlevel2";
+  shacl:datatype rdf:langString;
+  shacl:description "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."@en;
+  shacl:name "administrative unit level 2"@en;
+  shacl:path <http://www.w3.org/ns/locn#adminUnitL2> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/8b4c4bdd61e921f78483a3141338773693d4b2ef> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.addressID";
+  shacl:description "A globally unique identifier for each instance of an Address."@en;
+  shacl:name "address ID"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://www.w3.org/ns/locn#addressId> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/9097b947404def8604330ec2fc5a0bd405128b35> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.locatordesignator";
+  shacl:description "A number or sequence of characters that uniquely identifies the locator within the relevant scope."@en;
+  shacl:name "locator designator"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://www.w3.org/ns/locn#locatorDesignator> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/98016263ed1fd03fc2066e397f3ae3343ce3bf79> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.postname";
+  shacl:datatype rdf:langString;
+  shacl:description "A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."@en;
+  shacl:name "post name"@en;
+  shacl:path <http://www.w3.org/ns/locn#postName> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/9aaaf1750887d905949d78ac718f18c02809a28e> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.administrativeunitlevel1";
+  shacl:description "The name of the uppermost level of the address, almost always a country."@en;
+  shacl:name "administrative unit level 1"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://www.w3.org/ns/locn#adminUnitL1> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/9c278b09ca17b0ef710224829c0354dc4c2f9a40> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.postofficebox";
+  shacl:description "A location designator for a postal delivery point at a post office, usually a number."@en;
+  shacl:name "post office box"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://www.w3.org/ns/locn#poBox> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/9c2d6af39a55e5e6a76f6b852bbcbada029c21af> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.fulladdress";
+  shacl:description "The complete address written as a string."@en;
+  shacl:name "full address"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://www.w3.org/ns/locn#fullAddress> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/a9a46434014b93624ab68c9a56a5bc66a38da9a4> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.postname";
+  shacl:description "A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."@en;
+  shacl:name "post name"@en;
+  shacl:path <http://www.w3.org/ns/locn#postName>;
+  shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/aa9622c05f497ef1b06496716742dd5cbfc6f0c9> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.thoroughfare";
+  shacl:description "The name of a passage or way through from one location to another."@en;
+  shacl:name "thoroughfare"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://www.w3.org/ns/locn#thoroughfare> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/ac2d62a08fd924f88a79f0e70cda9fca4d484fd2> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.thoroughfare";
+  shacl:description "The name of a passage or way through from one location to another."@en;
+  shacl:name "thoroughfare"@en;
+  shacl:path <http://www.w3.org/ns/locn#thoroughfare>;
+  shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/ae24e9fc95115753cabe5ad6bd3c05b9751cd13c> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.administrativeunitlevel2";
+  shacl:description "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."@en;
+  shacl:name "administrative unit level 2"@en;
+  shacl:path <http://www.w3.org/ns/locn#adminUnitL2>;
+  shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/b35e8c8ed2d85ea47f163d53cafca733ecb29389> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.addressarea";
+  shacl:description "The name of a geographic area that groups Addresses."@en;
+  shacl:name "address area"@en;
+  shacl:path <http://www.w3.org/ns/locn#addressArea>;
+  shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/c0a2b78a80a731301e2f54d040ca9aa2c9b125b1> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.postcode";
+  shacl:description "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."@en;
+  shacl:name "post code"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://www.w3.org/ns/locn#postCode> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/d75b5d4c221e6b0bf47c853c0be92d078c39e391> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.locatorname";
+  shacl:datatype rdf:langString;
+  shacl:description "Proper noun(s) applied to the real world entity identified by the locator."@en;
+  shacl:name "locator name"@en;
+  shacl:path <http://www.w3.org/ns/locn#locatorName> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/dee03556e405a14f1e410c960b43b8eee149efe7> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.fulladdress";
+  shacl:datatype rdf:langString;
+  shacl:description "The complete address written as a string."@en;
+  shacl:name "full address"@en;
+  shacl:path <http://www.w3.org/ns/locn#fullAddress> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/f1144df3e852614939e86f2e427788162aa7cb72> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.addressarea";
+  shacl:description "The name of a geographic area that groups Addresses."@en;
+  shacl:name "address area"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://www.w3.org/ns/locn#addressArea> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#AddressShape/f8d38c3580ea5d4e47ea9e1ad447a47ebe91d5fa> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Address.postname";
+  shacl:description "A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."@en;
+  shacl:name "post name"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://www.w3.org/ns/locn#postName> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#ContactPointShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#ContactPointShape/0c404fa56c64463c15f65878d02efa16eec065b0>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#ContactPointShape/8547f9fea103d51b54d608cf10f98b003fde7378>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#ContactPointShape/95cf5318d1604f72f1c5d4d22a360ce268437bf0>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#ContactPointShape/a736c4b01ea7557518c0c146f3e311947ce00ccc>;
+  shacl:targetClass <http://data.europa.eu/m8g/ContactPoint> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#ContactPointShape/0c404fa56c64463c15f65878d02efa16eec065b0> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#ContactPoint.hasemail";
+  shacl:description "An electronic address through which the Contact Point can be contacted."@en;
+  shacl:name "has email"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data.europa.eu/m8g/email> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#ContactPointShape/8547f9fea103d51b54d608cf10f98b003fde7378> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#ContactPoint.hastelephone";
+  shacl:description "A telephone number through which the Contact Point can be contacted."@en;
+  shacl:name "has telephone"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data.europa.eu/m8g/telephone> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#ContactPointShape/95cf5318d1604f72f1c5d4d22a360ce268437bf0> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#ContactPoint.contactpage";
+  shacl:class foaf:Document;
+  shacl:description "A web page that could be used to reach out the Contact Point."@en;
+  shacl:name "contact page"@en;
+  shacl:path <http://data.europa.eu/m8g/contactPage> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#ContactPointShape/a736c4b01ea7557518c0c146f3e311947ce00ccc> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#ContactPoint.contactpage";
+  shacl:description "A web page that could be used to reach out the Contact Point."@en;
+  shacl:name "contact page"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/m8g/contactPage> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#ImageObjectShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://data.europa.eu/m8g/ImageObject> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/02385f3b9d1535bd73391c90a820bc54033f8fc6>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/05969b4af1b3f6570e1aec246d37985180de37c6>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/1572a063cf6e42858dabf5017baf40a96bf7155d>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/2c7d994dd540f92c116cac913e2aa5d588945f1f>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/45b15ba29c98ac584fc8a034f731f0f0183997ad>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/5de4ef5193a558e17a34633888421d09b957d267>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/7349aedd98256d90685571bddc6da8ac9eab1767>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/7d0aad3aaae427f799249eafced4cbb0b8a36dc5>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/9adf9f5890592909cf3e67021ae7ab4f895a7745>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/ba21b6c4a9251ed67b6b3113dc1d857640fd4534>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/c56ed5a233a70e9c4a6338f07a2aee5cfc6bacbf>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/f138612a5fffed0d4daa1a176e0de7d53a99eddd>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/f50f64eda68b83c4150bb7c0bcf84594d6eae7d1>,
+    <https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/f888a185270cac3f6e32d6e1a22eb6a89d617ba8>;
+  shacl:targetClass <http://www.w3.org/ns/person#Person> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/02385f3b9d1535bd73391c90a820bc54033f8fc6> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Person.familyname";
+  shacl:description "The hereditary surname of a family."@en;
+  shacl:name "family name"@en;
+  shacl:path foaf:familyName;
+  shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/05969b4af1b3f6570e1aec246d37985180de37c6> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Person.photo";
+  shacl:class <http://data.europa.eu/m8g/ImageObject>;
+  shacl:description "An image taken with a camera of a resource."@en;
+  shacl:name "photo"@en;
+  shacl:path <http://data4wallonia.com/model/contactPoint> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/1572a063cf6e42858dabf5017baf40a96bf7155d> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Person.familyname";
+  shacl:datatype rdf:langString;
+  shacl:description "The hereditary surname of a family."@en;
+  shacl:name "family name"@en;
+  shacl:path foaf:familyName .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/2c7d994dd540f92c116cac913e2aa5d588945f1f> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Person.address";
+  shacl:description "The Address of a Resource."@en;
+  shacl:name "address"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://www.w3.org/ns/locn#address> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/45b15ba29c98ac584fc8a034f731f0f0183997ad> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Person.alternativename";
+  shacl:description "Any name by which a Person is known, other than their full name."@en;
+  shacl:name "alternative name"@en;
+  shacl:path dc:alternative;
+  shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/5de4ef5193a558e17a34633888421d09b957d267> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Person.address";
+  shacl:class <http://www.w3.org/ns/locn#Address>;
+  shacl:description "The Address of a Resource."@en;
+  shacl:name "address"@en;
+  shacl:path <http://www.w3.org/ns/locn#address> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/7349aedd98256d90685571bddc6da8ac9eab1767> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Person.givenname";
+  shacl:description "The name(s) that identify the Person within a family with a common surname."@en;
+  shacl:name "given name"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path foaf:givenName .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Person.contactpoint";
+  shacl:class <http://data.europa.eu/m8g/ContactPoint>;
+  shacl:description "The main contact information of the resource."@en;
+  shacl:name "contact point"@en;
+  shacl:path <http://data.europa.eu/m8g/contactPoint> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/7d0aad3aaae427f799249eafced4cbb0b8a36dc5> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Person.familyname";
+  shacl:description "The hereditary surname of a family."@en;
+  shacl:name "family name"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path foaf:familyName .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/9adf9f5890592909cf3e67021ae7ab4f895a7745> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Person.contactpoint";
+  shacl:description "The main contact information of the resource."@en;
+  shacl:name "contact point"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/m8g/contactPoint> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/ba21b6c4a9251ed67b6b3113dc1d857640fd4534> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Person.givenname";
+  shacl:description "The name(s) that identify the Person within a family with a common surname."@en;
+  shacl:name "given name"@en;
+  shacl:path foaf:givenName;
+  shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/c56ed5a233a70e9c4a6338f07a2aee5cfc6bacbf> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Person.alternativename";
+  shacl:description "Any name by which a Person is known, other than their full name."@en;
+  shacl:name "alternative name"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path dc:alternative .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/f138612a5fffed0d4daa1a176e0de7d53a99eddd> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Person.alternativename";
+  shacl:datatype rdf:langString;
+  shacl:description "Any name by which a Person is known, other than their full name."@en;
+  shacl:name "alternative name"@en;
+  shacl:path dc:alternative .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/f50f64eda68b83c4150bb7c0bcf84594d6eae7d1> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Person.photo";
+  shacl:description "An image taken with a camera of a resource."@en;
+  shacl:name "photo"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data4wallonia.com/model/contactPoint> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#PersonShape/f888a185270cac3f6e32d6e1a22eb6a89d617ba8> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP/releases/1.0.0/#Person.givenname";
+  shacl:datatype rdf:langString;
+  shacl:description "The name(s) that identify the Person within a family with a common surname."@en;
+  shacl:name "given name"@en;
+  shacl:path foaf:givenName .
