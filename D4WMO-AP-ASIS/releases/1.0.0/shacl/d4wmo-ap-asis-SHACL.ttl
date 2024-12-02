@@ -26,6 +26,7 @@
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#BooleanShape>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#DateTimeShape>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#DecimalShape>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#StringShape>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#IntegerShape>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CodeShape> .
 
@@ -3626,8 +3627,8 @@
   shacl:path <http://data4wallonia.com/model/slug> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ProgramShape/be0272a9c84278a3023c9077f1df0705f9ab3b33> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Program.sticky";
-  shacl:class <http://data4wallonia.com/model/Event>,
-    <http://data4wallonia.com/model/Post>;
+  shacl:class <http://data4wallonia.com/model/Post>,
+    <http://data4wallonia.com/model/Event>;
   shacl:description "A sticky"@en;
   shacl:name "sticky"@en;
   shacl:path <http://data4wallonia.com/model/sticky> .
@@ -4412,6 +4413,10 @@
   shacl:name "additional type and condition access"@en;
   shacl:nodeKind shacl:Literal;
   shacl:path <http://data4wallonia.com/model/additionalTypeAndConditionAccess> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#StringShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass xsd:double .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#TextShape> a shacl:NodeShape;
   shacl:closed false;
