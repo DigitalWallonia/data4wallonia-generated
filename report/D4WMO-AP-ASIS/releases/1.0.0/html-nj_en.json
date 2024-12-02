@@ -1,440 +1,30 @@
 {
   "metadata": {
-    "title": "Data4Wallonia Generic Model",
+    "title": "Data4Wallonia Model Application Profile (D4WMO-AP) AsIs",
     "uri": "https://data.europa.eu/m8g",
     "issued": "2024-09-04",
     "baseURI": "https://data.europa.eu/m8g/",
-    "filename": "d4wmo-generic",
+    "filename": "d4wmo-ap-asis",
     "navigation": {
-      "prev": "https://DigitalWallonia.github.io/data4wallonia-generated/D4WMO-Generic/releases/1.0.0",
-      "self": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/"
+      "prev": "https://DigitalWallonia.github.io/data4wallonia-generated/D4WMO-AP-ASIS/releases/1.0.0",
+      "self": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/"
     },
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "documenttype": "ap",
     "documentconfig": {
-      "editorDocumentroot": "https://DigitalWallonia.github.io/data4wallonia-generated/D4WMO-Generic/releases/1.0.0",
+      "editorDocumentroot": "https://DigitalWallonia.github.io/data4wallonia-generated/D4WMO-AP-AsIs/releases/1.0.0",
       "statuslabel": "Draft"
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
     "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/9cb65f06ce318593283c065455b9b51976237aa6",
     "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/9cb65f06ce318593283c065455b9b51976237aa6/CHANGELOG",
-    "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-Generic/issues",
-    "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.0/Changelog.md",
+    "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-AP-AsIs/issues",
+    "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-AP-AsIs/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
     "usesAPs": []
   },
   "classes": [
-    {
-      "uri": "http://data.europa.eu/m8g/ContactPoint",
-      "name": "ContactPoint",
-      "label": {
-        "en": "Contact Point"
-      },
-      "sort": "Contact Point",
-      "description": {
-        "en": "Information (e.g. e-mail address, telephone number) of a person or department through which the user can get in touch with."
-      },
-      "usage": {
-        "en": "Similarly to the Channel class, a Contact Point may have regular opening hours that are then overridden by, for example, public holidays, using the Temporal Entity class."
-      },
-      "parents": [],
-      "rawTags": {
-        "definition-en": "Information (e.g. e-mail address, telephone number) of a person or department through which the user can get in touch with.",
-        "uri": "http://data.europa.eu/m8g/ContactPoint",
-        "label-en": "Contact Point",
-        "usageNote-en": "Similarly to the Channel class, a Contact Point may have regular opening hours that are then overridden by, for example, public holidays, using the Temporal Entity class."
-      },
-      "properties": [
-        {
-          "uri": "http://data.europa.eu/m8g/contactPage",
-          "name": "contactPage",
-          "sort": "contact page",
-          "label": {
-            "en": "contact page"
-          },
-          "description": {
-            "en": "A web page that could be used to reach out the Contact Point."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "ContactPoint",
-              "uri": "http://data.europa.eu/m8g/ContactPoint"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Document",
-              "range_uri": "http://xmlns.com/foaf/0.1/Document"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Document",
-              "range_puri": "http://xmlns.com/foaf/0.1/Document",
-              "range_label": {
-                "en": "Document"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "contact page",
-            "uri": "http://data.europa.eu/m8g/contactPage",
-            "definition-en": "A web page that could be used to reach out the Contact Point.",
-            "property-usage-scope": "optional"
-          }
-        },
-        {
-          "uri": "http://data.europa.eu/m8g/email",
-          "name": "hasEmail",
-          "sort": "has email",
-          "label": {
-            "en": "has email"
-          },
-          "description": {
-            "en": "An electronic address through which the Contact Point can be contacted."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "ContactPoint",
-              "uri": "http://data.europa.eu/m8g/ContactPoint"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Literal",
-              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Literal",
-              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
-              "range_label": {
-                "en": "Literal"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "has email",
-            "definition-en": "An electronic address through which the Contact Point can be contacted.",
-            "uri": "http://data.europa.eu/m8g/email",
-            "property-usage-scope": "optional"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/hasNonFeaturedEmail",
-          "name": "hasNonFeaturedEmail",
-          "sort": "has non featured email",
-          "label": {
-            "en": "has non featured email"
-          },
-          "description": {
-            "en": "An non featured email"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "ContactPoint",
-              "uri": "http://data.europa.eu/m8g/ContactPoint"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Literal",
-              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Literal",
-              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
-              "range_label": {
-                "en": "Literal"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/hasNonFeaturedEmail",
-            "definition-en": "An non featured email",
-            "label-en": "has non featured email"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/landLine",
-          "name": "landLine",
-          "sort": "land line",
-          "label": {
-            "en": "land line"
-          },
-          "description": {
-            "en": "A landline number"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "ContactPoint",
-              "uri": "http://data.europa.eu/m8g/ContactPoint"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Literal",
-              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Literal",
-              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
-              "range_label": {
-                "en": "Literal"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/landLine",
-            "definition-en": "A landline number",
-            "label-en": "land line"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/mobile",
-          "name": "mobile",
-          "sort": "mobile",
-          "label": {
-            "en": "mobile"
-          },
-          "description": {
-            "en": "A mobile number"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "ContactPoint",
-              "uri": "http://data.europa.eu/m8g/ContactPoint"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Literal",
-              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Literal",
-              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
-              "range_label": {
-                "en": "Literal"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/mobile",
-            "definition-en": "A mobile number",
-            "label-en": "mobile"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/socialNetwork",
-          "name": "socialNetwork",
-          "sort": "social network",
-          "label": {
-            "en": "social network"
-          },
-          "description": {
-            "en": "A social network site"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "ContactPoint",
-              "uri": "http://data.europa.eu/m8g/ContactPoint"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Literal",
-              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Literal",
-              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
-              "range_label": {
-                "en": "Literal"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/socialNetwork",
-            "definition-en": "A social network site",
-            "label-en": "social network"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/website",
-          "name": "website",
-          "sort": "website",
-          "label": {
-            "en": "website"
-          },
-          "description": {
-            "en": "A website"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "ContactPoint",
-              "uri": "http://data.europa.eu/m8g/ContactPoint"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Literal",
-              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Literal",
-              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
-              "range_label": {
-                "en": "Literal"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/website",
-            "definition-en": "A website",
-            "label-en": "website"
-          }
-        }
-      ]
-    },
-    {
-      "uri": "http://data.europa.eu/m8g/Cost",
-      "name": "Cost",
-      "label": {
-        "en": "Cost"
-      },
-      "sort": "Cost",
-      "description": {
-        "en": "The Cost class represents any costs related to the execution of a Public Service that the Agent consuming it needs to pay."
-      },
-      "usage": {},
-      "parents": [],
-      "rawTags": {
-        "definition-en": "The Cost class represents any costs related to the execution of a Public Service that the Agent consuming it needs to pay.",
-        "label-en": "Cost",
-        "uri": "http://data.europa.eu/m8g/Cost"
-      },
-      "properties": [
-        {
-          "uri": "http://data.europa.eu/m8g/currency",
-          "name": "currency",
-          "sort": "currency",
-          "label": {
-            "en": "currency"
-          },
-          "description": {
-            "en": "The currency in which the Cost needs to be paid and the value of the Cost is expressed."
-          },
-          "usage": {
-            "en": "The possible values for this property are described in the controlled vocabulary \r\n<a href=\"https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/currency\">Currency</a> Authority Table of Publications Office."
-          },
-          "domain": [
-            {
-              "EA-Name": "Cost",
-              "uri": "http://data.europa.eu/m8g/Cost"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Code",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Code",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "en": "Code"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "definition-en": "The currency in which the Cost needs to be paid and the value of the Cost is expressed.",
-            "label-en": "currency",
-            "usageNote-en": "The possible values for this property are described in the controlled vocabulary \r\n<a href=\"https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/currency\">Currency</a> Authority Table of Publications Office.",
-            "uri": "http://data.europa.eu/m8g/currency",
-            "property-usage-scope": "optional"
-          }
-        },
-        {
-          "uri": "http://data.europa.eu/m8g/hasValue",
-          "name": "hasValue",
-          "sort": "has value",
-          "label": {
-            "en": "has value"
-          },
-          "description": {
-            "en": "A numeric value indicating the amount of the Cost."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Cost",
-              "uri": "http://data.europa.eu/m8g/Cost"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Double",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#double"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#double",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#double",
-              "range_label": {
-                "en": "Double"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "definition-en": "A numeric value indicating the amount of the Cost.",
-            "label-en": "has value",
-            "uri": "http://data.europa.eu/m8g/hasValue",
-            "property-usage-scope": "optional"
-          }
-        }
-      ]
-    },
     {
       "uri": "http://data.europa.eu/m8g/ImageObject",
       "name": "ImageObject",
@@ -504,7 +94,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/additionalDescription",
@@ -691,16 +281,16 @@
           ],
           "range": [
             {
-              "range_label": "Document",
-              "range_uri": "http://xmlns.com/foaf/0.1/Document"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Document",
-              "range_puri": "http://xmlns.com/foaf/0.1/Document",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Document"
+                "en": "String"
               }
             }
           ],
@@ -753,14 +343,14 @@
           }
         },
         {
-          "uri": "http://data4wallonia.com/model/contactPoint",
-          "name": "contactPoint",
-          "sort": "contact point",
+          "uri": "http://data4wallonia.com/model/email",
+          "name": "email",
+          "sort": "email",
           "label": {
-            "en": "contact point"
+            "en": "email"
           },
           "description": {
-            "en": "A contact point"
+            "en": "An email"
           },
           "usage": {},
           "domain": [
@@ -771,25 +361,25 @@
           ],
           "range": [
             {
-              "range_label": "ContactPoint",
-              "range_uri": "http://data.europa.eu/m8g/ContactPoint"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Contact Point",
-              "range_puri": "http://data.europa.eu/m8g/ContactPoint",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Contact Point"
+                "en": "String"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "contact point",
-            "definition-en": "A contact point",
-            "uri": "http://data4wallonia.com/model/contactPoint"
+            "uri": "http://data4wallonia.com/model/email",
+            "label-en": "email",
+            "definition-en": "An email"
           }
         },
         {
@@ -824,7 +414,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/endDate",
@@ -864,7 +454,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/fullTimeEquivalent",
@@ -904,7 +494,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/idForAccounting",
@@ -944,7 +534,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/image",
@@ -977,14 +567,14 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_uri": "#Boolean",
               "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
               "range_label": {
                 "en": "Boolean"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/inOperation",
@@ -1024,7 +614,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/leaderMission",
@@ -1064,7 +654,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/marketingShortDescription",
@@ -1104,7 +694,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/marketingTitle",
@@ -1144,7 +734,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/numberOfEquipments",
@@ -1184,7 +774,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/numberOfParticipants",
@@ -1371,20 +961,20 @@
           ],
           "range": [
             {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Text"
+                "en": "String"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/progressStatus",
@@ -1464,7 +1054,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "label-en": "reference action plan",
@@ -1504,7 +1094,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "definition-en": "A reference event",
@@ -1544,7 +1134,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "label-en": "reference post",
@@ -1624,7 +1214,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/shortDescription",
@@ -1664,12 +1254,52 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/slug",
             "definition-en": "A slug",
             "label-en": "slug"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/socialNetwork",
+          "name": "socialNetwork",
+          "sort": "social network",
+          "label": {
+            "en": "social network"
+          },
+          "description": {
+            "en": "A social network"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ActionPlan",
+              "uri": "http://data4wallonia.com/model/ActionPlan"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/socialNetwork",
+            "label-en": "social network",
+            "definition-en": "A social network"
           }
         },
         {
@@ -1704,7 +1334,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/startDate",
@@ -1744,7 +1374,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/title",
@@ -1784,7 +1414,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/totalBudget",
@@ -1824,7 +1454,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/totalWaloonBudget",
@@ -1851,20 +1481,20 @@
           ],
           "range": [
             {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Text"
+                "en": "String"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/type",
@@ -1891,25 +1521,65 @@
           ],
           "range": [
             {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Text"
+                "en": "String"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/wallonRegionConvetionNumber",
             "definition-en": "A wallon region convetion number",
             "label-en": "wallon region convetion number"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/website",
+          "name": "website",
+          "sort": "website",
+          "label": {
+            "en": "website"
+          },
+          "description": {
+            "en": "A website"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ActionPlan",
+              "uri": "http://data4wallonia.com/model/ActionPlan"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/website",
+            "label-en": "website",
+            "definition-en": "A website"
           }
         }
       ]
@@ -2009,6 +1679,46 @@
       },
       "properties": [
         {
+          "uri": "http://data.europa.eu/m8g/price",
+          "name": "price",
+          "sort": "price",
+          "label": {
+            "en": "price"
+          },
+          "description": {
+            "en": "A price"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Event",
+              "uri": "http://data4wallonia.com/model/Event"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data.europa.eu/m8g/price",
+            "label-en": "price",
+            "definition-en": "A price"
+          }
+        },
+        {
           "uri": "http://data4wallonia.com/model/additionalDescription",
           "name": "additionalDescription",
           "sort": "additional description",
@@ -2040,7 +1750,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/additionalDescription",
@@ -2120,7 +1830,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/banner",
@@ -2187,16 +1897,16 @@
           ],
           "range": [
             {
-              "range_label": "Document",
-              "range_uri": "http://xmlns.com/foaf/0.1/Document"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Document",
-              "range_puri": "http://xmlns.com/foaf/0.1/Document",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Document"
+                "en": "String"
               }
             }
           ],
@@ -2249,14 +1959,14 @@
           }
         },
         {
-          "uri": "http://data4wallonia.com/model/contactPoint",
-          "name": "contactPoint",
-          "sort": "contact point",
+          "uri": "http://data4wallonia.com/model/email",
+          "name": "email",
+          "sort": "email",
           "label": {
-            "en": "contact point"
+            "en": "email"
           },
           "description": {
-            "en": "A contact point"
+            "en": "An email"
           },
           "usage": {},
           "domain": [
@@ -2267,25 +1977,25 @@
           ],
           "range": [
             {
-              "range_label": "ContactPoint",
-              "range_uri": "http://data.europa.eu/m8g/ContactPoint"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Contact Point",
-              "range_puri": "http://data.europa.eu/m8g/ContactPoint",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Contact Point"
+                "en": "String"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "http://data4wallonia.com/model/contactPoint",
-            "definition-en": "A contact point",
-            "label-en": "contact point"
+            "uri": "http://data4wallonia.com/model/email",
+            "label-en": "email",
+            "definition-en": "An email"
           }
         },
         {
@@ -2320,7 +2030,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/endDate",
@@ -2360,7 +2070,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/endPublicationDate",
@@ -2409,6 +2119,46 @@
           }
         },
         {
+          "uri": "http://data4wallonia.com/model/landline",
+          "name": "landline",
+          "sort": "landline",
+          "label": {
+            "en": "landline"
+          },
+          "description": {
+            "en": "A landline"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Event",
+              "uri": "http://data4wallonia.com/model/Event"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/landline",
+            "label-en": "landline",
+            "definition-en": "A landline"
+          }
+        },
+        {
           "uri": "http://data4wallonia.com/model/location",
           "name": "location",
           "sort": "location",
@@ -2440,12 +2190,52 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/location",
             "label-en": "location",
             "definition-en": "A location"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/mobile",
+          "name": "mobile",
+          "sort": "mobile",
+          "label": {
+            "en": "mobile"
+          },
+          "description": {
+            "en": "A mobile"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Event",
+              "uri": "http://data4wallonia.com/model/Event"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/mobile",
+            "label-en": "mobile",
+            "definition-en": "A mobile"
           }
         },
         {
@@ -2529,46 +2319,6 @@
           }
         },
         {
-          "uri": "http://data4wallonia.com/model/price",
-          "name": "price",
-          "sort": "price",
-          "label": {
-            "en": "price"
-          },
-          "description": {
-            "en": "A price"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Event",
-              "uri": "http://data4wallonia.com/model/Event"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Cost",
-              "range_uri": "http://data.europa.eu/m8g/Cost"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Cost",
-              "range_puri": "http://data.europa.eu/m8g/Cost",
-              "range_label": {
-                "en": "Cost"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "price",
-            "uri": "http://data4wallonia.com/model/price",
-            "definition-en": "A price"
-          }
-        },
-        {
           "uri": "http://data4wallonia.com/model/program",
           "name": "program",
           "sort": "program",
@@ -2640,7 +2390,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/scheduleAdditionalInformation",
@@ -2673,14 +2423,14 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_uri": "#Boolean",
               "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
               "range_label": {
                 "en": "Boolean"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/scheduleNotSpecified",
@@ -2720,7 +2470,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/shortDescription",
@@ -2760,7 +2510,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/slug",
@@ -2840,7 +2590,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/startDate",
@@ -2880,7 +2630,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/targetAudience",
@@ -2920,7 +2670,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/title",
@@ -2947,25 +2697,65 @@
           ],
           "range": [
             {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Text"
+                "en": "String"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1..*",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/type",
             "definition-en": "A type",
             "label-en": "type"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/website",
+          "name": "website",
+          "sort": "website",
+          "label": {
+            "en": "website"
+          },
+          "description": {
+            "en": "website"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Event",
+              "uri": "http://data4wallonia.com/model/Event"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/website",
+            "label-en": "website",
+            "definition-en": "website"
           }
         }
       ]
@@ -3119,7 +2909,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/banner",
@@ -3186,16 +2976,16 @@
           ],
           "range": [
             {
-              "range_label": "Document",
-              "range_uri": "http://xmlns.com/foaf/0.1/Document"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Document",
-              "range_puri": "http://xmlns.com/foaf/0.1/Document",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Document"
+                "en": "String"
               }
             }
           ],
@@ -3239,7 +3029,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/content",
@@ -3319,7 +3109,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/estimatedReadingTime",
@@ -3359,7 +3149,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/introduction",
@@ -3439,7 +3229,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/pdfFile",
@@ -3519,7 +3309,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/published date",
@@ -3599,7 +3389,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/relatedExternalLinks",
@@ -3839,7 +3629,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/slug",
@@ -3879,7 +3669,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/title",
@@ -3906,20 +3696,20 @@
           ],
           "range": [
             {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Text"
+                "en": "String"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/type",
@@ -4019,7 +3809,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/articleLink",
@@ -4084,22 +3874,9 @@
               "uri": "http://data4wallonia.com/model/PressReview"
             }
           ],
-          "range": [
-            {
-              "range_label": "Document",
-              "range_uri": "http://xmlns.com/foaf/0.1/Document"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Document",
-              "range_puri": "http://xmlns.com/foaf/0.1/Document",
-              "range_label": {
-                "en": "Document"
-              }
-            }
-          ],
-          "cardinality": "0..*",
+          "range": [],
+          "scopedrange": [],
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/clientSite",
@@ -4166,20 +3943,20 @@
           ],
           "range": [
             {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Text"
+                "en": "String"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/language",
@@ -4259,7 +4036,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/publishedDate",
@@ -4339,7 +4116,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/shortDescription",
@@ -4379,7 +4156,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "definition-en": "A source",
@@ -4419,7 +4196,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/title",
@@ -4446,20 +4223,20 @@
           ],
           "range": [
             {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Text"
+                "en": "String"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/type",
@@ -4519,7 +4296,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/additionalDescription",
@@ -4535,7 +4312,7 @@
             "en": "address"
           },
           "description": {
-            "en": "An address"
+            "en": "address"
           },
           "usage": {},
           "domain": [
@@ -4562,9 +4339,9 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "address",
             "uri": "http://data4wallonia.com/model/address",
-            "definition-en": "An address"
+            "label-en": "address",
+            "definition-en": "address"
           }
         },
         {
@@ -4626,20 +4403,20 @@
           ],
           "range": [
             {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Text"
+                "en": "String"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/belgianEntreprise",
@@ -4706,16 +4483,16 @@
           ],
           "range": [
             {
-              "range_label": "Document",
-              "range_uri": "http://xmlns.com/foaf/0.1/Document"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Document",
-              "range_puri": "http://xmlns.com/foaf/0.1/Document",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Document"
+                "en": "String"
               }
             }
           ],
@@ -4728,14 +4505,14 @@
           }
         },
         {
-          "uri": "http://data4wallonia.com/model/contactPoint",
-          "name": "contactPoint",
-          "sort": "contact point",
+          "uri": "http://data4wallonia.com/model/email",
+          "name": "email",
+          "sort": "email",
           "label": {
-            "en": "contact point"
+            "en": "email"
           },
           "description": {
-            "en": "A contact point"
+            "en": "An email"
           },
           "usage": {},
           "domain": [
@@ -4746,25 +4523,25 @@
           ],
           "range": [
             {
-              "range_label": "ContactPoint",
-              "range_uri": "http://data.europa.eu/m8g/ContactPoint"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Contact Point",
-              "range_puri": "http://data.europa.eu/m8g/ContactPoint",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Contact Point"
+                "en": "String"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
-            "definition-en": "A contact point",
-            "label-en": "contact point",
-            "uri": "http://data4wallonia.com/model/contactPoint"
+            "uri": "http://data4wallonia.com/model/email",
+            "label-en": "email",
+            "definition-en": "An email"
           }
         },
         {
@@ -4888,6 +4665,46 @@
           }
         },
         {
+          "uri": "http://data4wallonia.com/model/landline",
+          "name": "landline",
+          "sort": "landline",
+          "label": {
+            "en": "landline"
+          },
+          "description": {
+            "en": "A landline"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Profile",
+              "uri": "http://data4wallonia.com/model/Profile"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/landline",
+            "label-en": "landline",
+            "definition-en": "A landline"
+          }
+        },
+        {
           "uri": "http://data4wallonia.com/model/logo",
           "name": "logo",
           "sort": "logo",
@@ -4919,7 +4736,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/logo",
@@ -4946,25 +4763,65 @@
           ],
           "range": [
             {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Text"
+                "en": "String"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/mainNACECode",
             "definition-en": "A main NACE code",
             "label-en": "main NACE code"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/mobile",
+          "name": "mobile",
+          "sort": "mobile",
+          "label": {
+            "en": "mobile"
+          },
+          "description": {
+            "en": "A mobile"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Profile",
+              "uri": "http://data4wallonia.com/model/Profile"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/mobile",
+            "label-en": "mobile",
+            "definition-en": "A mobile"
           }
         },
         {
@@ -5119,7 +4976,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "label-en": "plateform contact person",
@@ -5199,7 +5056,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/shortDescription",
@@ -5239,7 +5096,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/shortTitle",
@@ -5279,12 +5136,52 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/slug",
             "definition-en": "A slug",
             "label-en": "slug"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/socialNetwork",
+          "name": "socialNetwork",
+          "sort": "social network",
+          "label": {
+            "en": "social network"
+          },
+          "description": {
+            "en": "A social network"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Profile",
+              "uri": "http://data4wallonia.com/model/Profile"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/socialNetwork",
+            "label-en": "social network",
+            "definition-en": "A social network"
           }
         },
         {
@@ -5306,20 +5203,20 @@
           ],
           "range": [
             {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Text"
+                "en": "String"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/staffing",
@@ -5359,12 +5256,52 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/title",
             "label-en": "title",
             "definition-en": "A title"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/website",
+          "name": "website",
+          "sort": "website",
+          "label": {
+            "en": "website"
+          },
+          "description": {
+            "en": "A website"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Profile",
+              "uri": "http://data4wallonia.com/model/Profile"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/website",
+            "label-en": "website",
+            "definition-en": "A website"
           }
         }
       ]
@@ -5459,7 +5396,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/banner",
@@ -5499,7 +5436,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/baseline",
@@ -5526,16 +5463,16 @@
           ],
           "range": [
             {
-              "range_label": "Document",
-              "range_uri": "http://xmlns.com/foaf/0.1/Document"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Document",
-              "range_puri": "http://xmlns.com/foaf/0.1/Document",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Document"
+                "en": "String"
               }
             }
           ],
@@ -5619,7 +5556,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/content",
@@ -5659,7 +5596,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/contentSummary",
@@ -5699,7 +5636,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/contentTitle",
@@ -5739,7 +5676,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/logo",
@@ -5779,7 +5716,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "label-en": "master ambition",
@@ -5859,7 +5796,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/popularizedTitle",
@@ -5899,7 +5836,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/referenceCategory",
@@ -5926,20 +5863,20 @@
           ],
           "range": [
             {
-              "range_label": "Document",
-              "range_uri": "http://xmlns.com/foaf/0.1/Document"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Document",
-              "range_puri": "http://xmlns.com/foaf/0.1/Document",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Document"
+                "en": "String"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/referenceWebSite",
@@ -5979,7 +5916,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/shortDescription",
@@ -6019,7 +5956,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/slug",
@@ -6059,7 +5996,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "label-en": "sticky",
@@ -6099,7 +6036,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/sticky",
@@ -6139,7 +6076,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/title",
@@ -6168,14 +6105,14 @@
       },
       "properties": [
         {
-          "uri": "http://data4wallonia.com/model/contactPerson",
-          "name": "contactPerson",
-          "sort": "contact person",
+          "uri": "http://data4wallonia.com/model/emailAddress",
+          "name": "emailAddress",
+          "sort": "email address",
           "label": {
-            "en": "contact person"
+            "en": "email address"
           },
           "description": {
-            "en": "A contact person"
+            "en": "An email address"
           },
           "usage": {},
           "domain": [
@@ -6186,25 +6123,25 @@
           ],
           "range": [
             {
-              "range_label": "ContactPoint",
-              "range_uri": "http://data.europa.eu/m8g/ContactPoint"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Contact Point",
-              "range_puri": "http://data.europa.eu/m8g/ContactPoint",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Contact Point"
+                "en": "String"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "http://data4wallonia.com/model/contactPerson",
-            "label-en": "contact person",
-            "definition-en": "A contact person"
+            "uri": "http://data4wallonia.com/model/emailAddress",
+            "label-en": "email address",
+            "definition-en": "An email address"
           }
         },
         {
@@ -6239,7 +6176,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "definition-en": "The profile to which the person belongs to.",
@@ -6266,20 +6203,20 @@
           ],
           "range": [
             {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Text"
+                "en": "String"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/internalName",
@@ -6312,14 +6249,14 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_uri": "#Boolean",
               "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
               "range_label": {
                 "en": "Boolean"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/isOpenByProfile",
@@ -6359,7 +6296,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "label-en": "role",
@@ -6387,50 +6324,6 @@
         "label-en": "Services Place"
       },
       "properties": [
-        {
-          "uri": "http://data.europa.eu/m8g/openingHours",
-          "name": "openingHours",
-          "sort": "opening hours",
-          "label": {
-            "en": "opening hours"
-          },
-          "description": {
-            "en": "A time at which the the resource is normally available."
-          },
-          "usage": {
-            "en": "For a simple description of the time use the description property of TemporalEntity.\r\n\r\nFor more structured data use the model in Time Ontology, see an <a href=\"https://www.w3.org/TR/owl-time/#dtd-vs-dt\">example</a>."
-          },
-          "domain": [
-            {
-              "EA-Name": "ServicesPlace",
-              "uri": "http://data4wallonia.com/model/ServicePlace"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "TemporalEntity",
-              "range_uri": "http://www.w3.org/2006/time#TemporalEntity"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Temporal Entity",
-              "range_puri": "http://www.w3.org/2006/time#TemporalEntity",
-              "range_label": {
-                "en": "Temporal Entity"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "opening hours",
-            "usageNote-en": "NOTE$ea_notes=For a simple description of the time use the description property of TemporalEntity.\r\n\r\nFor more structured data use the model in Time Ontology, see an <a href=\"https://www.w3.org/TR/owl-time/#dtd-vs-dt\">example</a>.",
-            "definition-en": "A time at which the the resource is normally available.",
-            "property-usage-scope": "optional",
-            "uri": "http://data.europa.eu/m8g/openingHours"
-          }
-        },
         {
           "uri": "http://data.europa.eu/m8g/otherPhoto",
           "name": "otherPhoto",
@@ -6512,6 +6405,46 @@
           }
         },
         {
+          "uri": "http://data.europa.eu/m8g/price",
+          "name": "price",
+          "sort": "price",
+          "label": {
+            "en": "price"
+          },
+          "description": {
+            "en": "A price"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ServicesPlace",
+              "uri": "http://data4wallonia.com/model/ServicePlace"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data.europa.eu/m8g/price",
+            "label-en": "price",
+            "definition-en": "A price"
+          }
+        },
+        {
           "uri": "http://data.europa.eu/m8g/responsibleProfile",
           "name": "responsibleProfile",
           "sort": "responsible profile",
@@ -6543,7 +6476,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "label-en": "responsible profile",
@@ -6610,16 +6543,16 @@
           ],
           "range": [
             {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Text"
+                "en": "String"
               }
             }
           ],
@@ -6663,7 +6596,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/additionalInformation",
@@ -6703,12 +6636,52 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/additionalInformationOnEquipment",
             "definition-en": "An additional information on equipment",
             "label-en": "additional information on equipment"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/additionalInformationOnOpeningHours",
+          "name": "additionalInformationOnOpeningHours",
+          "sort": "additional information on opening hours",
+          "label": {
+            "en": "additional information on opening hours"
+          },
+          "description": {
+            "en": "An additional information on opening hours"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ServicesPlace",
+              "uri": "http://data4wallonia.com/model/ServicePlace"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/additionalInformationOnOpeningHours",
+            "label-en": "additional information on opening hours",
+            "definition-en": "An additional information on opening hours"
           }
         },
         {
@@ -6783,7 +6756,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/additionalTypeAndConditionAccess",
@@ -6792,7 +6765,7 @@
           }
         },
         {
-          "uri": "http://data4wallonia.com/model/addresses",
+          "uri": "http://data4wallonia.com/model/address",
           "name": "address",
           "sort": "address",
           "label": {
@@ -6823,10 +6796,10 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "http://data4wallonia.com/model/addresses",
+            "uri": "http://data4wallonia.com/model/address",
             "label-en": "address",
             "definition-en": "An address"
           }
@@ -6863,7 +6836,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/capacity",
@@ -6930,16 +6903,16 @@
           ],
           "range": [
             {
-              "range_label": "Document",
-              "range_uri": "http://xmlns.com/foaf/0.1/Document"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Document",
-              "range_puri": "http://xmlns.com/foaf/0.1/Document",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Document"
+                "en": "String"
               }
             }
           ],
@@ -6983,52 +6956,12 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/facadePhoto",
             "label-en": "facade photo",
             "definition-en": "A facade photo"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/hasCost",
-          "name": "hasCost",
-          "sort": "has cost",
-          "label": {
-            "en": "has cost"
-          },
-          "description": {
-            "en": "A cost"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "ServicesPlace",
-              "uri": "http://data4wallonia.com/model/ServicePlace"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Cost",
-              "range_uri": "http://data.europa.eu/m8g/Cost"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Cost",
-              "range_puri": "http://data.europa.eu/m8g/Cost",
-              "range_label": {
-                "en": "Cost"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "has cost",
-            "uri": "http://data4wallonia.com/model/hasCost",
-            "definition-en": "A cost"
           }
         },
         {
@@ -7056,14 +6989,14 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_uri": "#Boolean",
               "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
               "range_label": {
                 "en": "Boolean"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/itinerant",
@@ -7103,12 +7036,52 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/makingAppointment",
             "definition-en": "A making appointment",
             "label-en": "making appointment"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/openingHours",
+          "name": "openingHours",
+          "sort": "opening hours",
+          "label": {
+            "en": "opening hours"
+          },
+          "description": {
+            "en": "An opening hour"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ServicesPlace",
+              "uri": "http://data4wallonia.com/model/ServicePlace"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/openingHours",
+            "label-en": "opening hours",
+            "definition-en": "An opening hour"
           }
         },
         {
@@ -7176,14 +7149,14 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_uri": "#Boolean",
               "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
               "range_label": {
                 "en": "Boolean"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/remoteAssistance",
@@ -7223,7 +7196,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/shortDescription",
@@ -7263,7 +7236,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/slug",
@@ -7303,72 +7276,12 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/title",
             "definition-en": "A title",
             "label-en": "title"
-          }
-        }
-      ]
-    },
-    {
-      "uri": "http://www.w3.org/2006/time#TemporalEntity",
-      "name": "TemporalEntity",
-      "label": {
-        "en": "Temporal Entity"
-      },
-      "sort": "Temporal Entity",
-      "description": {
-        "en": "A temporal interval or instant."
-      },
-      "usage": {},
-      "parents": [],
-      "rawTags": {
-        "definition-en": "A temporal interval or instant.",
-        "label-en": "Temporal Entity",
-        "uri": "http://www.w3.org/2006/time#TemporalEntity"
-      },
-      "properties": [
-        {
-          "uri": "http://purl.org/dc/terms/description",
-          "name": "description",
-          "sort": "description",
-          "label": {
-            "en": "description"
-          },
-          "description": {
-            "en": "A  textual representation of the Temporal Entity."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "TemporalEntity",
-              "uri": "http://www.w3.org/2006/time#TemporalEntity"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-              "range_label": {
-                "en": "Text"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://purl.org/dc/terms/description",
-            "label-en": "description",
-            "definition-en": "A  textual representation of the Temporal Entity."
           }
         }
       ]
@@ -7418,49 +7331,6 @@
       },
       "properties": [
         {
-          "uri": "http://data.europa.eu/m8g/contactPoint",
-          "name": "contactPoint",
-          "sort": "contact point",
-          "label": {
-            "en": "contact point"
-          },
-          "description": {
-            "en": "The main contact information of the resource."
-          },
-          "usage": {
-            "en": "Usually a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization's homepage that may or may not provide contact information."
-          },
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://www.w3.org/ns/person#Person"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "ContactPoint",
-              "range_uri": "http://data.europa.eu/m8g/ContactPoint"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Contact Point",
-              "range_puri": "http://data.europa.eu/m8g/ContactPoint",
-              "range_label": {
-                "en": "Contact Point"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "contact point",
-            "uri": "http://data.europa.eu/m8g/contactPoint",
-            "definition-en": "The main contact information of the resource.",
-            "usageNote-en": "NOTE$ea_notes=Usually a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization's homepage that may or may not provide contact information."
-          }
-        },
-        {
           "uri": "http://data4wallonia.com/model/additionalDescription",
           "name": "additionalDescription",
           "sort": "additional description",
@@ -7492,12 +7362,52 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/additionalDescription",
             "definition-en": "An additional description",
             "label-en": "additional description"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/address",
+          "name": "address",
+          "sort": "address",
+          "label": {
+            "en": "address"
+          },
+          "description": {
+            "en": "An address"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Address",
+              "range_uri": "http://www.w3.org/ns/locn#Address"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Address",
+              "range_puri": "http://www.w3.org/ns/locn#Address",
+              "range_label": {
+                "en": "Address"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/address",
+            "label-en": "address",
+            "definition-en": "An address"
           }
         },
         {
@@ -7599,16 +7509,16 @@
           ],
           "range": [
             {
-              "range_label": "Document",
-              "range_uri": "http://xmlns.com/foaf/0.1/Document"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Document",
-              "range_puri": "http://xmlns.com/foaf/0.1/Document",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Document"
+                "en": "String"
               }
             }
           ],
@@ -7645,14 +7555,14 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_uri": "#Boolean",
               "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
               "range_label": {
                 "en": "Boolean"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/displayRefusal",
@@ -7692,12 +7602,52 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/expertise",
             "definition-en": "An expertise",
             "label-en": "expertise"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/featuredEmail",
+          "name": "featuredEmail",
+          "sort": "featured email",
+          "label": {
+            "en": "featured email"
+          },
+          "description": {
+            "en": "A featured email"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/featuredEmail",
+            "label-en": "featured email",
+            "definition-en": "A featured email"
           }
         },
         {
@@ -7741,6 +7691,46 @@
           }
         },
         {
+          "uri": "http://data4wallonia.com/model/landline",
+          "name": "landline",
+          "sort": "landline",
+          "label": {
+            "en": "landline"
+          },
+          "description": {
+            "en": "A landline"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/landline",
+            "label-en": "landline",
+            "definition-en": "A landline"
+          }
+        },
+        {
           "uri": "http://data4wallonia.com/model/language",
           "name": "language",
           "sort": "language",
@@ -7772,12 +7762,92 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1..*",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/language",
             "definition-en": "A language",
             "label-en": "language"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/mobile",
+          "name": "mobile",
+          "sort": "mobile",
+          "label": {
+            "en": "mobile"
+          },
+          "description": {
+            "en": "A mobile"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/mobile",
+            "label-en": "mobile",
+            "definition-en": "A mobile"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/nonFeaturedEmail",
+          "name": "nonFeaturedEmail",
+          "sort": "non featured email",
+          "label": {
+            "en": "non featured email"
+          },
+          "description": {
+            "en": "A non featured email"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/nonFeaturedEmail",
+            "label-en": "non featured email",
+            "definition-en": "A non featured email"
           }
         },
         {
@@ -7812,7 +7882,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/photo",
@@ -7839,25 +7909,105 @@
           ],
           "range": [
             {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Text"
+                "en": "String"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/slug",
             "definition-en": "A slug",
             "label-en": "slug"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/socialNetwork",
+          "name": "socialNetwork",
+          "sort": "social network",
+          "label": {
+            "en": "social network"
+          },
+          "description": {
+            "en": "A social network"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/socialNetwork",
+            "label-en": "social network",
+            "definition-en": "A social network"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/website",
+          "name": "website",
+          "sort": "website",
+          "label": {
+            "en": "website"
+          },
+          "description": {
+            "en": "A website"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/website",
+            "label-en": "website",
+            "definition-en": "A website"
           }
         },
         {
@@ -7881,20 +8031,20 @@
           ],
           "range": [
             {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Text"
+                "en": "String"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "definition-en": "Any name by which a Person is known, other than their full name.",
@@ -7935,52 +8085,12 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://purl.org/dc/terms/description",
             "label-en": "short description",
             "definition-en": "Brief description of the person."
-          }
-        },
-        {
-          "uri": "http://www.w3.org/ns/locn#address",
-          "name": "address",
-          "sort": "address",
-          "label": {
-            "en": "address"
-          },
-          "description": {
-            "en": "The Address of a Resource."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://www.w3.org/ns/person#Person"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Address",
-              "range_uri": "http://www.w3.org/ns/locn#Address"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Address",
-              "range_puri": "http://www.w3.org/ns/locn#Address",
-              "range_label": {
-                "en": "Address"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://www.w3.org/ns/locn#address",
-            "definition-en": "The Address of a Resource.",
-            "label-en": "address"
           }
         },
         {
@@ -8004,20 +8114,20 @@
           ],
           "range": [
             {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Text"
+                "en": "String"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "usageNote-en": "Usually referring to a group of people related by blood, marriage or adoption. This attribute also carries prefixes or suffixes which are part of the family name, e.g. \"de Boer\", \"van de Putte\", \"von und zu Orlow\". Multiple family names, such as are commonly found in Hispanic countries, are recorded in the single family name property so that, for example, Miguel de Cervantes Saavedra's family name would be recorded as \"de Cervantes Saavedra\".",
@@ -8047,20 +8157,20 @@
           ],
           "range": [
             {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Text"
+                "en": "String"
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "definition-en": "The name(s) that identify the Person within a family with a common surname.",
@@ -8106,23 +8216,21 @@
       "properties": []
     },
     {
-      "uri": "http://www.w3.org/2000/01/rdf-schema#Literal",
-      "name": "Literal",
+      "uri": "http://www.w3.org/2001/XMLSchema#boolean",
+      "name": "Boolean",
       "label": {
-        "en": "Literal"
+        "en": "Boolean"
       },
-      "sort": "Literal",
+      "sort": "Boolean",
       "description": {
-        "en": "The class of literal values, eg. textual strings and integers."
+        "en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat"
       },
       "usage": {},
       "parents": [],
       "rawTags": {
-        "label-en": "Literal",
-        "uri": "http://www.w3.org/2000/01/rdf-schema#Literal",
-        "definition-en": "The class of literal values, eg. textual strings and integers.",
-        "literal": "true",
-        "class-usage-scope": "datatype"
+        "definition-en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat",
+        "label-en": "Boolean",
+        "uri": "http://www.w3.org/2001/XMLSchema#boolean"
       },
       "properties": []
     },
@@ -8203,27 +8311,8 @@
         "definition-en": "An idea or notion; a unit of thought."
       },
       "properties": []
-    },
-    {
-      "uri": "http://xmlns.com/foaf/0.1/Document",
-      "name": "Document",
-      "label": {
-        "en": "Document"
-      },
-      "sort": "Document",
-      "description": {
-        "en": "A document."
-      },
-      "usage": {},
-      "parents": [],
-      "rawTags": {
-        "definition-en": "A document.",
-        "label-en": "Document",
-        "uri": "http://xmlns.com/foaf/0.1/Document"
-      },
-      "properties": []
     }
   ],
   "parents": [],
-  "documentroot": "/D4WMO-Generic/releases/1.0.0/"
+  "documentroot": "/D4WMO-AP-ASIS/releases/1.0.0/"
 }
