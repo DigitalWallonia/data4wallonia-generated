@@ -1,0 +1,724 @@
+{
+  "@context": {
+    "ActionPlan": "http://data4wallonia.com/model/ActionPlan",
+    "ActionPlan.contactPoint": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/contactPoint",
+      "@type": "@id"
+    },
+    "ActionPlan.shortDescription": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/shortDescription",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "ActionPlanProfile": "http://data4wallonia.com/model/ActionPlanProfile",
+    "Address": "http://www.w3.org/ns/locn#Address",
+    "Ambition": "http://data4wallonia.com/model/Ambition",
+    "AnnualBudget": "http://data4wallonia.com/model/AnnualBudget",
+    "Code": "http://www.w3.org/2004/02/skos/core#Concept",
+    "ContactPoint": "http://data.europa.eu/m8g/ContactPoint",
+    "ContentDynamicList": "http://data4wallonia.com/model/ContentDynamicList",
+    "Cost": "http://data.europa.eu/m8g/Cost",
+    "DateTime": "http://www.w3.org/2001/XMLSchema#double",
+    "Decimal": "http://www.w3.org/2001/XMLSchema#double",
+    "Document": "http://xmlns.com/foaf/0.1/Document",
+    "Event": "http://data4wallonia.com/model/Event",
+    "Event.contactPoint": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/contactPoint",
+      "@type": "@id"
+    },
+    "Event.partner": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/partner",
+      "@type": "@id"
+    },
+    "Event.shortDescription": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/shortDescription",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "File": "http://data.europa.eu/m8g/ImageObject",
+    "Integer": "http://www.w3.org/2001/XMLSchema#integer",
+    "Literal": "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "PartnerAdditionalDescription": "http://data4wallonia.com/model/PartnerAdditionalDescription",
+    "Person": "http://www.w3.org/ns/person#Person",
+    "Person.address": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/locn#address",
+      "@type": "@id"
+    },
+    "Person.contactPoint": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/contactPoint",
+      "@type": "@id"
+    },
+    "Person.internalName": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/alternative",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Person.shortDescription": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Post": "http://data4wallonia.com/model/Post",
+    "Post.publishedDate": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/published date",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "PressReview": "http://data4wallonia.com/model/PressReview",
+    "PressReview.publishedDate": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/publishedDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "PressReview.shortDescription": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/shortDescription",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Profile": "http://data4wallonia.com/model/Profile",
+    "Profile.address": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/address",
+      "@type": "@id"
+    },
+    "Profile.contactPoint": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/contactPoint",
+      "@type": "@id"
+    },
+    "Profile.partner": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/partner",
+      "@type": "@id"
+    },
+    "Profile.shortDescription": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/shortDescription",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Program": "http://data4wallonia.com/model/Program",
+    "Program.partner": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/partner",
+      "@type": "@id"
+    },
+    "Program.shortDescription": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/shortDescription",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "QualifiedPerson": "http://data4wallonia.com/model/QualifiedPerson",
+    "QualifiedPerson.contactPoint": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/contactPerson",
+      "@type": "@id"
+    },
+    "QualifiedPerson.internalName": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/internalName",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "ServicesPlace": "http://data4wallonia.com/model/ServicePlace",
+    "ServicesPlace.partner": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/partner",
+      "@type": "@id"
+    },
+    "ServicesPlace.shortDescription": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/shortDescription",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "TemporalEntity": "http://www.w3.org/2006/time#TemporalEntity",
+    "Text": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+    "accompanyingPerson": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/accompanyPerson",
+      "@type": "@id"
+    },
+    "additionaInformaitonOnSupport": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/additionalInformation",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "additionalDescription": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/additionalDescription",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "additionalInformationOnEquipment": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/additionalInformationOnEquipment",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "additionalTargetAudience": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/additionalTargetAudience",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "additionalTypeAndConditionOfAccess": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/additionalTypeAndConditionAccess",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "addresses": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/addresses",
+      "@type": "@id"
+    },
+    "addtionalDescription": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/additionalDescription",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "ambiition": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/ambition",
+      "@type": "@id"
+    },
+    "ambition": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/ambition",
+      "@type": "@id"
+    },
+    "annualBudgetAllocation": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/annualBudgetAllocation",
+      "@type": "@id"
+    },
+    "articleLink": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/articleLink",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "author": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/author",
+      "@type": "@id"
+    },
+    "banner": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/banner",
+      "@type": "@id"
+    },
+    "baseLine": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/baseline",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "belgianEntreprises": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/belgianEntreprise",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "beneficiarie": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/beneficiarie",
+      "@type": "@id"
+    },
+    "capacity": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/capacity",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "category": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/category",
+      "@type": "@id"
+    },
+    "clientSite": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/clientSite",
+      "@type": "@id"
+    },
+    "contactPage": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/contactPage",
+      "@type": "@id"
+    },
+    "contactPerson": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/contactPerson",
+      "@type": "@id"
+    },
+    "content": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/content",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "contentSummary": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/contentSummary",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "contentTitle": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/contentTitle",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "currency": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/currency",
+      "@type": "@id"
+    },
+    "description": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "displayRefusal": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/displayRefusal",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "dynamicList": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/dynamicList",
+      "@type": "@id"
+    },
+    "endDate": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/endDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "endPublicationDate": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/endPublicationDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "estimatedReadingTime": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/estimatedReadingTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "expertise": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/expertise",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "facadePhoto": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/facadePhoto",
+      "@type": "@id"
+    },
+    "featuredPerson": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/featuredPerson",
+      "@type": "@id"
+    },
+    "firstName": {
+      "@container": "@set",
+      "@id": "http://xmlns.com/foaf/0.1/givenName",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "founder": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/founder",
+      "@type": "@id"
+    },
+    "fullTimeEquivalent": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/fullTimeEquivalent",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasCost": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/hasCost",
+      "@type": "@id"
+    },
+    "hasEmail": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/email"
+    },
+    "hasNonFeaturedEmail": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/hasNonFeaturedEmail"
+    },
+    "hasProfile": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/inOperation",
+      "@type": "@id"
+    },
+    "host": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/host",
+      "@type": "@id"
+    },
+    "idForAccounting": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/idForAccounting",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "image": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/image",
+      "@type": "@id"
+    },
+    "inOperation": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/inOperation",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "incubator": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/incubator",
+      "@type": "@id"
+    },
+    "introduction": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/introduction",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "involvedIn": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/involvedIn",
+      "@type": "@id"
+    },
+    "isOpenByProfile": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/isOpenByProfile",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "itinerant": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/itinerant",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "journalist": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/journalist",
+      "@type": "@id"
+    },
+    "landLine": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/landLine"
+    },
+    "language": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/language",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "lastName": {
+      "@container": "@set",
+      "@id": "http://xmlns.com/foaf/0.1/familyName",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "leaderMission": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/leaderMission",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "location": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/location",
+      "@type": "@id"
+    },
+    "logo": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/logo",
+      "@type": "@id"
+    },
+    "mainNACECode": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/mainNACECode",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "makingAppointment": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/makingAppointment",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "marketingShortDescription": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/marketingShortDescription",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "marketingTitle": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/marketingTitle",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "masterAmbition": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/masterAmbition",
+      "@type": "@id"
+    },
+    "mobile": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/mobile"
+    },
+    "moreRecentPost": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/moreRecentPost",
+      "@type": "@id"
+    },
+    "nonFeaturedPerson": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/nonFeaturedPerson",
+      "@type": "@id"
+    },
+    "numberOfEquipments": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/numberOfEquipments",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "numberOfParticipants": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/numberOfParticipants",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "occurence": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/occurence",
+      "@type": "@id"
+    },
+    "openingHours": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/openingHours",
+      "@type": "@id"
+    },
+    "operatingSystems": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/operating system",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "organizer": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/organizer",
+      "@type": "@id"
+    },
+    "otherPhoto": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/otherPhoto",
+      "@type": "@id"
+    },
+    "participant": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/participant",
+      "@type": "@id"
+    },
+    "partnerAdditionalDescription": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/partnerAdditionalDescription",
+      "@type": "@id"
+    },
+    "pdfFile": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/pdfFile",
+      "@type": "@id"
+    },
+    "photo": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/photo",
+      "@type": "@id"
+    },
+    "plateformContactPerson": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/plateformContactPerson",
+      "@type": "@id"
+    },
+    "popularizedTitle": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/popularizedTitle",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "price": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/price",
+      "@type": "@id"
+    },
+    "profile": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/profile",
+      "@type": "@id"
+    },
+    "program": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/program",
+      "@type": "@id"
+    },
+    "progressStatus": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/progressStatus",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "projectHolder": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/projectHolder",
+      "@type": "@id"
+    },
+    "quotedPerson": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/quotedPerson",
+      "@type": "@id"
+    },
+    "referenceActionPlan": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/referenceActionPlan",
+      "@type": "@id"
+    },
+    "referenceCategory": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/referenceCategory",
+      "@type": "@id"
+    },
+    "referenceEvent": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/referenceEvent",
+      "@type": "@id"
+    },
+    "referencePost": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/referencePost",
+      "@type": "@id"
+    },
+    "referenceWebSite": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/referenceWebSite",
+      "@type": "@id"
+    },
+    "relatedEvent": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/relatedEvent",
+      "@type": "@id"
+    },
+    "relatedExternalLinks": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/relatedExternalLinks",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "relatedFile": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/relatedFile",
+      "@type": "@id"
+    },
+    "relatedPerson": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/relatedPerson",
+      "@type": "@id"
+    },
+    "relatedPost": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/relatedPost",
+      "@type": "@id"
+    },
+    "relatedPress": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/relatedPress",
+      "@type": "@id"
+    },
+    "relatedProfile": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/relatedProfile",
+      "@type": "@id"
+    },
+    "remoteAssistance": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/remoteAssistance",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "responsibleProfile": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/responsibleProfile",
+      "@type": "@id"
+    },
+    "role": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/role",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "scheduleAdditionalInformation": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/scheduleAdditionalInformation",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "scheduleNotSpecified": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/scheduleNotSpecified",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "shortTitle": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/shortTitle",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "slug": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/slug",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "socialNetwork": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/socialNetwork"
+    },
+    "source": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/source",
+      "@type": "@id"
+    },
+    "speaker": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/speaker",
+      "@type": "@id"
+    },
+    "staffing": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/staffing",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "startDate": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/startDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "sticky": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/sticky",
+      "@type": "@id"
+    },
+    "targetAudience": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/targetAudience",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "title": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/title",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "totalBudget": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/totalBudget",
+      "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "totalWalloonBudget": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/totalWaloonBudget",
+      "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "type": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/type",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "value": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/hasValue",
+      "@type": "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "walloonRegionConvetionNumber": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/wallonRegionConvetionNumber",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "website": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/website"
+    }
+  }
+}
