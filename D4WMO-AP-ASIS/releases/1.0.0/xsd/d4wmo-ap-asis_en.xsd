@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <xs:schema xmlns="https://data.europa.eu/m8g/xml/" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://data.europa.eu/m8g/xml/" version="2.0.0" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:cv="https://data.europa.eu/m8g/xml/">
-  <xs:element name="ImageObject" type="ImageObjectType"/>
   <xs:element name="ActionPlan" type="ActionPlanType"/>
   <xs:element name="ActionPlanProfile" type="ActionPlanProfileType"/>
+  <xs:element name="Address" type="AddressType"/>
   <xs:element name="Ambition" type="AmbitionType"/>
   <xs:element name="AnnualBudget" type="AnnualBudgetType"/>
   <xs:element name="ContentDynamicList" type="ContentDynamicListType"/>
   <xs:element name="Event" type="EventType"/>
+  <xs:element name="File" type="FileType"/>
   <xs:element name="PartnerAdditionalDescription" type="PartnerAdditionalDescriptionType"/>
   <xs:element name="Post" type="PostType"/>
   <xs:element name="PressReview" type="PressReviewType"/>
   <xs:element name="Profile" type="ProfileType"/>
   <xs:element name="Program" type="ProgramType"/>
+  <xs:element name="Person" type="PersonType"/>
   <xs:element name="QualifiedPerson" type="QualifiedPersonType"/>
   <xs:element name="ServicesPlace" type="ServicesPlaceType"/>
   <xs:element name="Text" type="TextType"/>
   <xs:element name="Boolean" type="BooleanType"/>
-  <xs:element name="Date" type="DateType"/>
+  <xs:element name="DateTime" type="DateTimeType"/>
   <xs:element name="Double" type="DoubleType"/>
   <xs:element name="Integer" type="IntegerType"/>
   <xs:element name="Code" type="CodeType"/>
-  <xs:element name="Address" type="AddressType"/>
-  <xs:element name="Person" type="PersonType"/>
   <xs:simpleType name="Literal">
     <xs:restriction base="xs:string"/>
   </xs:simpleType>
@@ -39,14 +39,6 @@
         <xs:attribute name="conceptSchemeRef" type="xs:IDREF"/>
       </xs:extension>
     </xs:simpleContent>
-  </xs:complexType>
-  <xs:complexType name="ImageObjectType">
-    <xs:sequence/>
-    <xs:attribute name="ImageObjectRef" type="xs:IDREF">
-      <xs:annotation>
-        <xs:documentation xml:lang="en">Reference to ImageObject ID</xs:documentation>
-      </xs:annotation>
-    </xs:attribute>
   </xs:complexType>
   <xs:complexType name="ActionPlanType">
     <xs:sequence>
@@ -105,7 +97,7 @@
           <xs:documentation xml:lang="en">An id for accounting</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="image" ref="ImageObjectType" maxOccurs="1" minOccurs="0">
+      <xs:element name="image" ref="FileType" maxOccurs="1" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">An image</xs:documentation>
         </xs:annotation>
@@ -185,7 +177,7 @@
           <xs:documentation xml:lang="en">A reference post</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="relatedFile" ref="ImageObjectType" maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="relatedFile" ref="FileType" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A related file</xs:documentation>
         </xs:annotation>
@@ -255,6 +247,14 @@
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
+  <xs:complexType name="AddressType">
+    <xs:sequence/>
+    <xs:attribute name="AddressRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Address ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
   <xs:complexType name="AmbitionType">
     <xs:sequence/>
     <xs:attribute name="AmbitionRef" type="xs:IDREF">
@@ -291,7 +291,7 @@
           <xs:documentation xml:lang="en">An ambition</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="banner" ref="ImageObjectType" maxOccurs="1" minOccurs="0">
+      <xs:element name="banner" ref="FileType" maxOccurs="1" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A banner</xs:documentation>
         </xs:annotation>
@@ -423,6 +423,14 @@
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
+  <xs:complexType name="FileType">
+    <xs:sequence/>
+    <xs:attribute name="FileRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to File ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
   <xs:complexType name="PartnerAdditionalDescriptionType">
     <xs:sequence/>
     <xs:attribute name="PartnerAdditionalDescriptionRef" type="xs:IDREF">
@@ -443,7 +451,7 @@
           <xs:documentation xml:lang="en">An author</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="banner" ref="ImageObjectType" maxOccurs="1" minOccurs="0">
+      <xs:element name="banner" ref="FileType" maxOccurs="1" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A banner</xs:documentation>
         </xs:annotation>
@@ -483,7 +491,7 @@
           <xs:documentation xml:lang="en">A more recent post</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="pdfFile" ref="ImageObjectType" maxOccurs="1" minOccurs="0">
+      <xs:element name="pdfFile" ref="FileType" maxOccurs="1" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A pdf file</xs:documentation>
         </xs:annotation>
@@ -508,7 +516,7 @@
           <xs:documentation xml:lang="en">A related external link</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="relatedFile" ref="ImageObjectType" maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="relatedFile" ref="FileType" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A related file</xs:documentation>
         </xs:annotation>
@@ -686,7 +694,7 @@
           <xs:documentation xml:lang="en">A landline</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="logo" ref="ImageObjectType" maxOccurs="1" minOccurs="0">
+      <xs:element name="logo" ref="FileType" maxOccurs="1" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A logo</xs:documentation>
         </xs:annotation>
@@ -775,7 +783,7 @@
           <xs:documentation xml:lang="en">An ambition</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="banner" ref="ImageObjectType" maxOccurs="1" minOccurs="0">
+      <xs:element name="banner" ref="FileType" maxOccurs="1" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A banner</xs:documentation>
         </xs:annotation>
@@ -810,7 +818,7 @@
           <xs:documentation xml:lang="en">A content title</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="logo" ref="ImageObjectType" maxOccurs="1" minOccurs="0">
+      <xs:element name="logo" ref="FileType" maxOccurs="1" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A logo</xs:documentation>
         </xs:annotation>
@@ -850,12 +858,12 @@
           <xs:documentation xml:lang="en">A slug</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="sticky" ref="PostType" maxOccurs="1" minOccurs="0">
+      <xs:element name="sticky" ref="EventType" maxOccurs="1" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A sticky</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="sticky" ref="EventType" maxOccurs="1" minOccurs="0">
+      <xs:element name="sticky" ref="PostType" maxOccurs="1" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A sticky</xs:documentation>
         </xs:annotation>
@@ -869,6 +877,120 @@
     <xs:attribute name="ProgramRef" type="xs:IDREF">
       <xs:annotation>
         <xs:documentation xml:lang="en">Reference to Program ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="PersonType">
+    <xs:sequence>
+      <xs:element name="additionalDescription" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An additional description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="address" ref="AddressType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An address</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ambition" ref="AmbitionType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An ambition</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="category" type="ConceptType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A classification</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="clientSite" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A client site</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="displayRefusal" type="xs:boolean" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A display refusal</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="expertise" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An expertise</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="featuredEmail" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A featured email</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="givenName" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The name(s) that identify the Person within a family with a common surname.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="alternativeName" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Any name by which a Person is known, other than their full name.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="involvedIn" ref="ProgramType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The Program in which a Resource is allocated to.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="landline" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A landline</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="language" type="ConceptType" maxOccurs="unbounded" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A language</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="familyName" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The hereditary surname of a family.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="mobile" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A mobile</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="nonFeaturedEmail" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A non featured email</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="photo" ref="FileType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An image taken with a camera of a resource.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="shortDescription" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Brief description of the person.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="slug" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A slug</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="socialNetwork" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A social network</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="website" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A website</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="PersonRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Person ID</xs:documentation>
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
@@ -963,7 +1085,7 @@
           <xs:documentation xml:lang="en">A client site</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="facadePhoto" ref="ImageObjectType" maxOccurs="1" minOccurs="1">
+      <xs:element name="facadePhoto" ref="FileType" maxOccurs="1" minOccurs="1">
         <xs:annotation>
           <xs:documentation xml:lang="en">A facade photo</xs:documentation>
         </xs:annotation>
@@ -988,7 +1110,7 @@
           <xs:documentation xml:lang="en">An operating system</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="otherPhoto" ref="ImageObjectType" maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="otherPhoto" ref="FileType" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">Another photo</xs:documentation>
         </xs:annotation>
@@ -1051,11 +1173,11 @@
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
-  <xs:complexType name="DateType">
+  <xs:complexType name="DateTimeType">
     <xs:sequence/>
-    <xs:attribute name="DateRef" type="xs:IDREF">
+    <xs:attribute name="DateTimeRef" type="xs:IDREF">
       <xs:annotation>
-        <xs:documentation xml:lang="en">Reference to Date ID</xs:documentation>
+        <xs:documentation xml:lang="en">Reference to DateTime ID</xs:documentation>
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
@@ -1080,128 +1202,6 @@
     <xs:attribute name="CodeRef" type="xs:IDREF">
       <xs:annotation>
         <xs:documentation xml:lang="en">Reference to Code ID</xs:documentation>
-      </xs:annotation>
-    </xs:attribute>
-  </xs:complexType>
-  <xs:complexType name="AddressType">
-    <xs:sequence/>
-    <xs:attribute name="AddressRef" type="xs:IDREF">
-      <xs:annotation>
-        <xs:documentation xml:lang="en">Reference to Address ID</xs:documentation>
-      </xs:annotation>
-    </xs:attribute>
-  </xs:complexType>
-  <xs:complexType name="PersonType">
-    <xs:sequence>
-      <xs:element name="additionalDescription" type="xs:string" maxOccurs="1" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">An additional description</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="address" ref="AddressType" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">An address</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="ambition" ref="AmbitionType" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">An ambition</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="category" type="ConceptType" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A classification</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="clientSite" type="xs:string" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A client site</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="displayRefusal" type="xs:boolean" maxOccurs="1" minOccurs="1">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A display refusal</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="expertise" type="xs:string" maxOccurs="1" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">An expertise</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="featuredEmail" type="xs:string" maxOccurs="1" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A featured email</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="givenName" type="xs:string" maxOccurs="1" minOccurs="1">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">The name(s) that identify the Person within a family with a common surname.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="alternativeName" type="xs:string" maxOccurs="1" minOccurs="1">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Any name by which a Person is known, other than their full name.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="involvedIn" ref="ProgramType" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">The Program in which a Resource is allocated to.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="landline" type="xs:string" maxOccurs="1" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A landline</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="language" type="ConceptType" maxOccurs="unbounded" minOccurs="1">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A language</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="familyName" type="xs:string" maxOccurs="1" minOccurs="1">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">The hereditary surname of a family.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="mobile" type="xs:string" maxOccurs="1" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A mobile</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="nonFeaturedEmail" type="xs:string" maxOccurs="1" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A non featured email</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="photo" ref="ImageObjectType" maxOccurs="1" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">An image taken with a camera of a resource.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="shortDescription" type="xs:string" maxOccurs="1" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Brief description of the person.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="slug" type="xs:string" maxOccurs="1" minOccurs="1">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A slug</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="socialNetwork" type="xs:string" maxOccurs="1" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A social network</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="website" type="xs:string" maxOccurs="1" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A website</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-    <xs:attribute name="PersonRef" type="xs:IDREF">
-      <xs:annotation>
-        <xs:documentation xml:lang="en">Reference to Person ID</xs:documentation>
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>

@@ -4,18 +4,6 @@
   "properties": [],
   "externals": [
     {
-      "EA-Guid": "{9E0A534F-5918-4cbc-ADF4-5BBCD03359AE}",
-      "name": "ImageObject",
-      "label": {
-        "en": "Image Object",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "en": "A logo to describe / represent an entity.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
       "EA-Guid": "{922CDABF-F6EF-47c3-80A5-F231384B6CF2}",
       "name": "ActionPlan",
       "label": {
@@ -36,6 +24,18 @@
       },
       "definition": {
         "en": "An action plan profile",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
+      "name": "Address",
+      "label": {
+        "en": "Address",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "An address",
         "fr": "Enter your translation here"
       }
     },
@@ -84,6 +84,18 @@
       },
       "definition": {
         "en": "An Event",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{9E0A534F-5918-4cbc-ADF4-5BBCD03359AE}",
+      "name": "File",
+      "label": {
+        "en": "File",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A file",
         "fr": "Enter your translation here"
       }
     },
@@ -148,6 +160,18 @@
       }
     },
     {
+      "EA-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
+      "name": "Person",
+      "label": {
+        "en": "Person",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A person",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
       "EA-Guid": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
       "name": "QualifiedPerson",
       "label": {
@@ -197,9 +221,9 @@
     },
     {
       "EA-Guid": "{93158274-550F-43bf-BCA2-D8C45A3A7D70}",
-      "name": "Date",
+      "name": "DateTime",
       "label": {
-        "en": "Date",
+        "en": "Date time",
         "fr": "Enter your translation here"
       },
       "definition": {
@@ -240,38 +264,6 @@
       },
       "definition": {
         "en": "An idea or notion; a unit of thought.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
-      "name": "Address",
-      "label": {
-        "en": "Address",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "en": "A spatial object that in a human-readable way identifies a fixed location.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "en": "<p>\r\nAn \"address representation\" as conceptually defined by the <a href=\"https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/ScopeObjectDetail.action?objectDetailId=9353\r\n\">INSPIRE Address Representation data type</a>: \"Representation of an address spatial object for use in external application schemas that need to include the basic, address information in a readable way.\"\r\n</p></br>\r\n\r\n<p>\r\nThe representation of Addresses varies widely from one country's postal system to another. Even within countries, there are almost always examples of Addresses that do not conform to the stated national standard. However, <a href=\"https://www.iso.org/standard/61710.html\">ISO 19160-1</a> provides a method through which different Addresses can be converted from one conceptual model to another.\r\n</p></br>\r\n\r\n<p>\r\nThis specification was heavily based on the INSPIRE Address Representation data type. It is noteworthy that if an Address is provided using the detailed breakdown suggested by the properties for this class, then it will be INSPIRE-conformant. To this very granular set of\r\nproperties, we add two further properties:\r\n<ul>\r\n  <li> full address (the complete address as a formatted string)</li>\r\n  <li> addressID (a unique identifier for the address)</li>\r\n</ul>\r\nThe first of these allows publishers to simply provide the complete Address as one string, with or without formatting. This is analogous to <a href=\"https://www.w3.org/TR/vcard-rdf/#d4e953\">vCard's label property</a>.\r\n</p></br>\r\n\r\n<p>\r\nThe addressID is part of the <a href=\"https://knowledge-base.inspire.ec.europa.eu/index_en\">INSPIRE guidelines</a> and provides a hook that can be used to link the Address to an alternative representation, such as <a href=\"https://www.w3.org/TR/vcard-rdf\">vCard</a> or <a href=\"https://www.oasis-open.org/committees/ciq/ciq.html#6\">OASIS xAL</a>.\r\n</p></br>\r\n\r\nThis class belongs to <a href=\"https://semiceu.github.io/Core-Location-Vocabulary/releases/2.00/#Address\">Core Location Vocabulary</a>",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
-      "name": "Person",
-      "label": {
-        "en": "Person",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "en": "A individual human being who may be dead or alive,but not imaginary.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "en": "The fact that a person in the context of Core Person Vocabulary cannot be imaginary makes person:Person a subclass of foaf:Person which cover imaginary characters as well as real people. The Person Class is a subclass of the more general <a href=\"#Agent\">'Agent' class</a>.",
         "fr": "Enter your translation here"
       }
     }
@@ -506,43 +498,7 @@
       }
     },
     {
-      "EA-Guid": "{A8C35051-EEC1-49d4-B894-016880084375}",
-      "name": "ambition",
-      "label": {
-        "en": "ambition",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "en": "An ambition",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{85BEC74F-7687-4895-A2D2-0BD86B754EF3}",
-      "name": "ambition",
-      "label": {
-        "en": "ambition",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "en": "An ambition",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{54C8D220-F5C7-4930-88C6-6B6D383EE941}",
-      "name": "ambition",
-      "label": {
-        "en": "ambition",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "en": "An ambition",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{BE8424A7-D8B7-448f-9929-198EEB95D9A0}",
+      "EA-Guid": "{22A41E9A-660C-4d3c-8E21-98D1DEA859B2}",
       "name": "ambition",
       "label": {
         "en": "ambition",
@@ -566,6 +522,42 @@
       }
     },
     {
+      "EA-Guid": "{BE8424A7-D8B7-448f-9929-198EEB95D9A0}",
+      "name": "ambition",
+      "label": {
+        "en": "ambition",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "An ambition",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{A8C35051-EEC1-49d4-B894-016880084375}",
+      "name": "ambition",
+      "label": {
+        "en": "ambition",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "An ambition",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{54C8D220-F5C7-4930-88C6-6B6D383EE941}",
+      "name": "ambition",
+      "label": {
+        "en": "ambition",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "An ambition",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
       "EA-Guid": "{82936B7A-9B5D-450b-935A-A281283906FD}",
       "name": "ambition",
       "label": {
@@ -578,7 +570,7 @@
       }
     },
     {
-      "EA-Guid": "{22A41E9A-660C-4d3c-8E21-98D1DEA859B2}",
+      "EA-Guid": "{85BEC74F-7687-4895-A2D2-0BD86B754EF3}",
       "name": "ambition",
       "label": {
         "en": "ambition",
@@ -890,18 +882,6 @@
       }
     },
     {
-      "EA-Guid": "{E7AF9F19-EB51-4c26-99C6-4A494CD8A857}",
-      "name": "contactPerson",
-      "label": {
-        "en": "contact person",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "en": "A contact person",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
       "EA-Guid": "{6F0D1440-6A7D-42bb-82DD-C66E6E89C6F5}",
       "name": "contactPerson",
       "label": {
@@ -915,6 +895,18 @@
     },
     {
       "EA-Guid": "{01E2AA6A-FF05-4910-8BF3-CF9DE33E7323}",
+      "name": "contactPerson",
+      "label": {
+        "en": "contact person",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A contact person",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{E7AF9F19-EB51-4c26-99C6-4A494CD8A857}",
       "name": "contactPerson",
       "label": {
         "en": "contact person",
@@ -1742,6 +1734,18 @@
       }
     },
     {
+      "EA-Guid": "{847A3655-09F5-4512-891F-974C15A92CE6}",
+      "name": "program",
+      "label": {
+        "en": "program",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A program",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
       "EA-Guid": "{E9F51D94-156A-4c60-908E-4E504BFC45FC}",
       "name": "program",
       "label": {
@@ -1754,19 +1758,7 @@
       }
     },
     {
-      "EA-Guid": "{81876B2C-67F3-4d9a-B72F-A901BAA9C5C6}",
-      "name": "program",
-      "label": {
-        "en": "program",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "en": "A program",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{847A3655-09F5-4512-891F-974C15A92CE6}",
+      "EA-Guid": "{62518AF5-3A34-4d04-8619-EAB6FDCEEA1A}",
       "name": "program",
       "label": {
         "en": "program",
@@ -1790,7 +1782,7 @@
       }
     },
     {
-      "EA-Guid": "{62518AF5-3A34-4d04-8619-EAB6FDCEEA1A}",
+      "EA-Guid": "{81876B2C-67F3-4d9a-B72F-A901BAA9C5C6}",
       "name": "program",
       "label": {
         "en": "program",
@@ -2330,7 +2322,7 @@
       }
     },
     {
-      "EA-Guid": "{6B132A8B-D288-4f06-B6F9-C8B609F87FD0}",
+      "EA-Guid": "{12E2B51B-2AAB-4e31-B813-01B307EF6194}",
       "name": "sticky",
       "label": {
         "en": "sticky",
@@ -2342,7 +2334,7 @@
       }
     },
     {
-      "EA-Guid": "{12E2B51B-2AAB-4e31-B813-01B307EF6194}",
+      "EA-Guid": "{6B132A8B-D288-4f06-B6F9-C8B609F87FD0}",
       "name": "sticky",
       "label": {
         "en": "sticky",
