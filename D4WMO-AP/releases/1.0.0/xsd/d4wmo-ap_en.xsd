@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns="https://data.europa.eu/m8g/xml/" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://data.europa.eu/m8g/xml/" version="2.0.0" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:cv="https://data.europa.eu/m8g/xml/">
+  <xs:element name="ContactPoint" type="ContactPointType"/>
+  <xs:element name="Cost" type="CostType"/>
+  <xs:element name="ImageObject" type="ImageObjectType"/>
+  <xs:element name="ActionPlan" type="ActionPlanType"/>
+  <xs:element name="ActionPlanProfile" type="ActionPlanProfileType"/>
+  <xs:element name="Ambition" type="AmbitionType"/>
+  <xs:element name="AnnualBudget" type="AnnualBudgetType"/>
+  <xs:element name="ContentDynamicList" type="ContentDynamicListType"/>
+  <xs:element name="Event" type="EventType"/>
+  <xs:element name="PartnerAdditionalDescription" type="PartnerAdditionalDescriptionType"/>
+  <xs:element name="Post" type="PostType"/>
+  <xs:element name="PressReview" type="PressReviewType"/>
+  <xs:element name="Profile" type="ProfileType"/>
+  <xs:element name="Program" type="ProgramType"/>
+  <xs:element name="QualifiedPerson" type="QualifiedPersonType"/>
+  <xs:element name="ServicesPlace" type="ServicesPlaceType"/>
+  <xs:element name="Text" type="TextType"/>
+  <xs:element name="Literal" type="LiteralType"/>
+  <xs:element name="Date" type="DateType"/>
+  <xs:element name="Double" type="DoubleType"/>
+  <xs:element name="Integer" type="IntegerType"/>
+  <xs:element name="Code" type="CodeType"/>
+  <xs:element name="TemporalEntity" type="TemporalEntityType"/>
+  <xs:element name="Address" type="AddressType"/>
+  <xs:element name="Person" type="PersonType"/>
+  <xs:element name="Document" type="DocumentType"/>
+  <xs:simpleType name="Literal">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:complexType name="langstring">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="lang" type="xs:language"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ConceptType">
+    <xs:simpleContent>
+      <xs:extension base="xs:token">
+        <xs:attribute name="ref" type="xs:IDREF"/>
+        <xs:attribute name="conceptSchemeRef" type="xs:IDREF"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ContactPointType">
+    <xs:sequence>
+      <xs:element name="contactPage" ref="DocumentType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A web page that could be used to reach out the Contact Point.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="hasEmail" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An electronic address through which the Contact Point can be contacted.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="hasNonFeaturedEmail" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An non featured email</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="landLine" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A landline number</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="mobile" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A mobile number</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="socialNetwork" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A social network site</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="website" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A website</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="ContactPointRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to ContactPoint ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="CostType">
+    <xs:sequence>
+      <xs:element name="currency" type="ConceptType" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The currency in which the Cost needs to be paid and the value of the Cost is expressed.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="hasValue" type="xs:double" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A numeric value indicating the amount of the Cost.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="CostRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Cost ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="ImageObjectType">
+    <xs:sequence/>
+    <xs:attribute name="ImageObjectRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to ImageObject ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="ActionPlanType">
+    <xs:sequence>
+      <xs:element name="additionalDescription" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An additional description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ambition" ref="AmbitionType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An ambition</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="annualBudgetAllocation" ref="AnnualBudgetType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An annual budget allocation</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="beneficiarie" ref="ContentDynamicListType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A beneficiarie</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="category" type="ConceptType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A classification</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="clientSite" ref="DocumentType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A client site</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="contactPerson" ref="QualifiedPersonType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A contact person</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="contactPoint" ref="ContactPointType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A contact point</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="endDate" type="xs:dateTime" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A end date</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="fullTimeEquivalent" type="xs:integer" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A full time equivalent</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="idForAccounting" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An id for accounting</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="image" ref="ImageObjectType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An image</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="inOperation" type="xs:boolean" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An operation</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="leaderMission" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A leader mission</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="marketingShortDescription" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A marketing short description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="marketingTitle" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A marketing title</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="numberOfEquipments" type="xs:integer" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A number of equipments</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="numberOfParticipants" type="xs:integer" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A number of participants</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="occurence" ref="EventType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An occurence</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="participant" ref="QualifiedPersonType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A participant</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="profile" ref="ActionPlanProfileType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A profile</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="program" ref="ProgramType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A program</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="progressStatus" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A progress status</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="projectHolder" ref="QualifiedPersonType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A project holder</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="referenceActionPlan" ref="ActionPlanType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A reference action plan</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="referenceEvent" ref="EventType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A reference event</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="referencePost" ref="PostType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A reference post</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="relatedFile" ref="ImageObjectType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A related file</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="shortDescription" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A short description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="slug" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A slug</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="startDate" type="xs:dateTime" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A start date</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="title" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A title</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="totalBudget" type="xs:decimal" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A total budget</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="totalWalloonBudget" type="xs:decimal" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A total wallong budget</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="type" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A type</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="wallonRegionConvetionNumber" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A wallon region convetion number</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="ActionPlanRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to ActionPlan ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="ActionPlanProfileType">
+    <xs:sequence/>
+    <xs:attribute name="ActionPlanProfileRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to ActionPlanProfile ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="AmbitionType">
+    <xs:sequence/>
+    <xs:attribute name="AmbitionRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Ambition ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="AnnualBudgetType">
+    <xs:sequence/>
+    <xs:attribute name="AnnualBudgetRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to AnnualBudget ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="ContentDynamicListType">
+    <xs:sequence/>
+    <xs:attribute name="ContentDynamicListRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to ContentDynamicList ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="EventType">
+    <xs:sequence>
+      <xs:element name="additionalDescription" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An additional description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ambition" ref="AmbitionType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An ambition</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="banner" ref="ImageObjectType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A banner</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="category" type="ConceptType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A category</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="clientSite" ref="DocumentType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A client site</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="contactPerson" ref="QualifiedPersonType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A contact person</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="contactPoint" ref="ContactPointType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A contact point</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="endDate" type="xs:dateTime" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A end date</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="endPublicationDate" type="xs:dateTime" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A end publication date</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="host" ref="ProfileType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A host</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="location" ref="AddressType" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A location</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="organizer" ref="ProfileType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An organizer</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="partner" ref="ProfileType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A partner</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="price" ref="CostType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A price</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="program" ref="ProgramType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A program</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="scheduleAdditionalInformation" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A schedule additional information</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="scheduleNotSpecified" type="xs:boolean" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A schedule not specified</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="shortDescription" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A short description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="slug" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A slug</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="speaker" ref="QualifiedPersonType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A speaker</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="startDate" type="xs:dateTime" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A start date</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="targetAudience" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A target audience</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="title" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A title</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="type" type="xs:string" maxOccurs="unbounded" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A type</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="EventRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Event ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="PartnerAdditionalDescriptionType">
+    <xs:sequence/>
+    <xs:attribute name="PartnerAdditionalDescriptionRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to PartnerAdditionalDescription ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="PostType">
+    <xs:sequence>
+      <xs:element name="ambition" ref="AmbitionType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An ambition</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="author" ref="QualifiedPersonType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An author</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="banner" ref="ImageObjectType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A banner</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="category" type="ConceptType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A category</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="clientSite" ref="DocumentType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A client site</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="content" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A content</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="dynamicList" ref="ContentDynamicListType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A dynamic list</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="estimatedReadingTime" type="xs:integer" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An estimated reading time</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="introduction" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An introduction</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="moreRecentPost" ref="PostType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A more recent post</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="pdfFile" ref="ImageObjectType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A pdf file</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="program" ref="ProgramType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A program</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="publishedDate" type="xs:dateTime" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A published date</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="relatedEvent" ref="EventType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A related event</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="relatedExternalLink" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A related external link</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="relatedFile" ref="ImageObjectType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A related file</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="relatedPerson" ref="QualifiedPersonType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A related person</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="relatedPost" ref="PostType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A related post</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="relatedPress" ref="PressReviewType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A related press</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="relatedProfile" ref="ProfileType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A related profile</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="slug" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A slug</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="title" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A title</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="type" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A type</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="PostRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Post ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="PressReviewType">
+    <xs:sequence>
+      <xs:element name="ambition" ref="AmbitionType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An ambition</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="articleLink" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An article link</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="category" type="ConceptType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A category</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="clientSite" ref="DocumentType" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A client site</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="journalist" ref="PersonType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A journalist</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="language" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A language</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="program" ref="ProgramType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A program</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="publishedDate" type="xs:dateTime" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A published date</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="quotedPerson" ref="QualifiedPersonType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A quoted person</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="shortDescription" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A short description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="source" ref="ProfileType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A source</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="title" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A title</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="type" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A type</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="PressReviewRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to PressReview ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="ProfileType">
+    <xs:sequence>
+      <xs:element name="address" ref="AddressType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An address</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="additionalDescription" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An additional description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ambition" ref="AmbitionType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An ambition</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="belgianEnterprise" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A belgian entreprise</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="category" type="ConceptType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A category</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="clientSite" ref="DocumentType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A client site</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="contactPoint" ref="ContactPointType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A contact point</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="featuredPerson" ref="QualifiedPersonType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A featured Person</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="founder" ref="ProfileType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A founder</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="incubator" ref="ProfileType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An incubator</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="logo" ref="ImageObjectType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A logo</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="mainNaceCode" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A main NACE code</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="nonFeaturedPerson" ref="QualifiedPersonType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A non featured person</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="partner" ref="ProfileType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A partner</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="partnerAdditionalDescription" ref="PartnerAdditionalDescriptionType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A partner additional description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="plateformContactPerson" ref="QualifiedPersonType" maxOccurs="unbounded" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A plateform contact person</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="program" ref="ProgramType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A program</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="shortDescription" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A short description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="shortTitle" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A short title</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="slug" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A slug</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="staffing" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A staffing</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="title" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A title</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="ProfileRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Profile ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="ProgramType">
+    <xs:sequence>
+      <xs:element name="ambition" ref="AmbitionType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An ambition</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="banner" ref="ImageObjectType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A banner</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="baseline" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A baseline</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="clientSite" ref="DocumentType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A client site</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="contactPerson" ref="QualifiedPersonType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A contact person</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="content" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A content</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="contentSummary" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A content summary</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="contentTitle" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A content title</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="logo" ref="ImageObjectType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A logo</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="masterAmbition" ref="AmbitionType" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A master ambition</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="partner" ref="ProfileType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A partner</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="popularizedTitle" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A popularized title</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="referenceCategory" type="ConceptType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A reference category</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="referenceWebSite" ref="DocumentType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A reference web site</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="shortDescription" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A short description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="slug" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A slug</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="sticky" ref="EventType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A sticky</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="sticky" ref="PostType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A sticky</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="title" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A title</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="ProgramRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Program ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="QualifiedPersonType">
+    <xs:sequence>
+      <xs:element name="contactPerson" ref="ContactPointType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A contact person</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="hasProfile" ref="ProfileType" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The profile to which the person belongs to.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="internalName" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An internal name</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="isOpenByProfile" type="xs:boolean" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A boolean to indicate that is open by profile</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="role" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The function of a qualified person.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="QualifiedPersonRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to QualifiedPerson ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="ServicesPlaceType">
+    <xs:sequence>
+      <xs:element name="accompanyPerson" ref="QualifiedPersonType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An accompany person</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="additionalInformation" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An additional information</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="additionalDescription" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An additional description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="additionalInformationOnEquipment" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An additional information on equipment</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="additionalTargetAudience" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An additional target audience</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="additionalTypeAndConditionAccess" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An additional type and condition access</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="address" ref="AddressType" maxOccurs="unbounded" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An address</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="capacity" type="xs:integer" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A capacity</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="category" type="ConceptType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A category</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="clientSite" ref="DocumentType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A client site</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="facadePhoto" ref="ImageObjectType" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A facade photo</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="hasCost" ref="CostType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A cost</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="itinerant" type="xs:boolean" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An itinerant</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="makingAppointment" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A making appointment</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="openingHours" ref="TemporalEntityType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A time at which the the resource is normally available.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="operatingSystems" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An operating system</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="otherPhoto" ref="ImageObjectType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Another photo</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="partner" ref="ServicesPlaceType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A partner</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="remoteAssistance" type="xs:boolean" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A remote assistance</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="responsibleProfile" ref="ProfileType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A responsible profile</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="shortDescription" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A short description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="slug" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A slug</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="title" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A title</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="ServicesPlaceRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to ServicesPlace ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="TextType">
+    <xs:sequence/>
+    <xs:attribute name="TextRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Text ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="LiteralType">
+    <xs:sequence/>
+    <xs:attribute name="LiteralRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Literal ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="DateType">
+    <xs:sequence/>
+    <xs:attribute name="DateRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Date ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="DoubleType">
+    <xs:sequence/>
+    <xs:attribute name="DoubleRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Double ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="IntegerType">
+    <xs:sequence/>
+    <xs:attribute name="IntegerRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Integer ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="CodeType">
+    <xs:sequence/>
+    <xs:attribute name="CodeRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Code ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="TemporalEntityType">
+    <xs:sequence>
+      <xs:element name="description" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A  textual representation of the Temporal Entity.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="TemporalEntityRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to TemporalEntity ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="AddressType">
+    <xs:sequence/>
+    <xs:attribute name="AddressRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Address ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="PersonType">
+    <xs:sequence>
+      <xs:element name="additionalDescription" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An additional description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="address" ref="AddressType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The Address of a Resource.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ambition" ref="AmbitionType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An ambition</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="category" type="ConceptType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A classification</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="clientSite" ref="DocumentType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A client site</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="contactPoint" ref="ContactPointType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The main contact information of the resource.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="displayRefusal" type="xs:boolean" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A display refusal</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="expertise" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An expertise</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="givenName" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The name(s) that identify the Person within a family with a common surname.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="alternativeName" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Any name by which a Person is known, other than their full name.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="involvedIn" ref="ProgramType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The Program in which a Resource is allocated to.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="language" type="ConceptType" maxOccurs="unbounded" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A language</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="familyName" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The hereditary surname of a family.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="photo" ref="ImageObjectType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An image taken with a camera of a resource.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="shortDescription" type="xs:string" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Brief description of the person.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="slug" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A slug</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="PersonRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Person ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="DocumentType">
+    <xs:sequence/>
+    <xs:attribute name="DocumentRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Document ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+</xs:schema>
