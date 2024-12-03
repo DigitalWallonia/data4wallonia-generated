@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/9cb65f06ce318593283c065455b9b51976237aa6",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/9cb65f06ce318593283c065455b9b51976237aa6/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/536f5d5371958329c10dfc3674f0fbd20454f012",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/536f5d5371958329c10dfc3674f0fbd20454f012/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-Generic/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -43,7 +43,8 @@
         "definition-en": "Information (e.g. e-mail address, telephone number) of a person or department through which the user can get in touch with.",
         "uri": "http://data.europa.eu/m8g/ContactPoint",
         "label-en": "Contact Point",
-        "usageNote-en": "Similarly to the Channel class, a Contact Point may have regular opening hours that are then overridden by, for example, public holidays, using the Temporal Entity class."
+        "usageNote-en": "Similarly to the Channel class, a Contact Point may have regular opening hours that are then overridden by, for example, public holidays, using the Temporal Entity class.",
+        "class-usage-scope": "main"
       },
       "properties": [
         {
@@ -345,7 +346,8 @@
       "rawTags": {
         "definition-en": "The Cost class represents any costs related to the execution of a Public Service that the Agent consuming it needs to pay.",
         "label-en": "Cost",
-        "uri": "http://data.europa.eu/m8g/Cost"
+        "uri": "http://data.europa.eu/m8g/Cost",
+        "class-usage-scope": "main"
       },
       "properties": [
         {
@@ -450,7 +452,8 @@
       "rawTags": {
         "definition-en": "A logo to describe / represent an entity.",
         "label-en": "Image Object",
-        "uri": "http://data.europa.eu/m8g/ImageObject"
+        "uri": "http://data.europa.eu/m8g/ImageObject",
+        "class-usage-scope": "supportive"
       },
       "properties": []
     },
@@ -469,7 +472,8 @@
       "rawTags": {
         "uri": "http://data4wallonia.com/model/ActionPlan",
         "definition-en": "An action plan",
-        "label-en": "Action Plan"
+        "label-en": "Action Plan",
+        "class-usage-scope": "main"
       },
       "properties": [
         {
@@ -897,7 +901,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_uri": "#String",
               "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
                 "en": "String"
@@ -1017,7 +1021,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_uri": "#String",
               "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
                 "en": "String"
@@ -1929,7 +1933,8 @@
       "rawTags": {
         "uri": "http://data4wallonia.com/model/ActionPlanProfile",
         "definition-en": "An action plan profile",
-        "label-en": "Action Plan Profile"
+        "label-en": "Action Plan Profile",
+        "class-usage-scope": "supportive"
       },
       "properties": []
     },
@@ -1948,7 +1953,8 @@
       "rawTags": {
         "uri": "http://data4wallonia.com/model/Ambition",
         "definition-en": "An ambition",
-        "label-en": "Ambition"
+        "label-en": "Ambition",
+        "class-usage-scope": "supportive"
       },
       "properties": []
     },
@@ -1967,7 +1973,8 @@
       "rawTags": {
         "uri": "http://data4wallonia.com/model/AnnualBudget",
         "definition-en": "Annual Budget",
-        "label-en": "Annual Budget"
+        "label-en": "Annual Budget",
+        "class-usage-scope": "supportive"
       },
       "properties": []
     },
@@ -1986,7 +1993,8 @@
       "rawTags": {
         "uri": "http://data4wallonia.com/model/ContentDynamicList",
         "definition-en": "A Content Dynamic List",
-        "label-en": "Content Dynamic List"
+        "label-en": "Content Dynamic List",
+        "class-usage-scope": "supportive"
       },
       "properties": []
     },
@@ -2005,7 +2013,8 @@
       "rawTags": {
         "uri": "http://data4wallonia.com/model/Event",
         "definition-en": "An Event",
-        "label-en": "Event"
+        "label-en": "Event",
+        "class-usage-scope": "main"
       },
       "properties": [
         {
@@ -2985,7 +2994,8 @@
       "rawTags": {
         "uri": "http://data4wallonia.com/model/PartnerAdditionalDescription",
         "definition-en": "A partner additional description",
-        "label-en": "Partner Additional Description"
+        "label-en": "Partner Additional Description",
+        "class-usage-scope": "supportive"
       },
       "properties": []
     },
@@ -3004,7 +3014,8 @@
       "rawTags": {
         "uri": "http://data4wallonia.com/model/Post",
         "definition-en": "A post",
-        "label-en": "Post"
+        "label-en": "Post",
+        "class-usage-scope": "main"
       },
       "properties": [
         {
@@ -3944,7 +3955,8 @@
       "rawTags": {
         "uri": "http://data4wallonia.com/model/PressReview",
         "definition-en": "A press review",
-        "label-en": "press review"
+        "label-en": "press review",
+        "class-usage-scope": "main"
       },
       "properties": [
         {
@@ -4012,7 +4024,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_uri": "#String",
               "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
                 "en": "String"
@@ -4484,7 +4496,8 @@
       "rawTags": {
         "uri": "http://data4wallonia.com/model/Profile",
         "label-en": "Profile",
-        "definition-en": "A short article giving a description of a person or organization."
+        "definition-en": "A short article giving a description of a person or organization.",
+        "class-usage-scope": "main"
       },
       "properties": [
         {
@@ -5384,7 +5397,8 @@
       "rawTags": {
         "uri": "http://data4wallonia.com/model/Program",
         "label-en": "Program",
-        "definition-en": "The coordinated management of a number of related projects and other activities"
+        "definition-en": "The coordinated management of a number of related projects and other activities",
+        "class-usage-scope": "main"
       },
       "properties": [
         {
@@ -6046,25 +6060,25 @@
           ],
           "range": [
             {
-              "range_label": "Post",
-              "range_uri": "http://data4wallonia.com/model/Post"
+              "range_label": "Event",
+              "range_uri": "http://data4wallonia.com/model/Event"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Post",
-              "range_puri": "http://data4wallonia.com/model/Post",
+              "range_uri": "#Event",
+              "range_puri": "http://data4wallonia.com/model/Event",
               "range_label": {
-                "en": "Post"
+                "en": "Event"
               }
             }
           ],
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
+            "uri": "http://data4wallonia.com/model/sticky",
             "label-en": "sticky",
-            "definition-en": "A sticky",
-            "uri": "http://data4wallonia.com/model/sticky"
+            "definition-en": "A sticky"
           }
         },
         {
@@ -6086,25 +6100,25 @@
           ],
           "range": [
             {
-              "range_label": "Event",
-              "range_uri": "http://data4wallonia.com/model/Event"
+              "range_label": "Post",
+              "range_uri": "http://data4wallonia.com/model/Post"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Event",
-              "range_puri": "http://data4wallonia.com/model/Event",
+              "range_uri": "#Post",
+              "range_puri": "http://data4wallonia.com/model/Post",
               "range_label": {
-                "en": "Event"
+                "en": "Post"
               }
             }
           ],
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "http://data4wallonia.com/model/sticky",
             "label-en": "sticky",
-            "definition-en": "A sticky"
+            "definition-en": "A sticky",
+            "uri": "http://data4wallonia.com/model/sticky"
           }
         },
         {
@@ -6164,7 +6178,8 @@
       "rawTags": {
         "uri": "http://data4wallonia.com/model/QualifiedPerson",
         "label-en": "Qualified Person",
-        "definition-en": "A person with a role and profile."
+        "definition-en": "A person with a role and profile.",
+        "class-usage-scope": "main"
       },
       "properties": [
         {
@@ -6384,7 +6399,8 @@
       "rawTags": {
         "uri": "http://data4wallonia.com/model/ServicePlace",
         "definition-en": "A service place",
-        "label-en": "Services Place"
+        "label-en": "Services Place",
+        "class-usage-scope": "main"
       },
       "properties": [
         {
@@ -7136,7 +7152,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_uri": "#String",
               "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
                 "en": "String"
@@ -7328,7 +7344,8 @@
       "rawTags": {
         "definition-en": "A temporal interval or instant.",
         "label-en": "Temporal Entity",
-        "uri": "http://www.w3.org/2006/time#TemporalEntity"
+        "uri": "http://www.w3.org/2006/time#TemporalEntity",
+        "class-usage-scope": "supportive"
       },
       "properties": [
         {
@@ -7391,7 +7408,8 @@
         "definition-en": "A spatial object that in a human-readable way identifies a fixed location.",
         "label-en": "Address",
         "uri": "http://www.w3.org/ns/locn#Address",
-        "usageNote-en": "<p>\r\nAn \"address representation\" as conceptually defined by the <a href=\"https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/ScopeObjectDetail.action?objectDetailId=9353\r\n\">INSPIRE Address Representation data type</a>: \"Representation of an address spatial object for use in external application schemas that need to include the basic, address information in a readable way.\"\r\n</p></br>\r\n\r\n<p>\r\nThe representation of Addresses varies widely from one country's postal system to another. Even within countries, there are almost always examples of Addresses that do not conform to the stated national standard. However, <a href=\"https://www.iso.org/standard/61710.html\">ISO 19160-1</a> provides a method through which different Addresses can be converted from one conceptual model to another.\r\n</p></br>\r\n\r\n<p>\r\nThis specification was heavily based on the INSPIRE Address Representation data type. It is noteworthy that if an Address is provided using the detailed breakdown suggested by the properties for this class, then it will be INSPIRE-conformant. To this very granular set of\r\nproperties, we add two further properties:\r\n<ul>\r\n  <li> full address (the complete address as a formatted string)</li>\r\n  <li> addressID (a unique identifier for the address)</li>\r\n</ul>\r\nThe first of these allows publishers to simply provide the complete Address as one string, with or without formatting. This is analogous to <a href=\"https://www.w3.org/TR/vcard-rdf/#d4e953\">vCard's label property</a>.\r\n</p></br>\r\n\r\n<p>\r\nThe addressID is part of the <a href=\"https://knowledge-base.inspire.ec.europa.eu/index_en\">INSPIRE guidelines</a> and provides a hook that can be used to link the Address to an alternative representation, such as <a href=\"https://www.w3.org/TR/vcard-rdf\">vCard</a> or <a href=\"https://www.oasis-open.org/committees/ciq/ciq.html#6\">OASIS xAL</a>.\r\n</p></br>\r\n\r\nThis class belongs to <a href=\"https://semiceu.github.io/Core-Location-Vocabulary/releases/2.00/#Address\">Core Location Vocabulary</a>"
+        "usageNote-en": "<p>\r\nAn \"address representation\" as conceptually defined by the <a href=\"https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/ScopeObjectDetail.action?objectDetailId=9353\r\n\">INSPIRE Address Representation data type</a>: \"Representation of an address spatial object for use in external application schemas that need to include the basic, address information in a readable way.\"\r\n</p></br>\r\n\r\n<p>\r\nThe representation of Addresses varies widely from one country's postal system to another. Even within countries, there are almost always examples of Addresses that do not conform to the stated national standard. However, <a href=\"https://www.iso.org/standard/61710.html\">ISO 19160-1</a> provides a method through which different Addresses can be converted from one conceptual model to another.\r\n</p></br>\r\n\r\n<p>\r\nThis specification was heavily based on the INSPIRE Address Representation data type. It is noteworthy that if an Address is provided using the detailed breakdown suggested by the properties for this class, then it will be INSPIRE-conformant. To this very granular set of\r\nproperties, we add two further properties:\r\n<ul>\r\n  <li> full address (the complete address as a formatted string)</li>\r\n  <li> addressID (a unique identifier for the address)</li>\r\n</ul>\r\nThe first of these allows publishers to simply provide the complete Address as one string, with or without formatting. This is analogous to <a href=\"https://www.w3.org/TR/vcard-rdf/#d4e953\">vCard's label property</a>.\r\n</p></br>\r\n\r\n<p>\r\nThe addressID is part of the <a href=\"https://knowledge-base.inspire.ec.europa.eu/index_en\">INSPIRE guidelines</a> and provides a hook that can be used to link the Address to an alternative representation, such as <a href=\"https://www.w3.org/TR/vcard-rdf\">vCard</a> or <a href=\"https://www.oasis-open.org/committees/ciq/ciq.html#6\">OASIS xAL</a>.\r\n</p></br>\r\n\r\nThis class belongs to <a href=\"https://semiceu.github.io/Core-Location-Vocabulary/releases/2.00/#Address\">Core Location Vocabulary</a>",
+        "class-usage-scope": "supportive"
       },
       "properties": []
     },
@@ -8163,6 +8181,27 @@
         "definition-en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat",
         "label-en": "Double",
         "uri": "http://www.w3.org/2001/XMLSchema#double"
+      },
+      "properties": []
+    },
+    {
+      "uri": "http://www.w3.org/2001/XMLSchema#double",
+      "name": "String",
+      "label": {
+        "en": "String"
+      },
+      "sort": "String",
+      "description": {
+        "en": "The string datatype represents character strings in XML. The ·value space· of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ·match· the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer."
+      },
+      "usage": {},
+      "parents": [],
+      "rawTags": {
+        "definition-en": "The string datatype represents character strings in XML. The ·value space· of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ·match· the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer.",
+        "label-en": "String",
+        "uri": "http://www.w3.org/2001/XMLSchema#double",
+        "class-usage-scope": "datatype",
+        "literal": "true"
       },
       "properties": []
     },
