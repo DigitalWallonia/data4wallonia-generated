@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/536f5d5371958329c10dfc3674f0fbd20454f012",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/536f5d5371958329c10dfc3674f0fbd20454f012/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/84445393fbf046fd497e8bf7415e047385eb7fd6",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/84445393fbf046fd497e8bf7415e047385eb7fd6/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-Generic/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -981,7 +981,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_uri": "#Boolean",
               "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
               "range_label": {
                 "en": "Boolean"
@@ -2682,7 +2682,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_uri": "#Boolean",
               "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
               "range_label": {
                 "en": "Boolean"
@@ -6327,7 +6327,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_uri": "#Boolean",
               "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
               "range_label": {
                 "en": "Boolean"
@@ -7072,7 +7072,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_uri": "#Boolean",
               "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
               "range_label": {
                 "en": "Boolean"
@@ -7192,7 +7192,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_uri": "#Boolean",
               "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
               "range_label": {
                 "en": "Boolean"
@@ -7424,7 +7424,7 @@
         "en": "A individual human being who may be dead or alive,but not imaginary."
       },
       "usage": {
-        "en": "The fact that a person in the context of Core Person Vocabulary cannot be imaginary makes person:Person a subclass of foaf:Person which cover imaginary characters as well as real people. The Person Class is a subclass of the more general <a href=\"#Agent\">'Agent' class</a>."
+        "en": "The fact that a person in the context of Core Person Vocabulary cannot be imaginary makes person:Person a subclass of foaf:Person which cover imaginary characters as well as real people. The Person Class is a subclass of the more general <a href=\"http://xmlns.com/foaf/spec/#term_Agent\">'Agent' class</a>."
       },
       "parents": [],
       "rawTags": {
@@ -7432,7 +7432,7 @@
         "definition-en": "A individual human being who may be dead or alive,but not imaginary.",
         "label-en": "Person",
         "uri": "http://www.w3.org/ns/person#Person",
-        "usageNote-en": "The fact that a person in the context of Core Person Vocabulary cannot be imaginary makes person:Person a subclass of foaf:Person which cover imaginary characters as well as real people. The Person Class is a subclass of the more general <a href=\"#Agent\">'Agent' class</a>."
+        "usageNote-en": "The fact that a person in the context of Core Person Vocabulary cannot be imaginary makes person:Person a subclass of foaf:Person which cover imaginary characters as well as real people. The Person Class is a subclass of the more general <a href=\"http://xmlns.com/foaf/spec/#term_Agent\">'Agent' class</a>."
       },
       "properties": [
         {
@@ -7663,7 +7663,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_uri": "#Boolean",
               "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
               "range_label": {
                 "en": "Boolean"
@@ -8141,6 +8141,25 @@
         "definition-en": "The class of literal values, eg. textual strings and integers.",
         "literal": "true",
         "class-usage-scope": "datatype"
+      },
+      "properties": []
+    },
+    {
+      "uri": "http://www.w3.org/2001/XMLSchema#boolean",
+      "name": "Boolean",
+      "label": {
+        "en": "Boolean"
+      },
+      "sort": "Boolean",
+      "description": {
+        "en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat"
+      },
+      "usage": {},
+      "parents": [],
+      "rawTags": {
+        "definition-en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat",
+        "label-en": "Boolean",
+        "uri": "http://www.w3.org/2001/XMLSchema#boolean"
       },
       "properties": []
     },

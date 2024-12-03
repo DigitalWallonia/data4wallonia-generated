@@ -18,6 +18,7 @@
   <xs:element name="ServicesPlace" type="ServicesPlaceType"/>
   <xs:element name="Text" type="TextType"/>
   <xs:element name="Literal" type="LiteralType"/>
+  <xs:element name="Boolean" type="BooleanType"/>
   <xs:element name="Date" type="DateType"/>
   <xs:element name="Double" type="DoubleType"/>
   <xs:element name="String" type="StringType"/>
@@ -1066,6 +1067,14 @@
     <xs:attribute name="LiteralRef" type="xs:IDREF">
       <xs:annotation>
         <xs:documentation xml:lang="en">Reference to Literal ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="BooleanType">
+    <xs:sequence/>
+    <xs:attribute name="BooleanRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Boolean ID</xs:documentation>
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
