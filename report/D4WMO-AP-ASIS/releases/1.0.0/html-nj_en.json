@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/6403fba0662c7117b100f79c612334f96ee8cd55",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/6403fba0662c7117b100f79c612334f96ee8cd55/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/5c7eb4ce626385b2e31aaa82c61f4c9893c6d9e5",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/5c7eb4ce626385b2e31aaa82c61f4c9893c6d9e5/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -1485,14 +1485,14 @@
           }
         },
         {
-          "uri": "http://data4wallonia.com/model/wallonRegionConvetionNumber",
-          "name": "wallonRegionConvetionNumber",
-          "sort": "wallon region convetion number",
+          "uri": "http://data4wallonia.com/model/wallonRegionConventionNumber",
+          "name": "wallonRegionConventionNumber",
+          "sort": "wallon region convention number",
           "label": {
-            "en": "wallon region convetion number"
+            "en": "wallon region convention number"
           },
           "description": {
-            "en": "A wallon region convetion number"
+            "en": "A wallon region convention number"
           },
           "usage": {},
           "domain": [
@@ -1519,9 +1519,9 @@
           "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "http://data4wallonia.com/model/wallonRegionConvetionNumber",
-            "definition-en": "A wallon region convetion number",
-            "label-en": "wallon region convetion number"
+            "uri": "http://data4wallonia.com/model/wallonRegionConventionNumber",
+            "definition-en": "A wallon region convention number",
+            "label-en": "wallon region convention number"
           }
         },
         {
@@ -1622,7 +1622,7 @@
         "uri": "http://data4wallonia.com/model/Ambition",
         "definition-en": "An ambition",
         "label-en": "Ambition",
-        "class-usage-scope": "main"
+        "class-usage-scope": "supportive"
       },
       "properties": []
     },
@@ -6015,25 +6015,25 @@
           ],
           "range": [
             {
-              "range_label": "Post",
-              "range_uri": "http://data4wallonia.com/model/Post"
+              "range_label": "Event",
+              "range_uri": "http://data4wallonia.com/model/Event"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Post",
-              "range_puri": "http://data4wallonia.com/model/Post",
+              "range_uri": "#Event",
+              "range_puri": "http://data4wallonia.com/model/Event",
               "range_label": {
-                "en": "Post"
+                "en": "Event"
               }
             }
           ],
           "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
+            "uri": "http://data4wallonia.com/model/sticky",
             "label-en": "sticky",
-            "definition-en": "A sticky",
-            "uri": "http://data4wallonia.com/model/sticky"
+            "definition-en": "A sticky"
           }
         },
         {
@@ -6055,25 +6055,25 @@
           ],
           "range": [
             {
-              "range_label": "Event",
-              "range_uri": "http://data4wallonia.com/model/Event"
+              "range_label": "Post",
+              "range_uri": "http://data4wallonia.com/model/Post"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Event",
-              "range_puri": "http://data4wallonia.com/model/Event",
+              "range_uri": "#Post",
+              "range_puri": "http://data4wallonia.com/model/Post",
               "range_label": {
-                "en": "Event"
+                "en": "Post"
               }
             }
           ],
           "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "http://data4wallonia.com/model/sticky",
             "label-en": "sticky",
-            "definition-en": "A sticky"
+            "definition-en": "A sticky",
+            "uri": "http://data4wallonia.com/model/sticky"
           }
         },
         {
@@ -8232,12 +8232,12 @@
       },
       "sort": "Boolean",
       "description": {
-        "en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat"
+        "en": "Boolean has the ·value space· required to support the mathematical concept of binary-valued logic: {true, false}."
       },
       "usage": {},
       "parents": [],
       "rawTags": {
-        "definition-en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat",
+        "definition-en": "Boolean has the ·value space· required to support the mathematical concept of binary-valued logic: {true, false}.",
         "label-en": "Boolean",
         "uri": "http://www.w3.org/2001/XMLSchema#boolean",
         "class-usage-scope": "datatype",
@@ -8274,12 +8274,12 @@
       },
       "sort": "Double",
       "description": {
-        "en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat"
+        "en": "Decimal represents a subset of the real numbers, which can be represented by decimal numerals. The ·value space· of decimal is the set of numbers that can be obtained by multiplying an integer by a non-positive power of ten, i.e., expressible as i × 10^-n where i and n are integers and n >= 0. Precision is not reflected in this value space; the number 2.0 is not distinct from the number 2.00. The ·order-relation· on decimal is the order relation on real numbers, restricted to this subset."
       },
       "usage": {},
       "parents": [],
       "rawTags": {
-        "definition-en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat",
+        "definition-en": "Decimal represents a subset of the real numbers, which can be represented by decimal numerals. The ·value space· of decimal is the set of numbers that can be obtained by multiplying an integer by a non-positive power of ten, i.e., expressible as i × 10^-n where i and n are integers and n >= 0. Precision is not reflected in this value space; the number 2.0 is not distinct from the number 2.00. The ·order-relation· on decimal is the order relation on real numbers, restricted to this subset.",
         "label-en": "Double",
         "uri": "http://www.w3.org/2001/XMLSchema#double",
         "class-usage-scope": "datatype",
@@ -8316,12 +8316,12 @@
       },
       "sort": "Integer",
       "description": {
-        "en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat"
+        "en": "Integer is ·derived· from decimal by fixing the value of ·fractionDigits· to be 0and disallowing the trailing decimal point. This results in the standard mathematical concept of the integer numbers. The ·value space· of integer is the infinite set {...,-2,-1,0,1,2,...}. The ·base type· of integer is decimal."
       },
       "usage": {},
       "parents": [],
       "rawTags": {
-        "definition-en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat",
+        "definition-en": "Integer is ·derived· from decimal by fixing the value of ·fractionDigits· to be 0and disallowing the trailing decimal point. This results in the standard mathematical concept of the integer numbers. The ·value space· of integer is the infinite set {...,-2,-1,0,1,2,...}. The ·base type· of integer is decimal.",
         "label-en": "Integer",
         "uri": "http://www.w3.org/2001/XMLSchema#integer",
         "class-usage-scope": "datatype",
