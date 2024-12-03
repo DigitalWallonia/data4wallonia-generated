@@ -49,22 +49,22 @@
     var respecConfig = {
       postProcess: [quickreference],
       edDraftURI: "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/",
-      latestVersion: "https://DigitalWallonia.github.io/data4wallonia-generated/D4WTA-AP/releases/1.0.0",
+      latestVersion: "https://digitalwallonia.github.io/data4wallonia-generated/D4WTA-AP/releases/1.0.0",
       specStatus: "LD",
       publishDate: "2024-09-04",
       editors: myeditors,
       authors: myauthors,
-      github: "EmidioStani/data4wallonia-generated",
+      github: "DigitalWallonia/data4wallonia-generated",
       shortName: "Data4Wallonia Taxonomy Application Profile (D4WTA-AP)",
       xref: "web-platform",
       doJsonLd: true,
       logos: [{
-        src: "https://DigitalWallonia.github.io/data4wallonia-generated/D4WTA-AP/releases/1.0.0/html/semic-icon.png",
+        src: "https://DigitalWallonia.github.io/data4wallonia-generated/D4WTA-AP/releases/1.0.0/html/d4w-icon.png",
         url: "https://d4w-digitalwallonia.opendatasoft.com/pages/home/",
         alt: "Data4Wallonia",
         width: 154,
         height: 140,
-        id: "semic-logo",
+        id: "d4w-logo",
       },],
       generatedSubtitle: "",
       additionalCopyrightHolders: "",
@@ -256,19 +256,24 @@ This specification uses the following prefixes to shorten the URIs for readabili
 			      <a href="#Concept">Concept</a> |
 			      <a href="#ConceptScheme">Concept Scheme</a> |
                         </p>
+                        <p>
+                            The main entities are supported by:
+                            <br />
+                            |
+                        </p>
                 
                 
                         <p>
-                            The main entities are supported by these datatypes:
+                            And supported by these datatypes:
                             <br />
                             | <a href="#Date">Date</a> | <a href="#String">String</a> | <a href="#Text">Text</a> |
                         </p>
                 
     </div>
     <div>
-        <a href="https://DigitalWallonia.github.io/data4wallonia-generated/D4WTA-AP/releases/1.0.0/html/overview.jpg"
+        <a href="https://digitalwallonia.github.io/data4wallonia-generated/D4WTA-AP/releases/1.0.0/html/overview.jpg"
            target="_blank">
-            <img src="https://DigitalWallonia.github.io/data4wallonia-generated/D4WTA-AP/releases/1.0.0/html/overview.jpg"/>
+            <img src="https://digitalwallonia.github.io/data4wallonia-generated/D4WTA-AP/releases/1.0.0/html/overview.jpg"/>
         </a>
     </div>
 </section>
@@ -1347,6 +1352,22 @@ Labels should not contain special characters such as & - ( ) \ or /.
 
 </section>
 
+<section>
+<h2>
+   Supportive Entities
+</h2>
+The supportive entities are supporting the main entities in the Application Profile. 
+They are included in the Application Profile because they form the range of properties.
+
+
+
+
+
+
+
+
+</section>
+
     <section>
         <h2>
             Datatypes
@@ -1465,96 +1486,16 @@ Labels should not contain special characters such as & - ( ) \ or /.
 
 <section class="informative">
 	<h2>Usage Guidelines</h2>
-    <section class="informative">
-<h2>Governance</h2>
-
-<h3>Versioning governance</h3>
-All specifications produced in Data4Wallonia will follow the versioning rule described by the SEMIC Style Guide rule 
-<a href="https://semiceu.github.io/style-guide/1.0.0/gc-publication-conventions.html#sec:pc-r3">PC-R3</a>.
-<p/>
-The serialisation will have:
-<ul>
-<li>a dct:isReplacedBy referencing the new assets used instead and</li>
-<li> an euvoc:status  indicating its deprecated <a href="http://publications.europa.eu/resource/authority/concept-status/DEPRECATED">status</a>.</li>
-</ul>
-<p/>
-
-<h3>Lexicalisation rules</h3>
-
-In order to adhere to the SEMIC Style Guide rule <a href="https://semiceu.github.io/style-guide/1.0.0/gc-semantic-conventions.html#sec:sc-r3">SC-R3</a> a specification requires formal lexicalisation rules.
-The Style Guide proposes two options either by using RDFS or SKOS lexicalisation.
-<p/>
-Data4Wallonia uses and will use the SKOS lexicalisation for the taxonomy at least. More specifically:
-<ul>
-<li> skos:preflabel is used to provide a human-readable version of a resource's name.</li>
-<li> skos:altLabel is used to provide an alternative human-readable version of a resource's name.</li>
-</ul>
-
-</section>
-    <section class="informative">
-  <h2>Support for implementation</h2>
-
-The following section provides support for implementing the Data4Wallonia Taxonomy Application Profile (D4WTA-AP).
-<p/>
-
-<h3>JSON-LD context file</h3>
-
-One common technical question is the format in which the data is being exchanged. 
-For conformance with the Data4Wallonia Taxonomy Application Profile (D4WTA-AP), it is not mandatory that this happens in an RDF serialisation, but the exchanged format SHOULD be unambiguously transformable into RDF.
-For the format JSON, a popular format to exchange data between systems, SEMIC provides a <a href="./context/d4wta-ap.jsonld">JSON-LD context file</a>. 
-JSON-LD is a W3C Recommendation [[[json-ld11]]] that provided a standard approach to interpret JSON structures as RDF.
-The provided JSON-LD context file can be used by implementers.
-This JSON-LD context is not normative, i.e. other JSON-LD contexts are allowed.
-<p/>
-The JSON-LD context file downloadable <a href="./context/d4wta-ap.jsonld">here</a>.
-<p/>
-
-<h3>Validation</h3>
-
-To verify if the data is (technically) conformant to the Data4Wallonia Taxonomy Application Profile (D4WTA-AP), the exchanged data can be validated using the provided SHACL shapes. 
-SHACL is a W3C Recommendation to express constraints on an RDF knowledge graph. 
-<p/>
-To support the check whether or not a catalogue satisfies the expressed constraints in this Application Profile, the constraints in this specification are expressed using SHACL [[shacl]].
-Each constraint in this specification that could be converted into a SHACL expression has been included.
-As such this collection of SHACL expressions that can be used to build a validation check for data. 
-<p/>
-It is up to the implementers to define the validation they expect.
-Each implementation happens within a context, and that context is beyond the SHACL expressions here.
-<p/>
-The shapes can be found <a href="./shacl/d4wta-ap-SHACL.ttl">here</a>.
-
-<!--
-<h3>RDF representation</h3>
-The RDF representation of the Data4Wallonia Taxonomy Application Profile (D4WTA-AP) is available <a href="./rdf/d4wta-ap.ttl">here</a>.
-
-<h3>UML representation</h3>
-The UML representation from which the Data4Wallonia Taxonomy Application Profile (D4WTA-AP) has been build is available <a href="./UML">here</a>.
-
-
-<h3>Mapping</h3>
-A mapping towards Schema.org can be found <a href="https://github.com/SEMICeu/Semantic-Mappings/tree/main/Core%20Location">here</a>
-<p/>
--->
-
-</section>
+    
+    
 </section>
  
-
-<section class="informative">
-    <h2> Additional constraints </h2>
-        
-Additional shapes can be found: 
-<ul>
-<li><a href="./html/additional-shapes/skos-shapes.ttl">skos-shapes.ttl</a> for generic skos validation (conceptscheme disjoint from concept, unique labels per language) </li>
-<li><a href="./html/additional-shapes/skos-best-practices-shapes.ttl">skos-best-practices-shapes.ttl</a> to apply best practices (no empty or overlapping labels)</li>
-<li><a href="./html/additional-shapes/skos-d4w-shapes.ttl">skos-d4w-shapes.ttl</a> to apply requirements for Data4Wallonia (labels at least in French and optional in English)</li>
-</ul>
-
-</section>
 
 
 
  
+
+
 
 <section id="quick-reference" class="appendix">
 
@@ -1881,12 +1822,38 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 
 
 	    var prefixes = [ 
+{'pref':'adms:', 'ns': 'http://www.w3.org/ns/adms#'},
+{'pref':'d4w:', 'ns': 'http://data4wallonia.com/model/'},
+{'pref':'dcat:', 'ns': 'http://www.w3.org/ns/dcat#'},
+{'pref':'dcatap:', 'ns': 'http://data.europa.eu/r5r/'},
 {'pref':'dct:', 'ns': 'http://purl.org/dc/terms/'},
-{'pref':'euvoc', 'ns': 'http://publications.europa.eu/ontology/euvoc'},
+{'pref':'dctype:', 'ns': 'http://purl.org/dc/dcmitype/'},
+{'pref':'cpsv:', 'ns': 'http://purl.org/vocab/cpsv#'},
+{'pref':'foaf:', 'ns': 'http://xmlns.com/foaf/0.1/'},
+{'pref':'locn:', 'ns': 'http://www.w3.org/ns/locn#'},
+{'pref':'odrl:', 'ns': 'http://www.w3.org/ns/odrl/2/'},
 {'pref':'owl:', 'ns': 'http://www.w3.org/2002/07/owl#'},
+{'pref':'prov:', 'ns': 'http://www.w3.org/ns/prov#'},
 {'pref':'rdf:', 'ns': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'},
+{'pref':'rdfs:', 'ns': 'http://www.w3.org/2000/01/rdf-schema#'},
 {'pref':'skos:', 'ns': 'http://www.w3.org/2004/02/skos/core#'},
-{'pref':'xsd:', 'ns': 'http://www.w3.org/2001/XMLSchema#'}
+{'pref':'spdx:', 'ns': 'http://spdx.org/rdf/terms#'},
+{'pref':'time:', 'ns': 'http://www.w3.org/2006/time#'},
+{'pref':'vcard:', 'ns': 'http://www.w3.org/2006/vcard/ns#'},
+{'pref':'eli:', 'ns' : 'http://data.europa.eu/eli/ontology#'},
+{'pref':'xsd:', 'ns': 'http://www.w3.org/2001/XMLSchema#'},
+{'pref':'ad:', 'ns': 'http://inspire.ec.europa.eu/ont/ad#'},
+{'pref':'cv:', 'ns': 'http://data.europa.eu/m8g/'},
+{'pref':'geo:', 'ns': 'http://www.opengis.net/ont/geosparql#'},
+{'pref':'schema:', 'ns': 'https://schema.org/'},
+{'pref':'org:', 'ns': 'http://www.w3.org/ns/org#'},
+{'pref':'person:', 'ns': 'http://www.w3.org/ns/person#'},
+{'pref':'legal:', 'ns': 'http://www.w3.org/ns/legal#'},
+{'pref':'atu:', 'ns': 'http://data.europa.eu/88u/dataset/'},
+{'pref':'xhv:', 'ns': 'http://www.w3.org/1999/xhtml/vocab#'},
+{'pref':'epo:', 'ns': 'http://data.europa.eu/a4g/ontology#'},
+
+
 				];
 
 	    function shorturl (url) {
