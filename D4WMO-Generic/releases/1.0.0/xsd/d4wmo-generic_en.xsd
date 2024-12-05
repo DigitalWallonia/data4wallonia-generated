@@ -3,6 +3,7 @@
   <xs:element name="ContactPoint" type="ContactPointType"/>
   <xs:element name="Cost" type="CostType"/>
   <xs:element name="ImageObject" type="ImageObjectType"/>
+  <xs:element name="ImageObject" type="ImageObjectType"/>
   <xs:element name="ActionPlan" type="ActionPlanType"/>
   <xs:element name="ActionPlanProfile" type="ActionPlanProfileType"/>
   <xs:element name="Ambition" type="AmbitionType"/>
@@ -25,7 +26,10 @@
   <xs:element name="Integer" type="IntegerType"/>
   <xs:element name="Code" type="CodeType"/>
   <xs:element name="TemporalEntity" type="TemporalEntityType"/>
+  <xs:element name="Identifier" type="IdentifierType"/>
+  <xs:element name="LegalEntity" type="LegalEntityType"/>
   <xs:element name="Address" type="AddressType"/>
+  <xs:element name="Geometry" type="GeometryType"/>
   <xs:element name="Person" type="PersonType"/>
   <xs:element name="Document" type="DocumentType"/>
   <xs:simpleType name="Literal">
@@ -63,14 +67,9 @@
           <xs:documentation xml:lang="en">An non featured email</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="landLine" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="hasTelehpone" type="xs:string" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="en">A landline number</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="mobile" type="xs:string" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A mobile number</xs:documentation>
+          <xs:documentation xml:lang="en">A telephone number through which the Contact Point can be contacted.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="socialNetwork" type="xs:string" maxOccurs="unbounded" minOccurs="0">
@@ -106,6 +105,14 @@
     <xs:attribute name="CostRef" type="xs:IDREF">
       <xs:annotation>
         <xs:documentation xml:lang="en">Reference to Cost ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="ImageObjectType">
+    <xs:sequence/>
+    <xs:attribute name="ImageObjectRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to ImageObject ID</xs:documentation>
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
@@ -908,6 +915,11 @@
           <xs:documentation xml:lang="en">The profile to which the person belongs to.</xs:documentation>
         </xs:annotation>
       </xs:element>
+      <xs:element name="headOf" ref="LegalEntityType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Indicates that a person (or other agent) is the leader or formal head of the Organization.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="internalName" type="xs:string" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">An internal name</xs:documentation>
@@ -1132,6 +1144,144 @@
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
+  <xs:complexType name="IdentifierType">
+    <xs:sequence>
+      <xs:element name="dateOfIssue" type="xs:date" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The date on which the Identifier was assigned.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="notation" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A string of characters to uniquely identify a concept.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="schemaAgency" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The name of the agency that issued the identifier.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="schemeName" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Name of the scheme used to construct the identifier.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="schemeUri" type="xs:anyURI" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">URI of the scheme used to construct the identifier.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="IdentifierRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Identifier ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="LegalEntityType">
+    <xs:sequence>
+      <xs:element name="s3Thema" type="ConceptType" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">S3 thema related to the entity</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="activeEntity" type="xs:boolean" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Defines the activity status of the entity</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="activityDescription" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Description of the activity of the entity</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="activityNature" type="ConceptType" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Nature of the activity of the entity</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="classification" type="ConceptType" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Indicates a classification for this Organization within some classification scheme.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="identifier" ref="IdentifierType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The unambiguous structured reference for the Legal Entity, which is different from the one denoting its legal status</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="legalEntityActivity" type="ConceptType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The area of work in which the Legal Entity is engaged.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="legalEntityStatus" type="ConceptType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Information about the viability of the current position of the legal entity.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="legalFormType" type="ConceptType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The classification of the Legal Entity as a member of a particular group in the context of legal registration.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="legalName" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The name under which the Legal Entity is legally registered.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="logo" ref="ImageObjectType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A logo</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="mainNaceCode" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A main NACE code</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="market" type="ConceptType" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Market of the entity</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="memberOf" ref="LegalEntityType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="numroDtablissement" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="purpose" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Indicates the purpose of this Organization. There can be many purposes at different levels of abstraction but the nature of an organization is to have a reason for existence and this property is a means to document that reason. An Organization may have mu</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="registeredAddress" ref="AddressType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The address at which the Legal Entity is legally registered</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="registrationDate" type="xs:date" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The date on which the legal entity has registered in some jurisdiction for regulatory and / or for tax purposes.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="unitOf" ref="LegalEntityType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="LegalEntityRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to LegalEntity ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
   <xs:complexType name="AddressType">
     <xs:sequence>
       <xs:element name="administrativeUnitLevel1" type="xs:string" maxOccurs="unbounded" minOccurs="0">
@@ -1144,24 +1294,19 @@
           <xs:documentation xml:lang="en">The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities.</xs:documentation>
         </xs:annotation>
       </xs:element>
+      <xs:element name="continent" type="ConceptType" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Name of the continent</xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="fullAddress" type="xs:string" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">The complete address written as a string.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="latitude" type="xs:string" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">The geographic coordinate that specifies the north / south position of the Geomerty on the Earth's surface.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
       <xs:element name="locatorDesignator" type="xs:string" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A number or sequence of characters that uniquely identifies the locator within the relevant scope.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="longitude" type="xs:string" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">The geographic coordinate that specifies the east / west position of the Geometry on the Earth's surface.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="postCode" type="xs:string" maxOccurs="unbounded" minOccurs="0">
@@ -1178,6 +1323,25 @@
     <xs:attribute name="AddressRef" type="xs:IDREF">
       <xs:annotation>
         <xs:documentation xml:lang="en">Reference to Address ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="GeometryType">
+    <xs:sequence>
+      <xs:element name="latitude" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The geographic coordinate that specifies the north / south position of the Geomerty on the Earth's surface.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="longitude" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The geographic coordinate that specifies the east / west position of the Geometry on the Earth's surface.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="GeometryRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Geometry ID</xs:documentation>
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>

@@ -45,11 +45,6 @@
     "ImageObject": "http://data.europa.eu/m8g/ImageObject",
     "Integer": "http://www.w3.org/2001/XMLSchema#integer",
     "LegalEntity": "http://www.w3.org/ns/legal#LegalEntity",
-    "LegalEntity.null": {
-      "@container": "@set",
-      "@id": "https://www.w3.org/ns/org#unitOf",
-      "@type": "@id"
-    },
     "Literal": "http://www.w3.org/2000/01/rdf-schema#Literal",
     "PartnerAdditionalDescription": "http://data4wallonia.com/model/PartnerAdditionalDescription",
     "Person": "http://www.w3.org/ns/person#Person",
@@ -133,11 +128,6 @@
       "@id": "http://data4wallonia.com/model/internalName",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
-    "QualifiedPerson.null": {
-      "@container": "@set",
-      "@id": "https://www.w3.org/ns/org#headOf",
-      "@type": "@id"
-    },
     "S3Thema": {
       "@id": "http://data4wallonia.com/model/S3Thema",
       "@type": "@id"
@@ -162,15 +152,15 @@
       "@type": "@id"
     },
     "activeEntity": {
-      "@id": "https://d4w-digitalwallonia.opendatasoft.com/entiteActive",
+      "@id": "http://data4wallonia.com/model/activeEntity",
       "@type": "http://www.w3.org/2001/XMLSchema#boolean"
     },
     "activityDescription": {
-      "@id": "https://d4w-digitalwallonia.opendatasoft.com/activityDescription",
+      "@id": "http://data4wallonia.com/model/activityDescription",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "activityNature": {
-      "@id": "https://d4w-digitalwallonia.opendatasoft.com/activityNature",
+      "@id": "http://data4wallonia.com/model/activityNature",
       "@type": "@id"
     },
     "additionaInformaitonOnSupport": {
@@ -308,7 +298,7 @@
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "continent": {
-      "@id": "https://d4w-digitalwallonia.opendatasoft.com/continent",
+      "@id": "http://data4wallonia.com/model/continent",
       "@type": "@id"
     },
     "currency": {
@@ -408,6 +398,11 @@
       "@container": "@set",
       "@id": "http://data.europa.eu/m8g/telephone"
     },
+    "headOf": {
+      "@container": "@set",
+      "@id": "https://www.w3.org/ns/org#headOf",
+      "@type": "@id"
+    },
     "host": {
       "@container": "@set",
       "@id": "http://data4wallonia.com/model/host",
@@ -417,6 +412,11 @@
       "@container": "@set",
       "@id": "http://data4wallonia.com/model/idForAccounting",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "identifier": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/adms#identifier",
+      "@type": "@id"
     },
     "image": {
       "@container": "@set",
@@ -527,7 +527,7 @@
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "market": {
-      "@id": "https://d4w-digitalwallonia.opendatasoft.com/market",
+      "@id": "http://data4wallonia.com/model/market",
       "@type": "@id"
     },
     "marketingShortDescription": {
@@ -547,7 +547,7 @@
     },
     "memberOf": {
       "@container": "@set",
-      "@id": "http://data.europa.eu/m8g/memberOf",
+      "@id": "https://www.w3.org/ns/org#memberOf",
       "@type": "@id"
     },
     "moreRecentPost": {
@@ -634,7 +634,7 @@
     },
     "postCode": {
       "@container": "@set",
-      "@id": "https://www.w3.org/ns/legacy_locn#postCode"
+      "@id": "http://www.w3.org/ns/locn#postCode"
     },
     "postName": {
       "@container": "@set",
@@ -698,6 +698,11 @@
     "referenceWebSite": {
       "@container": "@set",
       "@id": "http://data4wallonia.com/model/referenceWebSite",
+      "@type": "@id"
+    },
+    "registeredAddress": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/registeredAddress",
       "@type": "@id"
     },
     "registrationDate": {
@@ -845,7 +850,7 @@
     },
     "unitOf": {
       "@container": "@set",
-      "@id": "http://data.europa.eu/m8g/unitOf",
+      "@id": "https://www.w3.org/ns/org#unitOf",
       "@type": "@id"
     },
     "value": {

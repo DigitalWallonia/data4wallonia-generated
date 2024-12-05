@@ -1991,7 +1991,7 @@
       "extra": {
         "EA-Name": "Address",
         "EA-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
-        "EA-Package": "d4w",
+        "EA-Package": "locn",
         "EA-Type": "CLASS",
         "EA-Parents": "",
         "EA-Parents2": [],
@@ -2141,7 +2141,7 @@
       "extra": {
         "EA-Name": "Person",
         "EA-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
-        "EA-Package": "d4w",
+        "EA-Package": "cv",
         "EA-Type": "CLASS",
         "EA-Parents": "",
         "EA-Parents2": [],
@@ -2349,7 +2349,7 @@
       "@id": "http://data.europa.eu/m8g/contactPoint",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "name": "contactPoint",
-      "inpackage": "UNKNOWN",
+      "inpackage": "OTHER_PACKAGE",
       "ap-definition-en": {
         "en": "The main contact information of the resource."
       },
@@ -2902,63 +2902,6 @@
       "maxCardinality": "*"
     },
     {
-      "@id": "http://data.europa.eu/m8g/memberOf",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "",
-      "inpackage": "OTHER_PACKAGE",
-      "ap-definition-en": {
-        "en": "TODO"
-      },
-      "extra": {
-        "EA-Name": "memberOf",
-        "EA-Guid": "{05865229-3887-46ad-8BDB-DB3CA4DBE1BB}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "LegalEntity",
-        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-        "EA-Range": "LegalEntity",
-        "RangeData": {
-          "EA-Name": "LegalEntity",
-          "EA-GUID": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-          "EA-Package": "cv",
-          "uri": "http://www.w3.org/ns/legal#LegalEntity"
-        },
-        "sourceRole": "null",
-        "destRole": "memberOf",
-        "label": "",
-        "definition": "",
-        "usage": "",
-        "ap-label-en": "",
-        "ap-definition-en": {
-          "en": "TODO"
-        },
-        "ap-usageNote-en": "",
-        "ap-codelist": "",
-        "RawTags": [],
-        "DestRoleTags": [],
-        "Scope": "NOTHING"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "http://www.w3.org/ns/legal#LegalEntity",
-          "EA-Name": "LegalEntity"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "LegalEntity",
-          "EA-GUID": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-          "EA-Package": "cv",
-          "uri": "http://www.w3.org/ns/legal#LegalEntity"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "0",
-      "maxCardinality": "*"
-    },
-    {
       "@id": "http://data.europa.eu/m8g/openingHours",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "name": "openingHours",
@@ -3296,7 +3239,7 @@
         "en": "registered address"
       },
       "extra": {
-        "EA-Name": "null",
+        "EA-Name": "registeredAddress",
         "EA-Guid": "{6E66AFA5-A338-4e3e-8729-D4423BD68EEB}",
         "derived": "false",
         "EA-Package": "",
@@ -3307,7 +3250,7 @@
         "RangeData": {
           "EA-Name": "Address",
           "EA-GUID": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
-          "EA-Package": "d4w",
+          "EA-Package": "locn",
           "uri": "http://www.w3.org/ns/locn#Address"
         },
         "sourceRole": "null",
@@ -3331,27 +3274,48 @@
         "ap-codelist": "",
         "RawTags": [
           {
-            "key": "label-en",
-            "value": "registered address",
-            "note": "null"
-          },
-          {
-            "key": "definition-en",
-            "value": "The address at which the Legal Entity is legally registered",
-            "note": "null"
+            "key": "usageNote-en",
+            "value": "NOTE",
+            "note": "NOTE$ea_notes=In almost all jurisdictions, Legal Entities must register a public address. This may or may not be the actual address at which the Legal Entity does its business, it is commonly the address of their lawyer or accountant, but it is the address to which formal communications can be sent. The registered address property points to the Address of the Registered Site. This property can be seen as a shorthand for this property path."
           },
           {
             "key": "uri",
-            "value": "http://data.europa.eu/m8g/registeredAddress",
-            "note": "null"
+            "value": "NOTE",
+            "note": "http://data.europa.eu/m8g/registeredAddress"
           },
+          {
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "registered address"
+          },
+          {
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "The address at which the Legal Entity is legally registered"
+          }
+        ],
+        "DestRoleTags": [
           {
             "key": "usageNote-en",
             "value": "NOTE",
-            "note": "In almost all jurisdictions, Legal Entities must register a public address. This may or may not be the actual address at which the Legal Entity does its business, it is commonly the address of their lawyer or accountant, but it is the address to which formal communications can be sent. The registered address property points to the Address of the Registered Site. This property can be seen as a shorthand for this property path."
+            "note": "NOTE$ea_notes=In almost all jurisdictions, Legal Entities must register a public address. This may or may not be the actual address at which the Legal Entity does its business, it is commonly the address of their lawyer or accountant, but it is the address to which formal communications can be sent. The registered address property points to the Address of the Registered Site. This property can be seen as a shorthand for this property path."
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://data.europa.eu/m8g/registeredAddress"
+          },
+          {
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "registered address"
+          },
+          {
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "The address at which the Legal Entity is legally registered"
           }
         ],
-        "DestRoleTags": [],
         "Scope": "NOTHING"
       },
       "codelist": [],
@@ -3365,7 +3329,7 @@
         {
           "EA-Name": "Address",
           "EA-GUID": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
-          "EA-Package": "d4w",
+          "EA-Package": "locn",
           "uri": "http://www.w3.org/ns/locn#Address"
         }
       ],
@@ -3642,63 +3606,6 @@
       "maxCardinality": "*"
     },
     {
-      "@id": "http://data.europa.eu/m8g/unitOf",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "",
-      "inpackage": "OTHER_PACKAGE",
-      "ap-definition-en": {
-        "en": "TODO"
-      },
-      "extra": {
-        "EA-Name": "unitOf",
-        "EA-Guid": "{12D86DC5-39CB-4d69-BDFD-4ADC9109362F}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "LegalEntity",
-        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-        "EA-Range": "LegalEntity",
-        "RangeData": {
-          "EA-Name": "LegalEntity",
-          "EA-GUID": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-          "EA-Package": "cv",
-          "uri": "http://www.w3.org/ns/legal#LegalEntity"
-        },
-        "sourceRole": "null",
-        "destRole": "unitOf",
-        "label": "",
-        "definition": "",
-        "usage": "",
-        "ap-label-en": "",
-        "ap-definition-en": {
-          "en": "TODO"
-        },
-        "ap-usageNote-en": "",
-        "ap-codelist": "",
-        "RawTags": [],
-        "DestRoleTags": [],
-        "Scope": "NOTHING"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "http://www.w3.org/ns/legal#LegalEntity",
-          "EA-Name": "LegalEntity"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "LegalEntity",
-          "EA-GUID": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-          "EA-Package": "cv",
-          "uri": "http://www.w3.org/ns/legal#LegalEntity"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "0",
-      "maxCardinality": "*"
-    },
-    {
       "@id": "http://data4wallonia.com/model/S3Thema",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "name": "s3Thema",
@@ -3897,6 +3804,256 @@
       "maxCardinality": "*"
     },
     {
+      "@id": "http://data4wallonia.com/model/activeEntity",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "name": "activeEntity",
+      "inpackage": "OTHER_PACKAGE",
+      "ap-definition-en": {
+        "en": "Defines the activity status of the entity"
+      },
+      "ap-label-en": {
+        "en": "active entity"
+      },
+      "definition": {
+        "en": "Defines the activity status of the entity"
+      },
+      "label": {
+        "en": "active entity"
+      },
+      "extra": {
+        "EA-Name": "activeEntity",
+        "EA-Guid": "{213360E5-388A-40ca-BA70-61A780F5E37F}",
+        "EA-Package": "cv",
+        "EA-Type": "attribute",
+        "EA-Domain": "LegalEntity",
+        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
+        "EA-Range": "Boolean",
+        "RangeData": {
+          "EA-Name": "Boolean",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "label": {
+          "en": "active entity"
+        },
+        "definition": {
+          "en": "Defines the activity status of the entity"
+        },
+        "usage": "",
+        "ap-label-en": {
+          "en": "active entity"
+        },
+        "ap-definition-en": {
+          "en": "Defines the activity status of the entity"
+        },
+        "ap-usageNote-en": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "label-en",
+            "value": "active entity",
+            "note": "null"
+          },
+          {
+            "key": "definition-en",
+            "value": "Defines the activity status of the entity",
+            "note": "null"
+          },
+          {
+            "key": "uri",
+            "value": "http://data4wallonia.com/model/activeEntity",
+            "note": "null"
+          }
+        ],
+        "Scope": "NOTHING"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://www.w3.org/ns/legal#LegalEntity",
+          "EA-Name": "LegalEntity"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Boolean",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
+    },
+    {
+      "@id": "http://data4wallonia.com/model/activityDescription",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "name": "activityDescription",
+      "inpackage": "OTHER_PACKAGE",
+      "ap-definition-en": {
+        "en": "Description of the activity of the entity"
+      },
+      "ap-label-en": {
+        "en": "activity description"
+      },
+      "definition": {
+        "en": "Description of the activity of the entity"
+      },
+      "label": {
+        "en": "activity description"
+      },
+      "extra": {
+        "EA-Name": "activityDescription",
+        "EA-Guid": "{3A45066D-5223-48f5-B693-EAFC739C1AA1}",
+        "EA-Package": "cv",
+        "EA-Type": "attribute",
+        "EA-Domain": "LegalEntity",
+        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
+        "EA-Range": "Text",
+        "RangeData": {
+          "EA-Name": "Text",
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "label": {
+          "en": "activity description"
+        },
+        "definition": {
+          "en": "Description of the activity of the entity"
+        },
+        "usage": "",
+        "ap-label-en": {
+          "en": "activity description"
+        },
+        "ap-definition-en": {
+          "en": "Description of the activity of the entity"
+        },
+        "ap-usageNote-en": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "label-en",
+            "value": "activity description",
+            "note": "null"
+          },
+          {
+            "key": "definition-en",
+            "value": "Description of the activity of the entity",
+            "note": "null"
+          },
+          {
+            "key": "uri",
+            "value": "http://data4wallonia.com/model/activityDescription",
+            "note": "null"
+          }
+        ],
+        "Scope": "NOTHING"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://www.w3.org/ns/legal#LegalEntity",
+          "EA-Name": "LegalEntity"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Text",
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
+    },
+    {
+      "@id": "http://data4wallonia.com/model/activityNature",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "activityNature",
+      "inpackage": "OTHER_PACKAGE",
+      "ap-definition-en": {
+        "en": "Nature of the activity of the entity"
+      },
+      "ap-label-en": {
+        "en": "activity nature"
+      },
+      "definition": {
+        "en": "Nature of the activity of the entity"
+      },
+      "label": {
+        "en": "activity nature"
+      },
+      "extra": {
+        "EA-Name": "activityNature",
+        "EA-Guid": "{985BD8B5-8962-430d-9B0D-3539E4DAEB20}",
+        "EA-Package": "cv",
+        "EA-Type": "attribute",
+        "EA-Domain": "LegalEntity",
+        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
+        "EA-Range": "Code",
+        "RangeData": {
+          "EA-Name": "Code",
+          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "label": {
+          "en": "activity nature"
+        },
+        "definition": {
+          "en": "Nature of the activity of the entity"
+        },
+        "usage": "",
+        "ap-label-en": {
+          "en": "activity nature"
+        },
+        "ap-definition-en": {
+          "en": "Nature of the activity of the entity"
+        },
+        "ap-usageNote-en": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "label-en",
+            "value": "activity nature",
+            "note": "null"
+          },
+          {
+            "key": "definition-en",
+            "value": "Nature of the activity of the entity",
+            "note": "null"
+          },
+          {
+            "key": "uri",
+            "value": "http://data4wallonia.com/model/activityNature",
+            "note": "null"
+          }
+        ],
+        "Scope": "NOTHING"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://www.w3.org/ns/legal#LegalEntity",
+          "EA-Name": "LegalEntity"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Code",
+          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
+    },
+    {
       "@id": "http://data4wallonia.com/model/additionalDescription",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "name": "additionalDescription",
@@ -3916,7 +4073,7 @@
       "extra": {
         "EA-Name": "additionalDescription",
         "EA-Guid": "{7CAD0A7D-840F-4ecb-A76A-0D6558A0D8AC}",
-        "EA-Package": "d4w",
+        "EA-Package": "cv",
         "EA-Type": "attribute",
         "EA-Domain": "Person",
         "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
@@ -4656,7 +4813,7 @@
       "@id": "http://data4wallonia.com/model/address",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "name": "address",
-      "inpackage": "OTHER_PACKAGE",
+      "inpackage": "UNKNOWN",
       "ap-definition-en": {
         "en": "An address"
       },
@@ -4681,7 +4838,7 @@
         "RangeData": {
           "EA-Name": "Address",
           "EA-GUID": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
-          "EA-Package": "d4w",
+          "EA-Package": "locn",
           "uri": "http://www.w3.org/ns/locn#Address"
         },
         "sourceRole": "null",
@@ -4748,7 +4905,7 @@
         {
           "EA-Name": "Address",
           "EA-GUID": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
-          "EA-Package": "d4w",
+          "EA-Package": "locn",
           "uri": "http://www.w3.org/ns/locn#Address"
         }
       ],
@@ -4760,7 +4917,7 @@
       "@id": "http://data4wallonia.com/model/addresses",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "name": "address",
-      "inpackage": "OTHER_PACKAGE",
+      "inpackage": "UNKNOWN",
       "ap-definition-en": {
         "en": "An address"
       },
@@ -4785,7 +4942,7 @@
         "RangeData": {
           "EA-Name": "Address",
           "EA-GUID": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
-          "EA-Package": "d4w",
+          "EA-Package": "locn",
           "uri": "http://www.w3.org/ns/locn#Address"
         },
         "sourceRole": "null",
@@ -4852,7 +5009,7 @@
         {
           "EA-Name": "Address",
           "EA-GUID": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
-          "EA-Package": "d4w",
+          "EA-Package": "locn",
           "uri": "http://www.w3.org/ns/locn#Address"
         }
       ],
@@ -4864,7 +5021,7 @@
       "@id": "http://data4wallonia.com/model/ambition",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "name": "ambition",
-      "inpackage": "OTHER_PACKAGE",
+      "inpackage": "UNKNOWN",
       "ap-definition-en": {
         "en": "An ambition"
       },
@@ -6504,7 +6661,7 @@
       "extra": {
         "EA-Name": "category",
         "EA-Guid": "{81C0C73D-FC2D-40a6-9572-266CC7996AF6}",
-        "EA-Package": "d4w",
+        "EA-Package": "cv",
         "EA-Type": "attribute",
         "EA-Domain": "Person",
         "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
@@ -7092,7 +7249,7 @@
       "extra": {
         "EA-Name": "clientSite",
         "EA-Guid": "{DC699384-7038-45ae-9DAC-1B5352803374}",
-        "EA-Package": "d4w",
+        "EA-Package": "cv",
         "EA-Type": "attribute",
         "EA-Domain": "Person",
         "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
@@ -8809,6 +8966,90 @@
       "maxCardinality": "*"
     },
     {
+      "@id": "http://data4wallonia.com/model/continent",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "continent",
+      "inpackage": "OTHER_PACKAGE",
+      "ap-definition-en": {
+        "en": "Name of the continent"
+      },
+      "ap-label-en": {
+        "en": "continent"
+      },
+      "definition": {
+        "en": "Name of the continent"
+      },
+      "label": {
+        "en": "continent"
+      },
+      "extra": {
+        "EA-Name": "continent",
+        "EA-Guid": "{FD1C891B-7E9C-4dc8-AB4A-F049209D6DC9}",
+        "EA-Package": "locn",
+        "EA-Type": "attribute",
+        "EA-Domain": "Address",
+        "EA-Domain-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
+        "EA-Range": "Code",
+        "RangeData": {
+          "EA-Name": "Code",
+          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "label": {
+          "en": "continent"
+        },
+        "definition": {
+          "en": "Name of the continent"
+        },
+        "usage": "",
+        "ap-label-en": {
+          "en": "continent"
+        },
+        "ap-definition-en": {
+          "en": "Name of the continent"
+        },
+        "ap-usageNote-en": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "label-en",
+            "value": "continent",
+            "note": "null"
+          },
+          {
+            "key": "definition-en",
+            "value": "Name of the continent",
+            "note": "null"
+          },
+          {
+            "key": "uri",
+            "value": "http://data4wallonia.com/model/continent",
+            "note": "null"
+          }
+        ],
+        "Scope": "NOTHING"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://www.w3.org/ns/locn#Address",
+          "EA-Name": "Address"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Code",
+          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
+    },
+    {
       "@id": "http://data4wallonia.com/model/displayRefusal",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "name": "displayRefusal",
@@ -8828,7 +9069,7 @@
       "extra": {
         "EA-Name": "displayRefusal",
         "EA-Guid": "{80E7F418-4966-4e2e-87D6-FB5B024A721D}",
-        "EA-Package": "d4w",
+        "EA-Package": "cv",
         "EA-Type": "attribute",
         "EA-Domain": "Person",
         "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
@@ -9342,7 +9583,7 @@
       "extra": {
         "EA-Name": "expertise",
         "EA-Guid": "{838BCAF4-EB46-4b48-A6B9-8B1672606B10}",
-        "EA-Package": "d4w",
+        "EA-Package": "cv",
         "EA-Type": "attribute",
         "EA-Domain": "Person",
         "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
@@ -10698,7 +10939,7 @@
       "@id": "http://data4wallonia.com/model/involvedIn",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "name": "involvedIn",
-      "inpackage": "OTHER_PACKAGE",
+      "inpackage": "UNKNOWN",
       "ap-definition-en": {
         "en": "The Program in which a Resource is allocated to."
       },
@@ -10966,7 +11207,7 @@
       "@id": "http://data4wallonia.com/model/journalist",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "name": "journalist",
-      "inpackage": "OTHER_PACKAGE",
+      "inpackage": "UNKNOWN",
       "ap-definition-en": {
         "en": "A journalist"
       },
@@ -10991,7 +11232,7 @@
         "RangeData": {
           "EA-Name": "Person",
           "EA-GUID": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
-          "EA-Package": "d4w",
+          "EA-Package": "cv",
           "uri": "http://www.w3.org/ns/person#Person"
         },
         "sourceRole": "null",
@@ -11058,7 +11299,7 @@
         {
           "EA-Name": "Person",
           "EA-GUID": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
-          "EA-Package": "d4w",
+          "EA-Package": "cv",
           "uri": "http://www.w3.org/ns/person#Person"
         }
       ],
@@ -11086,7 +11327,7 @@
       "extra": {
         "EA-Name": "language",
         "EA-Guid": "{91730F41-E4A4-4314-8AE5-43041D1FCC56}",
-        "EA-Package": "d4w",
+        "EA-Package": "cv",
         "EA-Type": "attribute",
         "EA-Domain": "Person",
         "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
@@ -11320,7 +11561,7 @@
       "@id": "http://data4wallonia.com/model/location",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "name": "location",
-      "inpackage": "OTHER_PACKAGE",
+      "inpackage": "UNKNOWN",
       "ap-definition-en": {
         "en": "A location"
       },
@@ -11345,7 +11586,7 @@
         "RangeData": {
           "EA-Name": "Address",
           "EA-GUID": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
-          "EA-Package": "d4w",
+          "EA-Package": "locn",
           "uri": "http://www.w3.org/ns/locn#Address"
         },
         "sourceRole": "null",
@@ -11412,7 +11653,7 @@
         {
           "EA-Name": "Address",
           "EA-GUID": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
-          "EA-Package": "d4w",
+          "EA-Package": "locn",
           "uri": "http://www.w3.org/ns/locn#Address"
         }
       ],
@@ -11923,6 +12164,90 @@
       "generalization": [],
       "minCardinality": "0",
       "maxCardinality": "*"
+    },
+    {
+      "@id": "http://data4wallonia.com/model/market",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "market",
+      "inpackage": "OTHER_PACKAGE",
+      "ap-definition-en": {
+        "en": "Market of the entity"
+      },
+      "ap-label-en": {
+        "en": "market"
+      },
+      "definition": {
+        "en": "Market of the entity"
+      },
+      "label": {
+        "en": "market"
+      },
+      "extra": {
+        "EA-Name": "market",
+        "EA-Guid": "{97E9E40A-782F-4a95-A4AC-00616232DE1F}",
+        "EA-Package": "cv",
+        "EA-Type": "attribute",
+        "EA-Domain": "LegalEntity",
+        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
+        "EA-Range": "Code",
+        "RangeData": {
+          "EA-Name": "Code",
+          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "label": {
+          "en": "market"
+        },
+        "definition": {
+          "en": "Market of the entity"
+        },
+        "usage": "",
+        "ap-label-en": {
+          "en": "market"
+        },
+        "ap-definition-en": {
+          "en": "Market of the entity"
+        },
+        "ap-usageNote-en": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "label-en",
+            "value": "market",
+            "note": "null"
+          },
+          {
+            "key": "definition-en",
+            "value": "Market of the entity",
+            "note": "null"
+          },
+          {
+            "key": "uri",
+            "value": "http://data4wallonia.com/model/market",
+            "note": "null"
+          }
+        ],
+        "Scope": "NOTHING"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://www.w3.org/ns/legal#LegalEntity",
+          "EA-Name": "LegalEntity"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Code",
+          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
     },
     {
       "@id": "http://data4wallonia.com/model/marketingShortDescription",
@@ -13466,7 +13791,7 @@
       "extra": {
         "EA-Name": "photo",
         "EA-Guid": "{615B1D7D-AA1D-47d2-96EC-34A3D48E5863}",
-        "EA-Package": "d4w",
+        "EA-Package": "cv",
         "EA-Type": "attribute",
         "EA-Domain": "Person",
         "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
@@ -17092,7 +17417,7 @@
       "extra": {
         "EA-Name": "slug",
         "EA-Guid": "{8F48D86A-0D84-4d2d-AC97-5568A327D3EF}",
-        "EA-Package": "d4w",
+        "EA-Package": "cv",
         "EA-Type": "attribute",
         "EA-Domain": "Person",
         "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
@@ -19767,7 +20092,7 @@
       "extra": {
         "EA-Name": "internalName",
         "EA-Guid": "{52320F1F-7A7C-4e64-BC29-82DCDF393FA0}",
-        "EA-Package": "d4w",
+        "EA-Package": "cv",
         "EA-Type": "attribute",
         "EA-Domain": "Person",
         "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
@@ -19940,7 +20265,7 @@
       "extra": {
         "EA-Name": "shortDescription",
         "EA-Guid": "{863E7940-DA4B-45ee-9506-A45C024CA0C6}",
-        "EA-Package": "d4w",
+        "EA-Package": "cv",
         "EA-Type": "attribute",
         "EA-Domain": "Person",
         "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
@@ -20357,7 +20682,7 @@
         "en": "identifier"
       },
       "extra": {
-        "EA-Name": "null",
+        "EA-Name": "identifier",
         "EA-Guid": "{5149A21A-7B35-448c-ACA2-F1655EC050D9}",
         "derived": "false",
         "EA-Package": "",
@@ -20392,27 +20717,48 @@
         "ap-codelist": "",
         "RawTags": [
           {
-            "key": "label-en",
-            "value": "identifier",
-            "note": "null"
-          },
-          {
-            "key": "definition-en",
-            "value": "The unambiguous structured reference for the Legal Entity, which is different from the one denoting its legal status",
-            "note": "null"
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://www.w3.org/ns/adms#identifier"
           },
           {
             "key": "usageNote-en",
             "value": "NOTE",
-            "note": "Legal Entities may have any number of identifiers (but only one legal identifier). For example, in many jurisdictions, a business will have one or more tax numbers associated with them which do not, by themselves, confer legal entity status. An individual may be issued with identifiers for everything from social security to club membership. The identifier relationship must not be used to link to the identifier issued by the authority that conferred legal entity status on a business."
+            "note": "NOTE$ea_notes=Legal Entities may have any number of identifiers (but only one legal identifier). For example, in many jurisdictions, a business will have one or more tax numbers associated with them which do not, by themselves, confer legal entity status. An individual may be issued with identifiers for everything from social security to club membership. The identifier relationship must not be used to link to the identifier issued by the authority that conferred legal entity status on a business."
           },
           {
-            "key": "uri",
-            "value": "http://www.w3.org/ns/adms#identifier",
-            "note": "null"
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "The unambiguous structured reference for the Legal Entity, which is different from the one denoting its legal status"
+          },
+          {
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "identifier"
           }
         ],
-        "DestRoleTags": [],
+        "DestRoleTags": [
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://www.w3.org/ns/adms#identifier"
+          },
+          {
+            "key": "usageNote-en",
+            "value": "NOTE",
+            "note": "NOTE$ea_notes=Legal Entities may have any number of identifiers (but only one legal identifier). For example, in many jurisdictions, a business will have one or more tax numbers associated with them which do not, by themselves, confer legal entity status. An individual may be issued with identifiers for everything from social security to club membership. The identifier relationship must not be used to link to the identifier issued by the authority that conferred legal entity status on a business."
+          },
+          {
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "The unambiguous structured reference for the Legal Entity, which is different from the one denoting its legal status"
+          },
+          {
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "identifier"
+          }
+        ],
         "Scope": "NOTHING"
       },
       "codelist": [],
@@ -20896,7 +21242,7 @@
       "@id": "http://www.w3.org/ns/locn#address",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "name": "address",
-      "inpackage": "OTHER_PACKAGE",
+      "inpackage": "UNKNOWN",
       "ap-definition-en": {
         "en": "The Address of a Resource."
       },
@@ -20921,7 +21267,7 @@
         "RangeData": {
           "EA-Name": "Address",
           "EA-GUID": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
-          "EA-Package": "d4w",
+          "EA-Package": "locn",
           "uri": "http://www.w3.org/ns/locn#Address"
         },
         "sourceRole": "null",
@@ -20988,7 +21334,7 @@
         {
           "EA-Name": "Address",
           "EA-GUID": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
-          "EA-Package": "d4w",
+          "EA-Package": "locn",
           "uri": "http://www.w3.org/ns/locn#Address"
         }
       ],
@@ -21019,7 +21365,7 @@
       "extra": {
         "EA-Name": "adminUnitL1",
         "EA-Guid": "{951AF60C-0A14-4851-B83E-B5CA9AEBCCF7}",
-        "EA-Package": "d4w",
+        "EA-Package": "locn",
         "EA-Type": "attribute",
         "EA-Domain": "Address",
         "EA-Domain-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
@@ -21113,7 +21459,7 @@
       "extra": {
         "EA-Name": "adminUnitL2",
         "EA-Guid": "{4CB772FA-4981-4dae-872C-9302EF66ED71}",
-        "EA-Package": "d4w",
+        "EA-Package": "locn",
         "EA-Type": "attribute",
         "EA-Domain": "Address",
         "EA-Domain-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
@@ -21207,7 +21553,7 @@
       "extra": {
         "EA-Name": "fullAdress",
         "EA-Guid": "{B48A62EC-D337-4942-990F-30BB119CB70F}",
-        "EA-Package": "d4w",
+        "EA-Package": "locn",
         "EA-Type": "attribute",
         "EA-Domain": "Address",
         "EA-Domain-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
@@ -21301,7 +21647,7 @@
       "extra": {
         "EA-Name": "locatorDesignator",
         "EA-Guid": "{FAF84599-59D6-4549-AEA2-81821427667D}",
-        "EA-Package": "d4w",
+        "EA-Package": "locn",
         "EA-Type": "attribute",
         "EA-Domain": "Address",
         "EA-Domain-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
@@ -21371,6 +21717,98 @@
       "maxCardinality": "*"
     },
     {
+      "@id": "http://www.w3.org/ns/locn#postCode",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "name": "postCode",
+      "inpackage": "OTHER_PACKAGE",
+      "ap-definition-en": {
+        "en": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
+      },
+      "usage": {
+        "en": "Post codes are common elements in many countries' postal address systems. One of the many post codes of Paris is for example \"75000\"."
+      },
+      "ap-label-en": {
+        "en": "post code"
+      },
+      "definition": {
+        "en": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
+      },
+      "label": {
+        "en": "post code"
+      },
+      "extra": {
+        "EA-Name": "postCode",
+        "EA-Guid": "{0EDDAFFE-C535-4c4f-8679-C4BB953B2F23}",
+        "EA-Package": "locn",
+        "EA-Type": "attribute",
+        "EA-Domain": "Address",
+        "EA-Domain-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
+        "EA-Range": "Literal",
+        "RangeData": {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "label": {
+          "en": "post code"
+        },
+        "definition": {
+          "en": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
+        },
+        "usage": {
+          "en": "Post codes are common elements in many countries' postal address systems. One of the many post codes of Paris is for example \"75000\"."
+        },
+        "ap-label-en": {
+          "en": "post code"
+        },
+        "ap-definition-en": {
+          "en": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
+        },
+        "ap-usageNote-en": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "definition-en",
+            "value": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.",
+            "note": "null"
+          },
+          {
+            "key": "label-en",
+            "value": "post code",
+            "note": "null"
+          },
+          {
+            "key": "uri",
+            "value": "http://www.w3.org/ns/locn#postCode",
+            "note": "null"
+          },
+          {
+            "key": "usageNote-en",
+            "value": "NOTE",
+            "note": "Post codes are common elements in many countries' postal address systems. One of the many post codes of Paris is for example \"75000\"."
+          }
+        ],
+        "Scope": "NOTHING"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://www.w3.org/ns/locn#Address",
+          "EA-Name": "Address"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "0",
+      "maxCardinality": "*"
+    },
+    {
       "@id": "http://www.w3.org/ns/locn#postName",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "name": "postName",
@@ -21393,7 +21831,7 @@
       "extra": {
         "EA-Name": "postName",
         "EA-Guid": "{23D48165-3FE6-4964-AD65-9ED14D4A8DCA}",
-        "EA-Package": "d4w",
+        "EA-Package": "locn",
         "EA-Type": "attribute",
         "EA-Domain": "Address",
         "EA-Domain-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
@@ -21487,7 +21925,7 @@
       "extra": {
         "EA-Name": "lastName",
         "EA-Guid": "{55EFC170-D6B1-4c09-AB67-8DB5158E63AB}",
-        "EA-Package": "d4w",
+        "EA-Package": "cv",
         "EA-Type": "attribute",
         "EA-Domain": "Person",
         "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
@@ -21581,7 +22019,7 @@
       "extra": {
         "EA-Name": "firstName",
         "EA-Guid": "{3294B598-781F-41c6-BD28-E08D60696660}",
-        "EA-Package": "d4w",
+        "EA-Package": "cv",
         "EA-Type": "attribute",
         "EA-Domain": "Person",
         "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
@@ -21646,516 +22084,6 @@
           "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
           "EA-Package": "DataTypes",
           "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "0",
-      "maxCardinality": "*"
-    },
-    {
-      "@id": "https://d4w-digitalwallonia.opendatasoft.com/activityDescription",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "name": "activityDescription",
-      "inpackage": "OTHER_PACKAGE",
-      "ap-definition-en": {
-        "en": "Description of the activity of the entity"
-      },
-      "ap-label-en": {
-        "en": "activity description"
-      },
-      "definition": {
-        "en": "Description of the activity of the entity"
-      },
-      "label": {
-        "en": "activity description"
-      },
-      "extra": {
-        "EA-Name": "activityDescription",
-        "EA-Guid": "{3A45066D-5223-48f5-B693-EAFC739C1AA1}",
-        "EA-Package": "cv",
-        "EA-Type": "attribute",
-        "EA-Domain": "LegalEntity",
-        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-        "EA-Range": "Text",
-        "RangeData": {
-          "EA-Name": "Text",
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        },
-        "label": {
-          "en": "activity description"
-        },
-        "definition": {
-          "en": "Description of the activity of the entity"
-        },
-        "usage": "",
-        "ap-label-en": {
-          "en": "activity description"
-        },
-        "ap-definition-en": {
-          "en": "Description of the activity of the entity"
-        },
-        "ap-usageNote-en": "",
-        "ap-codelist": "",
-        "RawTags": [
-          {
-            "key": "label-en",
-            "value": "activity description",
-            "note": "null"
-          },
-          {
-            "key": "definition-en",
-            "value": "Description of the activity of the entity",
-            "note": "null"
-          },
-          {
-            "key": "uri",
-            "value": "https://d4w-digitalwallonia.opendatasoft.com/activityDescription",
-            "note": "null"
-          }
-        ],
-        "Scope": "NOTHING"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "http://www.w3.org/ns/legal#LegalEntity",
-          "EA-Name": "LegalEntity"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "Text",
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
-    },
-    {
-      "@id": "https://d4w-digitalwallonia.opendatasoft.com/activityNature",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "activityNature",
-      "inpackage": "OTHER_PACKAGE",
-      "ap-definition-en": {
-        "en": "Nature of the activity of the entity"
-      },
-      "ap-label-en": {
-        "en": "activity nature"
-      },
-      "definition": {
-        "en": "Nature of the activity of the entity"
-      },
-      "label": {
-        "en": "activity nature"
-      },
-      "extra": {
-        "EA-Name": "activityNature",
-        "EA-Guid": "{985BD8B5-8962-430d-9B0D-3539E4DAEB20}",
-        "EA-Package": "cv",
-        "EA-Type": "attribute",
-        "EA-Domain": "LegalEntity",
-        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-        "EA-Range": "Code",
-        "RangeData": {
-          "EA-Name": "Code",
-          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-        },
-        "label": {
-          "en": "activity nature"
-        },
-        "definition": {
-          "en": "Nature of the activity of the entity"
-        },
-        "usage": "",
-        "ap-label-en": {
-          "en": "activity nature"
-        },
-        "ap-definition-en": {
-          "en": "Nature of the activity of the entity"
-        },
-        "ap-usageNote-en": "",
-        "ap-codelist": "",
-        "RawTags": [
-          {
-            "key": "label-en",
-            "value": "activity nature",
-            "note": "null"
-          },
-          {
-            "key": "definition-en",
-            "value": "Nature of the activity of the entity",
-            "note": "null"
-          },
-          {
-            "key": "uri",
-            "value": "https://d4w-digitalwallonia.opendatasoft.com/activityNature",
-            "note": "null"
-          }
-        ],
-        "Scope": "NOTHING"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "http://www.w3.org/ns/legal#LegalEntity",
-          "EA-Name": "LegalEntity"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "Code",
-          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
-    },
-    {
-      "@id": "https://d4w-digitalwallonia.opendatasoft.com/continent",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "continent",
-      "inpackage": "OTHER_PACKAGE",
-      "ap-definition-en": {
-        "en": "Name of the continent"
-      },
-      "ap-label-en": {
-        "en": "continent"
-      },
-      "definition": {
-        "en": "Name of the continent"
-      },
-      "label": {
-        "en": "continent"
-      },
-      "extra": {
-        "EA-Name": "continent",
-        "EA-Guid": "{FD1C891B-7E9C-4dc8-AB4A-F049209D6DC9}",
-        "EA-Package": "d4w",
-        "EA-Type": "attribute",
-        "EA-Domain": "Address",
-        "EA-Domain-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
-        "EA-Range": "Code",
-        "RangeData": {
-          "EA-Name": "Code",
-          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-        },
-        "label": {
-          "en": "continent"
-        },
-        "definition": {
-          "en": "Name of the continent"
-        },
-        "usage": "",
-        "ap-label-en": {
-          "en": "continent"
-        },
-        "ap-definition-en": {
-          "en": "Name of the continent"
-        },
-        "ap-usageNote-en": "",
-        "ap-codelist": "",
-        "RawTags": [
-          {
-            "key": "label-en",
-            "value": "continent",
-            "note": "null"
-          },
-          {
-            "key": "definition-en",
-            "value": "Name of the continent",
-            "note": "null"
-          },
-          {
-            "key": "uri",
-            "value": "https://d4w-digitalwallonia.opendatasoft.com/continent",
-            "note": "null"
-          }
-        ],
-        "Scope": "NOTHING"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "http://www.w3.org/ns/locn#Address",
-          "EA-Name": "Address"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "Code",
-          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
-    },
-    {
-      "@id": "https://d4w-digitalwallonia.opendatasoft.com/entiteActive",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "name": "activeEntity",
-      "inpackage": "OTHER_PACKAGE",
-      "ap-definition-en": {
-        "en": "Defines the activity status of the entity"
-      },
-      "ap-label-en": {
-        "en": "active entity"
-      },
-      "definition": {
-        "en": "Defines the activity status of the entity"
-      },
-      "label": {
-        "en": "active entity"
-      },
-      "extra": {
-        "EA-Name": "activeEntity",
-        "EA-Guid": "{213360E5-388A-40ca-BA70-61A780F5E37F}",
-        "EA-Package": "cv",
-        "EA-Type": "attribute",
-        "EA-Domain": "LegalEntity",
-        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-        "EA-Range": "Boolean",
-        "RangeData": {
-          "EA-Name": "Boolean",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
-        },
-        "label": {
-          "en": "active entity"
-        },
-        "definition": {
-          "en": "Defines the activity status of the entity"
-        },
-        "usage": "",
-        "ap-label-en": {
-          "en": "active entity"
-        },
-        "ap-definition-en": {
-          "en": "Defines the activity status of the entity"
-        },
-        "ap-usageNote-en": "",
-        "ap-codelist": "",
-        "RawTags": [
-          {
-            "key": "label-en",
-            "value": "active entity",
-            "note": "null"
-          },
-          {
-            "key": "definition-en",
-            "value": "Defines the activity status of the entity",
-            "note": "null"
-          },
-          {
-            "key": "uri",
-            "value": "https://d4w-digitalwallonia.opendatasoft.com/entiteActive",
-            "note": "null"
-          }
-        ],
-        "Scope": "NOTHING"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "http://www.w3.org/ns/legal#LegalEntity",
-          "EA-Name": "LegalEntity"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "Boolean",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
-    },
-    {
-      "@id": "https://d4w-digitalwallonia.opendatasoft.com/market",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "market",
-      "inpackage": "OTHER_PACKAGE",
-      "ap-definition-en": {
-        "en": "Market of the entity"
-      },
-      "ap-label-en": {
-        "en": "market"
-      },
-      "definition": {
-        "en": "Market of the entity"
-      },
-      "label": {
-        "en": "market"
-      },
-      "extra": {
-        "EA-Name": "market",
-        "EA-Guid": "{97E9E40A-782F-4a95-A4AC-00616232DE1F}",
-        "EA-Package": "cv",
-        "EA-Type": "attribute",
-        "EA-Domain": "LegalEntity",
-        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-        "EA-Range": "Code",
-        "RangeData": {
-          "EA-Name": "Code",
-          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-        },
-        "label": {
-          "en": "market"
-        },
-        "definition": {
-          "en": "Market of the entity"
-        },
-        "usage": "",
-        "ap-label-en": {
-          "en": "market"
-        },
-        "ap-definition-en": {
-          "en": "Market of the entity"
-        },
-        "ap-usageNote-en": "",
-        "ap-codelist": "",
-        "RawTags": [
-          {
-            "key": "label-en",
-            "value": "market",
-            "note": "null"
-          },
-          {
-            "key": "definition-en",
-            "value": "Market of the entity",
-            "note": "null"
-          },
-          {
-            "key": "uri",
-            "value": "https://d4w-digitalwallonia.opendatasoft.com/market",
-            "note": "null"
-          }
-        ],
-        "Scope": "NOTHING"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "http://www.w3.org/ns/legal#LegalEntity",
-          "EA-Name": "LegalEntity"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "Code",
-          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
-    },
-    {
-      "@id": "https://www.w3.org/ns/legacy_locn#postCode",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "name": "postCode",
-      "inpackage": "OTHER_PACKAGE",
-      "ap-definition-en": {
-        "en": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
-      },
-      "usage": {
-        "en": "Post codes are common elements in many countries' postal address systems. One of the many post codes of Paris is for example \"75000\"."
-      },
-      "ap-label-en": {
-        "en": "post code"
-      },
-      "definition": {
-        "en": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
-      },
-      "label": {
-        "en": "post code"
-      },
-      "extra": {
-        "EA-Name": "postCode",
-        "EA-Guid": "{0EDDAFFE-C535-4c4f-8679-C4BB953B2F23}",
-        "EA-Package": "d4w",
-        "EA-Type": "attribute",
-        "EA-Domain": "Address",
-        "EA-Domain-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
-        "EA-Range": "Literal",
-        "RangeData": {
-          "EA-Name": "Literal",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-        },
-        "label": {
-          "en": "post code"
-        },
-        "definition": {
-          "en": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
-        },
-        "usage": {
-          "en": "Post codes are common elements in many countries' postal address systems. One of the many post codes of Paris is for example \"75000\"."
-        },
-        "ap-label-en": {
-          "en": "post code"
-        },
-        "ap-definition-en": {
-          "en": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
-        },
-        "ap-usageNote-en": "",
-        "ap-codelist": "",
-        "RawTags": [
-          {
-            "key": "definition-en",
-            "value": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.",
-            "note": "null"
-          },
-          {
-            "key": "label-en",
-            "value": "post code",
-            "note": "null"
-          },
-          {
-            "key": "uri",
-            "value": "https://www.w3.org/ns/legacy_locn#postCode",
-            "note": "null"
-          },
-          {
-            "key": "usageNote-en",
-            "value": "NOTE",
-            "note": "Post codes are common elements in many countries' postal address systems. One of the many post codes of Paris is for example \"75000\"."
-          }
-        ],
-        "Scope": "NOTHING"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "http://www.w3.org/ns/locn#Address",
-          "EA-Name": "Address"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "Literal",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
         }
       ],
       "generalization": [],
@@ -22274,7 +22202,7 @@
         "en": "head of"
       },
       "extra": {
-        "EA-Name": "null",
+        "EA-Name": "headOf",
         "EA-Guid": "{91226D50-B424-4bcc-8B11-BBDB097D482E}",
         "derived": "false",
         "EA-Package": "",
@@ -22308,21 +22236,37 @@
         "RawTags": [
           {
             "key": "label-en",
-            "value": "head of",
-            "note": "null"
-          },
-          {
-            "key": "definition-en",
-            "value": "Indicates that a person (or other agent) is the leader or formal head of the Organization.",
-            "note": "null"
+            "value": "NOTE",
+            "note": "head of"
           },
           {
             "key": "uri",
-            "value": "https://www.w3.org/ns/org#headOf",
-            "note": "null"
+            "value": "NOTE",
+            "note": "https://www.w3.org/ns/org#headOf"
+          },
+          {
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "Indicates that a person (or other agent) is the leader or formal head of the Organization."
           }
         ],
-        "DestRoleTags": [],
+        "DestRoleTags": [
+          {
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "head of"
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "https://www.w3.org/ns/org#headOf"
+          },
+          {
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "Indicates that a person (or other agent) is the leader or formal head of the Organization."
+          }
+        ],
         "Scope": "NOTHING"
       },
       "codelist": [],
@@ -22442,19 +22386,19 @@
       "name": "memberOf",
       "inpackage": "OTHER_PACKAGE",
       "ap-definition-en": {
-        "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membersh"
+        "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership."
       },
       "ap-label-en": {
         "en": "member of"
       },
       "definition": {
-        "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membersh"
+        "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership."
       },
       "label": {
         "en": "member of"
       },
       "extra": {
-        "EA-Name": "null",
+        "EA-Name": "memberOf",
         "EA-Guid": "{05865229-3887-46ad-8BDB-DB3CA4DBE1BB}",
         "derived": "false",
         "EA-Package": "",
@@ -22474,35 +22418,51 @@
           "en": "member of"
         },
         "definition": {
-          "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membersh"
+          "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership."
         },
         "usage": "",
         "ap-label-en": {
           "en": "member of"
         },
         "ap-definition-en": {
-          "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membersh"
+          "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership."
         },
         "ap-usageNote-en": "",
         "ap-codelist": "",
         "RawTags": [
           {
-            "key": "uri",
-            "value": "https://www.w3.org/ns/org#memberOf",
-            "note": "null"
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "member of"
           },
           {
             "key": "definition-en",
-            "value": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membersh",
-            "note": "null"
+            "value": "NOTE",
+            "note": "NOTE$ea_notes=Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership."
           },
           {
-            "key": "label-en",
-            "value": "member of",
-            "note": "null"
+            "key": "uri",
+            "value": "NOTE",
+            "note": "https://www.w3.org/ns/org#memberOf"
           }
         ],
-        "DestRoleTags": [],
+        "DestRoleTags": [
+          {
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "member of"
+          },
+          {
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "NOTE$ea_notes=Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership."
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "https://www.w3.org/ns/org#memberOf"
+          }
+        ],
         "Scope": "NOTHING"
       },
       "codelist": [],
@@ -22636,7 +22596,7 @@
         "en": "unit of"
       },
       "extra": {
-        "EA-Name": "null",
+        "EA-Name": "unitOf",
         "EA-Guid": "{12D86DC5-39CB-4d69-BDFD-4ADC9109362F}",
         "derived": "false",
         "EA-Package": "",
@@ -22669,22 +22629,38 @@
         "ap-codelist": "",
         "RawTags": [
           {
-            "key": "label-en",
-            "value": "unit of",
-            "note": "null"
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization."
           },
           {
-            "key": "definition-en",
-            "value": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization.",
-            "note": "null"
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "unit of"
           },
           {
             "key": "uri",
-            "value": "https://www.w3.org/ns/org#unitOf",
-            "note": "null"
+            "value": "NOTE",
+            "note": "https://www.w3.org/ns/org#unitOf"
           }
         ],
-        "DestRoleTags": [],
+        "DestRoleTags": [
+          {
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization."
+          },
+          {
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "unit of"
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "https://www.w3.org/ns/org#unitOf"
+          }
+        ],
         "Scope": "NOTHING"
       },
       "codelist": [],
@@ -22738,14 +22714,14 @@
   },
   "config": "config/config-ap.json",
   "branchtag": "ReSpecCV",
-  "dummy": "5",
+  "dummy": "6",
   "filename": "config/data4wallonia.json",
   "navigation": {
     "prev": "https://digitalwallonia.github.io/data4wallonia-generated/D4WMO-Generic/releases/1.0.0"
   },
   "repository": "git@github.com:DigitalWallonia/data4wallonia-thema.git",
   "urlref": "/D4WMO-Generic/releases/1.0.0/",
-  "documentcommit": "81870b5b4593845c991e39137b7b9f92db77e9e8",
-  "toolchaincommit": "ad8a28ebab2e748e25a175c9194894c6f6dafb34",
+  "documentcommit": "0b12649faaa75bdbe1f3580f317adffa5c4fba93",
+  "toolchaincommit": "9bc28ef875b2277ae686e842444a544b11e28f88",
   "hostname": "https://DigitalWallonia.github.io"
 }

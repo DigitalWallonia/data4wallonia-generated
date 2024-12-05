@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/81870b5b4593845c991e39137b7b9f92db77e9e8",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/81870b5b4593845c991e39137b7b9f92db77e9e8/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/0b12649faaa75bdbe1f3580f317adffa5c4fba93",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/0b12649faaa75bdbe1f3580f317adffa5c4fba93/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-Generic/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -6398,8 +6398,8 @@
           "codelist_uri": "",
           "rawTags": {
             "label-en": "head of",
-            "definition-en": "Indicates that a person (or other agent) is the leader or formal head of the Organization.",
-            "uri": "https://www.w3.org/ns/org#headOf"
+            "uri": "https://www.w3.org/ns/org#headOf",
+            "definition-en": "Indicates that a person (or other agent) is the leader or formal head of the Organization."
           }
         }
       ]
@@ -7658,38 +7658,6 @@
       },
       "properties": [
         {
-          "uri": "http://data.europa.eu/m8g/memberOf",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "LegalEntity",
-              "uri": "http://www.w3.org/ns/legal#LegalEntity"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "LegalEntity",
-              "range_uri": "http://www.w3.org/ns/legal#LegalEntity"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Legal Entity",
-              "range_puri": "http://www.w3.org/ns/legal#LegalEntity",
-              "range_label": {
-                "en": "Legal Entity"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {}
-        },
-        {
           "uri": "http://data.europa.eu/m8g/registeredAddress",
           "name": "registeredAddress",
           "sort": "registered address",
@@ -7726,10 +7694,10 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "registered address",
-            "definition-en": "The address at which the Legal Entity is legally registered",
+            "usageNote-en": "NOTE$ea_notes=In almost all jurisdictions, Legal Entities must register a public address. This may or may not be the actual address at which the Legal Entity does its business, it is commonly the address of their lawyer or accountant, but it is the address to which formal communications can be sent. The registered address property points to the Address of the Registered Site. This property can be seen as a shorthand for this property path.",
             "uri": "http://data.europa.eu/m8g/registeredAddress",
-            "usageNote-en": "In almost all jurisdictions, Legal Entities must register a public address. This may or may not be the actual address at which the Legal Entity does its business, it is commonly the address of their lawyer or accountant, but it is the address to which formal communications can be sent. The registered address property points to the Address of the Registered Site. This property can be seen as a shorthand for this property path."
+            "label-en": "registered address",
+            "definition-en": "The address at which the Legal Entity is legally registered"
           }
         },
         {
@@ -7773,38 +7741,6 @@
           }
         },
         {
-          "uri": "http://data.europa.eu/m8g/unitOf",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "LegalEntity",
-              "uri": "http://www.w3.org/ns/legal#LegalEntity"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "LegalEntity",
-              "range_uri": "http://www.w3.org/ns/legal#LegalEntity"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Legal Entity",
-              "range_puri": "http://www.w3.org/ns/legal#LegalEntity",
-              "range_label": {
-                "en": "Legal Entity"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {}
-        },
-        {
           "uri": "http://data4wallonia.com/model/S3Thema",
           "name": "s3Thema",
           "sort": "S3 thema",
@@ -7842,6 +7778,126 @@
             "label-en": "S3 thema",
             "definition-en": "S3 thema related to the entity",
             "uri": "http://data4wallonia.com/model/S3Thema"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/activeEntity",
+          "name": "activeEntity",
+          "sort": "active entity",
+          "label": {
+            "en": "active entity"
+          },
+          "description": {
+            "en": "Defines the activity status of the entity"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Boolean",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Boolean",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_label": {
+                "en": "Boolean"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "active entity",
+            "definition-en": "Defines the activity status of the entity",
+            "uri": "http://data4wallonia.com/model/activeEntity"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/activityDescription",
+          "name": "activityDescription",
+          "sort": "activity description",
+          "label": {
+            "en": "activity description"
+          },
+          "description": {
+            "en": "Description of the activity of the entity"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "activity description",
+            "definition-en": "Description of the activity of the entity",
+            "uri": "http://data4wallonia.com/model/activityDescription"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/activityNature",
+          "name": "activityNature",
+          "sort": "activity nature",
+          "label": {
+            "en": "activity nature"
+          },
+          "description": {
+            "en": "Nature of the activity of the entity"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Code",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Code",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Code"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "activity nature",
+            "definition-en": "Nature of the activity of the entity",
+            "uri": "http://data4wallonia.com/model/activityNature"
           }
         },
         {
@@ -7925,6 +7981,46 @@
           }
         },
         {
+          "uri": "http://data4wallonia.com/model/market",
+          "name": "market",
+          "sort": "market",
+          "label": {
+            "en": "market"
+          },
+          "description": {
+            "en": "Market of the entity"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Code",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Code",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Code"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "market",
+            "definition-en": "Market of the entity",
+            "uri": "http://data4wallonia.com/model/market"
+          }
+        },
+        {
           "uri": "http://www.w3.org/ns/adms#identifier",
           "name": "identifier",
           "sort": "identifier",
@@ -7961,10 +8057,10 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "identifier",
+            "uri": "http://www.w3.org/ns/adms#identifier",
+            "usageNote-en": "NOTE$ea_notes=Legal Entities may have any number of identifiers (but only one legal identifier). For example, in many jurisdictions, a business will have one or more tax numbers associated with them which do not, by themselves, confer legal entity status. An individual may be issued with identifiers for everything from social security to club membership. The identifier relationship must not be used to link to the identifier issued by the authority that conferred legal entity status on a business.",
             "definition-en": "The unambiguous structured reference for the Legal Entity, which is different from the one denoting its legal status",
-            "usageNote-en": "Legal Entities may have any number of identifiers (but only one legal identifier). For example, in many jurisdictions, a business will have one or more tax numbers associated with them which do not, by themselves, confer legal entity status. An individual may be issued with identifiers for everything from social security to club membership. The identifier relationship must not be used to link to the identifier issued by the authority that conferred legal entity status on a business.",
-            "uri": "http://www.w3.org/ns/adms#identifier"
+            "label-en": "identifier"
           }
         },
         {
@@ -8140,166 +8236,6 @@
           }
         },
         {
-          "uri": "https://d4w-digitalwallonia.opendatasoft.com/activityDescription",
-          "name": "activityDescription",
-          "sort": "activity description",
-          "label": {
-            "en": "activity description"
-          },
-          "description": {
-            "en": "Description of the activity of the entity"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "LegalEntity",
-              "uri": "http://www.w3.org/ns/legal#LegalEntity"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-              "range_label": {
-                "en": "Text"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "activity description",
-            "definition-en": "Description of the activity of the entity",
-            "uri": "https://d4w-digitalwallonia.opendatasoft.com/activityDescription"
-          }
-        },
-        {
-          "uri": "https://d4w-digitalwallonia.opendatasoft.com/activityNature",
-          "name": "activityNature",
-          "sort": "activity nature",
-          "label": {
-            "en": "activity nature"
-          },
-          "description": {
-            "en": "Nature of the activity of the entity"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "LegalEntity",
-              "uri": "http://www.w3.org/ns/legal#LegalEntity"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Code",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Code",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "en": "Code"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "activity nature",
-            "definition-en": "Nature of the activity of the entity",
-            "uri": "https://d4w-digitalwallonia.opendatasoft.com/activityNature"
-          }
-        },
-        {
-          "uri": "https://d4w-digitalwallonia.opendatasoft.com/entiteActive",
-          "name": "activeEntity",
-          "sort": "active entity",
-          "label": {
-            "en": "active entity"
-          },
-          "description": {
-            "en": "Defines the activity status of the entity"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "LegalEntity",
-              "uri": "http://www.w3.org/ns/legal#LegalEntity"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Boolean",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Boolean",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
-              "range_label": {
-                "en": "Boolean"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "active entity",
-            "definition-en": "Defines the activity status of the entity",
-            "uri": "https://d4w-digitalwallonia.opendatasoft.com/entiteActive"
-          }
-        },
-        {
-          "uri": "https://d4w-digitalwallonia.opendatasoft.com/market",
-          "name": "market",
-          "sort": "market",
-          "label": {
-            "en": "market"
-          },
-          "description": {
-            "en": "Market of the entity"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "LegalEntity",
-              "uri": "http://www.w3.org/ns/legal#LegalEntity"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Code",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Code",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "en": "Code"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "market",
-            "definition-en": "Market of the entity",
-            "uri": "https://d4w-digitalwallonia.opendatasoft.com/market"
-          }
-        },
-        {
           "uri": "https://www.w3.org/ns/org#classification",
           "name": "classification",
           "sort": "classification",
@@ -8393,7 +8329,7 @@
             "en": "member of"
           },
           "description": {
-            "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membersh"
+            "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership."
           },
           "usage": {},
           "domain": [
@@ -8420,9 +8356,9 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "https://www.w3.org/ns/org#memberOf",
-            "definition-en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membersh",
-            "label-en": "member of"
+            "label-en": "member of",
+            "definition-en": "NOTE$ea_notes=Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership.",
+            "uri": "https://www.w3.org/ns/org#memberOf"
           }
         },
         {
@@ -8503,8 +8439,8 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "unit of",
             "definition-en": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization.",
+            "label-en": "unit of",
             "uri": "https://www.w3.org/ns/org#unitOf"
           }
         }
@@ -8532,6 +8468,46 @@
         "class-usage-scope": "supportive"
       },
       "properties": [
+        {
+          "uri": "http://data4wallonia.com/model/continent",
+          "name": "continent",
+          "sort": "continent",
+          "label": {
+            "en": "continent"
+          },
+          "description": {
+            "en": "Name of the continent"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Address",
+              "uri": "http://www.w3.org/ns/locn#Address"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Code",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Code",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Code"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "continent",
+            "definition-en": "Name of the continent",
+            "uri": "http://data4wallonia.com/model/continent"
+          }
+        },
         {
           "uri": "http://www.w3.org/ns/locn#adminUnitL1",
           "name": "administrativeUnitLevel1",
@@ -8705,6 +8681,49 @@
           }
         },
         {
+          "uri": "http://www.w3.org/ns/locn#postCode",
+          "name": "postCode",
+          "sort": "post code",
+          "label": {
+            "en": "post code"
+          },
+          "description": {
+            "en": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
+          },
+          "usage": {
+            "en": "Post codes are common elements in many countries' postal address systems. One of the many post codes of Paris is for example \"75000\"."
+          },
+          "domain": [
+            {
+              "EA-Name": "Address",
+              "uri": "http://www.w3.org/ns/locn#Address"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Literal",
+              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Literal",
+              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+              "range_label": {
+                "en": "Literal"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "definition-en": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.",
+            "label-en": "post code",
+            "uri": "http://www.w3.org/ns/locn#postCode",
+            "usageNote-en": "Post codes are common elements in many countries' postal address systems. One of the many post codes of Paris is for example \"75000\"."
+          }
+        },
+        {
           "uri": "http://www.w3.org/ns/locn#postName",
           "name": "postName",
           "sort": "post name",
@@ -8745,89 +8764,6 @@
             "definition-en": "A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.",
             "usageNote-en": "Usually a city, for example \"Paris\".",
             "uri": "http://www.w3.org/ns/locn#postName"
-          }
-        },
-        {
-          "uri": "https://d4w-digitalwallonia.opendatasoft.com/continent",
-          "name": "continent",
-          "sort": "continent",
-          "label": {
-            "en": "continent"
-          },
-          "description": {
-            "en": "Name of the continent"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Address",
-              "uri": "http://www.w3.org/ns/locn#Address"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Code",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Code",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "en": "Code"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "continent",
-            "definition-en": "Name of the continent",
-            "uri": "https://d4w-digitalwallonia.opendatasoft.com/continent"
-          }
-        },
-        {
-          "uri": "https://www.w3.org/ns/legacy_locn#postCode",
-          "name": "postCode",
-          "sort": "post code",
-          "label": {
-            "en": "post code"
-          },
-          "description": {
-            "en": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
-          },
-          "usage": {
-            "en": "Post codes are common elements in many countries' postal address systems. One of the many post codes of Paris is for example \"75000\"."
-          },
-          "domain": [
-            {
-              "EA-Name": "Address",
-              "uri": "http://www.w3.org/ns/locn#Address"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Literal",
-              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Literal",
-              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
-              "range_label": {
-                "en": "Literal"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "definition-en": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.",
-            "label-en": "post code",
-            "uri": "https://www.w3.org/ns/legacy_locn#postCode",
-            "usageNote-en": "Post codes are common elements in many countries' postal address systems. One of the many post codes of Paris is for example \"75000\"."
           }
         }
       ]
