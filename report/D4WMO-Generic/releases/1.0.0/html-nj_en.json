@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/26db5fd08eafc939c4a76387695fdb7403232986",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/26db5fd08eafc939c4a76387695fdb7403232986/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/81870b5b4593845c991e39137b7b9f92db77e9e8",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/81870b5b4593845c991e39137b7b9f92db77e9e8/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-Generic/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -130,6 +130,46 @@
           }
         },
         {
+          "uri": "http://data.europa.eu/m8g/telephone",
+          "name": "hasTelehpone",
+          "sort": "has telehpone",
+          "label": {
+            "en": "has telehpone"
+          },
+          "description": {
+            "en": "A telephone number through which the Contact Point can be contacted."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ContactPoint",
+              "uri": "http://data.europa.eu/m8g/ContactPoint"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Literal",
+              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Literal",
+              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+              "range_label": {
+                "en": "Literal"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data.europa.eu/m8g/telephone",
+            "definition-en": "A telephone number through which the Contact Point can be contacted.",
+            "label-en": "has telehpone"
+          }
+        },
+        {
           "uri": "http://data4wallonia.com/model/hasNonFeaturedEmail",
           "name": "hasNonFeaturedEmail",
           "sort": "has non featured email",
@@ -167,86 +207,6 @@
             "uri": "http://data4wallonia.com/model/hasNonFeaturedEmail",
             "definition-en": "An non featured email",
             "label-en": "has non featured email"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/landLine",
-          "name": "landLine",
-          "sort": "land line",
-          "label": {
-            "en": "land line"
-          },
-          "description": {
-            "en": "A landline number"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "ContactPoint",
-              "uri": "http://data.europa.eu/m8g/ContactPoint"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Literal",
-              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Literal",
-              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
-              "range_label": {
-                "en": "Literal"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/landLine",
-            "definition-en": "A landline number",
-            "label-en": "land line"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/mobile",
-          "name": "mobile",
-          "sort": "mobile",
-          "label": {
-            "en": "mobile"
-          },
-          "description": {
-            "en": "A mobile number"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "ContactPoint",
-              "uri": "http://data.europa.eu/m8g/ContactPoint"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Literal",
-              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Literal",
-              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
-              "range_label": {
-                "en": "Literal"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/mobile",
-            "definition-en": "A mobile number",
-            "label-en": "mobile"
           }
         },
         {
@@ -436,6 +396,26 @@
           }
         }
       ]
+    },
+    {
+      "uri": "http://data.europa.eu/m8g/ImageObject",
+      "name": "ImageObject",
+      "label": {
+        "en": "Image Object"
+      },
+      "sort": "Image Object",
+      "description": {
+        "en": "A logo to describe / represent an entity."
+      },
+      "usage": {},
+      "parents": [],
+      "rawTags": {
+        "definition-en": "A logo to describe / represent an entity.",
+        "label-en": "Image Object",
+        "uri": "http://data.europa.eu/m8g/ImageObject",
+        "class-usage-scope": "supportive"
+      },
+      "properties": []
     },
     {
       "uri": "http://data.europa.eu/m8g/ImageObject",
@@ -935,7 +915,7 @@
           ],
           "range": [
             {
-              "range_label": "File",
+              "range_label": "ImageObject",
               "range_uri": "http://data.europa.eu/m8g/ImageObject"
             }
           ],
@@ -2116,7 +2096,7 @@
           ],
           "range": [
             {
-              "range_label": "File",
+              "range_label": "ImageObject",
               "range_uri": "http://data.europa.eu/m8g/ImageObject"
             }
           ],
@@ -3117,7 +3097,7 @@
           ],
           "range": [
             {
-              "range_label": "File",
+              "range_label": "ImageObject",
               "range_uri": "http://data.europa.eu/m8g/ImageObject"
             }
           ],
@@ -4919,7 +4899,7 @@
           ],
           "range": [
             {
-              "range_label": "File",
+              "range_label": "ImageObject",
               "range_uri": "http://data.europa.eu/m8g/ImageObject"
             }
           ],
@@ -5460,7 +5440,7 @@
           ],
           "range": [
             {
-              "range_label": "File",
+              "range_label": "ImageObject",
               "range_uri": "http://data.europa.eu/m8g/ImageObject"
             }
           ],
@@ -5740,7 +5720,7 @@
           ],
           "range": [
             {
-              "range_label": "File",
+              "range_label": "ImageObject",
               "range_uri": "http://data.europa.eu/m8g/ImageObject"
             }
           ],
@@ -6381,6 +6361,46 @@
             "uri": "http://data4wallonia.com/model/role",
             "definition-en": "The function of a qualified person."
           }
+        },
+        {
+          "uri": "https://www.w3.org/ns/org#headOf",
+          "name": "headOf",
+          "sort": "head of",
+          "label": {
+            "en": "head of"
+          },
+          "description": {
+            "en": "Indicates that a person (or other agent) is the leader or formal head of the Organization."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "QualifiedPerson",
+              "uri": "http://data4wallonia.com/model/QualifiedPerson"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "LegalEntity",
+              "range_uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Legal Entity",
+              "range_puri": "http://www.w3.org/ns/legal#LegalEntity",
+              "range_label": {
+                "en": "Legal Entity"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "head of",
+            "definition-en": "Indicates that a person (or other agent) is the leader or formal head of the Organization.",
+            "uri": "https://www.w3.org/ns/org#headOf"
+          }
         }
       ]
     },
@@ -6466,7 +6486,7 @@
           ],
           "range": [
             {
-              "range_label": "File",
+              "range_label": "ImageObject",
               "range_uri": "http://data.europa.eu/m8g/ImageObject"
             }
           ],
@@ -6986,7 +7006,7 @@
           ],
           "range": [
             {
-              "range_label": "File",
+              "range_label": "ImageObject",
               "range_uri": "http://data.europa.eu/m8g/ImageObject"
             }
           ],
@@ -7391,6 +7411,1106 @@
       ]
     },
     {
+      "uri": "http://www.w3.org/ns/adms#Identifier",
+      "name": "Identifier",
+      "label": {
+        "en": "Identifier"
+      },
+      "sort": "Identifier",
+      "description": {
+        "en": "A structured reference that identifies an entity."
+      },
+      "usage": {
+        "en": "The Identifier class is based on the <a href=\"https://www.gs1.org/standards/edi/gs1-un-cefact-xml/2012\">UN/CEFACT</a> class of the same name and is defined under the ADMS namespace."
+      },
+      "parents": [],
+      "rawTags": {
+        "class-usage-scope": "main",
+        "definition-en": "A structured reference that identifies an entity.",
+        "label-en": "Identifier",
+        "uri": "http://www.w3.org/ns/adms#Identifier",
+        "usageNote-en": "The Identifier class is based on the <a href=\"https://www.gs1.org/standards/edi/gs1-un-cefact-xml/2012\">UN/CEFACT</a> class of the same name and is defined under the ADMS namespace."
+      },
+      "properties": [
+        {
+          "uri": "http://purl.org/dc/terms/conformsTo",
+          "name": "schemeUri",
+          "sort": "scheme URI",
+          "label": {
+            "en": "scheme URI"
+          },
+          "description": {
+            "en": "URI of the scheme used to construct the identifier."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Identifier",
+              "uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "URI",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_label": {
+                "en": "URI"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "definition-en": "URI of the scheme used to construct the identifier.",
+            "label-en": "scheme URI",
+            "uri": "http://purl.org/dc/terms/conformsTo"
+          }
+        },
+        {
+          "uri": "http://purl.org/dc/terms/issued",
+          "name": "dateOfIssue",
+          "sort": "date of issue",
+          "label": {
+            "en": "date of issue"
+          },
+          "description": {
+            "en": "The date on which the Identifier was assigned."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Identifier",
+              "uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Date",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#date"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_label": {
+                "en": "Date"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "date of issue",
+            "uri": "http://purl.org/dc/terms/issued",
+            "definition-en": "The date on which the Identifier was assigned."
+          }
+        },
+        {
+          "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+          "name": "schemeName",
+          "sort": "scheme name",
+          "label": {
+            "en": "scheme name"
+          },
+          "description": {
+            "en": "Name of the scheme used to construct the identifier."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Identifier",
+              "uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+            "label-en": "scheme name",
+            "definition-en": "Name of the scheme used to construct the identifier."
+          }
+        },
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#notation",
+          "name": "notation",
+          "sort": "notation",
+          "label": {
+            "en": "notation"
+          },
+          "description": {
+            "en": "A string of characters to uniquely identify a concept."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Identifier",
+              "uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Literal",
+              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Literal",
+              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+              "range_label": {
+                "en": "Literal"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://www.w3.org/2004/02/skos/core#notation",
+            "label-en": "notation",
+            "definition-en": "A string of characters to uniquely identify a concept."
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/adms#schemaAgency",
+          "name": "schemaAgency",
+          "sort": "schema agency",
+          "label": {
+            "en": "schema agency"
+          },
+          "description": {
+            "en": "The name of the agency that issued the identifier."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Identifier",
+              "uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Literal",
+              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Literal",
+              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+              "range_label": {
+                "en": "Literal"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "definition-en": "The name of the agency that issued the identifier.",
+            "label-en": "schema agency",
+            "uri": "http://www.w3.org/ns/adms#schemaAgency"
+          }
+        }
+      ]
+    },
+    {
+      "uri": "http://www.w3.org/ns/legal#LegalEntity",
+      "name": "LegalEntity",
+      "label": {
+        "en": "Legal Entity"
+      },
+      "sort": "Legal Entity",
+      "description": {
+        "en": "A self-employed person,company,or organization that has legal rights and obligations."
+      },
+      "usage": {
+        "en": "A Legal Entity able to transact business, typically registered with a body able to confer legal status such as a national business register. It is able to trade, is legally liable for its actions, accounts, tax affairs etc. This makes Legal Entities distinct from the concept of organisations or groups. Many organisations exist that are not Legal Entities, yet to the outside world they have staff, hierarchies, locations etc. Other organisations exist that are an umbrella for several Legal Entities (universities are often good examples of this). This vocabulary is concerned solely with registered Legal Entities and does not attempt to cover all possible trading bodies."
+      },
+      "parents": [],
+      "rawTags": {
+        "class-usage-scope": "main",
+        "definition-en": "A self-employed person,company,or organization that has legal rights and obligations.",
+        "label-en": "Legal Entity",
+        "parentURI": "http://www.w3.org/ns/org#FormalOrganization",
+        "uri": "http://www.w3.org/ns/legal#LegalEntity",
+        "usageNote-en": "A Legal Entity able to transact business, typically registered with a body able to confer legal status such as a national business register. It is able to trade, is legally liable for its actions, accounts, tax affairs etc. This makes Legal Entities distinct from the concept of organisations or groups. Many organisations exist that are not Legal Entities, yet to the outside world they have staff, hierarchies, locations etc. Other organisations exist that are an umbrella for several Legal Entities (universities are often good examples of this). This vocabulary is concerned solely with registered Legal Entities and does not attempt to cover all possible trading bodies."
+      },
+      "properties": [
+        {
+          "uri": "http://data.europa.eu/m8g/memberOf",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "LegalEntity",
+              "range_uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Legal Entity",
+              "range_puri": "http://www.w3.org/ns/legal#LegalEntity",
+              "range_label": {
+                "en": "Legal Entity"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {}
+        },
+        {
+          "uri": "http://data.europa.eu/m8g/registeredAddress",
+          "name": "registeredAddress",
+          "sort": "registered address",
+          "label": {
+            "en": "registered address"
+          },
+          "description": {
+            "en": "The address at which the Legal Entity is legally registered"
+          },
+          "usage": {
+            "en": "In almost all jurisdictions, Legal Entities must register a public address. This may or may not be the actual address at which the Legal Entity does its business, it is commonly the address of their lawyer or accountant, but it is the address to which formal communications can be sent. The registered address property points to the Address of the Registered Site. This property can be seen as a shorthand for this property path."
+          },
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Address",
+              "range_uri": "http://www.w3.org/ns/locn#Address"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Address",
+              "range_puri": "http://www.w3.org/ns/locn#Address",
+              "range_label": {
+                "en": "Address"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "registered address",
+            "definition-en": "The address at which the Legal Entity is legally registered",
+            "uri": "http://data.europa.eu/m8g/registeredAddress",
+            "usageNote-en": "In almost all jurisdictions, Legal Entities must register a public address. This may or may not be the actual address at which the Legal Entity does its business, it is commonly the address of their lawyer or accountant, but it is the address to which formal communications can be sent. The registered address property points to the Address of the Registered Site. This property can be seen as a shorthand for this property path."
+          }
+        },
+        {
+          "uri": "http://data.europa.eu/m8g/registrationDate",
+          "name": "registrationDate",
+          "sort": "registration date",
+          "label": {
+            "en": "registration date"
+          },
+          "description": {
+            "en": "The date on which the legal entity has registered in some jurisdiction for regulatory and / or for tax purposes."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Date",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#date"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_label": {
+                "en": "Date"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "registration date",
+            "uri": "http://data.europa.eu/m8g/registrationDate",
+            "definition-en": "The date on which the legal entity has registered in some jurisdiction for regulatory and / or for tax purposes."
+          }
+        },
+        {
+          "uri": "http://data.europa.eu/m8g/unitOf",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "LegalEntity",
+              "range_uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Legal Entity",
+              "range_puri": "http://www.w3.org/ns/legal#LegalEntity",
+              "range_label": {
+                "en": "Legal Entity"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {}
+        },
+        {
+          "uri": "http://data4wallonia.com/model/S3Thema",
+          "name": "s3Thema",
+          "sort": "S3 thema",
+          "label": {
+            "en": "S3 thema"
+          },
+          "description": {
+            "en": "S3 thema related to the entity"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Code",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Code",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Code"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "S3 thema",
+            "definition-en": "S3 thema related to the entity",
+            "uri": "http://data4wallonia.com/model/S3Thema"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/logo",
+          "name": "logo",
+          "sort": "logo",
+          "label": {
+            "en": "logo"
+          },
+          "description": {
+            "en": "A logo"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "ImageObject",
+              "range_uri": "http://data.europa.eu/m8g/ImageObject"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Image Object",
+              "range_puri": "http://data.europa.eu/m8g/ImageObject",
+              "range_label": {
+                "en": "Image Object"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "logo",
+            "definition-en": "A logo",
+            "uri": "http://data4wallonia.com/model/logo"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/mainNACECode",
+          "name": "mainNaceCode",
+          "sort": "main NACE code",
+          "label": {
+            "en": "main NACE code"
+          },
+          "description": {
+            "en": "A main NACE code"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "main NACE code",
+            "definition-en": "A main NACE code",
+            "uri": "http://data4wallonia.com/model/mainNACECode"
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/adms#identifier",
+          "name": "identifier",
+          "sort": "identifier",
+          "label": {
+            "en": "identifier"
+          },
+          "description": {
+            "en": "The unambiguous structured reference for the Legal Entity, which is different from the one denoting its legal status"
+          },
+          "usage": {
+            "en": "Legal Entities may have any number of identifiers (but only one legal identifier). For example, in many jurisdictions, a business will have one or more tax numbers associated with them which do not, by themselves, confer legal entity status. An individual may be issued with identifiers for everything from social security to club membership. The identifier relationship must not be used to link to the identifier issued by the authority that conferred legal entity status on a business."
+          },
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Identifier",
+              "range_uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Identifier",
+              "range_puri": "http://www.w3.org/ns/adms#Identifier",
+              "range_label": {
+                "en": "Identifier"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "identifier",
+            "definition-en": "The unambiguous structured reference for the Legal Entity, which is different from the one denoting its legal status",
+            "usageNote-en": "Legal Entities may have any number of identifiers (but only one legal identifier). For example, in many jurisdictions, a business will have one or more tax numbers associated with them which do not, by themselves, confer legal entity status. An individual may be issued with identifiers for everything from social security to club membership. The identifier relationship must not be used to link to the identifier issued by the authority that conferred legal entity status on a business.",
+            "uri": "http://www.w3.org/ns/adms#identifier"
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/legal#companyActivity",
+          "name": "legalEntityActivity",
+          "sort": "legal entity activity",
+          "label": {
+            "en": "legal entity activity"
+          },
+          "description": {
+            "en": "The area of work in which the Legal Entity is engaged."
+          },
+          "usage": {
+            "en": "This is a general term that encompasses all the economic activities carried out by a company during the course of business. The activity of a company should be recorded using a controlled vocabulary. Several such vocabularies exist, many of which map to the UN's <a href=\"https://unstats.un.org/unsd/classifications/Econ/ISIC.cshtml\">ISIC</a> codes. Where a particular controlled vocabulary is in use within a given context, such as <a href=\"https://resources.companieshouse.gov.uk/sic/\">SIC codes</a> in the UK, it is acceptable to use these, however, the preferred choice for European interoperability is <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nace2\">NACE</a>."
+          },
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Code",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Code",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Code"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://www.w3.org/ns/legal#companyActivity",
+            "definition-en": "The area of work in which the Legal Entity is engaged.",
+            "label-en": "legal entity activity",
+            "usageNote-en": "This is a general term that encompasses all the economic activities carried out by a company during the course of business. The activity of a company should be recorded using a controlled vocabulary. Several such vocabularies exist, many of which map to the UN's <a href=\"https://unstats.un.org/unsd/classifications/Econ/ISIC.cshtml\">ISIC</a> codes. Where a particular controlled vocabulary is in use within a given context, such as <a href=\"https://resources.companieshouse.gov.uk/sic/\">SIC codes</a> in the UK, it is acceptable to use these, however, the preferred choice for European interoperability is <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nace2\">NACE</a>."
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/legal#companyStatus",
+          "name": "legalEntityStatus",
+          "sort": "legal entity status",
+          "label": {
+            "en": "legal entity status"
+          },
+          "description": {
+            "en": "Information about the viability of the current position of the legal entity."
+          },
+          "usage": {
+            "en": "Recording the status of a company presents the same issues as its type. The terms 'insolvent', 'bankrupt' and 'in receivership,' for example, are likely to mean slightly different things with different legal implications in different jurisdictions. Best practice for recording various other status levels is to use the relevant jurisdiction's terms and to identify the controlled vocabulary used."
+          },
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Code",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Code",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Code"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://www.w3.org/ns/legal#companyStatus",
+            "label-en": "legal entity status",
+            "definition-en": "Information about the viability of the current position of the legal entity.",
+            "usageNote-en": "Recording the status of a company presents the same issues as its type. The terms 'insolvent', 'bankrupt' and 'in receivership,' for example, are likely to mean slightly different things with different legal implications in different jurisdictions. Best practice for recording various other status levels is to use the relevant jurisdiction's terms and to identify the controlled vocabulary used."
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/legal#companyType",
+          "name": "legalFormType",
+          "sort": "legal form type",
+          "label": {
+            "en": "legal form type"
+          },
+          "description": {
+            "en": "The classification of the Legal Entity as a member of a particular group in the context of legal registration."
+          },
+          "usage": {
+            "en": "To indicate the legal form type of a Legal Entity the <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/entity-legal-form\">Entity Legal Form code list</a> published by the Publications Office of the EU and maintained by <a href=\"https://www.gleif.org/en/about-lei/code-lists/iso-20275-entity-legal-forms-code-list\">GLEIF</a> can be used."
+          },
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Code",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Code",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Code"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://www.w3.org/ns/legal#companyType",
+            "label-en": "legal form type",
+            "definition-en": "The classification of the Legal Entity as a member of a particular group in the context of legal registration.",
+            "usageNote-en": "To indicate the legal form type of a Legal Entity the <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/entity-legal-form\">Entity Legal Form code list</a> published by the Publications Office of the EU and maintained by <a href=\"https://www.gleif.org/en/about-lei/code-lists/iso-20275-entity-legal-forms-code-list\">GLEIF</a> can be used."
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/legal#legalName",
+          "name": "legalName",
+          "sort": "legal name",
+          "label": {
+            "en": "legal name"
+          },
+          "description": {
+            "en": "The name under which the Legal Entity is legally registered."
+          },
+          "usage": {
+            "en": "The legal name is different from the alternative (trade) name which is a pseudonym used by companies that do not operate under their registered company name.\r\nA business might have more than one legal name, particularly in countries with more than one official language. In such cases, and where the encoding technology allows, the language of the string should be identified."
+          },
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://www.w3.org/ns/legal#legalName",
+            "label-en": "legal name",
+            "definition-en": "The name under which the Legal Entity is legally registered.",
+            "usageNote-en": "The legal name is different from the alternative (trade) name which is a pseudonym used by companies that do not operate under their registered company name.\r\nA business might have more than one legal name, particularly in countries with more than one official language. In such cases, and where the encoding technology allows, the language of the string should be identified."
+          }
+        },
+        {
+          "uri": "https://d4w-digitalwallonia.opendatasoft.com/activityDescription",
+          "name": "activityDescription",
+          "sort": "activity description",
+          "label": {
+            "en": "activity description"
+          },
+          "description": {
+            "en": "Description of the activity of the entity"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "activity description",
+            "definition-en": "Description of the activity of the entity",
+            "uri": "https://d4w-digitalwallonia.opendatasoft.com/activityDescription"
+          }
+        },
+        {
+          "uri": "https://d4w-digitalwallonia.opendatasoft.com/activityNature",
+          "name": "activityNature",
+          "sort": "activity nature",
+          "label": {
+            "en": "activity nature"
+          },
+          "description": {
+            "en": "Nature of the activity of the entity"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Code",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Code",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Code"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "activity nature",
+            "definition-en": "Nature of the activity of the entity",
+            "uri": "https://d4w-digitalwallonia.opendatasoft.com/activityNature"
+          }
+        },
+        {
+          "uri": "https://d4w-digitalwallonia.opendatasoft.com/entiteActive",
+          "name": "activeEntity",
+          "sort": "active entity",
+          "label": {
+            "en": "active entity"
+          },
+          "description": {
+            "en": "Defines the activity status of the entity"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Boolean",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Boolean",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_label": {
+                "en": "Boolean"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "active entity",
+            "definition-en": "Defines the activity status of the entity",
+            "uri": "https://d4w-digitalwallonia.opendatasoft.com/entiteActive"
+          }
+        },
+        {
+          "uri": "https://d4w-digitalwallonia.opendatasoft.com/market",
+          "name": "market",
+          "sort": "market",
+          "label": {
+            "en": "market"
+          },
+          "description": {
+            "en": "Market of the entity"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Code",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Code",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Code"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "market",
+            "definition-en": "Market of the entity",
+            "uri": "https://d4w-digitalwallonia.opendatasoft.com/market"
+          }
+        },
+        {
+          "uri": "https://www.w3.org/ns/org#classification",
+          "name": "classification",
+          "sort": "classification",
+          "label": {
+            "en": "classification"
+          },
+          "description": {
+            "en": "Indicates a classification for this Organization within some classification scheme."
+          },
+          "usage": {
+            "en": "Extension vocabularies may wish to specialize this property to have a range corresponding to a specific skos:ConceptScheme"
+          },
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Code",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Code",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Code"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "classification",
+            "definition-en": "Indicates a classification for this Organization within some classification scheme.",
+            "usageNote-en": "Extension vocabularies may wish to specialize this property to have a range corresponding to a specific skos:ConceptScheme",
+            "uri": "https://www.w3.org/ns/org#classification"
+          }
+        },
+        {
+          "uri": "https://www.w3.org/ns/org#identifier",
+          "name": "numéroD'établissement",
+          "sort": "numéro d'établissement",
+          "label": {
+            "en": "numéro d'établissement"
+          },
+          "description": {
+            "en": "Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization."
+          },
+          "usage": {
+            "en": "Many different national and international identifier schemes are available from other vocabularies. The ORG ontology is neutral to which schemes are used. The particular identifier scheme should be indicated by the datatype of the identifier value. Using datatypes to distinguish the notation scheme used is consistent with recommended best practice for skos:notation of which this property is a specialization."
+          },
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Literal",
+              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Literal",
+              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+              "range_label": {
+                "en": "Literal"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "numéro d'établissement",
+            "definition-en": "Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization.",
+            "uri": "https://www.w3.org/ns/org#identifier",
+            "usageNote-en": "Many different national and international identifier schemes are available from other vocabularies. The ORG ontology is neutral to which schemes are used. The particular identifier scheme should be indicated by the datatype of the identifier value. Using datatypes to distinguish the notation scheme used is consistent with recommended best practice for skos:notation of which this property is a specialization."
+          }
+        },
+        {
+          "uri": "https://www.w3.org/ns/org#memberOf",
+          "name": "memberOf",
+          "sort": "member of",
+          "label": {
+            "en": "member of"
+          },
+          "description": {
+            "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membersh"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "LegalEntity",
+              "range_uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Legal Entity",
+              "range_puri": "http://www.w3.org/ns/legal#LegalEntity",
+              "range_label": {
+                "en": "Legal Entity"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "https://www.w3.org/ns/org#memberOf",
+            "definition-en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membersh",
+            "label-en": "member of"
+          }
+        },
+        {
+          "uri": "https://www.w3.org/ns/org#purpose",
+          "name": "purpose",
+          "sort": "purpose",
+          "label": {
+            "en": "purpose"
+          },
+          "description": {
+            "en": "Indicates the purpose of this Organization. There can be many purposes at different levels of abstraction but the nature of an organization is to have a reason for existence and this property is a means to document that reason. An Organization may have mu"
+          },
+          "usage": {
+            "en": "It is recommended that the purpose be denoted by a controlled term or code list, ideally a skos:Concept. However, the range is left open to allow for other types of descriptive schemes. It is expected that profiles of this vocabulary will constrain the range of org:purpose. Alternative names: remit, responsibility (esp. if applied to OrganizationalUnits such as Government Departments)."
+          },
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "purpose",
+            "definition-en": "Indicates the purpose of this Organization. There can be many purposes at different levels of abstraction but the nature of an organization is to have a reason for existence and this property is a means to document that reason. An Organization may have mu",
+            "uri": "https://www.w3.org/ns/org#purpose",
+            "usageNote-en": "It is recommended that the purpose be denoted by a controlled term or code list, ideally a skos:Concept. However, the range is left open to allow for other types of descriptive schemes. It is expected that profiles of this vocabulary will constrain the range of org:purpose. Alternative names: remit, responsibility (esp. if applied to OrganizationalUnits such as Government Departments)."
+          }
+        },
+        {
+          "uri": "https://www.w3.org/ns/org#unitOf",
+          "name": "unitOf",
+          "sort": "unit of",
+          "label": {
+            "en": "unit of"
+          },
+          "description": {
+            "en": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "LegalEntity",
+              "range_uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Legal Entity",
+              "range_puri": "http://www.w3.org/ns/legal#LegalEntity",
+              "range_label": {
+                "en": "Legal Entity"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "unit of",
+            "definition-en": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization.",
+            "uri": "https://www.w3.org/ns/org#unitOf"
+          }
+        }
+      ]
+    },
+    {
       "uri": "http://www.w3.org/ns/locn#Address",
       "name": "Address",
       "label": {
@@ -7412,86 +8532,6 @@
         "class-usage-scope": "supportive"
       },
       "properties": [
-        {
-          "uri": "http://data.europa.eu/m8g/latitude",
-          "name": "latitude",
-          "sort": "latitude",
-          "label": {
-            "en": "latitude"
-          },
-          "description": {
-            "en": "The geographic coordinate that specifies the north / south position of the Geomerty on the Earth's surface."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Address",
-              "uri": "http://www.w3.org/ns/locn#Address"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "String",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#String",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
-              "range_label": {
-                "en": "String"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "latitude",
-            "definition-en": "The geographic coordinate that specifies the north / south position of the Geomerty on the Earth's surface.",
-            "uri": "http://data.europa.eu/m8g/latitude"
-          }
-        },
-        {
-          "uri": "http://data.europa.eu/m8g/longitude",
-          "name": "longitude",
-          "sort": "longitude",
-          "label": {
-            "en": "longitude"
-          },
-          "description": {
-            "en": "The geographic coordinate that specifies the east / west position of the Geometry on the Earth's surface."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Address",
-              "uri": "http://www.w3.org/ns/locn#Address"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "String",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#String",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
-              "range_label": {
-                "en": "String"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "longitude",
-            "definition-en": "The geographic coordinate that specifies the east / west position of the Geometry on the Earth's surface.",
-            "uri": "http://data.europa.eu/m8g/longitude"
-          }
-        },
         {
           "uri": "http://www.w3.org/ns/locn#adminUnitL1",
           "name": "administrativeUnitLevel1",
@@ -7708,6 +8748,46 @@
           }
         },
         {
+          "uri": "https://d4w-digitalwallonia.opendatasoft.com/continent",
+          "name": "continent",
+          "sort": "continent",
+          "label": {
+            "en": "continent"
+          },
+          "description": {
+            "en": "Name of the continent"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Address",
+              "uri": "http://www.w3.org/ns/locn#Address"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Code",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Code",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Code"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "continent",
+            "definition-en": "Name of the continent",
+            "uri": "https://d4w-digitalwallonia.opendatasoft.com/continent"
+          }
+        },
+        {
           "uri": "https://www.w3.org/ns/legacy_locn#postCode",
           "name": "postCode",
           "sort": "post code",
@@ -7748,6 +8828,110 @@
             "label-en": "post code",
             "uri": "https://www.w3.org/ns/legacy_locn#postCode",
             "usageNote-en": "Post codes are common elements in many countries' postal address systems. One of the many post codes of Paris is for example \"75000\"."
+          }
+        }
+      ]
+    },
+    {
+      "uri": "http://www.w3.org/ns/locn#Geometry",
+      "name": "Geometry",
+      "label": {
+        "en": "Geometry"
+      },
+      "sort": "Geometry",
+      "description": {
+        "en": "A shape or form of a Location."
+      },
+      "usage": {
+        "en": "This class defines the notion of \"geometry\" at the conceptual level, and it shall be encoded by using different formats (see usage note of the locn:geometry property). Can be a point, line or polygon, expressed using coordinates in some coordinate reference system. We also refer to the <a class=\"tocxref\" href=\"#examples\">Examples</a> section of this specification for a number of different geometry examples expressed in different formats."
+      },
+      "parents": [],
+      "rawTags": {
+        "class-usage-scope": "supportive",
+        "definition-en": "A shape or form of a Location.",
+        "label-en": "Geometry",
+        "uri": "http://www.w3.org/ns/locn#Geometry",
+        "usageNote-en": "This class defines the notion of \"geometry\" at the conceptual level, and it shall be encoded by using different formats (see usage note of the locn:geometry property). Can be a point, line or polygon, expressed using coordinates in some coordinate reference system. We also refer to the <a class=\"tocxref\" href=\"#examples\">Examples</a> section of this specification for a number of different geometry examples expressed in different formats."
+      },
+      "properties": [
+        {
+          "uri": "http://data.europa.eu/m8g/latitude",
+          "name": "latitude",
+          "sort": "latitude",
+          "label": {
+            "en": "latitude"
+          },
+          "description": {
+            "en": "The geographic coordinate that specifies the north / south position of the Geomerty on the Earth's surface."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Geometry",
+              "uri": "http://www.w3.org/ns/locn#Geometry"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#String",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data.europa.eu/m8g/latitude",
+            "label-en": "latitude",
+            "definition-en": "The geographic coordinate that specifies the north / south position of the Geomerty on the Earth's surface."
+          }
+        },
+        {
+          "uri": "http://data.europa.eu/m8g/longitude",
+          "name": "longitude",
+          "sort": "longitude",
+          "label": {
+            "en": "longitude"
+          },
+          "description": {
+            "en": "The geographic coordinate that specifies the east / west position of the Geometry on the Earth's surface."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Geometry",
+              "uri": "http://www.w3.org/ns/locn#Geometry"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#String",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data.europa.eu/m8g/longitude",
+            "label-en": "longitude",
+            "definition-en": "The geographic coordinate that specifies the east / west position of the Geometry on the Earth's surface."
           }
         }
       ]
@@ -8156,7 +9340,7 @@
           ],
           "range": [
             {
-              "range_label": "File",
+              "range_label": "ImageObject",
               "range_uri": "http://data.europa.eu/m8g/ImageObject"
             }
           ],

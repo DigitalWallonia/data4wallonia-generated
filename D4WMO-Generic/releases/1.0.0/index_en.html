@@ -257,6 +257,8 @@ This specification uses the following prefixes to shorten the URIs for readabili
 			      <a href="#ContactPoint">Contact Point</a> |
 			      <a href="#Cost">Cost</a> |
 			      <a href="#Event">Event</a> |
+			      <a href="#Identifier">Identifier</a> |
+			      <a href="#LegalEntity">Legal Entity</a> |
 			      <a href="#Person">Person</a> |
 			      <a href="#Post">Post</a> |
 			      <a href="#PressReview">Press Review</a> |
@@ -274,6 +276,8 @@ This specification uses the following prefixes to shorten the URIs for readabili
 			      <a href="#Ambition">Ambition</a> |
 			      <a href="#AnnualBudget">Annual Budget</a> |
 			      <a href="#ContentDynamicList">Content Dynamic List</a> |
+			      <a href="#Geometry">Geometry</a> |
+			      <a href="#ImageObject">Image Object</a> |
 			      <a href="#ImageObject">Image Object</a> |
 			      <a href="#PartnerAdditionalDescription">Partner Additional Description</a> |
 			      <a href="#TemporalEntity">Temporal Entity</a> |
@@ -2020,8 +2024,7 @@ The main entities are those that form the core of the Application Profile.
                             For this entity the following properties are defined: <a href="#ContactPoint.contactpage">contact page</a>
                             , <a href="#ContactPoint.hasemail">has email</a>
                             , <a href="#ContactPoint.hasnonfeaturedemail">has non featured email</a>
-                            , <a href="#ContactPoint.landline">land line</a>
-                            , <a href="#ContactPoint.mobile">mobile</a>
+                            , <a href="#ContactPoint.hastelehpone">has telehpone</a>
                             , <a href="#ContactPoint.socialnetwork">social network</a>
                             , <a href="#ContactPoint.website">website</a>
                             .
@@ -2192,22 +2195,22 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                             </tr>
                         
-                            <tr id="ContactPoint.landline"
+                            <tr id="ContactPoint.hastelehpone"
                                 typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/landLine"
+                                resource="http://data.europa.eu/m8g/telephone"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20land line%20in%20Contact Point&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23ContactPoint.landline" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20has telehpone%20in%20Contact Point&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23ContactPoint.hastelehpone" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://data4wallonia.com/model/landLine"
+                                        <a href="http://data.europa.eu/m8g/telephone"
                                            data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/landLine"
+                                           data-content="http://data.europa.eu/m8g/telephone"
                                            data-placement="right">
-                                        land line</a>
+                                        has telehpone</a>
                                 </td>
                                 <td>
                                     
@@ -2220,50 +2223,7 @@ The main entities are those that form the core of the Application Profile.
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    A landline number
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="ContactPoint.mobile"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/mobile"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20mobile%20in%20Contact Point&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23ContactPoint.mobile" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/mobile"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/mobile"
-                                           data-placement="right">
-                                        mobile</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Literal" data-placement="right">Literal</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A mobile number
+                                    A telephone number through which the Contact Point can be contacted.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -3682,6 +3642,1338 @@ The main entities are those that form the core of the Application Profile.
 </section>
 
 
+
+
+
+
+
+   
+        <section>
+            <h3 id="Identifier">
+                <a href="http://www.w3.org/ns/adms#Identifier"
+                   data-toggle="tooltip"
+                   data-content="http://www.w3.org/ns/adms#Identifier"
+                   data-placement="right">Identifier</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20Identifier&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    A structured reference that identifies an entity.
+                </dd>
+                
+                
+                    <dt>
+                        Usage Note
+                    </dt>
+                    <dd>
+                        The Identifier class is based on the <a href="https://www.gs1.org/standards/edi/gs1-un-cefact-xml/2012">UN/CEFACT</a> class of the same name and is defined under the ADMS namespace.
+                    </dd>
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#Identifier.dateofissue">date of issue</a>
+                            , <a href="#Identifier.notation">notation</a>
+                            , <a href="#Identifier.schemaagency">schema agency</a>
+                            , <a href="#Identifier.schemename">scheme name</a>
+                            , <a href="#Identifier.schemeURI">scheme URI</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="Identifier.dateofissue"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/issued"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20date of issue%20in%20Identifier&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Identifier.dateofissue" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/issued"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/issued"
+                                           data-placement="right">
+                                        date of issue</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Date"
+                                               data-toggle="tooltip"
+                                               data-content="http://www.w3.org/2001/XMLSchema#date"
+                                               data-placement="right">Date</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The date on which the Identifier was assigned.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Identifier.notation"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/2004/02/skos/core#notation"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20notation%20in%20Identifier&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Identifier.notation" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/2004/02/skos/core#notation"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/2004/02/skos/core#notation"
+                                           data-placement="right">
+                                        notation</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A string of characters to uniquely identify a concept.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Identifier.schemaagency"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/adms#schemaAgency"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20schema agency%20in%20Identifier&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Identifier.schemaagency" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/adms#schemaAgency"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/adms#schemaAgency"
+                                           data-placement="right">
+                                        schema agency</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The name of the agency that issued the identifier.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Identifier.schemename"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/2000/01/rdf-schema#label"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20scheme name%20in%20Identifier&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Identifier.schemename" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/2000/01/rdf-schema#label"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/2000/01/rdf-schema#label"
+                                           data-placement="right">
+                                        scheme name</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Name of the scheme used to construct the identifier.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Identifier.schemeURI"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/conformsTo"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20scheme URI%20in%20Identifier&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Identifier.schemeURI" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/conformsTo"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/conformsTo"
+                                           data-placement="right">
+                                        scheme URI</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#URI"
+                                               data-toggle="tooltip"
+                                               data-content="http://www.w3.org/2001/XMLSchema#anyURI"
+                                               data-placement="right">URI</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    URI of the scheme used to construct the identifier.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+   
+        <section>
+            <h3 id="LegalEntity">
+                <a href="http://www.w3.org/ns/legal#LegalEntity"
+                   data-toggle="tooltip"
+                   data-content="http://www.w3.org/ns/legal#LegalEntity"
+                   data-placement="right">Legal Entity</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20LegalEntity&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    A self-employed person,company,or organization that has legal rights and obligations.
+                </dd>
+                
+                
+                    <dt>
+                        Usage Note
+                    </dt>
+                    <dd>
+                        A Legal Entity able to transact business, typically registered with a body able to confer legal status such as a national business register. It is able to trade, is legally liable for its actions, accounts, tax affairs etc. This makes Legal Entities distinct from the concept of organisations or groups. Many organisations exist that are not Legal Entities, yet to the outside world they have staff, hierarchies, locations etc. Other organisations exist that are an umbrella for several Legal Entities (universities are often good examples of this). This vocabulary is concerned solely with registered Legal Entities and does not attempt to cover all possible trading bodies.
+                    </dd>
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#LegalEntity.undefined"></a>
+                            , <a href="#LegalEntity.undefined"></a>
+                            , <a href="#LegalEntity.activeentity">active entity</a>
+                            , <a href="#LegalEntity.activitydescription">activity description</a>
+                            , <a href="#LegalEntity.activitynature">activity nature</a>
+                            , <a href="#LegalEntity.classification">classification</a>
+                            , <a href="#LegalEntity.identifier">identifier</a>
+                            , <a href="#LegalEntity.legalentityactivity">legal entity activity</a>
+                            , <a href="#LegalEntity.legalentitystatus">legal entity status</a>
+                            , <a href="#LegalEntity.legalformtype">legal form type</a>
+                            , <a href="#LegalEntity.legalname">legal name</a>
+                            , <a href="#LegalEntity.logo">logo</a>
+                            , <a href="#LegalEntity.mainNACEcode">main NACE code</a>
+                            , <a href="#LegalEntity.market">market</a>
+                            , <a href="#LegalEntity.memberof">member of</a>
+                            , <a href="#LegalEntity.num%C3%A9rod&#39;%C3%A9tablissement">numéro d&#39;établissement</a>
+                            , <a href="#LegalEntity.purpose">purpose</a>
+                            , <a href="#LegalEntity.registeredaddress">registered address</a>
+                            , <a href="#LegalEntity.registrationdate">registration date</a>
+                            , <a href="#LegalEntity.S3thema">S3 thema</a>
+                            , <a href="#LegalEntity.unitof">unit of</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="LegalEntity.undefined"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/m8g/memberOf"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.undefined" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/memberOf"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/memberOf"
+                                           data-placement="right">
+                                        </a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#LegalEntity" data-placement="right">Legal Entity</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.undefined"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/m8g/unitOf"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.undefined" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/unitOf"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/unitOf"
+                                           data-placement="right">
+                                        </a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#LegalEntity" data-placement="right">Legal Entity</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.activeentity"
+                                typeof="rdfs:Property"
+                                resource="https://d4w-digitalwallonia.opendatasoft.com/entiteActive"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20active entity%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.activeentity" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="https://d4w-digitalwallonia.opendatasoft.com/entiteActive"
+                                           data-toggle="tooltip"
+                                           data-content="https://d4w-digitalwallonia.opendatasoft.com/entiteActive"
+                                           data-placement="right">
+                                        active entity</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Boolean" data-placement="right">Boolean</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    Defines the activity status of the entity
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.activitydescription"
+                                typeof="rdfs:Property"
+                                resource="https://d4w-digitalwallonia.opendatasoft.com/activityDescription"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20activity description%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.activitydescription" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="https://d4w-digitalwallonia.opendatasoft.com/activityDescription"
+                                           data-toggle="tooltip"
+                                           data-content="https://d4w-digitalwallonia.opendatasoft.com/activityDescription"
+                                           data-placement="right">
+                                        activity description</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    Description of the activity of the entity
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.activitynature"
+                                typeof="rdfs:Property"
+                                resource="https://d4w-digitalwallonia.opendatasoft.com/activityNature"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20activity nature%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.activitynature" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="https://d4w-digitalwallonia.opendatasoft.com/activityNature"
+                                           data-toggle="tooltip"
+                                           data-content="https://d4w-digitalwallonia.opendatasoft.com/activityNature"
+                                           data-placement="right">
+                                        activity nature</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Code" data-placement="right">Code</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    Nature of the activity of the entity
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.classification"
+                                typeof="rdfs:Property"
+                                resource="https://www.w3.org/ns/org#classification"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20classification%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.classification" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="https://www.w3.org/ns/org#classification"
+                                           data-toggle="tooltip"
+                                           data-content="https://www.w3.org/ns/org#classification"
+                                           data-placement="right">
+                                        classification</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Code" data-placement="right">Code</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    Indicates a classification for this Organization within some classification scheme.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    Extension vocabularies may wish to specialize this property to have a range corresponding to a specific skos:ConceptScheme
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.identifier"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/adms#identifier"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20identifier%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.identifier" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/adms#identifier"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/adms#identifier"
+                                           data-placement="right">
+                                        identifier</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Identifier" data-placement="right">Identifier</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The unambiguous structured reference for the Legal Entity, which is different from the one denoting its legal status
+                                </td>
+                                <td property="skos:scopeNote">
+                                    Legal Entities may have any number of identifiers (but only one legal identifier). For example, in many jurisdictions, a business will have one or more tax numbers associated with them which do not, by themselves, confer legal entity status. An individual may be issued with identifiers for everything from social security to club membership. The identifier relationship must not be used to link to the identifier issued by the authority that conferred legal entity status on a business.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.legalentityactivity"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/legal#companyActivity"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20legal entity activity%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.legalentityactivity" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/legal#companyActivity"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/legal#companyActivity"
+                                           data-placement="right">
+                                        legal entity activity</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Code" data-placement="right">Code</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The area of work in which the Legal Entity is engaged.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    This is a general term that encompasses all the economic activities carried out by a company during the course of business. The activity of a company should be recorded using a controlled vocabulary. Several such vocabularies exist, many of which map to the UN's <a href="https://unstats.un.org/unsd/classifications/Econ/ISIC.cshtml">ISIC</a> codes. Where a particular controlled vocabulary is in use within a given context, such as <a href="https://resources.companieshouse.gov.uk/sic/">SIC codes</a> in the UK, it is acceptable to use these, however, the preferred choice for European interoperability is <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nace2">NACE</a>.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.legalentitystatus"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/legal#companyStatus"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20legal entity status%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.legalentitystatus" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/legal#companyStatus"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/legal#companyStatus"
+                                           data-placement="right">
+                                        legal entity status</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Code" data-placement="right">Code</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Information about the viability of the current position of the legal entity.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    Recording the status of a company presents the same issues as its type. The terms 'insolvent', 'bankrupt' and 'in receivership,' for example, are likely to mean slightly different things with different legal implications in different jurisdictions. Best practice for recording various other status levels is to use the relevant jurisdiction's terms and to identify the controlled vocabulary used.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.legalformtype"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/legal#companyType"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20legal form type%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.legalformtype" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/legal#companyType"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/legal#companyType"
+                                           data-placement="right">
+                                        legal form type</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Code" data-placement="right">Code</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The classification of the Legal Entity as a member of a particular group in the context of legal registration.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    To indicate the legal form type of a Legal Entity the <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/entity-legal-form">Entity Legal Form code list</a> published by the Publications Office of the EU and maintained by <a href="https://www.gleif.org/en/about-lei/code-lists/iso-20275-entity-legal-forms-code-list">GLEIF</a> can be used.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.legalname"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/legal#legalName"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20legal name%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.legalname" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/legal#legalName"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/legal#legalName"
+                                           data-placement="right">
+                                        legal name</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The name under which the Legal Entity is legally registered.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    The legal name is different from the alternative (trade) name which is a pseudonym used by companies that do not operate under their registered company name.
+A business might have more than one legal name, particularly in countries with more than one official language. In such cases, and where the encoding technology allows, the language of the string should be identified.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.logo"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/logo"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20logo%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.logo" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/logo"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/logo"
+                                           data-placement="right">
+                                        logo</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#ImageObject" data-placement="right">Image Object</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A logo
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.mainNACEcode"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/mainNACECode"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20main NACE code%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.mainNACEcode" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/mainNACECode"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/mainNACECode"
+                                           data-placement="right">
+                                        main NACE code</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    A main NACE code
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.market"
+                                typeof="rdfs:Property"
+                                resource="https://d4w-digitalwallonia.opendatasoft.com/market"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20market%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.market" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="https://d4w-digitalwallonia.opendatasoft.com/market"
+                                           data-toggle="tooltip"
+                                           data-content="https://d4w-digitalwallonia.opendatasoft.com/market"
+                                           data-placement="right">
+                                        market</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Code" data-placement="right">Code</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    Market of the entity
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.memberof"
+                                typeof="rdfs:Property"
+                                resource="https://www.w3.org/ns/org#memberOf"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20member of%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.memberof" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="https://www.w3.org/ns/org#memberOf"
+                                           data-toggle="tooltip"
+                                           data-content="https://www.w3.org/ns/org#memberOf"
+                                           data-placement="right">
+                                        member of</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#LegalEntity" data-placement="right">Legal Entity</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membersh
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.num%C3%A9rod&#39;%C3%A9tablissement"
+                                typeof="rdfs:Property"
+                                resource="https://www.w3.org/ns/org#identifier"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20numéro d&#39;établissement%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.num%C3%A9rod&#39;%C3%A9tablissement" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="https://www.w3.org/ns/org#identifier"
+                                           data-toggle="tooltip"
+                                           data-content="https://www.w3.org/ns/org#identifier"
+                                           data-placement="right">
+                                        numéro d&#39;établissement</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Literal" data-placement="right">Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    Many different national and international identifier schemes are available from other vocabularies. The ORG ontology is neutral to which schemes are used. The particular identifier scheme should be indicated by the datatype of the identifier value. Using datatypes to distinguish the notation scheme used is consistent with recommended best practice for skos:notation of which this property is a specialization.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.purpose"
+                                typeof="rdfs:Property"
+                                resource="https://www.w3.org/ns/org#purpose"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20purpose%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.purpose" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="https://www.w3.org/ns/org#purpose"
+                                           data-toggle="tooltip"
+                                           data-content="https://www.w3.org/ns/org#purpose"
+                                           data-placement="right">
+                                        purpose</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    Indicates the purpose of this Organization. There can be many purposes at different levels of abstraction but the nature of an organization is to have a reason for existence and this property is a means to document that reason. An Organization may have mu
+                                </td>
+                                <td property="skos:scopeNote">
+                                    It is recommended that the purpose be denoted by a controlled term or code list, ideally a skos:Concept. However, the range is left open to allow for other types of descriptive schemes. It is expected that profiles of this vocabulary will constrain the range of org:purpose. Alternative names: remit, responsibility (esp. if applied to OrganizationalUnits such as Government Departments).
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.registeredaddress"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/m8g/registeredAddress"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20registered address%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.registeredaddress" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/registeredAddress"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/registeredAddress"
+                                           data-placement="right">
+                                        registered address</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Address" data-placement="right">Address</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The address at which the Legal Entity is legally registered
+                                </td>
+                                <td property="skos:scopeNote">
+                                    In almost all jurisdictions, Legal Entities must register a public address. This may or may not be the actual address at which the Legal Entity does its business, it is commonly the address of their lawyer or accountant, but it is the address to which formal communications can be sent. The registered address property points to the Address of the Registered Site. This property can be seen as a shorthand for this property path.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.registrationdate"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/m8g/registrationDate"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20registration date%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.registrationdate" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/registrationDate"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/registrationDate"
+                                           data-placement="right">
+                                        registration date</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Date"
+                                               data-toggle="tooltip"
+                                               data-content="http://www.w3.org/2001/XMLSchema#date"
+                                               data-placement="right">Date</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The date on which the legal entity has registered in some jurisdiction for regulatory and / or for tax purposes.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.S3thema"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/S3Thema"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20S3 thema%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.S3thema" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/S3Thema"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/S3Thema"
+                                           data-placement="right">
+                                        S3 thema</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Code" data-placement="right">Code</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    S3 thema related to the entity
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.unitof"
+                                typeof="rdfs:Property"
+                                resource="https://www.w3.org/ns/org#unitOf"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20unit of%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.unitof" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="https://www.w3.org/ns/org#unitOf"
+                                           data-toggle="tooltip"
+                                           data-content="https://www.w3.org/ns/org#unitOf"
+                                           data-placement="right">
+                                        unit of</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#LegalEntity" data-placement="right">Legal Entity</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+</section>
 
 
 
@@ -8220,6 +9512,7 @@ The main entities are those that form the core of the Application Profile.
                         <dd>
                             For this entity the following properties are defined: <a href="#QualifiedPerson.contactperson">contact person</a>
                             , <a href="#QualifiedPerson.hasprofile">has profile</a>
+                            , <a href="#QualifiedPerson.headof">head of</a>
                             , <a href="#QualifiedPerson.internalname">internal name</a>
                             , <a href="#QualifiedPerson.isopenbyprofile">is open by profile</a>
                             , <a href="#QualifiedPerson.role">role</a>
@@ -8334,6 +9627,49 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                                 <td property="rdfs:comment">
                                     The profile to which the person belongs to.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="QualifiedPerson.headof"
+                                typeof="rdfs:Property"
+                                resource="https://www.w3.org/ns/org#headOf"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20head of%20in%20Qualified Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23QualifiedPerson.headof" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="https://www.w3.org/ns/org#headOf"
+                                           data-toggle="tooltip"
+                                           data-content="https://www.w3.org/ns/org#headOf"
+                                           data-placement="right">
+                                        head of</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#LegalEntity" data-placement="right">Legal Entity</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Indicates that a person (or other agent) is the leader or formal head of the Organization.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -9702,10 +11038,9 @@ This class belongs to <a href="https://semiceu.github.io/Core-Location-Vocabular
                         <dd>
                             For this entity the following properties are defined: <a href="#Address.administrativeunitlevel1">administrative unit level 1</a>
                             , <a href="#Address.administrativeunitlevel2">administrative unit level 2</a>
+                            , <a href="#Address.continent">continent</a>
                             , <a href="#Address.fulladdress">full address</a>
-                            , <a href="#Address.latitude">latitude</a>
                             , <a href="#Address.locatordesignator">locator designator</a>
-                            , <a href="#Address.longitude">longitude</a>
                             , <a href="#Address.postcode">post code</a>
                             , <a href="#Address.postname">post name</a>
                             .
@@ -9833,6 +11168,49 @@ This class belongs to <a href="https://semiceu.github.io/Core-Location-Vocabular
                                 </td>
                             </tr>
                         
+                            <tr id="Address.continent"
+                                typeof="rdfs:Property"
+                                resource="https://d4w-digitalwallonia.opendatasoft.com/continent"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20continent%20in%20Address&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Address.continent" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="https://d4w-digitalwallonia.opendatasoft.com/continent"
+                                           data-toggle="tooltip"
+                                           data-content="https://d4w-digitalwallonia.opendatasoft.com/continent"
+                                           data-placement="right">
+                                        continent</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Code" data-placement="right">Code</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    Name of the continent
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
                             <tr id="Address.fulladdress"
                                 typeof="rdfs:Property"
                                 resource="http://www.w3.org/ns/locn#fullAddress"
@@ -9876,49 +11254,6 @@ This class belongs to <a href="https://semiceu.github.io/Core-Location-Vocabular
                                 </td>
                             </tr>
                         
-                            <tr id="Address.latitude"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/m8g/latitude"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20latitude%20in%20Address&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Address.latitude" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data.europa.eu/m8g/latitude"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/m8g/latitude"
-                                           data-placement="right">
-                                        latitude</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#String" data-placement="right">String</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    The geographic coordinate that specifies the north / south position of the Geomerty on the Earth&#39;s surface.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
                             <tr id="Address.locatordesignator"
                                 typeof="rdfs:Property"
                                 resource="http://www.w3.org/ns/locn#locatorDesignator"
@@ -9951,49 +11286,6 @@ This class belongs to <a href="https://semiceu.github.io/Core-Location-Vocabular
                                 </td>
                                 <td property="skos:scopeNote">
                                     In simpler terms, this is the building number, apartment number, etc. For an address such as "Flat 3, 17 Bridge Street", the locator is "flat 3, 17".
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Address.longitude"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/m8g/longitude"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20longitude%20in%20Address&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Address.longitude" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data.europa.eu/m8g/longitude"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/m8g/longitude"
-                                           data-placement="right">
-                                        longitude</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#String" data-placement="right">String</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    The geographic coordinate that specifies the east / west position of the Geometry on the Earth&#39;s surface.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
                                 </td>
 				<!--
                                 <td>
@@ -10239,6 +11531,183 @@ This class belongs to <a href="https://semiceu.github.io/Core-Location-Vocabular
 
    
         <section>
+            <h3 id="Geometry">
+                <a href="http://www.w3.org/ns/locn#Geometry"
+                   data-toggle="tooltip"
+                   data-content="http://www.w3.org/ns/locn#Geometry"
+                   data-placement="right">Geometry</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20Geometry&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    A shape or form of a Location.
+                </dd>
+                
+                
+                    <dt>
+                        Usage Note
+                    </dt>
+                    <dd>
+                        This class defines the notion of "geometry" at the conceptual level, and it shall be encoded by using different formats (see usage note of the locn:geometry property). Can be a point, line or polygon, expressed using coordinates in some coordinate reference system. We also refer to the <a class="tocxref" href="#examples">Examples</a> section of this specification for a number of different geometry examples expressed in different formats.
+                    </dd>
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#Geometry.latitude">latitude</a>
+                            , <a href="#Geometry.longitude">longitude</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="Geometry.latitude"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/m8g/latitude"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20latitude%20in%20Geometry&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Geometry.latitude" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/latitude"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/latitude"
+                                           data-placement="right">
+                                        latitude</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#String" data-placement="right">String</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The geographic coordinate that specifies the north / south position of the Geomerty on the Earth&#39;s surface.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Geometry.longitude"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/m8g/longitude"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20longitude%20in%20Geometry&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Geometry.longitude" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/longitude"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/longitude"
+                                           data-placement="right">
+                                        longitude</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#String" data-placement="right">String</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The geographic coordinate that specifies the east / west position of the Geometry on the Earth&#39;s surface.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+</section>
+
+
+
+
+
+
+
+   
+        <section>
             <h3 id="ImageObject">
                 <a href="http://data.europa.eu/m8g/ImageObject"
                    data-toggle="tooltip"
@@ -10275,6 +11744,51 @@ This class belongs to <a href="https://semiceu.github.io/Core-Location-Vocabular
         
     </div>
 </section>
+
+
+
+
+
+   
+        <section>
+            <h3 id="ImageObject">
+                <a href="http://data.europa.eu/m8g/ImageObject"
+                   data-toggle="tooltip"
+                   data-content="http://data.europa.eu/m8g/ImageObject"
+                   data-placement="right">Image Object</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20ImageObject&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    A logo to describe / represent an entity.
+                </dd>
+                
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                    <dd>
+                        This specification does not impose any additional requirements to properties for this entity.
+                    </dd>
+                
+            </dl>
+        </div>
+        
+    </div>
+</section>
+
+
 
 
 
@@ -11245,10 +12759,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
-						
-					
-					
-						
 					
 						
 					
@@ -11290,6 +12800,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#Address">Address</a></td>
 								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
 								<td></td>
+								<td><a href="#Address.continent">continent </a></td>
+								<td><div class="shorten">https://d4w-digitalwallonia.opendatasoft.com/continent</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Address">Address</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
+								<td></td>
 								<td><a href="#Address.fulladdress">full address </a></td>
 								<td><div class="shorten">http://www.w3.org/ns/locn#fullAddress</div></td>
 							</tr>
@@ -11300,28 +12820,8 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#Address">Address</a></td>
 								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
 								<td></td>
-								<td><a href="#Address.latitude">latitude </a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/latitude</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Address">Address</a></td>
-								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
-								<td></td>
 								<td><a href="#Address.locatordesignator">locator designator </a></td>
 								<td><div class="shorten">http://www.w3.org/ns/locn#locatorDesignator</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Address">Address</a></td>
-								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
-								<td></td>
-								<td><a href="#Address.longitude">longitude </a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/longitude</div></td>
 							</tr>
 						
 					
@@ -11384,10 +12884,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
-						
-					
-					
-						
 					
 						
 					
@@ -11437,18 +12933,8 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#ContactPoint">Contact Point</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/ContactPoint</div></td>
 								<td></td>
-								<td><a href="#ContactPoint.landline">land line </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/landLine</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#ContactPoint">Contact Point</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/ContactPoint</div></td>
-								<td></td>
-								<td><a href="#ContactPoint.mobile">mobile </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/mobile</div></td>
+								<td><a href="#ContactPoint.hastelehpone">has telehpone </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/telephone</div></td>
 							</tr>
 						
 					
@@ -11865,6 +13351,118 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 			</tr>
 		
 				
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#Geometry">Geometry</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#Geometry</div></td>
+								<td></td>
+								<td><a href="#Geometry.latitude">latitude </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/latitude</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Geometry">Geometry</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#Geometry</div></td>
+								<td></td>
+								<td><a href="#Geometry.longitude">longitude </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/longitude</div></td>
+							</tr>
+						
+					
+				
+			</tr>
+		
+				
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#Identifier">Identifier</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#Identifier</div></td>
+								<td></td>
+								<td><a href="#Identifier.dateofissue">date of issue </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/issued</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Identifier">Identifier</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#Identifier</div></td>
+								<td></td>
+								<td><a href="#Identifier.notation">notation </a></td>
+								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#notation</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Identifier">Identifier</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#Identifier</div></td>
+								<td></td>
+								<td><a href="#Identifier.schemaagency">schema agency </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#schemaAgency</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Identifier">Identifier</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#Identifier</div></td>
+								<td></td>
+								<td><a href="#Identifier.schemename">scheme name </a></td>
+								<td><div class="shorten">http://www.w3.org/2000/01/rdf-schema#label</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Identifier">Identifier</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#Identifier</div></td>
+								<td></td>
+								<td><a href="#Identifier.schemeURI">scheme URI </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/conformsTo</div></td>
+							</tr>
+						
+					
+				
+			</tr>
+		
+				
 					<tr>
 						<td><a href="#ImageObject">Image Object</a></td>
 						<td><div class="shorten">http://data.europa.eu/m8g/ImageObject</div></td>
@@ -11872,6 +13470,318 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						<td></td>
 						<td></td>
 					</tr>
+				
+			</tr>
+		
+				
+					<tr>
+						<td><a href="#ImageObject">Image Object</a></td>
+						<td><div class="shorten">http://data.europa.eu/m8g/ImageObject</div></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				
+			</tr>
+		
+				
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.undefined"> </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/memberOf</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.undefined"> </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/unitOf</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.activeentity">active entity </a></td>
+								<td><div class="shorten">https://d4w-digitalwallonia.opendatasoft.com/entiteActive</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.activitydescription">activity description </a></td>
+								<td><div class="shorten">https://d4w-digitalwallonia.opendatasoft.com/activityDescription</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.activitynature">activity nature </a></td>
+								<td><div class="shorten">https://d4w-digitalwallonia.opendatasoft.com/activityNature</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.classification">classification </a></td>
+								<td><div class="shorten">https://www.w3.org/ns/org#classification</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.identifier">identifier </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#identifier</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.legalentityactivity">legal entity activity </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#companyActivity</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.legalentitystatus">legal entity status </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#companyStatus</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.legalformtype">legal form type </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#companyType</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.legalname">legal name </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#legalName</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.logo">logo </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/logo</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.mainNACEcode">main NACE code </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/mainNACECode</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.market">market </a></td>
+								<td><div class="shorten">https://d4w-digitalwallonia.opendatasoft.com/market</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.memberof">member of </a></td>
+								<td><div class="shorten">https://www.w3.org/ns/org#memberOf</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.num%C3%A9rod&#39;%C3%A9tablissement">numéro d&#39;établissement </a></td>
+								<td><div class="shorten">https://www.w3.org/ns/org#identifier</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.purpose">purpose </a></td>
+								<td><div class="shorten">https://www.w3.org/ns/org#purpose</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.registeredaddress">registered address </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/registeredAddress</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.registrationdate">registration date </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/registrationDate</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.S3thema">S3 thema </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/S3Thema</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.unitof">unit of </a></td>
+								<td><div class="shorten">https://www.w3.org/ns/org#unitOf</div></td>
+							</tr>
+						
+					
 				
 			</tr>
 		
@@ -13235,6 +15145,10 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+					
+						
 					
 						
 					
@@ -13264,6 +15178,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#QualifiedPerson.hasprofile">has profile </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/inOperation</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#QualifiedPerson">Qualified Person</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td></td>
+								<td><a href="#QualifiedPerson.headof">head of </a></td>
+								<td><div class="shorten">https://www.w3.org/ns/org#headOf</div></td>
 							</tr>
 						
 					

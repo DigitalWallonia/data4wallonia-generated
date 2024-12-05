@@ -44,6 +44,18 @@
       }
     },
     {
+      "EA-Guid": "{8E46FB67-15EB-49cb-B4A3-8B68CF2B83A2}",
+      "name": "ImageObject",
+      "label": {
+        "en": "Image Object",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A logo to describe / represent an entity.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
       "EA-Guid": "{922CDABF-F6EF-47c3-80A5-F231384B6CF2}",
       "name": "ActionPlan",
       "label": {
@@ -308,6 +320,38 @@
       }
     },
     {
+      "EA-Guid": "{64322A61-481F-448d-8E24-8BC0A644B817}",
+      "name": "Identifier",
+      "label": {
+        "en": "Identifier",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A structured reference that identifies an entity.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The Identifier class is based on the <a href=\"https://www.gs1.org/standards/edi/gs1-un-cefact-xml/2012\">UN/CEFACT</a> class of the same name and is defined under the ADMS namespace.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
+      "name": "LegalEntity",
+      "label": {
+        "en": "Legal Entity",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A self-employed person,company,or organization that has legal rights and obligations.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "en": "A Legal Entity able to transact business, typically registered with a body able to confer legal status such as a national business register. It is able to trade, is legally liable for its actions, accounts, tax affairs etc. This makes Legal Entities distinct from the concept of organisations or groups. Many organisations exist that are not Legal Entities, yet to the outside world they have staff, hierarchies, locations etc. Other organisations exist that are an umbrella for several Legal Entities (universities are often good examples of this). This vocabulary is concerned solely with registered Legal Entities and does not attempt to cover all possible trading bodies.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
       "EA-Guid": "{650BCC62-B5E6-4070-8DC6-A39F0953E191}",
       "name": "Address",
       "label": {
@@ -320,6 +364,22 @@
       },
       "usage": {
         "en": "<p>\r\nAn \"address representation\" as conceptually defined by the <a href=\"https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/ScopeObjectDetail.action?objectDetailId=9353\r\n\">INSPIRE Address Representation data type</a>: \"Representation of an address spatial object for use in external application schemas that need to include the basic, address information in a readable way.\"\r\n</p></br>\r\n\r\n<p>\r\nThe representation of Addresses varies widely from one country's postal system to another. Even within countries, there are almost always examples of Addresses that do not conform to the stated national standard. However, <a href=\"https://www.iso.org/standard/61710.html\">ISO 19160-1</a> provides a method through which different Addresses can be converted from one conceptual model to another.\r\n</p></br>\r\n\r\n<p>\r\nThis specification was heavily based on the INSPIRE Address Representation data type. It is noteworthy that if an Address is provided using the detailed breakdown suggested by the properties for this class, then it will be INSPIRE-conformant. To this very granular set of\r\nproperties, we add two further properties:\r\n<ul>\r\n  <li> full address (the complete address as a formatted string)</li>\r\n  <li> addressID (a unique identifier for the address)</li>\r\n</ul>\r\nThe first of these allows publishers to simply provide the complete Address as one string, with or without formatting. This is analogous to <a href=\"https://www.w3.org/TR/vcard-rdf/#d4e953\">vCard's label property</a>.\r\n</p></br>\r\n\r\n<p>\r\nThe addressID is part of the <a href=\"https://knowledge-base.inspire.ec.europa.eu/index_en\">INSPIRE guidelines</a> and provides a hook that can be used to link the Address to an alternative representation, such as <a href=\"https://www.w3.org/TR/vcard-rdf\">vCard</a> or <a href=\"https://www.oasis-open.org/committees/ciq/ciq.html#6\">OASIS xAL</a>.\r\n</p></br>\r\n\r\nThis class belongs to <a href=\"https://semiceu.github.io/Core-Location-Vocabulary/releases/2.00/#Address\">Core Location Vocabulary</a>",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{69348650-5630-4fae-AE96-9EFD5CACA2EC}",
+      "name": "Geometry",
+      "label": {
+        "en": "Geometry",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A shape or form of a Location.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "en": "This class defines the notion of \"geometry\" at the conceptual level, and it shall be encoded by using different formats (see usage note of the locn:geometry property). Can be a point, line or polygon, expressed using coordinates in some coordinate reference system. We also refer to the <a class=\"tocxref\" href=\"#examples\">Examples</a> section of this specification for a number of different geometry examples expressed in different formats.",
         "de": "Enter your translation here"
       }
     },
@@ -422,7 +482,7 @@
       }
     },
     {
-      "EA-Guid": "{6820C748-354E-40a3-A0E0-EF2906C2C0E4}",
+      "EA-Guid": "{339B64DC-C678-4608-AA77-6E58E3E5435B}",
       "name": "latitude",
       "label": {
         "en": "latitude",
@@ -434,7 +494,7 @@
       }
     },
     {
-      "EA-Guid": "{2C0B4AB2-35C0-4ce5-9E5A-C41C33A92A89}",
+      "EA-Guid": "{68FB27BC-D140-4190-A199-08EBB6BDA351}",
       "name": "longitude",
       "label": {
         "en": "longitude",
@@ -444,6 +504,10 @@
         "en": "The geographic coordinate that specifies the east / west position of the Geometry on the Earth's surface.",
         "de": "Enter your translation here"
       }
+    },
+    {
+      "EA-Guid": "{05865229-3887-46ad-8BDB-DB3CA4DBE1BB}",
+      "name": ""
     },
     {
       "EA-Guid": "{C1161301-D2D6-40ee-9AF0-044E0F8057EB}",
@@ -486,6 +550,34 @@
       }
     },
     {
+      "EA-Guid": "{6E66AFA5-A338-4e3e-8729-D4423BD68EEB}",
+      "name": "registeredAddress",
+      "label": {
+        "en": "registered address",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "The address at which the Legal Entity is legally registered",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "en": "In almost all jurisdictions, Legal Entities must register a public address. This may or may not be the actual address at which the Legal Entity does its business, it is commonly the address of their lawyer or accountant, but it is the address to which formal communications can be sent. The registered address property points to the Address of the Registered Site. This property can be seen as a shorthand for this property path.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{78769D4F-18F7-4d6b-AD14-17D9176601EF}",
+      "name": "registrationDate",
+      "label": {
+        "en": "registration date",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "The date on which the legal entity has registered in some jurisdiction for regulatory and / or for tax purposes.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
       "EA-Guid": "{1D87156F-5C9E-44d9-B736-B754EC5F4D3D}",
       "name": "responsibleProfile",
       "label": {
@@ -494,6 +586,34 @@
       },
       "definition": {
         "en": "A responsible profile",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{5F1B4C73-2B39-42c4-87B8-612130685D8D}",
+      "name": "hasTelehpone",
+      "label": {
+        "en": "has telehpone",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A telephone number through which the Contact Point can be contacted.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{12D86DC5-39CB-4d69-BDFD-4ADC9109362F}",
+      "name": ""
+    },
+    {
+      "EA-Guid": "{DA3D4C84-A2E6-42fc-B561-A23E316E7349}",
+      "name": "s3Thema",
+      "label": {
+        "en": "S3 thema",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "S3 thema related to the entity",
         "de": "Enter your translation here"
       }
     },
@@ -642,31 +762,7 @@
       }
     },
     {
-      "EA-Guid": "{85BEC74F-7687-4895-A2D2-0BD86B754EF3}",
-      "name": "ambition",
-      "label": {
-        "en": "ambition",
-        "de": "Enter your translation here"
-      },
-      "definition": {
-        "en": "An ambition",
-        "de": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{A8C35051-EEC1-49d4-B894-016880084375}",
-      "name": "ambition",
-      "label": {
-        "en": "ambition",
-        "de": "Enter your translation here"
-      },
-      "definition": {
-        "en": "An ambition",
-        "de": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{BE8424A7-D8B7-448f-9929-198EEB95D9A0}",
+      "EA-Guid": "{22A41E9A-660C-4d3c-8E21-98D1DEA859B2}",
       "name": "ambition",
       "label": {
         "en": "ambition",
@@ -702,7 +798,7 @@
       }
     },
     {
-      "EA-Guid": "{82936B7A-9B5D-450b-935A-A281283906FD}",
+      "EA-Guid": "{BE8424A7-D8B7-448f-9929-198EEB95D9A0}",
       "name": "ambition",
       "label": {
         "en": "ambition",
@@ -714,7 +810,31 @@
       }
     },
     {
-      "EA-Guid": "{22A41E9A-660C-4d3c-8E21-98D1DEA859B2}",
+      "EA-Guid": "{85BEC74F-7687-4895-A2D2-0BD86B754EF3}",
+      "name": "ambition",
+      "label": {
+        "en": "ambition",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "An ambition",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{A8C35051-EEC1-49d4-B894-016880084375}",
+      "name": "ambition",
+      "label": {
+        "en": "ambition",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "An ambition",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{82936B7A-9B5D-450b-935A-A281283906FD}",
       "name": "ambition",
       "label": {
         "en": "ambition",
@@ -1038,7 +1158,7 @@
       }
     },
     {
-      "EA-Guid": "{E7AF9F19-EB51-4c26-99C6-4A494CD8A857}",
+      "EA-Guid": "{6F0D1440-6A7D-42bb-82DD-C66E6E89C6F5}",
       "name": "contactPerson",
       "label": {
         "en": "contact person",
@@ -1050,7 +1170,7 @@
       }
     },
     {
-      "EA-Guid": "{6F0D1440-6A7D-42bb-82DD-C66E6E89C6F5}",
+      "EA-Guid": "{E7AF9F19-EB51-4c26-99C6-4A494CD8A857}",
       "name": "contactPerson",
       "label": {
         "en": "contact person",
@@ -1074,7 +1194,7 @@
       }
     },
     {
-      "EA-Guid": "{136BAE7C-CACB-41b6-A007-C0078EAE20C9}",
+      "EA-Guid": "{7E9E6583-E5F6-456a-A73D-C2EF333E2B66}",
       "name": "contactPoint",
       "label": {
         "en": "contact point",
@@ -1098,7 +1218,7 @@
       }
     },
     {
-      "EA-Guid": "{7E9E6583-E5F6-456a-A73D-C2EF333E2B66}",
+      "EA-Guid": "{136BAE7C-CACB-41b6-A007-C0078EAE20C9}",
       "name": "contactPoint",
       "label": {
         "en": "contact point",
@@ -1458,18 +1578,6 @@
       }
     },
     {
-      "EA-Guid": "{5F1B4C73-2B39-42c4-87B8-612130685D8D}",
-      "name": "landLine",
-      "label": {
-        "en": "land line",
-        "de": "Enter your translation here"
-      },
-      "definition": {
-        "en": "A landline number",
-        "de": "Enter your translation here"
-      }
-    },
-    {
       "EA-Guid": "{91730F41-E4A4-4314-8AE5-43041D1FCC56}",
       "name": "language",
       "label": {
@@ -1542,7 +1650,31 @@
       }
     },
     {
+      "EA-Guid": "{17F98F4C-9DBC-48ab-A00F-A1DBD7CF80B2}",
+      "name": "logo",
+      "label": {
+        "en": "logo",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A logo",
+        "de": "Enter your translation here"
+      }
+    },
+    {
       "EA-Guid": "{89A6D76E-F337-49bd-8744-16DC75C275A2}",
+      "name": "mainNaceCode",
+      "label": {
+        "en": "main NACE code",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A main NACE code",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{6DBC5D77-05D0-46e8-AAF4-B81CE1C53C6F}",
       "name": "mainNaceCode",
       "label": {
         "en": "main NACE code",
@@ -1598,18 +1730,6 @@
       },
       "definition": {
         "en": "A master ambition",
-        "de": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{22DF21CE-49CA-4d09-BBF2-4B6448AE411A}",
-      "name": "mobile",
-      "label": {
-        "en": "mobile",
-        "de": "Enter your translation here"
-      },
-      "definition": {
-        "en": "A mobile number",
         "de": "Enter your translation here"
       }
     },
@@ -1722,7 +1842,7 @@
       }
     },
     {
-      "EA-Guid": "{0D659D88-5D13-4a6b-B310-78D4CD70DF11}",
+      "EA-Guid": "{7EA2456E-DD45-48de-9559-2AB2321AE57C}",
       "name": "partner",
       "label": {
         "en": "partner",
@@ -1734,7 +1854,7 @@
       }
     },
     {
-      "EA-Guid": "{7EA2456E-DD45-48de-9559-2AB2321AE57C}",
+      "EA-Guid": "{0D659D88-5D13-4a6b-B310-78D4CD70DF11}",
       "name": "partner",
       "label": {
         "en": "partner",
@@ -1830,19 +1950,7 @@
       }
     },
     {
-      "EA-Guid": "{847A3655-09F5-4512-891F-974C15A92CE6}",
-      "name": "program",
-      "label": {
-        "en": "program",
-        "de": "Enter your translation here"
-      },
-      "definition": {
-        "en": "A program",
-        "de": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{62518AF5-3A34-4d04-8619-EAB6FDCEEA1A}",
+      "EA-Guid": "{E9F51D94-156A-4c60-908E-4E504BFC45FC}",
       "name": "program",
       "label": {
         "en": "program",
@@ -1866,6 +1974,18 @@
       }
     },
     {
+      "EA-Guid": "{847A3655-09F5-4512-891F-974C15A92CE6}",
+      "name": "program",
+      "label": {
+        "en": "program",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A program",
+        "de": "Enter your translation here"
+      }
+    },
+    {
       "EA-Guid": "{81876B2C-67F3-4d9a-B72F-A901BAA9C5C6}",
       "name": "program",
       "label": {
@@ -1878,7 +1998,7 @@
       }
     },
     {
-      "EA-Guid": "{E9F51D94-156A-4c60-908E-4E504BFC45FC}",
+      "EA-Guid": "{62518AF5-3A34-4d04-8619-EAB6FDCEEA1A}",
       "name": "program",
       "label": {
         "en": "program",
@@ -2626,6 +2746,18 @@
       }
     },
     {
+      "EA-Guid": "{C0BE3910-BE02-4d01-B69F-66D7E9FFC5E7}",
+      "name": "schemeUri",
+      "label": {
+        "en": "scheme URI",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "URI of the scheme used to construct the identifier.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
       "EA-Guid": "{863E7940-DA4B-45ee-9506-A45C024CA0C6}",
       "name": "shortDescription",
       "label": {
@@ -2646,6 +2778,134 @@
       },
       "definition": {
         "en": "A  textual representation of the Temporal Entity.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{A638E713-006E-42c7-A8E5-7C0120FEFE19}",
+      "name": "dateOfIssue",
+      "label": {
+        "en": "date of issue",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "The date on which the Identifier was assigned.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{F93E3803-1642-4c92-90EF-8872CF7DBF5F}",
+      "name": "schemeName",
+      "label": {
+        "en": "scheme name",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "Name of the scheme used to construct the identifier.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{4123D8A1-8386-4c03-9417-4B8B951C7FDC}",
+      "name": "notation",
+      "label": {
+        "en": "notation",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A string of characters to uniquely identify a concept.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{5149A21A-7B35-448c-ACA2-F1655EC050D9}",
+      "name": "identifier",
+      "label": {
+        "en": "identifier",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "The unambiguous structured reference for the Legal Entity, which is different from the one denoting its legal status",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Legal Entities may have any number of identifiers (but only one legal identifier). For example, in many jurisdictions, a business will have one or more tax numbers associated with them which do not, by themselves, confer legal entity status. An individual may be issued with identifiers for everything from social security to club membership. The identifier relationship must not be used to link to the identifier issued by the authority that conferred legal entity status on a business.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{4E41761E-A085-4d3b-84E4-25C3FB6894AE}",
+      "name": "schemaAgency",
+      "label": {
+        "en": "schema agency",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "The name of the agency that issued the identifier.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{D49009A6-2D1B-4eee-B3FB-BCF74E19D7DE}",
+      "name": "legalEntityActivity",
+      "label": {
+        "en": "legal entity activity",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "The area of work in which the Legal Entity is engaged.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "en": "This is a general term that encompasses all the economic activities carried out by a company during the course of business. The activity of a company should be recorded using a controlled vocabulary. Several such vocabularies exist, many of which map to the UN's <a href=\"https://unstats.un.org/unsd/classifications/Econ/ISIC.cshtml\">ISIC</a> codes. Where a particular controlled vocabulary is in use within a given context, such as <a href=\"https://resources.companieshouse.gov.uk/sic/\">SIC codes</a> in the UK, it is acceptable to use these, however, the preferred choice for European interoperability is <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nace2\">NACE</a>.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{180CFE17-CDB6-4584-8728-FBE956AEDF53}",
+      "name": "legalEntityStatus",
+      "label": {
+        "en": "legal entity status",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "Information about the viability of the current position of the legal entity.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Recording the status of a company presents the same issues as its type. The terms 'insolvent', 'bankrupt' and 'in receivership,' for example, are likely to mean slightly different things with different legal implications in different jurisdictions. Best practice for recording various other status levels is to use the relevant jurisdiction's terms and to identify the controlled vocabulary used.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{258B9CC8-224E-4e87-9F6C-53B86163B0F2}",
+      "name": "legalFormType",
+      "label": {
+        "en": "legal form type",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "The classification of the Legal Entity as a member of a particular group in the context of legal registration.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "en": "To indicate the legal form type of a Legal Entity the <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/entity-legal-form\">Entity Legal Form code list</a> published by the Publications Office of the EU and maintained by <a href=\"https://www.gleif.org/en/about-lei/code-lists/iso-20275-entity-legal-forms-code-list\">GLEIF</a> can be used.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{C81399F6-4596-43c3-8AD5-90E7F3A79EBA}",
+      "name": "legalName",
+      "label": {
+        "en": "legal name",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "The name under which the Legal Entity is legally registered.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The legal name is different from the alternative (trade) name which is a pseudonym used by companies that do not operate under their registered company name.\r\nA business might have more than one legal name, particularly in countries with more than one official language. In such cases, and where the encoding technology allows, the language of the string should be identified.",
         "de": "Enter your translation here"
       }
     },
@@ -2774,6 +3034,66 @@
       }
     },
     {
+      "EA-Guid": "{3A45066D-5223-48f5-B693-EAFC739C1AA1}",
+      "name": "activityDescription",
+      "label": {
+        "en": "activity description",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "Description of the activity of the entity",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{985BD8B5-8962-430d-9B0D-3539E4DAEB20}",
+      "name": "activityNature",
+      "label": {
+        "en": "activity nature",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "Nature of the activity of the entity",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{FD1C891B-7E9C-4dc8-AB4A-F049209D6DC9}",
+      "name": "continent",
+      "label": {
+        "en": "continent",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "Name of the continent",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{213360E5-388A-40ca-BA70-61A780F5E37F}",
+      "name": "activeEntity",
+      "label": {
+        "en": "active entity",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "Defines the activity status of the entity",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{97E9E40A-782F-4a95-A4AC-00616232DE1F}",
+      "name": "market",
+      "label": {
+        "en": "market",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "Market of the entity",
+        "de": "Enter your translation here"
+      }
+    },
+    {
       "EA-Guid": "{0EDDAFFE-C535-4c4f-8679-C4BB953B2F23}",
       "name": "postCode",
       "label": {
@@ -2786,6 +3106,90 @@
       },
       "usage": {
         "en": "Post codes are common elements in many countries' postal address systems. One of the many post codes of Paris is for example \"75000\".",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{C2DDB3E1-02A2-4aee-BD14-10E86F539A63}",
+      "name": "classification",
+      "label": {
+        "en": "classification",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "Indicates a classification for this Organization within some classification scheme.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Extension vocabularies may wish to specialize this property to have a range corresponding to a specific skos:ConceptScheme",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{91226D50-B424-4bcc-8B11-BBDB097D482E}",
+      "name": "headOf",
+      "label": {
+        "en": "head of",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "Indicates that a person (or other agent) is the leader or formal head of the Organization.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{0E4439AC-5BD9-4328-8EFD-D12076B34C70}",
+      "name": "numéroD'établissement",
+      "label": {
+        "en": "numéro d'établissement",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization.",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Many different national and international identifier schemes are available from other vocabularies. The ORG ontology is neutral to which schemes are used. The particular identifier scheme should be indicated by the datatype of the identifier value. Using datatypes to distinguish the notation scheme used is consistent with recommended best practice for skos:notation of which this property is a specialization.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{05865229-3887-46ad-8BDB-DB3CA4DBE1BB}",
+      "name": "memberOf",
+      "label": {
+        "en": "member of",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membersh",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{9DF5DBB4-4367-45f6-8DD4-2396BC2B6ABE}",
+      "name": "purpose",
+      "label": {
+        "en": "purpose",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "Indicates the purpose of this Organization. There can be many purposes at different levels of abstraction but the nature of an organization is to have a reason for existence and this property is a means to document that reason. An Organization may have mu",
+        "de": "Enter your translation here"
+      },
+      "usage": {
+        "en": "It is recommended that the purpose be denoted by a controlled term or code list, ideally a skos:Concept. However, the range is left open to allow for other types of descriptive schemes. It is expected that profiles of this vocabulary will constrain the range of org:purpose. Alternative names: remit, responsibility (esp. if applied to OrganizationalUnits such as Government Departments).",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{12D86DC5-39CB-4d69-BDFD-4ADC9109362F}",
+      "name": "unitOf",
+      "label": {
+        "en": "unit of",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "en": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization.",
         "de": "Enter your translation here"
       }
     }

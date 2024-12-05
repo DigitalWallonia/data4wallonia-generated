@@ -144,16 +144,16 @@
           "sh:path": "http://data4wallonia.com/model/hasNonFeaturedEmail"
         },
         {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContactPointShape/636553acf2f4b2fa921e104869b74795dd59b82d",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContactPoint.mobile",
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContactPointShape/7ab61f3d45d27c1d60427f9a18c4c4db1e65d7f7",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContactPoint.hastelehpone",
           "sh:description": {
-            "en": "A mobile number"
+            "en": "A telephone number through which the Contact Point can be contacted."
           },
           "sh:name": {
-            "en": "mobile"
+            "en": "has telehpone"
           },
           "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/mobile"
+          "sh:path": "http://data.europa.eu/m8g/telephone"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContactPointShape/7e32199610fb028b9a2f16d9d71e3603a32c1fba",
@@ -190,18 +190,6 @@
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data.europa.eu/m8g/contactPage"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContactPointShape/dbd270b04962d67773b7a71c9436f444186616af",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContactPoint.landline",
-          "sh:description": {
-            "en": "A landline number"
-          },
-          "sh:name": {
-            "en": "land line"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/landLine"
         }
       ],
       "sh:targetClass": "http://data.europa.eu/m8g/ContactPoint"
@@ -264,6 +252,13 @@
     },
     {
       "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#FileShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://data.europa.eu/m8g/ImageObject"
+    },
+    {
+      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ImageObjectShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
@@ -4150,6 +4145,18 @@
       "sh:closed": false,
       "sh:property": [
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/20e72c692090ea97cd328f03c7904cac5e165bc2",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPerson.headof",
+          "sh:class": "http://www.w3.org/ns/legal#LegalEntity",
+          "sh:description": {
+            "en": "Indicates that a person (or other agent) is the leader or formal head of the Organization."
+          },
+          "sh:name": {
+            "en": "head of"
+          },
+          "sh:path": "https://www.w3.org/ns/org#headOf"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/245bc89a6c735f27fa08033a9a63ae5d5d7d5acd",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPerson.internalname",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -4196,6 +4203,18 @@
           },
           "sh:path": "http://data4wallonia.com/model/role",
           "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/803b12f15a761ac251e073bd57d79d58d35c7186",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPerson.headof",
+          "sh:description": {
+            "en": "Indicates that a person (or other agent) is the leader or formal head of the Organization."
+          },
+          "sh:name": {
+            "en": "head of"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://www.w3.org/ns/org#headOf"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/91be2d6f842ddff429910d152006249f53939d5b",
@@ -5065,6 +5084,866 @@
       "sh:targetClass": "http://www.w3.org/2006/time#TemporalEntity"
     },
     {
+      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#IdentifierShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#IdentifierShape/053d0ae3c4b213ae2f708e5e492b97e2cce08686",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Identifier.notation",
+          "sh:description": {
+            "en": "A string of characters to uniquely identify a concept."
+          },
+          "sh:name": {
+            "en": "notation"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#IdentifierShape/0d2f12fd4ed87d3af4f1300097bea7985cc94745",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Identifier.schemeURI",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+          "sh:description": {
+            "en": "URI of the scheme used to construct the identifier."
+          },
+          "sh:name": {
+            "en": "scheme URI"
+          },
+          "sh:path": "http://purl.org/dc/terms/conformsTo"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#IdentifierShape/495aa44a236e78566cf7b2f54c299258b29602f9",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Identifier.schemename",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "Name of the scheme used to construct the identifier."
+          },
+          "sh:name": {
+            "en": "scheme name"
+          },
+          "sh:path": "http://www.w3.org/2000/01/rdf-schema#label"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#IdentifierShape/886a37c0a64d5093fa1e6f0352c72d6c9999de5f",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Identifier.dateofissue",
+          "sh:description": {
+            "en": "The date on which the Identifier was assigned."
+          },
+          "sh:name": {
+            "en": "date of issue"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/issued"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#IdentifierShape/b2d3ac00adf57ca47e24b371d036da25f0f2fb43",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Identifier.dateofissue",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "sh:description": {
+            "en": "The date on which the Identifier was assigned."
+          },
+          "sh:name": {
+            "en": "date of issue"
+          },
+          "sh:path": "http://purl.org/dc/terms/issued"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#IdentifierShape/b66ff3c38dc89b4412b1715099a98c00ae8118c9",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Identifier.schemename",
+          "sh:description": {
+            "en": "Name of the scheme used to construct the identifier."
+          },
+          "sh:name": {
+            "en": "scheme name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/2000/01/rdf-schema#label"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#IdentifierShape/cc40d454ac926043491df929ab05a361896b0021",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Identifier.schemeURI",
+          "sh:description": {
+            "en": "URI of the scheme used to construct the identifier."
+          },
+          "sh:name": {
+            "en": "scheme URI"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/conformsTo"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#IdentifierShape/ce99d905817e35ff5ebdf871e45b1e25e2e85188",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Identifier.schemename",
+          "sh:description": {
+            "en": "Name of the scheme used to construct the identifier."
+          },
+          "sh:name": {
+            "en": "scheme name"
+          },
+          "sh:path": "http://www.w3.org/2000/01/rdf-schema#label",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#IdentifierShape/e17cae15cd3a2db8b6c9aeef586141ff8b261cab",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Identifier.schemaagency",
+          "sh:description": {
+            "en": "The name of the agency that issued the identifier."
+          },
+          "sh:name": {
+            "en": "schema agency"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/adms#schemaAgency"
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/adms#Identifier"
+    },
+    {
+      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/040c29f88dee748c6838ad5f7d5dbace1f28884a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.market",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "Market of the entity"
+          },
+          "sh:name": {
+            "en": "market"
+          },
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/market"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/0a79940f6fb16193ff7a69f50e5ff7e807f2685d",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.logo",
+          "sh:description": {
+            "en": "A logo"
+          },
+          "sh:name": {
+            "en": "logo"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/logo"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/16a2ae1bd10ecd1b71a5d7733636716b16dec57b",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.legalformtype",
+          "sh:description": {
+            "en": "The classification of the Legal Entity as a member of a particular group in the context of legal registration."
+          },
+          "sh:name": {
+            "en": "legal form type"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/legal#companyType"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/184e142eab427c6c7e47283d042326282a61dfd1",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.purpose",
+          "sh:description": {
+            "en": "Indicates the purpose of this Organization. There can be many purposes at different levels of abstraction but the nature of an organization is to have a reason for existence and this property is a means to document that reason. An Organization may have mu"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "purpose"
+          },
+          "sh:path": "https://www.w3.org/ns/org#purpose"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/30c2de1b85595fb7b8ff738893031cf824165ba1",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.purpose",
+          "sh:description": {
+            "en": "Indicates the purpose of this Organization. There can be many purposes at different levels of abstraction but the nature of an organization is to have a reason for existence and this property is a means to document that reason. An Organization may have mu"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "purpose"
+          },
+          "sh:path": "https://www.w3.org/ns/org#purpose"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/325ec603c6c07ee7f63cea6b9eb8fee82704df32",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.activeentity",
+          "sh:description": {
+            "en": "Defines the activity status of the entity"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "active entity"
+          },
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/entiteActive"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/32664e1cffdb0ea4f1f9c6a89b919e9b7f25e025",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.mainNACEcode",
+          "sh:description": {
+            "en": "A main NACE code"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "main NACE code"
+          },
+          "sh:path": "http://data4wallonia.com/model/mainNACECode"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/35f2aebe69acb8ef31dbdb743a8c29a0f6ab50cf",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.mainNACEcode",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A main NACE code"
+          },
+          "sh:name": {
+            "en": "main NACE code"
+          },
+          "sh:path": "http://data4wallonia.com/model/mainNACECode"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/373a348fc0f0a7dd395acb64f29b99b302abd267",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.mainNACEcode",
+          "sh:description": {
+            "en": "A main NACE code"
+          },
+          "sh:name": {
+            "en": "main NACE code"
+          },
+          "sh:path": "http://data4wallonia.com/model/mainNACECode",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/3fd45972245296a986ad73d13d316ec9d1e5533f",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.memberof",
+          "sh:description": {
+            "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membersh"
+          },
+          "sh:name": {
+            "en": "member of"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://www.w3.org/ns/org#memberOf"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/46d1a40c4338bfc66f90df275a9a6d3961bea46c",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.activitydescription",
+          "sh:description": {
+            "en": "Description of the activity of the entity"
+          },
+          "sh:name": {
+            "en": "activity description"
+          },
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/activityDescription",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/47d18c4e038d23b3daf18d4180a4c5aad6da05f0",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.S3thema",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "S3 thema related to the entity"
+          },
+          "sh:name": {
+            "en": "S3 thema"
+          },
+          "sh:path": "http://data4wallonia.com/model/S3Thema"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/48fd2b59954e54cc1eccd6d9ad700094a9348522",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.registeredaddress",
+          "sh:description": {
+            "en": "The address at which the Legal Entity is legally registered"
+          },
+          "sh:name": {
+            "en": "registered address"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/registeredAddress"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/4d55af37dbbb6a42088d917caa1ca25428ec42c9",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.",
+          "sh:class": "http://www.w3.org/ns/legal#LegalEntity",
+          "sh:description": "",
+          "sh:path": "http://data.europa.eu/m8g/memberOf"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/4d55af37dbbb6a42088d917caa1ca25428ec42c9",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.",
+          "sh:class": "http://www.w3.org/ns/legal#LegalEntity",
+          "sh:description": "",
+          "sh:path": "http://data.europa.eu/m8g/unitOf"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/4fcbd4782084e3ddb6267da4ad497ce149cea8c2",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.activitynature",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "Nature of the activity of the entity"
+          },
+          "sh:name": {
+            "en": "activity nature"
+          },
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/activityNature"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/584beab9b274893ecd7bb3f425d0400d1f9f9255",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.mainNACEcode",
+          "sh:description": {
+            "en": "A main NACE code"
+          },
+          "sh:name": {
+            "en": "main NACE code"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/mainNACECode"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/593ec4d85aab525ca301cd8c16a7804012862a94",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.unitof",
+          "sh:description": {
+            "en": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization."
+          },
+          "sh:name": {
+            "en": "unit of"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://www.w3.org/ns/org#unitOf"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/5de7dd3454af7271c3bf268f0cf8723b4a9667ec",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.legalname",
+          "sh:description": {
+            "en": "The name under which the Legal Entity is legally registered."
+          },
+          "sh:name": {
+            "en": "legal name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/legal#legalName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/6193ff95804f8549530658450f8b7dea5d00362c",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.S3thema",
+          "sh:description": {
+            "en": "S3 thema related to the entity"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "S3 thema"
+          },
+          "sh:path": "http://data4wallonia.com/model/S3Thema"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/67e99f01ae88b60e2e57fe2797aea1894ac1d63c",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.registrationdate",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "sh:description": {
+            "en": "The date on which the legal entity has registered in some jurisdiction for regulatory and / or for tax purposes."
+          },
+          "sh:name": {
+            "en": "registration date"
+          },
+          "sh:path": "http://data.europa.eu/m8g/registrationDate"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/6b95f7afa0acb115254af4469b3de83d9414e899",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.legalentityactivity",
+          "sh:description": {
+            "en": "The area of work in which the Legal Entity is engaged."
+          },
+          "sh:name": {
+            "en": "legal entity activity"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/legal#companyActivity"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/6b9f146f1aeab232cd8359f58b0b21a1193ee9ca",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.purpose",
+          "sh:description": {
+            "en": "Indicates the purpose of this Organization. There can be many purposes at different levels of abstraction but the nature of an organization is to have a reason for existence and this property is a means to document that reason. An Organization may have mu"
+          },
+          "sh:name": {
+            "en": "purpose"
+          },
+          "sh:path": "https://www.w3.org/ns/org#purpose",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/6d93e8312c558859fe6bf40cedc5a98bed22e268",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.S3thema",
+          "sh:description": {
+            "en": "S3 thema related to the entity"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "S3 thema"
+          },
+          "sh:path": "http://data4wallonia.com/model/S3Thema"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/718ae9bbdedff1ecd80c1da376fb9ece011dd216",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.legalentitystatus",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "Information about the viability of the current position of the legal entity."
+          },
+          "sh:name": {
+            "en": "legal entity status"
+          },
+          "sh:path": "http://www.w3.org/ns/legal#companyStatus"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/861b646e9943ec5feab060f4b60bf19d392436e8",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.num%C3%A9rod'%C3%A9tablissement",
+          "sh:description": {
+            "en": "Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "numéro d'établissement"
+          },
+          "sh:path": "https://www.w3.org/ns/org#identifier"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/8662a1e162ca0ebe52611bf26791584c89c3de70",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.purpose",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "Indicates the purpose of this Organization. There can be many purposes at different levels of abstraction but the nature of an organization is to have a reason for existence and this property is a means to document that reason. An Organization may have mu"
+          },
+          "sh:name": {
+            "en": "purpose"
+          },
+          "sh:path": "https://www.w3.org/ns/org#purpose"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/888031c72afb09e066acb8fcd23afb4db1e22f13",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.legalformtype",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "The classification of the Legal Entity as a member of a particular group in the context of legal registration."
+          },
+          "sh:name": {
+            "en": "legal form type"
+          },
+          "sh:path": "http://www.w3.org/ns/legal#companyType"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/88c7bac3bf428d0c0abcd15cc9806d565ab6e8b4",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.legalname",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "The name under which the Legal Entity is legally registered."
+          },
+          "sh:name": {
+            "en": "legal name"
+          },
+          "sh:path": "http://www.w3.org/ns/legal#legalName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/8932cdc11dcea78a104fe961daef62e126485fc3",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.purpose",
+          "sh:description": {
+            "en": "Indicates the purpose of this Organization. There can be many purposes at different levels of abstraction but the nature of an organization is to have a reason for existence and this property is a means to document that reason. An Organization may have mu"
+          },
+          "sh:name": {
+            "en": "purpose"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "https://www.w3.org/ns/org#purpose"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/8a3a5192f0c9731ae0fb58d760e00cc2c338c8a9",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.legalentityactivity",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "The area of work in which the Legal Entity is engaged."
+          },
+          "sh:name": {
+            "en": "legal entity activity"
+          },
+          "sh:path": "http://www.w3.org/ns/legal#companyActivity"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/a1b9903358f0b407b1a295c8497e8bbbb37671a1",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.market",
+          "sh:description": {
+            "en": "Market of the entity"
+          },
+          "sh:name": {
+            "en": "market"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/market"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/a7ebb1e7b4fef5c9ca1a50e2c6598de17b518e66",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.activitydescription",
+          "sh:description": {
+            "en": "Description of the activity of the entity"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "activity description"
+          },
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/activityDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/aab7e8ce8d8a6014be2c882e224b34488a2b6274",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.registrationdate",
+          "sh:description": {
+            "en": "The date on which the legal entity has registered in some jurisdiction for regulatory and / or for tax purposes."
+          },
+          "sh:name": {
+            "en": "registration date"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data.europa.eu/m8g/registrationDate"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/aadbd67a77a624f073be2076627fb9dc883cbe48",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.identifier",
+          "sh:description": {
+            "en": "The unambiguous structured reference for the Legal Entity, which is different from the one denoting its legal status"
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/adms#identifier"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/b2382a3abb3a90b08e1998e8497b3ce406bac36c",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.activitydescription",
+          "sh:description": {
+            "en": "Description of the activity of the entity"
+          },
+          "sh:name": {
+            "en": "activity description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/activityDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/b41e904f152a5e9ac34b45665787f02461d7a0b3",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.",
+          "sh:description": "",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/memberOf"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/b41e904f152a5e9ac34b45665787f02461d7a0b3",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.",
+          "sh:description": "",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/unitOf"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/b51287e1e9f5ec98f0bab032568444caba7c6ef4",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.activeentity",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "sh:description": {
+            "en": "Defines the activity status of the entity"
+          },
+          "sh:name": {
+            "en": "active entity"
+          },
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/entiteActive"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/b690ef515b6791ab0c0cec778dc753dd45e21324",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.legalname",
+          "sh:description": {
+            "en": "The name under which the Legal Entity is legally registered."
+          },
+          "sh:name": {
+            "en": "legal name"
+          },
+          "sh:path": "http://www.w3.org/ns/legal#legalName",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/b9d7391deffceb182bef20e69771e5bfcf511f96",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.classification",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "Indicates a classification for this Organization within some classification scheme."
+          },
+          "sh:name": {
+            "en": "classification"
+          },
+          "sh:path": "https://www.w3.org/ns/org#classification"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/ba3402fbd6eafedb3053d8bfc65e64a298406a85",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.activitynature",
+          "sh:description": {
+            "en": "Nature of the activity of the entity"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "activity nature"
+          },
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/activityNature"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/c204d79b82f54de97e719ddae91dd8f905613b9a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.activitynature",
+          "sh:description": {
+            "en": "Nature of the activity of the entity"
+          },
+          "sh:name": {
+            "en": "activity nature"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/activityNature"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/c45783ad1c8e58de138faa9d4e93b79b55f94898",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.unitof",
+          "sh:class": "http://www.w3.org/ns/legal#LegalEntity",
+          "sh:description": {
+            "en": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization."
+          },
+          "sh:name": {
+            "en": "unit of"
+          },
+          "sh:path": "https://www.w3.org/ns/org#unitOf"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/c552423cc5f3398e44ee3d03cdf62e560fedd532",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.classification",
+          "sh:description": {
+            "en": "Indicates a classification for this Organization within some classification scheme."
+          },
+          "sh:name": {
+            "en": "classification"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://www.w3.org/ns/org#classification"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/c5f22abe8c43bad21c5085ac97ae5d7713b38bd3",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.activitydescription",
+          "sh:description": {
+            "en": "Description of the activity of the entity"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "activity description"
+          },
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/activityDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/cdaf8f1100126c1a5e35c455b7af4b5ae8ac85be",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.activeentity",
+          "sh:description": {
+            "en": "Defines the activity status of the entity"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "active entity"
+          },
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/entiteActive"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/ce8cbfee1a887f0f8809efa862751bcdf487b706",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.classification",
+          "sh:description": {
+            "en": "Indicates a classification for this Organization within some classification scheme."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "classification"
+          },
+          "sh:path": "https://www.w3.org/ns/org#classification"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/ceee3fb5544086fd94fe5bf12b22fa68b6aa5e98",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.market",
+          "sh:description": {
+            "en": "Market of the entity"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "market"
+          },
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/market"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/cf9602ea5422d929eccf1b7ba9f66046b2fce096",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.registeredaddress",
+          "sh:class": "http://www.w3.org/ns/locn#Address",
+          "sh:description": {
+            "en": "The address at which the Legal Entity is legally registered"
+          },
+          "sh:name": {
+            "en": "registered address"
+          },
+          "sh:path": "http://data.europa.eu/m8g/registeredAddress"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/d35cdd04654c68ccfd7d21b921b9f3d0f859df35",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.activeentity",
+          "sh:description": {
+            "en": "Defines the activity status of the entity"
+          },
+          "sh:name": {
+            "en": "active entity"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/entiteActive"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/dbd0939cea0414f4306b88a103e6875242d702f9",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.classification",
+          "sh:description": {
+            "en": "Indicates a classification for this Organization within some classification scheme."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "classification"
+          },
+          "sh:path": "https://www.w3.org/ns/org#classification"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/dce5f0b9ce22d1c7f8f95163ed722d4236e5a3dc",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.logo",
+          "sh:class": "http://data.europa.eu/m8g/ImageObject",
+          "sh:description": {
+            "en": "A logo"
+          },
+          "sh:name": {
+            "en": "logo"
+          },
+          "sh:path": "http://data4wallonia.com/model/logo"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/df9c7b3da000dcb6570a52028410ed7e47998a6b",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.S3thema",
+          "sh:description": {
+            "en": "S3 thema related to the entity"
+          },
+          "sh:name": {
+            "en": "S3 thema"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/S3Thema"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/e2017f72421063cd9ff494011ec78f35f9632a4a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.identifier",
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
+          "sh:description": {
+            "en": "The unambiguous structured reference for the Legal Entity, which is different from the one denoting its legal status"
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#identifier"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/e397ea40389111be56f8ee88be0d4571f77cd3fc",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.legalentitystatus",
+          "sh:description": {
+            "en": "Information about the viability of the current position of the legal entity."
+          },
+          "sh:name": {
+            "en": "legal entity status"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/legal#companyStatus"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/ecf6a4e709202f3a193a388155d0c139c3a31335",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.activitynature",
+          "sh:description": {
+            "en": "Nature of the activity of the entity"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "activity nature"
+          },
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/activityNature"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/eded55bfab7ff7790d23262cda4890f653f74311",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.activitydescription",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "Description of the activity of the entity"
+          },
+          "sh:name": {
+            "en": "activity description"
+          },
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/activityDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/f403a7f675400ada924e0cff19ffc7bda510a442",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.market",
+          "sh:description": {
+            "en": "Market of the entity"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "market"
+          },
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/market"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/f5a8eec00489122ca53fa0a670f86a421b31705d",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.num%C3%A9rod'%C3%A9tablissement",
+          "sh:description": {
+            "en": "Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization."
+          },
+          "sh:name": {
+            "en": "numéro d'établissement"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "https://www.w3.org/ns/org#identifier"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/f6a439dacfd0da602e5b64f14f007fe9ab33a467",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.memberof",
+          "sh:class": "http://www.w3.org/ns/legal#LegalEntity",
+          "sh:description": {
+            "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membersh"
+          },
+          "sh:name": {
+            "en": "member of"
+          },
+          "sh:path": "https://www.w3.org/ns/org#memberOf"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/f71a7306f0c0e77c849803621d03b38b55cbcd24",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.num%C3%A9rod'%C3%A9tablissement",
+          "sh:description": {
+            "en": "Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "numéro d'établissement"
+          },
+          "sh:path": "https://www.w3.org/ns/org#identifier"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/fe6f66131d044e9f15becc4f2ab8bfc245e85e5e",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.mainNACEcode",
+          "sh:description": {
+            "en": "A main NACE code"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "main NACE code"
+          },
+          "sh:path": "http://data4wallonia.com/model/mainNACECode"
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/legal#LegalEntity"
+    },
+    {
       "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -5080,18 +5959,6 @@
           },
           "sh:path": "http://www.w3.org/ns/locn#adminUnitL1",
           "sh:uniqueLang": "true"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/06d06feebc072daa649b8205dc16aeeaa91093c0",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.latitude",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
-          "sh:description": {
-            "en": "The geographic coordinate that specifies the north / south position of the Geomerty on the Earth's surface."
-          },
-          "sh:name": {
-            "en": "latitude"
-          },
-          "sh:path": "http://data.europa.eu/m8g/latitude"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/256ffe464f9c7682e950f7853ef0b6060580435b",
@@ -5130,40 +5997,28 @@
           "sh:uniqueLang": "true"
         },
         {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/4703caa70988e668e6a8c93b5e670b5f436d4abc",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.longitude",
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/4da4b4f12446c7b90bf9929edcf3532f302c4423",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.continent",
           "sh:description": {
-            "en": "The geographic coordinate that specifies the east / west position of the Geometry on the Earth's surface."
+            "en": "Name of the continent"
           },
           "sh:name": {
-            "en": "longitude"
+            "en": "continent"
           },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data.europa.eu/m8g/longitude"
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/continent"
         },
         {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/476220a5f61cf3795f557dbbd3c33f167fb93ff1",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.longitude",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/680392244cac8d7a9e2fcde80cdcae359cbe01da",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.continent",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
-            "en": "The geographic coordinate that specifies the east / west position of the Geometry on the Earth's surface."
+            "en": "Name of the continent"
           },
           "sh:name": {
-            "en": "longitude"
+            "en": "continent"
           },
-          "sh:path": "http://data.europa.eu/m8g/longitude"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/75b6c20aa5a7516dbc025d5a22854bfc21752ed3",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.latitude",
-          "sh:description": {
-            "en": "The geographic coordinate that specifies the north / south position of the Geomerty on the Earth's surface."
-          },
-          "sh:name": {
-            "en": "latitude"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data.europa.eu/m8g/latitude"
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/continent"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/854a17171901a9c000eff34a7ccd77814891e3d5",
@@ -5250,6 +6105,18 @@
           "sh:uniqueLang": "true"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/b043886b69791f73bf40ebb4efc9f3cc2ffd245c",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.continent",
+          "sh:description": {
+            "en": "Name of the continent"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "continent"
+          },
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/continent"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/c0a2b78a80a731301e2f54d040ca9aa2c9b125b1",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.postcode",
           "sh:description": {
@@ -5274,6 +6141,18 @@
           "sh:path": "http://www.w3.org/ns/locn#fullAddress"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/f33dc3af3f2671021b9bb90a6ef843bc8e479dda",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.continent",
+          "sh:description": {
+            "en": "Name of the continent"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "continent"
+          },
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/continent"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/f8d38c3580ea5d4e47ea9e1ad447a47ebe91d5fa",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.postname",
           "sh:description": {
@@ -5287,6 +6166,62 @@
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/locn#Address"
+    },
+    {
+      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#GeometryShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#GeometryShape/06d06feebc072daa649b8205dc16aeeaa91093c0",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Geometry.latitude",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "The geographic coordinate that specifies the north / south position of the Geomerty on the Earth's surface."
+          },
+          "sh:name": {
+            "en": "latitude"
+          },
+          "sh:path": "http://data.europa.eu/m8g/latitude"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#GeometryShape/4703caa70988e668e6a8c93b5e670b5f436d4abc",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Geometry.longitude",
+          "sh:description": {
+            "en": "The geographic coordinate that specifies the east / west position of the Geometry on the Earth's surface."
+          },
+          "sh:name": {
+            "en": "longitude"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data.europa.eu/m8g/longitude"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#GeometryShape/476220a5f61cf3795f557dbbd3c33f167fb93ff1",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Geometry.longitude",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "The geographic coordinate that specifies the east / west position of the Geometry on the Earth's surface."
+          },
+          "sh:name": {
+            "en": "longitude"
+          },
+          "sh:path": "http://data.europa.eu/m8g/longitude"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#GeometryShape/75b6c20aa5a7516dbc025d5a22854bfc21752ed3",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Geometry.latitude",
+          "sh:description": {
+            "en": "The geographic coordinate that specifies the north / south position of the Geomerty on the Earth's surface."
+          },
+          "sh:name": {
+            "en": "latitude"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data.europa.eu/m8g/latitude"
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/locn#Geometry"
     },
     {
       "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape",
