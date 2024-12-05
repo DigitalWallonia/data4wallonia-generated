@@ -276,8 +276,8 @@ This specification uses the following prefixes to shorten the URIs for readabili
 			      <a href="#Ambition">Ambition</a> |
 			      <a href="#AnnualBudget">Annual Budget</a> |
 			      <a href="#ContentDynamicList">Content Dynamic List</a> |
+			      <a href="#File">File</a> |
 			      <a href="#Geometry">Geometry</a> |
-			      <a href="#ImageObject">Image Object</a> |
 			      <a href="#ImageObject">Image Object</a> |
 			      <a href="#PartnerAdditionalDescription">Partner Additional Description</a> |
 			      <a href="#TemporalEntity">Temporal Entity</a> |
@@ -1598,7 +1598,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#ImageObject" data-placement="right">Image Object</a>
+                                            <a href="#File" data-placement="right">File</a>
                                         
                                     
                                 </td>
@@ -3647,6 +3647,8 @@ The main entities are those that form the core of the Application Profile.
 
 
 
+
+
    
         <section>
             <h3 id="Identifier">
@@ -3952,8 +3954,6 @@ The main entities are those that form the core of the Application Profile.
         
     </div>
 </section>
-
-
 
 
 
@@ -6223,7 +6223,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#ImageObject" data-placement="right">Image Object</a>
+                                            <a href="#File" data-placement="right">File</a>
                                         
                                     
                                 </td>
@@ -6438,7 +6438,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#ImageObject" data-placement="right">Image Object</a>
+                                            <a href="#File" data-placement="right">File</a>
                                         
                                     
                                 </td>
@@ -11440,6 +11440,49 @@ This class belongs to <a href="https://semiceu.github.io/Core-Location-Vocabular
 
    
         <section>
+            <h3 id="File">
+                <a href="http://data4wallonia.com/model/File"
+                   data-toggle="tooltip"
+                   data-content="http://data4wallonia.com/model/File"
+                   data-placement="right">File</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20File&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    A logo to describe / represent an entity.
+                </dd>
+                
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                    <dd>
+                        This specification does not impose any additional requirements to properties for this entity.
+                    </dd>
+                
+            </dl>
+        </div>
+        
+    </div>
+</section>
+
+
+
+
+
+   
+        <section>
             <h3 id="Geometry">
                 <a href="http://www.w3.org/ns/locn#Geometry"
                    data-toggle="tooltip"
@@ -11610,49 +11653,6 @@ This class belongs to <a href="https://semiceu.github.io/Core-Location-Vocabular
 </section>
 
 
-
-
-
-
-
-   
-        <section>
-            <h3 id="ImageObject">
-                <a href="http://data.europa.eu/m8g/ImageObject"
-                   data-toggle="tooltip"
-                   data-content="http://data.europa.eu/m8g/ImageObject"
-                   data-placement="right">Image Object</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20ImageObject&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    A logo to describe / represent an entity.
-                </dd>
-                
-                
-                
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                    <dd>
-                        This specification does not impose any additional requirements to properties for this entity.
-                    </dd>
-                
-            </dl>
-        </div>
-        
-    </div>
-</section>
 
 
 
@@ -13276,6 +13276,17 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 			</tr>
 		
 				
+					<tr>
+						<td><a href="#File">File</a></td>
+						<td><div class="shorten">http://data4wallonia.com/model/File</div></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				
+			</tr>
+		
+				
 					
 						
 					
@@ -13384,17 +13395,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 							</tr>
 						
 					
-				
-			</tr>
-		
-				
-					<tr>
-						<td><a href="#ImageObject">Image Object</a></td>
-						<td><div class="shorten">http://data.europa.eu/m8g/ImageObject</div></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
 				
 			</tr>
 		

@@ -8,7 +8,6 @@
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/> rdfs:member <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContactPointShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#CostShape>,
-    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#FileShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ImageObjectShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape>,
@@ -16,6 +15,7 @@
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicListShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#FileShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReviewShape>,
@@ -520,7 +520,7 @@
   shacl:path <http://data4wallonia.com/model/contactPerson> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/b3ec9cef84a6abb4641a90b07e001e6720a6f70b> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.relatedfile";
-  shacl:class <http://data.europa.eu/m8g/ImageObject>;
+  shacl:class <http://data4wallonia.com/model/File>;
   shacl:description "A related file"@en;
   shacl:name "related file"@en;
   shacl:path <http://data4wallonia.com/model/relatedFile> .
@@ -1253,7 +1253,7 @@
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#FileShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:targetClass <http://data.europa.eu/m8g/ImageObject> .
+  shacl:targetClass <http://data4wallonia.com/model/File> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#GeometryShape> a shacl:NodeShape;
   shacl:closed false;
@@ -2342,7 +2342,7 @@
   shacl:path <http://data4wallonia.com/model/dynamicList> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/b3ec9cef84a6abb4641a90b07e001e6720a6f70b> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Post.relatedfile";
-  shacl:class <http://data.europa.eu/m8g/ImageObject>;
+  shacl:class <http://data4wallonia.com/model/File>;
   shacl:description "A related file"@en;
   shacl:name "related file"@en;
   shacl:path <http://data4wallonia.com/model/relatedFile> .
@@ -2359,7 +2359,7 @@
   shacl:name "published date"@en .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/cea25f8fc2ecd0beef10e79a62c1a22212cabf36> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Post.pdffile";
-  shacl:class <http://data.europa.eu/m8g/ImageObject>;
+  shacl:class <http://data4wallonia.com/model/File>;
   shacl:description "A pdf file"@en;
   shacl:name "pdf file"@en;
   shacl:path <http://data4wallonia.com/model/pdfFile> .
