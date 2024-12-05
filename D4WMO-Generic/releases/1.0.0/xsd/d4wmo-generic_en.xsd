@@ -19,6 +19,7 @@
   <xs:element name="ServicesPlace" type="ServicesPlaceType"/>
   <xs:element name="Text" type="TextType"/>
   <xs:element name="Literal" type="LiteralType"/>
+  <xs:element name="Uri" type="UriType"/>
   <xs:element name="Boolean" type="BooleanType"/>
   <xs:element name="Date" type="DateType"/>
   <xs:element name="Double" type="DoubleType"/>
@@ -1079,6 +1080,14 @@
     <xs:attribute name="LiteralRef" type="xs:IDREF">
       <xs:annotation>
         <xs:documentation xml:lang="en">Reference to Literal ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="UriType">
+    <xs:sequence/>
+    <xs:attribute name="UriRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Uri ID</xs:documentation>
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
