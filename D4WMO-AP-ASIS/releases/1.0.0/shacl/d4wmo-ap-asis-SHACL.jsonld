@@ -468,18 +468,6 @@
           "sh:uniqueLang": "true"
         },
         {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanShape/3a5379de1364c1c0210ed1c7d0c25387c7496d23",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlan.socialnetwork",
-          "sh:description": {
-            "en": "A social network"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "social network"
-          },
-          "sh:path": "http://data4wallonia.com/model/socialNetwork"
-        },
-        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanShape/3caf7cbe9b51500589810ef0363bdef6cac061c2",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlan.totalbudget",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#decimal",
@@ -1506,7 +1494,153 @@
       "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfileShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
-      "sh:property": [],
+      "sh:property": [
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfileShape/0959a9f84b13ab85d20ac60b34d3367449afe3a6",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfile.profile",
+          "sh:description": {
+            "en": "A profile"
+          },
+          "sh:name": {
+            "en": "profile"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/profle"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfileShape/0c2f1ebdbaf105d73a0a1a6d978bba7f5184d75d",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfile.",
+          "sh:description": "",
+          "sh:minCount": "1",
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/role"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfileShape/245bc89a6c735f27fa08033a9a63ae5d5d7d5acd",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfile.internalname",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "An internal name pour une resource"
+          },
+          "sh:name": {
+            "en": "internal name"
+          },
+          "sh:path": "http://data4wallonia.com/model/internalNameActionPlan"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfileShape/498d6285289a2f8c4baef54ed4e73c3240f7dd5d",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfile.internalname",
+          "sh:description": {
+            "en": "An internal name pour une resource"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "internal name"
+          },
+          "sh:path": "http://data4wallonia.com/model/internalNameActionPlan"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfileShape/4d55af37dbbb6a42088d917caa1ca25428ec42c9",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfile.",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "sh:description": "",
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/financialParticipation"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfileShape/4d55af37dbbb6a42088d917caa1ca25428ec42c9",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfile.",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": "",
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/role"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfileShape/6f18697a32a9cd259b505949d4027ffe25067298",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfile.profile",
+          "sh:description": {
+            "en": "A profile"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "profile"
+          },
+          "sh:path": "http://data4wallonia.com/model/profle"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfileShape/7a9141f2c5f8db72fb51bd1def67ff439d4aa203",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfile.internalname",
+          "sh:description": {
+            "en": "An internal name pour une resource"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "internal name"
+          },
+          "sh:path": "http://data4wallonia.com/model/internalNameActionPlan"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfileShape/86c8e6c6539e9acc3dd4792fcbe1b374cb03dd51",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfile.profile",
+          "sh:description": {
+            "en": "A profile"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "profile"
+          },
+          "sh:path": "http://data4wallonia.com/model/profle"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfileShape/9f1d53fe2a94a609d479193c606e349a965dc068",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfile.profile",
+          "sh:class": "http://data4wallonia.com/model/Profile",
+          "sh:description": {
+            "en": "A profile"
+          },
+          "sh:name": {
+            "en": "profile"
+          },
+          "sh:path": "http://data4wallonia.com/model/profle"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfileShape/b41e904f152a5e9ac34b45665787f02461d7a0b3",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfile.",
+          "sh:description": "",
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/financialParticipation"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfileShape/b41e904f152a5e9ac34b45665787f02461d7a0b3",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfile.",
+          "sh:description": "",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/role"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfileShape/b96c16ba737f9ae66cd79d59c5077c682d5051e0",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfile.internalname",
+          "sh:description": {
+            "en": "An internal name pour une resource"
+          },
+          "sh:name": {
+            "en": "internal name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/internalNameActionPlan"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfileShape/ce012334c76fbb8723d52324457cb619f53f2527",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfile.",
+          "sh:description": "",
+          "sh:maxCount": "1",
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/financialParticipation"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfileShape/ce012334c76fbb8723d52324457cb619f53f2527",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfile.",
+          "sh:description": "",
+          "sh:maxCount": "1",
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/role"
+        }
+      ],
       "sh:targetClass": "http://data4wallonia.com/model/ActionPlanProfile"
     },
     {

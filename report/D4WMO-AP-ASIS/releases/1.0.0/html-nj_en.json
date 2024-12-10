@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/0dcc7a3958929bf81d6fdbd5784eac3c81d1d235",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/0dcc7a3958929bf81d6fdbd5784eac3c81d1d235/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/1f8ea05463095a858d06b0adad128c1f0d2c6239",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/1f8ea05463095a858d06b0adad128c1f0d2c6239/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -1276,7 +1276,7 @@
               }
             }
           ],
-          "cardinality": "0..1",
+          "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/socialNetwork",
@@ -1584,7 +1584,152 @@
         "label-en": "Action Plan Profile",
         "class-usage-scope": "supportive"
       },
-      "properties": []
+      "properties": [
+        {
+          "uri": "http://data4wallonia.com/model/internalNameActionPlan",
+          "name": "internalName",
+          "sort": "internal name",
+          "label": {
+            "en": "internal name"
+          },
+          "description": {
+            "en": "An internal name pour une resource"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ActionPlanProfile",
+              "uri": "http://data4wallonia.com/model/ActionPlanProfile"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#String",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/internalNameActionPlan",
+            "label-en": "internal name",
+            "definition-en": "An internal name pour une resource"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/profle",
+          "name": "profile",
+          "sort": "profile",
+          "label": {
+            "en": "profile"
+          },
+          "description": {
+            "en": "A profile"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ActionPlanProfile",
+              "uri": "http://data4wallonia.com/model/ActionPlanProfile"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Profile",
+              "range_uri": "http://data4wallonia.com/model/Profile"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Profile",
+              "range_puri": "http://data4wallonia.com/model/Profile",
+              "range_label": {
+                "en": "Profile"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "profile",
+            "uri": "http://data4wallonia.com/model/profle",
+            "definition-en": "A profile"
+          }
+        },
+        {
+          "uri": "https://d4w-digitalwallonia.opendatasoft.com/financialParticipation",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ActionPlanProfile",
+              "uri": "http://data4wallonia.com/model/ActionPlanProfile"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Decimal",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#decimal"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Double",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#decimal",
+              "range_label": {
+                "en": "Double"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {}
+        },
+        {
+          "uri": "https://d4w-digitalwallonia.opendatasoft.com/role",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ActionPlanProfile",
+              "uri": "http://data4wallonia.com/model/ActionPlanProfile"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Code",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Code",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Code"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {}
+        }
+      ]
     },
     {
       "uri": "http://data4wallonia.com/model/Address",
