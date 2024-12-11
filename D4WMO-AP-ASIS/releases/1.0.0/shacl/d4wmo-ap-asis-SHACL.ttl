@@ -1,5 +1,3 @@
-@prefix dc: <http://purl.org/dc/terms/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix shacl: <http://www.w3.org/ns/shacl#> .
@@ -1182,7 +1180,7 @@
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#EventShape/21ee2fa1ecbab7ed02cd862932f41a1c1e086b35> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Event.price";
   shacl:description "A price"@en;
   shacl:name "price"@en;
-  shacl:path <http://data.europa.eu/m8g/price>;
+  shacl:path <http://data4wallonia.com/model/price>;
   shacl:uniqueLang true .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#EventShape/24a51f741f7dc54cc225d47abc4d51600b2eb0e4> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Event.shortdescription";
@@ -1417,7 +1415,7 @@
   shacl:description "A price"@en;
   shacl:maxCount 1;
   shacl:name "price"@en;
-  shacl:path <http://data.europa.eu/m8g/price> .
+  shacl:path <http://data4wallonia.com/model/price> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#EventShape/832b4b7ebc6ba5511cc9ee010445ad81f0448d81> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Event.endpublicationdate";
   shacl:description "A end publication date"@en;
@@ -1525,7 +1523,7 @@
   shacl:datatype rdf:langString;
   shacl:description "A price"@en;
   shacl:name "price"@en;
-  shacl:path <http://data.europa.eu/m8g/price> .
+  shacl:path <http://data4wallonia.com/model/price> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#EventShape/ca557d93c60335eb94cfb2cbade6564cfa29da81> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Event.enddate";
   shacl:datatype xsd:dateTime;
@@ -1543,7 +1541,7 @@
   shacl:description "A price"@en;
   shacl:name "price"@en;
   shacl:nodeKind shacl:Literal;
-  shacl:path <http://data.europa.eu/m8g/price> .
+  shacl:path <http://data4wallonia.com/model/price> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#EventShape/d0de7c2a6b94abd5d5528c0af6186123704c5488> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Event.banner";
   shacl:class <http://data4wallonia.com/model/File>;
@@ -1744,7 +1742,7 @@
   shacl:description "Brief description of the person."@en;
   shacl:name "short description"@en;
   shacl:nodeKind shacl:Literal;
-  shacl:path dc:description .
+  shacl:path <http://data4wallonia.com/model/shortDescription> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/0f4917b057b033d9d971f402590d7a1fd163b558> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.featuredemail";
   shacl:description "A featured email"@en;
@@ -1768,7 +1766,7 @@
   shacl:datatype xsd:string;
   shacl:description "The hereditary surname of a family."@en;
   shacl:name "family name"@en;
-  shacl:path foaf:familyName .
+  shacl:path <http://data4wallonia.com/model/lastName> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/1f5dcdc6bb926702c36968ed70ce7e5857c86ece> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.nonfeaturedemail";
   shacl:description "A non featured email"@en;
@@ -1780,7 +1778,7 @@
   shacl:datatype rdf:langString;
   shacl:description "Brief description of the person."@en;
   shacl:name "short description"@en;
-  shacl:path dc:description .
+  shacl:path <http://data4wallonia.com/model/shortDescription> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/283a2eac2ede7261981ee11092c4a1c218c5c831> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.additionaldescription";
   shacl:description "An additional description"@en;
@@ -1828,7 +1826,7 @@
   shacl:description "Any name by which a Person is known, other than their full name."@en;
   shacl:maxCount 1;
   shacl:name "alternative name"@en;
-  shacl:path dc:alternative .
+  shacl:path <http://data4wallonia.com/model/internalName> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/366f658e6a2bca9aae3296a4db577bf0ee4f4da8> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.landline";
   shacl:description "A landline"@en;
@@ -1870,7 +1868,7 @@
   shacl:description "The name(s) that identify the Person within a family with a common surname."@en;
   shacl:maxCount 1;
   shacl:name "given name"@en;
-  shacl:path foaf:givenName .
+  shacl:path <http://data4wallonia.com/model/firstName> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/5de4ef5193a558e17a34633888421d09b957d267> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.address";
   shacl:class <http://data4wallonia.com/model/Address>;
@@ -1888,7 +1886,7 @@
   shacl:description "The name(s) that identify the Person within a family with a common surname."@en;
   shacl:minCount 1;
   shacl:name "given name"@en;
-  shacl:path foaf:givenName .
+  shacl:path <http://data4wallonia.com/model/firstName> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/636553acf2f4b2fa921e104869b74795dd59b82d> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.mobile";
   shacl:description "A mobile"@en;
@@ -1900,7 +1898,7 @@
   shacl:description "The hereditary surname of a family."@en;
   shacl:minCount 1;
   shacl:name "family name"@en;
-  shacl:path foaf:familyName .
+  shacl:path <http://data4wallonia.com/model/lastName> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/672b7d923259265b439d5d8b15b889b584848046> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.expertise";
   shacl:description "An expertise"@en;
@@ -1918,13 +1916,13 @@
   shacl:description "The name(s) that identify the Person within a family with a common surname."@en;
   shacl:name "given name"@en;
   shacl:nodeKind shacl:Literal;
-  shacl:path foaf:givenName .
+  shacl:path <http://data4wallonia.com/model/firstName> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/7d0aad3aaae427f799249eafced4cbb0b8a36dc5> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.familyname";
   shacl:description "The hereditary surname of a family."@en;
   shacl:name "family name"@en;
   shacl:nodeKind shacl:Literal;
-  shacl:path foaf:familyName .
+  shacl:path <http://data4wallonia.com/model/lastName> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/7e32199610fb028b9a2f16d9d71e3603a32c1fba> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.website";
   shacl:description "A website"@en;
@@ -1984,7 +1982,7 @@
   shacl:description "Brief description of the person."@en;
   shacl:maxCount 1;
   shacl:name "short description"@en;
-  shacl:path dc:description .
+  shacl:path <http://data4wallonia.com/model/shortDescription> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/b5dfac018a0387975dac4411fd0ac9dd3b00f05e> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.featuredemail";
   shacl:description "A featured email"@en;
@@ -2008,7 +2006,7 @@
   shacl:description "Any name by which a Person is known, other than their full name."@en;
   shacl:name "alternative name"@en;
   shacl:nodeKind shacl:Literal;
-  shacl:path dc:alternative .
+  shacl:path <http://data4wallonia.com/model/internalName> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/c674adf5e88a69142ea85b2e59da081d277f7213> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.language";
   shacl:description "A language"@en;
@@ -2056,13 +2054,13 @@
   shacl:description "Any name by which a Person is known, other than their full name."@en;
   shacl:minCount 1;
   shacl:name "alternative name"@en;
-  shacl:path dc:alternative .
+  shacl:path <http://data4wallonia.com/model/internalName> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/e09cd456fcf49bd50cfb019fe828ae733d4a0fd2> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.familyname";
   shacl:description "The hereditary surname of a family."@en;
   shacl:maxCount 1;
   shacl:name "family name"@en;
-  shacl:path foaf:familyName .
+  shacl:path <http://data4wallonia.com/model/lastName> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/e7dc0c59333df2ddb4fb8dec598f0d3820495535> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.displayrefusal";
   shacl:description "A display refusal"@en;
@@ -2086,12 +2084,12 @@
   shacl:datatype xsd:string;
   shacl:description "Any name by which a Person is known, other than their full name."@en;
   shacl:name "alternative name"@en;
-  shacl:path dc:alternative .
+  shacl:path <http://data4wallonia.com/model/internalName> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/f1a1c433a19bfaca2c3fd9cea584ddf10495be0f> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.shortdescription";
   shacl:description "Brief description of the person."@en;
   shacl:name "short description"@en;
-  shacl:path dc:description;
+  shacl:path <http://data4wallonia.com/model/shortDescription>;
   shacl:uniqueLang true .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/f50f64eda68b83c4150bb7c0bcf84594d6eae7d1> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.photo";
@@ -2104,7 +2102,7 @@
   shacl:datatype xsd:string;
   shacl:description "The name(s) that identify the Person within a family with a common surname."@en;
   shacl:name "given name"@en;
-  shacl:path foaf:givenName .
+  shacl:path <http://data4wallonia.com/model/firstName> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PostShape> a shacl:NodeShape;
   shacl:closed false;
@@ -4118,7 +4116,7 @@
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/21ee2fa1ecbab7ed02cd862932f41a1c1e086b35> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.price";
   shacl:description "A price"@en;
   shacl:name "price"@en;
-  shacl:path <http://data.europa.eu/m8g/price>;
+  shacl:path <http://data4wallonia.com/model/price>;
   shacl:uniqueLang true .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/231c6c5fcbc5ec772efa304fe1e93f336581c293> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.capacity";
@@ -4143,7 +4141,7 @@
   shacl:description "A responsible profile"@en;
   shacl:name "responsible profile"@en;
   shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path <http://data.europa.eu/m8g/responsibleProfile> .
+  shacl:path <http://data4wallonia.com/model/responsibleProfile> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/283a2eac2ede7261981ee11092c4a1c218c5c831> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.additionaldescription";
   shacl:description "An additional description"@en;
@@ -4167,7 +4165,7 @@
   shacl:class <http://data4wallonia.com/model/ServicePlace>;
   shacl:description "A partner"@en;
   shacl:name "partner"@en;
-  shacl:path <http://data.europa.eu/m8g/partner> .
+  shacl:path <http://data4wallonia.com/model/partner> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/36e301d7cf972fb9d011a055a8c6f87202fcffd3> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.slug";
   shacl:description "A slug"@en;
@@ -4197,7 +4195,7 @@
   shacl:description "Another photo"@en;
   shacl:name "other photo"@en;
   shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path <http://data.europa.eu/m8g/otherPhoto> .
+  shacl:path <http://data4wallonia.com/model/otherPhoto> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/457bf175ff67fd5e72b40c88fde5f6b2be2c2b3f> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.address";
   shacl:description "An address"@en;
@@ -4329,7 +4327,7 @@
   shacl:description "A price"@en;
   shacl:maxCount 1;
   shacl:name "price"@en;
-  shacl:path <http://data.europa.eu/m8g/price> .
+  shacl:path <http://data4wallonia.com/model/price> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/81288f2c381b268fe7ef10bcb10cc2da8e6aed13> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.additionalinformationonequipment";
   shacl:description "An additional information on equipment"@en;
@@ -4406,7 +4404,7 @@
   shacl:class <http://data4wallonia.com/model/Profile>;
   shacl:description "A responsible profile"@en;
   shacl:name "responsible profile"@en;
-  shacl:path <http://data.europa.eu/m8g/responsibleProfile> .
+  shacl:path <http://data4wallonia.com/model/responsibleProfile> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/c030a690c09897342066a9740b96f76cd2670b74> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.additionalinformation";
   shacl:description "An additional information"@en;
@@ -4430,7 +4428,7 @@
   shacl:datatype rdf:langString;
   shacl:description "A price"@en;
   shacl:name "price"@en;
-  shacl:path <http://data.europa.eu/m8g/price> .
+  shacl:path <http://data4wallonia.com/model/price> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/cc92eac22d36046c03beac6435654139a336c7fd> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.additionalinformationonequipment";
   shacl:description "An additional information on equipment"@en;
@@ -4442,19 +4440,19 @@
   shacl:description "A price"@en;
   shacl:name "price"@en;
   shacl:nodeKind shacl:Literal;
-  shacl:path <http://data.europa.eu/m8g/price> .
+  shacl:path <http://data4wallonia.com/model/price> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/d305dc6ce5db303b82ab787c1dbfd60e31146749> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.otherphoto";
   shacl:class <http://data4wallonia.com/model/File>;
   shacl:description "Another photo"@en;
   shacl:name "other photo"@en;
-  shacl:path <http://data.europa.eu/m8g/otherPhoto> .
+  shacl:path <http://data4wallonia.com/model/otherPhoto> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/d4bd9d49b77e985ca23e98c614a9fdf054d0e8bc> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.partner";
   shacl:description "A partner"@en;
   shacl:name "partner"@en;
   shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path <http://data.europa.eu/m8g/partner> .
+  shacl:path <http://data4wallonia.com/model/partner> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/d5731bd3497457a1708ee72ecce225685f5f2bd0> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.additionalinformationonopeninghours";
   shacl:description "An additional information on opening hours"@en;
@@ -4507,7 +4505,7 @@
   shacl:description "A responsible profile"@en;
   shacl:maxCount 1;
   shacl:name "responsible profile"@en;
-  shacl:path <http://data.europa.eu/m8g/responsibleProfile> .
+  shacl:path <http://data4wallonia.com/model/responsibleProfile> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/f1a1c433a19bfaca2c3fd9cea584ddf10495be0f> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.shortdescription";
   shacl:description "A short description"@en;
