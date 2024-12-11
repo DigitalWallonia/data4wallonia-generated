@@ -12,15 +12,11 @@
     },
     "ActionPlanProfile": "http://data4wallonia.com/model/ActionPlanProfile",
     "ActionPlanProfile.internalName": {
-      "@id": "http://data4wallonia.com/model/internalNameActionPlan",
+      "@id": "http://data4wallonia.com/model/internalName",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "ActionPlanProfile.profile": {
       "@id": "http://data4wallonia.com/model/profle",
-      "@type": "@id"
-    },
-    "ActionPlanProfile.role": {
-      "@id": "https://d4w-digitalwallonia.opendatasoft.com/role",
       "@type": "@id"
     },
     "Address": "http://data4wallonia.com/model/Address",
@@ -91,10 +87,6 @@
     "QualifiedPerson.internalName": {
       "@id": "http://data4wallonia.com/model/internalName",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "QualifiedPerson.role": {
-      "@id": "http://data4wallonia.com/model/role",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "ServicesPlace": "http://data4wallonia.com/model/ServicePlace",
     "ServicesPlace.partner": {
@@ -175,6 +167,7 @@
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "belgianEntreprises": {
+      "@container": "@set",
       "@id": "http://data4wallonia.com/model/belgianEntreprise",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
@@ -259,7 +252,7 @@
       "@type": "@id"
     },
     "financialParticipation": {
-      "@id": "https://d4w-digitalwallonia.opendatasoft.com/financialParticipation",
+      "@id": "http://data4wallonia.com/model/financialParticipation",
       "@type": "http://www.w3.org/2001/XMLSchema#decimal"
     },
     "firstName": {
@@ -336,12 +329,13 @@
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "leaderMission": {
+      "@container": "@set",
       "@id": "http://data4wallonia.com/model/leaderMission",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "location": {
       "@id": "http://data4wallonia.com/model/location",
-      "@type": "@id"
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "logo": {
       "@id": "http://data4wallonia.com/model/logo",
@@ -385,8 +379,16 @@
       "@id": "http://data4wallonia.com/model/nonFeaturedPerson",
       "@type": "@id"
     },
+    "numberOfBeneficiaries": {
+      "@id": "http://data4wallonia.com/model/numberOfBeneficiaries",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
     "numberOfEquipments": {
       "@id": "http://data4wallonia.com/model/numberOfEquipments",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "numberOfOccurences": {
+      "@id": "http://data4wallonia.com/model/numberOfOccurences",
       "@type": "http://www.w3.org/2001/XMLSchema#integer"
     },
     "numberOfParticipants": {
@@ -466,6 +468,11 @@
       "@id": "http://data4wallonia.com/model/quotedPerson",
       "@type": "@id"
     },
+    "quotedProfiles": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/quotedProfiles",
+      "@type": "@id"
+    },
     "referenceActionPlan": {
       "@id": "http://data4wallonia.com/model/referenceActionPlan",
       "@type": "@id"
@@ -492,6 +499,7 @@
       "@type": "@id"
     },
     "relatedExternalLinks": {
+      "@container": "@set",
       "@id": "http://data4wallonia.com/model/relatedExternalLinks",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
@@ -528,6 +536,10 @@
       "@id": "http://data.europa.eu/m8g/responsibleProfile",
       "@type": "@id"
     },
+    "role": {
+      "@id": "http://data4wallonia.com/model/role",
+      "@type": "@id"
+    },
     "scheduleAdditionalInformation": {
       "@id": "http://data4wallonia.com/model/scheduleAdditionalInformation",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
@@ -545,6 +557,7 @@
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "social network": {
+      "@container": "@set",
       "@id": "http://data4wallonia.com/model/socialNetwork",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },

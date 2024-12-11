@@ -108,7 +108,7 @@
           <xs:documentation xml:lang="en">An operation</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="leaderMission" type="xs:string" maxOccurs="1" minOccurs="0">
+      <xs:element name="leaderMission" type="xs:string" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A leader mission</xs:documentation>
         </xs:annotation>
@@ -123,9 +123,19 @@
           <xs:documentation xml:lang="en">A marketing title</xs:documentation>
         </xs:annotation>
       </xs:element>
+      <xs:element name="numberOfBeneficiaries" type="xs:integer" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The number of beneficiaries of the Action Plan</xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="numberOfEquipments" type="xs:integer" maxOccurs="1" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A number of equipments</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="numberOfOccurences" type="xs:integer" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The number of occurences of the Action Plan</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="numberOfParticipants" type="xs:integer" maxOccurs="1" minOccurs="0">
@@ -193,7 +203,7 @@
           <xs:documentation xml:lang="en">A slug</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="socialNetwork" type="xs:string" maxOccurs="1" minOccurs="0">
+      <xs:element name="socialNetwork" type="xs:string" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A social network</xs:documentation>
         </xs:annotation>
@@ -241,7 +251,28 @@
     </xs:attribute>
   </xs:complexType>
   <xs:complexType name="ActionPlanProfileType">
-    <xs:sequence/>
+    <xs:sequence>
+      <xs:element name="financialParticipation" type="xs:decimal" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A financial participation</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="internalName" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An internal name pour une resource</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="profile" ref="ProfileType" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A profile</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="role" type="ConceptType" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A role</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
     <xs:attribute name="ActionPlanProfileRef" type="xs:IDREF">
       <xs:annotation>
         <xs:documentation xml:lang="en">Reference to ActionPlanProfile ID</xs:documentation>
@@ -337,7 +368,7 @@
           <xs:documentation xml:lang="en">A landline</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="location" ref="AddressType" maxOccurs="1" minOccurs="1">
+      <xs:element name="location" type="xs:string" maxOccurs="1" minOccurs="1">
         <xs:annotation>
           <xs:documentation xml:lang="en">A location</xs:documentation>
         </xs:annotation>
@@ -512,7 +543,7 @@
           <xs:documentation xml:lang="en">A related event</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="relatedExternalLink" type="xs:string" maxOccurs="1" minOccurs="1">
+      <xs:element name="relatedExternalLink" type="xs:string" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A related external link</xs:documentation>
         </xs:annotation>
@@ -611,6 +642,11 @@
           <xs:documentation xml:lang="en">A quoted person</xs:documentation>
         </xs:annotation>
       </xs:element>
+      <xs:element name="quotedProfiles" ref="ProfileType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A profile quoted in a press review</xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="shortDescription" type="xs:string" maxOccurs="1" minOccurs="1">
         <xs:annotation>
           <xs:documentation xml:lang="en">A short description</xs:documentation>
@@ -655,7 +691,7 @@
           <xs:documentation xml:lang="en">An ambition</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="belgianEnterprise" type="xs:string" maxOccurs="1" minOccurs="0">
+      <xs:element name="belgianEnterprise" type="xs:string" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A belgian entreprise</xs:documentation>
         </xs:annotation>
@@ -750,7 +786,7 @@
           <xs:documentation xml:lang="en">A slug</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="socialNetwork" type="xs:string" maxOccurs="1" minOccurs="0">
+      <xs:element name="socialNetwork" type="xs:string" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A social network</xs:documentation>
         </xs:annotation>
@@ -765,7 +801,7 @@
           <xs:documentation xml:lang="en">A title</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="website" type="xs:string" maxOccurs="1" minOccurs="0">
+      <xs:element name="website" type="xs:string" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A website</xs:documentation>
         </xs:annotation>
@@ -844,6 +880,11 @@
           <xs:documentation xml:lang="en">A reference category</xs:documentation>
         </xs:annotation>
       </xs:element>
+      <xs:element name="referencePost" ref="PostType" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A reference post</xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="referenceWebSite" type="xs:string" maxOccurs="1" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A reference web site</xs:documentation>
@@ -857,11 +898,6 @@
       <xs:element name="slug" type="xs:string" maxOccurs="1" minOccurs="1">
         <xs:annotation>
           <xs:documentation xml:lang="en">A slug</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="sticky" ref="PostType" maxOccurs="1" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A sticky</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="sticky" ref="EventType" maxOccurs="1" minOccurs="0">
@@ -978,7 +1014,7 @@
           <xs:documentation xml:lang="en">A slug</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="socialNetwork" type="xs:string" maxOccurs="1" minOccurs="0">
+      <xs:element name="socialNetwork" type="xs:string" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A social network</xs:documentation>
         </xs:annotation>
