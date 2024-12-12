@@ -279,7 +279,7 @@ This specification uses the following prefixes to shorten the URIs for readabili
                         <p>
                             And supported by these datatypes:
                             <br />
-                            | <a href="#Boolean">Boolean</a> | <a href="#Code">Code</a> | <a href="#Datetime">Date time</a> | <a href="#Double">Double</a> | <a href="#Integer">Integer</a> | <a href="#String">String</a> | <a href="#Text">Text</a> |
+                            | <a href="#Boolean">Boolean</a> | <a href="#Code">Code</a> | <a href="#Datetime">Date time</a> | <a href="#Decimal">Decimal</a> | <a href="#Integer">Integer</a> | <a href="#String">String</a> | <a href="#Text">Text</a> |
                         </p>
                 
     </div>
@@ -1938,7 +1938,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#Double" data-placement="right">Double</a>
+                                            <a href="#Decimal" data-placement="right">Decimal</a>
                                         
                                     
                                 </td>
@@ -1981,7 +1981,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#Double" data-placement="right">Double</a>
+                                            <a href="#Decimal" data-placement="right">Decimal</a>
                                         
                                     
                                 </td>
@@ -3429,9 +3429,9 @@ The main entities are those that form the core of the Application Profile.
    
         <section>
             <h3 id="Person">
-                <a href="http://data4wallonia.com/model/QualifiedPerson"
+                <a href="http://data4wallonia.com/model/Person"
                    data-toggle="tooltip"
-                   data-content="http://data4wallonia.com/model/QualifiedPerson"
+                   data-content="http://data4wallonia.com/model/Person"
                    data-placement="right">Person</a>
 
             </h3>
@@ -3458,18 +3458,18 @@ The main entities are those that form the core of the Application Profile.
                         <dd>
                             For this entity the following properties are defined: <a href="#Person.additionaldescription">additional description</a>
                             , <a href="#Person.address">address</a>
-                            , <a href="#Person.alternativename">alternative name</a>
                             , <a href="#Person.ambition">ambition</a>
                             , <a href="#Person.category">category</a>
                             , <a href="#Person.clientsite">client site</a>
                             , <a href="#Person.displayrefusal">display refusal</a>
                             , <a href="#Person.expertise">expertise</a>
-                            , <a href="#Person.familyname">family name</a>
                             , <a href="#Person.featuredemail">featured email</a>
-                            , <a href="#Person.givenname">given name</a>
+                            , <a href="#Person.firstname">first name</a>
+                            , <a href="#Person.internalname">internal name</a>
                             , <a href="#Person.involvedin">involved in</a>
                             , <a href="#Person.landline">landline</a>
                             , <a href="#Person.language">language</a>
+                            , <a href="#Person.lastname">last name</a>
                             , <a href="#Person.mobile">mobile</a>
                             , <a href="#Person.nonfeaturedemail">non featured email</a>
                             , <a href="#Person.photo">photo</a>
@@ -3591,49 +3591,6 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Person.alternativename"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/internalName"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20alternative name%20in%20Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Person.alternativename" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/internalName"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/internalName"
-                                           data-placement="right">
-                                        alternative name</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#String" data-placement="right">String</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    1
-                                </td>
-                                <td property="rdfs:comment">
-                                    Any name by which a Person is known, other than their full name.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Many individuals use a short form of their name, a 'middle' name as a 'first' name or a professional name. For example, the British politician and former UN High Representative for Bosnia and Herzegovina, Jeremy John Durham Ashdown, Baron Ashdown of Norton-sub-Hamdon, is usually referred to simply as 'Paddy Ashdown' or 'Lord Ashdown.' It is not the role of the alternative name property to record nick names, pet names or other 'familiar names' that will be of no consequence in public sector data exchange. Furthermore, some individuals have more than one legal name in which case the full name property should be used multiple times. Alternative name gives a means of recording names by which an individual is generally known, or professionally known, even though such names are no more than secondary from a legal point of view.
                                 </td>
 				<!--
                                 <td>
@@ -3860,49 +3817,6 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                             </tr>
                         
-                            <tr id="Person.familyname"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/lastName"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20family name%20in%20Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Person.familyname" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/lastName"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/lastName"
-                                           data-placement="right">
-                                        family name</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#String" data-placement="right">String</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    1
-                                </td>
-                                <td property="rdfs:comment">
-                                    The hereditary surname of a family.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Usually referring to a group of people related by blood, marriage or adoption. This attribute also carries prefixes or suffixes which are part of the family name, e.g. "de Boer", "van de Putte", "von und zu Orlow". Multiple family names, such as are commonly found in Hispanic countries, are recorded in the single family name property so that, for example, Miguel de Cervantes Saavedra's family name would be recorded as "de Cervantes Saavedra".
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
                             <tr id="Person.featuredemail"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/featuredEmail"
@@ -3946,12 +3860,12 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                             </tr>
                         
-                            <tr id="Person.givenname"
+                            <tr id="Person.firstname"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/firstName"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20given name%20in%20Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Person.givenname" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20first name%20in%20Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Person.firstname" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -3961,7 +3875,7 @@ The main entities are those that form the core of the Application Profile.
                                            data-toggle="tooltip"
                                            data-content="http://data4wallonia.com/model/firstName"
                                            data-placement="right">
-                                        given name</a>
+                                        first name</a>
                                 </td>
                                 <td>
                                     
@@ -3974,10 +3888,53 @@ The main entities are those that form the core of the Application Profile.
                                     1
                                 </td>
                                 <td property="rdfs:comment">
-                                    The name(s) that identify the Person within a family with a common surname.
+                                    A first name
                                 </td>
                                 <td property="skos:scopeNote">
-                                    Usually a first name or forename. Given to a person by his or her parents at birth or legally recognised as 'given names' through a formal process. All given names are ordered in one property so that, for example, the given name for Johann Sebastian Bach is "Johann Sebastian".
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Person.internalname"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/internalName"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20internal name%20in%20Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Person.internalname" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/internalName"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/internalName"
+                                           data-placement="right">
+                                        internal name</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#String" data-placement="right">String</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    An internal name
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
                                 </td>
 				<!--
                                 <td>
@@ -4095,7 +4052,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#Code" data-placement="right">Code</a>
+                                            <a href="#String" data-placement="right">String</a>
                                         
                                     
                                 </td>
@@ -4104,6 +4061,49 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                                 <td property="rdfs:comment">
                                     A language
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Person.lastname"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/lastName"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20last name%20in%20Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Person.lastname" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/lastName"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/lastName"
+                                           data-placement="right">
+                                        last name</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#String" data-placement="right">String</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    A last name
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -5040,7 +5040,7 @@ The main entities are those that form the core of the Application Profile.
                         
                             <tr id="Post.publisheddate"
                                 typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/published date"
+                                resource="http://data4wallonia.com/model/publishedDate"
                                 class="class mandatory">
                                 <td>
 				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20published date%20in%20Post&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Post.publisheddate" target="_blank" rel="noopener noreferrer" >
@@ -5049,9 +5049,9 @@ The main entities are those that form the core of the Application Profile.
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://data4wallonia.com/model/published date"
+                                        <a href="http://data4wallonia.com/model/publishedDate"
                                            data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/published date"
+                                           data-content="http://data4wallonia.com/model/publishedDate"
                                            data-placement="right">
                                         published date</a>
                                 </td>
@@ -9350,7 +9350,7 @@ The main entities are those that form the core of the Application Profile.
                         
                             <tr id="ServicesPlace.operatingsystems"
                                 typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/operating system"
+                                resource="http://data4wallonia.com/model/operatingSystem"
                                 class="class mandatory">
                                 <td>
 				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20operating systems%20in%20Services Place&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23ServicesPlace.operatingsystems" target="_blank" rel="noopener noreferrer" >
@@ -9359,9 +9359,9 @@ The main entities are those that form the core of the Application Profile.
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://data4wallonia.com/model/operating system"
+                                        <a href="http://data4wallonia.com/model/operatingSystem"
                                            data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/operating system"
+                                           data-content="http://data4wallonia.com/model/operatingSystem"
                                            data-placement="right">
                                         operating systems</a>
                                 </td>
@@ -9852,7 +9852,7 @@ They are included in the Application Profile because they form the range of prop
                                 <td>
                                     
                                         
-                                            <a href="#Double" data-placement="right">Double</a>
+                                            <a href="#Decimal" data-placement="right">Decimal</a>
                                         
                                     
                                 </td>
@@ -10352,9 +10352,9 @@ They are included in the Application Profile because they form the range of prop
 		</td><td>
                 
                     <div id="Datetime">
-                        <a href="http://www.w3.org/2001/XMLSchema#double"
+                        <a href="http://www.w3.org/2001/XMLSchema#dateTime"
                            data-toggle="tooltip"
-                           data-content="http://www.w3.org/2001/XMLSchema#double"
+                           data-content="http://www.w3.org/2001/XMLSchema#dateTime"
                            data-placement="right">Date time</a>
                     </div>
                 
@@ -10362,16 +10362,16 @@ They are included in the Application Profile because they form the range of prop
                     The ·value space· of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. &#39;00:00:00&#39;, up to but not including &#39;24:00:00&#39; (which is identical with &#39;00:00:00&#39; of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap.
 		</td></tr>
 		<tr><td>
-                   <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20Double&body=Explain%20your%20issue"}}>
+                   <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20Decimal&body=Explain%20your%20issue"}}>
                      <img src="html/callout.png" loading="lazy" alt="(create issue)" width="50" height="50"/>
 		   </a>
 		</td><td>
                 
-                    <div id="Double">
-                        <a href="http://www.w3.org/2001/XMLSchema#double"
+                    <div id="Decimal">
+                        <a href="http://www.w3.org/2001/XMLSchema#decimal"
                            data-toggle="tooltip"
-                           data-content="http://www.w3.org/2001/XMLSchema#double"
-                           data-placement="right">Double</a>
+                           data-content="http://www.w3.org/2001/XMLSchema#decimal"
+                           data-placement="right">Decimal</a>
                     </div>
                 
 		</td><td>
@@ -10400,9 +10400,9 @@ They are included in the Application Profile because they form the range of prop
 		</td><td>
                 
                     <div id="String">
-                        <a href="http://www.w3.org/2001/XMLSchema#double"
+                        <a href="http://www.w3.org/2001/XMLSchema#string"
                            data-toggle="tooltip"
-                           data-content="http://www.w3.org/2001/XMLSchema#double"
+                           data-content="http://www.w3.org/2001/XMLSchema#string"
                            data-placement="right">String</a>
                     </div>
                 
@@ -11675,7 +11675,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Person</div></td>
 								<td></td>
 								<td><a href="#Person.additionaldescription">additional description </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/additionalDescription</div></td>
@@ -11685,7 +11685,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Person</div></td>
 								<td></td>
 								<td><a href="#Person.address">address </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/address</div></td>
@@ -11695,17 +11695,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
-								<td></td>
-								<td><a href="#Person.alternativename">alternative name </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/internalName</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Person</div></td>
 								<td></td>
 								<td><a href="#Person.ambition">ambition </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/ambition</div></td>
@@ -11715,7 +11705,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Person</div></td>
 								<td></td>
 								<td><a href="#Person.category">category </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/category</div></td>
@@ -11725,7 +11715,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Person</div></td>
 								<td></td>
 								<td><a href="#Person.clientsite">client site </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/clientSite</div></td>
@@ -11735,7 +11725,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Person</div></td>
 								<td></td>
 								<td><a href="#Person.displayrefusal">display refusal </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/displayRefusal</div></td>
@@ -11745,7 +11735,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Person</div></td>
 								<td></td>
 								<td><a href="#Person.expertise">expertise </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/expertise</div></td>
@@ -11755,17 +11745,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
-								<td></td>
-								<td><a href="#Person.familyname">family name </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/lastName</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Person</div></td>
 								<td></td>
 								<td><a href="#Person.featuredemail">featured email </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/featuredEmail</div></td>
@@ -11775,9 +11755,9 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Person</div></td>
 								<td></td>
-								<td><a href="#Person.givenname">given name </a></td>
+								<td><a href="#Person.firstname">first name </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/firstName</div></td>
 							</tr>
 						
@@ -11785,7 +11765,17 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Person</div></td>
+								<td></td>
+								<td><a href="#Person.internalname">internal name </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/internalName</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Person">Person</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Person</div></td>
 								<td></td>
 								<td><a href="#Person.involvedin">involved in </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/involvedIn</div></td>
@@ -11795,7 +11785,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Person</div></td>
 								<td></td>
 								<td><a href="#Person.landline">landline </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/landline</div></td>
@@ -11805,7 +11795,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Person</div></td>
 								<td></td>
 								<td><a href="#Person.language">language </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/language</div></td>
@@ -11815,7 +11805,17 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Person</div></td>
+								<td></td>
+								<td><a href="#Person.lastname">last name </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/lastName</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Person">Person</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Person</div></td>
 								<td></td>
 								<td><a href="#Person.mobile">mobile </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/mobile</div></td>
@@ -11825,7 +11825,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Person</div></td>
 								<td></td>
 								<td><a href="#Person.nonfeaturedemail">non featured email </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/nonFeaturedEmail</div></td>
@@ -11835,7 +11835,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Person</div></td>
 								<td></td>
 								<td><a href="#Person.photo">photo </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/photo</div></td>
@@ -11845,7 +11845,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Person</div></td>
 								<td></td>
 								<td><a href="#Person.shortdescription">short description </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/shortDescription</div></td>
@@ -11855,7 +11855,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Person</div></td>
 								<td></td>
 								<td><a href="#Person.slug">slug </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/slug</div></td>
@@ -11865,7 +11865,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Person</div></td>
 								<td></td>
 								<td><a href="#Person.socialnetwork">social network </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/socialNetwork</div></td>
@@ -11875,7 +11875,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Person</div></td>
 								<td></td>
 								<td><a href="#Person.website">website </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/website</div></td>
@@ -12107,7 +12107,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><div class="shorten">http://data4wallonia.com/model/Post</div></td>
 								<td></td>
 								<td><a href="#Post.publisheddate">published date </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/published date</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/publishedDate</div></td>
 							</tr>
 						
 					
@@ -13380,7 +13380,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><div class="shorten">http://data4wallonia.com/model/ServicePlace</div></td>
 								<td></td>
 								<td><a href="#ServicesPlace.operatingsystems">operating systems </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/operating system</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/operatingSystem</div></td>
 							</tr>
 						
 					

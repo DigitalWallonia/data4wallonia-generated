@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/e06a8deacfaa797b59853096d6d7c92053daf3ae",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/e06a8deacfaa797b59853096d6d7c92053daf3ae/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/39c5816eca745c20aeec08f3aad6c5f22801943e",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/39c5816eca745c20aeec08f3aad6c5f22801943e/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -1469,10 +1469,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#Double",
+              "range_uri": "#Decimal",
               "range_puri": "http://www.w3.org/2001/XMLSchema#decimal",
               "range_label": {
-                "en": "Double"
+                "en": "Decimal"
               }
             }
           ],
@@ -1509,10 +1509,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#Double",
+              "range_uri": "#Decimal",
               "range_puri": "http://www.w3.org/2001/XMLSchema#decimal",
               "range_label": {
-                "en": "Double"
+                "en": "Decimal"
               }
             }
           ],
@@ -1690,10 +1690,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#Double",
+              "range_uri": "#Decimal",
               "range_puri": "http://www.w3.org/2001/XMLSchema#decimal",
               "range_label": {
-                "en": "Double"
+                "en": "Decimal"
               }
             }
           ],
@@ -3049,6 +3049,867 @@
       "properties": []
     },
     {
+      "uri": "http://data4wallonia.com/model/Person",
+      "name": "Person",
+      "label": {
+        "en": "Person"
+      },
+      "sort": "Person",
+      "description": {
+        "en": "A person"
+      },
+      "usage": {},
+      "parents": [],
+      "rawTags": {
+        "class-usage-scope": "main",
+        "definition-en": "A person",
+        "label-en": "Person",
+        "uri": "http://data4wallonia.com/model/Person"
+      },
+      "properties": [
+        {
+          "uri": "http://data4wallonia.com/model/additionalDescription",
+          "name": "additionalDescription",
+          "sort": "additional description",
+          "label": {
+            "en": "additional description"
+          },
+          "description": {
+            "en": "An additional description"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/additionalDescription",
+            "definition-en": "An additional description",
+            "label-en": "additional description"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/address",
+          "name": "address",
+          "sort": "address",
+          "label": {
+            "en": "address"
+          },
+          "description": {
+            "en": "An address"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Address",
+              "range_uri": "http://data4wallonia.com/model/Address"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Address",
+              "range_puri": "http://data4wallonia.com/model/Address",
+              "range_label": {
+                "en": "Address"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/address",
+            "label-en": "address",
+            "definition-en": "An address"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/ambition",
+          "name": "ambition",
+          "sort": "ambition",
+          "label": {
+            "en": "ambition"
+          },
+          "description": {
+            "en": "An ambition"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Ambition",
+              "range_uri": "http://data4wallonia.com/model/Ambition"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Ambition",
+              "range_puri": "http://data4wallonia.com/model/Ambition",
+              "range_label": {
+                "en": "Ambition"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/ambition",
+            "definition-en": "An ambition",
+            "label-en": "ambition"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/category",
+          "name": "category",
+          "sort": "category",
+          "label": {
+            "en": "category"
+          },
+          "description": {
+            "en": "A classification"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Code",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Code",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Code"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/category",
+            "definition-en": "A classification",
+            "label-en": "category"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/clientSite",
+          "name": "clientSite",
+          "sort": "client site",
+          "label": {
+            "en": "client site"
+          },
+          "description": {
+            "en": "A client site"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#String",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/clientSite",
+            "definition-en": "A client site",
+            "label-en": "client site"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/displayRefusal",
+          "name": "displayRefusal",
+          "sort": "display refusal",
+          "label": {
+            "en": "display refusal"
+          },
+          "description": {
+            "en": "A display refusal"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Boolean",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Boolean",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_label": {
+                "en": "Boolean"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/displayRefusal",
+            "definition-en": "A display refusal",
+            "label-en": "display refusal"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/expertise",
+          "name": "expertise",
+          "sort": "expertise",
+          "label": {
+            "en": "expertise"
+          },
+          "description": {
+            "en": "An expertise"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/expertise",
+            "definition-en": "An expertise",
+            "label-en": "expertise"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/featuredEmail",
+          "name": "featuredEmail",
+          "sort": "featured email",
+          "label": {
+            "en": "featured email"
+          },
+          "description": {
+            "en": "A featured email"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#String",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/featuredEmail",
+            "label-en": "featured email",
+            "definition-en": "A featured email"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/firstName",
+          "name": "firstName",
+          "sort": "first name",
+          "label": {
+            "en": "first name"
+          },
+          "description": {
+            "en": "A first name"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#String",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "definition-en": "A first name",
+            "uri": "http://data4wallonia.com/model/firstName",
+            "label-en": "first name"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/internalName",
+          "name": "internalName",
+          "sort": "internal name",
+          "label": {
+            "en": "internal name"
+          },
+          "description": {
+            "en": "An internal name"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#String",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "definition-en": "An internal name",
+            "uri": "http://data4wallonia.com/model/internalName",
+            "label-en": "internal name"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/involvedIn",
+          "name": "involvedIn",
+          "sort": "involved in",
+          "label": {
+            "en": "involved in"
+          },
+          "description": {
+            "en": "The Program in which a Resource is allocated to."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Program",
+              "range_uri": "http://data4wallonia.com/model/Program"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Program",
+              "range_puri": "http://data4wallonia.com/model/Program",
+              "range_label": {
+                "en": "Program"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "definition-en": "The Program in which a Resource is allocated to.",
+            "uri": "http://data4wallonia.com/model/involvedIn",
+            "label-en": "involved in"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/landline",
+          "name": "landline",
+          "sort": "landline",
+          "label": {
+            "en": "landline"
+          },
+          "description": {
+            "en": "A landline"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#String",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/landline",
+            "label-en": "landline",
+            "definition-en": "A landline"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/language",
+          "name": "language",
+          "sort": "language",
+          "label": {
+            "en": "language"
+          },
+          "description": {
+            "en": "A language"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#String",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/language",
+            "definition-en": "A language",
+            "label-en": "language"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/lastName",
+          "name": "lastName",
+          "sort": "last name",
+          "label": {
+            "en": "last name"
+          },
+          "description": {
+            "en": "A last name"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#String",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/lastName",
+            "definition-en": "A last name",
+            "label-en": "last name"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/mobile",
+          "name": "mobile",
+          "sort": "mobile",
+          "label": {
+            "en": "mobile"
+          },
+          "description": {
+            "en": "A mobile"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#String",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/mobile",
+            "label-en": "mobile",
+            "definition-en": "A mobile"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/nonFeaturedEmail",
+          "name": "nonFeaturedEmail",
+          "sort": "non featured email",
+          "label": {
+            "en": "non featured email"
+          },
+          "description": {
+            "en": "A non featured email"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#String",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/nonFeaturedEmail",
+            "label-en": "non featured email",
+            "definition-en": "A non featured email"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/photo",
+          "name": "photo",
+          "sort": "photo",
+          "label": {
+            "en": "photo"
+          },
+          "description": {
+            "en": "An image taken with a camera of a resource."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "File",
+              "range_uri": "http://data4wallonia.com/model/File"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#File",
+              "range_puri": "http://data4wallonia.com/model/File",
+              "range_label": {
+                "en": "File"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/photo",
+            "label-en": "photo",
+            "definition-en": "An image taken with a camera of a resource."
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/shortDescription",
+          "name": "shortDescription",
+          "sort": "short description",
+          "label": {
+            "en": "short description"
+          },
+          "description": {
+            "en": "Brief description of the person."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/shortDescription",
+            "label-en": "short description",
+            "definition-en": "Brief description of the person."
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/slug",
+          "name": "slug",
+          "sort": "slug",
+          "label": {
+            "en": "slug"
+          },
+          "description": {
+            "en": "A slug"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#String",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/slug",
+            "definition-en": "A slug",
+            "label-en": "slug"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/socialNetwork",
+          "name": "socialNetwork",
+          "sort": "social network",
+          "label": {
+            "en": "social network"
+          },
+          "description": {
+            "en": "A social network"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#String",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/socialNetwork",
+            "label-en": "social network",
+            "definition-en": "A social network"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/website",
+          "name": "website",
+          "sort": "website",
+          "label": {
+            "en": "website"
+          },
+          "description": {
+            "en": "A website"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#String",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/website",
+            "label-en": "website",
+            "definition-en": "A website"
+          }
+        }
+      ]
+    },
+    {
       "uri": "http://data4wallonia.com/model/Post",
       "name": "Post",
       "label": {
@@ -3548,7 +4409,7 @@
           }
         },
         {
-          "uri": "http://data4wallonia.com/model/published date",
+          "uri": "http://data4wallonia.com/model/publishedDate",
           "name": "publishedDate",
           "sort": "published date",
           "label": {
@@ -3582,7 +4443,7 @@
           "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "http://data4wallonia.com/model/published date",
+            "uri": "http://data4wallonia.com/model/publishedDate",
             "definition-en": "A published date",
             "label-en": "published date"
           }
@@ -4175,13 +5036,13 @@
           "range": [
             {
               "range_label": "Person",
-              "range_uri": "http://data4wallonia.com/model/QualifiedPerson"
+              "range_uri": "http://data4wallonia.com/model/Person"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Person",
-              "range_puri": "http://data4wallonia.com/model/QualifiedPerson",
+              "range_puri": "http://data4wallonia.com/model/Person",
               "range_label": {
                 "en": "Person"
               }
@@ -6401,876 +7262,6 @@
     },
     {
       "uri": "http://data4wallonia.com/model/QualifiedPerson",
-      "name": "Person",
-      "label": {
-        "en": "Person"
-      },
-      "sort": "Person",
-      "description": {
-        "en": "A person"
-      },
-      "usage": {},
-      "parents": [],
-      "rawTags": {
-        "class-usage-scope": "main",
-        "definition-en": "A person",
-        "label-en": "Person",
-        "uri": "http://data4wallonia.com/model/QualifiedPerson"
-      },
-      "properties": [
-        {
-          "uri": "http://data4wallonia.com/model/additionalDescription",
-          "name": "additionalDescription",
-          "sort": "additional description",
-          "label": {
-            "en": "additional description"
-          },
-          "description": {
-            "en": "An additional description"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-              "range_label": {
-                "en": "Text"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/additionalDescription",
-            "definition-en": "An additional description",
-            "label-en": "additional description"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/address",
-          "name": "address",
-          "sort": "address",
-          "label": {
-            "en": "address"
-          },
-          "description": {
-            "en": "An address"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Address",
-              "range_uri": "http://data4wallonia.com/model/Address"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Address",
-              "range_puri": "http://data4wallonia.com/model/Address",
-              "range_label": {
-                "en": "Address"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/address",
-            "label-en": "address",
-            "definition-en": "An address"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/ambition",
-          "name": "ambition",
-          "sort": "ambition",
-          "label": {
-            "en": "ambition"
-          },
-          "description": {
-            "en": "An ambition"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Ambition",
-              "range_uri": "http://data4wallonia.com/model/Ambition"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Ambition",
-              "range_puri": "http://data4wallonia.com/model/Ambition",
-              "range_label": {
-                "en": "Ambition"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/ambition",
-            "definition-en": "An ambition",
-            "label-en": "ambition"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/category",
-          "name": "category",
-          "sort": "category",
-          "label": {
-            "en": "category"
-          },
-          "description": {
-            "en": "A classification"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Code",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Code",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "en": "Code"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/category",
-            "definition-en": "A classification",
-            "label-en": "category"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/clientSite",
-          "name": "clientSite",
-          "sort": "client site",
-          "label": {
-            "en": "client site"
-          },
-          "description": {
-            "en": "A client site"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "String",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#String",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
-              "range_label": {
-                "en": "String"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/clientSite",
-            "definition-en": "A client site",
-            "label-en": "client site"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/displayRefusal",
-          "name": "displayRefusal",
-          "sort": "display refusal",
-          "label": {
-            "en": "display refusal"
-          },
-          "description": {
-            "en": "A display refusal"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Boolean",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Boolean",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
-              "range_label": {
-                "en": "Boolean"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/displayRefusal",
-            "definition-en": "A display refusal",
-            "label-en": "display refusal"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/expertise",
-          "name": "expertise",
-          "sort": "expertise",
-          "label": {
-            "en": "expertise"
-          },
-          "description": {
-            "en": "An expertise"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-              "range_label": {
-                "en": "Text"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/expertise",
-            "definition-en": "An expertise",
-            "label-en": "expertise"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/featuredEmail",
-          "name": "featuredEmail",
-          "sort": "featured email",
-          "label": {
-            "en": "featured email"
-          },
-          "description": {
-            "en": "A featured email"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "String",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#String",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
-              "range_label": {
-                "en": "String"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/featuredEmail",
-            "label-en": "featured email",
-            "definition-en": "A featured email"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/firstName",
-          "name": "givenName",
-          "sort": "given name",
-          "label": {
-            "en": "given name"
-          },
-          "description": {
-            "en": "The name(s) that identify the Person within a family with a common surname."
-          },
-          "usage": {
-            "en": "Usually a first name or forename. Given to a person by his or her parents at birth or legally recognised as 'given names' through a formal process. All given names are ordered in one property so that, for example, the given name for Johann Sebastian Bach is \"Johann Sebastian\"."
-          },
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "String",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#String",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
-              "range_label": {
-                "en": "String"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "definition-en": "The name(s) that identify the Person within a family with a common surname.",
-            "usageNote-en": "Usually a first name or forename. Given to a person by his or her parents at birth or legally recognised as 'given names' through a formal process. All given names are ordered in one property so that, for example, the given name for Johann Sebastian Bach is \"Johann Sebastian\".",
-            "uri": "http://data4wallonia.com/model/firstName",
-            "label-en": "given name"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/internalName",
-          "name": "alternativeName",
-          "sort": "alternative name",
-          "label": {
-            "en": "alternative name"
-          },
-          "description": {
-            "en": "Any name by which a Person is known, other than their full name."
-          },
-          "usage": {
-            "en": "Many individuals use a short form of their name, a 'middle' name as a 'first' name or a professional name. For example, the British politician and former UN High Representative for Bosnia and Herzegovina, Jeremy John Durham Ashdown, Baron Ashdown of Norton-sub-Hamdon, is usually referred to simply as 'Paddy Ashdown' or 'Lord Ashdown.' It is not the role of the alternative name property to record nick names, pet names or other 'familiar names' that will be of no consequence in public sector data exchange. Furthermore, some individuals have more than one legal name in which case the full name property should be used multiple times. Alternative name gives a means of recording names by which an individual is generally known, or professionally known, even though such names are no more than secondary from a legal point of view."
-          },
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "String",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#String",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
-              "range_label": {
-                "en": "String"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "definition-en": "Any name by which a Person is known, other than their full name.",
-            "uri": "http://data4wallonia.com/model/internalName",
-            "usageNote-en": "Many individuals use a short form of their name, a 'middle' name as a 'first' name or a professional name. For example, the British politician and former UN High Representative for Bosnia and Herzegovina, Jeremy John Durham Ashdown, Baron Ashdown of Norton-sub-Hamdon, is usually referred to simply as 'Paddy Ashdown' or 'Lord Ashdown.' It is not the role of the alternative name property to record nick names, pet names or other 'familiar names' that will be of no consequence in public sector data exchange. Furthermore, some individuals have more than one legal name in which case the full name property should be used multiple times. Alternative name gives a means of recording names by which an individual is generally known, or professionally known, even though such names are no more than secondary from a legal point of view.",
-            "label-en": "alternative name"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/involvedIn",
-          "name": "involvedIn",
-          "sort": "involved in",
-          "label": {
-            "en": "involved in"
-          },
-          "description": {
-            "en": "The Program in which a Resource is allocated to."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Program",
-              "range_uri": "http://data4wallonia.com/model/Program"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Program",
-              "range_puri": "http://data4wallonia.com/model/Program",
-              "range_label": {
-                "en": "Program"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "definition-en": "The Program in which a Resource is allocated to.",
-            "uri": "http://data4wallonia.com/model/involvedIn",
-            "label-en": "involved in"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/landline",
-          "name": "landline",
-          "sort": "landline",
-          "label": {
-            "en": "landline"
-          },
-          "description": {
-            "en": "A landline"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "String",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#String",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
-              "range_label": {
-                "en": "String"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/landline",
-            "label-en": "landline",
-            "definition-en": "A landline"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/language",
-          "name": "language",
-          "sort": "language",
-          "label": {
-            "en": "language"
-          },
-          "description": {
-            "en": "A language"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Code",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Code",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "en": "Code"
-              }
-            }
-          ],
-          "cardinality": "1..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/language",
-            "definition-en": "A language",
-            "label-en": "language"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/lastName",
-          "name": "familyName",
-          "sort": "family name",
-          "label": {
-            "en": "family name"
-          },
-          "description": {
-            "en": "The hereditary surname of a family."
-          },
-          "usage": {
-            "en": "Usually referring to a group of people related by blood, marriage or adoption. This attribute also carries prefixes or suffixes which are part of the family name, e.g. \"de Boer\", \"van de Putte\", \"von und zu Orlow\". Multiple family names, such as are commonly found in Hispanic countries, are recorded in the single family name property so that, for example, Miguel de Cervantes Saavedra's family name would be recorded as \"de Cervantes Saavedra\"."
-          },
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "String",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#String",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
-              "range_label": {
-                "en": "String"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "usageNote-en": "Usually referring to a group of people related by blood, marriage or adoption. This attribute also carries prefixes or suffixes which are part of the family name, e.g. \"de Boer\", \"van de Putte\", \"von und zu Orlow\". Multiple family names, such as are commonly found in Hispanic countries, are recorded in the single family name property so that, for example, Miguel de Cervantes Saavedra's family name would be recorded as \"de Cervantes Saavedra\".",
-            "uri": "http://data4wallonia.com/model/lastName",
-            "definition-en": "The hereditary surname of a family.",
-            "label-en": "family name"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/mobile",
-          "name": "mobile",
-          "sort": "mobile",
-          "label": {
-            "en": "mobile"
-          },
-          "description": {
-            "en": "A mobile"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "String",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#String",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
-              "range_label": {
-                "en": "String"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/mobile",
-            "label-en": "mobile",
-            "definition-en": "A mobile"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/nonFeaturedEmail",
-          "name": "nonFeaturedEmail",
-          "sort": "non featured email",
-          "label": {
-            "en": "non featured email"
-          },
-          "description": {
-            "en": "A non featured email"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "String",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#String",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
-              "range_label": {
-                "en": "String"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/nonFeaturedEmail",
-            "label-en": "non featured email",
-            "definition-en": "A non featured email"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/photo",
-          "name": "photo",
-          "sort": "photo",
-          "label": {
-            "en": "photo"
-          },
-          "description": {
-            "en": "An image taken with a camera of a resource."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "File",
-              "range_uri": "http://data4wallonia.com/model/File"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#File",
-              "range_puri": "http://data4wallonia.com/model/File",
-              "range_label": {
-                "en": "File"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/photo",
-            "label-en": "photo",
-            "definition-en": "An image taken with a camera of a resource."
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/shortDescription",
-          "name": "shortDescription",
-          "sort": "short description",
-          "label": {
-            "en": "short description"
-          },
-          "description": {
-            "en": "Brief description of the person."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-              "range_label": {
-                "en": "Text"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/shortDescription",
-            "label-en": "short description",
-            "definition-en": "Brief description of the person."
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/slug",
-          "name": "slug",
-          "sort": "slug",
-          "label": {
-            "en": "slug"
-          },
-          "description": {
-            "en": "A slug"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "String",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#String",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
-              "range_label": {
-                "en": "String"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/slug",
-            "definition-en": "A slug",
-            "label-en": "slug"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/socialNetwork",
-          "name": "socialNetwork",
-          "sort": "social network",
-          "label": {
-            "en": "social network"
-          },
-          "description": {
-            "en": "A social network"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "String",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#String",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
-              "range_label": {
-                "en": "String"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/socialNetwork",
-            "label-en": "social network",
-            "definition-en": "A social network"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/website",
-          "name": "website",
-          "sort": "website",
-          "label": {
-            "en": "website"
-          },
-          "description": {
-            "en": "A website"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Person",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "String",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#String",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
-              "range_label": {
-                "en": "String"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/website",
-            "label-en": "website",
-            "definition-en": "A website"
-          }
-        }
-      ]
-    },
-    {
-      "uri": "http://data4wallonia.com/model/QualifiedPerson",
       "name": "QualifiedPerson",
       "label": {
         "en": "Qualified Person"
@@ -8070,7 +8061,7 @@
           }
         },
         {
-          "uri": "http://data4wallonia.com/model/operating system",
+          "uri": "http://data4wallonia.com/model/operatingSystem",
           "name": "operatingSystems",
           "sort": "operating systems",
           "label": {
@@ -8104,7 +8095,7 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "http://data4wallonia.com/model/operating system",
+            "uri": "http://data4wallonia.com/model/operatingSystem",
             "definition-en": "An operating system",
             "label-en": "operating systems"
           }
@@ -8487,7 +8478,7 @@
       "properties": []
     },
     {
-      "uri": "http://www.w3.org/2001/XMLSchema#double",
+      "uri": "http://www.w3.org/2001/XMLSchema#dateTime",
       "name": "DateTime",
       "label": {
         "en": "Date time"
@@ -8501,19 +8492,19 @@
       "rawTags": {
         "definition-en": "The ·value space· of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap.",
         "label-en": "Date time",
-        "uri": "http://www.w3.org/2001/XMLSchema#double",
+        "uri": "http://www.w3.org/2001/XMLSchema#dateTime",
         "class-usage-scope": "datatype",
         "literal": "true"
       },
       "properties": []
     },
     {
-      "uri": "http://www.w3.org/2001/XMLSchema#double",
-      "name": "Double",
+      "uri": "http://www.w3.org/2001/XMLSchema#decimal",
+      "name": "Decimal",
       "label": {
-        "en": "Double"
+        "en": "Decimal"
       },
-      "sort": "Double",
+      "sort": "Decimal",
       "description": {
         "en": "Decimal represents a subset of the real numbers, which can be represented by decimal numerals. The ·value space· of decimal is the set of numbers that can be obtained by multiplying an integer by a non-positive power of ten, i.e., expressible as i × 10^-n where i and n are integers and n >= 0. Precision is not reflected in this value space; the number 2.0 is not distinct from the number 2.00. The ·order-relation· on decimal is the order relation on real numbers, restricted to this subset."
       },
@@ -8521,29 +8512,8 @@
       "parents": [],
       "rawTags": {
         "definition-en": "Decimal represents a subset of the real numbers, which can be represented by decimal numerals. The ·value space· of decimal is the set of numbers that can be obtained by multiplying an integer by a non-positive power of ten, i.e., expressible as i × 10^-n where i and n are integers and n >= 0. Precision is not reflected in this value space; the number 2.0 is not distinct from the number 2.00. The ·order-relation· on decimal is the order relation on real numbers, restricted to this subset.",
-        "label-en": "Double",
-        "uri": "http://www.w3.org/2001/XMLSchema#double",
-        "class-usage-scope": "datatype",
-        "literal": "true"
-      },
-      "properties": []
-    },
-    {
-      "uri": "http://www.w3.org/2001/XMLSchema#double",
-      "name": "String",
-      "label": {
-        "en": "String"
-      },
-      "sort": "String",
-      "description": {
-        "en": "The string datatype represents character strings in XML. The ·value space· of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ·match· the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer."
-      },
-      "usage": {},
-      "parents": [],
-      "rawTags": {
-        "definition-en": "The string datatype represents character strings in XML. The ·value space· of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ·match· the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer.",
-        "label-en": "String",
-        "uri": "http://www.w3.org/2001/XMLSchema#double",
+        "label-en": "Decimal",
+        "uri": "http://www.w3.org/2001/XMLSchema#decimal",
         "class-usage-scope": "datatype",
         "literal": "true"
       },
@@ -8565,6 +8535,27 @@
         "definition-en": "Integer is ·derived· from decimal by fixing the value of ·fractionDigits· to be 0and disallowing the trailing decimal point. This results in the standard mathematical concept of the integer numbers. The ·value space· of integer is the infinite set {...,-2,-1,0,1,2,...}. The ·base type· of integer is decimal.",
         "label-en": "Integer",
         "uri": "http://www.w3.org/2001/XMLSchema#integer",
+        "class-usage-scope": "datatype",
+        "literal": "true"
+      },
+      "properties": []
+    },
+    {
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "name": "String",
+      "label": {
+        "en": "String"
+      },
+      "sort": "String",
+      "description": {
+        "en": "The string datatype represents character strings in XML. The ·value space· of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ·match· the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer."
+      },
+      "usage": {},
+      "parents": [],
+      "rawTags": {
+        "definition-en": "The string datatype represents character strings in XML. The ·value space· of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ·match· the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer.",
+        "label-en": "String",
+        "uri": "http://www.w3.org/2001/XMLSchema#string",
         "class-usage-scope": "datatype",
         "literal": "true"
       },

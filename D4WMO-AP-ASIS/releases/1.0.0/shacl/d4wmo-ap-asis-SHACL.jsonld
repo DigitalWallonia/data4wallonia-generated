@@ -2845,6 +2845,794 @@
       "sh:targetClass": "http://data4wallonia.com/model/PartnerAdditionalDescription"
     },
     {
+      "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/057c526359585180576296d560083ff3659a3db2",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.involvedin",
+          "sh:description": {
+            "en": "The Program in which a Resource is allocated to."
+          },
+          "sh:name": {
+            "en": "involved in"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/involvedIn"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/05969b4af1b3f6570e1aec246d37985180de37c6",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.photo",
+          "sh:class": "http://data4wallonia.com/model/File",
+          "sh:description": {
+            "en": "An image taken with a camera of a resource."
+          },
+          "sh:name": {
+            "en": "photo"
+          },
+          "sh:path": "http://data4wallonia.com/model/photo"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/08016b5f479a8f36005c1a9e519d7ccc498d6f20",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.featuredemail",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "A featured email"
+          },
+          "sh:name": {
+            "en": "featured email"
+          },
+          "sh:path": "http://data4wallonia.com/model/featuredEmail"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/099c3ea5870e4836a6af478cffb8d15cb53ad7d9",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.lastname",
+          "sh:description": {
+            "en": "A last name"
+          },
+          "sh:name": {
+            "en": "last name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/lastName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/0b3967e82f5e3ecc21406bf2d71ccf4120562405",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.slug",
+          "sh:description": {
+            "en": "A slug"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "slug"
+          },
+          "sh:path": "http://data4wallonia.com/model/slug"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.shortdescription",
+          "sh:description": {
+            "en": "Brief description of the person."
+          },
+          "sh:name": {
+            "en": "short description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/shortDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/0f4917b057b033d9d971f402590d7a1fd163b558",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.featuredemail",
+          "sh:description": {
+            "en": "A featured email"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "featured email"
+          },
+          "sh:path": "http://data4wallonia.com/model/featuredEmail"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/0fdca125b883c133fa07f7f2da282872bf817f37",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.expertise",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "An expertise"
+          },
+          "sh:name": {
+            "en": "expertise"
+          },
+          "sh:path": "http://data4wallonia.com/model/expertise"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/144c4f635c27258a37c86c5b543b4a5d670c81fe",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.additionaldescription",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "An additional description"
+          },
+          "sh:name": {
+            "en": "additional description"
+          },
+          "sh:path": "http://data4wallonia.com/model/additionalDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/1f5dcdc6bb926702c36968ed70ce7e5857c86ece",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.nonfeaturedemail",
+          "sh:description": {
+            "en": "A non featured email"
+          },
+          "sh:name": {
+            "en": "non featured email"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/nonFeaturedEmail"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/245bc89a6c735f27fa08033a9a63ae5d5d7d5acd",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.internalname",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "An internal name"
+          },
+          "sh:name": {
+            "en": "internal name"
+          },
+          "sh:path": "http://data4wallonia.com/model/internalName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/24a51f741f7dc54cc225d47abc4d51600b2eb0e4",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.shortdescription",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "Brief description of the person."
+          },
+          "sh:name": {
+            "en": "short description"
+          },
+          "sh:path": "http://data4wallonia.com/model/shortDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/283a2eac2ede7261981ee11092c4a1c218c5c831",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.additionaldescription",
+          "sh:description": {
+            "en": "An additional description"
+          },
+          "sh:name": {
+            "en": "additional description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/additionalDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/28b297798c30b65afc7ce2274619e7a2aa834b70",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.slug",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "A slug"
+          },
+          "sh:name": {
+            "en": "slug"
+          },
+          "sh:path": "http://data4wallonia.com/model/slug"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/29ba27566ab1f32c8bb73f3492436d4bd868d3d2",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.language",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "A language"
+          },
+          "sh:name": {
+            "en": "language"
+          },
+          "sh:path": "http://data4wallonia.com/model/language"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/2c7d994dd540f92c116cac913e2aa5d588945f1f",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.address",
+          "sh:description": {
+            "en": "An address"
+          },
+          "sh:name": {
+            "en": "address"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/address"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/2ec41ed5a0baba6a9eeaf25adc7fb2df70935694",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.socialnetwork",
+          "sh:description": {
+            "en": "A social network"
+          },
+          "sh:name": {
+            "en": "social network"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/socialNetwork"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/2ee0d3f354e210f7fd251ffdcdf50cbedffac251",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.firstname",
+          "sh:description": {
+            "en": "A first name"
+          },
+          "sh:name": {
+            "en": "first name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/firstName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/31218bb7e1ed4d2f2a31867da1e894ae4103ad38",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.photo",
+          "sh:description": {
+            "en": "An image taken with a camera of a resource."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "photo"
+          },
+          "sh:path": "http://data4wallonia.com/model/photo"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/3422345fc09edc4f8de555de306271864623e694",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.landline",
+          "sh:description": {
+            "en": "A landline"
+          },
+          "sh:name": {
+            "en": "landline"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/landline"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/366f658e6a2bca9aae3296a4db577bf0ee4f4da8",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.landline",
+          "sh:description": {
+            "en": "A landline"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "landline"
+          },
+          "sh:path": "http://data4wallonia.com/model/landline"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/3757a6a977970747e3edf45a0b6c65aca4a35678",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.lastname",
+          "sh:description": {
+            "en": "A last name"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "last name"
+          },
+          "sh:path": "http://data4wallonia.com/model/lastName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/498d6285289a2f8c4baef54ed4e73c3240f7dd5d",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.internalname",
+          "sh:description": {
+            "en": "An internal name"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "internal name"
+          },
+          "sh:path": "http://data4wallonia.com/model/internalName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/4b8d3b16bd0c19a4fb596c3ed323e96f2bf32552",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.landline",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "A landline"
+          },
+          "sh:name": {
+            "en": "landline"
+          },
+          "sh:path": "http://data4wallonia.com/model/landline"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/4bd3f9f68f4f0f4782bac3a2890db31a4d7b5163",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.expertise",
+          "sh:description": {
+            "en": "An expertise"
+          },
+          "sh:name": {
+            "en": "expertise"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/expertise"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/531cd7ec5123506ee59bced26bfc6edc8e1589a5",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.category",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "A classification"
+          },
+          "sh:name": {
+            "en": "category"
+          },
+          "sh:path": "http://data4wallonia.com/model/category"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/54f09a2ec1df3a48b497c8c664277f160685ce04",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.clientsite",
+          "sh:description": {
+            "en": "A client site"
+          },
+          "sh:name": {
+            "en": "client site"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/clientSite"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/5774b67623f503b27e6a4742f4a8ceb682d43b8c",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.nonfeaturedemail",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "A non featured email"
+          },
+          "sh:name": {
+            "en": "non featured email"
+          },
+          "sh:path": "http://data4wallonia.com/model/nonFeaturedEmail"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/5de4ef5193a558e17a34633888421d09b957d267",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.address",
+          "sh:class": "http://data4wallonia.com/model/Address",
+          "sh:description": {
+            "en": "An address"
+          },
+          "sh:name": {
+            "en": "address"
+          },
+          "sh:path": "http://data4wallonia.com/model/address"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/5de5e3fa7d25498318d38386224340b36e1d139a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.clientsite",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "A client site"
+          },
+          "sh:name": {
+            "en": "client site"
+          },
+          "sh:path": "http://data4wallonia.com/model/clientSite"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/607e80dba9a9812ede1438320c6d7010215ac0ce",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.lastname",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "A last name"
+          },
+          "sh:name": {
+            "en": "last name"
+          },
+          "sh:path": "http://data4wallonia.com/model/lastName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/636553acf2f4b2fa921e104869b74795dd59b82d",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.mobile",
+          "sh:description": {
+            "en": "A mobile"
+          },
+          "sh:name": {
+            "en": "mobile"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/mobile"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/672b7d923259265b439d5d8b15b889b584848046",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.expertise",
+          "sh:description": {
+            "en": "An expertise"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "expertise"
+          },
+          "sh:path": "http://data4wallonia.com/model/expertise"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/6c19b2951c648a762141afd57c330417cbc64cde",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.slug",
+          "sh:description": {
+            "en": "A slug"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "slug"
+          },
+          "sh:path": "http://data4wallonia.com/model/slug"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/7a9141f2c5f8db72fb51bd1def67ff439d4aa203",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.internalname",
+          "sh:description": {
+            "en": "An internal name"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "internal name"
+          },
+          "sh:path": "http://data4wallonia.com/model/internalName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/7e32199610fb028b9a2f16d9d71e3603a32c1fba",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.website",
+          "sh:description": {
+            "en": "A website"
+          },
+          "sh:name": {
+            "en": "website"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/website"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/8dbcd25facc8e5fc2236f2d3608a1d3d348a6868",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.firstname",
+          "sh:description": {
+            "en": "A first name"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "first name"
+          },
+          "sh:path": "http://data4wallonia.com/model/firstName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/8e33c2fbd908194cb4c79aac6b2cd8f5521bd4ac",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.involvedin",
+          "sh:class": "http://data4wallonia.com/model/Program",
+          "sh:description": {
+            "en": "The Program in which a Resource is allocated to."
+          },
+          "sh:name": {
+            "en": "involved in"
+          },
+          "sh:path": "http://data4wallonia.com/model/involvedIn"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/8f5629615dc7e807d12e277c0bd488843337da73",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.displayrefusal",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "sh:description": {
+            "en": "A display refusal"
+          },
+          "sh:name": {
+            "en": "display refusal"
+          },
+          "sh:path": "http://data4wallonia.com/model/displayRefusal"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/9214e82ca155ce17ad5e6900a3658dc615e3235a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.socialnetwork",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "A social network"
+          },
+          "sh:name": {
+            "en": "social network"
+          },
+          "sh:path": "http://data4wallonia.com/model/socialNetwork"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/9897caf2816b6c937f9559e39e25ee6bce338ce9",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.mobile",
+          "sh:description": {
+            "en": "A mobile"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "mobile"
+          },
+          "sh:path": "http://data4wallonia.com/model/mobile"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/9ac9603e91a4902c78c494481f57fa4967e5a3a5",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.website",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "A website"
+          },
+          "sh:name": {
+            "en": "website"
+          },
+          "sh:path": "http://data4wallonia.com/model/website"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/9c9fb43848e33583960f6a48f713c2314250d2bf",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.ambition",
+          "sh:description": {
+            "en": "An ambition"
+          },
+          "sh:name": {
+            "en": "ambition"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/ambition"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/9da1283953a94ba37e328c2172f20763ba261010",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.displayrefusal",
+          "sh:description": {
+            "en": "A display refusal"
+          },
+          "sh:name": {
+            "en": "display refusal"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/displayRefusal"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/a281a0d3a98ba358e3d3f716e1055bcc34f26b48",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.website",
+          "sh:description": {
+            "en": "A website"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "website"
+          },
+          "sh:path": "http://data4wallonia.com/model/website"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/a89ae712fdba62eca26618adf10fb8bfee67d716",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.shortdescription",
+          "sh:description": {
+            "en": "Brief description of the person."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "short description"
+          },
+          "sh:path": "http://data4wallonia.com/model/shortDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/b5dfac018a0387975dac4411fd0ac9dd3b00f05e",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.featuredemail",
+          "sh:description": {
+            "en": "A featured email"
+          },
+          "sh:name": {
+            "en": "featured email"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/featuredEmail"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/b7707a7d12adfe39ed5fc9b262c71e85d9cf404b",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.slug",
+          "sh:description": {
+            "en": "A slug"
+          },
+          "sh:name": {
+            "en": "slug"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/slug"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/b8abc35b520845bf429b90d640151159d2493635",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.firstname",
+          "sh:description": {
+            "en": "A first name"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "first name"
+          },
+          "sh:path": "http://data4wallonia.com/model/firstName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/b96c16ba737f9ae66cd79d59c5077c682d5051e0",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.internalname",
+          "sh:description": {
+            "en": "An internal name"
+          },
+          "sh:name": {
+            "en": "internal name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/internalName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/c03b847a9616bc405d9e961377ee72a730a39a98",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.nonfeaturedemail",
+          "sh:description": {
+            "en": "A non featured email"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "non featured email"
+          },
+          "sh:path": "http://data4wallonia.com/model/nonFeaturedEmail"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/c674adf5e88a69142ea85b2e59da081d277f7213",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.language",
+          "sh:description": {
+            "en": "A language"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "language"
+          },
+          "sh:path": "http://data4wallonia.com/model/language"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/c90be2c2deed29ea0b346c419f0657cc657ce99c",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.lastname",
+          "sh:description": {
+            "en": "A last name"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "last name"
+          },
+          "sh:path": "http://data4wallonia.com/model/lastName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/cd8efe4926b27a06c0ee0f019d5084d819fd18cc",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.additionaldescription",
+          "sh:description": {
+            "en": "An additional description"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "additional description"
+          },
+          "sh:path": "http://data4wallonia.com/model/additionalDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/d47259ca8e3ff6a5ee1ee83872a83c4c2b42bf1e",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.expertise",
+          "sh:description": {
+            "en": "An expertise"
+          },
+          "sh:name": {
+            "en": "expertise"
+          },
+          "sh:path": "http://data4wallonia.com/model/expertise",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/d64842169d12609c45e8e2cfb07947a74875a257",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.ambition",
+          "sh:class": "http://data4wallonia.com/model/Ambition",
+          "sh:description": {
+            "en": "An ambition"
+          },
+          "sh:name": {
+            "en": "ambition"
+          },
+          "sh:path": "http://data4wallonia.com/model/ambition"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/d7006cf4d921df6f60e324f210d6e6eb5aacdf35",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.displayrefusal",
+          "sh:description": {
+            "en": "A display refusal"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "display refusal"
+          },
+          "sh:path": "http://data4wallonia.com/model/displayRefusal"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/da2e547cba380d3f3c7c0811dc9ab8eb8aa1ee12",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.mobile",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "A mobile"
+          },
+          "sh:name": {
+            "en": "mobile"
+          },
+          "sh:path": "http://data4wallonia.com/model/mobile"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/db878f1cb93930f64561d0504123c66feacfad5a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.language",
+          "sh:description": {
+            "en": "A language"
+          },
+          "sh:name": {
+            "en": "language"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/language"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/e7dc0c59333df2ddb4fb8dec598f0d3820495535",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.displayrefusal",
+          "sh:description": {
+            "en": "A display refusal"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "display refusal"
+          },
+          "sh:path": "http://data4wallonia.com/model/displayRefusal"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/e99658d8dce2abcab55b39649462e2f78d374962",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.additionaldescription",
+          "sh:description": {
+            "en": "An additional description"
+          },
+          "sh:name": {
+            "en": "additional description"
+          },
+          "sh:path": "http://data4wallonia.com/model/additionalDescription",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/ec5115e33f518e53929744eed09dc4e9c8f38187",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.firstname",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "A first name"
+          },
+          "sh:name": {
+            "en": "first name"
+          },
+          "sh:path": "http://data4wallonia.com/model/firstName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/f1249f171bcbfa12f01658d50155b64beb61e40f",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.category",
+          "sh:description": {
+            "en": "A classification"
+          },
+          "sh:name": {
+            "en": "category"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/category"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/f1a1c433a19bfaca2c3fd9cea584ddf10495be0f",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.shortdescription",
+          "sh:description": {
+            "en": "Brief description of the person."
+          },
+          "sh:name": {
+            "en": "short description"
+          },
+          "sh:path": "http://data4wallonia.com/model/shortDescription",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/f50f64eda68b83c4150bb7c0bcf84594d6eae7d1",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.photo",
+          "sh:description": {
+            "en": "An image taken with a camera of a resource."
+          },
+          "sh:name": {
+            "en": "photo"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/photo"
+        }
+      ],
+      "sh:targetClass": "http://data4wallonia.com/model/Person"
+    },
+    {
       "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PostShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -2931,7 +3719,7 @@
           "sh:name": {
             "en": "published date"
           },
-          "sh:path": "http://data4wallonia.com/model/published date"
+          "sh:path": "http://data4wallonia.com/model/publishedDate"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PostShape/2031ba1a56efdb18b8fb46f2256e3c9919cd5bdf",
@@ -3171,7 +3959,7 @@
             "en": "published date"
           },
           "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/published date"
+          "sh:path": "http://data4wallonia.com/model/publishedDate"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PostShape/54f09a2ec1df3a48b497c8c664277f160685ce04",
@@ -3195,7 +3983,7 @@
           "sh:name": {
             "en": "published date"
           },
-          "sh:path": "http://data4wallonia.com/model/published date"
+          "sh:path": "http://data4wallonia.com/model/publishedDate"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PostShape/581d156a2c19be11e5b92c02d2dee33ff3537724",
@@ -3459,7 +4247,7 @@
           "sh:name": {
             "en": "published date"
           },
-          "sh:path": "http://data4wallonia.com/model/published date"
+          "sh:path": "http://data4wallonia.com/model/publishedDate"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PostShape/cea25f8fc2ecd0beef10e79a62c1a22212cabf36",
@@ -4012,7 +4800,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PressReviewShape/b61ce9ff3ddc0ce15d2f323b06f377450fc873fb",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PressReview.journalist",
-          "sh:class": "http://data4wallonia.com/model/QualifiedPerson",
+          "sh:class": "http://data4wallonia.com/model/Person",
           "sh:description": {
             "en": "A journalist"
           },
@@ -5853,794 +6641,6 @@
       "sh:targetClass": "http://data4wallonia.com/model/Program"
     },
     {
-      "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/057c526359585180576296d560083ff3659a3db2",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.involvedin",
-          "sh:description": {
-            "en": "The Program in which a Resource is allocated to."
-          },
-          "sh:name": {
-            "en": "involved in"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/involvedIn"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/05969b4af1b3f6570e1aec246d37985180de37c6",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.photo",
-          "sh:class": "http://data4wallonia.com/model/File",
-          "sh:description": {
-            "en": "An image taken with a camera of a resource."
-          },
-          "sh:name": {
-            "en": "photo"
-          },
-          "sh:path": "http://data4wallonia.com/model/photo"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/08016b5f479a8f36005c1a9e519d7ccc498d6f20",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.featuredemail",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
-          "sh:description": {
-            "en": "A featured email"
-          },
-          "sh:name": {
-            "en": "featured email"
-          },
-          "sh:path": "http://data4wallonia.com/model/featuredEmail"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/0b3967e82f5e3ecc21406bf2d71ccf4120562405",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.slug",
-          "sh:description": {
-            "en": "A slug"
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "slug"
-          },
-          "sh:path": "http://data4wallonia.com/model/slug"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.shortdescription",
-          "sh:description": {
-            "en": "Brief description of the person."
-          },
-          "sh:name": {
-            "en": "short description"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/shortDescription"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/0f4917b057b033d9d971f402590d7a1fd163b558",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.featuredemail",
-          "sh:description": {
-            "en": "A featured email"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "featured email"
-          },
-          "sh:path": "http://data4wallonia.com/model/featuredEmail"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/0fdca125b883c133fa07f7f2da282872bf817f37",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.expertise",
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:description": {
-            "en": "An expertise"
-          },
-          "sh:name": {
-            "en": "expertise"
-          },
-          "sh:path": "http://data4wallonia.com/model/expertise"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/144c4f635c27258a37c86c5b543b4a5d670c81fe",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.additionaldescription",
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:description": {
-            "en": "An additional description"
-          },
-          "sh:name": {
-            "en": "additional description"
-          },
-          "sh:path": "http://data4wallonia.com/model/additionalDescription"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/1572a063cf6e42858dabf5017baf40a96bf7155d",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.familyname",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
-          "sh:description": {
-            "en": "The hereditary surname of a family."
-          },
-          "sh:name": {
-            "en": "family name"
-          },
-          "sh:path": "http://data4wallonia.com/model/lastName"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/1f5dcdc6bb926702c36968ed70ce7e5857c86ece",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.nonfeaturedemail",
-          "sh:description": {
-            "en": "A non featured email"
-          },
-          "sh:name": {
-            "en": "non featured email"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/nonFeaturedEmail"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/24a51f741f7dc54cc225d47abc4d51600b2eb0e4",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.shortdescription",
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:description": {
-            "en": "Brief description of the person."
-          },
-          "sh:name": {
-            "en": "short description"
-          },
-          "sh:path": "http://data4wallonia.com/model/shortDescription"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/283a2eac2ede7261981ee11092c4a1c218c5c831",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.additionaldescription",
-          "sh:description": {
-            "en": "An additional description"
-          },
-          "sh:name": {
-            "en": "additional description"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/additionalDescription"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/28b297798c30b65afc7ce2274619e7a2aa834b70",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.slug",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
-          "sh:description": {
-            "en": "A slug"
-          },
-          "sh:name": {
-            "en": "slug"
-          },
-          "sh:path": "http://data4wallonia.com/model/slug"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/29ba27566ab1f32c8bb73f3492436d4bd868d3d2",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.language",
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
-          "sh:description": {
-            "en": "A language"
-          },
-          "sh:name": {
-            "en": "language"
-          },
-          "sh:path": "http://data4wallonia.com/model/language"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/2c7d994dd540f92c116cac913e2aa5d588945f1f",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.address",
-          "sh:description": {
-            "en": "An address"
-          },
-          "sh:name": {
-            "en": "address"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/address"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/2ec41ed5a0baba6a9eeaf25adc7fb2df70935694",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.socialnetwork",
-          "sh:description": {
-            "en": "A social network"
-          },
-          "sh:name": {
-            "en": "social network"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/socialNetwork"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/31218bb7e1ed4d2f2a31867da1e894ae4103ad38",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.photo",
-          "sh:description": {
-            "en": "An image taken with a camera of a resource."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "photo"
-          },
-          "sh:path": "http://data4wallonia.com/model/photo"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/3422345fc09edc4f8de555de306271864623e694",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.landline",
-          "sh:description": {
-            "en": "A landline"
-          },
-          "sh:name": {
-            "en": "landline"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/landline"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/366b1332d2804fd260780ecd41fbb14b7ba69a44",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.alternativename",
-          "sh:description": {
-            "en": "Any name by which a Person is known, other than their full name."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "alternative name"
-          },
-          "sh:path": "http://data4wallonia.com/model/internalName"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/366f658e6a2bca9aae3296a4db577bf0ee4f4da8",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.landline",
-          "sh:description": {
-            "en": "A landline"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "landline"
-          },
-          "sh:path": "http://data4wallonia.com/model/landline"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/4b8d3b16bd0c19a4fb596c3ed323e96f2bf32552",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.landline",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
-          "sh:description": {
-            "en": "A landline"
-          },
-          "sh:name": {
-            "en": "landline"
-          },
-          "sh:path": "http://data4wallonia.com/model/landline"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/4bd3f9f68f4f0f4782bac3a2890db31a4d7b5163",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.expertise",
-          "sh:description": {
-            "en": "An expertise"
-          },
-          "sh:name": {
-            "en": "expertise"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/expertise"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/531cd7ec5123506ee59bced26bfc6edc8e1589a5",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.category",
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
-          "sh:description": {
-            "en": "A classification"
-          },
-          "sh:name": {
-            "en": "category"
-          },
-          "sh:path": "http://data4wallonia.com/model/category"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/54f09a2ec1df3a48b497c8c664277f160685ce04",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.clientsite",
-          "sh:description": {
-            "en": "A client site"
-          },
-          "sh:name": {
-            "en": "client site"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/clientSite"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/5774b67623f503b27e6a4742f4a8ceb682d43b8c",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.nonfeaturedemail",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
-          "sh:description": {
-            "en": "A non featured email"
-          },
-          "sh:name": {
-            "en": "non featured email"
-          },
-          "sh:path": "http://data4wallonia.com/model/nonFeaturedEmail"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/5beb6d2bee0a07aad0d15fbfd5f9a85917beaebf",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.givenname",
-          "sh:description": {
-            "en": "The name(s) that identify the Person within a family with a common surname."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "given name"
-          },
-          "sh:path": "http://data4wallonia.com/model/firstName"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/5de4ef5193a558e17a34633888421d09b957d267",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.address",
-          "sh:class": "http://data4wallonia.com/model/Address",
-          "sh:description": {
-            "en": "An address"
-          },
-          "sh:name": {
-            "en": "address"
-          },
-          "sh:path": "http://data4wallonia.com/model/address"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/5de5e3fa7d25498318d38386224340b36e1d139a",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.clientsite",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
-          "sh:description": {
-            "en": "A client site"
-          },
-          "sh:name": {
-            "en": "client site"
-          },
-          "sh:path": "http://data4wallonia.com/model/clientSite"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/61f072497c90b6f48b2efa7269eb306c26bb4757",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.givenname",
-          "sh:description": {
-            "en": "The name(s) that identify the Person within a family with a common surname."
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "given name"
-          },
-          "sh:path": "http://data4wallonia.com/model/firstName"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/636553acf2f4b2fa921e104869b74795dd59b82d",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.mobile",
-          "sh:description": {
-            "en": "A mobile"
-          },
-          "sh:name": {
-            "en": "mobile"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/mobile"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/66aadf8f2f30ec822961e903241612a4a0f876d8",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.familyname",
-          "sh:description": {
-            "en": "The hereditary surname of a family."
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "family name"
-          },
-          "sh:path": "http://data4wallonia.com/model/lastName"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/672b7d923259265b439d5d8b15b889b584848046",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.expertise",
-          "sh:description": {
-            "en": "An expertise"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "expertise"
-          },
-          "sh:path": "http://data4wallonia.com/model/expertise"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/6c19b2951c648a762141afd57c330417cbc64cde",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.slug",
-          "sh:description": {
-            "en": "A slug"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "slug"
-          },
-          "sh:path": "http://data4wallonia.com/model/slug"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/7349aedd98256d90685571bddc6da8ac9eab1767",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.givenname",
-          "sh:description": {
-            "en": "The name(s) that identify the Person within a family with a common surname."
-          },
-          "sh:name": {
-            "en": "given name"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/firstName"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/7d0aad3aaae427f799249eafced4cbb0b8a36dc5",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.familyname",
-          "sh:description": {
-            "en": "The hereditary surname of a family."
-          },
-          "sh:name": {
-            "en": "family name"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/lastName"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/7e32199610fb028b9a2f16d9d71e3603a32c1fba",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.website",
-          "sh:description": {
-            "en": "A website"
-          },
-          "sh:name": {
-            "en": "website"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/website"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/8e33c2fbd908194cb4c79aac6b2cd8f5521bd4ac",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.involvedin",
-          "sh:class": "http://data4wallonia.com/model/Program",
-          "sh:description": {
-            "en": "The Program in which a Resource is allocated to."
-          },
-          "sh:name": {
-            "en": "involved in"
-          },
-          "sh:path": "http://data4wallonia.com/model/involvedIn"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/8f5629615dc7e807d12e277c0bd488843337da73",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.displayrefusal",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#boolean",
-          "sh:description": {
-            "en": "A display refusal"
-          },
-          "sh:name": {
-            "en": "display refusal"
-          },
-          "sh:path": "http://data4wallonia.com/model/displayRefusal"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/9214e82ca155ce17ad5e6900a3658dc615e3235a",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.socialnetwork",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
-          "sh:description": {
-            "en": "A social network"
-          },
-          "sh:name": {
-            "en": "social network"
-          },
-          "sh:path": "http://data4wallonia.com/model/socialNetwork"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/9897caf2816b6c937f9559e39e25ee6bce338ce9",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.mobile",
-          "sh:description": {
-            "en": "A mobile"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "mobile"
-          },
-          "sh:path": "http://data4wallonia.com/model/mobile"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/9ac9603e91a4902c78c494481f57fa4967e5a3a5",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.website",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
-          "sh:description": {
-            "en": "A website"
-          },
-          "sh:name": {
-            "en": "website"
-          },
-          "sh:path": "http://data4wallonia.com/model/website"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/9c9fb43848e33583960f6a48f713c2314250d2bf",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.ambition",
-          "sh:description": {
-            "en": "An ambition"
-          },
-          "sh:name": {
-            "en": "ambition"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/ambition"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/9da1283953a94ba37e328c2172f20763ba261010",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.displayrefusal",
-          "sh:description": {
-            "en": "A display refusal"
-          },
-          "sh:name": {
-            "en": "display refusal"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/displayRefusal"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/a281a0d3a98ba358e3d3f716e1055bcc34f26b48",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.website",
-          "sh:description": {
-            "en": "A website"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "website"
-          },
-          "sh:path": "http://data4wallonia.com/model/website"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/a89ae712fdba62eca26618adf10fb8bfee67d716",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.shortdescription",
-          "sh:description": {
-            "en": "Brief description of the person."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "short description"
-          },
-          "sh:path": "http://data4wallonia.com/model/shortDescription"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/b5dfac018a0387975dac4411fd0ac9dd3b00f05e",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.featuredemail",
-          "sh:description": {
-            "en": "A featured email"
-          },
-          "sh:name": {
-            "en": "featured email"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/featuredEmail"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/b7707a7d12adfe39ed5fc9b262c71e85d9cf404b",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.slug",
-          "sh:description": {
-            "en": "A slug"
-          },
-          "sh:name": {
-            "en": "slug"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/slug"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/c03b847a9616bc405d9e961377ee72a730a39a98",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.nonfeaturedemail",
-          "sh:description": {
-            "en": "A non featured email"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "non featured email"
-          },
-          "sh:path": "http://data4wallonia.com/model/nonFeaturedEmail"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/c56ed5a233a70e9c4a6338f07a2aee5cfc6bacbf",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.alternativename",
-          "sh:description": {
-            "en": "Any name by which a Person is known, other than their full name."
-          },
-          "sh:name": {
-            "en": "alternative name"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/internalName"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/c674adf5e88a69142ea85b2e59da081d277f7213",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.language",
-          "sh:description": {
-            "en": "A language"
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "language"
-          },
-          "sh:path": "http://data4wallonia.com/model/language"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/cd8efe4926b27a06c0ee0f019d5084d819fd18cc",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.additionaldescription",
-          "sh:description": {
-            "en": "An additional description"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "additional description"
-          },
-          "sh:path": "http://data4wallonia.com/model/additionalDescription"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/d47259ca8e3ff6a5ee1ee83872a83c4c2b42bf1e",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.expertise",
-          "sh:description": {
-            "en": "An expertise"
-          },
-          "sh:name": {
-            "en": "expertise"
-          },
-          "sh:path": "http://data4wallonia.com/model/expertise",
-          "sh:uniqueLang": "true"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/d64842169d12609c45e8e2cfb07947a74875a257",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.ambition",
-          "sh:class": "http://data4wallonia.com/model/Ambition",
-          "sh:description": {
-            "en": "An ambition"
-          },
-          "sh:name": {
-            "en": "ambition"
-          },
-          "sh:path": "http://data4wallonia.com/model/ambition"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/d7006cf4d921df6f60e324f210d6e6eb5aacdf35",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.displayrefusal",
-          "sh:description": {
-            "en": "A display refusal"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "display refusal"
-          },
-          "sh:path": "http://data4wallonia.com/model/displayRefusal"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/da2e547cba380d3f3c7c0811dc9ab8eb8aa1ee12",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.mobile",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
-          "sh:description": {
-            "en": "A mobile"
-          },
-          "sh:name": {
-            "en": "mobile"
-          },
-          "sh:path": "http://data4wallonia.com/model/mobile"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/db878f1cb93930f64561d0504123c66feacfad5a",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.language",
-          "sh:description": {
-            "en": "A language"
-          },
-          "sh:name": {
-            "en": "language"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/language"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/e015619dd8cfd26dfc194cb1bd69eb7c8cbd56ad",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.alternativename",
-          "sh:description": {
-            "en": "Any name by which a Person is known, other than their full name."
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "alternative name"
-          },
-          "sh:path": "http://data4wallonia.com/model/internalName"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/e09cd456fcf49bd50cfb019fe828ae733d4a0fd2",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.familyname",
-          "sh:description": {
-            "en": "The hereditary surname of a family."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "family name"
-          },
-          "sh:path": "http://data4wallonia.com/model/lastName"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/e7dc0c59333df2ddb4fb8dec598f0d3820495535",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.displayrefusal",
-          "sh:description": {
-            "en": "A display refusal"
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "display refusal"
-          },
-          "sh:path": "http://data4wallonia.com/model/displayRefusal"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/e99658d8dce2abcab55b39649462e2f78d374962",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.additionaldescription",
-          "sh:description": {
-            "en": "An additional description"
-          },
-          "sh:name": {
-            "en": "additional description"
-          },
-          "sh:path": "http://data4wallonia.com/model/additionalDescription",
-          "sh:uniqueLang": "true"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/f1249f171bcbfa12f01658d50155b64beb61e40f",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.category",
-          "sh:description": {
-            "en": "A classification"
-          },
-          "sh:name": {
-            "en": "category"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/category"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/f138612a5fffed0d4daa1a176e0de7d53a99eddd",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.alternativename",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
-          "sh:description": {
-            "en": "Any name by which a Person is known, other than their full name."
-          },
-          "sh:name": {
-            "en": "alternative name"
-          },
-          "sh:path": "http://data4wallonia.com/model/internalName"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/f1a1c433a19bfaca2c3fd9cea584ddf10495be0f",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.shortdescription",
-          "sh:description": {
-            "en": "Brief description of the person."
-          },
-          "sh:name": {
-            "en": "short description"
-          },
-          "sh:path": "http://data4wallonia.com/model/shortDescription",
-          "sh:uniqueLang": "true"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/f50f64eda68b83c4150bb7c0bcf84594d6eae7d1",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.photo",
-          "sh:description": {
-            "en": "An image taken with a camera of a resource."
-          },
-          "sh:name": {
-            "en": "photo"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/photo"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/f888a185270cac3f6e32d6e1a22eb6a89d617ba8",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.givenname",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
-          "sh:description": {
-            "en": "The name(s) that identify the Person within a family with a common surname."
-          },
-          "sh:name": {
-            "en": "given name"
-          },
-          "sh:path": "http://data4wallonia.com/model/firstName"
-        }
-      ],
-      "sh:targetClass": "http://data4wallonia.com/model/QualifiedPerson"
-    },
-    {
       "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#QualifiedPersonShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -7431,7 +7431,7 @@
             "en": "operating systems"
           },
           "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/operating system"
+          "sh:path": "http://data4wallonia.com/model/operatingSystem"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/a07ca2d22dd31e2dbd2597ad41eaacf953bbafca",
@@ -7647,7 +7647,7 @@
           "sh:name": {
             "en": "operating systems"
           },
-          "sh:path": "http://data4wallonia.com/model/operating system"
+          "sh:path": "http://data4wallonia.com/model/operatingSystem"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/e8a3e545cb839a6fcef9003d3bcad30aa6951f72",
@@ -7803,21 +7803,14 @@
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
-      "sh:targetClass": "http://www.w3.org/2001/XMLSchema#double"
+      "sh:targetClass": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     {
       "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#DecimalShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
-      "sh:targetClass": "http://www.w3.org/2001/XMLSchema#double"
-    },
-    {
-      "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#StringShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "http://www.w3.org/2001/XMLSchema#double"
+      "sh:targetClass": "http://www.w3.org/2001/XMLSchema#decimal"
     },
     {
       "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#IntegerShape",
@@ -7825,6 +7818,13 @@
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    {
+      "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#StringShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2001/XMLSchema#string"
     },
     {
       "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CodeShape",
