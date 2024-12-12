@@ -334,7 +334,8 @@ The main entities are those that form the core of the Application Profile.
                     </dt>
                     
                         <dd>
-                            For this entity the following properties are defined: <a href="#ActionPlan.additionaldescription">additional description</a>
+                            For this entity the following properties are defined: <a href="#ActionPlan.actionplanprofile">action plan profile</a>
+                            , <a href="#ActionPlan.additionaldescription">additional description</a>
                             , <a href="#ActionPlan.ambition">ambition</a>
                             , <a href="#ActionPlan.annualbudgetallocation">annual budget allocation</a>
                             , <a href="#ActionPlan.beneficiarie">beneficiarie</a>
@@ -356,7 +357,6 @@ The main entities are those that form the core of the Application Profile.
                             , <a href="#ActionPlan.numberofparticipants">number of participants</a>
                             , <a href="#ActionPlan.occurence">occurence</a>
                             , <a href="#ActionPlan.participant">participant</a>
-                            , <a href="#ActionPlan.profile">profile</a>
                             , <a href="#ActionPlan.program">program</a>
                             , <a href="#ActionPlan.progressstatus">progress status</a>
                             , <a href="#ActionPlan.projectholder">project holder</a>
@@ -412,6 +412,49 @@ The main entities are those that form the core of the Application Profile.
                         </tr>
                     </thead>
                     <tbody class="supertype">
+                        
+                            <tr id="ActionPlan.actionplanprofile"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/actionPlanProfile"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20action plan profile%20in%20Action Plan&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23ActionPlan.actionplanprofile" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/actionPlanProfile"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/actionPlanProfile"
+                                           data-placement="right">
+                                        action plan profile</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#ActionPlanProfile" data-placement="right">Action Plan Profile</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    An Action Plan Profile
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
                         
                             <tr id="ActionPlan.additionaldescription"
                                 typeof="rdfs:Property"
@@ -1345,49 +1388,6 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                                 <td property="rdfs:comment">
                                     A participant
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="ActionPlan.profile"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/profile"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20profile%20in%20Action Plan&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23ActionPlan.profile" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/profile"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/profile"
-                                           data-placement="right">
-                                        profile</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#ActionPlanProfile" data-placement="right">Action Plan Profile</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A profile
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -9924,7 +9924,7 @@ They are included in the Application Profile because they form the range of prop
                         
                             <tr id="ActionPlanProfile.profile"
                                 typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/profle"
+                                resource="http://data4wallonia.com/model/profile"
                                 class="class mandatory">
                                 <td>
 				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20profile%20in%20Action Plan Profile&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23ActionPlanProfile.profile" target="_blank" rel="noopener noreferrer" >
@@ -9933,9 +9933,9 @@ They are included in the Application Profile because they form the range of prop
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://data4wallonia.com/model/profle"
+                                        <a href="http://data4wallonia.com/model/profile"
                                            data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/profle"
+                                           data-content="http://data4wallonia.com/model/profile"
                                            data-placement="right">
                                         profile</a>
                                 </td>
@@ -10676,6 +10676,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#ActionPlan">Action Plan</a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/ActionPlan</div></td>
 								<td></td>
+								<td><a href="#ActionPlan.actionplanprofile">action plan profile </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/actionPlanProfile</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#ActionPlan">Action Plan</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/ActionPlan</div></td>
+								<td></td>
 								<td><a href="#ActionPlan.additionaldescription">additional description </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/additionalDescription</div></td>
 							</tr>
@@ -10888,16 +10898,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#ActionPlan.participant">participant </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/participant</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#ActionPlan">Action Plan</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/ActionPlan</div></td>
-								<td></td>
-								<td><a href="#ActionPlan.profile">profile </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/profile</div></td>
 							</tr>
 						
 					
@@ -11120,7 +11120,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><div class="shorten">http://data4wallonia.com/model/ActionPlanProfile</div></td>
 								<td></td>
 								<td><a href="#ActionPlanProfile.profile">profile </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/profle</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/profile</div></td>
 							</tr>
 						
 					

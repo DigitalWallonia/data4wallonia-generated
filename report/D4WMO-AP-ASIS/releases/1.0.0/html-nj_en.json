@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/d3e378d0a2fe65308585a72ffedf0bec247b029e",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/d3e378d0a2fe65308585a72ffedf0bec247b029e/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/c5d901c9707df5f42f672ae3513127bc6b0f505f",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/c5d901c9707df5f42f672ae3513127bc6b0f505f/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -44,6 +44,46 @@
         "class-usage-scope": "main"
       },
       "properties": [
+        {
+          "uri": "http://data4wallonia.com/model/actionPlanProfile",
+          "name": "actionPlanProfile",
+          "sort": "action plan profile",
+          "label": {
+            "en": "action plan profile"
+          },
+          "description": {
+            "en": "An Action Plan Profile"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ActionPlan",
+              "uri": "http://data4wallonia.com/model/ActionPlan"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "ActionPlanProfile",
+              "range_uri": "http://data4wallonia.com/model/ActionPlanProfile"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Action Plan Profile",
+              "range_puri": "http://data4wallonia.com/model/ActionPlanProfile",
+              "range_label": {
+                "en": "Action Plan Profile"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/actionPlanProfile",
+            "label-en": "action plan profile",
+            "definition-en": "An Action Plan Profile"
+          }
+        },
         {
           "uri": "http://data4wallonia.com/model/additionalDescription",
           "name": "additionalDescription",
@@ -925,46 +965,6 @@
           }
         },
         {
-          "uri": "http://data4wallonia.com/model/profile",
-          "name": "profile",
-          "sort": "profile",
-          "label": {
-            "en": "profile"
-          },
-          "description": {
-            "en": "A profile"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "ActionPlan",
-              "uri": "http://data4wallonia.com/model/ActionPlan"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "ActionPlanProfile",
-              "range_uri": "http://data4wallonia.com/model/ActionPlanProfile"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Action Plan Profile",
-              "range_puri": "http://data4wallonia.com/model/ActionPlanProfile",
-              "range_label": {
-                "en": "Action Plan Profile"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/profile",
-            "label-en": "profile",
-            "definition-en": "A profile"
-          }
-        },
-        {
           "uri": "http://data4wallonia.com/model/program",
           "name": "program",
           "sort": "program",
@@ -1746,7 +1746,7 @@
           }
         },
         {
-          "uri": "http://data4wallonia.com/model/profle",
+          "uri": "http://data4wallonia.com/model/profile",
           "name": "profile",
           "sort": "profile",
           "label": {
@@ -1781,7 +1781,7 @@
           "codelist_uri": "",
           "rawTags": {
             "label-en": "profile",
-            "uri": "http://data4wallonia.com/model/profle",
+            "uri": "http://data4wallonia.com/model/profile",
             "definition-en": "A profile"
           }
         },

@@ -1,16 +1,7 @@
 {
   "@context": {
     "ActionPlan": "http://data4wallonia.com/model/ActionPlan",
-    "ActionPlan.profile": {
-      "@container": "@set",
-      "@id": "http://data4wallonia.com/model/profile",
-      "@type": "@id"
-    },
     "ActionPlanProfile": "http://data4wallonia.com/model/ActionPlanProfile",
-    "ActionPlanProfile.profile": {
-      "@id": "http://data4wallonia.com/model/profle",
-      "@type": "@id"
-    },
     "Address": "http://data4wallonia.com/model/Address",
     "Ambition": "http://data4wallonia.com/model/Ambition",
     "AnnualBudget": "http://data4wallonia.com/model/AnnualBudget",
@@ -35,6 +26,11 @@
     "accompanyingPerson": {
       "@container": "@set",
       "@id": "http://data4wallonia.com/model/accompanyPerson",
+      "@type": "@id"
+    },
+    "actionPlanProfile": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/actionPlanProfile",
       "@type": "@id"
     },
     "additionaInformationOnSupport": {
@@ -386,6 +382,10 @@
     "price": {
       "@id": "http://data4wallonia.com/model/price",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "profile": {
+      "@id": "http://data4wallonia.com/model/profile",
+      "@type": "@id"
     },
     "program": {
       "@container": "@set",
