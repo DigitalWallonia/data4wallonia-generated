@@ -2591,7 +2591,9 @@
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PressReviewShape/503a0b1abd6b8aabb536ac808f232a166bc97ccd>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PressReviewShape/531cd7ec5123506ee59bced26bfc6edc8e1589a5>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PressReviewShape/535a3290e823905a9c8859867aea597d0c878e47>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PressReviewShape/54f09a2ec1df3a48b497c8c664277f160685ce04>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PressReviewShape/575c6b0f28b27051de17b3cbdabc4625ec08b6bf>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PressReviewShape/5de5e3fa7d25498318d38386224340b36e1d139a>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PressReviewShape/6184f2cada9f06798d3f382a88e6adb5e5d01af8>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PressReviewShape/6cf60d71e08aa713f762202149aae9b68c75a2b9>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PressReviewShape/74feba662f4f65577bf45a8dd94f8faec0f03592>,
@@ -2731,11 +2733,23 @@
   shacl:nodeKind shacl:Literal;
   shacl:path <http://data4wallonia.com/model/publishedDate> .
 
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PressReviewShape/54f09a2ec1df3a48b497c8c664277f160685ce04> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PressReview.clientsite";
+  shacl:description "A client site"@en;
+  shacl:name "client site"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/model/clientSite> .
+
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PressReviewShape/575c6b0f28b27051de17b3cbdabc4625ec08b6bf> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PressReview.publisheddate";
   shacl:description "A published date"@en;
   shacl:minCount 1;
   shacl:name "published date"@en;
   shacl:path <http://data4wallonia.com/model/publishedDate> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PressReviewShape/5de5e3fa7d25498318d38386224340b36e1d139a> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PressReview.clientsite";
+  shacl:datatype xsd:string;
+  shacl:description "A client site"@en;
+  shacl:name "client site"@en;
+  shacl:path <http://data4wallonia.com/model/clientSite> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PressReviewShape/6184f2cada9f06798d3f382a88e6adb5e5d01af8> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PressReview.clientsite";
   shacl:description "A client site"@en;

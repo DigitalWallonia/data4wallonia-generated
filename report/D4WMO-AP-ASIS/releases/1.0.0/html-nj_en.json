@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/e6ae6cbc65d82ad91b43a24a1453b5e7e6e91848",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/e6ae6cbc65d82ad91b43a24a1453b5e7e6e91848/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/82f944568ea2514b80342d4c86e680c58245c794",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/82f944568ea2514b80342d4c86e680c58245c794/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -5006,8 +5006,21 @@
               "uri": "http://data4wallonia.com/model/PressReview"
             }
           ],
-          "range": [],
-          "scopedrange": [],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#String",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
           "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
@@ -5128,7 +5141,7 @@
               }
             }
           ],
-          "cardinality": "",
+          "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
             "definition-en": "A program",
