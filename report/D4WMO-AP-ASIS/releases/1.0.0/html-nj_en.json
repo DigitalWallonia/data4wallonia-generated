@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/93a220e65159aaa7209667852411c3bb4d8f3678",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/93a220e65159aaa7209667852411c3bb4d8f3678/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/3b9f0a941ccc33d03a362d936fa311c382e1a412",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/3b9f0a941ccc33d03a362d936fa311c382e1a412/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -1565,7 +1565,7 @@
           }
         },
         {
-          "uri": "http://data4wallonia.com/model/wallonRegionConventionNumber",
+          "uri": "http://data4wallonia.com/model/walloonRegionConventionNumber",
           "name": "wallonRegionConventionNumber",
           "sort": "wallon region convention number",
           "label": {
@@ -1599,7 +1599,7 @@
           "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "http://data4wallonia.com/model/wallonRegionConventionNumber",
+            "uri": "http://data4wallonia.com/model/walloonRegionConventionNumber",
             "definition-en": "A wallon region convention number",
             "label-en": "wallon region convention number"
           }
@@ -7632,46 +7632,6 @@
           }
         },
         {
-          "uri": "http://data4wallonia.com/model/additionalInformation",
-          "name": "additionalInformation",
-          "sort": "additional information",
-          "label": {
-            "en": "additional information"
-          },
-          "description": {
-            "en": "An additional information"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "ServicesPlace",
-              "uri": "http://data4wallonia.com/model/ServicePlace"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-              "range_label": {
-                "en": "Text"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/additionalInformation",
-            "definition-en": "An additional information",
-            "label-en": "additional information"
-          }
-        },
-        {
           "uri": "http://data4wallonia.com/model/additionalInformationOnEquipment",
           "name": "additionalInformationOnEquipment",
           "sort": "additional information on equipment",
@@ -7749,6 +7709,46 @@
             "uri": "http://data4wallonia.com/model/additionalInformationOnOpeningHours",
             "label-en": "additional information on opening hours",
             "definition-en": "An additional information on opening hours"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/additionalInformationOnSupport",
+          "name": "additionalInformationOnSupport",
+          "sort": "additional information on support",
+          "label": {
+            "en": "additional information on support"
+          },
+          "description": {
+            "en": "An additional information on support"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ServicesPlace",
+              "uri": "http://data4wallonia.com/model/ServicePlace"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/additionalInformationOnSupport",
+            "definition-en": "An additional information on support",
+            "label-en": "additional information on support"
           }
         },
         {

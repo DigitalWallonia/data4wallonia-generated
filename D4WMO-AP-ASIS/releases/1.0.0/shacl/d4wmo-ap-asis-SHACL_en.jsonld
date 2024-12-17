@@ -1197,7 +1197,7 @@
           "sh:name": {
             "en": "wallon region convention number"
           },
-          "sh:path": "http://data4wallonia.com/model/wallonRegionConventionNumber"
+          "sh:path": "http://data4wallonia.com/model/walloonRegionConventionNumber"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanShape/ae8f961f22cdc1f0ffbeeb1d1086ebee06cee866",
@@ -1473,7 +1473,7 @@
             "en": "wallon region convention number"
           },
           "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/wallonRegionConventionNumber"
+          "sh:path": "http://data4wallonia.com/model/walloonRegionConventionNumber"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanShape/f1249f171bcbfa12f01658d50155b64beb61e40f",
@@ -1545,7 +1545,7 @@
           "sh:name": {
             "en": "wallon region convention number"
           },
-          "sh:path": "http://data4wallonia.com/model/wallonRegionConventionNumber"
+          "sh:path": "http://data4wallonia.com/model/walloonRegionConventionNumber"
         }
       ],
       "sh:targetClass": "http://data4wallonia.com/model/ActionPlan"
@@ -6978,16 +6978,16 @@
           "sh:uniqueLang": "true"
         },
         {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/092ed496a0cddae3e27f697e3c7018f2f1ab31a2",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.additionalinformation",
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/05c0639dfb4831ea706e4c923e947ce8c3228afa",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.additionalinformationonsupport",
           "sh:description": {
-            "en": "An additional information"
+            "en": "An additional information on support"
           },
-          "sh:maxCount": "1",
           "sh:name": {
-            "en": "additional information"
+            "en": "additional information on support"
           },
-          "sh:path": "http://data4wallonia.com/model/additionalInformation"
+          "sh:path": "http://data4wallonia.com/model/additionalInformationOnSupport",
+          "sh:uniqueLang": "true"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/0b3967e82f5e3ecc21406bf2d71ccf4120562405",
@@ -7002,6 +7002,18 @@
           "sh:path": "http://data4wallonia.com/model/slug"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/0b65d3661575666b05171f3de901e019c05f274f",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.additionalinformationonsupport",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "An additional information on support"
+          },
+          "sh:name": {
+            "en": "additional information on support"
+          },
+          "sh:path": "http://data4wallonia.com/model/additionalInformationOnSupport"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.shortdescription",
           "sh:description": {
@@ -7012,6 +7024,18 @@
           },
           "sh:nodeKind": "sh:Literal",
           "sh:path": "http://data4wallonia.com/model/shortDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/135226fc6a26a5b22a59c6aa1dcc8e08a306be25",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.additionalinformationonsupport",
+          "sh:description": {
+            "en": "An additional information on support"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "additional information on support"
+          },
+          "sh:path": "http://data4wallonia.com/model/additionalInformationOnSupport"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/144c4f635c27258a37c86c5b543b4a5d670c81fe",
@@ -7180,18 +7204,6 @@
             "en": "remote assistance"
           },
           "sh:path": "http://data4wallonia.com/model/remoteAssistance"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/40501a88647ec86ba5913698c7a7eb850c92c4a8",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.additionalinformation",
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:description": {
-            "en": "An additional information"
-          },
-          "sh:name": {
-            "en": "additional information"
-          },
-          "sh:path": "http://data4wallonia.com/model/additionalInformation"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/41de7886b8a1f21607e560e9897de98508c44f9d",
@@ -7386,18 +7398,6 @@
           "sh:path": "http://data4wallonia.com/model/makingAppointment"
         },
         {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/73708a2673507e0fb809bf02392cb91d417d3024",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.additionalinformation",
-          "sh:description": {
-            "en": "An additional information"
-          },
-          "sh:name": {
-            "en": "additional information"
-          },
-          "sh:path": "http://data4wallonia.com/model/additionalInformation",
-          "sh:uniqueLang": "true"
-        },
-        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/751db1d6d274a2ca38096e08f912cc5b87b6b08b",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.facadephoto",
           "sh:description": {
@@ -7566,6 +7566,18 @@
           "sh:path": "http://data4wallonia.com/model/shortDescription"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/a8f9a00d7c7005eff9292e39c4beae523ee58fea",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.additionalinformationonsupport",
+          "sh:description": {
+            "en": "An additional information on support"
+          },
+          "sh:name": {
+            "en": "additional information on support"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/additionalInformationOnSupport"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/aa5633101436aac0457008579d5f36c71f3a8544",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.additionalinformationonopeninghours",
           "sh:description": {
@@ -7624,18 +7636,6 @@
             "en": "responsible profile"
           },
           "sh:path": "http://data4wallonia.com/model/responsibleProfile"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/c030a690c09897342066a9740b96f76cd2670b74",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.additionalinformation",
-          "sh:description": {
-            "en": "An additional information"
-          },
-          "sh:name": {
-            "en": "additional information"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/additionalInformation"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/c08e10a2c9827726dfb667819338f61fba156d66",
