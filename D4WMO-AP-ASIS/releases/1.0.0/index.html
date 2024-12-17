@@ -8389,6 +8389,7 @@ The main entities are those that form the core of the Application Profile.
                     
                         <dd>
                             For this entity the following properties are defined: <a href="#QualifiedPerson.emailaddress">email address</a>
+                            , <a href="#QualifiedPerson.hasperson">has person</a>
                             , <a href="#QualifiedPerson.hasprofile">has profile</a>
                             , <a href="#QualifiedPerson.internalname">internal name</a>
                             , <a href="#QualifiedPerson.role">role</a>
@@ -8433,7 +8434,7 @@ The main entities are those that form the core of the Application Profile.
                         
                             <tr id="QualifiedPerson.emailaddress"
                                 typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/email"
+                                resource="http://data4wallonia.com/model/emailAddress"
                                 class="class mandatory">
                                 <td>
 				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20email address%20in%20Qualified Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23QualifiedPerson.emailaddress" target="_blank" rel="noopener noreferrer" >
@@ -8442,9 +8443,9 @@ The main entities are those that form the core of the Application Profile.
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://data4wallonia.com/model/email"
+                                        <a href="http://data4wallonia.com/model/emailAddress"
                                            data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/email"
+                                           data-content="http://data4wallonia.com/model/emailAddress"
                                            data-placement="right">
                                         email address</a>
                                 </td>
@@ -8460,6 +8461,49 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                                 <td property="rdfs:comment">
                                     An email address
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="QualifiedPerson.hasperson"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/hasPerson"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20has person%20in%20Qualified Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23QualifiedPerson.hasperson" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/hasPerson"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/hasPerson"
+                                           data-placement="right">
+                                        has person</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Person" data-placement="right">Person</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    A person
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -13091,6 +13135,10 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+					
+						
 					
 						
 					
@@ -13107,7 +13155,17 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
 								<td></td>
 								<td><a href="#QualifiedPerson.emailaddress">email address </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/email</div></td>
+								<td><div class="shorten">http://data4wallonia.com/model/emailAddress</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#QualifiedPerson">Qualified Person</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td></td>
+								<td><a href="#QualifiedPerson.hasperson">has person </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/hasPerson</div></td>
 							</tr>
 						
 					

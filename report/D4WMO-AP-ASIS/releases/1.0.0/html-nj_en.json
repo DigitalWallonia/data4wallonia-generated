@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/096e06f677032a22cb7d6ebfe6d1a0645988dfb2",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/096e06f677032a22cb7d6ebfe6d1a0645988dfb2/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/1335584dd8b7eab9081718656e6a40108c27e5cc",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/1335584dd8b7eab9081718656e6a40108c27e5cc/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -7293,7 +7293,7 @@
       },
       "properties": [
         {
-          "uri": "http://data4wallonia.com/model/email",
+          "uri": "http://data4wallonia.com/model/emailAddress",
           "name": "emailAddress",
           "sort": "email address",
           "label": {
@@ -7327,9 +7327,49 @@
           "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "http://data4wallonia.com/model/email",
+            "uri": "http://data4wallonia.com/model/emailAddress",
             "label-en": "email address",
             "definition-en": "An email address"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/hasPerson",
+          "name": "hasPerson",
+          "sort": "has person",
+          "label": {
+            "en": "has person"
+          },
+          "description": {
+            "en": "A person"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "QualifiedPerson",
+              "uri": "http://data4wallonia.com/model/QualifiedPerson"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Person",
+              "range_uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Person",
+              "range_puri": "http://data4wallonia.com/model/Person",
+              "range_label": {
+                "en": "Person"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "definition-en": "A person",
+            "uri": "http://data4wallonia.com/model/hasPerson",
+            "label-en": "has person"
           }
         },
         {

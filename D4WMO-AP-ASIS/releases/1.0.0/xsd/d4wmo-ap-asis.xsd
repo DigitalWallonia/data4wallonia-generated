@@ -1038,6 +1038,11 @@
           <xs:documentation xml:lang="en">An email address</xs:documentation>
         </xs:annotation>
       </xs:element>
+      <xs:element name="hasPerson" ref="PersonType" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A person</xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="hasProfile" ref="ProfileType" maxOccurs="1" minOccurs="1">
         <xs:annotation>
           <xs:documentation xml:lang="en">The profile to which the person belongs to.</xs:documentation>
