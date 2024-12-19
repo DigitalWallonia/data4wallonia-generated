@@ -326,6 +326,7 @@ The main entities are those that form the core of the Application Profile.
                             For this entity the following properties are defined: <a href="#Concept.alternativelabel">alternative label</a>
                             , <a href="#Concept.definition">definition</a>
                             , <a href="#Concept.hasbroader">has broader</a>
+                            , <a href="#Concept.identifier">identifier</a>
                             , <a href="#Concept.isinscheme">is in scheme</a>
                             , <a href="#Concept.isreplacedby">is replaced by</a>
                             , <a href="#Concept.istopconceptinscheme">is top concept in scheme</a>
@@ -487,6 +488,49 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                                 <td property="rdfs:comment">
                                     Relates a concept to a concept that is more general in meaning.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Concept.identifier"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/identifier"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WTA-AP/issues/new?title=Issue%20for%20identifier%20in%20Concept&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/%23Concept.identifier" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/identifier"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/identifier"
+                                           data-placement="right">
+                                        identifier</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#String" data-placement="right">String</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    An unambiguous reference to the resource within a given context.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -739,7 +783,7 @@ Labels should not contain special characters such as & - ( ) \ or /.
                                 <td>
                                     
                                         
-                                            <a href="#Concept" data-placement="right">Concept</a>
+                                            <a href="#Resource" data-placement="right">Resource</a>
                                         
                                     
                                 </td>
@@ -1345,6 +1389,8 @@ Labels should not contain special characters such as & - ( ) \ or /.
 
 
 
+
+
 </section>
 
 <section>
@@ -1356,6 +1402,49 @@ They are included in the Application Profile because they form the range of prop
 
 
 
+
+
+
+
+
+   
+        <section>
+            <h3 id="Resource">
+                <a href="http://www.w3.org/2000/01/rdf-schema#Resource"
+                   data-toggle="tooltip"
+                   data-content="http://www.w3.org/2000/01/rdf-schema#Resource"
+                   data-placement="right">Resource</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/DigitalWallonia/D4WTA-AP/issues/new?title=Issue%20for%20Resource&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    Anything described by RDF.
+                </dd>
+                
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                    <dd>
+                        This specification does not impose any additional requirements to properties for this entity.
+                    </dd>
+                
+            </dl>
+        </div>
+        
+    </div>
+</section>
 
 
 
@@ -1613,6 +1702,10 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+					
+						
 					
 						
 					
@@ -1662,6 +1755,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Concept.hasbroader">has broader </a></td>
 								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#broader</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Concept">Concept</a></td>
+								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></td>
+								<td></td>
+								<td><a href="#Concept.identifier">identifier </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/identifier</div></td>
 							</tr>
 						
 					
@@ -1882,6 +1985,17 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 							</tr>
 						
 					
+				
+			</tr>
+		
+				
+					<tr>
+						<td><a href="#Resource">Resource</a></td>
+						<td><div class="shorten">http://www.w3.org/2000/01/rdf-schema#Resource</div></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
 				
 			</tr>
 		

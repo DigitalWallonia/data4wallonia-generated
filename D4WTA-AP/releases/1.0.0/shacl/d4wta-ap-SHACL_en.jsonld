@@ -110,6 +110,13 @@
       "sh:targetClass": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     {
+      "@id": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ResourceShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2000/01/rdf-schema#Resource"
+    },
+    {
       "@id": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#DateShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -143,7 +150,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/0f6cb927d0d26f3819cba3fb903a075cd426180d",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.status",
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
           "sh:description": {
             "en": "The status of the concept in the context of a particular workflow process."
           },
@@ -333,6 +340,18 @@
           "sh:path": "http://www.w3.org/2004/02/skos/core#inScheme"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/6c7c1bd2ab3b7761e5be759a078a9fd93f411a57",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.identifier",
+          "sh:description": {
+            "en": "An unambiguous reference to the resource within a given context."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/6cd0f0f5e19a1c8dce362ecbe8a196575b9cd85f",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.preferredlabel",
           "sh:description": {
@@ -441,6 +460,18 @@
           "sh:path": "http://www.w3.org/2004/02/skos/core#broader"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/aadbd67a77a624f073be2076627fb9dc883cbe48",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.identifier",
+          "sh:description": {
+            "en": "An unambiguous reference to the resource within a given context."
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/ab629bb6aed53f147c0664483836a8783880b7d5",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.isreplacedby",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -463,6 +494,18 @@
           },
           "sh:path": "http://www.w3.org/2004/02/skos/core#definition",
           "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/c0d17764e84e711728581fda7356a51e99a9040a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.identifier",
+          "sh:description": {
+            "en": "An unambiguous reference to the resource within a given context."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/c6fd64c9a41aa39534bde93eeaca8d8f121f28b4",
@@ -511,6 +554,18 @@
             "en": "version info"
           },
           "sh:path": "http://www.w3.org/2002/07/owl#versionInfo"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/e2017f72421063cd9ff494011ec78f35f9632a4a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.identifier",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "An unambiguous reference to the resource within a given context."
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/e4ba85d4634072a147fb21c2a1f2ff37cdc7872a",

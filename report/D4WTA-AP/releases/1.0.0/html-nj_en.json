@@ -17,14 +17,34 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/4f8c45a53d17aad0a605d2a61c9c30ade0267390",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/4f8c45a53d17aad0a605d2a61c9c30ade0267390/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/a2ff86f224364f3304e62ca3002a613d0e57d4ad",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/a2ff86f224364f3304e62ca3002a613d0e57d4ad/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WTA-AP/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WTA-AP/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
     "usesAPs": []
   },
   "classes": [
+    {
+      "uri": "http://www.w3.org/2000/01/rdf-schema#Resource",
+      "name": "Resource",
+      "label": {
+        "en": "Resource"
+      },
+      "sort": "Resource",
+      "description": {
+        "en": "Anything described by RDF."
+      },
+      "usage": {},
+      "parents": [],
+      "rawTags": {
+        "uri": "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "label-en": "Resource",
+        "class-usage-scope": "supportive",
+        "definition-en": "Anything described by RDF."
+      },
+      "properties": []
+    },
     {
       "uri": "http://www.w3.org/2004/02/skos/core#Concept",
       "name": "Concept",
@@ -68,26 +88,66 @@
           ],
           "range": [
             {
-              "range_label": "Concept",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+              "range_label": "Resource",
+              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Concept",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_uri": "#Resource",
+              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Resource",
               "range_label": {
-                "en": "Concept"
+                "en": "Resource"
               }
             }
           ],
           "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "status",
             "uri": "http://publications.europa.eu/ontology/euvoc#status",
-            "definition-en": "NOTE$ea_notes=The status of the concept in the context of a particular workflow process.",
-            "usageNote-en": "NOTE$ea_notes=The recommended controlled vocabulary is the Publications Office <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/concept-status\">Concept status</a> authority table."
+            "label-en": "status",
+            "definition-en": "The status of the concept in the context of a particular workflow process.",
+            "usageNote-en": "The recommended controlled vocabulary is the Publications Office <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/concept-status\">Concept status</a> authority table."
+          }
+        },
+        {
+          "uri": "http://purl.org/dc/terms/identifier",
+          "name": "identifier",
+          "sort": "identifier",
+          "label": {
+            "en": "identifier"
+          },
+          "description": {
+            "en": "An unambiguous reference to the resource within a given context."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Concept",
+              "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#String",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://purl.org/dc/terms/identifier",
+            "label-en": "identifier",
+            "definition-en": "An unambiguous reference to the resource within a given context."
           }
         },
         {

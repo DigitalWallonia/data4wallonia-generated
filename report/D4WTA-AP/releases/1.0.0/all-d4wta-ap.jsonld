@@ -185,6 +185,71 @@
       "name": "Text"
     },
     {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#Resource",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "inpackage": "OTHER_PACKAGE",
+      "ap-definition-en": {
+        "en": "Anything described by RDF."
+      },
+      "ap-label-en": {
+        "en": "Resource"
+      },
+      "definition": {
+        "en": "Anything described by RDF."
+      },
+      "label": {
+        "en": "Resource"
+      },
+      "extra": {
+        "EA-Name": "Resource",
+        "EA-Guid": "{99E88423-2F3C-45c7-B2BB-C4C2ED922058}",
+        "EA-Package": "rdfs",
+        "EA-Type": "CLASS",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "parentclasses": "",
+        "label": {
+          "en": "Resource"
+        },
+        "definition": {
+          "en": "Anything described by RDF."
+        },
+        "usage": "",
+        "ap-label-en": {
+          "en": "Resource"
+        },
+        "ap-definition-en": {
+          "en": "Anything described by RDF."
+        },
+        "ap-usageNote-en": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "uri",
+            "value": "http://www.w3.org/2000/01/rdf-schema#Resource",
+            "note": "null"
+          },
+          {
+            "key": "label-en",
+            "value": "Resource",
+            "note": "null"
+          },
+          {
+            "key": "class-usage-scope",
+            "value": "supportive",
+            "note": "null"
+          },
+          {
+            "key": "definition-en",
+            "value": "Anything described by RDF.",
+            "note": "null"
+          }
+        ],
+        "Scope": "NOTHING"
+      },
+      "name": "Resource"
+    },
+    {
       "@id": "http://www.w3.org/2001/XMLSchema#date",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "inpackage": "OTHER_PACKAGE",
@@ -498,21 +563,18 @@
       },
       "extra": {
         "EA-Name": "status",
-        "EA-Guid": "{F0184532-83BD-450e-8D8E-FEA3AB1618B4}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
+        "EA-Guid": "{05966A59-B418-48a7-8876-A6062A8118A2}",
+        "EA-Package": "skos",
+        "EA-Type": "attribute",
         "EA-Domain": "Concept",
         "EA-Domain-Guid": "{62E6BA0C-C86D-46a0-8661-145FC890D836}",
-        "EA-Range": "Concept",
+        "EA-Range": "Resource",
         "RangeData": {
-          "EA-Name": "Concept",
-          "EA-GUID": "{62E6BA0C-C86D-46a0-8661-145FC890D836}",
-          "EA-Package": "skos",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+          "EA-Name": "Resource",
+          "EA-GUID": "{99E88423-2F3C-45c7-B2BB-C4C2ED922058}",
+          "EA-Package": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
         },
-        "sourceRole": "null",
-        "destRole": "status",
         "label": {
           "en": "status"
         },
@@ -532,46 +594,24 @@
         "ap-codelist": "",
         "RawTags": [
           {
-            "key": "label-en",
-            "value": "NOTE",
-            "note": "status"
+            "key": "uri",
+            "value": "http://publications.europa.eu/ontology/euvoc#status",
+            "note": "null"
           },
           {
-            "key": "uri",
-            "value": "NOTE",
-            "note": "http://publications.europa.eu/ontology/euvoc#status"
+            "key": "label-en",
+            "value": "status",
+            "note": "null"
           },
           {
             "key": "definition-en",
             "value": "NOTE",
-            "note": "NOTE$ea_notes=The status of the concept in the context of a particular workflow process."
+            "note": "The status of the concept in the context of a particular workflow process."
           },
           {
             "key": "usageNote-en",
             "value": "NOTE",
-            "note": "NOTE$ea_notes=The recommended controlled vocabulary is the Publications Office <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/concept-status\">Concept status</a> authority table."
-          }
-        ],
-        "DestRoleTags": [
-          {
-            "key": "label-en",
-            "value": "NOTE",
-            "note": "status"
-          },
-          {
-            "key": "uri",
-            "value": "NOTE",
-            "note": "http://publications.europa.eu/ontology/euvoc#status"
-          },
-          {
-            "key": "definition-en",
-            "value": "NOTE",
-            "note": "NOTE$ea_notes=The status of the concept in the context of a particular workflow process."
-          },
-          {
-            "key": "usageNote-en",
-            "value": "NOTE",
-            "note": "NOTE$ea_notes=The recommended controlled vocabulary is the Publications Office <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/concept-status\">Concept status</a> authority table."
+            "note": "The recommended controlled vocabulary is the Publications Office <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/concept-status\">Concept status</a> authority table."
           }
         ],
         "Scope": "NOTHING"
@@ -585,10 +625,10 @@
       ],
       "range": [
         {
-          "EA-Name": "Concept",
-          "EA-GUID": "{62E6BA0C-C86D-46a0-8661-145FC890D836}",
-          "EA-Package": "skos",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+          "EA-Name": "Resource",
+          "EA-GUID": "{99E88423-2F3C-45c7-B2BB-C4C2ED922058}",
+          "EA-Package": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
         }
       ],
       "generalization": [],
@@ -671,6 +711,88 @@
           "EA-Name": "Date",
           "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#date"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
+    },
+    {
+      "@id": "http://purl.org/dc/terms/identifier",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "name": "identifier",
+      "inpackage": "OTHER_PACKAGE",
+      "ap-definition-en": {
+        "en": "An unambiguous reference to the resource within a given context."
+      },
+      "ap-label-en": {
+        "en": "identifier"
+      },
+      "definition": {
+        "en": "An unambiguous reference to the resource within a given context."
+      },
+      "label": {
+        "en": "identifier"
+      },
+      "extra": {
+        "EA-Name": "identifier",
+        "EA-Guid": "{22FDB187-33CE-461a-9C24-AC34D85326CC}",
+        "EA-Package": "skos",
+        "EA-Type": "attribute",
+        "EA-Domain": "Concept",
+        "EA-Domain-Guid": "{62E6BA0C-C86D-46a0-8661-145FC890D836}",
+        "EA-Range": "String",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "label": {
+          "en": "identifier"
+        },
+        "definition": {
+          "en": "An unambiguous reference to the resource within a given context."
+        },
+        "usage": "",
+        "ap-label-en": {
+          "en": "identifier"
+        },
+        "ap-definition-en": {
+          "en": "An unambiguous reference to the resource within a given context."
+        },
+        "ap-usageNote-en": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "uri",
+            "value": "http://purl.org/dc/terms/identifier",
+            "note": "null"
+          },
+          {
+            "key": "label-en",
+            "value": "identifier",
+            "note": "null"
+          },
+          {
+            "key": "definition-en",
+            "value": "An unambiguous reference to the resource within a given context.",
+            "note": "null"
+          }
+        ],
+        "Scope": "NOTHING"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+          "EA-Name": "Concept"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
         }
       ],
       "generalization": [],
@@ -2421,14 +2543,14 @@
   },
   "config": "config/config-ap.json",
   "branchtag": "ReSpecCV",
-  "dummy": "15",
+  "dummy": "16",
   "filename": "config/data4wallonia.json",
   "navigation": {
     "prev": "https://digitalwallonia.github.io/data4wallonia-generated/D4WTA-AP/releases/1.0.0"
   },
   "repository": "git@github.com:DigitalWallonia/data4wallonia-thema.git",
   "urlref": "/D4WTA-AP/releases/1.0.0/",
-  "documentcommit": "4f8c45a53d17aad0a605d2a61c9c30ade0267390",
-  "toolchaincommit": "5223bf090d89a2469e277acb7710d3c71e63326a",
+  "documentcommit": "a2ff86f224364f3304e62ca3002a613d0e57d4ad",
+  "toolchaincommit": "5b3b6b2e9685484dc244b1026985636656ffe57e",
   "hostname": "https://DigitalWallonia.github.io"
 }
