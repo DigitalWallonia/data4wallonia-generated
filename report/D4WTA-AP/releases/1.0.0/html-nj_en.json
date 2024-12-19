@@ -17,34 +17,14 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/a2ff86f224364f3304e62ca3002a613d0e57d4ad",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/a2ff86f224364f3304e62ca3002a613d0e57d4ad/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/4b92c7c935bf2eee15b1638ce94b04c12dceb5e6",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/4b92c7c935bf2eee15b1638ce94b04c12dceb5e6/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WTA-AP/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WTA-AP/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
     "usesAPs": []
   },
   "classes": [
-    {
-      "uri": "http://www.w3.org/2000/01/rdf-schema#Resource",
-      "name": "Resource",
-      "label": {
-        "en": "Resource"
-      },
-      "sort": "Resource",
-      "description": {
-        "en": "Anything described by RDF."
-      },
-      "usage": {},
-      "parents": [],
-      "rawTags": {
-        "uri": "http://www.w3.org/2000/01/rdf-schema#Resource",
-        "label-en": "Resource",
-        "class-usage-scope": "supportive",
-        "definition-en": "Anything described by RDF."
-      },
-      "properties": []
-    },
     {
       "uri": "http://www.w3.org/2004/02/skos/core#Concept",
       "name": "Concept",
@@ -88,26 +68,26 @@
           ],
           "range": [
             {
-              "range_label": "Resource",
-              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
+              "range_label": "Concept",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Resource",
-              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Resource",
+              "range_uri": "#Concept",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
               "range_label": {
-                "en": "Resource"
+                "en": "Concept"
               }
             }
           ],
           "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "http://publications.europa.eu/ontology/euvoc#status",
+            "usageNote-en": "NOTE$ea_notes=The recommended controlled vocabulary is the Publications Office <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/concept-status\">Concept status</a> authority table.",
             "label-en": "status",
-            "definition-en": "The status of the concept in the context of a particular workflow process.",
-            "usageNote-en": "The recommended controlled vocabulary is the Publications Office <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/concept-status\">Concept status</a> authority table."
+            "definition-en": "NOTE$ea_notes=The status of the concept in the context of a particular workflow process.",
+            "uri": "http://publications.europa.eu/ontology/euvoc#status"
           }
         },
         {

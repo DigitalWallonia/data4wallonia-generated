@@ -87,12 +87,12 @@
   "contributors-column": "D4WTA-AP",
   "contributors-file": "stakeholders.csv",
   "diagram": "Taxonomy",
-  "documentcommit": "a2ff86f224364f3304e62ca3002a613d0e57d4ad",
+  "documentcommit": "4b92c7c935bf2eee15b1638ce94b04c12dceb5e6",
   "documentconfig": {
     "editorDocumentroot": "https://digitalwallonia.github.io/data4wallonia-generated/D4WTA-AP/releases/1.0.0",
     "statuslabel": "Draft"
   },
-  "dummy": "16",
+  "dummy": "17",
   "eap": "Data4WalloniaTaxonomy.eap",
   "editors": [
     {
@@ -108,7 +108,7 @@
     {
       "@id": "http://publications.europa.eu/ontology/euvoc#status",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{05966A59-B418-48a7-8876-A6062A8118A2}",
+      "EA-Guid": "{16E95FCA-83DB-4dc8-AD32-79EA3BD37E5F}",
       "ap-definition-en": {
         "en": "The status of the concept in the context of a particular workflow process."
       },
@@ -126,38 +126,60 @@
         }
       ],
       "extra": {
-        "EA-Domain": "Concept",
-        "EA-Domain-Guid": "{62E6BA0C-C86D-46a0-8661-145FC890D836}",
-        "EA-Guid": "{05966A59-B418-48a7-8876-A6062A8118A2}",
-        "EA-Name": "status",
-        "EA-Package": "skos",
-        "EA-Range": "Resource",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{99E88423-2F3C-45c7-B2BB-C4C2ED922058}",
-          "EA-Name": "Resource",
-          "EA-Package": "rdfs",
-          "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
-        },
-        "RawTags": [
+        "DestRoleTags": [
           {
-            "key": "uri",
-            "note": "null",
-            "value": "http://publications.europa.eu/ontology/euvoc#status"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "status"
-          },
-          {
-            "key": "definition-en",
-            "note": "The status of the concept in the context of a particular workflow process.",
+            "key": "usageNote-en",
+            "note": "NOTE$ea_notes=The recommended controlled vocabulary is the Publications Office <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/concept-status\">Concept status</a> authority table.",
             "value": "NOTE"
           },
           {
+            "key": "label-en",
+            "note": "status",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "NOTE$ea_notes=The status of the concept in the context of a particular workflow process.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://publications.europa.eu/ontology/euvoc#status",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Concept",
+        "EA-Domain-Guid": "{62E6BA0C-C86D-46a0-8661-145FC890D836}",
+        "EA-Guid": "{16E95FCA-83DB-4dc8-AD32-79EA3BD37E5F}",
+        "EA-Name": "status",
+        "EA-Package": "",
+        "EA-Range": "Concept",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{62E6BA0C-C86D-46a0-8661-145FC890D836}",
+          "EA-Name": "Concept",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
             "key": "usageNote-en",
-            "note": "The recommended controlled vocabulary is the Publications Office <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/concept-status\">Concept status</a> authority table.",
+            "note": "NOTE$ea_notes=The recommended controlled vocabulary is the Publications Office <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/concept-status\">Concept status</a> authority table.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "status",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "NOTE$ea_notes=The status of the concept in the context of a particular workflow process.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://publications.europa.eu/ontology/euvoc#status",
             "value": "NOTE"
           }
         ],
@@ -173,9 +195,12 @@
         "definition": {
           "en": "The status of the concept in the context of a particular workflow process."
         },
+        "derived": "false",
+        "destRole": "status",
         "label": {
           "en": "status"
         },
+        "sourceRole": "null",
         "usage": {
           "en": "The recommended controlled vocabulary is the Publications Office <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/concept-status\">Concept status</a> authority table."
         }
@@ -190,10 +215,10 @@
       "name": "status",
       "range": [
         {
-          "EA-GUID": "{99E88423-2F3C-45c7-B2BB-C4C2ED922058}",
-          "EA-Name": "Resource",
-          "EA-Package": "rdfs",
-          "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
+          "EA-GUID": "{62E6BA0C-C86D-46a0-8661-145FC890D836}",
+          "EA-Name": "Concept",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
         }
       ],
       "usage": {
@@ -2170,72 +2195,6 @@
       "name": "Text"
     },
     {
-      "@id": "http://www.w3.org/2000/01/rdf-schema#Resource",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{99E88423-2F3C-45c7-B2BB-C4C2ED922058}",
-      "ap-definition-en": {
-        "en": "Anything described by RDF."
-      },
-      "ap-label-en": {
-        "en": "Resource"
-      },
-      "definition": {
-        "en": "Anything described by RDF."
-      },
-      "extra": {
-        "EA-Guid": "{99E88423-2F3C-45c7-B2BB-C4C2ED922058}",
-        "EA-Name": "Resource",
-        "EA-Package": "rdfs",
-        "EA-Parents": "",
-        "EA-Parents2": [],
-        "EA-Type": "CLASS",
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://www.w3.org/2000/01/rdf-schema#Resource"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "Resource"
-          },
-          {
-            "key": "class-usage-scope",
-            "note": "null",
-            "value": "supportive"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "Anything described by RDF."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "Anything described by RDF."
-        },
-        "ap-label-en": {
-          "en": "Resource"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "Anything described by RDF."
-        },
-        "label": {
-          "en": "Resource"
-        },
-        "parentclasses": "",
-        "usage": ""
-      },
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "Resource"
-      },
-      "name": "Resource"
-    },
-    {
       "@id": "http://www.w3.org/2001/XMLSchema#date",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{93158274-550F-43bf-BCA2-D8C45A3A7D70}",
@@ -2566,7 +2525,7 @@
   "standaardregisterurl": "https://github.com/DigitalWallonia/D4WTA-AP/blob/master/releases/1.0.0/Changelog.md",
   "template": "d4wta-ap_en.j2",
   "title": "Data4Wallonia Taxonomy Application Profile (D4WTA-AP)",
-  "toolchaincommit": "5b3b6b2e9685484dc244b1026985636656ffe57e",
+  "toolchaincommit": "86fbeddc802d38d6c6289d0e6a60c528dd644bd1",
   "toolchainversion": "3",
   "translation": [
     {

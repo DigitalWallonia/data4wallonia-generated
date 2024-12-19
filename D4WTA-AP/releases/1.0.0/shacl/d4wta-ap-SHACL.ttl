@@ -7,7 +7,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/> rdfs:member <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#TextShape>,
-    <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ResourceShape>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#DateShape>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#StringShape>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape>,
@@ -321,7 +320,7 @@
   shacl:uniqueLang true .
 
 <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/0f6cb927d0d26f3819cba3fb903a075cd426180d> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.status";
-  shacl:class rdfs:Resource;
+  shacl:class skos:Concept;
   shacl:description "The status of the concept in the context of a particular workflow process."@en;
   shacl:name "status"@en;
   shacl:path <http://publications.europa.eu/ontology/euvoc#status> .
@@ -563,10 +562,6 @@
 <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#DateShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass xsd:date .
-
-<https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ResourceShape> a shacl:NodeShape;
-  shacl:closed false;
-  shacl:targetClass rdfs:Resource .
 
 <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#StringShape> a shacl:NodeShape;
   shacl:closed false;
