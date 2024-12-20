@@ -1,0 +1,58 @@
+@prefix d4w: <http://data4wallonia.com/model/> .
+@prefix ex: <http://example.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:ActionPlan1 a d4w:ActionPlan ;
+  d4w:slug "123" .
+ 
+ex:ActionPlan2 a d4w:ActionPlan ;
+  d4w:slug "123" .
+  
+ex:ActionPlan3 a d4w:ActionPlan ;
+  d4w:slug "456" .
+
+ex:Profile1 a d4w:Profile ;
+    d4w:slug "123" .
+
+ex:Profile2 a d4w:Profile ;
+    d4w:slug "123" .
+
+ex:Profile3 a d4w:Profile ;
+    d4w:slug "789" .
+
+ex:Person1 a d4w:Person ;
+    d4w:featuredEmail "person@d4w.com" .
+
+ex:Person2 a d4w:Person ;
+    d4w:featuredEmail "person@d4w.com" .
+	
+ex:Person3 a d4w:Person ;
+    d4w:nonFeaturedEmail "person2@d4w.com" .
+
+ex:Person4 a d4w:Person ;
+    d4w:nonFeaturedEmail "person2@d4w.com" .
+
+ex:Person5 a d4w:Person .
+
+ex:QualifiedPerson1 a d4w:QualifiedPerson ;
+    d4w:emailAddress "qualifiedperson@d4w.com" .
+	
+ex:QualifiedPerson2 a d4w:QualifiedPerson ;
+    d4w:emailAddress "qualifiedperson@d4w.com" .
+
+ex:QualifiedPerson3 a d4w:QualifiedPerson ;
+    d4w:emailAddress "qualifiedperson3@d4w.com" .
+
+ex:QualifiedPerson4 a d4w:QualifiedPerson ;
+    d4w:hasProfile d4w:Profile1 ;
+	d4w:hasPerson d4w:Person6 .
+	
+ex:QualifiedPerson5 a d4w:QualifiedPerson ;
+    d4w:hasProfile d4w:Profile1 ;
+	d4w:hasPerson d4w:Person6 .
+
+ex:QualifiedPerson6 a d4w:QualifiedPerson ;
+    d4w:hasProfile d4w:Profile2 ;
+	d4w:hasPerson d4w:Person6 .
