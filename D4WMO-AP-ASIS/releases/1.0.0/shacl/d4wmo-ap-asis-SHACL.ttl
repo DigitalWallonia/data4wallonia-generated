@@ -9,9 +9,9 @@
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AddressShape>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AmbitionShape>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AnnualBudgetShape>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ContentDynamicListShape>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#EventShape>,
-    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#FileShape>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PartnerAdditionalDescriptionShape>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape>,
@@ -617,7 +617,7 @@
   shacl:path <http://data4wallonia.com/model/clientSite> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanShape/5f3b7aa9f30f3e03b55cedf20f6d46989756e5d6> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlan.image";
-  shacl:class <http://data4wallonia.com/model/File>;
+  shacl:class <http://data4wallonia.com/model/Asset>;
   shacl:description "An image"@en;
   shacl:name "image"@en;
   shacl:path <http://data4wallonia.com/model/image> .
@@ -851,7 +851,7 @@
   shacl:path <http://data4wallonia.com/model/numberOfOccurences> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanShape/b3ec9cef84a6abb4641a90b07e001e6720a6f70b> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlan.relatedfile";
-  shacl:class <http://data4wallonia.com/model/File>;
+  shacl:class <http://data4wallonia.com/model/Asset>;
   shacl:description "A related file"@en;
   shacl:name "related file"@en;
   shacl:path <http://data4wallonia.com/model/relatedFile> .
@@ -1032,7 +1032,7 @@
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/d4d4f2399b8cf2f615ac658920373b714726bed0>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/d5d74574f70f9a979535f3624608f88180dd0c97>;
-  shacl:targetClass <http://data4wallonia.com/model/File> .
+  shacl:targetClass <http://data4wallonia.com/model/Asset> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/35e7dc1df17d5abc599c99480e4943d69fdac9b4> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.file";
   shacl:class <http://data4wallonia.com/model/File>;
@@ -1643,7 +1643,7 @@
   shacl:path <http://data4wallonia.com/model/price> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#EventShape/d0de7c2a6b94abd5d5528c0af6186123704c5488> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Event.banner";
-  shacl:class <http://data4wallonia.com/model/File>;
+  shacl:class <http://data4wallonia.com/model/Asset>;
   shacl:description "A banner"@en;
   shacl:name "banner"@en;
   shacl:path <http://data4wallonia.com/model/banner> .
@@ -1820,7 +1820,7 @@
   shacl:path <http://data4wallonia.com/model/involvedIn> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/05969b4af1b3f6570e1aec246d37985180de37c6> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.photo";
-  shacl:class <http://data4wallonia.com/model/File>;
+  shacl:class <http://data4wallonia.com/model/Asset>;
   shacl:description "An image taken with a camera of a resource."@en;
   shacl:name "photo"@en;
   shacl:path <http://data4wallonia.com/model/photo> .
@@ -2556,7 +2556,7 @@
   shacl:path <http://data4wallonia.com/model/dynamicList> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PostShape/b3ec9cef84a6abb4641a90b07e001e6720a6f70b> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Post.relatedfile";
-  shacl:class <http://data4wallonia.com/model/File>;
+  shacl:class <http://data4wallonia.com/model/Asset>;
   shacl:description "A related file"@en;
   shacl:name "related file"@en;
   shacl:path <http://data4wallonia.com/model/relatedFile> .
@@ -2580,7 +2580,7 @@
   shacl:path <http://data4wallonia.com/model/publishedDate> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PostShape/cea25f8fc2ecd0beef10e79a62c1a22212cabf36> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Post.pdffile";
-  shacl:class <http://data4wallonia.com/model/File>;
+  shacl:class <http://data4wallonia.com/model/Asset>;
   shacl:description "A pdf file"@en;
   shacl:name "pdf file"@en;
   shacl:path <http://data4wallonia.com/model/pdfFile> .
@@ -2592,7 +2592,7 @@
   shacl:path <http://data4wallonia.com/model/estimatedReadingTime> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PostShape/d0de7c2a6b94abd5d5528c0af6186123704c5488> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Post.banner";
-  shacl:class <http://data4wallonia.com/model/File>;
+  shacl:class <http://data4wallonia.com/model/Asset>;
   shacl:description "A banner"@en;
   shacl:name "banner"@en;
   shacl:path <http://data4wallonia.com/model/banner> .
@@ -3444,7 +3444,7 @@
   shacl:path <http://data4wallonia.com/model/shortTitle> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ProfileShape/dce5f0b9ce22d1c7f8f95163ed722d4236e5a3dc> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Profile.logo";
-  shacl:class <http://data4wallonia.com/model/File>;
+  shacl:class <http://data4wallonia.com/model/Asset>;
   shacl:description "A logo"@en;
   shacl:name "logo"@en;
   shacl:path <http://data4wallonia.com/model/logo> .
@@ -3885,7 +3885,7 @@
   shacl:path <http://data4wallonia.com/model/title> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ProgramShape/d0de7c2a6b94abd5d5528c0af6186123704c5488> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Program.banner";
-  shacl:class <http://data4wallonia.com/model/File>;
+  shacl:class <http://data4wallonia.com/model/Asset>;
   shacl:description "A banner"@en;
   shacl:name "banner"@en;
   shacl:path <http://data4wallonia.com/model/banner> .
@@ -3915,7 +3915,7 @@
   shacl:path <http://data4wallonia.com/model/referenceCategory> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ProgramShape/dce5f0b9ce22d1c7f8f95163ed722d4236e5a3dc> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Program.logo";
-  shacl:class <http://data4wallonia.com/model/File>;
+  shacl:class <http://data4wallonia.com/model/Asset>;
   shacl:description "A logo"@en;
   shacl:name "logo"@en;
   shacl:path <http://data4wallonia.com/model/logo> .
@@ -4013,7 +4013,7 @@
   shacl:description "A person"@en;
   shacl:name "person"@en;
   shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path <http://data4wallonia.com/model/hasPerson> .
+  shacl:path <http://data4wallonia.com/model/person> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#QualifiedPersonShape/604437f9045931d5c3916199ca60510c39439a59> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#QualifiedPerson.role";
   shacl:description "The function of a qualified person."@en;
@@ -4061,7 +4061,7 @@
   shacl:description "A person"@en;
   shacl:minCount 1;
   shacl:name "person"@en;
-  shacl:path <http://data4wallonia.com/model/hasPerson> .
+  shacl:path <http://data4wallonia.com/model/person> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#QualifiedPersonShape/bee4fb981a921fc2aa3a820d3405073dea32f73d> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#QualifiedPerson.emailaddress";
   shacl:description "An email address"@en;
@@ -4073,7 +4073,7 @@
   shacl:class <http://data4wallonia.com/model/Person>;
   shacl:description "A person"@en;
   shacl:name "person"@en;
-  shacl:path <http://data4wallonia.com/model/hasPerson> .
+  shacl:path <http://data4wallonia.com/model/person> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#QualifiedPersonShape/d2254b8259635ec986bc7c65b0227299193c6c16> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#QualifiedPerson.role";
   shacl:datatype rdf:langString;
@@ -4097,7 +4097,7 @@
   shacl:description "A person"@en;
   shacl:maxCount 1;
   shacl:name "person"@en;
-  shacl:path <http://data4wallonia.com/model/hasPerson> .
+  shacl:path <http://data4wallonia.com/model/person> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape> a shacl:NodeShape;
   shacl:closed false;
@@ -4303,7 +4303,7 @@
   shacl:uniqueLang true .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/3ccc58fb8a7a5613841887e709b94d952ab6a735> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.facadephoto";
-  shacl:class <http://data4wallonia.com/model/File>;
+  shacl:class <http://data4wallonia.com/model/Asset>;
   shacl:description "A facade photo"@en;
   shacl:name "facade photo"@en;
   shacl:path <http://data4wallonia.com/model/facadePhoto> .
@@ -4561,7 +4561,7 @@
   shacl:path <http://data4wallonia.com/model/price> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/d305dc6ce5db303b82ab787c1dbfd60e31146749> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.otherphoto";
-  shacl:class <http://data4wallonia.com/model/File>;
+  shacl:class <http://data4wallonia.com/model/Asset>;
   shacl:description "Another photo"@en;
   shacl:name "other photo"@en;
   shacl:path <http://data4wallonia.com/model/otherPhoto> .

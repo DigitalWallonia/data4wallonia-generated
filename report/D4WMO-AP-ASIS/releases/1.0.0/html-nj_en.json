@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/1c8e6094318ec94222c1d264234b1bfcbff38a55",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/1c8e6094318ec94222c1d264234b1bfcbff38a55/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/4b69b7c4c185eefbe2dfbe4a99c16b71e9159049",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/4b69b7c4c185eefbe2dfbe4a99c16b71e9159049/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -544,13 +544,13 @@
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "http://data4wallonia.com/model/File"
+              "range_uri": "http://data4wallonia.com/model/Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "http://data4wallonia.com/model/File",
+              "range_puri": "http://data4wallonia.com/model/Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -1224,13 +1224,13 @@
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "http://data4wallonia.com/model/File"
+              "range_uri": "http://data4wallonia.com/model/Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "http://data4wallonia.com/model/File",
+              "range_puri": "http://data4wallonia.com/model/Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -1926,6 +1926,147 @@
       "properties": []
     },
     {
+      "uri": "http://data4wallonia.com/model/Asset",
+      "name": "Asset",
+      "label": {
+        "en": "Asset"
+      },
+      "sort": "Asset",
+      "description": {
+        "en": "An asset"
+      },
+      "usage": {},
+      "parents": [],
+      "rawTags": {
+        "definition-en": "An asset",
+        "label-en": "Asset",
+        "uri": "http://data4wallonia.com/model/Asset",
+        "class-usage-scope": "supportive"
+      },
+      "properties": [
+        {
+          "uri": "http://data4wallonia.com/model/description",
+          "name": "description",
+          "sort": "description",
+          "label": {
+            "en": "description"
+          },
+          "description": {
+            "en": "A description."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asset",
+              "uri": "http://data4wallonia.com/model/Asset"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "description",
+            "definition-en": "A description.",
+            "uri": "http://data4wallonia.com/model/description"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/file",
+          "name": "file",
+          "sort": "file",
+          "label": {
+            "en": "file"
+          },
+          "description": {
+            "en": "A file."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asset",
+              "uri": "http://data4wallonia.com/model/Asset"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "File",
+              "range_uri": "http://data4wallonia.com/model/File"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#File",
+              "range_puri": "http://data4wallonia.com/model/File",
+              "range_label": {
+                "en": "File"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "file",
+            "definition-en": "A file.",
+            "uri": "http://data4wallonia.com/model/file"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/title",
+          "name": "title",
+          "sort": "title",
+          "label": {
+            "en": "title"
+          },
+          "description": {
+            "en": "A title."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asset",
+              "uri": "http://data4wallonia.com/model/Asset"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "title",
+            "definition-en": "A title.",
+            "uri": "http://data4wallonia.com/model/title"
+          }
+        }
+      ]
+    },
+    {
       "uri": "http://data4wallonia.com/model/ContentDynamicList",
       "name": "ContentDynamicList",
       "label": {
@@ -2064,13 +2205,13 @@
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "http://data4wallonia.com/model/File"
+              "range_uri": "http://data4wallonia.com/model/Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "http://data4wallonia.com/model/File",
+              "range_puri": "http://data4wallonia.com/model/Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -3048,147 +3189,6 @@
     },
     {
       "uri": "http://data4wallonia.com/model/File",
-      "name": "Asset",
-      "label": {
-        "en": "Asset"
-      },
-      "sort": "Asset",
-      "description": {
-        "en": "An asset"
-      },
-      "usage": {},
-      "parents": [],
-      "rawTags": {
-        "definition-en": "An asset",
-        "label-en": "Asset",
-        "uri": "http://data4wallonia.com/model/File",
-        "class-usage-scope": "supportive"
-      },
-      "properties": [
-        {
-          "uri": "http://data4wallonia.com/model/description",
-          "name": "description",
-          "sort": "description",
-          "label": {
-            "en": "description"
-          },
-          "description": {
-            "en": "A description."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Asset",
-              "uri": "http://data4wallonia.com/model/File"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-              "range_label": {
-                "en": "Text"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "description",
-            "definition-en": "A description.",
-            "uri": "http://data4wallonia.com/model/description"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/file",
-          "name": "file",
-          "sort": "file",
-          "label": {
-            "en": "file"
-          },
-          "description": {
-            "en": "A file."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Asset",
-              "uri": "http://data4wallonia.com/model/File"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "File",
-              "range_uri": "http://data4wallonia.com/model/File"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#File",
-              "range_puri": "http://data4wallonia.com/model/File",
-              "range_label": {
-                "en": "File"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "file",
-            "definition-en": "A file.",
-            "uri": "http://data4wallonia.com/model/file"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/title",
-          "name": "title",
-          "sort": "title",
-          "label": {
-            "en": "title"
-          },
-          "description": {
-            "en": "A title."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Asset",
-              "uri": "http://data4wallonia.com/model/File"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-              "range_label": {
-                "en": "Text"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "title",
-            "definition-en": "A title.",
-            "uri": "http://data4wallonia.com/model/title"
-          }
-        }
-      ]
-    },
-    {
-      "uri": "http://data4wallonia.com/model/File",
       "name": "File",
       "label": {
         "en": "File"
@@ -3906,13 +3906,13 @@
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "http://data4wallonia.com/model/File"
+              "range_uri": "http://data4wallonia.com/model/Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "http://data4wallonia.com/model/File",
+              "range_puri": "http://data4wallonia.com/model/Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -4207,13 +4207,13 @@
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "http://data4wallonia.com/model/File"
+              "range_uri": "http://data4wallonia.com/model/Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "http://data4wallonia.com/model/File",
+              "range_puri": "http://data4wallonia.com/model/Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -4527,13 +4527,13 @@
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "http://data4wallonia.com/model/File"
+              "range_uri": "http://data4wallonia.com/model/Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "http://data4wallonia.com/model/File",
+              "range_puri": "http://data4wallonia.com/model/Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -4727,13 +4727,13 @@
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "http://data4wallonia.com/model/File"
+              "range_uri": "http://data4wallonia.com/model/Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "http://data4wallonia.com/model/File",
+              "range_puri": "http://data4wallonia.com/model/Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -6089,13 +6089,13 @@
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "http://data4wallonia.com/model/File"
+              "range_uri": "http://data4wallonia.com/model/Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "http://data4wallonia.com/model/File",
+              "range_puri": "http://data4wallonia.com/model/Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -6750,13 +6750,13 @@
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "http://data4wallonia.com/model/File"
+              "range_uri": "http://data4wallonia.com/model/Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "http://data4wallonia.com/model/File",
+              "range_puri": "http://data4wallonia.com/model/Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -7030,13 +7030,13 @@
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "http://data4wallonia.com/model/File"
+              "range_uri": "http://data4wallonia.com/model/Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "http://data4wallonia.com/model/File",
+              "range_puri": "http://data4wallonia.com/model/Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -7512,46 +7512,6 @@
           }
         },
         {
-          "uri": "http://data4wallonia.com/model/hasPerson",
-          "name": "person",
-          "sort": "person",
-          "label": {
-            "en": "person"
-          },
-          "description": {
-            "en": "A person"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "QualifiedPerson",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Person",
-              "range_uri": "http://data4wallonia.com/model/Person"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Person",
-              "range_puri": "http://data4wallonia.com/model/Person",
-              "range_label": {
-                "en": "Person"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": "",
-          "rawTags": {
-            "definition-en": "A person",
-            "uri": "http://data4wallonia.com/model/hasPerson",
-            "label-en": "person"
-          }
-        },
-        {
           "uri": "http://data4wallonia.com/model/inOperation",
           "name": "profile",
           "sort": "profile",
@@ -7629,6 +7589,46 @@
             "uri": "http://data4wallonia.com/model/internalName",
             "definition-en": "An internal name",
             "label-en": "internal name"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/person",
+          "name": "person",
+          "sort": "person",
+          "label": {
+            "en": "person"
+          },
+          "description": {
+            "en": "A person"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "QualifiedPerson",
+              "uri": "http://data4wallonia.com/model/QualifiedPerson"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Person",
+              "range_uri": "http://data4wallonia.com/model/Person"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Person",
+              "range_puri": "http://data4wallonia.com/model/Person",
+              "range_label": {
+                "en": "Person"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "definition-en": "A person",
+            "uri": "http://data4wallonia.com/model/person",
+            "label-en": "person"
           }
         },
         {
@@ -8152,13 +8152,13 @@
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "http://data4wallonia.com/model/File"
+              "range_uri": "http://data4wallonia.com/model/Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "http://data4wallonia.com/model/File",
+              "range_puri": "http://data4wallonia.com/model/Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -8352,13 +8352,13 @@
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "http://data4wallonia.com/model/File"
+              "range_uri": "http://data4wallonia.com/model/Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "http://data4wallonia.com/model/File",
+              "range_puri": "http://data4wallonia.com/model/Asset",
               "range_label": {
                 "en": "Asset"
               }

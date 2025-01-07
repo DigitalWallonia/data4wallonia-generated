@@ -770,7 +770,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanShape/5f3b7aa9f30f3e03b55cedf20f6d46989756e5d6",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlan.image",
-          "sh:class": "http://data4wallonia.com/model/File",
+          "sh:class": "http://data4wallonia.com/model/Asset",
           "sh:description": {
             "en": "An image"
           },
@@ -1238,7 +1238,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanShape/b3ec9cef84a6abb4641a90b07e001e6720a6f70b",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlan.relatedfile",
-          "sh:class": "http://data4wallonia.com/model/File",
+          "sh:class": "http://data4wallonia.com/model/Asset",
           "sh:description": {
             "en": "A related file"
           },
@@ -1794,6 +1794,158 @@
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://data4wallonia.com/model/AnnualBudget"
+    },
+    {
+      "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/35e7dc1df17d5abc599c99480e4943d69fdac9b4",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.file",
+          "sh:class": "http://data4wallonia.com/model/File",
+          "sh:description": {
+            "en": "A file."
+          },
+          "sh:name": {
+            "en": "file"
+          },
+          "sh:path": "http://data4wallonia.com/model/file"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/362d1bf0eab8051024cf5ec1345eb1ce50762580",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.description",
+          "sh:description": {
+            "en": "A description."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:path": "http://data4wallonia.com/model/description"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/478b02e2ad9442fdb4e654be2257cc8f7a4b954b",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.file",
+          "sh:description": {
+            "en": "A file."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "file"
+          },
+          "sh:path": "http://data4wallonia.com/model/file"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.title",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A title."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:path": "http://data4wallonia.com/model/title"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/6c68774d3a68f1982cdabf63a73336ec325d4f26",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.file",
+          "sh:description": {
+            "en": "A file."
+          },
+          "sh:name": {
+            "en": "file"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/file"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/6cae9880e515253132af1452a38a8a5827165149",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.description",
+          "sh:description": {
+            "en": "A description."
+          },
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/description"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/768bb4171e00505886fe9a1e949b4cd71f0eb548",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.description",
+          "sh:description": {
+            "en": "A description."
+          },
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:path": "http://data4wallonia.com/model/description",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.title",
+          "sh:description": {
+            "en": "A title."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:path": "http://data4wallonia.com/model/title",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/beb8852532419b5be706945ce8ec8a5efc3da2de",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.file",
+          "sh:description": {
+            "en": "A file."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "file"
+          },
+          "sh:path": "http://data4wallonia.com/model/file"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.title",
+          "sh:description": {
+            "en": "A title."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:path": "http://data4wallonia.com/model/title"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/d4d4f2399b8cf2f615ac658920373b714726bed0",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.description",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A description."
+          },
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:path": "http://data4wallonia.com/model/description"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.title",
+          "sh:description": {
+            "en": "A title."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/title"
+        }
+      ],
+      "sh:targetClass": "http://data4wallonia.com/model/Asset"
     },
     {
       "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ContentDynamicListShape",
@@ -2662,7 +2814,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#EventShape/d0de7c2a6b94abd5d5528c0af6186123704c5488",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Event.banner",
-          "sh:class": "http://data4wallonia.com/model/File",
+          "sh:class": "http://data4wallonia.com/model/Asset",
           "sh:description": {
             "en": "A banner"
           },
@@ -2843,158 +2995,6 @@
       "sh:targetClass": "http://data4wallonia.com/model/Event"
     },
     {
-      "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/35e7dc1df17d5abc599c99480e4943d69fdac9b4",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.file",
-          "sh:class": "http://data4wallonia.com/model/File",
-          "sh:description": {
-            "en": "A file."
-          },
-          "sh:name": {
-            "en": "file"
-          },
-          "sh:path": "http://data4wallonia.com/model/file"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/362d1bf0eab8051024cf5ec1345eb1ce50762580",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.description",
-          "sh:description": {
-            "en": "A description."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "description"
-          },
-          "sh:path": "http://data4wallonia.com/model/description"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/478b02e2ad9442fdb4e654be2257cc8f7a4b954b",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.file",
-          "sh:description": {
-            "en": "A file."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "file"
-          },
-          "sh:path": "http://data4wallonia.com/model/file"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.title",
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:description": {
-            "en": "A title."
-          },
-          "sh:name": {
-            "en": "title"
-          },
-          "sh:path": "http://data4wallonia.com/model/title"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/6c68774d3a68f1982cdabf63a73336ec325d4f26",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.file",
-          "sh:description": {
-            "en": "A file."
-          },
-          "sh:name": {
-            "en": "file"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/file"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/6cae9880e515253132af1452a38a8a5827165149",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.description",
-          "sh:description": {
-            "en": "A description."
-          },
-          "sh:name": {
-            "en": "description"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/description"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/768bb4171e00505886fe9a1e949b4cd71f0eb548",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.description",
-          "sh:description": {
-            "en": "A description."
-          },
-          "sh:name": {
-            "en": "description"
-          },
-          "sh:path": "http://data4wallonia.com/model/description",
-          "sh:uniqueLang": "true"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.title",
-          "sh:description": {
-            "en": "A title."
-          },
-          "sh:name": {
-            "en": "title"
-          },
-          "sh:path": "http://data4wallonia.com/model/title",
-          "sh:uniqueLang": "true"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/beb8852532419b5be706945ce8ec8a5efc3da2de",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.file",
-          "sh:description": {
-            "en": "A file."
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "file"
-          },
-          "sh:path": "http://data4wallonia.com/model/file"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.title",
-          "sh:description": {
-            "en": "A title."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "title"
-          },
-          "sh:path": "http://data4wallonia.com/model/title"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/d4d4f2399b8cf2f615ac658920373b714726bed0",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.description",
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:description": {
-            "en": "A description."
-          },
-          "sh:name": {
-            "en": "description"
-          },
-          "sh:path": "http://data4wallonia.com/model/description"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AssetShape/d5d74574f70f9a979535f3624608f88180dd0c97",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Asset.title",
-          "sh:description": {
-            "en": "A title."
-          },
-          "sh:name": {
-            "en": "title"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/title"
-        }
-      ],
-      "sh:targetClass": "http://data4wallonia.com/model/File"
-    },
-    {
       "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#FileShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -3028,7 +3028,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/05969b4af1b3f6570e1aec246d37985180de37c6",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.photo",
-          "sh:class": "http://data4wallonia.com/model/File",
+          "sh:class": "http://data4wallonia.com/model/Asset",
           "sh:description": {
             "en": "An image taken with a camera of a resource."
           },
@@ -4368,7 +4368,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PostShape/b3ec9cef84a6abb4641a90b07e001e6720a6f70b",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Post.relatedfile",
-          "sh:class": "http://data4wallonia.com/model/File",
+          "sh:class": "http://data4wallonia.com/model/Asset",
           "sh:description": {
             "en": "A related file"
           },
@@ -4416,7 +4416,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PostShape/cea25f8fc2ecd0beef10e79a62c1a22212cabf36",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Post.pdffile",
-          "sh:class": "http://data4wallonia.com/model/File",
+          "sh:class": "http://data4wallonia.com/model/Asset",
           "sh:description": {
             "en": "A pdf file"
           },
@@ -4440,7 +4440,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PostShape/d0de7c2a6b94abd5d5528c0af6186123704c5488",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Post.banner",
-          "sh:class": "http://data4wallonia.com/model/File",
+          "sh:class": "http://data4wallonia.com/model/Asset",
           "sh:description": {
             "en": "A banner"
           },
@@ -5908,7 +5908,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ProfileShape/dce5f0b9ce22d1c7f8f95163ed722d4236e5a3dc",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Profile.logo",
-          "sh:class": "http://data4wallonia.com/model/File",
+          "sh:class": "http://data4wallonia.com/model/Asset",
           "sh:description": {
             "en": "A logo"
           },
@@ -6660,7 +6660,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ProgramShape/d0de7c2a6b94abd5d5528c0af6186123704c5488",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Program.banner",
-          "sh:class": "http://data4wallonia.com/model/File",
+          "sh:class": "http://data4wallonia.com/model/Asset",
           "sh:description": {
             "en": "A banner"
           },
@@ -6720,7 +6720,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ProgramShape/dce5f0b9ce22d1c7f8f95163ed722d4236e5a3dc",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Program.logo",
-          "sh:class": "http://data4wallonia.com/model/File",
+          "sh:class": "http://data4wallonia.com/model/Asset",
           "sh:description": {
             "en": "A logo"
           },
@@ -6879,7 +6879,7 @@
             "en": "person"
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/hasPerson"
+          "sh:path": "http://data4wallonia.com/model/person"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#QualifiedPersonShape/604437f9045931d5c3916199ca60510c39439a59",
@@ -6975,7 +6975,7 @@
           "sh:name": {
             "en": "person"
           },
-          "sh:path": "http://data4wallonia.com/model/hasPerson"
+          "sh:path": "http://data4wallonia.com/model/person"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#QualifiedPersonShape/bee4fb981a921fc2aa3a820d3405073dea32f73d",
@@ -6999,7 +6999,7 @@
           "sh:name": {
             "en": "person"
           },
-          "sh:path": "http://data4wallonia.com/model/hasPerson"
+          "sh:path": "http://data4wallonia.com/model/person"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#QualifiedPersonShape/d2254b8259635ec986bc7c65b0227299193c6c16",
@@ -7047,7 +7047,7 @@
           "sh:name": {
             "en": "person"
           },
-          "sh:path": "http://data4wallonia.com/model/hasPerson"
+          "sh:path": "http://data4wallonia.com/model/person"
         }
       ],
       "sh:targetClass": "http://data4wallonia.com/model/QualifiedPerson"
@@ -7300,7 +7300,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/3ccc58fb8a7a5613841887e709b94d952ab6a735",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.facadephoto",
-          "sh:class": "http://data4wallonia.com/model/File",
+          "sh:class": "http://data4wallonia.com/model/Asset",
           "sh:description": {
             "en": "A facade photo"
           },
@@ -7816,7 +7816,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape/d305dc6ce5db303b82ab787c1dbfd60e31146749",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlace.otherphoto",
-          "sh:class": "http://data4wallonia.com/model/File",
+          "sh:class": "http://data4wallonia.com/model/Asset",
           "sh:description": {
             "en": "Another photo"
           },
