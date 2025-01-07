@@ -2,10 +2,6 @@
   "@context": {
     "ActionPlan": "http://data4wallonia.com/model/ActionPlan",
     "ActionPlanProfile": "http://data4wallonia.com/model/ActionPlanProfile",
-    "ActionPlanProfile.profile": {
-      "@id": "http://data4wallonia.com/model/profile",
-      "@type": "@id"
-    },
     "Address": "http://data4wallonia.com/model/Address",
     "Ambition": "http://data4wallonia.com/model/Ambition",
     "AnnualBudget": "http://data4wallonia.com/model/AnnualBudget",
@@ -25,10 +21,6 @@
     "Profile": "http://data4wallonia.com/model/Profile",
     "Program": "http://data4wallonia.com/model/Program",
     "QualifiedPerson": "http://data4wallonia.com/model/QualifiedPerson",
-    "QualifiedPerson.profile": {
-      "@id": "http://data4wallonia.com/model/inOperation",
-      "@type": "@id"
-    },
     "ServicesPlace": "http://data4wallonia.com/model/ServicePlace",
     "String": "http://www.w3.org/2001/XMLSchema#string",
     "Text": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -399,6 +391,10 @@
     "price": {
       "@id": "http://data4wallonia.com/model/price",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "profile": {
+      "@id": "http://data4wallonia.com/model/profile",
+      "@type": "@id"
     },
     "program": {
       "@container": "@set",

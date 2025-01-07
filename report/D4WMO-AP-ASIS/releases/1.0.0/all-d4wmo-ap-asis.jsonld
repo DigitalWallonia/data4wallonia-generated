@@ -8598,110 +8598,6 @@
     },
     {
       "@id": "http://data4wallonia.com/model/inOperation",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "profile",
-      "inpackage": "OTHER_PACKAGE",
-      "ap-definition-en": {
-        "en": "The profile to which the person belongs to."
-      },
-      "ap-label-en": {
-        "en": "profile"
-      },
-      "definition": {
-        "en": "The profile to which the person belongs to."
-      },
-      "label": {
-        "en": "profile"
-      },
-      "extra": {
-        "EA-Name": "profile",
-        "EA-Guid": "{6DCF9BD6-6D83-471b-AE1F-20B580D7B2A7}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "QualifiedPerson",
-        "EA-Domain-Guid": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-        "EA-Range": "Profile",
-        "RangeData": {
-          "EA-Name": "Profile",
-          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Profile"
-        },
-        "sourceRole": "null",
-        "destRole": "profile",
-        "label": {
-          "en": "profile"
-        },
-        "definition": {
-          "en": "The profile to which the person belongs to."
-        },
-        "usage": "",
-        "ap-label-en": {
-          "en": "profile"
-        },
-        "ap-definition-en": {
-          "en": "The profile to which the person belongs to."
-        },
-        "ap-usageNote-en": "",
-        "ap-codelist": "",
-        "RawTags": [
-          {
-            "key": "definition-en",
-            "value": "NOTE",
-            "note": "The profile to which the person belongs to."
-          },
-          {
-            "key": "uri",
-            "value": "NOTE",
-            "note": "http://data4wallonia.com/model/inOperation"
-          },
-          {
-            "key": "label-en",
-            "value": "NOTE",
-            "note": "profile"
-          }
-        ],
-        "DestRoleTags": [
-          {
-            "key": "definition-en",
-            "value": "NOTE",
-            "note": "The profile to which the person belongs to."
-          },
-          {
-            "key": "uri",
-            "value": "NOTE",
-            "note": "http://data4wallonia.com/model/inOperation"
-          },
-          {
-            "key": "label-en",
-            "value": "NOTE",
-            "note": "profile"
-          }
-        ],
-        "Scope": "NOTHING"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "http://data4wallonia.com/model/QualifiedPerson",
-          "EA-Name": "QualifiedPerson"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "Profile",
-          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Profile"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
-    },
-    {
-      "@id": "http://data4wallonia.com/model/inOperation",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "name": "inOperation",
       "inpackage": "OTHER_PACKAGE",
@@ -13322,6 +13218,110 @@
       ],
       "generalization": [],
       "minCardinality": "0",
+      "maxCardinality": "1"
+    },
+    {
+      "@id": "http://data4wallonia.com/model/profile",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "profile",
+      "inpackage": "OTHER_PACKAGE",
+      "ap-definition-en": {
+        "en": "The profile to which the person belongs to."
+      },
+      "ap-label-en": {
+        "en": "profile"
+      },
+      "definition": {
+        "en": "The profile to which the person belongs to."
+      },
+      "label": {
+        "en": "profile"
+      },
+      "extra": {
+        "EA-Name": "profile",
+        "EA-Guid": "{6DCF9BD6-6D83-471b-AE1F-20B580D7B2A7}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "QualifiedPerson",
+        "EA-Domain-Guid": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
+        "EA-Range": "Profile",
+        "RangeData": {
+          "EA-Name": "Profile",
+          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
+          "EA-Package": "d4w",
+          "uri": "http://data4wallonia.com/model/Profile"
+        },
+        "sourceRole": "null",
+        "destRole": "profile",
+        "label": {
+          "en": "profile"
+        },
+        "definition": {
+          "en": "The profile to which the person belongs to."
+        },
+        "usage": "",
+        "ap-label-en": {
+          "en": "profile"
+        },
+        "ap-definition-en": {
+          "en": "The profile to which the person belongs to."
+        },
+        "ap-usageNote-en": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "The profile to which the person belongs to."
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://data4wallonia.com/model/profile"
+          },
+          {
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "profile"
+          }
+        ],
+        "DestRoleTags": [
+          {
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "The profile to which the person belongs to."
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://data4wallonia.com/model/profile"
+          },
+          {
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "profile"
+          }
+        ],
+        "Scope": "NOTHING"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://data4wallonia.com/model/QualifiedPerson",
+          "EA-Name": "QualifiedPerson"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Profile",
+          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
+          "EA-Package": "d4w",
+          "uri": "http://data4wallonia.com/model/Profile"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
       "maxCardinality": "1"
     },
     {
@@ -20132,14 +20132,14 @@
   },
   "config": "config/config-ap.json",
   "branchtag": "ReSpecCV",
-  "dummy": "33",
+  "dummy": "34",
   "filename": "config/data4wallonia.json",
   "navigation": {
     "prev": "https://digitalwallonia.github.io/data4wallonia-generated/D4WMO-AP-ASIS/releases/1.0.0"
   },
   "repository": "git@github.com:DigitalWallonia/data4wallonia-thema.git",
   "urlref": "/D4WMO-AP-ASIS/releases/1.0.0/",
-  "documentcommit": "4b69b7c4c185eefbe2dfbe4a99c16b71e9159049",
-  "toolchaincommit": "7dd97a26a2693dace6513fefdc8e948349e86c33",
+  "documentcommit": "9fa2b389bfc54b97f646668fb6283d1c3ad6684f",
+  "toolchaincommit": "c8f71aaf3f72de4288f2c928b22995b496b93062",
   "hostname": "https://DigitalWallonia.github.io"
 }
