@@ -270,6 +270,7 @@ This specification uses the following prefixes to shorten the URIs for readabili
 			      <a href="#Address">Address</a> |
 			      <a href="#Ambition">Ambition</a> |
 			      <a href="#AnnualBudget">Annual Budget</a> |
+			      <a href="#Asset">Asset</a> |
 			      <a href="#ContentDynamicList">Content Dynamic List</a> |
 			      <a href="#File">File</a> |
 			      <a href="#PartnerAdditionalDescription">Partner Additional Description</a> |
@@ -949,7 +950,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -1680,7 +1681,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -2154,6 +2155,8 @@ The main entities are those that form the core of the Application Profile.
 
 
 
+
+
    
         <section>
             <h3 id="Event">
@@ -2356,7 +2359,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -3006,7 +3009,7 @@ The main entities are those that form the core of the Application Profile.
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..1
                                 </td>
                                 <td property="rdfs:comment">
                                     A schedule additional information
@@ -3264,7 +3267,7 @@ The main entities are those that form the core of the Application Profile.
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..1
                                 </td>
                                 <td property="rdfs:comment">
                                     A target audience
@@ -4224,7 +4227,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -4628,7 +4631,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -4972,7 +4975,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -5187,7 +5190,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -6338,7 +6341,7 @@ The main entities are those that form the core of the Application Profile.
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..1
                                 </td>
                                 <td property="rdfs:comment">
                                     An additional description
@@ -6806,7 +6809,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -7593,7 +7596,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -7894,7 +7897,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -8389,9 +8392,9 @@ The main entities are those that form the core of the Application Profile.
                     
                         <dd>
                             For this entity the following properties are defined: <a href="#QualifiedPerson.emailaddress">email address</a>
-                            , <a href="#QualifiedPerson.hasperson">has person</a>
-                            , <a href="#QualifiedPerson.hasprofile">has profile</a>
                             , <a href="#QualifiedPerson.internalname">internal name</a>
+                            , <a href="#QualifiedPerson.person">person</a>
+                            , <a href="#QualifiedPerson.profile">profile</a>
                             , <a href="#QualifiedPerson.role">role</a>
                             .
                     </dd>
@@ -8475,92 +8478,6 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                             </tr>
                         
-                            <tr id="QualifiedPerson.hasperson"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/hasPerson"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20has person%20in%20Qualified Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23QualifiedPerson.hasperson" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/hasPerson"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/hasPerson"
-                                           data-placement="right">
-                                        has person</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Person" data-placement="right">Person</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    1
-                                </td>
-                                <td property="rdfs:comment">
-                                    A person
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="QualifiedPerson.hasprofile"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/inOperation"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20has profile%20in%20Qualified Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23QualifiedPerson.hasprofile" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/inOperation"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/inOperation"
-                                           data-placement="right">
-                                        has profile</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Profile" data-placement="right">Profile</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    1
-                                </td>
-                                <td property="rdfs:comment">
-                                    The profile to which the person belongs to.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
                             <tr id="QualifiedPerson.internalname"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/internalName"
@@ -8590,6 +8507,92 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                                 <td property="rdfs:comment">
                                     An internal name
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="QualifiedPerson.person"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/hasPerson"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20person%20in%20Qualified Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23QualifiedPerson.person" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/hasPerson"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/hasPerson"
+                                           data-placement="right">
+                                        person</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Person" data-placement="right">Person</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    A person
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="QualifiedPerson.profile"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/inOperation"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20profile%20in%20Qualified Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23QualifiedPerson.profile" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/inOperation"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/inOperation"
+                                           data-placement="right">
+                                        profile</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Profile" data-placement="right">Profile</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    The profile to which the person belongs to.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -9244,7 +9247,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -9459,7 +9462,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -10238,6 +10241,218 @@ They are included in the Application Profile because they form the range of prop
 
    
         <section>
+            <h3 id="Asset">
+                <a href="http://data4wallonia.com/model/File"
+                   data-toggle="tooltip"
+                   data-content="http://data4wallonia.com/model/File"
+                   data-placement="right">Asset</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20Asset&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    An asset
+                </dd>
+                
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#Asset.description">description</a>
+                            , <a href="#Asset.file">file</a>
+                            , <a href="#Asset.title">title</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="Asset.description"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/description"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20description%20in%20Asset&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Asset.description" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/description"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/description"
+                                           data-placement="right">
+                                        description</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    A description.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Asset.file"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/file"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20file%20in%20Asset&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Asset.file" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/file"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/file"
+                                           data-placement="right">
+                                        file</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#File" data-placement="right">File</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    A file.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Asset.title"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/title"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20title%20in%20Asset&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Asset.title" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/title"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/title"
+                                           data-placement="right">
+                                        title</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    A title.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+</section>
+
+
+
+
+
+   
+        <section>
             <h3 id="ContentDynamicList">
                 <a href="http://data4wallonia.com/model/ContentDynamicList"
                    data-toggle="tooltip"
@@ -10301,7 +10516,7 @@ They are included in the Application Profile because they form the range of prop
                     Definition
                 </dt>
                 <dd>
-                    A file
+                    A file.
                 </dd>
                 
                 
@@ -11357,6 +11572,55 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						<td></td>
 						<td></td>
 					</tr>
+				
+			</tr>
+		
+				
+					
+						
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#Asset">Asset</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/File</div></td>
+								<td></td>
+								<td><a href="#Asset.description">description </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/description</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Asset">Asset</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/File</div></td>
+								<td></td>
+								<td><a href="#Asset.file">file </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/file</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Asset">Asset</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/File</div></td>
+								<td></td>
+								<td><a href="#Asset.title">title </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/title</div></td>
+							</tr>
+						
+					
 				
 			</tr>
 		
@@ -13294,7 +13558,17 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#QualifiedPerson">Qualified Person</a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
 								<td></td>
-								<td><a href="#QualifiedPerson.hasperson">has person </a></td>
+								<td><a href="#QualifiedPerson.internalname">internal name </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/internalName</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#QualifiedPerson">Qualified Person</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
+								<td></td>
+								<td><a href="#QualifiedPerson.person">person </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/hasPerson</div></td>
 							</tr>
 						
@@ -13304,18 +13578,8 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#QualifiedPerson">Qualified Person</a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
 								<td></td>
-								<td><a href="#QualifiedPerson.hasprofile">has profile </a></td>
+								<td><a href="#QualifiedPerson.profile">profile </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/inOperation</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#QualifiedPerson">Qualified Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
-								<td></td>
-								<td><a href="#QualifiedPerson.internalname">internal name </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/internalName</div></td>
 							</tr>
 						
 					
