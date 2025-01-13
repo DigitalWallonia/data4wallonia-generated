@@ -13,6 +13,7 @@
     "Decimal": "http://www.w3.org/2001/XMLSchema#decimal",
     "Event": "http://data4wallonia.com/model/Event",
     "File": "http://data4wallonia.com/model/File",
+    "GYear": "http://www.w3.org/2001/XMLSchema#gYear",
     "Integer": "http://www.w3.org/2001/XMLSchema#integer",
     "PartnerAdditionalDescription": "http://data4wallonia.com/model/PartnerAdditionalDescription",
     "Person": "http://data4wallonia.com/model/Person",
@@ -43,6 +44,7 @@
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "additionalDescription": {
+      "@container": "@set",
       "@id": "http://data4wallonia.com/model/additionalDescription",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
@@ -105,6 +107,10 @@
       "@id": "http://data4wallonia.com/model/beneficiarie",
       "@type": "@id"
     },
+    "budget": {
+      "@id": "http://data4wallonia.com/model/budget",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
     "capacity": {
       "@id": "http://data4wallonia.com/model/capacity",
       "@type": "http://www.w3.org/2001/XMLSchema#integer"
@@ -115,6 +121,7 @@
       "@type": "@id"
     },
     "clientSite": {
+      "@container": "@set",
       "@id": "http://data4wallonia.com/model/clientSite",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
@@ -184,6 +191,10 @@
       "@container": "@set",
       "@id": "http://data4wallonia.com/model/featuredPerson",
       "@type": "@id"
+    },
+    "field": {
+      "@id": "http://data4wallonia.com/model/field",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "file": {
       "@id": "http://data4wallonia.com/model/file",
@@ -569,6 +580,10 @@
     "website": {
       "@id": "http://data4wallonia.com/model/website",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "year": {
+      "@id": "https://d4w-digitalwallonia.opendatasoft.com/year",
+      "@type": "http://www.w3.org/2001/XMLSchema#gYear"
     }
   }
 }

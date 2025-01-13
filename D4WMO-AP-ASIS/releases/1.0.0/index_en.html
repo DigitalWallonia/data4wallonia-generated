@@ -280,7 +280,7 @@ This specification uses the following prefixes to shorten the URIs for readabili
                         <p>
                             And supported by these datatypes:
                             <br />
-                            | <a href="#Boolean">Boolean</a> | <a href="#Code">Code</a> | <a href="#Datetime">Date time</a> | <a href="#Decimal">Decimal</a> | <a href="#Integer">Integer</a> | <a href="#String">String</a> | <a href="#Text">Text</a> |
+                            | <a href="#Boolean">Boolean</a> | <a href="#Code">Code</a> | <a href="#Datetime">Date time</a> | <a href="#Decimal">Decimal</a> | <a href="#gYear">gYear</a> | <a href="#Integer">Integer</a> | <a href="#String">String</a> | <a href="#Text">Text</a> |
                         </p>
                 
     </div>
@@ -10614,12 +10614,181 @@ They are included in the Application Profile because they form the range of prop
                         Properties
                     </dt>
                     
-                    <dd>
-                        This specification does not impose any additional requirements to properties for this entity.
+                        <dd>
+                            For this entity the following properties are defined: <a href="#AnnualBudget.undefined"></a>
+                            , <a href="#AnnualBudget.budget">budget</a>
+                            , <a href="#AnnualBudget.internalname">internal name</a>
+                            .
                     </dd>
                 
             </dl>
         </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="AnnualBudget.undefined"
+                                typeof="rdfs:Property"
+                                resource="https://d4w-digitalwallonia.opendatasoft.com/year"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20%20in%20Annual Budget&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23AnnualBudget.undefined" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="https://d4w-digitalwallonia.opendatasoft.com/year"
+                                           data-toggle="tooltip"
+                                           data-content="https://d4w-digitalwallonia.opendatasoft.com/year"
+                                           data-placement="right">
+                                        </a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#gYear" data-placement="right">gYear</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="AnnualBudget.budget"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/budget"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20budget%20in%20Annual Budget&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23AnnualBudget.budget" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/budget"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/budget"
+                                           data-placement="right">
+                                        budget</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Integer" data-placement="right">Integer</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    A budget
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="AnnualBudget.internalname"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/internalName"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20internal name%20in%20Annual Budget&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23AnnualBudget.internalname" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/internalName"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/internalName"
+                                           data-placement="right">
+                                        internal name</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#String" data-placement="right">String</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    An internal name
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
         
     </div>
 </section>
@@ -10869,12 +11038,137 @@ They are included in the Application Profile because they form the range of prop
                         Properties
                     </dt>
                     
-                    <dd>
-                        This specification does not impose any additional requirements to properties for this entity.
+                        <dd>
+                            For this entity the following properties are defined: <a href="#ContentDynamicList.field">field</a>
+                            , <a href="#ContentDynamicList.title">title</a>
+                            .
                     </dd>
                 
             </dl>
         </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="ContentDynamicList.field"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/field"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20field%20in%20Content Dynamic List&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23ContentDynamicList.field" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/field"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/field"
+                                           data-placement="right">
+                                        field</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#String" data-placement="right">String</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    A field
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="ContentDynamicList.title"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/title"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20title%20in%20Content Dynamic List&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23ContentDynamicList.title" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/title"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/title"
+                                           data-placement="right">
+                                        title</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    A title
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
         
     </div>
 </section>
@@ -10957,12 +11251,181 @@ They are included in the Application Profile because they form the range of prop
                         Properties
                     </dt>
                     
-                    <dd>
-                        This specification does not impose any additional requirements to properties for this entity.
+                        <dd>
+                            For this entity the following properties are defined: <a href="#PartnerAdditionalDescription.additionaldescription">additional description</a>
+                            , <a href="#PartnerAdditionalDescription.clientsite">client site</a>
+                            , <a href="#PartnerAdditionalDescription.title">title</a>
+                            .
                     </dd>
                 
             </dl>
         </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="PartnerAdditionalDescription.additionaldescription"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/additionalDescription"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20additional description%20in%20Partner Additional Description&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23PartnerAdditionalDescription.additionaldescription" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/additionalDescription"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/additionalDescription"
+                                           data-placement="right">
+                                        additional description</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    An additional description
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="PartnerAdditionalDescription.clientsite"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/clientSite"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20client site%20in%20Partner Additional Description&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23PartnerAdditionalDescription.clientsite" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/clientSite"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/clientSite"
+                                           data-placement="right">
+                                        client site</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#String" data-placement="right">String</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A client site
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="PartnerAdditionalDescription.title"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/title"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20title%20in%20Partner Additional Description&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23PartnerAdditionalDescription.title" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/title"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/title"
+                                           data-placement="right">
+                                        title</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    A title
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
         
     </div>
 </section>
@@ -11072,6 +11535,22 @@ They are included in the Application Profile because they form the range of prop
                 
 		</td><td>
                     Decimal represents a subset of the real numbers, which can be represented by decimal numerals. The ·value space· of decimal is the set of numbers that can be obtained by multiplying an integer by a non-positive power of ten, i.e., expressible as i × 10^-n where i and n are integers and n &gt;= 0. Precision is not reflected in this value space; the number 2.0 is not distinct from the number 2.00. The ·order-relation· on decimal is the order relation on real numbers, restricted to this subset.
+		</td></tr>
+		<tr><td>
+                   <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20Gyear&body=Explain%20your%20issue"}}>
+                     <img src="html/callout.png" loading="lazy" alt="(create issue)" width="50" height="50"/>
+		   </a>
+		</td><td>
+                
+                    <div id="gYear">
+                        <a href="http://www.w3.org/2001/XMLSchema#gYear"
+                           data-toggle="tooltip"
+                           data-content="http://www.w3.org/2001/XMLSchema#gYear"
+                           data-placement="right">gYear</a>
+                    </div>
+                
+		</td><td>
+                    gYear represents Gregorian calendar years.
 		</td></tr>
 		<tr><td>
                    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20Integer&body=Explain%20your%20issue"}}>
@@ -12062,13 +12541,51 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 			</tr>
 		
 				
-					<tr>
-						<td><a href="#AnnualBudget">Annual Budget</a></td>
-						<td><div class="shorten">http://data4wallonia.com/model/AnnualBudget</div></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
+					
+						
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#AnnualBudget">Annual Budget</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/AnnualBudget</div></td>
+								<td></td>
+								<td><a href="#AnnualBudget.undefined"> </a></td>
+								<td><div class="shorten">https://d4w-digitalwallonia.opendatasoft.com/year</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#AnnualBudget">Annual Budget</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/AnnualBudget</div></td>
+								<td></td>
+								<td><a href="#AnnualBudget.budget">budget </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/budget</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#AnnualBudget">Annual Budget</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/AnnualBudget</div></td>
+								<td></td>
+								<td><a href="#AnnualBudget.internalname">internal name </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/internalName</div></td>
+							</tr>
+						
+					
 				
 			</tr>
 		
@@ -12122,13 +12639,37 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 			</tr>
 		
 				
-					<tr>
-						<td><a href="#ContentDynamicList">Content Dynamic List</a></td>
-						<td><div class="shorten">http://data4wallonia.com/model/ContentDynamicList</div></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#ContentDynamicList">Content Dynamic List</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/ContentDynamicList</div></td>
+								<td></td>
+								<td><a href="#ContentDynamicList.field">field </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/field</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#ContentDynamicList">Content Dynamic List</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/ContentDynamicList</div></td>
+								<td></td>
+								<td><a href="#ContentDynamicList.title">title </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/title</div></td>
+							</tr>
+						
+					
 				
 			</tr>
 		
@@ -12529,13 +13070,51 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 			</tr>
 		
 				
-					<tr>
-						<td><a href="#PartnerAdditionalDescription">Partner Additional Description</a></td>
-						<td><div class="shorten">http://data4wallonia.com/model/PartnerAdditionalDescription</div></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
+					
+						
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#PartnerAdditionalDescription">Partner Additional Description</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/PartnerAdditionalDescription</div></td>
+								<td></td>
+								<td><a href="#PartnerAdditionalDescription.additionaldescription">additional description </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/additionalDescription</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#PartnerAdditionalDescription">Partner Additional Description</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/PartnerAdditionalDescription</div></td>
+								<td></td>
+								<td><a href="#PartnerAdditionalDescription.clientsite">client site </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/clientSite</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#PartnerAdditionalDescription">Partner Additional Description</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/PartnerAdditionalDescription</div></td>
+								<td></td>
+								<td><a href="#PartnerAdditionalDescription.title">title </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/title</div></td>
+							</tr>
+						
+					
 				
 			</tr>
 		
