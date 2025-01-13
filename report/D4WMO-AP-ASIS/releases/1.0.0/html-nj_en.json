@@ -11,14 +11,11 @@
     },
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "documenttype": "ap",
-    "documentconfig": {
-      "editorDocumentroot": "https://digitalwallonia.github.io/data4wallonia-generated/D4WMO-AP-ASIS-E/releases/1.0.0",
-      "statuslabel": "Draft"
-    },
+    "documentconfig": {},
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/b406dd2c50f139cc20ce38d392cdb1632b88afcf",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/b406dd2c50f139cc20ce38d392cdb1632b88afcf/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/328f37c445695941bd940c01cc298f387112d154",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/328f37c445695941bd940c01cc298f387112d154/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -1667,12 +1664,14 @@
       "properties": [
         {
           "uri": "http://data4wallonia.com/model/actionPlan",
-          "name": "anActionPlan",
-          "sort": "An action plan",
+          "name": "actionPlan",
+          "sort": "action plan",
           "label": {
+            "en": "action plan"
+          },
+          "description": {
             "en": "An action plan"
           },
-          "description": {},
           "usage": {},
           "domain": [
             {
@@ -1699,8 +1698,8 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/actionPlan",
-            "action-plan": "action plan",
-            "label-en": "An action plan"
+            "definition-en": "An action plan",
+            "label-en": "action plan"
           }
         },
         {
@@ -2326,11 +2325,15 @@
           }
         },
         {
-          "uri": "https://d4w-digitalwallonia.opendatasoft.com/year",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
+          "uri": "http://data4wallonia.com/model/year",
+          "name": "year",
+          "sort": "year",
+          "label": {
+            "en": "year"
+          },
+          "description": {
+            "en": "A year"
+          },
           "usage": {},
           "domain": [
             {
@@ -2355,7 +2358,11 @@
           ],
           "cardinality": "1",
           "codelist_uri": "",
-          "rawTags": {}
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/year",
+            "label-en": "year",
+            "definition-en": "A year"
+          }
         }
       ]
     },
