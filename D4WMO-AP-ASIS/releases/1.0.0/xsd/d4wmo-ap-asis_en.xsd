@@ -25,6 +25,7 @@
   <xs:element name="Integer" type="IntegerType"/>
   <xs:element name="String" type="StringType"/>
   <xs:element name="Code" type="CodeType"/>
+  <xs:element name="Category" type="CategoryType"/>
   <xs:simpleType name="Literal">
     <xs:restriction base="xs:string"/>
   </xs:simpleType>
@@ -1370,6 +1371,55 @@
     <xs:attribute name="CodeRef" type="xs:IDREF">
       <xs:annotation>
         <xs:documentation xml:lang="en">Reference to Code ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="CategoryType">
+    <xs:sequence>
+      <xs:element name="displayInFrontFilters" type="xs:boolean" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">display in front filters</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="enabledBack" type="xs:boolean" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">enabled back</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="isFeaturedOnProfilesDw" type="xs:boolean" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">is featured on profiles DW</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="isFeaturedOnProfilesSearchDw" type="xs:boolean" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">is featured on profiles search DW</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="isProfilesFilterOnProgramDw" type="xs:boolean" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">is profiles filter on program DW</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="shortDescription" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A short description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="slug" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A slug</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="title" type="xs:string" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The preferred lexical label for a resource, in a given language.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="CategoryRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Category ID</xs:documentation>
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>

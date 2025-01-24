@@ -271,6 +271,7 @@ This specification uses the following prefixes to shorten the URIs for readabili
 			      <a href="#Ambition">Ambition</a> |
 			      <a href="#AnnualBudget">Annual Budget</a> |
 			      <a href="#Asset">Asset</a> |
+			      <a href="#Category">Category</a> |
 			      <a href="#ContentDynamicList">Content Dynamic List</a> |
 			      <a href="#File">File</a> |
 			      <a href="#PartnerAdditionalDescription">Partner Additional Description</a> |
@@ -649,7 +650,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#Code" data-placement="right">Code</a>
+                                            <a href="#Category" data-placement="right">Category</a>
                                         
                                     
                                 </td>
@@ -2157,6 +2158,8 @@ The main entities are those that form the core of the Application Profile.
 
 
 
+
+
    
         <section>
             <h3 id="Event">
@@ -2402,7 +2405,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#Code" data-placement="right">Code</a>
+                                            <a href="#Category" data-placement="right">Category</a>
                                         
                                     
                                 </td>
@@ -3668,7 +3671,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#Code" data-placement="right">Code</a>
+                                            <a href="#Category" data-placement="right">Category</a>
                                         
                                     
                                 </td>
@@ -4313,7 +4316,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#String" data-placement="right">String</a>
+                                            <a href="#Text" data-placement="right">Text</a>
                                         
                                     
                                 </td>
@@ -4674,7 +4677,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#Code" data-placement="right">Code</a>
+                                            <a href="#Category" data-placement="right">Category</a>
                                         
                                     
                                 </td>
@@ -5714,7 +5717,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#Code" data-placement="right">Code</a>
+                                            <a href="#Category" data-placement="right">Category</a>
                                         
                                     
                                 </td>
@@ -6508,7 +6511,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#Code" data-placement="right">Code</a>
+                                            <a href="#Category" data-placement="right">Category</a>
                                         
                                     
                                 </td>
@@ -9161,7 +9164,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#Code" data-placement="right">Code</a>
+                                            <a href="#Category" data-placement="right">Category</a>
                                         
                                     
                                 </td>
@@ -11011,6 +11014,448 @@ They are included in the Application Profile because they form the range of prop
 
    
         <section>
+            <h3 id="Category">
+                <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                   data-toggle="tooltip"
+                   data-content="http://www.w3.org/2004/02/skos/core#Concept"
+                   data-placement="right">Category</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20Category&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    A classification concept
+                </dd>
+                
+                
+                    <dt>
+                        Usage Note
+                    </dt>
+                    <dd>
+                        This class is used to indicate a category in Contentful.
+                    </dd>
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#Category.displayinfrontfilters">display in front filters</a>
+                            , <a href="#Category.enabledback">enabled back</a>
+                            , <a href="#Category.isfeaturedonprofilesDW">is featured on profiles DW</a>
+                            , <a href="#Category.isfeaturedonprofilessearchDW">is featured on profiles search DW</a>
+                            , <a href="#Category.isprofilesfilteronprogramDW">is profiles filter on program DW</a>
+                            , <a href="#Category.shortdescription">short description</a>
+                            , <a href="#Category.slug">slug</a>
+                            , <a href="#Category.title">title</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="Category.displayinfrontfilters"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/resource/model/displayInFrontFilters"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20display in front filters%20in%20Category&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Category.displayinfrontfilters" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/resource/model/displayInFrontFilters"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/resource/model/displayInFrontFilters"
+                                           data-placement="right">
+                                        display in front filters</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Boolean" data-placement="right">Boolean</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    display in front filters
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Category.enabledback"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/resource/model/enabledBack"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20enabled back%20in%20Category&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Category.enabledback" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/resource/model/enabledBack"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/resource/model/enabledBack"
+                                           data-placement="right">
+                                        enabled back</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Boolean" data-placement="right">Boolean</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    enabled back
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Category.isfeaturedonprofilesDW"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/resource/model/isFeaturedOnProfilesDW"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20is featured on profiles DW%20in%20Category&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Category.isfeaturedonprofilesDW" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/resource/model/isFeaturedOnProfilesDW"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/resource/model/isFeaturedOnProfilesDW"
+                                           data-placement="right">
+                                        is featured on profiles DW</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Boolean" data-placement="right">Boolean</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    is featured on profiles DW
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Category.isfeaturedonprofilessearchDW"
+                                typeof="rdfs:Property"
+                                resource="om/resource/model/isFeaturedOnProfilesSearchDW"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20is featured on profiles search DW%20in%20Category&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Category.isfeaturedonprofilessearchDW" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="om/resource/model/isFeaturedOnProfilesSearchDW"
+                                           data-toggle="tooltip"
+                                           data-content="om/resource/model/isFeaturedOnProfilesSearchDW"
+                                           data-placement="right">
+                                        is featured on profiles search DW</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Boolean" data-placement="right">Boolean</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    is featured on profiles search DW
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Category.isprofilesfilteronprogramDW"
+                                typeof="rdfs:Property"
+                                resource="om/resource/model/isProfilesFilterOnProgramDW"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20is profiles filter on program DW%20in%20Category&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Category.isprofilesfilteronprogramDW" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="om/resource/model/isProfilesFilterOnProgramDW"
+                                           data-toggle="tooltip"
+                                           data-content="om/resource/model/isProfilesFilterOnProgramDW"
+                                           data-placement="right">
+                                        is profiles filter on program DW</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Boolean" data-placement="right">Boolean</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    is profiles filter on program DW
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Category.shortdescription"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/2004/02/skos/core#definition"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20short description%20in%20Category&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Category.shortdescription" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/2004/02/skos/core#definition"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/2004/02/skos/core#definition"
+                                           data-placement="right">
+                                        short description</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    A short description
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Category.slug"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/identifier"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20slug%20in%20Category&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Category.slug" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/identifier"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/identifier"
+                                           data-placement="right">
+                                        slug</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    A slug
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Category.title"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/2004/02/skos/core#prefLabel"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20title%20in%20Category&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Category.title" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/2004/02/skos/core#prefLabel"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/2004/02/skos/core#prefLabel"
+                                           data-placement="right">
+                                        title</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    The preferred lexical label for a resource, in a given language.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    Labels should be in French or English.<br/>
+Labels should be at least in French.<br/>
+Labels should start with capital letters.<br/>
+Labels should not contain special characters such as & ( ) \ or /.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+</section>
+
+
+
+
+
+   
+        <section>
             <h3 id="ContentDynamicList">
                 <a href="http://data4wallonia.com/resource/model/ContentDynamicList"
                    data-toggle="tooltip"
@@ -12632,6 +13077,125 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Asset.title">title </a></td>
 								<td><div class="shorten">http://data4wallonia.com/resource/model/title</div></td>
+							</tr>
+						
+					
+				
+			</tr>
+		
+				
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#Category">Category</a></td>
+								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></td>
+								<td></td>
+								<td><a href="#Category.displayinfrontfilters">display in front filters </a></td>
+								<td><div class="shorten">http://data4wallonia.com/resource/model/displayInFrontFilters</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Category">Category</a></td>
+								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></td>
+								<td></td>
+								<td><a href="#Category.enabledback">enabled back </a></td>
+								<td><div class="shorten">http://data4wallonia.com/resource/model/enabledBack</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Category">Category</a></td>
+								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></td>
+								<td></td>
+								<td><a href="#Category.isfeaturedonprofilesDW">is featured on profiles DW </a></td>
+								<td><div class="shorten">http://data4wallonia.com/resource/model/isFeaturedOnProfilesDW</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Category">Category</a></td>
+								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></td>
+								<td></td>
+								<td><a href="#Category.isfeaturedonprofilessearchDW">is featured on profiles search DW </a></td>
+								<td><div class="shorten">om/resource/model/isFeaturedOnProfilesSearchDW</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Category">Category</a></td>
+								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></td>
+								<td></td>
+								<td><a href="#Category.isprofilesfilteronprogramDW">is profiles filter on program DW </a></td>
+								<td><div class="shorten">om/resource/model/isProfilesFilterOnProgramDW</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Category">Category</a></td>
+								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></td>
+								<td></td>
+								<td><a href="#Category.shortdescription">short description </a></td>
+								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#definition</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Category">Category</a></td>
+								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></td>
+								<td></td>
+								<td><a href="#Category.slug">slug </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/identifier</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Category">Category</a></td>
+								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></td>
+								<td></td>
+								<td><a href="#Category.title">title </a></td>
+								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#prefLabel</div></td>
 							</tr>
 						
 					

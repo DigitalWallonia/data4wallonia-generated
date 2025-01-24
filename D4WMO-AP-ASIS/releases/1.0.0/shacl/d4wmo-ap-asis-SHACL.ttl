@@ -1,3 +1,4 @@
+@prefix dc: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix shacl: <http://www.w3.org/ns/shacl#> .
@@ -28,7 +29,8 @@
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#gYearShape>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#IntegerShape>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#StringShape>,
-    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CodeShape> .
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CodeShape>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanProfileShape> a shacl:NodeShape;
   shacl:closed false;
@@ -1409,6 +1411,221 @@
   shacl:closed false;
   shacl:targetClass xsd:boolean .
 
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/04ec77bf2a9e41d21ab642e8ea297c71aed99873>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/05af6cdbdc74a09558a9efdf8330cc8d30125df6>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/0b3967e82f5e3ecc21406bf2d71ccf4120562405>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/10707c7aa9336b14a55a167dfa0d8965e1aa07f7>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/24a51f741f7dc54cc225d47abc4d51600b2eb0e4>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/28b297798c30b65afc7ce2274619e7a2aa834b70>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/2ec643bab756983638281789cf7f5369d3c5b84c>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/333a3a05a18e7c5a570cef01acac657dfe3c29dd>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/36e301d7cf972fb9d011a055a8c6f87202fcffd3>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/4689bbcb5c0ccb3599e2072a724b9c3f729cfde5>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/503a0b1abd6b8aabb536ac808f232a166bc97ccd>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/5e9f0eb4df2708da2cdcf60504ada3d3529395d5>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/6c19b2951c648a762141afd57c330417cbc64cde>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/81d148bca2514011b3dda62215f43b2d2c99219c>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/84392f78792af0e241b4781aa63a497169d9e211>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/9e04c3a07b87cc86e0dfdc8129db553541988318>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/a89ae712fdba62eca26618adf10fb8bfee67d716>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/b7707a7d12adfe39ed5fc9b262c71e85d9cf404b>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/bed0221f98cd0c1c9007f66d2b7a792ec947558b>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/cc0e54307877b11a7a94837bf2a52decbb624e2e>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/d5d74574f70f9a979535f3624608f88180dd0c97>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/d6a40f8cb0fbc90f5508b8c1875a047000eb6c5e>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/eb8f604b1b5c49d391e6e8ad3af8f04aec105cf1>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/eb96b0add9381820e74270226140f3abd1088c9d>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/f1a1c433a19bfaca2c3fd9cea584ddf10495be0f>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/fe7b296c52c447c543a74a3f37c1ad99bffa75dc>;
+  shacl:targetClass skos:Concept .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/04ec77bf2a9e41d21ab642e8ea297c71aed99873> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.isfeaturedonprofilesDW";
+  shacl:description "is featured on profiles DW"@en;
+  shacl:name "is featured on profiles DW"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/resource/model/isFeaturedOnProfilesDW> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/05af6cdbdc74a09558a9efdf8330cc8d30125df6> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.isprofilesfilteronprogramDW";
+  shacl:description "is profiles filter on program DW"@en;
+  shacl:maxCount 1;
+  shacl:name "is profiles filter on program DW"@en .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/0b3967e82f5e3ecc21406bf2d71ccf4120562405> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.slug";
+  shacl:description "A slug"@en;
+  shacl:minCount 1;
+  shacl:name "slug"@en;
+  shacl:path dc:identifier .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.shortdescription";
+  shacl:description "A short description"@en;
+  shacl:name "short description"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path skos:definition .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/10707c7aa9336b14a55a167dfa0d8965e1aa07f7> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.isfeaturedonprofilesDW";
+  shacl:datatype xsd:boolean;
+  shacl:description "is featured on profiles DW"@en;
+  shacl:name "is featured on profiles DW"@en;
+  shacl:path <http://data4wallonia.com/resource/model/isFeaturedOnProfilesDW> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/24a51f741f7dc54cc225d47abc4d51600b2eb0e4> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.shortdescription";
+  shacl:datatype rdf:langString;
+  shacl:description "A short description"@en;
+  shacl:name "short description"@en;
+  shacl:path skos:definition .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/28b297798c30b65afc7ce2274619e7a2aa834b70> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.slug";
+  shacl:datatype rdf:langString;
+  shacl:description "A slug"@en;
+  shacl:name "slug"@en;
+  shacl:path dc:identifier .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/2ec643bab756983638281789cf7f5369d3c5b84c> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.enabledback";
+  shacl:description "enabled back"@en;
+  shacl:name "enabled back"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/resource/model/enabledBack> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/333a3a05a18e7c5a570cef01acac657dfe3c29dd> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.displayinfrontfilters";
+  shacl:description "display in front filters"@en;
+  shacl:maxCount 1;
+  shacl:name "display in front filters"@en;
+  shacl:path <http://data4wallonia.com/resource/model/displayInFrontFilters> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/36e301d7cf972fb9d011a055a8c6f87202fcffd3> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.slug";
+  shacl:description "A slug"@en;
+  shacl:name "slug"@en;
+  shacl:path dc:identifier;
+  shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/4689bbcb5c0ccb3599e2072a724b9c3f729cfde5> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.isfeaturedonprofilesDW";
+  shacl:description "is featured on profiles DW"@en;
+  shacl:maxCount 1;
+  shacl:name "is featured on profiles DW"@en;
+  shacl:path <http://data4wallonia.com/resource/model/isFeaturedOnProfilesDW> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.title";
+  shacl:datatype rdf:langString;
+  shacl:description "The preferred lexical label for a resource, in a given language."@en;
+  shacl:name "title"@en;
+  shacl:path skos:prefLabel .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/503a0b1abd6b8aabb536ac808f232a166bc97ccd> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.shortdescription";
+  shacl:description "A short description"@en;
+  shacl:minCount 1;
+  shacl:name "short description"@en;
+  shacl:path skos:definition .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/5e9f0eb4df2708da2cdcf60504ada3d3529395d5> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.isfeaturedonprofilessearchDW";
+  shacl:description "is featured on profiles search DW"@en;
+  shacl:name "is featured on profiles search DW"@en;
+  shacl:nodeKind shacl:Literal .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/6c19b2951c648a762141afd57c330417cbc64cde> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.slug";
+  shacl:description "A slug"@en;
+  shacl:maxCount 1;
+  shacl:name "slug"@en;
+  shacl:path dc:identifier .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/81d148bca2514011b3dda62215f43b2d2c99219c> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.isfeaturedonprofilessearchDW";
+  shacl:description "is featured on profiles search DW"@en;
+  shacl:maxCount 1;
+  shacl:name "is featured on profiles search DW"@en .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/84392f78792af0e241b4781aa63a497169d9e211> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.displayinfrontfilters";
+  shacl:description "display in front filters"@en;
+  shacl:name "display in front filters"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/resource/model/displayInFrontFilters> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.title";
+  shacl:description "The preferred lexical label for a resource, in a given language."@en;
+  shacl:name "title"@en;
+  shacl:path skos:prefLabel;
+  shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/9e04c3a07b87cc86e0dfdc8129db553541988318> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.enabledback";
+  shacl:description "enabled back"@en;
+  shacl:maxCount 1;
+  shacl:name "enabled back"@en;
+  shacl:path <http://data4wallonia.com/resource/model/enabledBack> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/a89ae712fdba62eca26618adf10fb8bfee67d716> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.shortdescription";
+  shacl:description "A short description"@en;
+  shacl:maxCount 1;
+  shacl:name "short description"@en;
+  shacl:path skos:definition .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/b7707a7d12adfe39ed5fc9b262c71e85d9cf404b> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.slug";
+  shacl:description "A slug"@en;
+  shacl:name "slug"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path dc:identifier .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/bed0221f98cd0c1c9007f66d2b7a792ec947558b> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.enabledback";
+  shacl:description "enabled back"@en;
+  shacl:minCount 1;
+  shacl:name "enabled back"@en;
+  shacl:path <http://data4wallonia.com/resource/model/enabledBack> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.title";
+  shacl:description "The preferred lexical label for a resource, in a given language."@en;
+  shacl:maxCount 1;
+  shacl:name "title"@en;
+  shacl:path skos:prefLabel .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/cc0e54307877b11a7a94837bf2a52decbb624e2e> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.displayinfrontfilters";
+  shacl:datatype xsd:boolean;
+  shacl:description "display in front filters"@en;
+  shacl:name "display in front filters"@en;
+  shacl:path <http://data4wallonia.com/resource/model/displayInFrontFilters> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/d5d74574f70f9a979535f3624608f88180dd0c97> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.title";
+  shacl:description "The preferred lexical label for a resource, in a given language."@en;
+  shacl:name "title"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path skos:prefLabel .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/d6a40f8cb0fbc90f5508b8c1875a047000eb6c5e> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.isprofilesfilteronprogramDW";
+  shacl:datatype xsd:boolean;
+  shacl:description "is profiles filter on program DW"@en;
+  shacl:name "is profiles filter on program DW"@en .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/eb8f604b1b5c49d391e6e8ad3af8f04aec105cf1> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.isfeaturedonprofilessearchDW";
+  shacl:datatype xsd:boolean;
+  shacl:description "is featured on profiles search DW"@en;
+  shacl:name "is featured on profiles search DW"@en .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/eb96b0add9381820e74270226140f3abd1088c9d> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.enabledback";
+  shacl:datatype xsd:boolean;
+  shacl:description "enabled back"@en;
+  shacl:name "enabled back"@en;
+  shacl:path <http://data4wallonia.com/resource/model/enabledBack> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/f1a1c433a19bfaca2c3fd9cea584ddf10495be0f> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.shortdescription";
+  shacl:description "A short description"@en;
+  shacl:name "short description"@en;
+  shacl:path skos:definition;
+  shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.title";
+  shacl:description "The preferred lexical label for a resource, in a given language."@en;
+  shacl:minCount 1;
+  shacl:name "title"@en;
+  shacl:path skos:prefLabel .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CategoryShape/fe7b296c52c447c543a74a3f37c1ad99bffa75dc> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Category.isprofilesfilteronprogramDW";
+  shacl:description "is profiles filter on program DW"@en;
+  shacl:name "is profiles filter on program DW"@en;
+  shacl:nodeKind shacl:Literal .
+
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#CodeShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass skos:Concept .
@@ -2199,6 +2416,7 @@
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/31218bb7e1ed4d2f2a31867da1e894ae4103ad38>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/3422345fc09edc4f8de555de306271864623e694>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/366f658e6a2bca9aae3296a4db577bf0ee4f4da8>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/36e301d7cf972fb9d011a055a8c6f87202fcffd3>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/3757a6a977970747e3edf45a0b6c65aca4a35678>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/498d6285289a2f8c4baef54ed4e73c3240f7dd5d>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/4b8d3b16bd0c19a4fb596c3ed323e96f2bf32552>,
@@ -2324,7 +2542,7 @@
   shacl:path <http://data4wallonia.com/resource/model/additionalDescription> .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/28b297798c30b65afc7ce2274619e7a2aa834b70> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.slug";
-  shacl:datatype xsd:string;
+  shacl:datatype rdf:langString;
   shacl:description "A slug"@en;
   shacl:name "slug"@en;
   shacl:path <http://data4wallonia.com/resource/model/slug> .
@@ -2370,6 +2588,12 @@
   shacl:maxCount 1;
   shacl:name "landline"@en;
   shacl:path <http://data4wallonia.com/resource/model/landline> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/36e301d7cf972fb9d011a055a8c6f87202fcffd3> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.slug";
+  shacl:description "A slug"@en;
+  shacl:name "slug"@en;
+  shacl:path <http://data4wallonia.com/resource/model/slug>;
+  shacl:uniqueLang true .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/3757a6a977970747e3edf45a0b6c65aca4a35678> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.lastname";
   shacl:description "A last name"@en;
