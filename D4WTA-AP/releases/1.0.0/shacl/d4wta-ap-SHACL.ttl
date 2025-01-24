@@ -283,6 +283,7 @@
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/3b9cc6558bbf88b7fbaf0c2f3ab6ae7fb8c1b4b9>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/3c1ab2e1170c5050c8b7742e97810027ddc104b1>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/3e0a046965e7d33273185fa6f7a61e8fa6e7b9d0>,
+    <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/517df872c0d40c23da2371a4b362e0948d18746d>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/559dab14a90a8ddc0150dd1d09a443ecb37b90dd>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/5c5edf699f76380042d7b59ca4ed6efa00d48d0e>,
@@ -293,6 +294,7 @@
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/82568aed016ce4cb01dbf2e4b6cca1639034047f>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/860f4efa1f0580955d2891ff76eee1d7956b44b9>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/88b702e12401b15cdfbfb284e359477f384bce54>,
+    <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/9512099dadc4456834bcbf88af15fccc7554129c>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/9cb6232f5b441940af2ef6cf86c3736ae9c32fd9>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/a0745c853f0fa115aae85574c6262ca1102ab248>,
@@ -300,8 +302,10 @@
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/ab629bb6aed53f147c0664483836a8783880b7d5>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/b29602ee73fd17320945933fad94551e97634999>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/c0d17764e84e711728581fda7356a51e99a9040a>,
+    <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/c6fd64c9a41aa39534bde93eeaca8d8f121f28b4>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/cc690f56d4e515fa4e04625718e23c5dbeb6883d>,
+    <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/d5d74574f70f9a979535f3624608f88180dd0c97>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/d94c14fe5ee5bbb147447229b6bae0a2668fffd6>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/d95cbc3c12075d87aa0a5059de6ac8e4ff89a687>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/e2017f72421063cd9ff494011ec78f35f9632a4a>,
@@ -390,6 +394,12 @@
   shacl:name "definition"@en;
   shacl:path skos:definition .
 
+<https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.title";
+  shacl:datatype rdf:langString;
+  shacl:description "A name given to the resource."@en;
+  shacl:name "title"@en;
+  shacl:path dc:title .
+
 <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/517df872c0d40c23da2371a4b362e0948d18746d> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.replaces";
   shacl:description "A related resource that is supplanted, displaced, or superseded by the described resource."@en;
   shacl:name "replaces"@en;
@@ -450,6 +460,12 @@
   shacl:nodeKind shacl:Literal;
   shacl:path skos:altLabel .
 
+<https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.title";
+  shacl:description "A name given to the resource."@en;
+  shacl:name "title"@en;
+  shacl:path dc:title;
+  shacl:uniqueLang true .
+
 <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/9512099dadc4456834bcbf88af15fccc7554129c> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.versioninfo";
   shacl:description "This element contains a string giving information about this version such as RCS/CVS keywords."@en;
   shacl:maxCount 1;
@@ -492,6 +508,12 @@
   shacl:name "identifier"@en;
   shacl:path dc:identifier .
 
+<https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.title";
+  shacl:description "A name given to the resource."@en;
+  shacl:maxCount 1;
+  shacl:name "title"@en;
+  shacl:path dc:title .
+
 <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/c6fd64c9a41aa39534bde93eeaca8d8f121f28b4> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.isinscheme";
   shacl:description "Relates a resource (for example a concept) to a concept scheme in which it is included."@en;
   shacl:minCount 1;
@@ -503,6 +525,12 @@
   shacl:name "is replaced by"@en;
   shacl:nodeKind shacl:BlankNodeOrIRI;
   shacl:path dc:isReplacedBy .
+
+<https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/d5d74574f70f9a979535f3624608f88180dd0c97> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.title";
+  shacl:description "A name given to the resource."@en;
+  shacl:name "title"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path dc:title .
 
 <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/d94c14fe5ee5bbb147447229b6bae0a2668fffd6> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.alternativelabel";
   shacl:datatype rdf:langString;

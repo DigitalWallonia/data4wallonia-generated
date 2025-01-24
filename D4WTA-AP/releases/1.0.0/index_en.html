@@ -333,6 +333,7 @@ The main entities are those that form the core of the Application Profile.
                             , <a href="#Concept.preferredlabel">preferred label</a>
                             , <a href="#Concept.replaces">replaces</a>
                             , <a href="#Concept.status">status</a>
+                            , <a href="#Concept.title">title</a>
                             , <a href="#Concept.versioninfo">version info</a>
                             .
                     </dd>
@@ -795,6 +796,49 @@ Labels should not contain special characters such as & - ( ) \ or /.
                                 </td>
                                 <td property="skos:scopeNote">
                                     The recommended controlled vocabulary is the Publications Office <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/concept-status">Concept status</a> authority table.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Concept.title"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/title"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WTA-AP/issues/new?title=Issue%20for%20title%20in%20Concept&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/%23Concept.title" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/title"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/title"
+                                           data-placement="right">
+                                        title</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    A name given to the resource.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    This property is used as the "popularized title".
                                 </td>
 				<!--
                                 <td>
@@ -1659,6 +1703,10 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+					
+						
 					
 						
 					
@@ -1780,6 +1828,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Concept.status">status </a></td>
 								<td><div class="shorten">http://publications.europa.eu/ontology/euvoc#status</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Concept">Concept</a></td>
+								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></td>
+								<td></td>
+								<td><a href="#Concept.title">title </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/title</div></td>
 							</tr>
 						
 					

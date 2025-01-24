@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/b0cb78122218200ede425d723aa5eb2c428de7e5",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/b0cb78122218200ede425d723aa5eb2c428de7e5/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/51b23e538d079185fe1b995a1b0eea74122ca35d",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/51b23e538d079185fe1b995a1b0eea74122ca35d/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WTA-AP/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WTA-AP/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -208,6 +208,49 @@
             "label-en": "replaces",
             "uri": "http://purl.org/dc/terms/replaces",
             "definition-en": "NOTE$ea_notes=A related resource that is supplanted, displaced, or superseded by the described resource."
+          }
+        },
+        {
+          "uri": "http://purl.org/dc/terms/title",
+          "name": "title",
+          "sort": "title",
+          "label": {
+            "en": "title"
+          },
+          "description": {
+            "en": "A name given to the resource."
+          },
+          "usage": {
+            "en": "This property is used as the \"popularized title\"."
+          },
+          "domain": [
+            {
+              "EA-Name": "Concept",
+              "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://purl.org/dc/terms/title",
+            "definition-en": "A name given to the resource.",
+            "label-en": "title",
+            "usageNote-en": "This property is used as the \"popularized title\"."
           }
         },
         {
