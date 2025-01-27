@@ -258,1014 +258,6 @@
       "sh:targetClass": "http://data.europa.eu/m8g/ImageObject"
     },
     {
-      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/060e7b8260504ecdc352754bdc66692a030718d6",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.startdate",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
-          "sh:description": {
-            "en": "A start date"
-          },
-          "sh:name": {
-            "en": "start date"
-          },
-          "sh:path": "http://data4wallonia.com/model/startDate"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/0959a9f84b13ab85d20ac60b34d3367449afe3a6",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.profile",
-          "sh:description": {
-            "en": "A profile"
-          },
-          "sh:name": {
-            "en": "profile"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/profile"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/0b18116505f0acd5aff51cd05b5258f345a5b932",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.referencepost",
-          "sh:class": "http://data4wallonia.com/model/Post",
-          "sh:description": {
-            "en": "A reference post"
-          },
-          "sh:name": {
-            "en": "reference post"
-          },
-          "sh:path": "http://data4wallonia.com/model/referencePost"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/0c1b881efa39dad7c9d0546084ab41247f53d54e",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.wallonregionconventionnumber",
-          "sh:description": {
-            "en": "A wallon region convention number"
-          },
-          "sh:name": {
-            "en": "wallon region convention number"
-          },
-          "sh:path": "http://data4wallonia.com/model/wallonRegionConvetionNumber",
-          "sh:uniqueLang": "true"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.shortdescription",
-          "sh:description": {
-            "en": "A short description"
-          },
-          "sh:name": {
-            "en": "short description"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/shortDescription"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/0d7595d4ecbd2f3541cf14f04e64c8e98a2bd2d6",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.inoperation",
-          "sh:description": {
-            "en": "An operation"
-          },
-          "sh:name": {
-            "en": "in operation"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/inOperation"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/0eed59a4e718d6e053356aadb00b115ffdaf185a",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.numberofequipments",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#integer",
-          "sh:description": {
-            "en": "A number of equipments"
-          },
-          "sh:name": {
-            "en": "number of equipments"
-          },
-          "sh:path": "http://data4wallonia.com/model/numberOfEquipments"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/144c4f635c27258a37c86c5b543b4a5d670c81fe",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.additionaldescription",
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:description": {
-            "en": "An additional description"
-          },
-          "sh:name": {
-            "en": "additional description"
-          },
-          "sh:path": "http://data4wallonia.com/model/additionalDescription"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/172ff5f9ed4c96175f861b8e9fc44c2f21dd884b",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.numberofparticipants",
-          "sh:description": {
-            "en": "A number of participants"
-          },
-          "sh:name": {
-            "en": "number of participants"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/numberOfParticipants"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/22f59abbdf7adf36635cb45520b41bdb0bcbff86",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.image",
-          "sh:description": {
-            "en": "An image"
-          },
-          "sh:name": {
-            "en": "image"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/image"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/23b5b472efa0409d6024eb12536d8b7213081f6c",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.totalwalloonbudget",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#decimal",
-          "sh:description": {
-            "en": "A total wallong budget"
-          },
-          "sh:name": {
-            "en": "total walloon budget"
-          },
-          "sh:path": "http://data4wallonia.com/model/totalWaloonBudget"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/24a51f741f7dc54cc225d47abc4d51600b2eb0e4",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.shortdescription",
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:description": {
-            "en": "A short description"
-          },
-          "sh:name": {
-            "en": "short description"
-          },
-          "sh:path": "http://data4wallonia.com/model/shortDescription"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/27527cf24fa0c1ffa7a699f94e3ba85f78ccfeb3",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.contactperson",
-          "sh:class": "http://data4wallonia.com/model/QualifiedPerson",
-          "sh:description": {
-            "en": "A contact person"
-          },
-          "sh:name": {
-            "en": "contact person"
-          },
-          "sh:path": "http://data4wallonia.com/model/contactPerson"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/283a2eac2ede7261981ee11092c4a1c218c5c831",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.additionaldescription",
-          "sh:description": {
-            "en": "An additional description"
-          },
-          "sh:name": {
-            "en": "additional description"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/additionalDescription"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/28b297798c30b65afc7ce2274619e7a2aa834b70",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.slug",
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:description": {
-            "en": "A slug"
-          },
-          "sh:name": {
-            "en": "slug"
-          },
-          "sh:path": "http://data4wallonia.com/model/slug"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/2e066bf66b394579a77323c3e83fa058faaa6f73",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.fulltimeequivalent",
-          "sh:description": {
-            "en": "A full time equivalent"
-          },
-          "sh:name": {
-            "en": "full time equivalent"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/fullTimeEquivalent"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/2ff39ef4035ac575a18c6a0658b48d18d59c9527",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.projectholder",
-          "sh:class": "http://data4wallonia.com/model/QualifiedPerson",
-          "sh:description": {
-            "en": "A project holder"
-          },
-          "sh:name": {
-            "en": "project holder"
-          },
-          "sh:path": "http://data4wallonia.com/model/projectHolder"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/3184de947df118802e31338d45f71a11dfd3c903",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.annualbudgetallocation",
-          "sh:description": {
-            "en": "An annual budget allocation"
-          },
-          "sh:name": {
-            "en": "annual budget allocation"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/annualBudgetAllocation"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/322371a77364a50f049d46180f6192532eea26dc",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.type",
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:description": {
-            "en": "A type"
-          },
-          "sh:name": {
-            "en": "type"
-          },
-          "sh:path": "http://data4wallonia.com/model/type"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/362d6d536b6cb53b6b3864a353240b82435c84f5",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.marketingshortdescription",
-          "sh:description": {
-            "en": "A marketing short description"
-          },
-          "sh:name": {
-            "en": "marketing short description"
-          },
-          "sh:path": "http://data4wallonia.com/model/marketingShortDescription",
-          "sh:uniqueLang": "true"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/36e301d7cf972fb9d011a055a8c6f87202fcffd3",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.slug",
-          "sh:description": {
-            "en": "A slug"
-          },
-          "sh:name": {
-            "en": "slug"
-          },
-          "sh:path": "http://data4wallonia.com/model/slug",
-          "sh:uniqueLang": "true"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/3caf7cbe9b51500589810ef0363bdef6cac061c2",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.totalbudget",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#decimal",
-          "sh:description": {
-            "en": "A total budget"
-          },
-          "sh:name": {
-            "en": "total budget"
-          },
-          "sh:path": "http://data4wallonia.com/model/totalBudget"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/3ce057a94fe2dacdd70d79e7f3b2379c2c9cd495",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.annualbudgetallocation",
-          "sh:class": "http://data4wallonia.com/model/AnnualBudget",
-          "sh:description": {
-            "en": "An annual budget allocation"
-          },
-          "sh:name": {
-            "en": "annual budget allocation"
-          },
-          "sh:path": "http://data4wallonia.com/model/annualBudgetAllocation"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/3ff3e488467a4a73902ab602a38de1854f9eece2",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.referencepost",
-          "sh:description": {
-            "en": "A reference post"
-          },
-          "sh:name": {
-            "en": "reference post"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/referencePost"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/416c548eacf3d48eed03f3274538665bf84384c1",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.inoperation",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#boolean",
-          "sh:description": {
-            "en": "An operation"
-          },
-          "sh:name": {
-            "en": "in operation"
-          },
-          "sh:path": "http://data4wallonia.com/model/inOperation"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.title",
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:description": {
-            "en": "A title"
-          },
-          "sh:name": {
-            "en": "title"
-          },
-          "sh:path": "http://data4wallonia.com/model/title"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/4e0e9bb393f71a2b0944e1bfb297b3253d30835b",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.program",
-          "sh:class": "http://data4wallonia.com/model/Program",
-          "sh:description": {
-            "en": "A program"
-          },
-          "sh:name": {
-            "en": "program"
-          },
-          "sh:path": "http://data4wallonia.com/model/program"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/4f381639bb6e021939f65b4f41409d1edaeade9b",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.type",
-          "sh:description": {
-            "en": "A type"
-          },
-          "sh:name": {
-            "en": "type"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/type"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/531cd7ec5123506ee59bced26bfc6edc8e1589a5",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.category",
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
-          "sh:description": {
-            "en": "A classification"
-          },
-          "sh:name": {
-            "en": "category"
-          },
-          "sh:path": "http://data4wallonia.com/model/category"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/53da8ff9979f470b1eb09d131c63e56510afa9f9",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.fulltimeequivalent",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#integer",
-          "sh:description": {
-            "en": "A full time equivalent"
-          },
-          "sh:name": {
-            "en": "full time equivalent"
-          },
-          "sh:path": "http://data4wallonia.com/model/fullTimeEquivalent"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/5406f85139ec214133be81ae2d948dc44a516b2b",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.totalbudget",
-          "sh:description": {
-            "en": "A total budget"
-          },
-          "sh:name": {
-            "en": "total budget"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/totalBudget"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/54f09a2ec1df3a48b497c8c664277f160685ce04",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.clientsite",
-          "sh:description": {
-            "en": "A client site"
-          },
-          "sh:name": {
-            "en": "client site"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/clientSite"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/55d6068687ecc6a01740417860909af7fda15a15",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.numberofequipments",
-          "sh:description": {
-            "en": "A number of equipments"
-          },
-          "sh:name": {
-            "en": "number of equipments"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/numberOfEquipments"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/57253ff1ff2f84935613ab47b6ac4f8b26c09a3a",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.marketingtitle",
-          "sh:description": {
-            "en": "A marketing title"
-          },
-          "sh:name": {
-            "en": "marketing title"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/marketingTitle"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/589264bb3298ee0648c43f72d507bf44ec16a968",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.beneficiarie",
-          "sh:description": {
-            "en": "A beneficiarie"
-          },
-          "sh:name": {
-            "en": "beneficiarie"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/beneficiarie"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/58b2c7023399ca76fc0a29cc8c1d93941d7acad2",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.marketingshortdescription",
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:description": {
-            "en": "A marketing short description"
-          },
-          "sh:name": {
-            "en": "marketing short description"
-          },
-          "sh:path": "http://data4wallonia.com/model/marketingShortDescription"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/59fdfa4abfd9413716ffbdf9a27b9fdbf23d7772",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.startdate",
-          "sh:description": {
-            "en": "A start date"
-          },
-          "sh:name": {
-            "en": "start date"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/startDate"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/5de5e3fa7d25498318d38386224340b36e1d139a",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.clientsite",
-          "sh:class": "http://xmlns.com/foaf/0.1/Document",
-          "sh:description": {
-            "en": "A client site"
-          },
-          "sh:name": {
-            "en": "client site"
-          },
-          "sh:path": "http://data4wallonia.com/model/clientSite"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/5f3b7aa9f30f3e03b55cedf20f6d46989756e5d6",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.image",
-          "sh:class": "http://data.europa.eu/m8g/ImageObject",
-          "sh:description": {
-            "en": "An image"
-          },
-          "sh:name": {
-            "en": "image"
-          },
-          "sh:path": "http://data4wallonia.com/model/image"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/60b92260cd50ebf6979e8c6f7d6b0c4aa85e20ce",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.referenceactionplan",
-          "sh:class": "http://data4wallonia.com/model/ActionPlan",
-          "sh:description": {
-            "en": "A reference action plan"
-          },
-          "sh:name": {
-            "en": "reference action plan"
-          },
-          "sh:path": "http://data4wallonia.com/model/referenceActionPlan"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/619ccc0019fb36f501e0b4df0e714046ee465358",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.progressstatus",
-          "sh:description": {
-            "en": "A progress status"
-          },
-          "sh:name": {
-            "en": "progress status"
-          },
-          "sh:path": "http://data4wallonia.com/model/progressStatus",
-          "sh:uniqueLang": "true"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/655e8fa4564a8c89b7279eea9e49e9d2cf451540",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.participant",
-          "sh:class": "http://data4wallonia.com/model/QualifiedPerson",
-          "sh:description": {
-            "en": "A participant"
-          },
-          "sh:name": {
-            "en": "participant"
-          },
-          "sh:path": "http://data4wallonia.com/model/participant"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/6b146ac4710ccd6e3ed13a16d12254918d673c95",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.totalwalloonbudget",
-          "sh:description": {
-            "en": "A total wallong budget"
-          },
-          "sh:name": {
-            "en": "total walloon budget"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/totalWaloonBudget"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/6b32571e30ec3988c85e4f9ddd24131c069267ec",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.idforaccounting",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
-          "sh:description": {
-            "en": "An id for accounting"
-          },
-          "sh:name": {
-            "en": "id for accounting"
-          },
-          "sh:path": "http://data4wallonia.com/model/idForAccounting"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/6bd516ae7a5a221170291a676adb6205520b7c98",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.marketingshortdescription",
-          "sh:description": {
-            "en": "A marketing short description"
-          },
-          "sh:name": {
-            "en": "marketing short description"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/marketingShortDescription"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/6cf60d71e08aa713f762202149aae9b68c75a2b9",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.program",
-          "sh:description": {
-            "en": "A program"
-          },
-          "sh:name": {
-            "en": "program"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/program"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/7b20753c97a2cc582f8e3ec2f150ab7079226392",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.participant",
-          "sh:description": {
-            "en": "A participant"
-          },
-          "sh:name": {
-            "en": "participant"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/participant"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.contactpoint",
-          "sh:class": "http://data.europa.eu/m8g/ContactPoint",
-          "sh:description": {
-            "en": "A contact point"
-          },
-          "sh:name": {
-            "en": "contact point"
-          },
-          "sh:path": "http://data4wallonia.com/model/contactPoint"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/85ed7d870ff4bf3eff7ccf74720765768e337b68",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.referenceactionplan",
-          "sh:description": {
-            "en": "A reference action plan"
-          },
-          "sh:name": {
-            "en": "reference action plan"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/referenceActionPlan"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/8d597c54893285427116523e0b2df8f1c9086c1a",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.progressstatus",
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:description": {
-            "en": "A progress status"
-          },
-          "sh:name": {
-            "en": "progress status"
-          },
-          "sh:path": "http://data4wallonia.com/model/progressStatus"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/8fec84dc93b86b1731d4980162901595517225f5",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.type",
-          "sh:description": {
-            "en": "A type"
-          },
-          "sh:name": {
-            "en": "type"
-          },
-          "sh:path": "http://data4wallonia.com/model/type",
-          "sh:uniqueLang": "true"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.title",
-          "sh:description": {
-            "en": "A title"
-          },
-          "sh:name": {
-            "en": "title"
-          },
-          "sh:path": "http://data4wallonia.com/model/title",
-          "sh:uniqueLang": "true"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/95649a9e88881259504a6cf831dcee7a1cf40d9d",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.progressstatus",
-          "sh:description": {
-            "en": "A progress status"
-          },
-          "sh:name": {
-            "en": "progress status"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/progressStatus"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/95a3025e027568d94b08a2128e21b64324f3b577",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.leadermission",
-          "sh:description": {
-            "en": "A leader mission"
-          },
-          "sh:name": {
-            "en": "leader mission"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/leaderMission"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/95f4aaa4a286a4a0a7d2beae2249ead704e41712",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.relatedfile",
-          "sh:description": {
-            "en": "A related file"
-          },
-          "sh:name": {
-            "en": "related file"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/relatedFile"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/97c32d5a7a70d94e18fb5908b266f8f6f1f4de3a",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.beneficiarie",
-          "sh:class": "http://data4wallonia.com/model/ContentDynamicList",
-          "sh:description": {
-            "en": "A beneficiarie"
-          },
-          "sh:name": {
-            "en": "beneficiarie"
-          },
-          "sh:path": "http://data4wallonia.com/model/beneficiarie"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/9adf9f5890592909cf3e67021ae7ab4f895a7745",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.contactpoint",
-          "sh:description": {
-            "en": "A contact point"
-          },
-          "sh:name": {
-            "en": "contact point"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/contactPoint"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/9b85b7551e527e2de28fd30e7148a15dfb0bb7b8",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.referenceevent",
-          "sh:class": "http://data4wallonia.com/model/Event",
-          "sh:description": {
-            "en": "A reference event"
-          },
-          "sh:name": {
-            "en": "reference event"
-          },
-          "sh:path": "http://data4wallonia.com/model/referenceEvent"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/9c0542be7cd76e29c663f8068f85c5699596c510",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.marketingtitle",
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:description": {
-            "en": "A marketing title"
-          },
-          "sh:name": {
-            "en": "marketing title"
-          },
-          "sh:path": "http://data4wallonia.com/model/marketingTitle"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/9c9fb43848e33583960f6a48f713c2314250d2bf",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.ambition",
-          "sh:description": {
-            "en": "An ambition"
-          },
-          "sh:name": {
-            "en": "ambition"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/ambition"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/9da62f960751052cd82ec817f2d8f81c0d00c2b0",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.projectholder",
-          "sh:description": {
-            "en": "A project holder"
-          },
-          "sh:name": {
-            "en": "project holder"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/projectHolder"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/9f1d53fe2a94a609d479193c606e349a965dc068",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.profile",
-          "sh:class": "http://data4wallonia.com/model/ActionPlanProfile",
-          "sh:description": {
-            "en": "A profile"
-          },
-          "sh:name": {
-            "en": "profile"
-          },
-          "sh:path": "http://data4wallonia.com/model/profile"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/a3c35c47ee81e65c2076c6a9729569b90d8db49a",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.referenceevent",
-          "sh:description": {
-            "en": "A reference event"
-          },
-          "sh:name": {
-            "en": "reference event"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/referenceEvent"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/aab74fbe6d33f052b680a26672cdd4f428065ec6",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.contactperson",
-          "sh:description": {
-            "en": "A contact person"
-          },
-          "sh:name": {
-            "en": "contact person"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/contactPerson"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/ad3bf866e5d9398eeb011253f6f3354182b7b8e2",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.wallonregionconventionnumber",
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:description": {
-            "en": "A wallon region convention number"
-          },
-          "sh:name": {
-            "en": "wallon region convention number"
-          },
-          "sh:path": "http://data4wallonia.com/model/wallonRegionConvetionNumber"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/b3ec9cef84a6abb4641a90b07e001e6720a6f70b",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.relatedfile",
-          "sh:class": "http://data4wallonia.com/model/File",
-          "sh:description": {
-            "en": "A related file"
-          },
-          "sh:name": {
-            "en": "related file"
-          },
-          "sh:path": "http://data4wallonia.com/model/relatedFile"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/b7707a7d12adfe39ed5fc9b262c71e85d9cf404b",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.slug",
-          "sh:description": {
-            "en": "A slug"
-          },
-          "sh:name": {
-            "en": "slug"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/slug"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/c6d5b71529d976828957442492b1612d0909733f",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.leadermission",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
-          "sh:description": {
-            "en": "A leader mission"
-          },
-          "sh:name": {
-            "en": "leader mission"
-          },
-          "sh:path": "http://data4wallonia.com/model/leaderMission"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/c8eaf0c38781ff0fa07910caf7c7e306a1180456",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.marketingtitle",
-          "sh:description": {
-            "en": "A marketing title"
-          },
-          "sh:name": {
-            "en": "marketing title"
-          },
-          "sh:path": "http://data4wallonia.com/model/marketingTitle",
-          "sh:uniqueLang": "true"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/ca557d93c60335eb94cfb2cbade6564cfa29da81",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.enddate",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
-          "sh:description": {
-            "en": "A end date"
-          },
-          "sh:name": {
-            "en": "end date"
-          },
-          "sh:path": "http://data4wallonia.com/model/endDate"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/cbab4a23855795236ee7f0dc0dbf9b2767a00818",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.numberofparticipants",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#integer",
-          "sh:description": {
-            "en": "A number of participants"
-          },
-          "sh:name": {
-            "en": "number of participants"
-          },
-          "sh:path": "http://data4wallonia.com/model/numberOfParticipants"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/d0fb38d0f9a9d3c27428f45d6fba32fb516f65fb",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.idforaccounting",
-          "sh:description": {
-            "en": "An id for accounting"
-          },
-          "sh:name": {
-            "en": "id for accounting"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/idForAccounting"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/d3caaa33c755cbba7a5b587b896d3a92346cf679",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.occurence",
-          "sh:class": "http://data4wallonia.com/model/Event",
-          "sh:description": {
-            "en": "An occurence"
-          },
-          "sh:name": {
-            "en": "occurence"
-          },
-          "sh:path": "http://data4wallonia.com/model/occurence"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/d5d74574f70f9a979535f3624608f88180dd0c97",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.title",
-          "sh:description": {
-            "en": "A title"
-          },
-          "sh:name": {
-            "en": "title"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/title"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/d64842169d12609c45e8e2cfb07947a74875a257",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.ambition",
-          "sh:class": "http://data4wallonia.com/model/Ambition",
-          "sh:description": {
-            "en": "An ambition"
-          },
-          "sh:name": {
-            "en": "ambition"
-          },
-          "sh:path": "http://data4wallonia.com/model/ambition"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/de859f6cb226ad795bc5b0dfa9777c0f6352efaf",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.enddate",
-          "sh:description": {
-            "en": "A end date"
-          },
-          "sh:name": {
-            "en": "end date"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/endDate"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/e62470c45edca0efc6998d98276c5632abbfbe28",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.occurence",
-          "sh:description": {
-            "en": "An occurence"
-          },
-          "sh:name": {
-            "en": "occurence"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/occurence"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/e99658d8dce2abcab55b39649462e2f78d374962",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.additionaldescription",
-          "sh:description": {
-            "en": "An additional description"
-          },
-          "sh:name": {
-            "en": "additional description"
-          },
-          "sh:path": "http://data4wallonia.com/model/additionalDescription",
-          "sh:uniqueLang": "true"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/efb662b6a5fecb0ea8cfece427ae549b289b3598",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.wallonregionconventionnumber",
-          "sh:description": {
-            "en": "A wallon region convention number"
-          },
-          "sh:name": {
-            "en": "wallon region convention number"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/wallonRegionConvetionNumber"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/f1249f171bcbfa12f01658d50155b64beb61e40f",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.category",
-          "sh:description": {
-            "en": "A classification"
-          },
-          "sh:name": {
-            "en": "category"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/category"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/f1a1c433a19bfaca2c3fd9cea584ddf10495be0f",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.shortdescription",
-          "sh:description": {
-            "en": "A short description"
-          },
-          "sh:name": {
-            "en": "short description"
-          },
-          "sh:path": "http://data4wallonia.com/model/shortDescription",
-          "sh:uniqueLang": "true"
-        }
-      ],
-      "sh:targetClass": "http://data4wallonia.com/model/ActionPlan"
-    },
-    {
-      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "http://data4wallonia.com/model/ActionPlanProfile"
-    },
-    {
-      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "http://data4wallonia.com/model/Ambition"
-    },
-    {
-      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "http://data4wallonia.com/model/AnnualBudget"
-    },
-    {
-      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicListShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "http://data4wallonia.com/model/ContentDynamicList"
-    },
-    {
       "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -1453,7 +445,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/322371a77364a50f049d46180f6192532eea26dc",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Event.type",
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
           "sh:description": {
             "en": "A type"
           },
@@ -1473,6 +465,18 @@
           },
           "sh:path": "http://data4wallonia.com/model/slug",
           "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/3bf2eb83d98691f70dec4cad53a6df0a567a38a2",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Event.hasnextevent",
+          "sh:class": "http://data.europa.eu/m8g/PublicEvent",
+          "sh:description": {
+            "en": "The Public Event that comes after this one."
+          },
+          "sh:name": {
+            "en": "has next event"
+          },
+          "sh:path": "http://data.europa.eu/m8g/hasNextEvent"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/40a91be1880ce559dc3d8c19e6ae75e25adb8cf2",
@@ -1555,7 +559,7 @@
           "sh:name": {
             "en": "client site"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://data4wallonia.com/model/clientSite"
         },
         {
@@ -1585,7 +589,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/5de5e3fa7d25498318d38386224340b36e1d139a",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Event.clientsite",
-          "sh:class": "http://xmlns.com/foaf/0.1/Document",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
           "sh:description": {
             "en": "A client site"
           },
@@ -1593,6 +597,18 @@
             "en": "client site"
           },
           "sh:path": "http://data4wallonia.com/model/clientSite"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/68afc3670a223762319f7c50b588dda99a66556e",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Event.hasnextevent",
+          "sh:description": {
+            "en": "The Public Event that comes after this one."
+          },
+          "sh:name": {
+            "en": "has next event"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/hasNextEvent"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/6cf60d71e08aa713f762202149aae9b68c75a2b9",
@@ -1665,18 +681,6 @@
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data4wallonia.com/model/banner"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/8fec84dc93b86b1731d4980162901595517225f5",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Event.type",
-          "sh:description": {
-            "en": "A type"
-          },
-          "sh:name": {
-            "en": "type"
-          },
-          "sh:path": "http://data4wallonia.com/model/type",
-          "sh:uniqueLang": "true"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf",
@@ -1813,7 +817,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/d0de7c2a6b94abd5d5528c0af6186123704c5488",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Event.banner",
-          "sh:class": "http://data.europa.eu/m8g/ImageObject",
+          "sh:class": "http://data4wallonia.com/model/File",
           "sh:description": {
             "en": "A banner"
           },
@@ -1931,20 +935,1468 @@
           "sh:uniqueLang": "true"
         }
       ],
-      "sh:targetClass": "http://data4wallonia.com/model/Event"
+      "sh:targetClass": "http://data.europa.eu/m8g/PublicEvent"
     },
     {
-      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#FileShape",
+      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
-      "sh:property": [],
+      "sh:property": [
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/060e7b8260504ecdc352754bdc66692a030718d6",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.startdate",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "sh:description": {
+            "en": "A start date"
+          },
+          "sh:name": {
+            "en": "start date"
+          },
+          "sh:path": "http://data4wallonia.com/model/startDate"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/07ecd495daa80eadc8e5473c06caf44febb2debf",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.actionplanprofile",
+          "sh:class": "http://data4wallonia.com/resource/model/ActionPlanProfile",
+          "sh:description": {
+            "en": "An Action Plan Profile"
+          },
+          "sh:name": {
+            "en": "action plan profile"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/actionPlanProfile"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/0b18116505f0acd5aff51cd05b5258f345a5b932",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.referencepost",
+          "sh:class": "http://data4wallonia.com/model/Post",
+          "sh:description": {
+            "en": "A reference post"
+          },
+          "sh:name": {
+            "en": "reference post"
+          },
+          "sh:path": "http://data4wallonia.com/model/referencePost"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/0c1b881efa39dad7c9d0546084ab41247f53d54e",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.wallonregionconventionnumber",
+          "sh:description": {
+            "en": "A wallon region convention number"
+          },
+          "sh:name": {
+            "en": "wallon region convention number"
+          },
+          "sh:path": "http://data4wallonia.com/model/wallonRegionConvetionNumber",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.shortdescription",
+          "sh:description": {
+            "en": "A short description"
+          },
+          "sh:name": {
+            "en": "short description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/shortDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/0d7595d4ecbd2f3541cf14f04e64c8e98a2bd2d6",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.inoperation",
+          "sh:description": {
+            "en": "An operation"
+          },
+          "sh:name": {
+            "en": "in operation"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/inOperation"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/0eed59a4e718d6e053356aadb00b115ffdaf185a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.numberofequipments",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "sh:description": {
+            "en": "A number of equipments"
+          },
+          "sh:name": {
+            "en": "number of equipments"
+          },
+          "sh:path": "http://data4wallonia.com/model/numberOfEquipments"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/144c4f635c27258a37c86c5b543b4a5d670c81fe",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.additionaldescription",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "An additional description"
+          },
+          "sh:name": {
+            "en": "additional description"
+          },
+          "sh:path": "http://data4wallonia.com/model/additionalDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/172ff5f9ed4c96175f861b8e9fc44c2f21dd884b",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.numberofparticipants",
+          "sh:description": {
+            "en": "A number of participants"
+          },
+          "sh:name": {
+            "en": "number of participants"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/numberOfParticipants"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/22f59abbdf7adf36635cb45520b41bdb0bcbff86",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.image",
+          "sh:description": {
+            "en": "An image"
+          },
+          "sh:name": {
+            "en": "image"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/image"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/23b4e8ffd892ebeff57bb89330c84ad9d7bb876a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.actionplanprofile",
+          "sh:description": {
+            "en": "An Action Plan Profile"
+          },
+          "sh:name": {
+            "en": "action plan profile"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/resource/model/actionPlanProfile"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/23b5b472efa0409d6024eb12536d8b7213081f6c",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.totalwalloonbudget",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "sh:description": {
+            "en": "A total wallong budget"
+          },
+          "sh:name": {
+            "en": "total walloon budget"
+          },
+          "sh:path": "http://data4wallonia.com/model/totalWaloonBudget"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/24a51f741f7dc54cc225d47abc4d51600b2eb0e4",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.shortdescription",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A short description"
+          },
+          "sh:name": {
+            "en": "short description"
+          },
+          "sh:path": "http://data4wallonia.com/model/shortDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/27527cf24fa0c1ffa7a699f94e3ba85f78ccfeb3",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.contactperson",
+          "sh:class": "http://data4wallonia.com/model/QualifiedPerson",
+          "sh:description": {
+            "en": "A contact person"
+          },
+          "sh:name": {
+            "en": "contact person"
+          },
+          "sh:path": "http://data4wallonia.com/model/contactPerson"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/283a2eac2ede7261981ee11092c4a1c218c5c831",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.additionaldescription",
+          "sh:description": {
+            "en": "An additional description"
+          },
+          "sh:name": {
+            "en": "additional description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/additionalDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/28b297798c30b65afc7ce2274619e7a2aa834b70",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.slug",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A slug"
+          },
+          "sh:name": {
+            "en": "slug"
+          },
+          "sh:path": "http://data4wallonia.com/model/slug"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/2e066bf66b394579a77323c3e83fa058faaa6f73",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.fulltimeequivalent",
+          "sh:description": {
+            "en": "A full time equivalent"
+          },
+          "sh:name": {
+            "en": "full time equivalent"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/fullTimeEquivalent"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/2ff39ef4035ac575a18c6a0658b48d18d59c9527",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.projectholder",
+          "sh:class": "http://data4wallonia.com/model/QualifiedPerson",
+          "sh:description": {
+            "en": "A project holder"
+          },
+          "sh:name": {
+            "en": "project holder"
+          },
+          "sh:path": "http://data4wallonia.com/model/projectHolder"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/3184de947df118802e31338d45f71a11dfd3c903",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.annualbudgetallocation",
+          "sh:description": {
+            "en": "An annual budget allocation"
+          },
+          "sh:name": {
+            "en": "annual budget allocation"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/resource/model/annualBudgetAllocation"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/322371a77364a50f049d46180f6192532eea26dc",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.type",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "A type"
+          },
+          "sh:name": {
+            "en": "type"
+          },
+          "sh:path": "http://data4wallonia.com/model/type"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/362d6d536b6cb53b6b3864a353240b82435c84f5",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.marketingshortdescription",
+          "sh:description": {
+            "en": "A marketing short description"
+          },
+          "sh:name": {
+            "en": "marketing short description"
+          },
+          "sh:path": "http://data4wallonia.com/model/marketingShortDescription",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/36e301d7cf972fb9d011a055a8c6f87202fcffd3",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.slug",
+          "sh:description": {
+            "en": "A slug"
+          },
+          "sh:name": {
+            "en": "slug"
+          },
+          "sh:path": "http://data4wallonia.com/model/slug",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/3caf7cbe9b51500589810ef0363bdef6cac061c2",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.totalbudget",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "sh:description": {
+            "en": "A total budget"
+          },
+          "sh:name": {
+            "en": "total budget"
+          },
+          "sh:path": "http://data4wallonia.com/model/totalBudget"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/3ce057a94fe2dacdd70d79e7f3b2379c2c9cd495",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.annualbudgetallocation",
+          "sh:class": "http://data4wallonia.com/resource/model/AnnualBudget",
+          "sh:description": {
+            "en": "An annual budget allocation"
+          },
+          "sh:name": {
+            "en": "annual budget allocation"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/annualBudgetAllocation"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/3ff3e488467a4a73902ab602a38de1854f9eece2",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.referencepost",
+          "sh:description": {
+            "en": "A reference post"
+          },
+          "sh:name": {
+            "en": "reference post"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/referencePost"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/416c548eacf3d48eed03f3274538665bf84384c1",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.inoperation",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "sh:description": {
+            "en": "An operation"
+          },
+          "sh:name": {
+            "en": "in operation"
+          },
+          "sh:path": "http://data4wallonia.com/model/inOperation"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.title",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A title"
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:path": "http://data4wallonia.com/model/title"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/4e0e9bb393f71a2b0944e1bfb297b3253d30835b",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.program",
+          "sh:class": "http://data4wallonia.com/model/Program",
+          "sh:description": {
+            "en": "A program"
+          },
+          "sh:name": {
+            "en": "program"
+          },
+          "sh:path": "http://data4wallonia.com/model/program"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/4f381639bb6e021939f65b4f41409d1edaeade9b",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.type",
+          "sh:description": {
+            "en": "A type"
+          },
+          "sh:name": {
+            "en": "type"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/type"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/531cd7ec5123506ee59bced26bfc6edc8e1589a5",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.category",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "A classification"
+          },
+          "sh:name": {
+            "en": "category"
+          },
+          "sh:path": "http://data4wallonia.com/model/category"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/53da8ff9979f470b1eb09d131c63e56510afa9f9",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.fulltimeequivalent",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "sh:description": {
+            "en": "A full time equivalent"
+          },
+          "sh:name": {
+            "en": "full time equivalent"
+          },
+          "sh:path": "http://data4wallonia.com/model/fullTimeEquivalent"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/5406f85139ec214133be81ae2d948dc44a516b2b",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.totalbudget",
+          "sh:description": {
+            "en": "A total budget"
+          },
+          "sh:name": {
+            "en": "total budget"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/totalBudget"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/54f09a2ec1df3a48b497c8c664277f160685ce04",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.clientsite",
+          "sh:description": {
+            "en": "A client site"
+          },
+          "sh:name": {
+            "en": "client site"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/clientSite"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/55d6068687ecc6a01740417860909af7fda15a15",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.numberofequipments",
+          "sh:description": {
+            "en": "A number of equipments"
+          },
+          "sh:name": {
+            "en": "number of equipments"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/numberOfEquipments"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/57253ff1ff2f84935613ab47b6ac4f8b26c09a3a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.marketingtitle",
+          "sh:description": {
+            "en": "A marketing title"
+          },
+          "sh:name": {
+            "en": "marketing title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/marketingTitle"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/589264bb3298ee0648c43f72d507bf44ec16a968",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.beneficiarie",
+          "sh:description": {
+            "en": "A beneficiarie"
+          },
+          "sh:name": {
+            "en": "beneficiarie"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/beneficiarie"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/58b2c7023399ca76fc0a29cc8c1d93941d7acad2",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.marketingshortdescription",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A marketing short description"
+          },
+          "sh:name": {
+            "en": "marketing short description"
+          },
+          "sh:path": "http://data4wallonia.com/model/marketingShortDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/59fdfa4abfd9413716ffbdf9a27b9fdbf23d7772",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.startdate",
+          "sh:description": {
+            "en": "A start date"
+          },
+          "sh:name": {
+            "en": "start date"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/startDate"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/5de5e3fa7d25498318d38386224340b36e1d139a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.clientsite",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "A client site"
+          },
+          "sh:name": {
+            "en": "client site"
+          },
+          "sh:path": "http://data4wallonia.com/model/clientSite"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/5f3b7aa9f30f3e03b55cedf20f6d46989756e5d6",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.image",
+          "sh:class": "http://data4wallonia.com/model/File",
+          "sh:description": {
+            "en": "An image"
+          },
+          "sh:name": {
+            "en": "image"
+          },
+          "sh:path": "http://data4wallonia.com/model/image"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/60b92260cd50ebf6979e8c6f7d6b0c4aa85e20ce",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.referenceactionplan",
+          "sh:class": "http://data4wallonia.com/model/ActionPlan",
+          "sh:description": {
+            "en": "A reference action plan"
+          },
+          "sh:name": {
+            "en": "reference action plan"
+          },
+          "sh:path": "http://data4wallonia.com/model/referenceActionPlan"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/619ccc0019fb36f501e0b4df0e714046ee465358",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.progressstatus",
+          "sh:description": {
+            "en": "A progress status"
+          },
+          "sh:name": {
+            "en": "progress status"
+          },
+          "sh:path": "http://data4wallonia.com/model/progressStatus",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/655e8fa4564a8c89b7279eea9e49e9d2cf451540",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.participant",
+          "sh:class": "http://data4wallonia.com/model/QualifiedPerson",
+          "sh:description": {
+            "en": "A participant"
+          },
+          "sh:name": {
+            "en": "participant"
+          },
+          "sh:path": "http://data4wallonia.com/model/participant"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/6b146ac4710ccd6e3ed13a16d12254918d673c95",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.totalwalloonbudget",
+          "sh:description": {
+            "en": "A total wallong budget"
+          },
+          "sh:name": {
+            "en": "total walloon budget"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/totalWaloonBudget"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/6b32571e30ec3988c85e4f9ddd24131c069267ec",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.idforaccounting",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "An id for accounting"
+          },
+          "sh:name": {
+            "en": "id for accounting"
+          },
+          "sh:path": "http://data4wallonia.com/model/idForAccounting"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/6bd516ae7a5a221170291a676adb6205520b7c98",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.marketingshortdescription",
+          "sh:description": {
+            "en": "A marketing short description"
+          },
+          "sh:name": {
+            "en": "marketing short description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/marketingShortDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/6cf60d71e08aa713f762202149aae9b68c75a2b9",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.program",
+          "sh:description": {
+            "en": "A program"
+          },
+          "sh:name": {
+            "en": "program"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/program"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/7b20753c97a2cc582f8e3ec2f150ab7079226392",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.participant",
+          "sh:description": {
+            "en": "A participant"
+          },
+          "sh:name": {
+            "en": "participant"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/participant"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.contactpoint",
+          "sh:class": "http://data.europa.eu/m8g/ContactPoint",
+          "sh:description": {
+            "en": "A contact point"
+          },
+          "sh:name": {
+            "en": "contact point"
+          },
+          "sh:path": "http://data4wallonia.com/model/contactPoint"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/85ed7d870ff4bf3eff7ccf74720765768e337b68",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.referenceactionplan",
+          "sh:description": {
+            "en": "A reference action plan"
+          },
+          "sh:name": {
+            "en": "reference action plan"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/referenceActionPlan"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/8d597c54893285427116523e0b2df8f1c9086c1a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.progressstatus",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A progress status"
+          },
+          "sh:name": {
+            "en": "progress status"
+          },
+          "sh:path": "http://data4wallonia.com/model/progressStatus"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.title",
+          "sh:description": {
+            "en": "A title"
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:path": "http://data4wallonia.com/model/title",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/95649a9e88881259504a6cf831dcee7a1cf40d9d",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.progressstatus",
+          "sh:description": {
+            "en": "A progress status"
+          },
+          "sh:name": {
+            "en": "progress status"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/progressStatus"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/95a3025e027568d94b08a2128e21b64324f3b577",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.leadermission",
+          "sh:description": {
+            "en": "A leader mission"
+          },
+          "sh:name": {
+            "en": "leader mission"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/leaderMission"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/95f4aaa4a286a4a0a7d2beae2249ead704e41712",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.relatedfile",
+          "sh:description": {
+            "en": "A related file"
+          },
+          "sh:name": {
+            "en": "related file"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/relatedFile"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/97c32d5a7a70d94e18fb5908b266f8f6f1f4de3a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.beneficiarie",
+          "sh:class": "http://data4wallonia.com/model/ContentDynamicList",
+          "sh:description": {
+            "en": "A beneficiarie"
+          },
+          "sh:name": {
+            "en": "beneficiarie"
+          },
+          "sh:path": "http://data4wallonia.com/model/beneficiarie"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/9adf9f5890592909cf3e67021ae7ab4f895a7745",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.contactpoint",
+          "sh:description": {
+            "en": "A contact point"
+          },
+          "sh:name": {
+            "en": "contact point"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/contactPoint"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/9b85b7551e527e2de28fd30e7148a15dfb0bb7b8",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.referenceevent",
+          "sh:class": "http://data.europa.eu/m8g/PublicEvent",
+          "sh:description": {
+            "en": "A reference event"
+          },
+          "sh:name": {
+            "en": "reference event"
+          },
+          "sh:path": "http://data4wallonia.com/model/referenceEvent"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/9c0542be7cd76e29c663f8068f85c5699596c510",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.marketingtitle",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A marketing title"
+          },
+          "sh:name": {
+            "en": "marketing title"
+          },
+          "sh:path": "http://data4wallonia.com/model/marketingTitle"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/9c9fb43848e33583960f6a48f713c2314250d2bf",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.ambition",
+          "sh:description": {
+            "en": "An ambition"
+          },
+          "sh:name": {
+            "en": "ambition"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/ambition"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/9da62f960751052cd82ec817f2d8f81c0d00c2b0",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.projectholder",
+          "sh:description": {
+            "en": "A project holder"
+          },
+          "sh:name": {
+            "en": "project holder"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/projectHolder"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/a3c35c47ee81e65c2076c6a9729569b90d8db49a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.referenceevent",
+          "sh:description": {
+            "en": "A reference event"
+          },
+          "sh:name": {
+            "en": "reference event"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/referenceEvent"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/aab74fbe6d33f052b680a26672cdd4f428065ec6",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.contactperson",
+          "sh:description": {
+            "en": "A contact person"
+          },
+          "sh:name": {
+            "en": "contact person"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/contactPerson"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/ad3bf866e5d9398eeb011253f6f3354182b7b8e2",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.wallonregionconventionnumber",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A wallon region convention number"
+          },
+          "sh:name": {
+            "en": "wallon region convention number"
+          },
+          "sh:path": "http://data4wallonia.com/model/wallonRegionConvetionNumber"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/b3ec9cef84a6abb4641a90b07e001e6720a6f70b",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.relatedfile",
+          "sh:class": "http://data4wallonia.com/model/File",
+          "sh:description": {
+            "en": "A related file"
+          },
+          "sh:name": {
+            "en": "related file"
+          },
+          "sh:path": "http://data4wallonia.com/model/relatedFile"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/b7707a7d12adfe39ed5fc9b262c71e85d9cf404b",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.slug",
+          "sh:description": {
+            "en": "A slug"
+          },
+          "sh:name": {
+            "en": "slug"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/slug"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/c6d5b71529d976828957442492b1612d0909733f",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.leadermission",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "A leader mission"
+          },
+          "sh:name": {
+            "en": "leader mission"
+          },
+          "sh:path": "http://data4wallonia.com/model/leaderMission"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/c8eaf0c38781ff0fa07910caf7c7e306a1180456",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.marketingtitle",
+          "sh:description": {
+            "en": "A marketing title"
+          },
+          "sh:name": {
+            "en": "marketing title"
+          },
+          "sh:path": "http://data4wallonia.com/model/marketingTitle",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/ca557d93c60335eb94cfb2cbade6564cfa29da81",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.enddate",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "sh:description": {
+            "en": "A end date"
+          },
+          "sh:name": {
+            "en": "end date"
+          },
+          "sh:path": "http://data4wallonia.com/model/endDate"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/cbab4a23855795236ee7f0dc0dbf9b2767a00818",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.numberofparticipants",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "sh:description": {
+            "en": "A number of participants"
+          },
+          "sh:name": {
+            "en": "number of participants"
+          },
+          "sh:path": "http://data4wallonia.com/model/numberOfParticipants"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/d0fb38d0f9a9d3c27428f45d6fba32fb516f65fb",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.idforaccounting",
+          "sh:description": {
+            "en": "An id for accounting"
+          },
+          "sh:name": {
+            "en": "id for accounting"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/idForAccounting"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/d3caaa33c755cbba7a5b587b896d3a92346cf679",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.occurence",
+          "sh:class": "http://data.europa.eu/m8g/PublicEvent",
+          "sh:description": {
+            "en": "An occurence"
+          },
+          "sh:name": {
+            "en": "occurence"
+          },
+          "sh:path": "http://data4wallonia.com/model/occurence"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.title",
+          "sh:description": {
+            "en": "A title"
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/title"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/d64842169d12609c45e8e2cfb07947a74875a257",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.ambition",
+          "sh:class": "http://data4wallonia.com/model/Ambition",
+          "sh:description": {
+            "en": "An ambition"
+          },
+          "sh:name": {
+            "en": "ambition"
+          },
+          "sh:path": "http://data4wallonia.com/model/ambition"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/de859f6cb226ad795bc5b0dfa9777c0f6352efaf",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.enddate",
+          "sh:description": {
+            "en": "A end date"
+          },
+          "sh:name": {
+            "en": "end date"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/endDate"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/e62470c45edca0efc6998d98276c5632abbfbe28",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.occurence",
+          "sh:description": {
+            "en": "An occurence"
+          },
+          "sh:name": {
+            "en": "occurence"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/occurence"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/e99658d8dce2abcab55b39649462e2f78d374962",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.additionaldescription",
+          "sh:description": {
+            "en": "An additional description"
+          },
+          "sh:name": {
+            "en": "additional description"
+          },
+          "sh:path": "http://data4wallonia.com/model/additionalDescription",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/efb662b6a5fecb0ea8cfece427ae549b289b3598",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.wallonregionconventionnumber",
+          "sh:description": {
+            "en": "A wallon region convention number"
+          },
+          "sh:name": {
+            "en": "wallon region convention number"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/wallonRegionConvetionNumber"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/f1249f171bcbfa12f01658d50155b64beb61e40f",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.category",
+          "sh:description": {
+            "en": "A classification"
+          },
+          "sh:name": {
+            "en": "category"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/category"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/f1a1c433a19bfaca2c3fd9cea584ddf10495be0f",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.shortdescription",
+          "sh:description": {
+            "en": "A short description"
+          },
+          "sh:name": {
+            "en": "short description"
+          },
+          "sh:path": "http://data4wallonia.com/model/shortDescription",
+          "sh:uniqueLang": "true"
+        }
+      ],
+      "sh:targetClass": "http://data4wallonia.com/model/ActionPlan"
+    },
+    {
+      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/0a79940f6fb16193ff7a69f50e5ff7e807f2685d",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.logo",
+          "sh:description": {
+            "en": "A logo"
+          },
+          "sh:name": {
+            "en": "logo"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/resource/model/logo"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/0b18116505f0acd5aff51cd05b5258f345a5b932",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.referencepost",
+          "sh:class": "http://data4wallonia.com/model/Post",
+          "sh:name": {
+            "en": "reference post"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/referencePost"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.shortdescription",
+          "sh:description": {
+            "en": "A short description"
+          },
+          "sh:name": {
+            "en": "short description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/resource/model/shortDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/144c4f635c27258a37c86c5b543b4a5d670c81fe",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.additionaldescription",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "An additional description"
+          },
+          "sh:name": {
+            "en": "additional description"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/additionalDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/24a51f741f7dc54cc225d47abc4d51600b2eb0e4",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.shortdescription",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A short description"
+          },
+          "sh:name": {
+            "en": "short description"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/shortDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/283a2eac2ede7261981ee11092c4a1c218c5c831",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.additionaldescription",
+          "sh:description": {
+            "en": "An additional description"
+          },
+          "sh:name": {
+            "en": "additional description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/resource/model/additionalDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/28b297798c30b65afc7ce2274619e7a2aa834b70",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.slug",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A slug"
+          },
+          "sh:name": {
+            "en": "slug"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/slug"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/36e301d7cf972fb9d011a055a8c6f87202fcffd3",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.slug",
+          "sh:description": {
+            "en": "A slug"
+          },
+          "sh:name": {
+            "en": "slug"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/slug",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/3ff3e488467a4a73902ab602a38de1854f9eece2",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.referencepost",
+          "sh:name": {
+            "en": "reference post"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/resource/model/referencePost"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.title",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A title"
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/title"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/54f09a2ec1df3a48b497c8c664277f160685ce04",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.clientsite",
+          "sh:description": {
+            "en": "A client site"
+          },
+          "sh:name": {
+            "en": "client site"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/resource/model/clientSite"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/5de5e3fa7d25498318d38386224340b36e1d139a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.clientsite",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "A client site"
+          },
+          "sh:name": {
+            "en": "client site"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/clientSite"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.title",
+          "sh:description": {
+            "en": "A title"
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/title",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/b7707a7d12adfe39ed5fc9b262c71e85d9cf404b",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.slug",
+          "sh:description": {
+            "en": "A slug"
+          },
+          "sh:name": {
+            "en": "slug"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/resource/model/slug"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.title",
+          "sh:description": {
+            "en": "A title"
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/resource/model/title"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/dce5f0b9ce22d1c7f8f95163ed722d4236e5a3dc",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.logo",
+          "sh:class": "http://data4wallonia.com/model/File",
+          "sh:description": {
+            "en": "A logo"
+          },
+          "sh:name": {
+            "en": "logo"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/logo"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/e99658d8dce2abcab55b39649462e2f78d374962",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.additionaldescription",
+          "sh:description": {
+            "en": "An additional description"
+          },
+          "sh:name": {
+            "en": "additional description"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/additionalDescription",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/f1a1c433a19bfaca2c3fd9cea584ddf10495be0f",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.shortdescription",
+          "sh:description": {
+            "en": "A short description"
+          },
+          "sh:name": {
+            "en": "short description"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/shortDescription",
+          "sh:uniqueLang": "true"
+        }
+      ],
+      "sh:targetClass": "http://data4wallonia.com/model/Ambition"
+    },
+    {
+      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicListShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicListShape/32bf0add9a463f93cf62342a9001d814565fbd02",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicList.field",
+          "sh:description": {
+            "en": "A field"
+          },
+          "sh:name": {
+            "en": "field"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/resource/model/field"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicListShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicList.title",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A title"
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/title"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicListShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicList.title",
+          "sh:description": {
+            "en": "A title"
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/title",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicListShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicList.title",
+          "sh:description": {
+            "en": "A title"
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/resource/model/title"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicListShape/ef291d7302ba619df1b9a803993b9d2cacac7741",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicList.field",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "A field"
+          },
+          "sh:name": {
+            "en": "field"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/field"
+        }
+      ],
+      "sh:targetClass": "http://data4wallonia.com/model/ContentDynamicList"
+    },
+    {
+      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/35e7dc1df17d5abc599c99480e4943d69fdac9b4",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#File.file",
+          "sh:class": "http://data4wallonia.com/resource/model/File",
+          "sh:description": {
+            "en": "A file."
+          },
+          "sh:name": {
+            "en": "file"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/file"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#File.title",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A title."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/title"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/6c68774d3a68f1982cdabf63a73336ec325d4f26",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#File.file",
+          "sh:description": {
+            "en": "A file."
+          },
+          "sh:name": {
+            "en": "file"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/resource/model/file"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/6cae9880e515253132af1452a38a8a5827165149",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#File.description",
+          "sh:description": {
+            "en": "A description."
+          },
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/resource/model/description"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/768bb4171e00505886fe9a1e949b4cd71f0eb548",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#File.description",
+          "sh:description": {
+            "en": "A description."
+          },
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/description",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#File.title",
+          "sh:description": {
+            "en": "A title."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/title",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/d4d4f2399b8cf2f615ac658920373b714726bed0",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#File.description",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A description."
+          },
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/description"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#File.title",
+          "sh:description": {
+            "en": "A title."
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/resource/model/title"
+        }
+      ],
       "sh:targetClass": "http://data4wallonia.com/model/File"
     },
     {
       "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
-      "sh:property": [],
+      "sh:property": [
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/144c4f635c27258a37c86c5b543b4a5d670c81fe",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescription.additionaldescription",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "An additional description"
+          },
+          "sh:name": {
+            "en": "additional description"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/additionalDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/283a2eac2ede7261981ee11092c4a1c218c5c831",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescription.additionaldescription",
+          "sh:description": {
+            "en": "An additional description"
+          },
+          "sh:name": {
+            "en": "additional description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/resource/model/additionalDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescription.title",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A title"
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/title"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/54f09a2ec1df3a48b497c8c664277f160685ce04",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescription.clientsite",
+          "sh:description": {
+            "en": "A client site"
+          },
+          "sh:name": {
+            "en": "client site"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/resource/model/clientSite"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/5de5e3fa7d25498318d38386224340b36e1d139a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescription.clientsite",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "A client site"
+          },
+          "sh:name": {
+            "en": "client site"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/clientSite"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescription.title",
+          "sh:description": {
+            "en": "A title"
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/title",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/d5d74574f70f9a979535f3624608f88180dd0c97",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescription.title",
+          "sh:description": {
+            "en": "A title"
+          },
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/resource/model/title"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/e99658d8dce2abcab55b39649462e2f78d374962",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescription.additionaldescription",
+          "sh:description": {
+            "en": "An additional description"
+          },
+          "sh:name": {
+            "en": "additional description"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/additionalDescription",
+          "sh:uniqueLang": "true"
+        }
+      ],
       "sh:targetClass": "http://data4wallonia.com/model/PartnerAdditionalDescription"
     },
     {
@@ -2051,7 +2503,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/322371a77364a50f049d46180f6192532eea26dc",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Post.type",
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
           "sh:description": {
             "en": "A type"
           },
@@ -2135,7 +2587,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/4df106b30cad37c2544e5a40415bbda69de29765",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Post.relatedevent",
-          "sh:class": "http://data4wallonia.com/model/Event",
+          "sh:class": "http://data.europa.eu/m8g/PublicEvent",
           "sh:description": {
             "en": "A related event"
           },
@@ -2201,7 +2653,7 @@
           "sh:name": {
             "en": "client site"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://data4wallonia.com/model/clientSite"
         },
         {
@@ -2231,7 +2683,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/5de5e3fa7d25498318d38386224340b36e1d139a",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Post.clientsite",
-          "sh:class": "http://xmlns.com/foaf/0.1/Document",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
           "sh:description": {
             "en": "A client site"
           },
@@ -2323,18 +2775,6 @@
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data4wallonia.com/model/banner"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/8fec84dc93b86b1731d4980162901595517225f5",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Post.type",
-          "sh:description": {
-            "en": "A type"
-          },
-          "sh:name": {
-            "en": "type"
-          },
-          "sh:path": "http://data4wallonia.com/model/type",
-          "sh:uniqueLang": "true"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf",
@@ -2447,7 +2887,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/d0de7c2a6b94abd5d5528c0af6186123704c5488",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Post.banner",
-          "sh:class": "http://data.europa.eu/m8g/ImageObject",
+          "sh:class": "http://data4wallonia.com/model/File",
           "sh:description": {
             "en": "A banner"
           },
@@ -2659,7 +3099,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReviewShape/322371a77364a50f049d46180f6192532eea26dc",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReview.type",
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
           "sh:description": {
             "en": "A type"
           },
@@ -2749,13 +3189,13 @@
           "sh:name": {
             "en": "client site"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://data4wallonia.com/model/clientSite"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReviewShape/5de5e3fa7d25498318d38386224340b36e1d139a",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReview.clientsite",
-          "sh:class": "http://xmlns.com/foaf/0.1/Document",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
           "sh:description": {
             "en": "A client site"
           },
@@ -2799,18 +3239,6 @@
             "en": "quoted person"
           },
           "sh:path": "http://data4wallonia.com/model/quotedPerson"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReviewShape/8fec84dc93b86b1731d4980162901595517225f5",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReview.type",
-          "sh:description": {
-            "en": "A type"
-          },
-          "sh:name": {
-            "en": "type"
-          },
-          "sh:path": "http://data4wallonia.com/model/type",
-          "sh:uniqueLang": "true"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReviewShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf",
@@ -3213,7 +3641,7 @@
           "sh:name": {
             "en": "client site"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://data4wallonia.com/model/clientSite"
         },
         {
@@ -3243,7 +3671,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/5de5e3fa7d25498318d38386224340b36e1d139a",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.clientsite",
-          "sh:class": "http://xmlns.com/foaf/0.1/Document",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
           "sh:description": {
             "en": "A client site"
           },
@@ -3495,7 +3923,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/dce5f0b9ce22d1c7f8f95163ed722d4236e5a3dc",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.logo",
-          "sh:class": "http://data.europa.eu/m8g/ImageObject",
+          "sh:class": "http://data4wallonia.com/model/File",
           "sh:description": {
             "en": "A logo"
           },
@@ -3761,7 +4189,7 @@
           "sh:name": {
             "en": "client site"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://data4wallonia.com/model/clientSite"
         },
         {
@@ -3815,7 +4243,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProgramShape/5de5e3fa7d25498318d38386224340b36e1d139a",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Program.clientsite",
-          "sh:class": "http://xmlns.com/foaf/0.1/Document",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
           "sh:description": {
             "en": "A client site"
           },
@@ -4007,7 +4435,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProgramShape/be0272a9c84278a3023c9077f1df0705f9ab3b33",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Program.sticky",
-          "sh:class": "http://data4wallonia.com/model/Event",
+          "sh:class": "http://data4wallonia.com/model/Post",
           "sh:description": {
             "en": "A sticky"
           },
@@ -4019,7 +4447,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProgramShape/be0272a9c84278a3023c9077f1df0705f9ab3b33",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Program.sticky",
-          "sh:class": "http://data4wallonia.com/model/Post",
+          "sh:class": "http://data.europa.eu/m8g/PublicEvent",
           "sh:description": {
             "en": "A sticky"
           },
@@ -4091,7 +4519,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProgramShape/dce5f0b9ce22d1c7f8f95163ed722d4236e5a3dc",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Program.logo",
-          "sh:class": "http://data.europa.eu/m8g/ImageObject",
+          "sh:class": "http://data4wallonia.com/model/File",
           "sh:description": {
             "en": "A logo"
           },
@@ -4581,7 +5009,7 @@
           "sh:name": {
             "en": "client site"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://data4wallonia.com/model/clientSite"
         },
         {
@@ -4611,7 +5039,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ServicesPlaceShape/5de5e3fa7d25498318d38386224340b36e1d139a",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ServicesPlace.clientsite",
-          "sh:class": "http://xmlns.com/foaf/0.1/Document",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
           "sh:description": {
             "en": "A client site"
           },
@@ -4984,6 +5412,245 @@
       "sh:targetClass": "http://data4wallonia.com/model/ServicePlace"
     },
     {
+      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/0959a9f84b13ab85d20ac60b34d3367449afe3a6",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.profile",
+          "sh:description": {
+            "en": "A profile"
+          },
+          "sh:name": {
+            "en": "profile"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/resource/model/profile"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/245bc89a6c735f27fa08033a9a63ae5d5d7d5acd",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.internalname",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "An internal name pour une resource"
+          },
+          "sh:name": {
+            "en": "internal name"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/internalName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/612798b653f0ea7fdb6180ed1c159eb37a99f0d9",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.actionplan",
+          "sh:class": "http://data4wallonia.com/model/ActionPlan",
+          "sh:description": {
+            "en": "An action plan"
+          },
+          "sh:name": {
+            "en": "action plan"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/actionPlan"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/6f18697a32a9cd259b505949d4027ffe25067298",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.profile",
+          "sh:description": {
+            "en": "A profile"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "profile"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/profile"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/6ff7c4b74d5c62afb5f0d275e52e41f218dd2ff2",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.financialparticipation",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "sh:description": {
+            "en": "A financial participation"
+          },
+          "sh:name": {
+            "en": "financial participation"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/financialParticipation"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/849777e043926e32a234a6a2a8c4947228fb7bd8",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.financialparticipation",
+          "sh:description": {
+            "en": "A financial participation"
+          },
+          "sh:name": {
+            "en": "financial participation"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/resource/model/financialParticipation"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/86c8e6c6539e9acc3dd4792fcbe1b374cb03dd51",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.profile",
+          "sh:description": {
+            "en": "A profile"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "profile"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/profile"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/91fca326def04ee4ef7ed1efba4e59fae00d1faa",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.role",
+          "sh:description": {
+            "en": "A role"
+          },
+          "sh:name": {
+            "en": "role"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/resource/model/role"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/9f1d53fe2a94a609d479193c606e349a965dc068",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.profile",
+          "sh:class": "http://data4wallonia.com/model/Profile",
+          "sh:description": {
+            "en": "A profile"
+          },
+          "sh:name": {
+            "en": "profile"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/profile"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/b96c16ba737f9ae66cd79d59c5077c682d5051e0",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.internalname",
+          "sh:description": {
+            "en": "An internal name pour une resource"
+          },
+          "sh:name": {
+            "en": "internal name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/resource/model/internalName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/d086e397124308d23e5e4f11485c01f8347108de",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.actionplan",
+          "sh:description": {
+            "en": "An action plan"
+          },
+          "sh:name": {
+            "en": "action plan"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/resource/model/actionPlan"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/d2254b8259635ec986bc7c65b0227299193c6c16",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.role",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "A role"
+          },
+          "sh:name": {
+            "en": "role"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/role"
+        }
+      ],
+      "sh:targetClass": "http://data4wallonia.com/resource/model/ActionPlanProfile"
+    },
+    {
+      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape/245bc89a6c735f27fa08033a9a63ae5d5d7d5acd",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudget.internalname",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "An internal name"
+          },
+          "sh:name": {
+            "en": "internal name"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/internalName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape/6a760125524d19164d1415606a9cca49443c1aad",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudget.budget",
+          "sh:description": {
+            "en": "A budget"
+          },
+          "sh:name": {
+            "en": "budget"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/resource/model/budget"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape/8398884d92948c4d9efca51768ed67ed7cc7a697",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudget.year",
+          "sh:description": {
+            "en": "A year"
+          },
+          "sh:name": {
+            "en": "year"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/resource/model/year"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape/b96c16ba737f9ae66cd79d59c5077c682d5051e0",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudget.internalname",
+          "sh:description": {
+            "en": "An internal name"
+          },
+          "sh:name": {
+            "en": "internal name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/resource/model/internalName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape/e3717c2fefddb4671e654af86940cb193bfc1f0a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudget.year",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#gYear",
+          "sh:description": {
+            "en": "A year"
+          },
+          "sh:name": {
+            "en": "year"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/year"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape/e8e79eca21df1ad0ebd03cf24d5017b30882da13",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudget.budget",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "sh:description": {
+            "en": "A budget"
+          },
+          "sh:name": {
+            "en": "budget"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/budget"
+        }
+      ],
+      "sh:targetClass": "http://data4wallonia.com/resource/model/AnnualBudget"
+    },
+    {
+      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#FileShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://data4wallonia.com/resource/model/File"
+    },
+    {
       "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#TextShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -5031,6 +5698,13 @@
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.w3.org/2001/XMLSchema#double"
+    },
+    {
+      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#gYearShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2001/XMLSchema#gYear"
     },
     {
       "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#IntegerShape",
@@ -5488,6 +6162,18 @@
           "sh:path": "http://www.w3.org/ns/legal#companyStatus"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.contactpoint",
+          "sh:class": "http://data.europa.eu/m8g/ContactPoint",
+          "sh:description": {
+            "en": "A contact point"
+          },
+          "sh:name": {
+            "en": "contact point"
+          },
+          "sh:path": "http://data4wallonia.com/model/contactPoint"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/861b646e9943ec5feab060f4b60bf19d392436e8",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.num%C3%A9rod'%C3%A9tablissement",
           "sh:description": {
@@ -5558,6 +6244,18 @@
             "en": "legal entity activity"
           },
           "sh:path": "http://www.w3.org/ns/legal#companyActivity"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/9adf9f5890592909cf3e67021ae7ab4f895a7745",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.contactpoint",
+          "sh:description": {
+            "en": "A contact point"
+          },
+          "sh:name": {
+            "en": "contact point"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/contactPoint"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/a1b9903358f0b407b1a295c8497e8bbbb37671a1",
@@ -5928,6 +6626,18 @@
       "sh:closed": false,
       "sh:property": [
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/006de06965023999963c4307153479c8629991d9",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.locatorname",
+          "sh:description": {
+            "en": "Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building."
+          },
+          "sh:name": {
+            "en": "locator name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/locn#locatorName"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/03690748629ed1c685fc6a365780375be09bce76",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.administrativeunitlevel1",
           "sh:description": {
@@ -5998,6 +6708,30 @@
             "en": "continent"
           },
           "sh:path": "http://data4wallonia.com/model/continent"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/6af1ea11726c44c92d77222cd179ea9b20ea091f",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.locatorname",
+          "sh:description": {
+            "en": "Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "locator name"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#locatorName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/6f98d6d917a0e0b73d8614923f953e1ee2533918",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.locatorname",
+          "sh:description": {
+            "en": "Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building."
+          },
+          "sh:name": {
+            "en": "locator name"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#locatorName",
+          "sh:uniqueLang": "true"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/854a17171901a9c000eff34a7ccd77814891e3d5",
@@ -6106,6 +6840,30 @@
           },
           "sh:nodeKind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/locn#postCode"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/c7982f0ec4b5e8e3eaa2c72beb037d90a9bff2ce",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.locatorname",
+          "sh:description": {
+            "en": "Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "locator name"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#locatorName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/d75b5d4c221e6b0bf47c853c0be92d078c39e391",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.locatorname",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building."
+          },
+          "sh:name": {
+            "en": "locator name"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#locatorName"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/dee03556e405a14f1e410c960b43b8eee149efe7",
@@ -6234,7 +6992,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/05969b4af1b3f6570e1aec246d37985180de37c6",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.photo",
-          "sh:class": "http://data.europa.eu/m8g/ImageObject",
+          "sh:class": "http://data4wallonia.com/model/File",
           "sh:description": {
             "en": "An image taken with a camera of a resource."
           },
@@ -6242,6 +7000,18 @@
             "en": "photo"
           },
           "sh:path": "http://data4wallonia.com/model/photo"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/0bca29b53cf0b267986f4f08e18c838d789aebd5",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.honorificprefix",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "The honorific prefix of the name associated with the object"
+          },
+          "sh:name": {
+            "en": "honorific prefix"
+          },
+          "sh:path": "http://www.w3.org/2006/vcard/ns#honorific-prefix"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae",
@@ -6408,7 +7178,7 @@
           "sh:name": {
             "en": "client site"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://data4wallonia.com/model/clientSite"
         },
         {
@@ -6426,7 +7196,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/5de5e3fa7d25498318d38386224340b36e1d139a",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.clientsite",
-          "sh:class": "http://xmlns.com/foaf/0.1/Document",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
           "sh:description": {
             "en": "A client site"
           },
@@ -6532,6 +7302,18 @@
           "sh:path": "http://data4wallonia.com/model/displayRefusal"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/9dd35dd40d71d3ce975362deb2da8a1e7a7feaf7",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.honorificprefix",
+          "sh:description": {
+            "en": "The honorific prefix of the name associated with the object"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "honorific prefix"
+          },
+          "sh:path": "http://www.w3.org/2006/vcard/ns#honorific-prefix"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/b7707a7d12adfe39ed5fc9b262c71e85d9cf404b",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.slug",
           "sh:description": {
@@ -6542,6 +7324,18 @@
           },
           "sh:nodeKind": "sh:Literal",
           "sh:path": "http://data4wallonia.com/model/slug"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/b8734416de111b0927c17755934759617ae43454",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.honorificprefix",
+          "sh:description": {
+            "en": "The honorific prefix of the name associated with the object"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "honorific prefix"
+          },
+          "sh:path": "http://www.w3.org/2006/vcard/ns#honorific-prefix"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/ba21b6c4a9251ed67b6b3113dc1d857640fd4534",
@@ -6578,6 +7372,18 @@
           },
           "sh:path": "http://data4wallonia.com/model/expertise",
           "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/d552bf4d59cf4ffc2a248691ec4a3a118c99ba14",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.honorificprefix",
+          "sh:description": {
+            "en": "The honorific prefix of the name associated with the object"
+          },
+          "sh:name": {
+            "en": "honorific prefix"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/2006/vcard/ns#honorific-prefix"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/d64842169d12609c45e8e2cfb07947a74875a257",

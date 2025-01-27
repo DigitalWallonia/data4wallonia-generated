@@ -4,18 +4,17 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix shacl: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/> rdfs:member <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContactPointShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#CostShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ImageObjectShape>,
-    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape>,
-    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape>,
-    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape>,
-    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape>,
-    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicListShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape>,
-    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#FileShape>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicListShape>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReviewShape>,
@@ -23,6 +22,9 @@
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProgramShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ServicesPlaceShape>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#FileShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#TextShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LiteralShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#URIShape>,
@@ -30,6 +32,7 @@
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#DateTimeShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#DecimalShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#StringShape>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#gYearShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#IntegerShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#CodeShape>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#TemporalEntityShape>,
@@ -42,12 +45,96 @@
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:targetClass <http://data4wallonia.com/model/ActionPlanProfile> .
+  shacl:property <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/0959a9f84b13ab85d20ac60b34d3367449afe3a6>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/245bc89a6c735f27fa08033a9a63ae5d5d7d5acd>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/612798b653f0ea7fdb6180ed1c159eb37a99f0d9>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/6f18697a32a9cd259b505949d4027ffe25067298>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/6ff7c4b74d5c62afb5f0d275e52e41f218dd2ff2>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/849777e043926e32a234a6a2a8c4947228fb7bd8>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/86c8e6c6539e9acc3dd4792fcbe1b374cb03dd51>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/91fca326def04ee4ef7ed1efba4e59fae00d1faa>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/9f1d53fe2a94a609d479193c606e349a965dc068>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/b96c16ba737f9ae66cd79d59c5077c682d5051e0>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/d086e397124308d23e5e4f11485c01f8347108de>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/d2254b8259635ec986bc7c65b0227299193c6c16>;
+  shacl:targetClass <http://data4wallonia.com/resource/model/ActionPlanProfile> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/0959a9f84b13ab85d20ac60b34d3367449afe3a6> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.profile";
+  shacl:description "A profile"@en;
+  shacl:name "profile"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data4wallonia.com/resource/model/profile> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/245bc89a6c735f27fa08033a9a63ae5d5d7d5acd> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.internalname";
+  shacl:datatype xsd:string;
+  shacl:description "An internal name pour une resource"@en;
+  shacl:name "internal name"@en;
+  shacl:path <http://data4wallonia.com/resource/model/internalName> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/612798b653f0ea7fdb6180ed1c159eb37a99f0d9> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.actionplan";
+  shacl:class <http://data4wallonia.com/model/ActionPlan>;
+  shacl:description "An action plan"@en;
+  shacl:name "action plan"@en;
+  shacl:path <http://data4wallonia.com/resource/model/actionPlan> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/6f18697a32a9cd259b505949d4027ffe25067298> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.profile";
+  shacl:description "A profile"@en;
+  shacl:minCount 1;
+  shacl:name "profile"@en;
+  shacl:path <http://data4wallonia.com/resource/model/profile> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/6ff7c4b74d5c62afb5f0d275e52e41f218dd2ff2> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.financialparticipation";
+  shacl:datatype xsd:decimal;
+  shacl:description "A financial participation"@en;
+  shacl:name "financial participation"@en;
+  shacl:path <http://data4wallonia.com/resource/model/financialParticipation> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/849777e043926e32a234a6a2a8c4947228fb7bd8> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.financialparticipation";
+  shacl:description "A financial participation"@en;
+  shacl:name "financial participation"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/resource/model/financialParticipation> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/86c8e6c6539e9acc3dd4792fcbe1b374cb03dd51> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.profile";
+  shacl:description "A profile"@en;
+  shacl:maxCount 1;
+  shacl:name "profile"@en;
+  shacl:path <http://data4wallonia.com/resource/model/profile> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/91fca326def04ee4ef7ed1efba4e59fae00d1faa> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.role";
+  shacl:description "A role"@en;
+  shacl:name "role"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data4wallonia.com/resource/model/role> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/9f1d53fe2a94a609d479193c606e349a965dc068> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.profile";
+  shacl:class <http://data4wallonia.com/model/Profile>;
+  shacl:description "A profile"@en;
+  shacl:name "profile"@en;
+  shacl:path <http://data4wallonia.com/resource/model/profile> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/b96c16ba737f9ae66cd79d59c5077c682d5051e0> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.internalname";
+  shacl:description "An internal name pour une resource"@en;
+  shacl:name "internal name"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/resource/model/internalName> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/d086e397124308d23e5e4f11485c01f8347108de> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.actionplan";
+  shacl:description "An action plan"@en;
+  shacl:name "action plan"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data4wallonia.com/resource/model/actionPlan> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfileShape/d2254b8259635ec986bc7c65b0227299193c6c16> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanProfile.role";
+  shacl:class skos:Concept;
+  shacl:description "A role"@en;
+  shacl:name "role"@en;
+  shacl:path <http://data4wallonia.com/resource/model/role> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/060e7b8260504ecdc352754bdc66692a030718d6>,
-    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/0959a9f84b13ab85d20ac60b34d3367449afe3a6>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/07ecd495daa80eadc8e5473c06caf44febb2debf>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/0b18116505f0acd5aff51cd05b5258f345a5b932>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/0c1b881efa39dad7c9d0546084ab41247f53d54e>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae>,
@@ -56,6 +143,7 @@
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/144c4f635c27258a37c86c5b543b4a5d670c81fe>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/172ff5f9ed4c96175f861b8e9fc44c2f21dd884b>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/22f59abbdf7adf36635cb45520b41bdb0bcbff86>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/23b4e8ffd892ebeff57bb89330c84ad9d7bb876a>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/23b5b472efa0409d6024eb12536d8b7213081f6c>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/24a51f741f7dc54cc225d47abc4d51600b2eb0e4>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/27527cf24fa0c1ffa7a699f94e3ba85f78ccfeb3>,
@@ -96,7 +184,6 @@
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/85ed7d870ff4bf3eff7ccf74720765768e337b68>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/8d597c54893285427116523e0b2df8f1c9086c1a>,
-    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/8fec84dc93b86b1731d4980162901595517225f5>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/95649a9e88881259504a6cf831dcee7a1cf40d9d>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/95a3025e027568d94b08a2128e21b64324f3b577>,
@@ -107,7 +194,6 @@
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/9c0542be7cd76e29c663f8068f85c5699596c510>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/9c9fb43848e33583960f6a48f713c2314250d2bf>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/9da62f960751052cd82ec817f2d8f81c0d00c2b0>,
-    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/9f1d53fe2a94a609d479193c606e349a965dc068>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/a3c35c47ee81e65c2076c6a9729569b90d8db49a>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/aab74fbe6d33f052b680a26672cdd4f428065ec6>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/ad3bf866e5d9398eeb011253f6f3354182b7b8e2>,
@@ -135,11 +221,11 @@
   shacl:name "start date"@en;
   shacl:path <http://data4wallonia.com/model/startDate> .
 
-<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/0959a9f84b13ab85d20ac60b34d3367449afe3a6> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.profile";
-  shacl:description "A profile"@en;
-  shacl:name "profile"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path <http://data4wallonia.com/model/profile> .
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/07ecd495daa80eadc8e5473c06caf44febb2debf> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.actionplanprofile";
+  shacl:class <http://data4wallonia.com/resource/model/ActionPlanProfile>;
+  shacl:description "An Action Plan Profile"@en;
+  shacl:name "action plan profile"@en;
+  shacl:path <http://data4wallonia.com/resource/model/actionPlanProfile> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/0b18116505f0acd5aff51cd05b5258f345a5b932> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.referencepost";
   shacl:class <http://data4wallonia.com/model/Post>;
@@ -189,6 +275,12 @@
   shacl:nodeKind shacl:BlankNodeOrIRI;
   shacl:path <http://data4wallonia.com/model/image> .
 
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/23b4e8ffd892ebeff57bb89330c84ad9d7bb876a> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.actionplanprofile";
+  shacl:description "An Action Plan Profile"@en;
+  shacl:name "action plan profile"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data4wallonia.com/resource/model/actionPlanProfile> .
+
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/23b5b472efa0409d6024eb12536d8b7213081f6c> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.totalwalloonbudget";
   shacl:datatype xsd:decimal;
   shacl:description "A total wallong budget"@en;
@@ -235,10 +327,10 @@
   shacl:description "An annual budget allocation"@en;
   shacl:name "annual budget allocation"@en;
   shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path <http://data4wallonia.com/model/annualBudgetAllocation> .
+  shacl:path <http://data4wallonia.com/resource/model/annualBudgetAllocation> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.type";
-  shacl:datatype rdf:langString;
+  shacl:datatype xsd:string;
   shacl:description "A type"@en;
   shacl:name "type"@en;
   shacl:path <http://data4wallonia.com/model/type> .
@@ -262,10 +354,10 @@
   shacl:path <http://data4wallonia.com/model/totalBudget> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/3ce057a94fe2dacdd70d79e7f3b2379c2c9cd495> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.annualbudgetallocation";
-  shacl:class <http://data4wallonia.com/model/AnnualBudget>;
+  shacl:class <http://data4wallonia.com/resource/model/AnnualBudget>;
   shacl:description "An annual budget allocation"@en;
   shacl:name "annual budget allocation"@en;
-  shacl:path <http://data4wallonia.com/model/annualBudgetAllocation> .
+  shacl:path <http://data4wallonia.com/resource/model/annualBudgetAllocation> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/3ff3e488467a4a73902ab602a38de1854f9eece2> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.referencepost";
   shacl:description "A reference post"@en;
@@ -318,7 +410,7 @@
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/54f09a2ec1df3a48b497c8c664277f160685ce04> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.clientsite";
   shacl:description "A client site"@en;
   shacl:name "client site"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:nodeKind shacl:Literal;
   shacl:path <http://data4wallonia.com/model/clientSite> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/55d6068687ecc6a01740417860909af7fda15a15> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.numberofequipments";
@@ -352,13 +444,13 @@
   shacl:path <http://data4wallonia.com/model/startDate> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/5de5e3fa7d25498318d38386224340b36e1d139a> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.clientsite";
-  shacl:class foaf:Document;
+  shacl:datatype xsd:string;
   shacl:description "A client site"@en;
   shacl:name "client site"@en;
   shacl:path <http://data4wallonia.com/model/clientSite> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/5f3b7aa9f30f3e03b55cedf20f6d46989756e5d6> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.image";
-  shacl:class <http://data.europa.eu/m8g/ImageObject>;
+  shacl:class <http://data4wallonia.com/model/File>;
   shacl:description "An image"@en;
   shacl:name "image"@en;
   shacl:path <http://data4wallonia.com/model/image> .
@@ -429,12 +521,6 @@
   shacl:name "progress status"@en;
   shacl:path <http://data4wallonia.com/model/progressStatus> .
 
-<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/8fec84dc93b86b1731d4980162901595517225f5> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.type";
-  shacl:description "A type"@en;
-  shacl:name "type"@en;
-  shacl:path <http://data4wallonia.com/model/type>;
-  shacl:uniqueLang true .
-
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.title";
   shacl:description "A title"@en;
   shacl:name "title"@en;
@@ -472,7 +558,7 @@
   shacl:path <http://data4wallonia.com/model/contactPoint> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/9b85b7551e527e2de28fd30e7148a15dfb0bb7b8> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.referenceevent";
-  shacl:class <http://data4wallonia.com/model/Event>;
+  shacl:class <http://data.europa.eu/m8g/PublicEvent>;
   shacl:description "A reference event"@en;
   shacl:name "reference event"@en;
   shacl:path <http://data4wallonia.com/model/referenceEvent> .
@@ -494,12 +580,6 @@
   shacl:name "project holder"@en;
   shacl:nodeKind shacl:BlankNodeOrIRI;
   shacl:path <http://data4wallonia.com/model/projectHolder> .
-
-<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/9f1d53fe2a94a609d479193c606e349a965dc068> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.profile";
-  shacl:class <http://data4wallonia.com/model/ActionPlanProfile>;
-  shacl:description "A profile"@en;
-  shacl:name "profile"@en;
-  shacl:path <http://data4wallonia.com/model/profile> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/a3c35c47ee81e65c2076c6a9729569b90d8db49a> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.referenceevent";
   shacl:description "A reference event"@en;
@@ -562,7 +642,7 @@
   shacl:path <http://data4wallonia.com/model/idForAccounting> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/d3caaa33c755cbba7a5b587b896d3a92346cf679> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.occurence";
-  shacl:class <http://data4wallonia.com/model/Event>;
+  shacl:class <http://data.europa.eu/m8g/PublicEvent>;
   shacl:description "An occurence"@en;
   shacl:name "occurence"@en;
   shacl:path <http://data4wallonia.com/model/occurence> .
@@ -617,12 +697,15 @@
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:property <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/03690748629ed1c685fc6a365780375be09bce76>,
+  shacl:property <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/006de06965023999963c4307153479c8629991d9>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/03690748629ed1c685fc6a365780375be09bce76>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/256ffe464f9c7682e950f7853ef0b6060580435b>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/362b7c3261b1d5eb024e72e4868babc25ed0c7ce>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/3a0fcecd9e5f4e8deb4d102b9d072a4b067b773e>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/4da4b4f12446c7b90bf9929edcf3532f302c4423>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/680392244cac8d7a9e2fcde80cdcae359cbe01da>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/6af1ea11726c44c92d77222cd179ea9b20ea091f>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/6f98d6d917a0e0b73d8614923f953e1ee2533918>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/854a17171901a9c000eff34a7ccd77814891e3d5>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/9097b947404def8604330ec2fc5a0bd405128b35>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/98016263ed1fd03fc2066e397f3ae3343ce3bf79>,
@@ -632,10 +715,18 @@
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/ae24e9fc95115753cabe5ad6bd3c05b9751cd13c>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/b043886b69791f73bf40ebb4efc9f3cc2ffd245c>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/c0a2b78a80a731301e2f54d040ca9aa2c9b125b1>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/c7982f0ec4b5e8e3eaa2c72beb037d90a9bff2ce>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/d75b5d4c221e6b0bf47c853c0be92d078c39e391>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/dee03556e405a14f1e410c960b43b8eee149efe7>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/f33dc3af3f2671021b9bb90a6ef843bc8e479dda>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/f8d38c3580ea5d4e47ea9e1ad447a47ebe91d5fa>;
   shacl:targetClass <http://www.w3.org/ns/locn#Address> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/006de06965023999963c4307153479c8629991d9> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.locatorname";
+  shacl:description "Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building."@en;
+  shacl:name "locator name"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://www.w3.org/ns/locn#locatorName> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/03690748629ed1c685fc6a365780375be09bce76> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.administrativeunitlevel1";
   shacl:description "The name of the uppermost level of the address, almost always a country."@en;
@@ -672,6 +763,18 @@
   shacl:description "Name of the continent"@en;
   shacl:name "continent"@en;
   shacl:path <http://data4wallonia.com/model/continent> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/6af1ea11726c44c92d77222cd179ea9b20ea091f> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.locatorname";
+  shacl:description "Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building."@en;
+  shacl:minCount 1;
+  shacl:name "locator name"@en;
+  shacl:path <http://www.w3.org/ns/locn#locatorName> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/6f98d6d917a0e0b73d8614923f953e1ee2533918> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.locatorname";
+  shacl:description "Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building."@en;
+  shacl:name "locator name"@en;
+  shacl:path <http://www.w3.org/ns/locn#locatorName>;
+  shacl:uniqueLang true .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/854a17171901a9c000eff34a7ccd77814891e3d5> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.administrativeunitlevel2";
   shacl:datatype rdf:langString;
@@ -727,6 +830,18 @@
   shacl:nodeKind shacl:Literal;
   shacl:path <http://www.w3.org/ns/locn#postCode> .
 
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/c7982f0ec4b5e8e3eaa2c72beb037d90a9bff2ce> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.locatorname";
+  shacl:description "Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building."@en;
+  shacl:maxCount 1;
+  shacl:name "locator name"@en;
+  shacl:path <http://www.w3.org/ns/locn#locatorName> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/d75b5d4c221e6b0bf47c853c0be92d078c39e391> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.locatorname";
+  shacl:datatype rdf:langString;
+  shacl:description "Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building."@en;
+  shacl:name "locator name"@en;
+  shacl:path <http://www.w3.org/ns/locn#locatorName> .
+
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/dee03556e405a14f1e410c960b43b8eee149efe7> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.fulladdress";
   shacl:datatype rdf:langString;
   shacl:description "The complete address written as a string."@en;
@@ -747,11 +862,237 @@
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape> a shacl:NodeShape;
   shacl:closed false;
+  shacl:property <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/0a79940f6fb16193ff7a69f50e5ff7e807f2685d>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/0b18116505f0acd5aff51cd05b5258f345a5b932>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/144c4f635c27258a37c86c5b543b4a5d670c81fe>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/24a51f741f7dc54cc225d47abc4d51600b2eb0e4>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/283a2eac2ede7261981ee11092c4a1c218c5c831>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/28b297798c30b65afc7ce2274619e7a2aa834b70>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/36e301d7cf972fb9d011a055a8c6f87202fcffd3>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/3ff3e488467a4a73902ab602a38de1854f9eece2>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/54f09a2ec1df3a48b497c8c664277f160685ce04>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/5de5e3fa7d25498318d38386224340b36e1d139a>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/b7707a7d12adfe39ed5fc9b262c71e85d9cf404b>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/d5d74574f70f9a979535f3624608f88180dd0c97>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/dce5f0b9ce22d1c7f8f95163ed722d4236e5a3dc>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/e99658d8dce2abcab55b39649462e2f78d374962>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/f1a1c433a19bfaca2c3fd9cea584ddf10495be0f>;
   shacl:targetClass <http://data4wallonia.com/model/Ambition> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/0a79940f6fb16193ff7a69f50e5ff7e807f2685d> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.logo";
+  shacl:description "A logo"@en;
+  shacl:name "logo"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data4wallonia.com/resource/model/logo> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/0b18116505f0acd5aff51cd05b5258f345a5b932> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.referencepost";
+  shacl:class <http://data4wallonia.com/model/Post>;
+  shacl:name "reference post"@en;
+  shacl:path <http://data4wallonia.com/resource/model/referencePost> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.shortdescription";
+  shacl:description "A short description"@en;
+  shacl:name "short description"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/resource/model/shortDescription> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/144c4f635c27258a37c86c5b543b4a5d670c81fe> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.additionaldescription";
+  shacl:datatype rdf:langString;
+  shacl:description "An additional description"@en;
+  shacl:name "additional description"@en;
+  shacl:path <http://data4wallonia.com/resource/model/additionalDescription> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/24a51f741f7dc54cc225d47abc4d51600b2eb0e4> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.shortdescription";
+  shacl:datatype rdf:langString;
+  shacl:description "A short description"@en;
+  shacl:name "short description"@en;
+  shacl:path <http://data4wallonia.com/resource/model/shortDescription> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/283a2eac2ede7261981ee11092c4a1c218c5c831> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.additionaldescription";
+  shacl:description "An additional description"@en;
+  shacl:name "additional description"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/resource/model/additionalDescription> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/28b297798c30b65afc7ce2274619e7a2aa834b70> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.slug";
+  shacl:datatype rdf:langString;
+  shacl:description "A slug"@en;
+  shacl:name "slug"@en;
+  shacl:path <http://data4wallonia.com/resource/model/slug> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/36e301d7cf972fb9d011a055a8c6f87202fcffd3> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.slug";
+  shacl:description "A slug"@en;
+  shacl:name "slug"@en;
+  shacl:path <http://data4wallonia.com/resource/model/slug>;
+  shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/3ff3e488467a4a73902ab602a38de1854f9eece2> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.referencepost";
+  shacl:name "reference post"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data4wallonia.com/resource/model/referencePost> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.title";
+  shacl:datatype rdf:langString;
+  shacl:description "A title"@en;
+  shacl:name "title"@en;
+  shacl:path <http://data4wallonia.com/resource/model/title> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/54f09a2ec1df3a48b497c8c664277f160685ce04> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.clientsite";
+  shacl:description "A client site"@en;
+  shacl:name "client site"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/resource/model/clientSite> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/5de5e3fa7d25498318d38386224340b36e1d139a> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.clientsite";
+  shacl:datatype xsd:string;
+  shacl:description "A client site"@en;
+  shacl:name "client site"@en;
+  shacl:path <http://data4wallonia.com/resource/model/clientSite> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.title";
+  shacl:description "A title"@en;
+  shacl:name "title"@en;
+  shacl:path <http://data4wallonia.com/resource/model/title>;
+  shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/b7707a7d12adfe39ed5fc9b262c71e85d9cf404b> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.slug";
+  shacl:description "A slug"@en;
+  shacl:name "slug"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/resource/model/slug> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/d5d74574f70f9a979535f3624608f88180dd0c97> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.title";
+  shacl:description "A title"@en;
+  shacl:name "title"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/resource/model/title> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/dce5f0b9ce22d1c7f8f95163ed722d4236e5a3dc> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.logo";
+  shacl:class <http://data4wallonia.com/model/File>;
+  shacl:description "A logo"@en;
+  shacl:name "logo"@en;
+  shacl:path <http://data4wallonia.com/resource/model/logo> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/e99658d8dce2abcab55b39649462e2f78d374962> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.additionaldescription";
+  shacl:description "An additional description"@en;
+  shacl:name "additional description"@en;
+  shacl:path <http://data4wallonia.com/resource/model/additionalDescription>;
+  shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AmbitionShape/f1a1c433a19bfaca2c3fd9cea584ddf10495be0f> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Ambition.shortdescription";
+  shacl:description "A short description"@en;
+  shacl:name "short description"@en;
+  shacl:path <http://data4wallonia.com/resource/model/shortDescription>;
+  shacl:uniqueLang true .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:targetClass <http://data4wallonia.com/model/AnnualBudget> .
+  shacl:property <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape/245bc89a6c735f27fa08033a9a63ae5d5d7d5acd>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape/6a760125524d19164d1415606a9cca49443c1aad>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape/8398884d92948c4d9efca51768ed67ed7cc7a697>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape/b96c16ba737f9ae66cd79d59c5077c682d5051e0>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape/e3717c2fefddb4671e654af86940cb193bfc1f0a>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape/e8e79eca21df1ad0ebd03cf24d5017b30882da13>;
+  shacl:targetClass <http://data4wallonia.com/resource/model/AnnualBudget> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape/245bc89a6c735f27fa08033a9a63ae5d5d7d5acd> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudget.internalname";
+  shacl:datatype xsd:string;
+  shacl:description "An internal name"@en;
+  shacl:name "internal name"@en;
+  shacl:path <http://data4wallonia.com/resource/model/internalName> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape/6a760125524d19164d1415606a9cca49443c1aad> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudget.budget";
+  shacl:description "A budget"@en;
+  shacl:name "budget"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/resource/model/budget> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape/8398884d92948c4d9efca51768ed67ed7cc7a697> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudget.year";
+  shacl:description "A year"@en;
+  shacl:name "year"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/resource/model/year> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape/b96c16ba737f9ae66cd79d59c5077c682d5051e0> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudget.internalname";
+  shacl:description "An internal name"@en;
+  shacl:name "internal name"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/resource/model/internalName> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape/e3717c2fefddb4671e654af86940cb193bfc1f0a> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudget.year";
+  shacl:datatype xsd:gYear;
+  shacl:description "A year"@en;
+  shacl:name "year"@en;
+  shacl:path <http://data4wallonia.com/resource/model/year> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape/e8e79eca21df1ad0ebd03cf24d5017b30882da13> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudget.budget";
+  shacl:datatype xsd:integer;
+  shacl:description "A budget"@en;
+  shacl:name "budget"@en;
+  shacl:path <http://data4wallonia.com/resource/model/budget> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/35e7dc1df17d5abc599c99480e4943d69fdac9b4>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/6c68774d3a68f1982cdabf63a73336ec325d4f26>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/6cae9880e515253132af1452a38a8a5827165149>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/768bb4171e00505886fe9a1e949b4cd71f0eb548>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/d4d4f2399b8cf2f615ac658920373b714726bed0>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/d5d74574f70f9a979535f3624608f88180dd0c97>;
+  shacl:targetClass <http://data4wallonia.com/model/File> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/35e7dc1df17d5abc599c99480e4943d69fdac9b4> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#File.file";
+  shacl:class <http://data4wallonia.com/resource/model/File>;
+  shacl:description "A file."@en;
+  shacl:name "file"@en;
+  shacl:path <http://data4wallonia.com/resource/model/file> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#File.title";
+  shacl:datatype rdf:langString;
+  shacl:description "A title."@en;
+  shacl:name "title"@en;
+  shacl:path <http://data4wallonia.com/resource/model/title> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/6c68774d3a68f1982cdabf63a73336ec325d4f26> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#File.file";
+  shacl:description "A file."@en;
+  shacl:name "file"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data4wallonia.com/resource/model/file> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/6cae9880e515253132af1452a38a8a5827165149> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#File.description";
+  shacl:description "A description."@en;
+  shacl:name "description"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/resource/model/description> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/768bb4171e00505886fe9a1e949b4cd71f0eb548> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#File.description";
+  shacl:description "A description."@en;
+  shacl:name "description"@en;
+  shacl:path <http://data4wallonia.com/resource/model/description>;
+  shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#File.title";
+  shacl:description "A title."@en;
+  shacl:name "title"@en;
+  shacl:path <http://data4wallonia.com/resource/model/title>;
+  shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/d4d4f2399b8cf2f615ac658920373b714726bed0> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#File.description";
+  shacl:datatype rdf:langString;
+  shacl:description "A description."@en;
+  shacl:name "description"@en;
+  shacl:path <http://data4wallonia.com/resource/model/description> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AssetShape/d5d74574f70f9a979535f3624608f88180dd0c97> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#File.title";
+  shacl:description "A title."@en;
+  shacl:name "title"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/resource/model/title> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#BooleanShape> a shacl:NodeShape;
   shacl:closed false;
@@ -816,7 +1157,42 @@
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicListShape> a shacl:NodeShape;
   shacl:closed false;
+  shacl:property <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicListShape/32bf0add9a463f93cf62342a9001d814565fbd02>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicListShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicListShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicListShape/d5d74574f70f9a979535f3624608f88180dd0c97>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicListShape/ef291d7302ba619df1b9a803993b9d2cacac7741>;
   shacl:targetClass <http://data4wallonia.com/model/ContentDynamicList> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicListShape/32bf0add9a463f93cf62342a9001d814565fbd02> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicList.field";
+  shacl:description "A field"@en;
+  shacl:name "field"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/resource/model/field> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicListShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicList.title";
+  shacl:datatype rdf:langString;
+  shacl:description "A title"@en;
+  shacl:name "title"@en;
+  shacl:path <http://data4wallonia.com/resource/model/title> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicListShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicList.title";
+  shacl:description "A title"@en;
+  shacl:name "title"@en;
+  shacl:path <http://data4wallonia.com/resource/model/title>;
+  shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicListShape/d5d74574f70f9a979535f3624608f88180dd0c97> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicList.title";
+  shacl:description "A title"@en;
+  shacl:name "title"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/resource/model/title> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicListShape/ef291d7302ba619df1b9a803993b9d2cacac7741> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContentDynamicList.field";
+  shacl:datatype xsd:string;
+  shacl:description "A field"@en;
+  shacl:name "field"@en;
+  shacl:path <http://data4wallonia.com/resource/model/field> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#CostShape> a shacl:NodeShape;
   shacl:closed false;
@@ -881,6 +1257,7 @@
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/32160b943f7e2fb8be7e9b08752336fe9e0f66fe>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/322371a77364a50f049d46180f6192532eea26dc>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/36e301d7cf972fb9d011a055a8c6f87202fcffd3>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/3bf2eb83d98691f70dec4cad53a6df0a567a38a2>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/40a91be1880ce559dc3d8c19e6ae75e25adb8cf2>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/428ba21bbc03e2cccb270f3422a64ca2f92b4f90>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859>,
@@ -891,13 +1268,13 @@
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/588c76f267c935f8143e04d8f6c8883232a1ec81>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/59fdfa4abfd9413716ffbdf9a27b9fdbf23d7772>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/5de5e3fa7d25498318d38386224340b36e1d139a>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/68afc3670a223762319f7c50b588dda99a66556e>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/6cf60d71e08aa713f762202149aae9b68c75a2b9>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/711afffee7f093936f5ea677a6df7a70f07ba496>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/7deb1dc75cf0caf347b29a0931fba800aa8864c5>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/8349b059c47cfed17d6fd761521e8d36dd656c8d>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/88d191266733e8b5b02df9cd24d9f23ae0ca4bbb>,
-    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/8fec84dc93b86b1731d4980162901595517225f5>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/9adf9f5890592909cf3e67021ae7ab4f895a7745>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/9c9fb43848e33583960f6a48f713c2314250d2bf>,
@@ -919,7 +1296,7 @@
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/ea0d409b7b7a765c5571c3a0e65fadb5469d4fdd>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/f1249f171bcbfa12f01658d50155b64beb61e40f>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/f1a1c433a19bfaca2c3fd9cea584ddf10495be0f>;
-  shacl:targetClass <http://data4wallonia.com/model/Event> .
+  shacl:targetClass <http://data.europa.eu/m8g/PublicEvent> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/060e7b8260504ecdc352754bdc66692a030718d6> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Event.startdate";
   shacl:datatype xsd:dateTime;
@@ -1012,7 +1389,7 @@
   shacl:path <http://data4wallonia.com/model/partner> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Event.type";
-  shacl:datatype rdf:langString;
+  shacl:datatype xsd:string;
   shacl:description "A type"@en;
   shacl:name "type"@en;
   shacl:path <http://data4wallonia.com/model/type> .
@@ -1022,6 +1399,12 @@
   shacl:name "slug"@en;
   shacl:path <http://data4wallonia.com/model/slug>;
   shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/3bf2eb83d98691f70dec4cad53a6df0a567a38a2> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Event.hasnextevent";
+  shacl:class <http://data.europa.eu/m8g/PublicEvent>;
+  shacl:description "The Public Event that comes after this one."@en;
+  shacl:name "has next event"@en;
+  shacl:path <http://data.europa.eu/m8g/hasNextEvent> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/40a91be1880ce559dc3d8c19e6ae75e25adb8cf2> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Event.targetaudience";
   shacl:description "A target audience"@en;
@@ -1062,7 +1445,7 @@
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/54f09a2ec1df3a48b497c8c664277f160685ce04> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Event.clientsite";
   shacl:description "A client site"@en;
   shacl:name "client site"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:nodeKind shacl:Literal;
   shacl:path <http://data4wallonia.com/model/clientSite> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/588c76f267c935f8143e04d8f6c8883232a1ec81> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Event.speaker";
@@ -1078,10 +1461,16 @@
   shacl:path <http://data4wallonia.com/model/startDate> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/5de5e3fa7d25498318d38386224340b36e1d139a> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Event.clientsite";
-  shacl:class foaf:Document;
+  shacl:datatype xsd:string;
   shacl:description "A client site"@en;
   shacl:name "client site"@en;
   shacl:path <http://data4wallonia.com/model/clientSite> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/68afc3670a223762319f7c50b588dda99a66556e> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Event.hasnextevent";
+  shacl:description "The Public Event that comes after this one."@en;
+  shacl:name "has next event"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/m8g/hasNextEvent> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/6cf60d71e08aa713f762202149aae9b68c75a2b9> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Event.program";
   shacl:description "A program"@en;
@@ -1118,12 +1507,6 @@
   shacl:name "banner"@en;
   shacl:nodeKind shacl:BlankNodeOrIRI;
   shacl:path <http://data4wallonia.com/model/banner> .
-
-<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/8fec84dc93b86b1731d4980162901595517225f5> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Event.type";
-  shacl:description "A type"@en;
-  shacl:name "type"@en;
-  shacl:path <http://data4wallonia.com/model/type>;
-  shacl:uniqueLang true .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Event.title";
   shacl:description "A title"@en;
@@ -1192,7 +1575,7 @@
   shacl:path <http://data4wallonia.com/model/price> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#EventShape/d0de7c2a6b94abd5d5528c0af6186123704c5488> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Event.banner";
-  shacl:class <http://data.europa.eu/m8g/ImageObject>;
+  shacl:class <http://data4wallonia.com/model/File>;
   shacl:description "A banner"@en;
   shacl:name "banner"@en;
   shacl:path <http://data4wallonia.com/model/banner> .
@@ -1253,7 +1636,7 @@
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#FileShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:targetClass <http://data4wallonia.com/model/File> .
+  shacl:targetClass <http://data4wallonia.com/resource/model/File> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#GeometryShape> a shacl:NodeShape;
   shacl:closed false;
@@ -1387,12 +1770,14 @@
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/6b9f146f1aeab232cd8359f58b0b21a1193ee9ca>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/6d93e8312c558859fe6bf40cedc5a98bed22e268>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/718ae9bbdedff1ecd80c1da376fb9ece011dd216>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/861b646e9943ec5feab060f4b60bf19d392436e8>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/8662a1e162ca0ebe52611bf26791584c89c3de70>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/888031c72afb09e066acb8fcd23afb4db1e22f13>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/88c7bac3bf428d0c0abcd15cc9806d565ab6e8b4>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/8932cdc11dcea78a104fe961daef62e126485fc3>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/8a3a5192f0c9731ae0fb58d760e00cc2c338c8a9>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/9adf9f5890592909cf3e67021ae7ab4f895a7745>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/a1b9903358f0b407b1a295c8497e8bbbb37671a1>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/a7ebb1e7b4fef5c9ca1a50e2c6598de17b518e66>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/aab7e8ce8d8a6014be2c882e224b34488a2b6274>,
@@ -1563,6 +1948,12 @@
   shacl:name "legal entity status"@en;
   shacl:path <http://www.w3.org/ns/legal#companyStatus> .
 
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.contactpoint";
+  shacl:class <http://data.europa.eu/m8g/ContactPoint>;
+  shacl:description "A contact point"@en;
+  shacl:name "contact point"@en;
+  shacl:path <http://data4wallonia.com/model/contactPoint> .
+
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/861b646e9943ec5feab060f4b60bf19d392436e8> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.num%C3%A9rod'%C3%A9tablissement";
   shacl:description "Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization."@en;
   shacl:minCount 1;
@@ -1598,6 +1989,12 @@
   shacl:description "The area of work in which the Legal Entity is engaged."@en;
   shacl:name "legal entity activity"@en;
   shacl:path <http://www.w3.org/ns/legal#companyActivity> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/9adf9f5890592909cf3e67021ae7ab4f895a7745> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.contactpoint";
+  shacl:description "A contact point"@en;
+  shacl:name "contact point"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data4wallonia.com/model/contactPoint> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/a1b9903358f0b407b1a295c8497e8bbbb37671a1> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.market";
   shacl:description "Market of the entity"@en;
@@ -1785,13 +2182,70 @@
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape> a shacl:NodeShape;
   shacl:closed false;
+  shacl:property <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/144c4f635c27258a37c86c5b543b4a5d670c81fe>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/283a2eac2ede7261981ee11092c4a1c218c5c831>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/54f09a2ec1df3a48b497c8c664277f160685ce04>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/5de5e3fa7d25498318d38386224340b36e1d139a>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/d5d74574f70f9a979535f3624608f88180dd0c97>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/e99658d8dce2abcab55b39649462e2f78d374962>;
   shacl:targetClass <http://data4wallonia.com/model/PartnerAdditionalDescription> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/144c4f635c27258a37c86c5b543b4a5d670c81fe> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescription.additionaldescription";
+  shacl:datatype rdf:langString;
+  shacl:description "An additional description"@en;
+  shacl:name "additional description"@en;
+  shacl:path <http://data4wallonia.com/resource/model/additionalDescription> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/283a2eac2ede7261981ee11092c4a1c218c5c831> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescription.additionaldescription";
+  shacl:description "An additional description"@en;
+  shacl:name "additional description"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/resource/model/additionalDescription> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescription.title";
+  shacl:datatype rdf:langString;
+  shacl:description "A title"@en;
+  shacl:name "title"@en;
+  shacl:path <http://data4wallonia.com/resource/model/title> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/54f09a2ec1df3a48b497c8c664277f160685ce04> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescription.clientsite";
+  shacl:description "A client site"@en;
+  shacl:name "client site"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/resource/model/clientSite> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/5de5e3fa7d25498318d38386224340b36e1d139a> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescription.clientsite";
+  shacl:datatype xsd:string;
+  shacl:description "A client site"@en;
+  shacl:name "client site"@en;
+  shacl:path <http://data4wallonia.com/resource/model/clientSite> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescription.title";
+  shacl:description "A title"@en;
+  shacl:name "title"@en;
+  shacl:path <http://data4wallonia.com/resource/model/title>;
+  shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/d5d74574f70f9a979535f3624608f88180dd0c97> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescription.title";
+  shacl:description "A title"@en;
+  shacl:name "title"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/resource/model/title> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescriptionShape/e99658d8dce2abcab55b39649462e2f78d374962> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PartnerAdditionalDescription.additionaldescription";
+  shacl:description "An additional description"@en;
+  shacl:name "additional description"@en;
+  shacl:path <http://data4wallonia.com/resource/model/additionalDescription>;
+  shacl:uniqueLang true .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/02385f3b9d1535bd73391c90a820bc54033f8fc6>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/057c526359585180576296d560083ff3659a3db2>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/05969b4af1b3f6570e1aec246d37985180de37c6>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/0bca29b53cf0b267986f4f08e18c838d789aebd5>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/0fdca125b883c133fa07f7f2da282872bf817f37>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/144c4f635c27258a37c86c5b543b4a5d670c81fe>,
@@ -1816,10 +2270,13 @@
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/9adf9f5890592909cf3e67021ae7ab4f895a7745>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/9c9fb43848e33583960f6a48f713c2314250d2bf>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/9da1283953a94ba37e328c2172f20763ba261010>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/9dd35dd40d71d3ce975362deb2da8a1e7a7feaf7>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/b7707a7d12adfe39ed5fc9b262c71e85d9cf404b>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/b8734416de111b0927c17755934759617ae43454>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/ba21b6c4a9251ed67b6b3113dc1d857640fd4534>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/c56ed5a233a70e9c4a6338f07a2aee5cfc6bacbf>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/d47259ca8e3ff6a5ee1ee83872a83c4c2b42bf1e>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/d552bf4d59cf4ffc2a248691ec4a3a118c99ba14>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/d64842169d12609c45e8e2cfb07947a74875a257>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/db878f1cb93930f64561d0504123c66feacfad5a>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/e99658d8dce2abcab55b39649462e2f78d374962>,
@@ -1843,10 +2300,16 @@
   shacl:path <http://data4wallonia.com/model/involvedIn> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/05969b4af1b3f6570e1aec246d37985180de37c6> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.photo";
-  shacl:class <http://data.europa.eu/m8g/ImageObject>;
+  shacl:class <http://data4wallonia.com/model/File>;
   shacl:description "An image taken with a camera of a resource."@en;
   shacl:name "photo"@en;
   shacl:path <http://data4wallonia.com/model/photo> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/0bca29b53cf0b267986f4f08e18c838d789aebd5> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.honorificprefix";
+  shacl:datatype xsd:string;
+  shacl:description "The honorific prefix of the name associated with the object"@en;
+  shacl:name "honorific prefix"@en;
+  shacl:path vcard:honorific-prefix .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.shortdescription";
   shacl:description "Brief description of the person."@en;
@@ -1929,7 +2392,7 @@
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/54f09a2ec1df3a48b497c8c664277f160685ce04> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.clientsite";
   shacl:description "A client site"@en;
   shacl:name "client site"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:nodeKind shacl:Literal;
   shacl:path <http://data4wallonia.com/model/clientSite> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/5de4ef5193a558e17a34633888421d09b957d267> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.address";
@@ -1939,7 +2402,7 @@
   shacl:path <http://www.w3.org/ns/locn#address> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/5de5e3fa7d25498318d38386224340b36e1d139a> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.clientsite";
-  shacl:class foaf:Document;
+  shacl:datatype xsd:string;
   shacl:description "A client site"@en;
   shacl:name "client site"@en;
   shacl:path <http://data4wallonia.com/model/clientSite> .
@@ -1992,11 +2455,23 @@
   shacl:nodeKind shacl:Literal;
   shacl:path <http://data4wallonia.com/model/displayRefusal> .
 
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/9dd35dd40d71d3ce975362deb2da8a1e7a7feaf7> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.honorificprefix";
+  shacl:description "The honorific prefix of the name associated with the object"@en;
+  shacl:maxCount 1;
+  shacl:name "honorific prefix"@en;
+  shacl:path vcard:honorific-prefix .
+
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/b7707a7d12adfe39ed5fc9b262c71e85d9cf404b> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.slug";
   shacl:description "A slug"@en;
   shacl:name "slug"@en;
   shacl:nodeKind shacl:Literal;
   shacl:path <http://data4wallonia.com/model/slug> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/b8734416de111b0927c17755934759617ae43454> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.honorificprefix";
+  shacl:description "The honorific prefix of the name associated with the object"@en;
+  shacl:minCount 1;
+  shacl:name "honorific prefix"@en;
+  shacl:path vcard:honorific-prefix .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/ba21b6c4a9251ed67b6b3113dc1d857640fd4534> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.givenname";
   shacl:description "The name(s) that identify the Person within a family with a common surname."@en;
@@ -2015,6 +2490,12 @@
   shacl:name "expertise"@en;
   shacl:path <http://data4wallonia.com/model/expertise>;
   shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/d552bf4d59cf4ffc2a248691ec4a3a118c99ba14> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.honorificprefix";
+  shacl:description "The honorific prefix of the name associated with the object"@en;
+  shacl:name "honorific prefix"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path vcard:honorific-prefix .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/d64842169d12609c45e8e2cfb07947a74875a257> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.ambition";
   shacl:class <http://data4wallonia.com/model/Ambition>;
@@ -2097,7 +2578,6 @@
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/75f535f44aabdb5a2850315a863258c76cf3e77d>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/784dd0bcd10dfbc24cb14f0b0fac076414036af6>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/88d191266733e8b5b02df9cd24d9f23ae0ca4bbb>,
-    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/8fec84dc93b86b1731d4980162901595517225f5>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/95f4aaa4a286a4a0a7d2beae2249ead704e41712>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/98d0ffd020052ce3d9aabe1551ee575f6f3f23a0>,
@@ -2169,7 +2649,7 @@
   shacl:path <http://data4wallonia.com/model/pdfFile> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Post.type";
-  shacl:datatype rdf:langString;
+  shacl:datatype xsd:string;
   shacl:description "A type"@en;
   shacl:name "type"@en;
   shacl:path <http://data4wallonia.com/model/type> .
@@ -2211,7 +2691,7 @@
   shacl:path <http://data4wallonia.com/model/relatedExternalLinks> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/4df106b30cad37c2544e5a40415bbda69de29765> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Post.relatedevent";
-  shacl:class <http://data4wallonia.com/model/Event>;
+  shacl:class <http://data.europa.eu/m8g/PublicEvent>;
   shacl:description "A related event"@en;
   shacl:name "related event"@en;
   shacl:path <http://data4wallonia.com/model/relatedEvent> .
@@ -2242,7 +2722,7 @@
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/54f09a2ec1df3a48b497c8c664277f160685ce04> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Post.clientsite";
   shacl:description "A client site"@en;
   shacl:name "client site"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:nodeKind shacl:Literal;
   shacl:path <http://data4wallonia.com/model/clientSite> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/581d156a2c19be11e5b92c02d2dee33ff3537724> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Post.estimatedreadingtime";
@@ -2258,7 +2738,7 @@
   shacl:path <http://data4wallonia.com/model/content> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/5de5e3fa7d25498318d38386224340b36e1d139a> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Post.clientsite";
-  shacl:class foaf:Document;
+  shacl:datatype xsd:string;
   shacl:description "A client site"@en;
   shacl:name "client site"@en;
   shacl:path <http://data4wallonia.com/model/clientSite> .
@@ -2304,12 +2784,6 @@
   shacl:name "banner"@en;
   shacl:nodeKind shacl:BlankNodeOrIRI;
   shacl:path <http://data4wallonia.com/model/banner> .
-
-<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/8fec84dc93b86b1731d4980162901595517225f5> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Post.type";
-  shacl:description "A type"@en;
-  shacl:name "type"@en;
-  shacl:path <http://data4wallonia.com/model/type>;
-  shacl:uniqueLang true .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Post.title";
   shacl:description "A title"@en;
@@ -2365,7 +2839,7 @@
   shacl:path <http://data4wallonia.com/model/pdfFile> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/d0de7c2a6b94abd5d5528c0af6186123704c5488> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Post.banner";
-  shacl:class <http://data.europa.eu/m8g/ImageObject>;
+  shacl:class <http://data4wallonia.com/model/File>;
   shacl:description "A banner"@en;
   shacl:name "banner"@en;
   shacl:path <http://data4wallonia.com/model/banner> .
@@ -2450,7 +2924,6 @@
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReviewShape/6cf60d71e08aa713f762202149aae9b68c75a2b9>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReviewShape/8178a43200b0efd5b41e7309efb017f24bb8ef41>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReviewShape/8fb9b73c0271de42839f95455dd892a92fe9e4dc>,
-    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReviewShape/8fec84dc93b86b1731d4980162901595517225f5>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReviewShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReviewShape/9c9fb43848e33583960f6a48f713c2314250d2bf>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReviewShape/b61ce9ff3ddc0ce15d2f323b06f377450fc873fb>,
@@ -2501,7 +2974,7 @@
   shacl:path <http://data4wallonia.com/model/source> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReviewShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReview.type";
-  shacl:datatype rdf:langString;
+  shacl:datatype xsd:string;
   shacl:description "A type"@en;
   shacl:name "type"@en;
   shacl:path <http://data4wallonia.com/model/type> .
@@ -2545,11 +3018,11 @@
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReviewShape/54f09a2ec1df3a48b497c8c664277f160685ce04> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReview.clientsite";
   shacl:description "A client site"@en;
   shacl:name "client site"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:nodeKind shacl:Literal;
   shacl:path <http://data4wallonia.com/model/clientSite> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReviewShape/5de5e3fa7d25498318d38386224340b36e1d139a> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReview.clientsite";
-  shacl:class foaf:Document;
+  shacl:datatype xsd:string;
   shacl:description "A client site"@en;
   shacl:name "client site"@en;
   shacl:path <http://data4wallonia.com/model/clientSite> .
@@ -2571,12 +3044,6 @@
   shacl:description "A quoted person"@en;
   shacl:name "quoted person"@en;
   shacl:path <http://data4wallonia.com/model/quotedPerson> .
-
-<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReviewShape/8fec84dc93b86b1731d4980162901595517225f5> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReview.type";
-  shacl:description "A type"@en;
-  shacl:name "type"@en;
-  shacl:path <http://data4wallonia.com/model/type>;
-  shacl:uniqueLang true .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReviewShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReview.title";
   shacl:description "A title"@en;
@@ -2829,7 +3296,7 @@
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/54f09a2ec1df3a48b497c8c664277f160685ce04> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.clientsite";
   shacl:description "A client site"@en;
   shacl:name "client site"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:nodeKind shacl:Literal;
   shacl:path <http://data4wallonia.com/model/clientSite> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/584beab9b274893ecd7bb3f425d0400d1f9f9255> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.mainNACEcode";
@@ -2845,7 +3312,7 @@
   shacl:path <http://data4wallonia.com/model/address> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/5de5e3fa7d25498318d38386224340b36e1d139a> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.clientsite";
-  shacl:class foaf:Document;
+  shacl:datatype xsd:string;
   shacl:description "A client site"@en;
   shacl:name "client site"@en;
   shacl:path <http://data4wallonia.com/model/clientSite> .
@@ -2971,7 +3438,7 @@
   shacl:path <http://data4wallonia.com/model/shortTitle> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/dce5f0b9ce22d1c7f8f95163ed722d4236e5a3dc> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.logo";
-  shacl:class <http://data.europa.eu/m8g/ImageObject>;
+  shacl:class <http://data4wallonia.com/model/File>;
   shacl:description "A logo"@en;
   shacl:name "logo"@en;
   shacl:path <http://data4wallonia.com/model/logo> .
@@ -3147,7 +3614,7 @@
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProgramShape/54f09a2ec1df3a48b497c8c664277f160685ce04> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Program.clientsite";
   shacl:description "A client site"@en;
   shacl:name "client site"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:nodeKind shacl:Literal;
   shacl:path <http://data4wallonia.com/model/clientSite> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProgramShape/58c075f3ec5c082c4b471ce4fe1c6af336b5e905> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Program.baseline";
@@ -3169,7 +3636,7 @@
   shacl:path <http://data4wallonia.com/model/content> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProgramShape/5de5e3fa7d25498318d38386224340b36e1d139a> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Program.clientsite";
-  shacl:class foaf:Document;
+  shacl:datatype xsd:string;
   shacl:description "A client site"@en;
   shacl:name "client site"@en;
   shacl:path <http://data4wallonia.com/model/clientSite> .
@@ -3265,8 +3732,8 @@
   shacl:path <http://data4wallonia.com/model/slug> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProgramShape/be0272a9c84278a3023c9077f1df0705f9ab3b33> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Program.sticky";
-  shacl:class <http://data4wallonia.com/model/Event>,
-    <http://data4wallonia.com/model/Post>;
+  shacl:class <http://data4wallonia.com/model/Post>,
+    <http://data.europa.eu/m8g/PublicEvent>;
   shacl:description "A sticky"@en;
   shacl:name "sticky"@en;
   shacl:path <http://data4wallonia.com/model/sticky> .
@@ -3302,7 +3769,7 @@
   shacl:path <http://data4wallonia.com/model/ambition> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProgramShape/dce5f0b9ce22d1c7f8f95163ed722d4236e5a3dc> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Program.logo";
-  shacl:class <http://data.europa.eu/m8g/ImageObject>;
+  shacl:class <http://data4wallonia.com/model/File>;
   shacl:description "A logo"@en;
   shacl:name "logo"@en;
   shacl:path <http://data4wallonia.com/model/logo> .
@@ -3615,7 +4082,7 @@
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ServicesPlaceShape/54f09a2ec1df3a48b497c8c664277f160685ce04> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ServicesPlace.clientsite";
   shacl:description "A client site"@en;
   shacl:name "client site"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:nodeKind shacl:Literal;
   shacl:path <http://data4wallonia.com/model/clientSite> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ServicesPlaceShape/5674b3a22f062481c2a999ce3488045e093a7684> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ServicesPlace.additionaltypeandconditionaccess";
@@ -3631,7 +4098,7 @@
   shacl:path <http://data4wallonia.com/model/addresses> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ServicesPlaceShape/5de5e3fa7d25498318d38386224340b36e1d139a> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ServicesPlace.clientsite";
-  shacl:class foaf:Document;
+  shacl:datatype xsd:string;
   shacl:description "A client site"@en;
   shacl:name "client site"@en;
   shacl:path <http://data4wallonia.com/model/clientSite> .
@@ -3850,3 +4317,7 @@
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#URIShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass xsd:anyURI .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#gYearShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass xsd:gYear .
