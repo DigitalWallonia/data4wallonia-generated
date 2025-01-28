@@ -256,7 +256,6 @@ This specification uses the following prefixes to shorten the URIs for readabili
 			      <a href="#ActionPlan">Action Plan</a> |
 			      <a href="#ContactPoint">Contact Point</a> |
 			      <a href="#Cost">Cost</a> |
-			      <a href="#Event">Event</a> |
 			      <a href="#Identifier">Identifier</a> |
 			      <a href="#LegalEntity">Legal Entity</a> |
 			      <a href="#Person">Person</a> |
@@ -264,6 +263,7 @@ This specification uses the following prefixes to shorten the URIs for readabili
 			      <a href="#PressReview">Press Review</a> |
 			      <a href="#Profile">Profile</a> |
 			      <a href="#Program">Program</a> |
+			      <a href="#Publicevent">Public event</a> |
 			      <a href="#QualifiedPerson">Qualified Person</a> |
 			      <a href="#ServicesPlace">Services Place</a> |
                         </p>
@@ -1255,7 +1255,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#Event" data-placement="right">Event</a>
+                                            <a href="#Publicevent" data-placement="right">Public event</a>
                                         
                                     
                                 </td>
@@ -1513,7 +1513,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#Event" data-placement="right">Event</a>
+                                            <a href="#Publicevent" data-placement="right">Public event</a>
                                         
                                     
                                 </td>
@@ -2485,1186 +2485,6 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                                 <td property="rdfs:comment">
                                     A numeric value indicating the amount of the Cost.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        
-    </div>
-</section>
-
-
-
-
-
-   
-        <section>
-            <h3 id="Event">
-                <a href="http://data.europa.eu/m8g/PublicEvent"
-                   data-toggle="tooltip"
-                   data-content="http://data.europa.eu/m8g/PublicEvent"
-                   data-placement="right">Event</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20Event&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    An Event
-                </dd>
-                
-                
-                
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                        <dd>
-                            For this entity the following properties are defined: <a href="#Event.additionaldescription">additional description</a>
-                            , <a href="#Event.ambition">ambition</a>
-                            , <a href="#Event.banner">banner</a>
-                            , <a href="#Event.category">category</a>
-                            , <a href="#Event.clientsite">client site</a>
-                            , <a href="#Event.contactperson">contact person</a>
-                            , <a href="#Event.contactpoint">contact point</a>
-                            , <a href="#Event.enddate">end date</a>
-                            , <a href="#Event.endpublicationdate">end publication date</a>
-                            , <a href="#Event.hasnextevent">has next event</a>
-                            , <a href="#Event.host">host</a>
-                            , <a href="#Event.location">location</a>
-                            , <a href="#Event.organizer">organizer</a>
-                            , <a href="#Event.partner">partner</a>
-                            , <a href="#Event.price">price</a>
-                            , <a href="#Event.program">program</a>
-                            , <a href="#Event.scheduleadditionalinformation">schedule additional information</a>
-                            , <a href="#Event.schedulenotspecified">schedule not specified</a>
-                            , <a href="#Event.shortdescription">short description</a>
-                            , <a href="#Event.slug">slug</a>
-                            , <a href="#Event.speaker">speaker</a>
-                            , <a href="#Event.startdate">start date</a>
-                            , <a href="#Event.targetaudience">target audience</a>
-                            , <a href="#Event.title">title</a>
-                            , <a href="#Event.type">type</a>
-                            .
-                    </dd>
-                
-            </dl>
-        </div>
-        
-            <div class="u-table-overflow">
-                <table class="data-table simple" id="table-mandatory-classes">
-                    <thead>
-                        <tr class="data-table__header">
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                            </th>
-                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
-                                Property
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:14%">
-                                Range
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                                Card
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Definition 
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Usage
-                            </th>
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Codelist
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:5%">
-                                DCAT
-                            </th>
-			    -->
-                        </tr>
-                    </thead>
-                    <tbody class="supertype">
-                        
-                            <tr id="Event.additionaldescription"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/additionalDescription"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20additional description%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.additionaldescription" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/additionalDescription"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/additionalDescription"
-                                           data-placement="right">
-                                        additional description</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    An additional description
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.ambition"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/ambition"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20ambition%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.ambition" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/ambition"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/ambition"
-                                           data-placement="right">
-                                        ambition</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Ambition" data-placement="right">Ambition</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    An ambition
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.banner"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/banner"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20banner%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.banner" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/banner"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/banner"
-                                           data-placement="right">
-                                        banner</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#File" data-placement="right">File</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A banner
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.category"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/category"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20category%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.category" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/category"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/category"
-                                           data-placement="right">
-                                        category</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Code" data-placement="right">Code</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A category
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.clientsite"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/clientSite"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20client site%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.clientsite" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/clientSite"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/clientSite"
-                                           data-placement="right">
-                                        client site</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#String" data-placement="right">String</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A client site
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.contactperson"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/contactPerson"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20contact person%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.contactperson" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/contactPerson"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/contactPerson"
-                                           data-placement="right">
-                                        contact person</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#QualifiedPerson" data-placement="right">Qualified Person</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A contact person
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.contactpoint"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/contactPoint"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20contact point%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.contactpoint" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/contactPoint"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/contactPoint"
-                                           data-placement="right">
-                                        contact point</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#ContactPoint" data-placement="right">Contact Point</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A contact point
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.enddate"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/endDate"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20end date%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.enddate" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/endDate"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/endDate"
-                                           data-placement="right">
-                                        end date</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Date" data-placement="right">Date</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A end date
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.endpublicationdate"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/endPublicationDate"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20end publication date%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.endpublicationdate" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/endPublicationDate"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/endPublicationDate"
-                                           data-placement="right">
-                                        end publication date</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Date" data-placement="right">Date</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A end publication date
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.hasnextevent"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/m8g/hasNextEvent"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20has next event%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.hasnextevent" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data.europa.eu/m8g/hasNextEvent"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/m8g/hasNextEvent"
-                                           data-placement="right">
-                                        has next event</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Event" data-placement="right">Event</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    The Public Event that comes after this one.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.host"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/host"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20host%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.host" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/host"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/host"
-                                           data-placement="right">
-                                        host</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Profile" data-placement="right">Profile</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A host
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.location"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/location"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20location%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.location" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/location"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/location"
-                                           data-placement="right">
-                                        location</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Address" data-placement="right">Address</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A location
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.organizer"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/organizer"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20organizer%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.organizer" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/organizer"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/organizer"
-                                           data-placement="right">
-                                        organizer</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Profile" data-placement="right">Profile</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    An organizer
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.partner"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/partner"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20partner%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.partner" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/partner"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/partner"
-                                           data-placement="right">
-                                        partner</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Profile" data-placement="right">Profile</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A partner
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.price"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/price"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20price%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.price" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/price"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/price"
-                                           data-placement="right">
-                                        price</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Cost" data-placement="right">Cost</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A price
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.program"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/program"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20program%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.program" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/program"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/program"
-                                           data-placement="right">
-                                        program</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Program" data-placement="right">Program</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A program
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.scheduleadditionalinformation"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/scheduleAdditionalInformation"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20schedule additional information%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.scheduleadditionalinformation" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/scheduleAdditionalInformation"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/scheduleAdditionalInformation"
-                                           data-placement="right">
-                                        schedule additional information</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A schedule additional information
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.schedulenotspecified"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/scheduleNotSpecified"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20schedule not specified%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.schedulenotspecified" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/scheduleNotSpecified"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/scheduleNotSpecified"
-                                           data-placement="right">
-                                        schedule not specified</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Boolean" data-placement="right">Boolean</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A schedule not specified
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.shortdescription"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/shortDescription"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20short description%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.shortdescription" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/shortDescription"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/shortDescription"
-                                           data-placement="right">
-                                        short description</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A short description
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.slug"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/slug"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20slug%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.slug" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/slug"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/slug"
-                                           data-placement="right">
-                                        slug</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A slug
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.speaker"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/speaker"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20speaker%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.speaker" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/speaker"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/speaker"
-                                           data-placement="right">
-                                        speaker</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#QualifiedPerson" data-placement="right">Qualified Person</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A speaker
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.startdate"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/startDate"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20start date%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.startdate" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/startDate"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/startDate"
-                                           data-placement="right">
-                                        start date</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Date" data-placement="right">Date</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A start date
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.targetaudience"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/targetAudience"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20target audience%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.targetaudience" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/targetAudience"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/targetAudience"
-                                           data-placement="right">
-                                        target audience</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A target audience
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.title"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/title"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20title%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.title" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/title"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/title"
-                                           data-placement="right">
-                                        title</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A title
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Event.type"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/type"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20type%20in%20Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Event.type" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/type"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/type"
-                                           data-placement="right">
-                                        type</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#String" data-placement="right">String</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A type
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -6487,7 +5307,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#Event" data-placement="right">Event</a>
+                                            <a href="#Publicevent" data-placement="right">Public event</a>
                                         
                                     
                                 </td>
@@ -9447,7 +8267,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#Event" data-placement="right">Event</a>
+                                            <a href="#Publicevent" data-placement="right">Public event</a>
                                         
                                     
                                 </td>
@@ -9499,6 +8319,1186 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                                 <td property="rdfs:comment">
                                     A title
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+</section>
+
+
+
+
+
+   
+        <section>
+            <h3 id="Publicevent">
+                <a href="http://data.europa.eu/m8g/PublicEvent"
+                   data-toggle="tooltip"
+                   data-content="http://data.europa.eu/m8g/PublicEvent"
+                   data-placement="right">Public event</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20PublicEvent&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    An Event
+                </dd>
+                
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#Publicevent.additionaldescription">additional description</a>
+                            , <a href="#Publicevent.ambition">ambition</a>
+                            , <a href="#Publicevent.banner">banner</a>
+                            , <a href="#Publicevent.category">category</a>
+                            , <a href="#Publicevent.clientsite">client site</a>
+                            , <a href="#Publicevent.contactperson">contact person</a>
+                            , <a href="#Publicevent.contactpoint">contact point</a>
+                            , <a href="#Publicevent.enddate">end date</a>
+                            , <a href="#Publicevent.endpublicationdate">end publication date</a>
+                            , <a href="#Publicevent.hasnextevent">has next event</a>
+                            , <a href="#Publicevent.host">host</a>
+                            , <a href="#Publicevent.location">location</a>
+                            , <a href="#Publicevent.organizer">organizer</a>
+                            , <a href="#Publicevent.partner">partner</a>
+                            , <a href="#Publicevent.price">price</a>
+                            , <a href="#Publicevent.program">program</a>
+                            , <a href="#Publicevent.scheduleadditionalinformation">schedule additional information</a>
+                            , <a href="#Publicevent.schedulenotspecified">schedule not specified</a>
+                            , <a href="#Publicevent.shortdescription">short description</a>
+                            , <a href="#Publicevent.slug">slug</a>
+                            , <a href="#Publicevent.speaker">speaker</a>
+                            , <a href="#Publicevent.startdate">start date</a>
+                            , <a href="#Publicevent.targetaudience">target audience</a>
+                            , <a href="#Publicevent.title">title</a>
+                            , <a href="#Publicevent.type">type</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="Publicevent.additionaldescription"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/additionalDescription"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20additional description%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.additionaldescription" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/additionalDescription"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/additionalDescription"
+                                           data-placement="right">
+                                        additional description</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    An additional description
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.ambition"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/ambition"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20ambition%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.ambition" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/ambition"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/ambition"
+                                           data-placement="right">
+                                        ambition</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Ambition" data-placement="right">Ambition</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    An ambition
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.banner"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/banner"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20banner%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.banner" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/banner"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/banner"
+                                           data-placement="right">
+                                        banner</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#File" data-placement="right">File</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A banner
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.category"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/category"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20category%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.category" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/category"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/category"
+                                           data-placement="right">
+                                        category</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Code" data-placement="right">Code</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A category
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.clientsite"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/clientSite"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20client site%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.clientsite" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/clientSite"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/clientSite"
+                                           data-placement="right">
+                                        client site</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#String" data-placement="right">String</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A client site
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.contactperson"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/contactPerson"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20contact person%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.contactperson" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/contactPerson"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/contactPerson"
+                                           data-placement="right">
+                                        contact person</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#QualifiedPerson" data-placement="right">Qualified Person</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A contact person
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.contactpoint"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/contactPoint"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20contact point%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.contactpoint" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/contactPoint"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/contactPoint"
+                                           data-placement="right">
+                                        contact point</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#ContactPoint" data-placement="right">Contact Point</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A contact point
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.enddate"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/endDate"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20end date%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.enddate" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/endDate"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/endDate"
+                                           data-placement="right">
+                                        end date</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Date" data-placement="right">Date</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A end date
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.endpublicationdate"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/endPublicationDate"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20end publication date%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.endpublicationdate" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/endPublicationDate"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/endPublicationDate"
+                                           data-placement="right">
+                                        end publication date</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Date" data-placement="right">Date</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A end publication date
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.hasnextevent"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/m8g/hasNextEvent"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20has next event%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.hasnextevent" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/hasNextEvent"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/hasNextEvent"
+                                           data-placement="right">
+                                        has next event</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Publicevent" data-placement="right">Public event</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The Public Event that comes after this one.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.host"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/host"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20host%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.host" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/host"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/host"
+                                           data-placement="right">
+                                        host</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Profile" data-placement="right">Profile</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A host
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.location"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/location"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20location%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.location" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/location"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/location"
+                                           data-placement="right">
+                                        location</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Address" data-placement="right">Address</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A location
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.organizer"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/organizer"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20organizer%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.organizer" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/organizer"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/organizer"
+                                           data-placement="right">
+                                        organizer</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Profile" data-placement="right">Profile</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    An organizer
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.partner"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/partner"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20partner%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.partner" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/partner"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/partner"
+                                           data-placement="right">
+                                        partner</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Profile" data-placement="right">Profile</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A partner
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.price"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/price"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20price%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.price" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/price"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/price"
+                                           data-placement="right">
+                                        price</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Cost" data-placement="right">Cost</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A price
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.program"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/program"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20program%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.program" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/program"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/program"
+                                           data-placement="right">
+                                        program</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Program" data-placement="right">Program</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A program
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.scheduleadditionalinformation"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/scheduleAdditionalInformation"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20schedule additional information%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.scheduleadditionalinformation" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/scheduleAdditionalInformation"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/scheduleAdditionalInformation"
+                                           data-placement="right">
+                                        schedule additional information</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A schedule additional information
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.schedulenotspecified"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/scheduleNotSpecified"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20schedule not specified%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.schedulenotspecified" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/scheduleNotSpecified"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/scheduleNotSpecified"
+                                           data-placement="right">
+                                        schedule not specified</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Boolean" data-placement="right">Boolean</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A schedule not specified
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.shortdescription"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/shortDescription"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20short description%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.shortdescription" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/shortDescription"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/shortDescription"
+                                           data-placement="right">
+                                        short description</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A short description
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.slug"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/slug"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20slug%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.slug" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/slug"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/slug"
+                                           data-placement="right">
+                                        slug</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A slug
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.speaker"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/speaker"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20speaker%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.speaker" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/speaker"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/speaker"
+                                           data-placement="right">
+                                        speaker</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#QualifiedPerson" data-placement="right">Qualified Person</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A speaker
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.startdate"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/startDate"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20start date%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.startdate" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/startDate"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/startDate"
+                                           data-placement="right">
+                                        start date</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Date" data-placement="right">Date</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A start date
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.targetaudience"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/targetAudience"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20target audience%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.targetaudience" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/targetAudience"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/targetAudience"
+                                           data-placement="right">
+                                        target audience</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A target audience
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.title"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/title"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20title%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.title" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/title"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/title"
+                                           data-placement="right">
+                                        title</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A title
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Publicevent.type"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/type"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20type%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.type" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/type"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/type"
+                                           data-placement="right">
+                                        type</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#String" data-placement="right">String</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A type
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -12520,8 +12520,6 @@ The key difference between a locator designator and a locator name is that the l
 
 
 
-
-
    
         <section>
             <h3 id="File">
@@ -13206,6 +13204,8 @@ The key difference between a locator designator and a locator name is that the l
         
     </div>
 </section>
+
+
 
 
 
@@ -14718,363 +14718,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td>Optional</td>
 								<td><a href="#Cost.hasvalue">has value </a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/hasValue</div></td>
-							</tr>
-						
-					
-				
-			</tr>
-		
-				
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.additionaldescription">additional description </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/additionalDescription</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.ambition">ambition </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/ambition</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.banner">banner </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/banner</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.category">category </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/category</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.clientsite">client site </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/clientSite</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.contactperson">contact person </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/contactPerson</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.contactpoint">contact point </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/contactPoint</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.enddate">end date </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/endDate</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.endpublicationdate">end publication date </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/endPublicationDate</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.hasnextevent">has next event </a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/hasNextEvent</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.host">host </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/host</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.location">location </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/location</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.organizer">organizer </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/organizer</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.partner">partner </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/partner</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.price">price </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/price</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.program">program </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/program</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.scheduleadditionalinformation">schedule additional information </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/scheduleAdditionalInformation</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.schedulenotspecified">schedule not specified </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/scheduleNotSpecified</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.shortdescription">short description </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/shortDescription</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.slug">slug </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/slug</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.speaker">speaker </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/speaker</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.startdate">start date </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/startDate</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.targetaudience">target audience </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/targetAudience</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.title">title </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/title</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Event">Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#Event.type">type </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/type</div></td>
 							</tr>
 						
 					
@@ -16945,6 +16588,363 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Program.title">title </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/title</div></td>
+							</tr>
+						
+					
+				
+			</tr>
+		
+				
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.additionaldescription">additional description </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/additionalDescription</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.ambition">ambition </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/ambition</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.banner">banner </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/banner</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.category">category </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/category</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.clientsite">client site </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/clientSite</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.contactperson">contact person </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/contactPerson</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.contactpoint">contact point </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/contactPoint</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.enddate">end date </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/endDate</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.endpublicationdate">end publication date </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/endPublicationDate</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.hasnextevent">has next event </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/hasNextEvent</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.host">host </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/host</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.location">location </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/location</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.organizer">organizer </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/organizer</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.partner">partner </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/partner</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.price">price </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/price</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.program">program </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/program</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.scheduleadditionalinformation">schedule additional information </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/scheduleAdditionalInformation</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.schedulenotspecified">schedule not specified </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/scheduleNotSpecified</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.shortdescription">short description </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/shortDescription</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.slug">slug </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/slug</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.speaker">speaker </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/speaker</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.startdate">start date </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/startDate</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.targetaudience">target audience </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/targetAudience</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.title">title </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/title</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Publicevent">Public event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#Publicevent.type">type </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/type</div></td>
 							</tr>
 						
 					
