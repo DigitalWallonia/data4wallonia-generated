@@ -198,7 +198,7 @@ D4WMO-Generic provides a minimal common basis within Data4Wallonia and Wallonia 
 		  This specification </span> of <a rel="cc:attributionURL" property="cc:attributionName" href="ORGANISATION" xmlns:cc="http://creativecommons.org/ns#">ORGANISATION </a> 
 	          is published under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">"CC0"</a>.
 	-->
-             Copyright © 2024 Agence Du Numérique. All material in this repository is published under the license CC-BY 4.0, unless explicitly otherwise mentioned.
+             Copyright © 2024 Agence Du Numérique. All material in this repository is published under the license <a href="https://creativecommons.org/licenses/by/4.0/deed.en">CC-BY 4.0</a>, unless explicitly otherwise mentioned.
         </p>
     
 </section>
@@ -8376,6 +8376,7 @@ A business might have more than one legal name, particularly in countries with m
                         <dd>
                             For this entity the following properties are defined: <a href="#PublicEvent.additionaldescription">additional description</a>
                             , <a href="#PublicEvent.ambition">ambition</a>
+                            , <a href="#PublicEvent.audience">audience</a>
                             , <a href="#PublicEvent.banner">banner</a>
                             , <a href="#PublicEvent.category">category</a>
                             , <a href="#PublicEvent.clientsite">client site</a>
@@ -8396,7 +8397,6 @@ A business might have more than one legal name, particularly in countries with m
                             , <a href="#PublicEvent.slug">slug</a>
                             , <a href="#PublicEvent.speaker">speaker</a>
                             , <a href="#PublicEvent.startdate">start date</a>
-                            , <a href="#PublicEvent.targetaudience">target audience</a>
                             , <a href="#PublicEvent.title">title</a>
                             , <a href="#PublicEvent.type">type</a>
                             .
@@ -8510,6 +8510,49 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                                 <td property="rdfs:comment">
                                     An ambition
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="PublicEvent.audience"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/m8g/audience"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20audience%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.audience" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/audience"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/audience"
+                                           data-placement="right">
+                                        audience</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The target group of people for whom the Public Event is created.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -9370,49 +9413,6 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                                 <td property="rdfs:comment">
                                     A start date
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="PublicEvent.targetaudience"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/m8g/audience"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20target audience%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.targetaudience" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data.europa.eu/m8g/audience"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/m8g/audience"
-                                           data-placement="right">
-                                        target audience</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Code" data-placement="right">Code</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    The target group of people for whom the Public Event is created.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -16723,6 +16723,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
+								<td><a href="#PublicEvent.audience">audience </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/audience</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#PublicEvent">Public Event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
 								<td><a href="#PublicEvent.banner">banner </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/banner</div></td>
 							</tr>
@@ -16915,16 +16925,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#PublicEvent.startdate">start date </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/startDate</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#PublicEvent">Public Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#PublicEvent.targetaudience">target audience </a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/audience</div></td>
 							</tr>
 						
 					

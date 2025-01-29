@@ -419,18 +419,6 @@
           "sh:path": "http://data4wallonia.com/model/slug"
         },
         {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEventShape/2a401135e747321708a9d3e44a28d39ece1aa81d",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEvent.targetaudience",
-          "sh:description": {
-            "en": "The target group of people for whom the Public Event is created."
-          },
-          "sh:name": {
-            "en": "target audience"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.europa.eu/m8g/audience"
-        },
-        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEventShape/32160b943f7e2fb8be7e9b08752336fe9e0f66fe",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEvent.partner",
           "sh:class": "http://data4wallonia.com/model/Profile",
@@ -453,6 +441,18 @@
             "en": "type"
           },
           "sh:path": "http://data4wallonia.com/model/type"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEventShape/36b739737d1f122566764447cb9749e3702ecccb",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEvent.audience",
+          "sh:description": {
+            "en": "The target group of people for whom the Public Event is created."
+          },
+          "sh:name": {
+            "en": "audience"
+          },
+          "sh:path": "http://data.europa.eu/m8g/audience",
+          "sh:uniqueLang": "true"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEventShape/36e301d7cf972fb9d011a055a8c6f87202fcffd3",
@@ -743,18 +743,6 @@
           "sh:path": "http://data4wallonia.com/model/contactPerson"
         },
         {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEventShape/ad7622823e2bad8709aa20b5348ce9654500e286",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEvent.targetaudience",
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
-          "sh:description": {
-            "en": "The target group of people for whom the Public Event is created."
-          },
-          "sh:name": {
-            "en": "target audience"
-          },
-          "sh:path": "http://data.europa.eu/m8g/audience"
-        },
-        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEventShape/b7707a7d12adfe39ed5fc9b262c71e85d9cf404b",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEvent.slug",
           "sh:description": {
@@ -813,6 +801,18 @@
             "en": "banner"
           },
           "sh:path": "http://data4wallonia.com/model/banner"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEventShape/d31c90c0b38d8f79fa882c73a097db3e9ca00be4",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEvent.audience",
+          "sh:description": {
+            "en": "The target group of people for whom the Public Event is created."
+          },
+          "sh:name": {
+            "en": "audience"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data.europa.eu/m8g/audience"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEventShape/d4bd9d49b77e985ca23e98c614a9fdf054d0e8bc",
@@ -921,6 +921,18 @@
           },
           "sh:path": "http://data4wallonia.com/model/shortDescription",
           "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEventShape/f2ea23ea7d2e48da98de5a4a76dc3d86501b02b9",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEvent.audience",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "The target group of people for whom the Public Event is created."
+          },
+          "sh:name": {
+            "en": "audience"
+          },
+          "sh:path": "http://data.europa.eu/m8g/audience"
         }
       ],
       "sh:targetClass": "http://data.europa.eu/m8g/PublicEvent"
