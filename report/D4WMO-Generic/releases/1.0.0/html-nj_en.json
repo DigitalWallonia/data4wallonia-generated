@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/b62bb0312a0fa6dd0a19811f581a06460441aba2",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/b62bb0312a0fa6dd0a19811f581a06460441aba2/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/a6b047918437021369b11c86a0712cf028bc29da",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/a6b047918437021369b11c86a0712cf028bc29da/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-Generic/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -421,21 +421,101 @@
       "uri": "http://data.europa.eu/m8g/PublicEvent",
       "name": "PublicEvent",
       "label": {
-        "en": "Public event"
+        "en": "Public Event"
       },
-      "sort": "Public event",
+      "sort": "Public Event",
       "description": {
-        "en": "An Event"
+        "en": "Something that happens at a particular place and time, organised by one or more agents for a particular purpose, and is of interest to a general audience. This definition excludes natural events such as earthquakes and volcanic eruptions."
       },
       "usage": {},
       "parents": [],
       "rawTags": {
         "uri": "http://data.europa.eu/m8g/PublicEvent",
-        "definition-en": "An Event",
-        "label-en": "Public event",
+        "definition-en": "Something that happens at a particular place and time, organised by one or more agents for a particular purpose, and is of interest to a general audience. This definition excludes natural events such as earthquakes and volcanic eruptions.",
+        "label-en": "Public Event",
         "class-usage-scope": "main"
       },
       "properties": [
+        {
+          "uri": "hthttp://data.europa.eu/m8g/contactPoint",
+          "name": "contactPoint",
+          "sort": "contact point",
+          "label": {
+            "en": "contact point"
+          },
+          "description": {
+            "en": "\tThe main contact information of the resource."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "PublicEvent",
+              "uri": "http://data.europa.eu/m8g/PublicEvent"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "ContactPoint",
+              "range_uri": "http://data.europa.eu/m8g/ContactPoint"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Contact Point",
+              "range_puri": "http://data.europa.eu/m8g/ContactPoint",
+              "range_label": {
+                "en": "Contact Point"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "hthttp://data.europa.eu/m8g/contactPoint",
+            "definition-en": "\tThe main contact information of the resource.",
+            "label-en": "contact point"
+          }
+        },
+        {
+          "uri": "http://data.europa.eu/m8g/audience",
+          "name": "targetAudience",
+          "sort": "target audience",
+          "label": {
+            "en": "target audience"
+          },
+          "description": {
+            "en": "The target group of people for whom the Public Event is created."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "PublicEvent",
+              "uri": "http://data.europa.eu/m8g/PublicEvent"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Code",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Code",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Code"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data.europa.eu/m8g/audience",
+            "definition-en": "The target group of people for whom the Public Event is created.",
+            "label-en": "target audience"
+          }
+        },
         {
           "uri": "http://data.europa.eu/m8g/hasNextEvent",
           "name": "hasNextEvent",
@@ -461,10 +541,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#Public event",
+              "range_uri": "#Public Event",
               "range_puri": "http://data.europa.eu/m8g/PublicEvent",
               "range_label": {
-                "en": "Public event"
+                "en": "Public Event"
               }
             }
           ],
@@ -581,10 +661,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#File",
+              "range_uri": "#Asset",
               "range_puri": "http://data4wallonia.com/model/File",
               "range_label": {
-                "en": "File"
+                "en": "Asset"
               }
             }
           ],
@@ -717,46 +797,6 @@
           }
         },
         {
-          "uri": "http://data4wallonia.com/model/contactPoint",
-          "name": "contactPoint",
-          "sort": "contact point",
-          "label": {
-            "en": "contact point"
-          },
-          "description": {
-            "en": "A contact point"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "PublicEvent",
-              "uri": "http://data.europa.eu/m8g/PublicEvent"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "ContactPoint",
-              "range_uri": "http://data.europa.eu/m8g/ContactPoint"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Contact Point",
-              "range_puri": "http://data.europa.eu/m8g/ContactPoint",
-              "range_label": {
-                "en": "Contact Point"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/contactPoint",
-            "definition-en": "A contact point",
-            "label-en": "contact point"
-          }
-        },
-        {
           "uri": "http://data4wallonia.com/model/endDate",
           "name": "endDate",
           "sort": "end date",
@@ -874,46 +914,6 @@
             "definition-en": "A host",
             "uri": "http://data4wallonia.com/model/host",
             "label-en": "host"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/location",
-          "name": "location",
-          "sort": "location",
-          "label": {
-            "en": "location"
-          },
-          "description": {
-            "en": "A location"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "PublicEvent",
-              "uri": "http://data.europa.eu/m8g/PublicEvent"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Address",
-              "range_uri": "http://www.w3.org/ns/locn#Address"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Address",
-              "range_puri": "http://www.w3.org/ns/locn#Address",
-              "range_label": {
-                "en": "Address"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/location",
-            "label-en": "location",
-            "definition-en": "A location"
           }
         },
         {
@@ -1317,86 +1317,6 @@
           }
         },
         {
-          "uri": "http://data4wallonia.com/model/targetAudience",
-          "name": "targetAudience",
-          "sort": "target audience",
-          "label": {
-            "en": "target audience"
-          },
-          "description": {
-            "en": "A target audience"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "PublicEvent",
-              "uri": "http://data.europa.eu/m8g/PublicEvent"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-              "range_label": {
-                "en": "Text"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/targetAudience",
-            "definition-en": "A target audience",
-            "label-en": "target audience"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/title",
-          "name": "title",
-          "sort": "title",
-          "label": {
-            "en": "title"
-          },
-          "description": {
-            "en": "A title"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "PublicEvent",
-              "uri": "http://data.europa.eu/m8g/PublicEvent"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-              "range_label": {
-                "en": "Text"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/title",
-            "definition-en": "A title",
-            "label-en": "title"
-          }
-        },
-        {
           "uri": "http://data4wallonia.com/model/type",
           "name": "type",
           "sort": "type",
@@ -1434,6 +1354,86 @@
             "uri": "http://data4wallonia.com/model/type",
             "definition-en": "A type",
             "label-en": "type"
+          }
+        },
+        {
+          "uri": "http://purl.org/dc/terms/title",
+          "name": "title",
+          "sort": "title",
+          "label": {
+            "en": "title"
+          },
+          "description": {
+            "en": "The name given to the Public Event."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "PublicEvent",
+              "uri": "http://data.europa.eu/m8g/PublicEvent"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://purl.org/dc/terms/title",
+            "definition-en": "The name given to the Public Event.",
+            "label-en": "title"
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/locn#address",
+          "name": "location",
+          "sort": "location",
+          "label": {
+            "en": "location"
+          },
+          "description": {
+            "en": "\tAssociates any Resource with the corresponding Address."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "PublicEvent",
+              "uri": "http://data.europa.eu/m8g/PublicEvent"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Address",
+              "range_uri": "http://www.w3.org/ns/locn#Address"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Address",
+              "range_puri": "http://www.w3.org/ns/locn#Address",
+              "range_label": {
+                "en": "Address"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://www.w3.org/ns/locn#address",
+            "label-en": "location",
+            "definition-en": "\tAssociates any Resource with the corresponding Address."
           }
         }
       ]
@@ -1882,10 +1882,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#File",
+              "range_uri": "#Asset",
               "range_puri": "http://data4wallonia.com/model/File",
               "range_label": {
-                "en": "File"
+                "en": "Asset"
               }
             }
           ],
@@ -2162,10 +2162,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#Public event",
+              "range_uri": "#Public Event",
               "range_puri": "http://data.europa.eu/m8g/PublicEvent",
               "range_label": {
-                "en": "Public event"
+                "en": "Public Event"
               }
             }
           ],
@@ -2402,10 +2402,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#Public event",
+              "range_uri": "#Public Event",
               "range_puri": "http://data.europa.eu/m8g/PublicEvent",
               "range_label": {
-                "en": "Public event"
+                "en": "Public Event"
               }
             }
           ],
@@ -2482,10 +2482,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#File",
+              "range_uri": "#Asset",
               "range_puri": "http://data4wallonia.com/model/File",
               "range_label": {
-                "en": "File"
+                "en": "Asset"
               }
             }
           ],
@@ -3023,10 +3023,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#File",
+              "range_uri": "#Asset",
               "range_puri": "http://data4wallonia.com/model/File",
               "range_label": {
-                "en": "File"
+                "en": "Asset"
               }
             }
           ],
@@ -3301,11 +3301,11 @@
     },
     {
       "uri": "http://data4wallonia.com/model/File",
-      "name": "File",
+      "name": "Asset",
       "label": {
-        "en": "File"
+        "en": "Asset"
       },
-      "sort": "File",
+      "sort": "Asset",
       "description": {
         "en": "A logo to describe / represent an entity."
       },
@@ -3313,7 +3313,7 @@
       "parents": [],
       "rawTags": {
         "definition-en": "A logo to describe / represent an entity.",
-        "label-en": "File",
+        "label-en": "Asset",
         "uri": "http://data4wallonia.com/model/File",
         "class-usage-scope": "supportive"
       },
@@ -3705,10 +3705,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#File",
+              "range_uri": "#Asset",
               "range_puri": "http://data4wallonia.com/model/File",
               "range_label": {
-                "en": "File"
+                "en": "Asset"
               }
             }
           ],
@@ -4025,10 +4025,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#File",
+              "range_uri": "#Asset",
               "range_puri": "http://data4wallonia.com/model/File",
               "range_label": {
-                "en": "File"
+                "en": "Asset"
               }
             }
           ],
@@ -4145,10 +4145,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#Public event",
+              "range_uri": "#Public Event",
               "range_puri": "http://data.europa.eu/m8g/PublicEvent",
               "range_label": {
-                "en": "Public event"
+                "en": "Public Event"
               }
             }
           ],
@@ -4225,10 +4225,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#File",
+              "range_uri": "#Asset",
               "range_puri": "http://data4wallonia.com/model/File",
               "range_label": {
-                "en": "File"
+                "en": "Asset"
               }
             }
           ],
@@ -5507,10 +5507,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#File",
+              "range_uri": "#Asset",
               "range_puri": "http://data4wallonia.com/model/File",
               "range_label": {
-                "en": "File"
+                "en": "Asset"
               }
             }
           ],
@@ -6328,10 +6328,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#File",
+              "range_uri": "#Asset",
               "range_puri": "http://data4wallonia.com/model/File",
               "range_label": {
-                "en": "File"
+                "en": "Asset"
               }
             }
           ],
@@ -6688,10 +6688,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#Public event",
+              "range_uri": "#Public Event",
               "range_puri": "http://data.europa.eu/m8g/PublicEvent",
               "range_label": {
-                "en": "Public event"
+                "en": "Public Event"
               }
             }
           ],
@@ -10357,10 +10357,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#File",
+              "range_uri": "#Asset",
               "range_puri": "http://data4wallonia.com/model/File",
               "range_label": {
-                "en": "File"
+                "en": "Asset"
               }
             }
           ],

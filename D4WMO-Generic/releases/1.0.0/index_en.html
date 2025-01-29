@@ -142,7 +142,7 @@
 
 <section id="abstract">
     <h2>Abstract</h2>
-D4WMO-AP provides a minimal common basis within Data4Wallonia to describe a model.
+D4WMO-Generic provides a minimal common basis within Data4Wallonia and Wallonia Entreprendre to describe a model.
 </section>
 
 
@@ -152,17 +152,17 @@ D4WMO-AP provides a minimal common basis within Data4Wallonia to describe a mode
     </h2>
     
 <p>
-  This model is an application profile for Data4Wallonia. It allows to express the model used to define concepts in Data4Wallonia portal.
+  This model is a generic model for Data4Wallonia and Wallonia Entreprendre. It allows to express the model used to define concepts in Data4Wallonia portal and Wallonia Entreprendre.
 </p>
 <p>
-  D4WMO-AP is designed to meet the following use cases:
+  D4WMO-Generic is designed to meet the following use cases:
   <ul>
     <li>define concepts with a model so that they can be reused;</li>
-    <li>being compliant with existing standards to reach semantic interoperability.</li>
+    <li>being compliant with existing standards to reach semantic interoperability, such as the <a href="https://github.com/SEMICeu">EU Core Vocabularies</a> (Person, Address, Public Event, etc.) </li>
   </ul>
 </p>
 <p>
-  The specification of the Data4Wallonia Model Application Profile is represented in a UML class diagram.
+  The specification of the Data4Wallonia Generic Model is represented in a UML class diagram.
   The figure here beneath shows the full profile which includes the classes and properties that define the model itself.
 </p>
 
@@ -263,7 +263,7 @@ This specification uses the following prefixes to shorten the URIs for readabili
 			      <a href="#PressReview">Press Review</a> |
 			      <a href="#Profile">Profile</a> |
 			      <a href="#Program">Program</a> |
-			      <a href="#Publicevent">Public event</a> |
+			      <a href="#PublicEvent">Public Event</a> |
 			      <a href="#QualifiedPerson">Qualified Person</a> |
 			      <a href="#ServicesPlace">Services Place</a> |
                         </p>
@@ -275,8 +275,8 @@ This specification uses the following prefixes to shorten the URIs for readabili
 			      <a href="#Address">Address</a> |
 			      <a href="#Ambition">Ambition</a> |
 			      <a href="#AnnualBudget">Annual Budget</a> |
+			      <a href="#Asset">Asset</a> |
 			      <a href="#ContentDynamicList">Content Dynamic List</a> |
-			      <a href="#File">File</a> |
 			      <a href="#File">File</a> |
 			      <a href="#Geometry">Geometry</a> |
 			      <a href="#ImageObject">Image Object</a> |
@@ -954,7 +954,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -1255,7 +1255,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#Publicevent" data-placement="right">Public event</a>
+                                            <a href="#PublicEvent" data-placement="right">Public Event</a>
                                         
                                     
                                 </td>
@@ -1513,7 +1513,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#Publicevent" data-placement="right">Public event</a>
+                                            <a href="#PublicEvent" data-placement="right">Public Event</a>
                                         
                                     
                                 </td>
@@ -1599,7 +1599,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -1972,6 +1972,8 @@ The main entities are those that form the core of the Application Profile.
         
     </div>
 </section>
+
+
 
 
 
@@ -2505,8 +2507,6 @@ The main entities are those that form the core of the Application Profile.
         
     </div>
 </section>
-
-
 
 
 
@@ -4516,7 +4516,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -4834,7 +4834,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -5178,7 +5178,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -5307,7 +5307,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#Publicevent" data-placement="right">Public event</a>
+                                            <a href="#PublicEvent" data-placement="right">Public Event</a>
                                         
                                     
                                 </td>
@@ -5393,7 +5393,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -6921,7 +6921,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -7880,7 +7880,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -8267,7 +8267,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#Publicevent" data-placement="right">Public event</a>
+                                            <a href="#PublicEvent" data-placement="right">Public Event</a>
                                         
                                     
                                 </td>
@@ -8346,11 +8346,11 @@ A business might have more than one legal name, particularly in countries with m
 
    
         <section>
-            <h3 id="Publicevent">
+            <h3 id="PublicEvent">
                 <a href="http://data.europa.eu/m8g/PublicEvent"
                    data-toggle="tooltip"
                    data-content="http://data.europa.eu/m8g/PublicEvent"
-                   data-placement="right">Public event</a>
+                   data-placement="right">Public Event</a>
 
             </h3>
 	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
@@ -8364,7 +8364,7 @@ A business might have more than one legal name, particularly in countries with m
                     Definition
                 </dt>
                 <dd>
-                    An Event
+                    Something that happens at a particular place and time, organised by one or more agents for a particular purpose, and is of interest to a general audience. This definition excludes natural events such as earthquakes and volcanic eruptions.
                 </dd>
                 
                 
@@ -8374,31 +8374,31 @@ A business might have more than one legal name, particularly in countries with m
                     </dt>
                     
                         <dd>
-                            For this entity the following properties are defined: <a href="#Publicevent.additionaldescription">additional description</a>
-                            , <a href="#Publicevent.ambition">ambition</a>
-                            , <a href="#Publicevent.banner">banner</a>
-                            , <a href="#Publicevent.category">category</a>
-                            , <a href="#Publicevent.clientsite">client site</a>
-                            , <a href="#Publicevent.contactperson">contact person</a>
-                            , <a href="#Publicevent.contactpoint">contact point</a>
-                            , <a href="#Publicevent.enddate">end date</a>
-                            , <a href="#Publicevent.endpublicationdate">end publication date</a>
-                            , <a href="#Publicevent.hasnextevent">has next event</a>
-                            , <a href="#Publicevent.host">host</a>
-                            , <a href="#Publicevent.location">location</a>
-                            , <a href="#Publicevent.organizer">organizer</a>
-                            , <a href="#Publicevent.partner">partner</a>
-                            , <a href="#Publicevent.price">price</a>
-                            , <a href="#Publicevent.program">program</a>
-                            , <a href="#Publicevent.scheduleadditionalinformation">schedule additional information</a>
-                            , <a href="#Publicevent.schedulenotspecified">schedule not specified</a>
-                            , <a href="#Publicevent.shortdescription">short description</a>
-                            , <a href="#Publicevent.slug">slug</a>
-                            , <a href="#Publicevent.speaker">speaker</a>
-                            , <a href="#Publicevent.startdate">start date</a>
-                            , <a href="#Publicevent.targetaudience">target audience</a>
-                            , <a href="#Publicevent.title">title</a>
-                            , <a href="#Publicevent.type">type</a>
+                            For this entity the following properties are defined: <a href="#PublicEvent.additionaldescription">additional description</a>
+                            , <a href="#PublicEvent.ambition">ambition</a>
+                            , <a href="#PublicEvent.banner">banner</a>
+                            , <a href="#PublicEvent.category">category</a>
+                            , <a href="#PublicEvent.clientsite">client site</a>
+                            , <a href="#PublicEvent.contactperson">contact person</a>
+                            , <a href="#PublicEvent.contactpoint">contact point</a>
+                            , <a href="#PublicEvent.enddate">end date</a>
+                            , <a href="#PublicEvent.endpublicationdate">end publication date</a>
+                            , <a href="#PublicEvent.hasnextevent">has next event</a>
+                            , <a href="#PublicEvent.host">host</a>
+                            , <a href="#PublicEvent.location">location</a>
+                            , <a href="#PublicEvent.organizer">organizer</a>
+                            , <a href="#PublicEvent.partner">partner</a>
+                            , <a href="#PublicEvent.price">price</a>
+                            , <a href="#PublicEvent.program">program</a>
+                            , <a href="#PublicEvent.scheduleadditionalinformation">schedule additional information</a>
+                            , <a href="#PublicEvent.schedulenotspecified">schedule not specified</a>
+                            , <a href="#PublicEvent.shortdescription">short description</a>
+                            , <a href="#PublicEvent.slug">slug</a>
+                            , <a href="#PublicEvent.speaker">speaker</a>
+                            , <a href="#PublicEvent.startdate">start date</a>
+                            , <a href="#PublicEvent.targetaudience">target audience</a>
+                            , <a href="#PublicEvent.title">title</a>
+                            , <a href="#PublicEvent.type">type</a>
                             .
                     </dd>
                 
@@ -8438,12 +8438,12 @@ A business might have more than one legal name, particularly in countries with m
                     </thead>
                     <tbody class="supertype">
                         
-                            <tr id="Publicevent.additionaldescription"
+                            <tr id="PublicEvent.additionaldescription"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/additionalDescription"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20additional description%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.additionaldescription" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20additional description%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.additionaldescription" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -8481,12 +8481,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.ambition"
+                            <tr id="PublicEvent.ambition"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/ambition"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20ambition%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.ambition" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20ambition%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.ambition" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -8524,12 +8524,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.banner"
+                            <tr id="PublicEvent.banner"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/banner"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20banner%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.banner" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20banner%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.banner" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -8544,7 +8544,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -8567,12 +8567,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.category"
+                            <tr id="PublicEvent.category"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/category"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20category%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.category" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20category%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.category" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -8610,12 +8610,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.clientsite"
+                            <tr id="PublicEvent.clientsite"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/clientSite"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20client site%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.clientsite" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20client site%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.clientsite" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -8653,12 +8653,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.contactperson"
+                            <tr id="PublicEvent.contactperson"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/contactPerson"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20contact person%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.contactperson" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20contact person%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.contactperson" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -8696,20 +8696,20 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.contactpoint"
+                            <tr id="PublicEvent.contactpoint"
                                 typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/contactPoint"
+                                resource="hthttp://data.europa.eu/m8g/contactPoint"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20contact point%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.contactpoint" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20contact point%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.contactpoint" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://data4wallonia.com/model/contactPoint"
+                                        <a href="hthttp://data.europa.eu/m8g/contactPoint"
                                            data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/contactPoint"
+                                           data-content="hthttp://data.europa.eu/m8g/contactPoint"
                                            data-placement="right">
                                         contact point</a>
                                 </td>
@@ -8724,7 +8724,7 @@ A business might have more than one legal name, particularly in countries with m
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    A contact point
+                                    	The main contact information of the resource.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -8739,12 +8739,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.enddate"
+                            <tr id="PublicEvent.enddate"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/endDate"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20end date%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.enddate" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20end date%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.enddate" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -8782,12 +8782,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.endpublicationdate"
+                            <tr id="PublicEvent.endpublicationdate"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/endPublicationDate"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20end publication date%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.endpublicationdate" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20end publication date%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.endpublicationdate" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -8825,12 +8825,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.hasnextevent"
+                            <tr id="PublicEvent.hasnextevent"
                                 typeof="rdfs:Property"
                                 resource="http://data.europa.eu/m8g/hasNextEvent"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20has next event%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.hasnextevent" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20has next event%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.hasnextevent" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -8845,7 +8845,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#Publicevent" data-placement="right">Public event</a>
+                                            <a href="#PublicEvent" data-placement="right">Public Event</a>
                                         
                                     
                                 </td>
@@ -8868,12 +8868,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.host"
+                            <tr id="PublicEvent.host"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/host"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20host%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.host" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20host%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.host" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -8911,20 +8911,20 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.location"
+                            <tr id="PublicEvent.location"
                                 typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/location"
+                                resource="http://www.w3.org/ns/locn#address"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20location%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.location" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20location%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.location" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://data4wallonia.com/model/location"
+                                        <a href="http://www.w3.org/ns/locn#address"
                                            data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/location"
+                                           data-content="http://www.w3.org/ns/locn#address"
                                            data-placement="right">
                                         location</a>
                                 </td>
@@ -8939,7 +8939,7 @@ A business might have more than one legal name, particularly in countries with m
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    A location
+                                    	Associates any Resource with the corresponding Address.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -8954,12 +8954,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.organizer"
+                            <tr id="PublicEvent.organizer"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/organizer"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20organizer%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.organizer" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20organizer%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.organizer" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -8997,12 +8997,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.partner"
+                            <tr id="PublicEvent.partner"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/partner"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20partner%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.partner" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20partner%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.partner" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -9040,12 +9040,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.price"
+                            <tr id="PublicEvent.price"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/price"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20price%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.price" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20price%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.price" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -9083,12 +9083,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.program"
+                            <tr id="PublicEvent.program"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/program"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20program%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.program" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20program%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.program" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -9126,12 +9126,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.scheduleadditionalinformation"
+                            <tr id="PublicEvent.scheduleadditionalinformation"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/scheduleAdditionalInformation"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20schedule additional information%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.scheduleadditionalinformation" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20schedule additional information%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.scheduleadditionalinformation" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -9169,12 +9169,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.schedulenotspecified"
+                            <tr id="PublicEvent.schedulenotspecified"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/scheduleNotSpecified"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20schedule not specified%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.schedulenotspecified" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20schedule not specified%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.schedulenotspecified" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -9212,12 +9212,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.shortdescription"
+                            <tr id="PublicEvent.shortdescription"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/shortDescription"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20short description%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.shortdescription" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20short description%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.shortdescription" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -9255,12 +9255,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.slug"
+                            <tr id="PublicEvent.slug"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/slug"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20slug%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.slug" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20slug%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.slug" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -9298,12 +9298,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.speaker"
+                            <tr id="PublicEvent.speaker"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/speaker"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20speaker%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.speaker" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20speaker%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.speaker" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -9341,12 +9341,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.startdate"
+                            <tr id="PublicEvent.startdate"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/startDate"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20start date%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.startdate" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20start date%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.startdate" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -9384,27 +9384,27 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.targetaudience"
+                            <tr id="PublicEvent.targetaudience"
                                 typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/targetAudience"
+                                resource="http://data.europa.eu/m8g/audience"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20target audience%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.targetaudience" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20target audience%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.targetaudience" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://data4wallonia.com/model/targetAudience"
+                                        <a href="http://data.europa.eu/m8g/audience"
                                            data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/targetAudience"
+                                           data-content="http://data.europa.eu/m8g/audience"
                                            data-placement="right">
                                         target audience</a>
                                 </td>
                                 <td>
                                     
                                         
-                                            <a href="#Text" data-placement="right">Text</a>
+                                            <a href="#Code" data-placement="right">Code</a>
                                         
                                     
                                 </td>
@@ -9412,7 +9412,7 @@ A business might have more than one legal name, particularly in countries with m
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    A target audience
+                                    The target group of people for whom the Public Event is created.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -9427,20 +9427,20 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.title"
+                            <tr id="PublicEvent.title"
                                 typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/title"
+                                resource="http://purl.org/dc/terms/title"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20title%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.title" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20title%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.title" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://data4wallonia.com/model/title"
+                                        <a href="http://purl.org/dc/terms/title"
                                            data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/title"
+                                           data-content="http://purl.org/dc/terms/title"
                                            data-placement="right">
                                         title</a>
                                 </td>
@@ -9455,7 +9455,7 @@ A business might have more than one legal name, particularly in countries with m
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    A title
+                                    The name given to the Public Event.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -9470,12 +9470,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Publicevent.type"
+                            <tr id="PublicEvent.type"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/type"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20type%20in%20Public event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Publicevent.type" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20type%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.type" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -11930,7 +11930,7 @@ The key difference between a locator designator and a locator name is that the l
                                 <td>
                                     
                                         
-                                            <a href="#File" data-placement="right">File</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -12348,6 +12348,218 @@ The key difference between a locator designator and a locator name is that the l
 
 
 
+   
+        <section>
+            <h3 id="Asset">
+                <a href="http://data4wallonia.com/model/File"
+                   data-toggle="tooltip"
+                   data-content="http://data4wallonia.com/model/File"
+                   data-placement="right">Asset</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20Asset&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    A logo to describe / represent an entity.
+                </dd>
+                
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#Asset.description">description</a>
+                            , <a href="#Asset.file">file</a>
+                            , <a href="#Asset.title">title</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="Asset.description"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/resource/model/description"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20description%20in%20Asset&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Asset.description" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/resource/model/description"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/resource/model/description"
+                                           data-placement="right">
+                                        description</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A description.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Asset.file"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/resource/model/file"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20file%20in%20Asset&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Asset.file" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/resource/model/file"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/resource/model/file"
+                                           data-placement="right">
+                                        file</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#File" data-placement="right">File</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A file.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Asset.title"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/resource/model/title"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20title%20in%20Asset&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Asset.title" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/resource/model/title"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/resource/model/title"
+                                           data-placement="right">
+                                        title</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A title.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+</section>
+
+
+
+
+
 
 
    
@@ -12515,218 +12727,6 @@ The key difference between a locator designator and a locator name is that the l
 </section>
 
 
-
-
-
-
-
-   
-        <section>
-            <h3 id="File">
-                <a href="http://data4wallonia.com/model/File"
-                   data-toggle="tooltip"
-                   data-content="http://data4wallonia.com/model/File"
-                   data-placement="right">File</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20File&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    A logo to describe / represent an entity.
-                </dd>
-                
-                
-                
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                        <dd>
-                            For this entity the following properties are defined: <a href="#File.description">description</a>
-                            , <a href="#File.file">file</a>
-                            , <a href="#File.title">title</a>
-                            .
-                    </dd>
-                
-            </dl>
-        </div>
-        
-            <div class="u-table-overflow">
-                <table class="data-table simple" id="table-mandatory-classes">
-                    <thead>
-                        <tr class="data-table__header">
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                            </th>
-                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
-                                Property
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:14%">
-                                Range
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                                Card
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Definition 
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Usage
-                            </th>
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Codelist
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:5%">
-                                DCAT
-                            </th>
-			    -->
-                        </tr>
-                    </thead>
-                    <tbody class="supertype">
-                        
-                            <tr id="File.description"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/resource/model/description"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20description%20in%20File&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23File.description" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/resource/model/description"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/resource/model/description"
-                                           data-placement="right">
-                                        description</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A description.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="File.file"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/resource/model/file"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20file%20in%20File&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23File.file" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/resource/model/file"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/resource/model/file"
-                                           data-placement="right">
-                                        file</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#File" data-placement="right">File</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A file.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="File.title"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/resource/model/title"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20title%20in%20File&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23File.title" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/resource/model/title"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/resource/model/title"
-                                           data-placement="right">
-                                        title</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A title.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        
-    </div>
-</section>
 
 
 
@@ -14571,6 +14571,55 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+					
+						
+					
+						
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#Asset">Asset</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/File</div></td>
+								<td></td>
+								<td><a href="#Asset.description">description </a></td>
+								<td><div class="shorten">http://data4wallonia.com/resource/model/description</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Asset">Asset</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/File</div></td>
+								<td></td>
+								<td><a href="#Asset.file">file </a></td>
+								<td><div class="shorten">http://data4wallonia.com/resource/model/file</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Asset">Asset</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/File</div></td>
+								<td></td>
+								<td><a href="#Asset.title">title </a></td>
+								<td><div class="shorten">http://data4wallonia.com/resource/model/title</div></td>
+							</tr>
+						
+					
+				
+			</tr>
+		
+				
+					
+						
+					
+						
+					
+						
+					
 						
 					
 						
@@ -14718,55 +14767,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td>Optional</td>
 								<td><a href="#Cost.hasvalue">has value </a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/hasValue</div></td>
-							</tr>
-						
-					
-				
-			</tr>
-		
-				
-					
-						
-					
-						
-					
-						
-					
-					
-						
-					
-						
-					
-						
-					
-					
-						
-							<tr>
-								<td><a href="#File">File</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/File</div></td>
-								<td></td>
-								<td><a href="#File.description">description </a></td>
-								<td><div class="shorten">http://data4wallonia.com/resource/model/description</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#File">File</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/File</div></td>
-								<td></td>
-								<td><a href="#File.file">file </a></td>
-								<td><div class="shorten">http://data4wallonia.com/resource/model/file</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#File">File</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/File</div></td>
-								<td></td>
-								<td><a href="#File.title">title </a></td>
-								<td><div class="shorten">http://data4wallonia.com/resource/model/title</div></td>
 							</tr>
 						
 					
@@ -16700,250 +16700,250 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.additionaldescription">additional description </a></td>
+								<td><a href="#PublicEvent.additionaldescription">additional description </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/additionalDescription</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.ambition">ambition </a></td>
+								<td><a href="#PublicEvent.ambition">ambition </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/ambition</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.banner">banner </a></td>
+								<td><a href="#PublicEvent.banner">banner </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/banner</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.category">category </a></td>
+								<td><a href="#PublicEvent.category">category </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/category</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.clientsite">client site </a></td>
+								<td><a href="#PublicEvent.clientsite">client site </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/clientSite</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.contactperson">contact person </a></td>
+								<td><a href="#PublicEvent.contactperson">contact person </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/contactPerson</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.contactpoint">contact point </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/contactPoint</div></td>
+								<td><a href="#PublicEvent.contactpoint">contact point </a></td>
+								<td><div class="shorten">hthttp://data.europa.eu/m8g/contactPoint</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.enddate">end date </a></td>
+								<td><a href="#PublicEvent.enddate">end date </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/endDate</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.endpublicationdate">end publication date </a></td>
+								<td><a href="#PublicEvent.endpublicationdate">end publication date </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/endPublicationDate</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.hasnextevent">has next event </a></td>
+								<td><a href="#PublicEvent.hasnextevent">has next event </a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/hasNextEvent</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.host">host </a></td>
+								<td><a href="#PublicEvent.host">host </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/host</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.location">location </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/location</div></td>
+								<td><a href="#PublicEvent.location">location </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#address</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.organizer">organizer </a></td>
+								<td><a href="#PublicEvent.organizer">organizer </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/organizer</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.partner">partner </a></td>
+								<td><a href="#PublicEvent.partner">partner </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/partner</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.price">price </a></td>
+								<td><a href="#PublicEvent.price">price </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/price</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.program">program </a></td>
+								<td><a href="#PublicEvent.program">program </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/program</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.scheduleadditionalinformation">schedule additional information </a></td>
+								<td><a href="#PublicEvent.scheduleadditionalinformation">schedule additional information </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/scheduleAdditionalInformation</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.schedulenotspecified">schedule not specified </a></td>
+								<td><a href="#PublicEvent.schedulenotspecified">schedule not specified </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/scheduleNotSpecified</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.shortdescription">short description </a></td>
+								<td><a href="#PublicEvent.shortdescription">short description </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/shortDescription</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.slug">slug </a></td>
+								<td><a href="#PublicEvent.slug">slug </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/slug</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.speaker">speaker </a></td>
+								<td><a href="#PublicEvent.speaker">speaker </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/speaker</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.startdate">start date </a></td>
+								<td><a href="#PublicEvent.startdate">start date </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/startDate</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.targetaudience">target audience </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/targetAudience</div></td>
+								<td><a href="#PublicEvent.targetaudience">target audience </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/audience</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.title">title </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/title</div></td>
+								<td><a href="#PublicEvent.title">title </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/title</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#Publicevent">Public event</a></td>
+								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
-								<td><a href="#Publicevent.type">type </a></td>
+								<td><a href="#PublicEvent.type">type </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/type</div></td>
 							</tr>
 						

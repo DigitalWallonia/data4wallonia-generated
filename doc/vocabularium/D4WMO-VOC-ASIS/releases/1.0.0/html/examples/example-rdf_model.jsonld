@@ -2,26 +2,329 @@
   "@context": [
   "https://digitalwallonia.github.io/data4wallonia-generated/D4WMO-AP-ASIS/releases/1.0.0/context/d4wmo-ap-asis.jsonld",
   {
-    "d4w" :	"http://data4wallonia.com/model/",
-    "ex"  : "http://example.com/",
-    "owl" : "http://www.w3.org/2002/07/owl#",
-    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "skos" : "http://www.w3.org/2004/02/skos/core#",
-    "xsd" : "http://www.w3.org/2001/XMLSchema#"
+    "dcterms": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "d4w": "http://data4wallonia.com/resource/model/",
+    "d4wta": "http://data4wallonia.com/resource/taxonomy/",
+    "ex": "http://example.com/",
+    "eurovoc": "http://publications.europa.eu/ontology/euvoc#",
+    "status": "http://publications.europa.eu/resource/authority/concept-status/"
   }],
   "@graph": [
     {
-     "@id": "ex:person",
-     "@type": "Person",
-     "d4w:internalName" : "Magritte",
-	 "d4w:displayRefusal" : {
+      "@id": "d4wta:fwb",
+      "@type": "skos:Concept",
+      "d4w:enabledBack": {
+        "@type": "xsd:boolean",
+        "@value": "true"
+      },
+      "eurovoc:status": {
+        "@id": "status:CURRENT"
+      },
+      "dcterms:identifier": {
+        "@language": "fr",
+        "@value": "fwb"
+      },
+      "owl:versionInfo": "0.0.1",
+      "skos:broader": {
+        "@id": "d4w:territoire"
+      },
+      "skos:definition": {
+        "@language": "fr",
+        "@value": "localisation ou activités en Fédération Wallonie-Bruxelles."
+      },
+      "skos:inScheme": {
+        "@id": "d4w:digital-wallonia"
+      },
+      "skos:prefLabel": {
+        "@language": "fr",
+        "@value": "Fédération Wallonie Bruxelles"
+      }
+    },
+    {
+      "@id": "d4wta:intelligence-artificielle",
+      "@type": "skos:Concept",
+      "d4w:enabledBack": {
+        "@type": "xsd:boolean",
+        "@value": "true"
+      },
+      "eurovoc:status": {
+        "@id": "status:CURRENT"
+      },
+      "dcterms:identifier": {
+        "@language": "fr",
+        "@value": "intelligence-artificielle"
+      },
+      "owl:versionInfo": "0.0.1",
+      "skos:broader": {
+        "@id": "d4w:ict-advanced"
+      },
+      "skos:definition": {
+        "@language": "fr",
+        "@value": "Développement, production et déploiement de produits et services liés à l’intelligence artificielle : traduction automatique, chatbots, apprentissage automatique, machine learning, deep learning, etc."
+      },
+      "skos:inScheme": {
+        "@id": "d4w:digital-wallonia"
+      },
+      "skos:prefLabel": {
+        "@language": "fr",
+        "@value": "Intelligence artificielle  IA AI "
+      }
+    },
+    {
+      "@id": "d4wta:sensibilisation-au-numerique",
+      "@type": "skos:Concept",
+      "d4w:enabledBack": {
+        "@type": "xsd:boolean",
+        "@value": "true"
+      },
+      "eurovoc:status": {
+        "@id": "status:CURRENT"
+      },
+      "dcterms:identifier": {
+        "@language": "fr",
+        "@value": "sensibilisation-au-numerique"
+      },
+      "owl:versionInfo": "0.0.1",
+      "skos:broader": {
+        "@id": "d4w:reseaux"
+      },
+      "skos:definition": {
+        "@language": "fr",
+        "@value": "Acteurs et initiatives de sensibilisation et de promotion des technologies et usages numériques en Wallonie."
+      },
+      "skos:inScheme": {
+        "@id": "d4w:digital-wallonia"
+      },
+      "skos:prefLabel": {
+        "@language": "fr",
+        "@value": "Sensibilisation au numérique"
+      }
+    },
+    {
+      "@id": "ex:ambition-PT2sGEpR2WL6gF914UZJ1",
+      "@type": "d4w:Ambition",
+      "d4w:logo": {
+        "@id": "ex:logo-6g677yu7zTnGqOnYXfZoyy"
+      },
+      "d4w:referencePost": {
+        "@id": "ex:post-7H1A4Hkjv8Fs0BG5cp1L5O"
+      },
+      "d4w:slug": {
+        "@language": "fr",
+        "@value": "innovation-numerique"
+      },
+      "d4w:title": {
+        "@language": "fr",
+        "@value": "Innovation numérique"
+      }
+    },
+    {
+      "@id": "ex:event-4CCTPChHyptq3bDJSNlYrj",
+      "@type": "d4w:Event",
+      "d4w:additionalDescription": {
+        "@language": "fr",
+        "@value": "La conférence offrira l’opportunité d’aborder les liens qui unissent, d’une part, l’intelligence artificielle et, d’autre part, l’industrie créative et culturelle, l’enseignement, la santé et la gouvernance publique."
+      },
+      "d4w:ambition": {
+        "@id": "ex:ambition-PT2sGEpR2WL6gF914UZJ1"
+      },
+      "d4w:category": [
+        {
+          "@id": "d4wta:sensibilisation-au-numerique"
+        },
+        {
+          "@id": "d4wta:intelligence-artificielle"
+        },
+        {
+          "@id": "d4wta:fwb"
+        }
+      ],
+      "d4w:clientSite": "Digital-Wallonia",
+      "d4w:endDate": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-01-29T16:30:00"
+      },
+      "d4w:endPublicationDate": {
+        "@type": "xsd:dateTime",
+        "@value": "2050-01-01T00:00:00"
+      },
+      "d4w:location": "Parlement de la Fédération Wallonie-Bruxelles / Communauté française, Rue de la Loi, Bruxelles, Belgique",
+      "d4w:organizer": [
+        {
+          "@id": "ex:organizer-3LBb2yyZuH9kU4k4FFt5lY"
+        },
+        {
+          "@id": "ex:organizer-6npjWrscP2ULwQkMJEAHlD"
+        }
+      ],
+      "d4w:scheduleNotSpecified": {
         "@type": "xsd:boolean",
         "@value": "0"
       },
-	 "d4w:lastName" : "Magritte",
-	 "d4w:firstName" : "René François Ghislain",
-	 "d4w:language" : "French",
-	 "d4w:slug" : "123"
-   }
- ]
+      "d4w:shortDescription": {
+        "@language": "fr",
+        "@value": "le Parlement de la Fédération Wallonie-Bruxelles organise une conférence interparlementaire en collaboration avec le Parlement de Wallonie et le Parlement de la Région de Bruxelles-Capitale. Elle sera consacrée à l’intelligence artificielle et à ses impacts futurs."
+      },
+      "d4w:slug": {
+        "@language": "fr",
+        "@value": "conference-l-intelligence-artificielle-et-ses-impacts-futurs"
+      },
+      "d4w:startDate": {
+        "@type": "xsd:dateTime",
+        "@value": "2025-01-29T08:15:00"
+      },
+      "d4w:title": {
+        "@language": "fr",
+        "@value": "Conférence. L'intelligence artificielle et ses impacts futurs"
+      },
+      "d4w:type": "Event",
+      "d4w:website": "https://www.pfwb.be/actualites/lintelligence-artificielle-et-ses-impacts-futurs-conference"
+    },
+    {
+      "@id": "ex:logo-50eBYXoMo5hWNO64efkQY2",
+      "@type": "d4w:Asset",
+      "d4w:file": {
+        "@id": "https://images.ctfassets.net/myqv2p4gx62v/50eBYXoMo5hWNO64efkQY2/b6ee3b87892d4d96ab46bba4df578c0c/FWB_Logo.jfif?h=250"
+      },
+      "d4w:title": {
+        "@language": "fr",
+        "@value": "Logo FWB"
+      }
+    },
+    {
+      "@id": "ex:logo-6g677yu7zTnGqOnYXfZoyy",
+      "@type": "d4w:Asset",
+      "d4w:file": {
+        "@id": "https://images.ctfassets.net/myqv2p4gx62v/6g677yu7zTnGqOnYXfZoyy/995d8e82828205a3899caeb3e579cc42/Picto_InnovationNumerique.svg"
+      },
+      "d4w:title": {
+        "@language": "fr",
+        "@value": "Picto Innovation Numerique"
+      }
+    },
+    {
+      "@id": "ex:organizer-3LBb2yyZuH9kU4k4FFt5lY",
+      "@type": "d4w:Profile",
+      "d4w:belgianEntreprise": "Ministère de la Communauté française",
+      "d4w:logo": {
+        "@id": "ex:logo-50eBYXoMo5hWNO64efkQY2"
+      },
+      "d4w:plateformContactPerson": {
+        "@id": "ex:qualifiedperson-467jZ0W6wU9D0mCz88uSMr"
+      },
+      "d4w:shortDescription": {
+        "@language": "fr",
+        "@value": "Institution au service des francophones de Bruxelles et de Wallonie. Ses compétences s'exercent en matière d'Enseignement, de Culture, de Sport, de Jeunesse, de Recherche scientifique et de Maisons de justice."
+      },
+      "d4w:shortTitle": {
+        "@language": "fr",
+        "@value": "FWB"
+      },
+      "d4w:slug": {
+        "@language": "fr",
+        "@value": "federation-wallonie-bruxelles"
+      },
+      "d4w:socialNetwork": [
+        "https://www.facebook.com/fwb.be/",
+        "https://www.linkedin.com/company/federation-wallonie-bruxelles/"
+      ],
+      "d4w:title": {
+        "@language": "fr",
+        "@value": "Fédération Wallonie-Bruxelles"
+      },
+      "d4w:website": "http://www.federation-wallonie-bruxelles.be/"
+    },
+    {
+      "@id": "ex:organizer-6npjWrscP2ULwQkMJEAHlD",
+      "@type": "d4w:Profile",
+      "d4w:plateformContactPerson": {
+        "@id": "ex:qualifiedperson-467jZ0W6wU9D0mCz88uSMr"
+      },
+      "d4w:shortDescription": {
+        "@language": "fr",
+        "@value": "Le Parlement wallon est l'assemblée législative de la Région wallonne. Il est composé de 75 députés. Les députés siègent en séances plénières et au sein de commissions dans le but d'adopter des décrets (lois régionales), de contrôler le gouvernement (interpellations et questions) et d'exprimer des positions sur des questions de société (résolutions)."
+      },
+      "d4w:slug": {
+        "@language": "fr",
+        "@value": "parlement-wallonie"
+      },
+      "d4w:socialNetwork": [
+        "https://twitter.com/ParlWallonie",
+        "https://www.facebook.com/parlwal",
+        "https://www.youtube.com/channel/UCUuYqgfbrMsn2Qx4TLXb_9A",
+        "https://www.linkedin.com/company/parlwal"
+      ],
+      "d4w:title": {
+        "@language": "fr",
+        "@value": "Parlement de Wallonie"
+      },
+      "d4w:website": "https://www.parlement-wallonie.be/"
+    },
+    {
+      "@id": "ex:person-74ievn1aScz6OxdfHoU9KE",
+      "@type": "d4w:Person",
+      "d4w:displayRefusal": {
+        "@type": "xsd:boolean",
+        "@value": "0"
+      },
+      "d4w:featuredEmail": "rene.magritte@cfb.be",
+      "d4w:firstName": "René François Ghislain",
+      "d4w:internalName": "René François Ghislain Magritte",
+      "d4w:language": "French",
+      "d4w:lastName": "Magritte",
+      "d4w:slug": {
+        "@language": "fr",
+        "@value": "rene-magritte"
+      }
+    },
+    {
+      "@id": "ex:post-7H1A4Hkjv8Fs0BG5cp1L5O",
+      "@type": "d4w:Post",
+      "d4w:content": {
+        "@language": "fr",
+        "@value": "La Wallonie doit s’appuyer sur un réseau d’entreprises du numérique hautement innovantes, notamment en renforçant la spécialisation du secteur du numérique dans des écosystèmes forts et en le spécialisant dans les chaînes de valeur stratégiques européennes. L’ambition du secteur du numérique doit être européenne, au travers de nos leaders technologiques, des startups à fort potentiel, de nos centres de recherche et du réseau des hubs internationaux. Enfin, le développement du secteur du numérique doit favoriser une économie plus résiliente face aux crises et intégrer les opportunités économiques de la transition verte et de l’économie circulaire."
+      },
+      "d4w:introduction": {
+        "@language": "fr",
+        "@value": "Développer notre excellence technologique : soutenir l’innovation du secteur du numérique pour capter la valeur ajoutée de l’économie numérique au profit de son territoire et de l’ensemble de ses secteurs d’activité. Cette ambition se décline notamment au travers des programmes DW 4 Startups, DW International, Tech & Recherche, Digital 4 Circular de la stratégie numérique Digital Wallonia."
+      },
+      "d4w:publishedDate": {
+        "@type": "xsd:dateTime",
+        "@value": "2015-12-10T18:00:00"
+      },
+      "d4w:slug": {
+        "@language": "fr",
+        "@value": "ambition-innovation-numerique"
+      },
+      "d4w:title": {
+        "@language": "fr",
+        "@value": "Stratégie Digital Wallonia. Ambition   \"Innovation Numérique\""
+      },
+      "d4w:type": "Feature article"
+    },
+    {
+      "@id": "ex:qualifiedperson-467jZ0W6wU9D0mCz88uSMr",
+      "@type": "d4w:QualifiedPerson",
+      "d4w:emailAddress": "rene.magritte@cfb.be",
+      "d4w:internalName": "René François Ghislain Magritte - Fédération Wallonie-Bruxelles",
+      "d4w:person": {
+        "@id": "ex:person-74ievn1aScz6OxdfHoU9KE"
+      },
+      "d4w:profile": {
+        "@id": "ex:organizer-3LBb2yyZuH9kU4k4FFt5lY"
+      }
+    },
+    {
+      "@id": "https://images.ctfassets.net/myqv2p4gx62v/50eBYXoMo5hWNO64efkQY2/b6ee3b87892d4d96ab46bba4df578c0c/FWB_Logo.jfif?h=250",
+      "@type": "d4w:File"
+    },
+    {
+      "@id": "https://images.ctfassets.net/myqv2p4gx62v/6g677yu7zTnGqOnYXfZoyy/995d8e82828205a3899caeb3e579cc42/Picto_InnovationNumerique.svg",
+      "@type": "d4w:File"
+    }
+  ]
 }

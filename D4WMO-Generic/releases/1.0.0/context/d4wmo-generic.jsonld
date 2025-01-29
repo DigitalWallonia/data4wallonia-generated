@@ -304,6 +304,11 @@
       "@id": "http://data4wallonia.com/model/additionalDescription",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
+    "PublicEvent.address": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/locn#address",
+      "@type": "@id"
+    },
     "PublicEvent.clientSite": {
       "@container": "@set",
       "@id": "http://data4wallonia.com/model/clientSite",
@@ -311,7 +316,7 @@
     },
     "PublicEvent.contactPoint": {
       "@container": "@set",
-      "@id": "http://data4wallonia.com/model/contactPoint",
+      "@id": "hthttp://data.europa.eu/m8g/contactPoint",
       "@type": "@id"
     },
     "PublicEvent.partner": {
@@ -331,7 +336,7 @@
     },
     "PublicEvent.title": {
       "@container": "@set",
-      "@id": "http://data4wallonia.com/model/title",
+      "@id": "http://purl.org/dc/terms/title",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "QualifiedPerson": "http://data4wallonia.com/model/QualifiedPerson",
@@ -475,6 +480,11 @@
       "@container": "@set",
       "@id": "http://data4wallonia.com/model/articleLink",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "audience": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/audience",
+      "@type": "@id"
     },
     "author": {
       "@container": "@set",
@@ -764,11 +774,6 @@
       "@container": "@set",
       "@id": "http://www.w3.org/ns/legal#legalName",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    },
-    "location": {
-      "@container": "@set",
-      "@id": "http://data4wallonia.com/model/location",
-      "@type": "@id"
     },
     "locatorDesignator": {
       "@container": "@set",
@@ -1072,11 +1077,6 @@
       "@container": "@set",
       "@id": "http://data4wallonia.com/model/sticky",
       "@type": "@id"
-    },
-    "targetAudience": {
-      "@container": "@set",
-      "@id": "http://data4wallonia.com/model/targetAudience",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "totalBudget": {
       "@container": "@set",
