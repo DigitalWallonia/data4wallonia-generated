@@ -153,18 +153,6 @@
           "sh:path": "http://publications.europa.eu/ontology/euvoc#status"
         },
         {
-          "@id": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/15570a6370234ebcf137d36d7ecfbdea74fd59fe",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.istopconceptinscheme",
-          "sh:class": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
-          "sh:description": {
-            "en": "Relates a concept to the concept scheme that it is a top level concept of."
-          },
-          "sh:name": {
-            "en": "is top concept in scheme"
-          },
-          "sh:path": "http://www.w3.org/2004/02/skos/core#topConceptOf"
-        },
-        {
           "@id": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/22f1578dcd99ac6439079f483b4886754ddf6ec4",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.versioninfo",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
@@ -465,6 +453,18 @@
           "sh:path": "http://www.w3.org/2004/02/skos/core#broader"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/a650b0becef614ffd5c6e1d9029c529161a13469",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.istopconceptof",
+          "sh:description": {
+            "en": "Relates a concept to the concept scheme that it is a top level concept of."
+          },
+          "sh:name": {
+            "en": "is top concept of"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/2004/02/skos/core#topConceptOf"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/aadbd67a77a624f073be2076627fb9dc883cbe48",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.identifier",
           "sh:description": {
@@ -585,6 +585,18 @@
           "sh:path": "http://www.w3.org/2002/07/owl#versionInfo"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/df8b2c9e02420be7c084e02e27d381c156611731",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.istopconceptof",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+          "sh:description": {
+            "en": "Relates a concept to the concept scheme that it is a top level concept of."
+          },
+          "sh:name": {
+            "en": "is top concept of"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#topConceptOf"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/e2017f72421063cd9ff494011ec78f35f9632a4a",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.identifier",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
@@ -621,14 +633,14 @@
           "sh:path": "http://www.w3.org/2004/02/skos/core#prefLabel"
         },
         {
-          "@id": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/e9132e6f3efd7315f772c9e4619e12fa627a8897",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.istopconceptinscheme",
+          "@id": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/ecf35f57dbb17d81d9a945af444f294b79b1d92c",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.istopconceptof",
           "sh:description": {
             "en": "Relates a concept to the concept scheme that it is a top level concept of."
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "is top concept in scheme"
+            "en": "is top concept of"
           },
           "sh:path": "http://www.w3.org/2004/02/skos/core#topConceptOf"
         },
@@ -643,18 +655,6 @@
             "en": "is in scheme"
           },
           "sh:path": "http://www.w3.org/2004/02/skos/core#inScheme"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/f82a98953ef3a46c5e76ff50ada429ab0f43be05",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.istopconceptinscheme",
-          "sh:description": {
-            "en": "Relates a concept to the concept scheme that it is a top level concept of."
-          },
-          "sh:name": {
-            "en": "is top concept in scheme"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://www.w3.org/2004/02/skos/core#topConceptOf"
         }
       ],
       "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
