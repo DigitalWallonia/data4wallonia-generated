@@ -8224,7 +8224,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#Post" data-placement="right">Post</a>
+                                            <a href="#PublicEvent" data-placement="right">Public Event</a>
                                         
                                     
                                 </td>
@@ -8267,7 +8267,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#PublicEvent" data-placement="right">Public Event</a>
+                                            <a href="#Post" data-placement="right">Post</a>
                                         
                                     
                                 </td>
@@ -11352,6 +11352,7 @@ This class belongs to <a href="https://semiceu.github.io/Core-Location-Vocabular
                             , <a href="#Address.locatorname">locator name</a>
                             , <a href="#Address.postcode">post code</a>
                             , <a href="#Address.postname">post name</a>
+                            , <a href="#Address.thoroughfare">thoroughfare</a>
                             .
                     </dd>
                 
@@ -11726,6 +11727,49 @@ The key difference between a locator designator and a locator name is that the l
                                 </td>
                                 <td property="skos:scopeNote">
                                     Usually a city, for example "Paris".
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Address.thoroughfare"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/locn#thoroughfare"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20thoroughfare%20in%20Address&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Address.thoroughfare" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/locn#thoroughfare"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/locn#thoroughfare"
+                                           data-placement="right">
+                                        thoroughfare</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    The name of a passage or way through from one location to another.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    A thoroughfare is usually a street, but it might be a waterway or some other feature. For example, "Avenue des Champs-Élysées".
                                 </td>
 				<!--
                                 <td>
@@ -14308,6 +14352,10 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+					
+						
 					
 						
 					
@@ -14403,6 +14451,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Address.postname">post name </a></td>
 								<td><div class="shorten">http://www.w3.org/ns/locn#postName</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Address">Address</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
+								<td></td>
+								<td><a href="#Address.thoroughfare">thoroughfare </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/locn#thoroughfare</div></td>
 							</tr>
 						
 					

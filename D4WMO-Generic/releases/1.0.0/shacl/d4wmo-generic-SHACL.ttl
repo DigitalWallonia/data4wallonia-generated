@@ -699,10 +699,12 @@
   shacl:closed false;
   shacl:property <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/006de06965023999963c4307153479c8629991d9>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/03690748629ed1c685fc6a365780375be09bce76>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/17384dfa4a75117e7dd2bc0f2bbf61ac91fd8676>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/256ffe464f9c7682e950f7853ef0b6060580435b>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/362b7c3261b1d5eb024e72e4868babc25ed0c7ce>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/3a0fcecd9e5f4e8deb4d102b9d072a4b067b773e>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/4da4b4f12446c7b90bf9929edcf3532f302c4423>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/536fd01dee57034d9363bf7f757e2a4ecf2b8b79>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/680392244cac8d7a9e2fcde80cdcae359cbe01da>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/6af1ea11726c44c92d77222cd179ea9b20ea091f>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/6f98d6d917a0e0b73d8614923f953e1ee2533918>,
@@ -712,12 +714,15 @@
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/9aaaf1750887d905949d78ac718f18c02809a28e>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/9c2d6af39a55e5e6a76f6b852bbcbada029c21af>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/a9a46434014b93624ab68c9a56a5bc66a38da9a4>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/aa9622c05f497ef1b06496716742dd5cbfc6f0c9>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/ac2d62a08fd924f88a79f0e70cda9fca4d484fd2>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/ae24e9fc95115753cabe5ad6bd3c05b9751cd13c>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/b043886b69791f73bf40ebb4efc9f3cc2ffd245c>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/c0a2b78a80a731301e2f54d040ca9aa2c9b125b1>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/c7982f0ec4b5e8e3eaa2c72beb037d90a9bff2ce>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/d75b5d4c221e6b0bf47c853c0be92d078c39e391>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/dee03556e405a14f1e410c960b43b8eee149efe7>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/edf517a4066ee468a174711e33c96a64fb7364a6>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/f33dc3af3f2671021b9bb90a6ef843bc8e479dda>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/f8d38c3580ea5d4e47ea9e1ad447a47ebe91d5fa>;
   shacl:targetClass <http://www.w3.org/ns/locn#Address> .
@@ -733,6 +738,12 @@
   shacl:name "administrative unit level 1"@en;
   shacl:path <http://www.w3.org/ns/locn#adminUnitL1>;
   shacl:uniqueLang true .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/17384dfa4a75117e7dd2bc0f2bbf61ac91fd8676> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.thoroughfare";
+  shacl:datatype rdf:langString;
+  shacl:description "The name of a passage or way through from one location to another."@en;
+  shacl:name "thoroughfare"@en;
+  shacl:path <http://www.w3.org/ns/locn#thoroughfare> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/256ffe464f9c7682e950f7853ef0b6060580435b> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.administrativeunitlevel2";
   shacl:description "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."@en;
@@ -757,6 +768,12 @@
   shacl:name "continent"@en;
   shacl:nodeKind shacl:BlankNodeOrIRI;
   shacl:path <http://data4wallonia.com/model/continent> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/536fd01dee57034d9363bf7f757e2a4ecf2b8b79> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.thoroughfare";
+  shacl:description "The name of a passage or way through from one location to another."@en;
+  shacl:minCount 1;
+  shacl:name "thoroughfare"@en;
+  shacl:path <http://www.w3.org/ns/locn#thoroughfare> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/680392244cac8d7a9e2fcde80cdcae359cbe01da> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.continent";
   shacl:class skos:Concept;
@@ -812,6 +829,18 @@
   shacl:path <http://www.w3.org/ns/locn#postName>;
   shacl:uniqueLang true .
 
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/aa9622c05f497ef1b06496716742dd5cbfc6f0c9> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.thoroughfare";
+  shacl:description "The name of a passage or way through from one location to another."@en;
+  shacl:name "thoroughfare"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://www.w3.org/ns/locn#thoroughfare> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/ac2d62a08fd924f88a79f0e70cda9fca4d484fd2> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.thoroughfare";
+  shacl:description "The name of a passage or way through from one location to another."@en;
+  shacl:name "thoroughfare"@en;
+  shacl:path <http://www.w3.org/ns/locn#thoroughfare>;
+  shacl:uniqueLang true .
+
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/ae24e9fc95115753cabe5ad6bd3c05b9751cd13c> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.administrativeunitlevel2";
   shacl:description "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."@en;
   shacl:name "administrative unit level 2"@en;
@@ -847,6 +876,12 @@
   shacl:description "The complete address written as a string."@en;
   shacl:name "full address"@en;
   shacl:path <http://www.w3.org/ns/locn#fullAddress> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/edf517a4066ee468a174711e33c96a64fb7364a6> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.thoroughfare";
+  shacl:description "The name of a passage or way through from one location to another."@en;
+  shacl:maxCount 1;
+  shacl:name "thoroughfare"@en;
+  shacl:path <http://www.w3.org/ns/locn#thoroughfare> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/f33dc3af3f2671021b9bb90a6ef843bc8e479dda> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.continent";
   shacl:description "Name of the continent"@en;
@@ -3336,8 +3371,8 @@
   shacl:path <http://data4wallonia.com/model/slug> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProgramShape/be0272a9c84278a3023c9077f1df0705f9ab3b33> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Program.sticky";
-  shacl:class <http://data4wallonia.com/model/Post>,
-    <http://data.europa.eu/m8g/PublicEvent>;
+  shacl:class <http://data.europa.eu/m8g/PublicEvent>,
+    <http://data4wallonia.com/model/Post>;
   shacl:description "A sticky"@en;
   shacl:name "sticky"@en;
   shacl:path <http://data4wallonia.com/model/sticky> .

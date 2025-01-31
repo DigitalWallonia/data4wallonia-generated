@@ -604,6 +604,11 @@
       "@id": "http://data4wallonia.com/model/facadePhoto",
       "@type": "@id"
     },
+    "familyName": {
+      "@container": "@set",
+      "@id": "http://xmlns.com/foaf/0.1/familyName",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
     "featuredPerson": {
       "@container": "@set",
       "@id": "http://data4wallonia.com/model/featuredPerson",
@@ -624,11 +629,6 @@
       "@id": "http://data4wallonia.com/resource/model/financialParticipation",
       "@type": "http://www.w3.org/2001/XMLSchema#decimal"
     },
-    "firstName": {
-      "@container": "@set",
-      "@id": "http://xmlns.com/foaf/0.1/givenName",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    },
     "founder": {
       "@container": "@set",
       "@id": "http://data4wallonia.com/model/founder",
@@ -643,6 +643,11 @@
       "@container": "@set",
       "@id": "http://data4wallonia.com/model/fullTimeEquivalent",
       "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "givenName": {
+      "@container": "@set",
+      "@id": "http://xmlns.com/foaf/0.1/givenName",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "hasCost": {
       "@container": "@set",
@@ -738,11 +743,6 @@
     "language": {
       "@container": "@set",
       "@id": "http://data4wallonia.com/model/language",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    },
-    "lastName": {
-      "@container": "@set",
-      "@id": "http://xmlns.com/foaf/0.1/familyName",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "latitude": {
@@ -1077,6 +1077,10 @@
       "@container": "@set",
       "@id": "http://data4wallonia.com/model/sticky",
       "@type": "@id"
+    },
+    "thoroughfare": {
+      "@id": "http://www.w3.org/ns/locn#thoroughfare",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "totalBudget": {
       "@container": "@set",

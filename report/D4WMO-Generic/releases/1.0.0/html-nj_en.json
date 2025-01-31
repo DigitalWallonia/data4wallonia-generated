@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/5b6a505b3428f7b51ca3a047d800488fe6a1ef4e",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/5b6a505b3428f7b51ca3a047d800488fe6a1ef4e/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/26a6abe139459267d78bdfa58457ab54d235f0f0",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/26a6abe139459267d78bdfa58457ab54d235f0f0/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-Generic/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -6642,25 +6642,25 @@
           ],
           "range": [
             {
-              "range_label": "Post",
-              "range_uri": "http://data4wallonia.com/model/Post"
+              "range_label": "PublicEvent",
+              "range_uri": "http://data.europa.eu/m8g/PublicEvent"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Post",
-              "range_puri": "http://data4wallonia.com/model/Post",
+              "range_uri": "#Public Event",
+              "range_puri": "http://data.europa.eu/m8g/PublicEvent",
               "range_label": {
-                "en": "Post"
+                "en": "Public Event"
               }
             }
           ],
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
+            "uri": "http://data4wallonia.com/model/sticky",
             "label-en": "sticky",
-            "definition-en": "A sticky",
-            "uri": "http://data4wallonia.com/model/sticky"
+            "definition-en": "A sticky"
           }
         },
         {
@@ -6682,25 +6682,25 @@
           ],
           "range": [
             {
-              "range_label": "PublicEvent",
-              "range_uri": "http://data.europa.eu/m8g/PublicEvent"
+              "range_label": "Post",
+              "range_uri": "http://data4wallonia.com/model/Post"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Public Event",
-              "range_puri": "http://data.europa.eu/m8g/PublicEvent",
+              "range_uri": "#Post",
+              "range_puri": "http://data4wallonia.com/model/Post",
               "range_label": {
-                "en": "Public Event"
+                "en": "Post"
               }
             }
           ],
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "http://data4wallonia.com/model/sticky",
             "label-en": "sticky",
-            "definition-en": "A sticky"
+            "definition-en": "A sticky",
+            "uri": "http://data4wallonia.com/model/sticky"
           }
         },
         {
@@ -9839,6 +9839,49 @@
             "definition-en": "A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.",
             "usageNote-en": "Usually a city, for example \"Paris\".",
             "uri": "http://www.w3.org/ns/locn#postName"
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/locn#thoroughfare",
+          "name": "thoroughfare",
+          "sort": "thoroughfare",
+          "label": {
+            "en": "thoroughfare"
+          },
+          "description": {
+            "en": "The name of a passage or way through from one location to another."
+          },
+          "usage": {
+            "en": "A thoroughfare is usually a street, but it might be a waterway or some other feature. For example, \"Avenue des Champs-Élysées\"."
+          },
+          "domain": [
+            {
+              "EA-Name": "Address",
+              "uri": "http://www.w3.org/ns/locn#Address"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "thoroughfare",
+            "definition-en": "The name of a passage or way through from one location to another.",
+            "usageNote-en": "A thoroughfare is usually a street, but it might be a waterway or some other feature. For example, \"Avenue des Champs-Élysées\".",
+            "uri": "http://www.w3.org/ns/locn#thoroughfare"
           }
         }
       ]
