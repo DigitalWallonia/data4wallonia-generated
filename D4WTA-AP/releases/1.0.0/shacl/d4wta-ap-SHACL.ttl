@@ -15,7 +15,6 @@
 <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptSchemeShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptSchemeShape/16a39520e446e5b794a01467eaeb5fe3e10ab704>,
-    <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptSchemeShape/181c12ff6ac7c6c66837bfa69e54feda32ff1712>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptSchemeShape/1e12f3c359c42b1a3eecfb6da7021421876f0b6d>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptSchemeShape/203c9e087d4af4374273c4e2bf22610d8642e403>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptSchemeShape/22f1578dcd99ac6439079f483b4886754ddf6ec4>,
@@ -57,12 +56,6 @@
   shacl:name "date issued"@en;
   shacl:nodeKind shacl:Literal;
   shacl:path dc:issued .
-
-<https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptSchemeShape/181c12ff6ac7c6c66837bfa69e54feda32ff1712> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptScheme.preferredlabel";
-  shacl:description "The preferred lexical label for a resource, in a given language."@en;
-  shacl:maxCount 1;
-  shacl:name "preferred label"@en;
-  shacl:path skos:prefLabel .
 
 <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptSchemeShape/1e12f3c359c42b1a3eecfb6da7021421876f0b6d> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptScheme.datecreated";
   shacl:description "Date of creation of the resource."@en;
@@ -301,7 +294,6 @@
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/ab629bb6aed53f147c0664483836a8783880b7d5>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/b29602ee73fd17320945933fad94551e97634999>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/c0d17764e84e711728581fda7356a51e99a9040a>,
-    <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/c6fd64c9a41aa39534bde93eeaca8d8f121f28b4>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/cc690f56d4e515fa4e04625718e23c5dbeb6883d>,
     <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/d5d74574f70f9a979535f3624608f88180dd0c97>,
@@ -500,12 +492,6 @@
   shacl:maxCount 1;
   shacl:name "identifier"@en;
   shacl:path dc:identifier .
-
-<https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/c4fdb9967443dd30f3b42d440beb3d113f53bd01> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.title";
-  shacl:description "A name given to the resource."@en;
-  shacl:maxCount 1;
-  shacl:name "title"@en;
-  shacl:path dc:title .
 
 <https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#ConceptShape/c6fd64c9a41aa39534bde93eeaca8d8f121f28b4> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WTA-AP/releases/1.0.0/#Concept.isinscheme";
   shacl:description "Relates a resource (for example a concept) to a concept scheme in which it is included."@en;
