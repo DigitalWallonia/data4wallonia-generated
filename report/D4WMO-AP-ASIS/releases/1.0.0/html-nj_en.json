@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/a6b047918437021369b11c86a0712cf028bc29da",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/a6b047918437021369b11c86a0712cf028bc29da/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/cf6485ef9ab8a96ec2ebac9bf0de70699a6a5d64",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/cf6485ef9ab8a96ec2ebac9bf0de70699a6a5d64/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -2266,16 +2266,16 @@
           ],
           "range": [
             {
-              "range_label": "Integer",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#integer"
+              "range_label": "Decimal",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#decimal"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Integer",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_uri": "#Decimal",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#decimal",
               "range_label": {
-                "en": "Integer"
+                "en": "Decimal"
               }
             }
           ],
@@ -3662,7 +3662,7 @@
               }
             }
           ],
-          "cardinality": "1..*",
+          "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/resource/model/type",
@@ -6516,6 +6516,46 @@
           }
         },
         {
+          "uri": "http://data4wallonia.com/resource/model/companyValidationDate",
+          "name": "companyValidationDate",
+          "sort": "company validation date",
+          "label": {
+            "en": "company validation date"
+          },
+          "description": {
+            "en": "Date of last contact with the company validating the information."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Profile",
+              "uri": "http://data4wallonia.com/resource/model/Profile"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Date",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#date"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_label": {
+                "en": "Date"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/resource/model/companyValidationDate",
+            "label-en": "company validation date",
+            "definition-en": "Date of last contact with the company validating the information."
+          }
+        },
+        {
           "uri": "http://data4wallonia.com/resource/model/email",
           "name": "email",
           "sort": "email",
@@ -7854,46 +7894,6 @@
             "uri": "http://data4wallonia.com/resource/model/referenceCategory",
             "definition-en": "A reference category",
             "label-en": "reference category"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/resource/model/referencePost",
-          "name": "referencepost",
-          "sort": "referencePost",
-          "label": {
-            "en": "referencePost"
-          },
-          "description": {
-            "en": "A reference post"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Program",
-              "uri": "http://data4wallonia.com/resource/model/Program"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Post",
-              "range_uri": "http://data4wallonia.com/resource/model/Post"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Post",
-              "range_puri": "http://data4wallonia.com/resource/model/Post",
-              "range_label": {
-                "en": "Post"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "referencePost",
-            "definition-en": "A reference post",
-            "uri": "http://data4wallonia.com/resource/model/referencePost"
           }
         },
         {

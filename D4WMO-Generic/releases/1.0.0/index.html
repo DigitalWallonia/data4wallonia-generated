@@ -279,7 +279,6 @@ This specification uses the following prefixes to shorten the URIs for readabili
 			      <a href="#ContentDynamicList">Content Dynamic List</a> |
 			      <a href="#File">File</a> |
 			      <a href="#Geometry">Geometry</a> |
-			      <a href="#ImageObject">Image Object</a> |
 			      <a href="#PartnerAdditionalDescription">Partner Additional Description</a> |
 			      <a href="#TemporalEntity">Temporal Entity</a> |
                         </p>
@@ -2826,8 +2825,6 @@ The main entities are those that form the core of the Application Profile.
 
 
 
-
-
    
         <section>
             <h3 id="LegalEntity">
@@ -3375,7 +3372,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#ImageObject" data-placement="right">Image Object</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -3849,6 +3846,7 @@ A business might have more than one legal name, particularly in countries with m
                             , <a href="#Person.expertise">expertise</a>
                             , <a href="#Person.familyname">family name</a>
                             , <a href="#Person.givenname">given name</a>
+                            , <a href="#Person.headof">head of</a>
                             , <a href="#Person.honorificprefix">honorific prefix</a>
                             , <a href="#Person.involvedin">involved in</a>
                             , <a href="#Person.language">language</a>
@@ -4356,6 +4354,49 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                                 <td property="skos:scopeNote">
                                     Usually a first name or forename. Given to a person by his or her parents at birth or legally recognised as 'given names' through a formal process. All given names are ordered in one property so that, for example, the given name for Johann Sebastian Bach is "Johann Sebastian".
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Person.headof"
+                                typeof="rdfs:Property"
+                                resource="https://www.w3.org/ns/org#headOf"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20head of%20in%20Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Person.headof" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="https://www.w3.org/ns/org#headOf"
+                                           data-toggle="tooltip"
+                                           data-content="https://www.w3.org/ns/org#headOf"
+                                           data-placement="right">
+                                        head of</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#LegalEntity" data-placement="right">Legal Entity</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Indicates that a person (or other agent) is the leader or formal head of the Organization.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
                                 </td>
 				<!--
                                 <td>
@@ -6416,6 +6457,7 @@ A business might have more than one legal name, particularly in countries with m
                             , <a href="#Profile.belgianenterprise">belgian enterprise</a>
                             , <a href="#Profile.category">category</a>
                             , <a href="#Profile.clientsite">client site</a>
+                            , <a href="#Profile.companyvalidationdate">company validation date</a>
                             , <a href="#Profile.contactpoint">contact point</a>
                             , <a href="#Profile.featuredperson">featured person</a>
                             , <a href="#Profile.founder">founder</a>
@@ -6715,6 +6757,52 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                                 <td property="rdfs:comment">
                                     A client site
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Profile.companyvalidationdate"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/resource/model/companyValidationDate"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20company validation date%20in%20Profile&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Profile.companyvalidationdate" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/resource/model/companyValidationDate"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/resource/model/companyValidationDate"
+                                           data-placement="right">
+                                        company validation date</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Date"
+                                               data-toggle="tooltip"
+                                               data-content="http://www.w3.org/2001/XMLSchema#date"
+                                               data-placement="right">Date</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    Date of last contact with the company validating the information.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -7579,7 +7667,10 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#ImageObject" data-placement="right">Image Object</a>
+                                            <a href="#ImageObject"
+                                               data-toggle="tooltip"
+                                               data-content="http://data.europa.eu/m8g/ImageObject"
+                                               data-placement="right">ImageObject</a>
                                         
                                     
                                 </td>
@@ -8384,12 +8475,12 @@ A business might have more than one legal name, particularly in countries with m
                             , <a href="#PublicEvent.contactpoint">contact point</a>
                             , <a href="#PublicEvent.enddate">end date</a>
                             , <a href="#PublicEvent.endpublicationdate">end publication date</a>
+                            , <a href="#PublicEvent.hascost">has cost</a>
                             , <a href="#PublicEvent.hasnextevent">has next event</a>
                             , <a href="#PublicEvent.host">host</a>
                             , <a href="#PublicEvent.location">location</a>
                             , <a href="#PublicEvent.organizer">organizer</a>
                             , <a href="#PublicEvent.partner">partner</a>
-                            , <a href="#PublicEvent.price">price</a>
                             , <a href="#PublicEvent.program">program</a>
                             , <a href="#PublicEvent.scheduleadditionalinformation">schedule additional information</a>
                             , <a href="#PublicEvent.schedulenotspecified">schedule not specified</a>
@@ -8868,6 +8959,49 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
+                            <tr id="PublicEvent.hascost"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/hasCos"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20has cost%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.hascost" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/hasCos"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/hasCos"
+                                           data-placement="right">
+                                        has cost</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Cost" data-placement="right">Cost</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A cost.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
                             <tr id="PublicEvent.hasnextevent"
                                 typeof="rdfs:Property"
                                 resource="http://data.europa.eu/m8g/hasNextEvent"
@@ -9069,49 +9203,6 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                                 <td property="rdfs:comment">
                                     A partner
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="PublicEvent.price"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/price"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20price%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.price" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/price"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/price"
-                                           data-placement="right">
-                                        price</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Cost" data-placement="right">Cost</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A price
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -9561,9 +9652,7 @@ A business might have more than one legal name, particularly in countries with m
                     </dt>
                     
                         <dd>
-                            For this entity the following properties are defined: <a href="#QualifiedPerson.contactperson">contact person</a>
-                            , <a href="#QualifiedPerson.hasprofile">has profile</a>
-                            , <a href="#QualifiedPerson.headof">head of</a>
+                            For this entity the following properties are defined: <a href="#QualifiedPerson.hasprofile">has profile</a>
                             , <a href="#QualifiedPerson.internalname">internal name</a>
                             , <a href="#QualifiedPerson.isopenbyprofile">is open by profile</a>
                             , <a href="#QualifiedPerson.role">role</a>
@@ -9606,49 +9695,6 @@ A business might have more than one legal name, particularly in countries with m
                     </thead>
                     <tbody class="supertype">
                         
-                            <tr id="QualifiedPerson.contactperson"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/contactPerson"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20contact person%20in%20Qualified Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23QualifiedPerson.contactperson" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/contactPerson"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/contactPerson"
-                                           data-placement="right">
-                                        contact person</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#ContactPoint" data-placement="right">Contact Point</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A contact person
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
                             <tr id="QualifiedPerson.hasprofile"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/inOperation"
@@ -9678,49 +9724,6 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                                 <td property="rdfs:comment">
                                     The profile to which the person belongs to.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="QualifiedPerson.headof"
-                                typeof="rdfs:Property"
-                                resource="https://www.w3.org/ns/org#headOf"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20head of%20in%20Qualified Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23QualifiedPerson.headof" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="https://www.w3.org/ns/org#headOf"
-                                           data-toggle="tooltip"
-                                           data-content="https://www.w3.org/ns/org#headOf"
-                                           data-placement="right">
-                                        head of</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#LegalEntity" data-placement="right">Legal Entity</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Indicates that a person (or other agent) is the leader or formal head of the Organization.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -10417,7 +10420,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#ImageObject" data-placement="right">Image Object</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -10677,7 +10680,10 @@ For more structured data use the model in Time Ontology, see an <a href="https:/
                                 <td>
                                     
                                         
-                                            <a href="#ImageObject" data-placement="right">Image Object</a>
+                                            <a href="#ImageObject"
+                                               data-toggle="tooltip"
+                                               data-content="http://data.europa.eu/m8g/ImageObject"
+                                               data-placement="right">ImageObject</a>
                                         
                                     
                                 </td>
@@ -12272,7 +12278,7 @@ The key difference between a locator designator and a locator name is that the l
                                 <td>
                                     
                                         
-                                            <a href="#Integer" data-placement="right">Integer</a>
+                                            <a href="#Double" data-placement="right">Double</a>
                                         
                                     
                                 </td>
@@ -12991,49 +12997,6 @@ The key difference between a locator designator and a locator name is that the l
 </section>
 
 
-
-
-
-
-
-   
-        <section>
-            <h3 id="ImageObject">
-                <a href="http://data.europa.eu/m8g/ImageObject"
-                   data-toggle="tooltip"
-                   data-content="http://data.europa.eu/m8g/ImageObject"
-                   data-placement="right">Image Object</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20ImageObject&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    A logo to describe / represent an entity.
-                </dd>
-                
-                
-                
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                    <dd>
-                        This specification does not impose any additional requirements to properties for this entity.
-                    </dd>
-                
-            </dl>
-        </div>
-        
-    </div>
-</section>
 
 
 
@@ -14955,17 +14918,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 			</tr>
 		
 				
-					<tr>
-						<td><a href="#ImageObject">Image Object</a></td>
-						<td><div class="shorten">http://data.europa.eu/m8g/ImageObject</div></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-				
-			</tr>
-		
-				
 					
 						
 					
@@ -15337,6 +15289,10 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+					
+						
 					
 						
 					
@@ -15480,6 +15436,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Person.givenname">given name </a></td>
 								<td><div class="shorten">http://xmlns.com/foaf/0.1/givenName</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Person">Person</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/person#Person</div></td>
+								<td></td>
+								<td><a href="#Person.headof">head of </a></td>
+								<td><div class="shorten">https://www.w3.org/ns/org#headOf</div></td>
 							</tr>
 						
 					
@@ -16110,6 +16076,10 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+					
+						
 					
 						
 					
@@ -16213,6 +16183,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Profile.clientsite">client site </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/clientSite</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Profile">Profile</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Profile</div></td>
+								<td></td>
+								<td><a href="#Profile.companyvalidationdate">company validation date </a></td>
+								<td><div class="shorten">http://data4wallonia.com/resource/model/companyValidationDate</div></td>
 							</tr>
 						
 					
@@ -16861,6 +16841,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#PublicEvent">Public Event</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
 								<td></td>
+								<td><a href="#PublicEvent.hascost">has cost </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/hasCos</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#PublicEvent">Public Event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
 								<td><a href="#PublicEvent.hasnextevent">has next event </a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/hasNextEvent</div></td>
 							</tr>
@@ -16903,16 +16893,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#PublicEvent.partner">partner </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/partner</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#PublicEvent">Public Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#PublicEvent.price">price </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/price</div></td>
 							</tr>
 						
 					
@@ -17019,10 +16999,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
-						
-					
-						
-					
 					
 						
 					
@@ -17032,20 +17008,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
-						
-					
-						
-					
-					
-						
-							<tr>
-								<td><a href="#QualifiedPerson">Qualified Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
-								<td></td>
-								<td><a href="#QualifiedPerson.contactperson">contact person </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/contactPerson</div></td>
-							</tr>
-						
 					
 						
 							<tr>
@@ -17054,16 +17016,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#QualifiedPerson.hasprofile">has profile </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/inOperation</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#QualifiedPerson">Qualified Person</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/QualifiedPerson</div></td>
-								<td></td>
-								<td><a href="#QualifiedPerson.headof">head of </a></td>
-								<td><div class="shorten">https://www.w3.org/ns/org#headOf</div></td>
 							</tr>
 						
 					

@@ -251,13 +251,6 @@
       "sh:targetClass": "http://data.europa.eu/m8g/Cost"
     },
     {
-      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ImageObjectShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "http://data.europa.eu/m8g/ImageObject"
-    },
-    {
       "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEventShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -623,6 +616,18 @@
           "sh:path": "http://data4wallonia.com/model/endPublicationDate"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEventShape/7b30a2f1323d719049e6047b06a8b969f7f14cf4",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEvent.hascost",
+          "sh:class": "http://data.europa.eu/m8g/Cost",
+          "sh:description": {
+            "en": "A cost."
+          },
+          "sh:name": {
+            "en": "has cost"
+          },
+          "sh:path": "http://data4wallonia.com/model/hasCos"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEventShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEvent.contactpoint",
           "sh:class": "http://data.europa.eu/m8g/ContactPoint",
@@ -755,18 +760,6 @@
           "sh:path": "http://data4wallonia.com/model/slug"
         },
         {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEventShape/ca2cb969961cbcb7c70efa4ef89e062173f9423c",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEvent.price",
-          "sh:class": "http://data.europa.eu/m8g/Cost",
-          "sh:description": {
-            "en": "A price"
-          },
-          "sh:name": {
-            "en": "price"
-          },
-          "sh:path": "http://data4wallonia.com/model/price"
-        },
-        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEventShape/ca557d93c60335eb94cfb2cbade6564cfa29da81",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEvent.enddate",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
@@ -777,18 +770,6 @@
             "en": "end date"
           },
           "sh:path": "http://data4wallonia.com/model/endDate"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEventShape/cf200a5fbe5ecf7cbda3f419283461dc3c17bba4",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEvent.price",
-          "sh:description": {
-            "en": "A price"
-          },
-          "sh:name": {
-            "en": "price"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/price"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEventShape/d0de7c2a6b94abd5d5528c0af6186123704c5488",
@@ -813,6 +794,18 @@
           },
           "sh:nodeKind": "sh:Literal",
           "sh:path": "http://data.europa.eu/m8g/audience"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEventShape/d48349f1f6bda80f4465115b500eea9daa813424",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEvent.hascost",
+          "sh:description": {
+            "en": "A cost."
+          },
+          "sh:name": {
+            "en": "has cost"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/hasCos"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEventShape/d4bd9d49b77e985ca23e98c614a9fdf054d0e8bc",
@@ -3597,6 +3590,30 @@
           "sh:path": "http://data4wallonia.com/model/program"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/4ebb7737084c34cf0ec5052bd074627ac0799351",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.companyvalidationdate",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "sh:description": {
+            "en": "Date of last contact with the company validating the information."
+          },
+          "sh:name": {
+            "en": "company validation date"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/companyValidationDate"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/4f27776b944f416b2f51eb1f576bc07e3327d8d5",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.companyvalidationdate",
+          "sh:description": {
+            "en": "Date of last contact with the company validating the information."
+          },
+          "sh:name": {
+            "en": "company validation date"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/resource/model/companyValidationDate"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/509b0130a51e6b25bac30d58086e33239e7dd7c0",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.nonfeaturedperson",
           "sh:description": {
@@ -3655,6 +3672,18 @@
           },
           "sh:nodeKind": "sh:Literal",
           "sh:path": "http://data4wallonia.com/model/mainNACECode"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/5c41bbdfcdb3200eebeeae887a14f221b0365ede",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.companyvalidationdate",
+          "sh:description": {
+            "en": "Date of last contact with the company validating the information."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "company validation date"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/companyValidationDate"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/5de4ef5193a558e17a34633888421d09b957d267",
@@ -4573,18 +4602,6 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/20e72c692090ea97cd328f03c7904cac5e165bc2",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPerson.headof",
-          "sh:class": "http://www.w3.org/ns/legal#LegalEntity",
-          "sh:description": {
-            "en": "Indicates that a person (or other agent) is the leader or formal head of the Organization."
-          },
-          "sh:name": {
-            "en": "head of"
-          },
-          "sh:path": "https://www.w3.org/ns/org#headOf"
-        },
-        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/245bc89a6c735f27fa08033a9a63ae5d5d7d5acd",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPerson.internalname",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -4595,18 +4612,6 @@
             "en": "internal name"
           },
           "sh:path": "http://data4wallonia.com/model/internalName"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/27527cf24fa0c1ffa7a699f94e3ba85f78ccfeb3",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPerson.contactperson",
-          "sh:class": "http://data.europa.eu/m8g/ContactPoint",
-          "sh:description": {
-            "en": "A contact person"
-          },
-          "sh:name": {
-            "en": "contact person"
-          },
-          "sh:path": "http://data4wallonia.com/model/contactPerson"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/27d80fd06327a52ab3580ad24144c541bda9fbc5",
@@ -4633,18 +4638,6 @@
           "sh:uniqueLang": "true"
         },
         {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/803b12f15a761ac251e073bd57d79d58d35c7186",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPerson.headof",
-          "sh:description": {
-            "en": "Indicates that a person (or other agent) is the leader or formal head of the Organization."
-          },
-          "sh:name": {
-            "en": "head of"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "https://www.w3.org/ns/org#headOf"
-        },
-        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/91be2d6f842ddff429910d152006249f53939d5b",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPerson.isopenbyprofile",
           "sh:description": {
@@ -4667,18 +4660,6 @@
           },
           "sh:nodeKind": "sh:Literal",
           "sh:path": "http://data4wallonia.com/model/role"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/aab74fbe6d33f052b680a26672cdd4f428065ec6",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPerson.contactperson",
-          "sh:description": {
-            "en": "A contact person"
-          },
-          "sh:name": {
-            "en": "contact person"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/contactPerson"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/afd9a27ccaa20adc43578d2297410e5ec6193f0d",
@@ -4907,7 +4888,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ServicesPlaceShape/3ccc58fb8a7a5613841887e709b94d952ab6a735",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ServicesPlace.facadephoto",
-          "sh:class": "http://data.europa.eu/m8g/ImageObject",
+          "sh:class": "http://data4wallonia.com/model/File",
           "sh:description": {
             "en": "A facade photo"
           },
@@ -5631,7 +5612,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudgetShape/e8e79eca21df1ad0ebd03cf24d5017b30882da13",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AnnualBudget.budget",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#decimal",
           "sh:description": {
             "en": "A budget"
           },
@@ -6488,7 +6469,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/dce5f0b9ce22d1c7f8f95163ed722d4236e5a3dc",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.logo",
-          "sh:class": "http://data.europa.eu/m8g/ImageObject",
+          "sh:class": "http://data4wallonia.com/model/File",
           "sh:description": {
             "en": "A logo"
           },
@@ -7122,6 +7103,18 @@
           "sh:path": "http://xmlns.com/foaf/0.1/familyName"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/20e72c692090ea97cd328f03c7904cac5e165bc2",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.headof",
+          "sh:class": "http://www.w3.org/ns/legal#LegalEntity",
+          "sh:description": {
+            "en": "Indicates that a person (or other agent) is the leader or formal head of the Organization."
+          },
+          "sh:name": {
+            "en": "head of"
+          },
+          "sh:path": "https://www.w3.org/ns/org#headOf"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/24a51f741f7dc54cc225d47abc4d51600b2eb0e4",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.shortdescription",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -7300,6 +7293,18 @@
           },
           "sh:nodeKind": "sh:Literal",
           "sh:path": "http://xmlns.com/foaf/0.1/familyName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/803b12f15a761ac251e073bd57d79d58d35c7186",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.headof",
+          "sh:description": {
+            "en": "Indicates that a person (or other agent) is the leader or formal head of the Organization."
+          },
+          "sh:name": {
+            "en": "head of"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://www.w3.org/ns/org#headOf"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/8e33c2fbd908194cb4c79aac6b2cd8f5521bd4ac",

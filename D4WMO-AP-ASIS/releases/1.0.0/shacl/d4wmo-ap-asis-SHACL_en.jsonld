@@ -2301,7 +2301,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AnnualBudgetShape/e8e79eca21df1ad0ebd03cf24d5017b30882da13",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#AnnualBudget.budget",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#decimal",
           "sh:description": {
             "en": "A budget"
           },
@@ -2741,6 +2741,18 @@
           },
           "sh:path": "http://data4wallonia.com/resource/model/price",
           "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#EventShape/236f0210baaf149903750c43bbe7012c21debb2a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Event.type",
+          "sh:description": {
+            "en": "A type"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "type"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/type"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#EventShape/24a51f741f7dc54cc225d47abc4d51600b2eb0e4",
@@ -6174,6 +6186,30 @@
           "sh:path": "http://data4wallonia.com/resource/model/program"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ProfileShape/4ebb7737084c34cf0ec5052bd074627ac0799351",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Profile.companyvalidationdate",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "sh:description": {
+            "en": "Date of last contact with the company validating the information."
+          },
+          "sh:name": {
+            "en": "company validation date"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/companyValidationDate"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ProfileShape/4f27776b944f416b2f51eb1f576bc07e3327d8d5",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Profile.companyvalidationdate",
+          "sh:description": {
+            "en": "Date of last contact with the company validating the information."
+          },
+          "sh:name": {
+            "en": "company validation date"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/resource/model/companyValidationDate"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ProfileShape/503a0b1abd6b8aabb536ac808f232a166bc97ccd",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Profile.shortdescription",
           "sh:description": {
@@ -6256,6 +6292,18 @@
           },
           "sh:nodeKind": "sh:Literal",
           "sh:path": "http://data4wallonia.com/resource/model/mainNACECode"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ProfileShape/5c41bbdfcdb3200eebeeae887a14f221b0365ede",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Profile.companyvalidationdate",
+          "sh:description": {
+            "en": "Date of last contact with the company validating the information."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "company validation date"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/companyValidationDate"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ProfileShape/5de4ef5193a558e17a34633888421d09b957d267",
@@ -7034,18 +7082,6 @@
           "sh:path": "http://data4wallonia.com/resource/model/clientSite"
         },
         {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ProgramShape/5884d9866e6e4c171fe49697ee9a036468538122",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Program.referencePost",
-          "sh:class": "http://data4wallonia.com/resource/model/Post",
-          "sh:description": {
-            "en": "A reference post"
-          },
-          "sh:name": {
-            "en": "referencePost"
-          },
-          "sh:path": "http://data4wallonia.com/resource/model/referencePost"
-        },
-        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ProgramShape/58c075f3ec5c082c4b471ce4fe1c6af336b5e905",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Program.baseline",
           "sh:description": {
@@ -7214,18 +7250,6 @@
           "sh:path": "http://data4wallonia.com/resource/model/contentSummary"
         },
         {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ProgramShape/88cb3f715f09aac79808193e36ef5d10dff55e9d",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Program.referencePost",
-          "sh:description": {
-            "en": "A reference post"
-          },
-          "sh:name": {
-            "en": "referencePost"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/resource/model/referencePost"
-        },
-        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ProgramShape/88d191266733e8b5b02df9cd24d9f23ae0ca4bbb",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Program.banner",
           "sh:description": {
@@ -7344,18 +7368,6 @@
             "en": "master ambition"
           },
           "sh:path": "http://data4wallonia.com/resource/model/masterAmbition"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ProgramShape/b3c24f880f0eff10b5b0dcd09ee9838dc108c74d",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Program.referencePost",
-          "sh:description": {
-            "en": "A reference post"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "referencePost"
-          },
-          "sh:path": "http://data4wallonia.com/resource/model/referencePost"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ProgramShape/b7707a7d12adfe39ed5fc9b262c71e85d9cf404b",

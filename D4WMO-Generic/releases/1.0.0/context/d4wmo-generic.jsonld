@@ -118,7 +118,6 @@
     "GYear": "http://www.w3.org/2001/XMLSchema#gYear",
     "Geometry": "http://www.w3.org/ns/locn#Geometry",
     "Identifier": "http://www.w3.org/ns/adms#Identifier",
-    "ImageObject": "http://data.europa.eu/m8g/ImageObject",
     "Integer": "http://www.w3.org/2001/XMLSchema#integer",
     "LegalEntity": "http://www.w3.org/ns/legal#LegalEntity",
     "LegalEntity.contactPoint": {
@@ -319,6 +318,11 @@
       "@id": "hthttp://data.europa.eu/m8g/contactPoint",
       "@type": "@id"
     },
+    "PublicEvent.hasCost": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/hasCos",
+      "@type": "@id"
+    },
     "PublicEvent.partner": {
       "@container": "@set",
       "@id": "http://data4wallonia.com/model/partner",
@@ -340,11 +344,6 @@
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "QualifiedPerson": "http://data4wallonia.com/model/QualifiedPerson",
-    "QualifiedPerson.contactPoint": {
-      "@container": "@set",
-      "@id": "http://data4wallonia.com/model/contactPerson",
-      "@type": "@id"
-    },
     "QualifiedPerson.internalName": {
       "@container": "@set",
       "@id": "http://data4wallonia.com/model/internalName",
@@ -369,6 +368,11 @@
       "@container": "@set",
       "@id": "http://data4wallonia.com/model/clientSite",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ServicesPlace.hasCost": {
+      "@container": "@set",
+      "@id": "http://data4wallonia.com/model/hasCost",
+      "@type": "@id"
     },
     "ServicesPlace.partner": {
       "@container": "@set",
@@ -514,7 +518,7 @@
     "budget": {
       "@container": "@set",
       "@id": "http://data4wallonia.com/resource/model/budget",
-      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      "@type": "http://www.w3.org/2001/XMLSchema#decimal"
     },
     "capacity": {
       "@container": "@set",
@@ -529,6 +533,10 @@
     "classification": {
       "@id": "https://www.w3.org/ns/org#classification",
       "@type": "@id"
+    },
+    "companyValidationDate": {
+      "@id": "http://data4wallonia.com/resource/model/companyValidationDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#date"
     },
     "contactPage": {
       "@container": "@set",
@@ -648,11 +656,6 @@
       "@container": "@set",
       "@id": "http://xmlns.com/foaf/0.1/givenName",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    },
-    "hasCost": {
-      "@container": "@set",
-      "@id": "http://data4wallonia.com/model/hasCost",
-      "@type": "@id"
     },
     "hasEmail": {
       "@container": "@set",
@@ -911,11 +914,6 @@
       "@container": "@set",
       "@id": "http://www.w3.org/ns/locn#postName",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    },
-    "price": {
-      "@container": "@set",
-      "@id": "http://data4wallonia.com/model/price",
-      "@type": "@id"
     },
     "profile": {
       "@id": "http://data4wallonia.com/resource/model/profile",
