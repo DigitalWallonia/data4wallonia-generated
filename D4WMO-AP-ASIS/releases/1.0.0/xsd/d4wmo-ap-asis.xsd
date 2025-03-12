@@ -19,6 +19,7 @@
   <xs:element name="ServicesPlace" type="ServicesPlaceType"/>
   <xs:element name="Text" type="TextType"/>
   <xs:element name="Boolean" type="BooleanType"/>
+  <xs:element name="Date" type="DateType"/>
   <xs:element name="DateTime" type="DateTimeType"/>
   <xs:element name="Decimal" type="DecimalType"/>
   <xs:element name="GYear" type="GYearType"/>
@@ -1323,6 +1324,14 @@
     <xs:attribute name="BooleanRef" type="xs:IDREF">
       <xs:annotation>
         <xs:documentation xml:lang="en">Reference to Boolean ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="DateType">
+    <xs:sequence/>
+    <xs:attribute name="DateRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Date ID</xs:documentation>
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>

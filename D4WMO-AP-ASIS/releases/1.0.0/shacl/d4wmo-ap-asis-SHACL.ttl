@@ -23,6 +23,7 @@
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ServicesPlaceShape>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#TextShape>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#BooleanShape>,
+    <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#DateShape>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#DateTimeShape>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#DecimalShape>,
     <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#gYearShape>,
@@ -1701,6 +1702,10 @@
   shacl:minCount 1;
   shacl:name "title"@en;
   shacl:path <http://data4wallonia.com/resource/model/title> .
+
+<https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#DateShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass xsd:date .
 
 <https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#DateTimeShape> a shacl:NodeShape;
   shacl:closed false;

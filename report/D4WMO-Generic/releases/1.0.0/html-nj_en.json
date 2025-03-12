@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/cf6485ef9ab8a96ec2ebac9bf0de70699a6a5d64",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/cf6485ef9ab8a96ec2ebac9bf0de70699a6a5d64/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/c4d5972683fe45fd3aabec0c752887cc0e097dca",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/c4d5972683fe45fd3aabec0c752887cc0e097dca/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-Generic/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -5967,7 +5967,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_uri": "#Date",
               "range_puri": "http://www.w3.org/2001/XMLSchema#date",
               "range_label": {
                 "en": "Date"
@@ -6062,16 +6062,16 @@
           ],
           "range": [
             {
-              "range_label": "ImageObject",
-              "range_uri": "http://data.europa.eu/m8g/ImageObject"
+              "range_label": "Asset",
+              "range_uri": "http://data4wallonia.com/model/File"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "http://data.europa.eu/m8g/ImageObject",
-              "range_puri": "http://data.europa.eu/m8g/ImageObject",
+              "range_uri": "#Asset",
+              "range_puri": "http://data4wallonia.com/model/File",
               "range_label": {
-                "en": "ImageObject"
+                "en": "Asset"
               }
             }
           ],
@@ -6662,25 +6662,25 @@
           ],
           "range": [
             {
-              "range_label": "PublicEvent",
-              "range_uri": "http://data.europa.eu/m8g/PublicEvent"
+              "range_label": "Post",
+              "range_uri": "http://data4wallonia.com/model/Post"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Public Event",
-              "range_puri": "http://data.europa.eu/m8g/PublicEvent",
+              "range_uri": "#Post",
+              "range_puri": "http://data4wallonia.com/model/Post",
               "range_label": {
-                "en": "Public Event"
+                "en": "Post"
               }
             }
           ],
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "http://data4wallonia.com/model/sticky",
             "label-en": "sticky",
-            "definition-en": "A sticky"
+            "definition-en": "A sticky",
+            "uri": "http://data4wallonia.com/model/sticky"
           }
         },
         {
@@ -6702,25 +6702,25 @@
           ],
           "range": [
             {
-              "range_label": "Post",
-              "range_uri": "http://data4wallonia.com/model/Post"
+              "range_label": "PublicEvent",
+              "range_uri": "http://data.europa.eu/m8g/PublicEvent"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Post",
-              "range_puri": "http://data4wallonia.com/model/Post",
+              "range_uri": "#Public Event",
+              "range_puri": "http://data.europa.eu/m8g/PublicEvent",
               "range_label": {
-                "en": "Post"
+                "en": "Public Event"
               }
             }
           ],
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
+            "uri": "http://data4wallonia.com/model/sticky",
             "label-en": "sticky",
-            "definition-en": "A sticky",
-            "uri": "http://data4wallonia.com/model/sticky"
+            "definition-en": "A sticky"
           }
         },
         {
@@ -7036,16 +7036,16 @@
           ],
           "range": [
             {
-              "range_label": "ImageObject",
-              "range_uri": "http://data.europa.eu/m8g/ImageObject"
+              "range_label": "Asset",
+              "range_uri": "http://data4wallonia.com/model/File"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "http://data.europa.eu/m8g/ImageObject",
-              "range_puri": "http://data.europa.eu/m8g/ImageObject",
+              "range_uri": "#Asset",
+              "range_puri": "http://data4wallonia.com/model/File",
               "range_label": {
-                "en": "ImageObject"
+                "en": "Asset"
               }
             }
           ],
@@ -8429,7 +8429,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_uri": "#Date",
               "range_puri": "http://www.w3.org/2001/XMLSchema#date",
               "range_label": {
                 "en": "Date"
@@ -8657,7 +8657,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_uri": "#Date",
               "range_puri": "http://www.w3.org/2001/XMLSchema#date",
               "range_label": {
                 "en": "Date"
@@ -10778,6 +10778,27 @@
         "definition-en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat",
         "label-en": "Boolean",
         "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "properties": []
+    },
+    {
+      "uri": "http://www.w3.org/2001/XMLSchema#date",
+      "name": "Date",
+      "label": {
+        "en": "Date"
+      },
+      "sort": "Date",
+      "description": {
+        "en": "The ·value space· of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
+      },
+      "usage": {},
+      "parents": [],
+      "rawTags": {
+        "class-usage-scope": "datatype",
+        "definition-en": "The ·value space· of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap.",
+        "label-en": "Date",
+        "literal": "True",
+        "uri": "http://www.w3.org/2001/XMLSchema#date"
       },
       "properties": []
     },
