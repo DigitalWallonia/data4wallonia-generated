@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/c4d5972683fe45fd3aabec0c752887cc0e097dca",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/c4d5972683fe45fd3aabec0c752887cc0e097dca/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/c6f4e7468c744852fa46bd2c8de77f1cc1c15370",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/c6f4e7468c744852fa46bd2c8de77f1cc1c15370/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-Generic/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -393,6 +393,43 @@
             "label-en": "has value",
             "uri": "http://data.europa.eu/m8g/hasValue",
             "property-usage-scope": "optional"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/price",
+          "name": "price",
+          "sort": "price",
+          "label": {
+            "en": "price"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Cost",
+              "uri": "http://data.europa.eu/m8g/Cost"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/price",
+            "label-en": "price"
           }
         }
       ]
@@ -1415,6 +1452,49 @@
             "label-en": "location",
             "definition-en": "\tAssociates any Resource with the corresponding Address."
           }
+        },
+        {
+          "uri": "http://xmlns.com/foaf/0.1/homepage",
+          "name": "homepage",
+          "sort": "homepage",
+          "label": {
+            "en": "homepage"
+          },
+          "description": {
+            "en": "The website of the Public Event."
+          },
+          "usage": {
+            "en": "The value of this property is a URL, like the URL of a webinar."
+          },
+          "domain": [
+            {
+              "EA-Name": "PublicEvent",
+              "uri": "http://data.europa.eu/m8g/PublicEvent"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Document",
+              "range_uri": "http://xmlns.com/foaf/0.1/Document"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Document",
+              "range_puri": "http://xmlns.com/foaf/0.1/Document",
+              "range_label": {
+                "en": "Document"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://xmlns.com/foaf/0.1/homepage",
+            "label-en": "homepage",
+            "definition-en": "The website of the Public Event.",
+            "usageNote-en": "The value of this property is a URL, like the URL of a webinar."
+          }
         }
       ]
     },
@@ -2358,6 +2438,46 @@
           }
         },
         {
+          "uri": "http://data4wallonia.com/model/referenceCategory",
+          "name": "referenceCategory",
+          "sort": "reference Category",
+          "label": {
+            "en": "reference Category"
+          },
+          "description": {
+            "en": "A reference category"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ActionPlan",
+              "uri": "http://data4wallonia.com/model/ActionPlan"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Code",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Code",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Code"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/referenceCategory",
+            "label-en": "reference Category",
+            "definition-en": "A reference category"
+          }
+        },
+        {
           "uri": "http://data4wallonia.com/model/referenceEvent",
           "name": "referenceEvent",
           "sort": "reference event",
@@ -2875,6 +2995,86 @@
             "uri": "http://data4wallonia.com/resource/model/annualBudgetAllocation",
             "label-en": "annual budget allocation",
             "definition-en": "An annual budget allocation"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/resource/model/numberOfBeneficiaries",
+          "name": "numberOfBeneficiaries",
+          "sort": "number of beneficiaries",
+          "label": {
+            "en": "number of beneficiaries"
+          },
+          "description": {
+            "en": "The number of beneficiaries of the Action Plan."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ActionPlan",
+              "uri": "http://data4wallonia.com/model/ActionPlan"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Integer",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Integer",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_label": {
+                "en": "Integer"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/resource/model/numberOfBeneficiaries",
+            "label-en": "number of beneficiaries",
+            "definition-en": "The number of beneficiaries of the Action Plan."
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/resource/model/numberOfOccurences",
+          "name": "numberOfOccurences",
+          "sort": "number of occurences",
+          "label": {
+            "en": "number of occurences"
+          },
+          "description": {
+            "en": "The number of occurences of the Action Plan."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ActionPlan",
+              "uri": "http://data4wallonia.com/model/ActionPlan"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Integer",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Integer",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_label": {
+                "en": "Integer"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/resource/model/numberOfOccurences",
+            "label-en": "number of occurences",
+            "definition-en": "The number of occurences of the Action Plan."
           }
         }
       ]
@@ -5974,7 +6174,7 @@
               }
             }
           ],
-          "cardinality": "0..1",
+          "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/resource/model/companyValidationDate",
@@ -6662,25 +6862,25 @@
           ],
           "range": [
             {
-              "range_label": "Post",
-              "range_uri": "http://data4wallonia.com/model/Post"
+              "range_label": "PublicEvent",
+              "range_uri": "http://data.europa.eu/m8g/PublicEvent"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Post",
-              "range_puri": "http://data4wallonia.com/model/Post",
+              "range_uri": "#Public Event",
+              "range_puri": "http://data.europa.eu/m8g/PublicEvent",
               "range_label": {
-                "en": "Post"
+                "en": "Public Event"
               }
             }
           ],
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
+            "uri": "http://data4wallonia.com/model/sticky",
             "label-en": "sticky",
-            "definition-en": "A sticky",
-            "uri": "http://data4wallonia.com/model/sticky"
+            "definition-en": "A sticky"
           }
         },
         {
@@ -6702,25 +6902,25 @@
           ],
           "range": [
             {
-              "range_label": "PublicEvent",
-              "range_uri": "http://data.europa.eu/m8g/PublicEvent"
+              "range_label": "Post",
+              "range_uri": "http://data4wallonia.com/model/Post"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Public Event",
-              "range_puri": "http://data.europa.eu/m8g/PublicEvent",
+              "range_uri": "#Post",
+              "range_puri": "http://data4wallonia.com/model/Post",
               "range_label": {
-                "en": "Public Event"
+                "en": "Post"
               }
             }
           ],
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "http://data4wallonia.com/model/sticky",
             "label-en": "sticky",
-            "definition-en": "A sticky"
+            "definition-en": "A sticky",
+            "uri": "http://data4wallonia.com/model/sticky"
           }
         },
         {
@@ -8704,7 +8904,7 @@
               }
             }
           ],
-          "cardinality": "1",
+          "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
             "label-en": "S3 thema",
@@ -8744,7 +8944,7 @@
               }
             }
           ],
-          "cardinality": "1",
+          "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
             "label-en": "active entity",
@@ -8784,7 +8984,7 @@
               }
             }
           ],
-          "cardinality": "1",
+          "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
             "label-en": "activity description",
@@ -8824,7 +9024,7 @@
               }
             }
           ],
-          "cardinality": "1",
+          "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
             "label-en": "activity nature",
@@ -8944,7 +9144,7 @@
               }
             }
           ],
-          "cardinality": "1",
+          "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
             "label-en": "main NACE code",
@@ -8984,7 +9184,7 @@
               }
             }
           ],
-          "cardinality": "1",
+          "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
             "label-en": "market",
@@ -9241,7 +9441,7 @@
               }
             }
           ],
-          "cardinality": "1",
+          "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
             "label-en": "classification",
@@ -9284,7 +9484,7 @@
               }
             }
           ],
-          "cardinality": "1",
+          "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
             "label-en": "numéro d'établissement",
@@ -9367,7 +9567,7 @@
               }
             }
           ],
-          "cardinality": "1",
+          "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
             "label-en": "purpose",
@@ -9472,7 +9672,7 @@
               }
             }
           ],
-          "cardinality": "1",
+          "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
             "label-en": "continent",
@@ -9686,7 +9886,7 @@
               }
             }
           ],
-          "cardinality": "1",
+          "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://www.w3.org/ns/locn#locatorName",
@@ -9815,7 +10015,7 @@
               }
             }
           ],
-          "cardinality": "1",
+          "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
             "label-en": "thoroughfare",
@@ -10236,14 +10436,14 @@
           }
         },
         {
-          "uri": "http://data4wallonia.com/model/involvedIn",
-          "name": "involvedIn",
-          "sort": "involved in",
+          "uri": "http://data4wallonia.com/model/isContactFor",
+          "name": "isContactfor",
+          "sort": "is contactFor",
           "label": {
-            "en": "involved in"
+            "en": "is contactFor"
           },
           "description": {
-            "en": "The Program in which a Resource is allocated to."
+            "en": "The Program in which a Person is contact for."
           },
           "usage": {},
           "domain": [
@@ -10270,9 +10470,9 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "definition-en": "The Program in which a Resource is allocated to.",
-            "uri": "http://data4wallonia.com/model/involvedIn",
-            "label-en": "involved in"
+            "definition-en": "The Program in which a Person is contact for.",
+            "uri": "http://data4wallonia.com/model/isContactFor",
+            "label-en": "is contactFor"
           }
         },
         {
@@ -10510,7 +10710,7 @@
               }
             }
           ],
-          "cardinality": "1",
+          "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://www.w3.org/2006/vcard/ns#honorific-prefix",

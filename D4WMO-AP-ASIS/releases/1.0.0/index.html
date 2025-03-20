@@ -363,6 +363,7 @@ The main entities are those that form the core of the Application Profile.
                             , <a href="#ActionPlan.progressstatus">progress status</a>
                             , <a href="#ActionPlan.projectholder">project holder</a>
                             , <a href="#ActionPlan.referenceactionplan">reference action plan</a>
+                            , <a href="#ActionPlan.referencecategory">reference category</a>
                             , <a href="#ActionPlan.referenceevent">reference event</a>
                             , <a href="#ActionPlan.referencepost">reference post</a>
                             , <a href="#ActionPlan.relatedfile">related file</a>
@@ -1562,6 +1563,49 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                                 <td property="rdfs:comment">
                                     A reference action plan
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="ActionPlan.referencecategory"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/resource/model/referenceCategory"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20reference category%20in%20Action Plan&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23ActionPlan.referencecategory" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/resource/model/referenceCategory"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/resource/model/referenceCategory"
+                                           data-placement="right">
+                                        reference category</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Category" data-placement="right">Category</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    A reference category
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -3472,7 +3516,7 @@ The main entities are those that form the core of the Application Profile.
                             , <a href="#Person.featuredemail">featured email</a>
                             , <a href="#Person.firstname">first name</a>
                             , <a href="#Person.internalname">internal name</a>
-                            , <a href="#Person.involvedin">involved in</a>
+                            , <a href="#Person.iscontactfor">is contact for</a>
                             , <a href="#Person.landline">landline</a>
                             , <a href="#Person.language">language</a>
                             , <a href="#Person.lastname">last name</a>
@@ -3952,22 +3996,22 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                             </tr>
                         
-                            <tr id="Person.involvedin"
+                            <tr id="Person.iscontactfor"
                                 typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/resource/model/involvedIn"
+                                resource="http://data4wallonia.com/resource/model/isContactFor"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20involved in%20in%20Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Person.involvedin" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20is contact for%20in%20Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Person.iscontactfor" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://data4wallonia.com/resource/model/involvedIn"
+                                        <a href="http://data4wallonia.com/resource/model/isContactFor"
                                            data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/resource/model/involvedIn"
+                                           data-content="http://data4wallonia.com/resource/model/isContactFor"
                                            data-placement="right">
-                                        involved in</a>
+                                        is contact for</a>
                                 </td>
                                 <td>
                                     
@@ -3980,7 +4024,7 @@ The main entities are those that form the core of the Application Profile.
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    The Program in which a Resource is allocated to.
+                                    The Program in which the person is a contact for.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -12309,6 +12353,10 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+					
+						
 					
 						
 					
@@ -12658,6 +12706,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#ActionPlan.referenceactionplan">reference action plan </a></td>
 								<td><div class="shorten">http://data4wallonia.com/resource/model/referenceActionPlan</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#ActionPlan">Action Plan</a></td>
+								<td><div class="shorten">http://data4wallonia.com/resource/model/ActionPlan</div></td>
+								<td></td>
+								<td><a href="#ActionPlan.referencecategory">reference category </a></td>
+								<td><div class="shorten">http://data4wallonia.com/resource/model/referenceCategory</div></td>
 							</tr>
 						
 					
@@ -13891,8 +13949,8 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#Person">Person</a></td>
 								<td><div class="shorten">http://data4wallonia.com/resource/model/Person</div></td>
 								<td></td>
-								<td><a href="#Person.involvedin">involved in </a></td>
-								<td><div class="shorten">http://data4wallonia.com/resource/model/involvedIn</div></td>
+								<td><a href="#Person.iscontactfor">is contact for </a></td>
+								<td><div class="shorten">http://data4wallonia.com/resource/model/isContactFor</div></td>
 							</tr>
 						
 					

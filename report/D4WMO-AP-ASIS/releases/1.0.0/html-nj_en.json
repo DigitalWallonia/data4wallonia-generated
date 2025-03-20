@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/c4d5972683fe45fd3aabec0c752887cc0e097dca",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/c4d5972683fe45fd3aabec0c752887cc0e097dca/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/c6f4e7468c744852fa46bd2c8de77f1cc1c15370",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/c6f4e7468c744852fa46bd2c8de77f1cc1c15370/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-AP-ASIS/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -1122,6 +1122,46 @@
             "label-en": "reference action plan",
             "uri": "http://data4wallonia.com/resource/model/referenceActionPlan",
             "definition-en": "A reference action plan"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/resource/model/referenceCategory",
+          "name": "referenceCategory",
+          "sort": "reference category",
+          "label": {
+            "en": "reference category"
+          },
+          "description": {
+            "en": "A reference category"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ActionPlan",
+              "uri": "http://data4wallonia.com/resource/model/ActionPlan"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Category",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Category",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Category"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/resource/model/referenceCategory",
+            "label-en": "reference category",
+            "definition-en": "A reference category"
           }
         },
         {
@@ -4293,14 +4333,14 @@
           }
         },
         {
-          "uri": "http://data4wallonia.com/resource/model/involvedIn",
-          "name": "involvedIn",
-          "sort": "involved in",
+          "uri": "http://data4wallonia.com/resource/model/isContactFor",
+          "name": "isContactFor",
+          "sort": "is contact for",
           "label": {
-            "en": "involved in"
+            "en": "is contact for"
           },
           "description": {
-            "en": "The Program in which a Resource is allocated to."
+            "en": "The Program in which the person is a contact for."
           },
           "usage": {},
           "domain": [
@@ -4327,9 +4367,9 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "definition-en": "The Program in which a Resource is allocated to.",
-            "uri": "http://data4wallonia.com/resource/model/involvedIn",
-            "label-en": "involved in"
+            "definition-en": "The Program in which the person is a contact for.",
+            "uri": "http://data4wallonia.com/resource/model/isContactFor",
+            "label-en": "is contact for"
           }
         },
         {

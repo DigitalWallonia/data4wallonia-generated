@@ -359,7 +359,9 @@ The main entities are those that form the core of the Application Profile.
                             , <a href="#ActionPlan.leadermission">leader mission</a>
                             , <a href="#ActionPlan.marketingshortdescription">marketing short description</a>
                             , <a href="#ActionPlan.marketingtitle">marketing title</a>
+                            , <a href="#ActionPlan.numberofbeneficiaries">number of beneficiaries</a>
                             , <a href="#ActionPlan.numberofequipments">number of equipments</a>
+                            , <a href="#ActionPlan.numberofoccurences">number of occurences</a>
                             , <a href="#ActionPlan.numberofparticipants">number of participants</a>
                             , <a href="#ActionPlan.occurence">occurence</a>
                             , <a href="#ActionPlan.participant">participant</a>
@@ -367,6 +369,7 @@ The main entities are those that form the core of the Application Profile.
                             , <a href="#ActionPlan.progressstatus">progress status</a>
                             , <a href="#ActionPlan.projectholder">project holder</a>
                             , <a href="#ActionPlan.referenceactionplan">reference action plan</a>
+                            , <a href="#ActionPlan.referenceCategory">reference Category</a>
                             , <a href="#ActionPlan.referenceevent">reference event</a>
                             , <a href="#ActionPlan.referencepost">reference post</a>
                             , <a href="#ActionPlan.relatedfile">related file</a>
@@ -1148,6 +1151,49 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                             </tr>
                         
+                            <tr id="ActionPlan.numberofbeneficiaries"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/resource/model/numberOfBeneficiaries"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20number of beneficiaries%20in%20Action Plan&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23ActionPlan.numberofbeneficiaries" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/resource/model/numberOfBeneficiaries"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/resource/model/numberOfBeneficiaries"
+                                           data-placement="right">
+                                        number of beneficiaries</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Integer" data-placement="right">Integer</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The number of beneficiaries of the Action Plan.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
                             <tr id="ActionPlan.numberofequipments"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/numberOfEquipments"
@@ -1177,6 +1223,49 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                                 <td property="rdfs:comment">
                                     A number of equipments
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="ActionPlan.numberofoccurences"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/resource/model/numberOfOccurences"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20number of occurences%20in%20Action Plan&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23ActionPlan.numberofoccurences" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/resource/model/numberOfOccurences"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/resource/model/numberOfOccurences"
+                                           data-placement="right">
+                                        number of occurences</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Integer" data-placement="right">Integer</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The number of occurences of the Action Plan.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -1478,6 +1567,49 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                                 <td property="rdfs:comment">
                                     A reference action plan
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="ActionPlan.referenceCategory"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/referenceCategory"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20reference Category%20in%20Action Plan&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23ActionPlan.referenceCategory" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/referenceCategory"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/referenceCategory"
+                                           data-placement="right">
+                                        reference Category</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Code" data-placement="right">Code</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A reference category
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -2371,6 +2503,7 @@ The main entities are those that form the core of the Application Profile.
                         <dd>
                             For this entity the following properties are defined: <a href="#Cost.currency">currency</a>
                             , <a href="#Cost.hasvalue">has value</a>
+                            , <a href="#Cost.price">price</a>
                             .
                     </dd>
                 
@@ -2486,6 +2619,49 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                                 <td property="rdfs:comment">
                                     A numeric value indicating the amount of the Cost.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Cost.price"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/price"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20price%20in%20Cost&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Cost.price" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/price"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/price"
+                                           data-placement="right">
+                                        price</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -2943,7 +3119,7 @@ The main entities are those that form the core of the Application Profile.
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..*
                                 </td>
                                 <td property="rdfs:comment">
                                     Defines the activity status of the entity
@@ -2986,7 +3162,7 @@ The main entities are those that form the core of the Application Profile.
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..*
                                 </td>
                                 <td property="rdfs:comment">
                                     Description of the activity of the entity
@@ -3029,7 +3205,7 @@ The main entities are those that form the core of the Application Profile.
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..*
                                 </td>
                                 <td property="rdfs:comment">
                                     Nature of the activity of the entity
@@ -3072,7 +3248,7 @@ The main entities are those that form the core of the Application Profile.
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..*
                                 </td>
                                 <td property="rdfs:comment">
                                     Indicates a classification for this Organization within some classification scheme.
@@ -3417,7 +3593,7 @@ A business might have more than one legal name, particularly in countries with m
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..*
                                 </td>
                                 <td property="rdfs:comment">
                                     A main NACE code
@@ -3460,7 +3636,7 @@ A business might have more than one legal name, particularly in countries with m
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..*
                                 </td>
                                 <td property="rdfs:comment">
                                     Market of the entity
@@ -3546,7 +3722,7 @@ A business might have more than one legal name, particularly in countries with m
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..*
                                 </td>
                                 <td property="rdfs:comment">
                                     Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization.
@@ -3589,7 +3765,7 @@ A business might have more than one legal name, particularly in countries with m
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..*
                                 </td>
                                 <td property="rdfs:comment">
                                     Indicates the purpose of this Organization. There can be many purposes at different levels of abstraction but the nature of an organization is to have a reason for existence and this property is a means to document that reason. An Organization may have mu
@@ -3718,7 +3894,7 @@ A business might have more than one legal name, particularly in countries with m
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..*
                                 </td>
                                 <td property="rdfs:comment">
                                     S3 thema related to the entity
@@ -3842,7 +4018,7 @@ A business might have more than one legal name, particularly in countries with m
                             , <a href="#Person.givenname">given name</a>
                             , <a href="#Person.headof">head of</a>
                             , <a href="#Person.honorificprefix">honorific prefix</a>
-                            , <a href="#Person.involvedin">involved in</a>
+                            , <a href="#Person.iscontactFor">is contactFor</a>
                             , <a href="#Person.language">language</a>
                             , <a href="#Person.photo">photo</a>
                             , <a href="#Person.shortdescription">short description</a>
@@ -4427,7 +4603,7 @@ A business might have more than one legal name, particularly in countries with m
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..*
                                 </td>
                                 <td property="rdfs:comment">
                                     The honorific prefix of the name associated with the object
@@ -4445,22 +4621,22 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Person.involvedin"
+                            <tr id="Person.iscontactFor"
                                 typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/involvedIn"
+                                resource="http://data4wallonia.com/model/isContactFor"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20involved in%20in%20Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Person.involvedin" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20is contactFor%20in%20Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Person.iscontactFor" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://data4wallonia.com/model/involvedIn"
+                                        <a href="http://data4wallonia.com/model/isContactFor"
                                            data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/involvedIn"
+                                           data-content="http://data4wallonia.com/model/isContactFor"
                                            data-placement="right">
-                                        involved in</a>
+                                        is contactFor</a>
                                 </td>
                                 <td>
                                     
@@ -4473,7 +4649,7 @@ A business might have more than one legal name, particularly in countries with m
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    The Program in which a Resource is allocated to.
+                                    The Program in which a Person is contact for.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -6790,7 +6966,7 @@ A business might have more than one legal name, particularly in countries with m
                                     
                                 </td>
                                 <td>
-                                    0..1
+                                    0..*
                                 </td>
                                 <td property="rdfs:comment">
                                     Date of last contact with the company validating the information.
@@ -8303,7 +8479,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#Post" data-placement="right">Post</a>
+                                            <a href="#PublicEvent" data-placement="right">Public Event</a>
                                         
                                     
                                 </td>
@@ -8346,7 +8522,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#PublicEvent" data-placement="right">Public Event</a>
+                                            <a href="#Post" data-placement="right">Post</a>
                                         
                                     
                                 </td>
@@ -8465,6 +8641,7 @@ A business might have more than one legal name, particularly in countries with m
                             , <a href="#PublicEvent.endpublicationdate">end publication date</a>
                             , <a href="#PublicEvent.hascost">has cost</a>
                             , <a href="#PublicEvent.hasnextevent">has next event</a>
+                            , <a href="#PublicEvent.homepage">homepage</a>
                             , <a href="#PublicEvent.host">host</a>
                             , <a href="#PublicEvent.location">location</a>
                             , <a href="#PublicEvent.organizer">organizer</a>
@@ -9022,6 +9199,49 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                                 <td property="skos:scopeNote">
                                     
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="PublicEvent.homepage"
+                                typeof="rdfs:Property"
+                                resource="http://xmlns.com/foaf/0.1/homepage"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20homepage%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.homepage" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://xmlns.com/foaf/0.1/homepage"
+                                           data-toggle="tooltip"
+                                           data-content="http://xmlns.com/foaf/0.1/homepage"
+                                           data-placement="right">
+                                        homepage</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Document" data-placement="right">Document</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The website of the Public Event.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    The value of this property is a URL, like the URL of a webinar.
                                 </td>
 				<!--
                                 <td>
@@ -11494,7 +11714,7 @@ This class belongs to <a href="https://semiceu.github.io/Core-Location-Vocabular
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..*
                                 </td>
                                 <td property="rdfs:comment">
                                     Name of the continent
@@ -11623,7 +11843,7 @@ This class belongs to <a href="https://semiceu.github.io/Core-Location-Vocabular
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..*
                                 </td>
                                 <td property="rdfs:comment">
                                     Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building.
@@ -11754,7 +11974,7 @@ The key difference between a locator designator and a locator name is that the l
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..*
                                 </td>
                                 <td property="rdfs:comment">
                                     The name of a passage or way through from one location to another.
@@ -13784,6 +14004,18 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+						
 					
 						
 					
@@ -14033,8 +14265,28 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#ActionPlan">Action Plan</a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/ActionPlan</div></td>
 								<td></td>
+								<td><a href="#ActionPlan.numberofbeneficiaries">number of beneficiaries </a></td>
+								<td><div class="shorten">http://data4wallonia.com/resource/model/numberOfBeneficiaries</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#ActionPlan">Action Plan</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/ActionPlan</div></td>
+								<td></td>
 								<td><a href="#ActionPlan.numberofequipments">number of equipments </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/numberOfEquipments</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#ActionPlan">Action Plan</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/ActionPlan</div></td>
+								<td></td>
+								<td><a href="#ActionPlan.numberofoccurences">number of occurences </a></td>
+								<td><div class="shorten">http://data4wallonia.com/resource/model/numberOfOccurences</div></td>
 							</tr>
 						
 					
@@ -14105,6 +14357,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#ActionPlan.referenceactionplan">reference action plan </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/referenceActionPlan</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#ActionPlan">Action Plan</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/ActionPlan</div></td>
+								<td></td>
+								<td><a href="#ActionPlan.referenceCategory">reference Category </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/referenceCategory</div></td>
 							</tr>
 						
 					
@@ -14766,6 +15028,10 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+					
+						
 					
 						
 					
@@ -14789,6 +15055,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td>Optional</td>
 								<td><a href="#Cost.hasvalue">has value </a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/hasValue</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Cost">Cost</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/Cost</div></td>
+								<td></td>
+								<td><a href="#Cost.price">price </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/price</div></td>
 							</tr>
 						
 					
@@ -15465,8 +15741,8 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#Person">Person</a></td>
 								<td><div class="shorten">http://www.w3.org/ns/person#Person</div></td>
 								<td></td>
-								<td><a href="#Person.involvedin">involved in </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/involvedIn</div></td>
+								<td><a href="#Person.iscontactFor">is contactFor </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/isContactFor</div></td>
 							</tr>
 						
 					
@@ -16685,6 +16961,10 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+					
+						
 					
 						
 					
@@ -16854,6 +17134,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#PublicEvent.hasnextevent">has next event </a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/hasNextEvent</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#PublicEvent">Public Event</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
+								<td></td>
+								<td><a href="#PublicEvent.homepage">homepage </a></td>
+								<td><div class="shorten">http://xmlns.com/foaf/0.1/homepage</div></td>
 							</tr>
 						
 					

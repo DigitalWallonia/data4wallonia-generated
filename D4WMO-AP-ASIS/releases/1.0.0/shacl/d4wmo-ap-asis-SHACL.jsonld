@@ -480,6 +480,18 @@
           "sh:path": "http://data4wallonia.com/resource/model/progressStatus"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanShape/35b8108df09df50ac59b169032fa32de9e21bf36",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlan.referencecategory",
+          "sh:description": {
+            "en": "A reference category"
+          },
+          "sh:name": {
+            "en": "reference category"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/resource/model/referenceCategory"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanShape/362d6d536b6cb53b6b3864a353240b82435c84f5",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlan.marketingshortdescription",
           "sh:description": {
@@ -562,6 +574,18 @@
             "en": "in operation"
           },
           "sh:path": "http://data4wallonia.com/resource/model/inOperation"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanShape/43060de3659ed1e6f630025b8bc49f66a4af2efd",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlan.referencecategory",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "A reference category"
+          },
+          "sh:name": {
+            "en": "reference category"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/referenceCategory"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanShape/4435e32b37fc24ae77aeac66b961de8b305cc4b6",
@@ -1390,6 +1414,18 @@
             "en": "ambition"
           },
           "sh:path": "http://data4wallonia.com/resource/model/ambition"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanShape/d81849cd1359e5f7563119676d6a45ecfff08b38",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlan.referencecategory",
+          "sh:description": {
+            "en": "A reference category"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "reference category"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/referenceCategory"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#ActionPlanShape/d87d010e7f189939e236f3c4647b19e6ed26c936",
@@ -3774,16 +3810,16 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/057c526359585180576296d560083ff3659a3db2",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.involvedin",
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/02c9b6d336c2a3bb67c04521c6f79432592cd800",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.iscontactfor",
           "sh:description": {
-            "en": "The Program in which a Resource is allocated to."
+            "en": "The Program in which the person is a contact for."
           },
           "sh:name": {
-            "en": "involved in"
+            "en": "is contact for"
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/resource/model/involvedIn"
+          "sh:path": "http://data4wallonia.com/resource/model/isContactFor"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/05969b4af1b3f6570e1aec246d37985180de37c6",
@@ -4000,6 +4036,18 @@
             "en": "photo"
           },
           "sh:path": "http://data4wallonia.com/resource/model/photo"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/33deef9f87f6eb5785b0264fee330330f416ce93",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.iscontactfor",
+          "sh:class": "http://data4wallonia.com/resource/model/Program",
+          "sh:description": {
+            "en": "The Program in which the person is a contact for."
+          },
+          "sh:name": {
+            "en": "is contact for"
+          },
+          "sh:path": "http://data4wallonia.com/resource/model/isContactFor"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/3422345fc09edc4f8de555de306271864623e694",
@@ -4228,18 +4276,6 @@
             "en": "first name"
           },
           "sh:path": "http://data4wallonia.com/resource/model/firstName"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/8e33c2fbd908194cb4c79aac6b2cd8f5521bd4ac",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#Person.involvedin",
-          "sh:class": "http://data4wallonia.com/resource/model/Program",
-          "sh:description": {
-            "en": "The Program in which a Resource is allocated to."
-          },
-          "sh:name": {
-            "en": "involved in"
-          },
-          "sh:path": "http://data4wallonia.com/resource/model/involvedIn"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/#PersonShape/8f5629615dc7e807d12e277c0bd488843337da73",
