@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/c6f4e7468c744852fa46bd2c8de77f1cc1c15370",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/c6f4e7468c744852fa46bd2c8de77f1cc1c15370/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/08346a71e125bf57bdf1ba8aa48ab91024638766",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/08346a71e125bf57bdf1ba8aa48ab91024638766/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-Generic/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -287,6 +287,46 @@
             "uri": "http://data4wallonia.com/model/website",
             "definition-en": "A website",
             "label-en": "website"
+          }
+        },
+        {
+          "uri": "https://schema.org/contactType",
+          "name": "contactType",
+          "sort": "contact type",
+          "label": {
+            "en": "contact type"
+          },
+          "description": {
+            "en": "Classification that describes the specific purpose or function of the contact point, indicating the nature of the inquiries it handles."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ContactPoint",
+              "uri": "http://data.europa.eu/m8g/ContactPoint"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#String",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "en": "String"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "contact type",
+            "definition-en": "Classification that describes the specific purpose or function of the contact point, indicating the nature of the inquiries it handles.",
+            "uri": "https://schema.org/contactType"
           }
         }
       ]
@@ -792,16 +832,16 @@
           ],
           "range": [
             {
-              "range_label": "QualifiedPerson",
-              "range_uri": "http://data4wallonia.com/model/QualifiedPerson"
+              "range_label": "ProfilePerson",
+              "range_uri": "http://data4wallonia.com/model/ProfilePerson"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Qualified Person",
-              "range_puri": "http://data4wallonia.com/model/QualifiedPerson",
+              "range_uri": "#Profile Person",
+              "range_puri": "http://data4wallonia.com/model/ProfilePerson",
               "range_label": {
-                "en": "Qualified Person"
+                "en": "Profile Person"
               }
             }
           ],
@@ -1272,16 +1312,16 @@
           ],
           "range": [
             {
-              "range_label": "QualifiedPerson",
-              "range_uri": "http://data4wallonia.com/model/QualifiedPerson"
+              "range_label": "ProfilePerson",
+              "range_uri": "http://data4wallonia.com/model/ProfilePerson"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Qualified Person",
-              "range_puri": "http://data4wallonia.com/model/QualifiedPerson",
+              "range_uri": "#Profile Person",
+              "range_puri": "http://data4wallonia.com/model/ProfilePerson",
               "range_label": {
-                "en": "Qualified Person"
+                "en": "Profile Person"
               }
             }
           ],
@@ -1736,16 +1776,16 @@
           ],
           "range": [
             {
-              "range_label": "QualifiedPerson",
-              "range_uri": "http://data4wallonia.com/model/QualifiedPerson"
+              "range_label": "ProfilePerson",
+              "range_uri": "http://data4wallonia.com/model/ProfilePerson"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Qualified Person",
-              "range_puri": "http://data4wallonia.com/model/QualifiedPerson",
+              "range_uri": "#Profile Person",
+              "range_puri": "http://data4wallonia.com/model/ProfilePerson",
               "range_label": {
-                "en": "Qualified Person"
+                "en": "Profile Person"
               }
             }
           ],
@@ -2256,16 +2296,16 @@
           ],
           "range": [
             {
-              "range_label": "QualifiedPerson",
-              "range_uri": "http://data4wallonia.com/model/QualifiedPerson"
+              "range_label": "ProfilePerson",
+              "range_uri": "http://data4wallonia.com/model/ProfilePerson"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Qualified Person",
-              "range_puri": "http://data4wallonia.com/model/QualifiedPerson",
+              "range_uri": "#Profile Person",
+              "range_puri": "http://data4wallonia.com/model/ProfilePerson",
               "range_label": {
-                "en": "Qualified Person"
+                "en": "Profile Person"
               }
             }
           ],
@@ -2376,16 +2416,16 @@
           ],
           "range": [
             {
-              "range_label": "QualifiedPerson",
-              "range_uri": "http://data4wallonia.com/model/QualifiedPerson"
+              "range_label": "ProfilePerson",
+              "range_uri": "http://data4wallonia.com/model/ProfilePerson"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Qualified Person",
-              "range_puri": "http://data4wallonia.com/model/QualifiedPerson",
+              "range_uri": "#Profile Person",
+              "range_puri": "http://data4wallonia.com/model/ProfilePerson",
               "range_label": {
-                "en": "Qualified Person"
+                "en": "Profile Person"
               }
             }
           ],
@@ -3839,16 +3879,16 @@
           ],
           "range": [
             {
-              "range_label": "QualifiedPerson",
-              "range_uri": "http://data4wallonia.com/model/QualifiedPerson"
+              "range_label": "ProfilePerson",
+              "range_uri": "http://data4wallonia.com/model/ProfilePerson"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Qualified Person",
-              "range_puri": "http://data4wallonia.com/model/QualifiedPerson",
+              "range_uri": "#Profile Person",
+              "range_puri": "http://data4wallonia.com/model/ProfilePerson",
               "range_label": {
-                "en": "Qualified Person"
+                "en": "Profile Person"
               }
             }
           ],
@@ -4439,16 +4479,16 @@
           ],
           "range": [
             {
-              "range_label": "QualifiedPerson",
-              "range_uri": "http://data4wallonia.com/model/QualifiedPerson"
+              "range_label": "ProfilePerson",
+              "range_uri": "http://data4wallonia.com/model/ProfilePerson"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Qualified Person",
-              "range_puri": "http://data4wallonia.com/model/QualifiedPerson",
+              "range_uri": "#Profile Person",
+              "range_puri": "http://data4wallonia.com/model/ProfilePerson",
               "range_label": {
-                "en": "Qualified Person"
+                "en": "Profile Person"
               }
             }
           ],
@@ -5060,16 +5100,16 @@
           ],
           "range": [
             {
-              "range_label": "QualifiedPerson",
-              "range_uri": "http://data4wallonia.com/model/QualifiedPerson"
+              "range_label": "ProfilePerson",
+              "range_uri": "http://data4wallonia.com/model/ProfilePerson"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Qualified Person",
-              "range_puri": "http://data4wallonia.com/model/QualifiedPerson",
+              "range_uri": "#Profile Person",
+              "range_puri": "http://data4wallonia.com/model/ProfilePerson",
               "range_label": {
-                "en": "Qualified Person"
+                "en": "Profile Person"
               }
             }
           ],
@@ -5383,46 +5423,6 @@
           }
         },
         {
-          "uri": "http://data4wallonia.com/model/belgianEntreprise",
-          "name": "belgianEnterprise",
-          "sort": "belgian enterprise",
-          "label": {
-            "en": "belgian enterprise"
-          },
-          "description": {
-            "en": "A belgian entreprise"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Profile",
-              "uri": "http://data4wallonia.com/model/Profile"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-              "range_label": {
-                "en": "Text"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/belgianEntreprise",
-            "definition-en": "A belgian entreprise",
-            "label-en": "belgian enterprise"
-          }
-        },
-        {
           "uri": "http://data4wallonia.com/model/category",
           "name": "category",
           "sort": "category",
@@ -5561,16 +5561,16 @@
           ],
           "range": [
             {
-              "range_label": "QualifiedPerson",
-              "range_uri": "http://data4wallonia.com/model/QualifiedPerson"
+              "range_label": "ProfilePerson",
+              "range_uri": "http://data4wallonia.com/model/ProfilePerson"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Qualified Person",
-              "range_puri": "http://data4wallonia.com/model/QualifiedPerson",
+              "range_uri": "#Profile Person",
+              "range_puri": "http://data4wallonia.com/model/ProfilePerson",
               "range_label": {
-                "en": "Qualified Person"
+                "en": "Profile Person"
               }
             }
           ],
@@ -5761,16 +5761,16 @@
           ],
           "range": [
             {
-              "range_label": "QualifiedPerson",
-              "range_uri": "http://data4wallonia.com/model/QualifiedPerson"
+              "range_label": "ProfilePerson",
+              "range_uri": "http://data4wallonia.com/model/ProfilePerson"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Qualified Person",
-              "range_puri": "http://data4wallonia.com/model/QualifiedPerson",
+              "range_uri": "#Profile Person",
+              "range_puri": "http://data4wallonia.com/model/ProfilePerson",
               "range_label": {
-                "en": "Qualified Person"
+                "en": "Profile Person"
               }
             }
           ],
@@ -5881,16 +5881,16 @@
           ],
           "range": [
             {
-              "range_label": "QualifiedPerson",
-              "range_uri": "http://data4wallonia.com/model/QualifiedPerson"
+              "range_label": "ProfilePerson",
+              "range_uri": "http://data4wallonia.com/model/ProfilePerson"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Qualified Person",
-              "range_puri": "http://data4wallonia.com/model/QualifiedPerson",
+              "range_uri": "#Profile Person",
+              "range_puri": "http://data4wallonia.com/model/ProfilePerson",
               "range_label": {
-                "en": "Qualified Person"
+                "en": "Profile Person"
               }
             }
           ],
@@ -5900,6 +5900,49 @@
             "label-en": "plateform contact person",
             "uri": "http://data4wallonia.com/model/plateformContactPerson",
             "definition-en": "A plateform contact person"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/profileLegalEntity",
+          "name": "profileLegalEntity",
+          "sort": "profile legal entity",
+          "label": {
+            "en": "profile legal entity"
+          },
+          "description": {
+            "en": "A profile legal entity"
+          },
+          "usage": {
+            "en": "NOTE"
+          },
+          "domain": [
+            {
+              "EA-Name": "Profile",
+              "uri": "http://data4wallonia.com/model/Profile"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "ProfileLEgalEntity",
+              "range_uri": "http://data4wallonia.com/model/ProfileLegalEntity"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Profile Legal Entity",
+              "range_puri": "http://data4wallonia.com/model/ProfileLegalEntity",
+              "range_label": {
+                "en": "Profile Legal Entity"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/profileLegalEntity",
+            "usageNote-en": "NOTE",
+            "label-en": "profile legal entity",
+            "definition-en": "A profile legal entity"
           }
         },
         {
@@ -6181,6 +6224,406 @@
             "label-en": "company validation date",
             "definition-en": "Date of last contact with the company validating the information."
           }
+        },
+        {
+          "uri": "http://purl.org/dc/terms/identifier",
+          "name": "identifier",
+          "sort": "Identifier",
+          "label": {
+            "en": "Identifier"
+          },
+          "description": {
+            "en": "A profile identifier"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Profile",
+              "uri": "http://data4wallonia.com/model/Profile"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "Identifier",
+            "definition-en": "A profile identifier",
+            "uri": "http://purl.org/dc/terms/identifier"
+          }
+        }
+      ]
+    },
+    {
+      "uri": "http://data4wallonia.com/model/ProfileLegalEntity",
+      "name": "ProfileLegalEntity",
+      "label": {
+        "en": "Profile Legal Entity"
+      },
+      "sort": "Profile Legal Entity",
+      "description": {
+        "en": "A profile legal entity"
+      },
+      "usage": {},
+      "parents": [],
+      "rawTags": {
+        "class-usage-scope": "supportive",
+        "definition-en": "A profile legal entity",
+        "label-en": "Profile Legal Entity",
+        "uri": "http://data4wallonia.com/model/ProfileLegalEntity"
+      },
+      "properties": [
+        {
+          "uri": "http://data4wallonia.be/model/legalEntity",
+          "name": "legalEntity",
+          "sort": "legal entity",
+          "label": {
+            "en": "legal entity"
+          },
+          "description": {
+            "en": "A legal entity"
+          },
+          "usage": {
+            "en": "NOTE"
+          },
+          "domain": [
+            {
+              "EA-Name": "ProfileLEgalEntity",
+              "uri": "http://data4wallonia.com/model/ProfileLegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "LegalEntity",
+              "range_uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Legal Entity",
+              "range_puri": "http://www.w3.org/ns/legal#LegalEntity",
+              "range_label": {
+                "en": "Legal Entity"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.be/model/legalEntity",
+            "label-en": "legal entity",
+            "definition-en": "A legal entity",
+            "usageNote-en": "NOTE"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/profile",
+          "name": "profile",
+          "sort": "profile",
+          "label": {
+            "en": "profile"
+          },
+          "description": {
+            "en": "A profile"
+          },
+          "usage": {
+            "en": "NOTE"
+          },
+          "domain": [
+            {
+              "EA-Name": "ProfileLEgalEntity",
+              "uri": "http://data4wallonia.com/model/ProfileLegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Profile",
+              "range_uri": "http://data4wallonia.com/model/Profile"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Profile",
+              "range_puri": "http://data4wallonia.com/model/Profile",
+              "range_label": {
+                "en": "Profile"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "usageNote-en": "NOTE",
+            "uri": "http://data4wallonia.com/model/profile",
+            "definition-en": "A profile",
+            "label-en": "profile"
+          }
+        },
+        {
+          "uri": "https://d4w-digitalwallonia.opendatasoft.com/role",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ProfileLEgalEntity",
+              "uri": "http://data4wallonia.com/model/ProfileLegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Code",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Code",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Code"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {}
+        },
+        {
+          "uri": "https://d4w-digitalwallonia.opendatasoft.com/shortDescription",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ProfileLEgalEntity",
+              "uri": "http://data4wallonia.com/model/ProfileLegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {}
+        }
+      ]
+    },
+    {
+      "uri": "http://data4wallonia.com/model/ProfilePerson",
+      "name": "ProfilePerson",
+      "label": {
+        "en": "Profile Person"
+      },
+      "sort": "Profile Person",
+      "description": {
+        "en": "A person with a role and profile."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Person",
+          "name": "Person",
+          "package": "cv",
+          "uri": "http://www.w3.org/ns/person#Person",
+          "scoped_uri": "#Person"
+        }
+      ],
+      "rawTags": {
+        "uri": "http://data4wallonia.com/model/ProfilePerson",
+        "label-en": "Profile Person",
+        "definition-en": "A person with a role and profile.",
+        "class-usage-scope": "main"
+      },
+      "properties": [
+        {
+          "uri": "http://data4wallonia.be/model/department",
+          "name": "department",
+          "sort": "department",
+          "label": {
+            "en": "department"
+          },
+          "description": {
+            "en": "The department in which the person is affiliated to."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ProfilePerson",
+              "uri": "http://data4wallonia.com/model/ProfilePerson"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Code",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Code",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Code"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.be/model/department",
+            "definition-en": "The department in which the person is affiliated to.",
+            "label-en": "department"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/inOperation",
+          "name": "hasProfile",
+          "sort": "has profile",
+          "label": {
+            "en": "has profile"
+          },
+          "description": {
+            "en": "The profile to which the person belongs to."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ProfilePerson",
+              "uri": "http://data4wallonia.com/model/ProfilePerson"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Profile",
+              "range_uri": "http://data4wallonia.com/model/Profile"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Profile",
+              "range_puri": "http://data4wallonia.com/model/Profile",
+              "range_label": {
+                "en": "Profile"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "definition-en": "The profile to which the person belongs to.",
+            "uri": "http://data4wallonia.com/model/inOperation",
+            "label-en": "has profile"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/role",
+          "name": "role",
+          "sort": "role",
+          "label": {
+            "en": "role"
+          },
+          "description": {
+            "en": "The function of a qualified person."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ProfilePerson",
+              "uri": "http://data4wallonia.com/model/ProfilePerson"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "role",
+            "uri": "http://data4wallonia.com/model/role",
+            "definition-en": "The function of a qualified person."
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/shortDescription",
+          "name": "shortDescription",
+          "sort": "short description",
+          "label": {
+            "en": "short description"
+          },
+          "description": {
+            "en": "A short description"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ProfilePerson",
+              "uri": "http://data4wallonia.com/model/ProfilePerson"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "short description",
+            "definition-en": "A short description",
+            "uri": "http://data4wallonia.com/model/shortDescription"
+          }
         }
       ]
     },
@@ -6382,16 +6825,16 @@
           ],
           "range": [
             {
-              "range_label": "QualifiedPerson",
-              "range_uri": "http://data4wallonia.com/model/QualifiedPerson"
+              "range_label": "ProfilePerson",
+              "range_uri": "http://data4wallonia.com/model/ProfilePerson"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Qualified Person",
-              "range_puri": "http://data4wallonia.com/model/QualifiedPerson",
+              "range_uri": "#Profile Person",
+              "range_puri": "http://data4wallonia.com/model/ProfilePerson",
               "range_label": {
-                "en": "Qualified Person"
+                "en": "Profile Person"
               }
             }
           ],
@@ -6966,195 +7409,6 @@
       ]
     },
     {
-      "uri": "http://data4wallonia.com/model/QualifiedPerson",
-      "name": "QualifiedPerson",
-      "label": {
-        "en": "Qualified Person"
-      },
-      "sort": "Qualified Person",
-      "description": {
-        "en": "A person with a role and profile."
-      },
-      "usage": {},
-      "parents": [
-        {
-          "label": "Person",
-          "name": "Person",
-          "package": "cv",
-          "uri": "http://www.w3.org/ns/person#Person",
-          "scoped_uri": "#Person"
-        }
-      ],
-      "rawTags": {
-        "uri": "http://data4wallonia.com/model/QualifiedPerson",
-        "label-en": "Qualified Person",
-        "definition-en": "A person with a role and profile.",
-        "class-usage-scope": "main"
-      },
-      "properties": [
-        {
-          "uri": "http://data4wallonia.com/model/inOperation",
-          "name": "hasProfile",
-          "sort": "has profile",
-          "label": {
-            "en": "has profile"
-          },
-          "description": {
-            "en": "The profile to which the person belongs to."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "QualifiedPerson",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Profile",
-              "range_uri": "http://data4wallonia.com/model/Profile"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Profile",
-              "range_puri": "http://data4wallonia.com/model/Profile",
-              "range_label": {
-                "en": "Profile"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "definition-en": "The profile to which the person belongs to.",
-            "uri": "http://data4wallonia.com/model/inOperation",
-            "label-en": "has profile"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/internalName",
-          "name": "internalName",
-          "sort": "internal name",
-          "label": {
-            "en": "internal name"
-          },
-          "description": {
-            "en": "An internal name"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "QualifiedPerson",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-              "range_label": {
-                "en": "Text"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/internalName",
-            "definition-en": "An internal name",
-            "label-en": "internal name"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/isOpenByProfile",
-          "name": "isOpenByProfile",
-          "sort": "is open by profile",
-          "label": {
-            "en": "is open by profile"
-          },
-          "description": {
-            "en": "A boolean to indicate that is open by profile"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "QualifiedPerson",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Boolean",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Boolean",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
-              "range_label": {
-                "en": "Boolean"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/isOpenByProfile",
-            "definition-en": "A boolean to indicate that is open by profile",
-            "label-en": "is open by profile"
-          }
-        },
-        {
-          "uri": "http://data4wallonia.com/model/role",
-          "name": "role",
-          "sort": "role",
-          "label": {
-            "en": "role"
-          },
-          "description": {
-            "en": "The function of a qualified person."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "QualifiedPerson",
-              "uri": "http://data4wallonia.com/model/QualifiedPerson"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-              "range_label": {
-                "en": "Text"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "role",
-            "uri": "http://data4wallonia.com/model/role",
-            "definition-en": "The function of a qualified person."
-          }
-        }
-      ]
-    },
-    {
       "uri": "http://data4wallonia.com/model/ServicePlace",
       "name": "ServicesPlace",
       "label": {
@@ -7356,16 +7610,16 @@
           ],
           "range": [
             {
-              "range_label": "QualifiedPerson",
-              "range_uri": "http://data4wallonia.com/model/QualifiedPerson"
+              "range_label": "ProfilePerson",
+              "range_uri": "http://data4wallonia.com/model/ProfilePerson"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Qualified Person",
-              "range_puri": "http://data4wallonia.com/model/QualifiedPerson",
+              "range_uri": "#Profile Person",
+              "range_puri": "http://data4wallonia.com/model/ProfilePerson",
               "range_label": {
-                "en": "Qualified Person"
+                "en": "Profile Person"
               }
             }
           ],
@@ -8482,6 +8736,226 @@
       "properties": []
     },
     {
+      "uri": "http://data4wallonia/mode/LegalEntityPerson",
+      "name": "LegalEntityPerson",
+      "label": {
+        "en": "Legal Entity Person"
+      },
+      "sort": "Legal Entity Person",
+      "description": {
+        "en": "A person legal entity"
+      },
+      "usage": {},
+      "parents": [],
+      "rawTags": {
+        "uri": "http://data4wallonia/mode/LegalEntityPerson",
+        "label-en": "Legal Entity Person",
+        "definition-en": "A person legal entity"
+      },
+      "properties": [
+        {
+          "uri": "http://data4wallonia.be/model/departement",
+          "name": "department",
+          "sort": "department",
+          "label": {
+            "en": "department"
+          },
+          "description": {
+            "en": "The department in which the person is affiliated to."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntityPerson",
+              "uri": "http://data4wallonia/mode/LegalEntityPerson"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Code",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Code",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Code"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "department",
+            "definition-en": "The department in which the person is affiliated to.",
+            "uri": "http://data4wallonia.be/model/departement"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/role",
+          "name": "role",
+          "sort": "role",
+          "label": {
+            "en": "role"
+          },
+          "description": {
+            "en": "The function of a person."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntityPerson",
+              "uri": "http://data4wallonia/mode/LegalEntityPerson"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "role",
+            "definition-en": "The function of a person.",
+            "uri": "http://data4wallonia.com/model/role"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/shortDescription",
+          "name": "shortDescription",
+          "sort": "short description",
+          "label": {
+            "en": "short description"
+          },
+          "description": {
+            "en": "A short description"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntityPerson",
+              "uri": "http://data4wallonia/mode/LegalEntityPerson"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "short description",
+            "definition-en": "A short description",
+            "uri": "http://data4wallonia.com/model/shortDescription"
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/legal#LegalEntity",
+          "name": "hasLegalEntity",
+          "sort": "has legal entity",
+          "label": {
+            "en": "has legal entity"
+          },
+          "description": {
+            "en": "The legal entity to which the person belongs to."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntityPerson",
+              "uri": "http://data4wallonia/mode/LegalEntityPerson"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "LegalEntity",
+              "range_uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Legal Entity",
+              "range_puri": "http://www.w3.org/ns/legal#LegalEntity",
+              "range_label": {
+                "en": "Legal Entity"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "definition-en": "The legal entity to which the person belongs to.",
+            "uri": "http://www.w3.org/ns/legal#LegalEntity",
+            "label-en": "has legal entity"
+          }
+        },
+        {
+          "uri": "http://www.w3.org/ns/person#Person",
+          "name": "hasPerson",
+          "sort": "has person",
+          "label": {
+            "en": "has person"
+          },
+          "description": {
+            "en": "The person that belong to a legal entity."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntityPerson",
+              "uri": "http://data4wallonia/mode/LegalEntityPerson"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Person",
+              "range_uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Person",
+              "range_puri": "http://www.w3.org/ns/person#Person",
+              "range_label": {
+                "en": "Person"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://www.w3.org/ns/person#Person",
+            "label-en": "has person",
+            "definition-en": "The person that belong to a legal entity."
+          }
+        }
+      ]
+    },
+    {
       "uri": "http://www.w3.org/2006/time#TemporalEntity",
       "name": "TemporalEntity",
       "label": {
@@ -8993,14 +9467,14 @@
           }
         },
         {
-          "uri": "http://data4wallonia.com/model/activityNature",
-          "name": "activityNature",
-          "sort": "activity nature",
+          "uri": "http://data4wallonia.com/model/clientSite",
+          "name": "clientSite",
+          "sort": "client site",
           "label": {
-            "en": "activity nature"
+            "en": "client site"
           },
           "description": {
-            "en": "Nature of the activity of the entity"
+            "en": "A client site"
           },
           "usage": {},
           "domain": [
@@ -9011,25 +9485,25 @@
           ],
           "range": [
             {
-              "range_label": "Code",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Code",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_uri": "#String",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
               "range_label": {
-                "en": "Code"
+                "en": "String"
               }
             }
           ],
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "activity nature",
-            "definition-en": "Nature of the activity of the entity",
-            "uri": "http://data4wallonia.com/model/activityNature"
+            "label-en": "client site",
+            "definition-en": "A client site",
+            "uri": "http://data4wallonia.com/model/clientSite"
           }
         },
         {
@@ -9243,7 +9717,7 @@
             "en": "legal entity activity"
           },
           "description": {
-            "en": "The area of work in which the Legal Entity is engaged."
+            "en": "The area of work in which the Legal Entity is engaged. Represented by a NACE code."
           },
           "usage": {
             "en": "This is a general term that encompasses all the economic activities carried out by a company during the course of business. The activity of a company should be recorded using a controlled vocabulary. Several such vocabularies exist, many of which map to the UN's <a href=\"https://unstats.un.org/unsd/classifications/Econ/ISIC.cshtml\">ISIC</a> codes. Where a particular controlled vocabulary is in use within a given context, such as <a href=\"https://resources.companieshouse.gov.uk/sic/\">SIC codes</a> in the UK, it is acceptable to use these, however, the preferred choice for European interoperability is <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nace2\">NACE</a>."
@@ -9273,7 +9747,7 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://www.w3.org/ns/legal#companyActivity",
-            "definition-en": "The area of work in which the Legal Entity is engaged.",
+            "definition-en": "The area of work in which the Legal Entity is engaged. Represented by a NACE code.",
             "label-en": "legal entity activity",
             "usageNote-en": "This is a general term that encompasses all the economic activities carried out by a company during the course of business. The activity of a company should be recorded using a controlled vocabulary. Several such vocabularies exist, many of which map to the UN's <a href=\"https://unstats.un.org/unsd/classifications/Econ/ISIC.cshtml\">ISIC</a> codes. Where a particular controlled vocabulary is in use within a given context, such as <a href=\"https://resources.companieshouse.gov.uk/sic/\">SIC codes</a> in the UK, it is acceptable to use these, however, the preferred choice for European interoperability is <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nace2\">NACE</a>."
           }
@@ -9405,6 +9879,46 @@
             "label-en": "legal name",
             "definition-en": "The name under which the Legal Entity is legally registered.",
             "usageNote-en": "The legal name is different from the alternative (trade) name which is a pseudonym used by companies that do not operate under their registered company name.\r\nA business might have more than one legal name, particularly in countries with more than one official language. In such cases, and where the encoding technology allows, the language of the string should be identified."
+          }
+        },
+        {
+          "uri": "https://purl.org/dc/terms/alternative",
+          "name": "alternativeName",
+          "sort": "Alternative name",
+          "label": {
+            "en": "Alternative name"
+          },
+          "description": {
+            "en": "Any name by which a LegalEntity is known, other than their legal name."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "Alternative name",
+            "definition-en": "Any name by which a LegalEntity is known, other than their legal name.",
+            "uri": "https://purl.org/dc/terms/alternative"
           }
         },
         {
@@ -9731,7 +10245,7 @@
             "en": "administrative unit level 2"
           },
           "description": {
-            "en": "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."
+            "en": "The name of a secondary level/region of the address, Here the province."
           },
           "usage": {
             "en": "Values could be a region or province, more granular than level 1."
@@ -9761,7 +10275,7 @@
           "codelist_uri": "",
           "rawTags": {
             "label-en": "administrative unit level 2",
-            "definition-en": "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities.",
+            "definition-en": "The name of a secondary level/region of the address, Here the province.",
             "uri": "http://www.w3.org/ns/locn#adminUnitL2",
             "usageNote-en": "Values could be a region or province, more granular than level 1."
           }
@@ -10153,6 +10667,46 @@
       },
       "properties": [
         {
+          "uri": "http://data.europa.eu/m8g/birthDate",
+          "name": "dateOfBirth",
+          "sort": "date of birth",
+          "label": {
+            "en": "date of birth"
+          },
+          "description": {
+            "en": "The point in time on which the Person was born."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Date",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#date"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Date",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_label": {
+                "en": "Date"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "date of birth",
+            "definition-en": "The point in time on which the Person was born.",
+            "uri": "http://data.europa.eu/m8g/birthDate"
+          }
+        },
+        {
           "uri": "http://data.europa.eu/m8g/contactPoint",
           "name": "contactPoint",
           "sort": "contact point",
@@ -10193,6 +10747,46 @@
             "uri": "http://data.europa.eu/m8g/contactPoint",
             "definition-en": "The main contact information of the resource.",
             "usageNote-en": "NOTE$ea_notes=Usually a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization's homepage that may or may not provide contact information."
+          }
+        },
+        {
+          "uri": "http://data.europa.eu/m8g/gender",
+          "name": "gender",
+          "sort": "gender",
+          "label": {
+            "en": "gender"
+          },
+          "description": {
+            "en": "The identities, expressions and societal roles of the Person."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Code",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Code",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Code"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "gender",
+            "definition-en": "The identities, expressions and societal roles of the Person.",
+            "uri": "http://data.europa.eu/m8g/gender"
           }
         },
         {
@@ -10679,6 +11273,46 @@
           }
         },
         {
+          "uri": "http://purl.org/dc/terms/identifier",
+          "name": "identifier",
+          "sort": "identifier",
+          "label": {
+            "en": "identifier"
+          },
+          "description": {
+            "en": "A person identifier"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "identifier",
+            "definition": "A person identifier",
+            "uri": "http://purl.org/dc/terms/identifier"
+          }
+        },
+        {
           "uri": "http://www.w3.org/2006/vcard/ns#honorific-prefix",
           "name": "honorificPrefix",
           "sort": "honorific prefix",
@@ -10842,6 +11476,46 @@
             "usageNote-en": "Usually a first name or forename. Given to a person by his or her parents at birth or legally recognised as 'given names' through a formal process. All given names are ordered in one property so that, for example, the given name for Johann Sebastian Bach is \"Johann Sebastian\".",
             "uri": "http://xmlns.com/foaf/0.1/givenName",
             "label-en": "given name"
+          }
+        },
+        {
+          "uri": "http://xmlns.com/foaf/spec/#term_name",
+          "name": "fullName",
+          "sort": "full name",
+          "label": {
+            "en": "full name"
+          },
+          "description": {
+            "en": "A person full name. Usually the composition of the person given name and family name."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Person",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "full name",
+            "definition-en": "A person full name. Usually the composition of the person given name and family name.",
+            "uri": "http://xmlns.com/foaf/spec/#term_name"
           }
         },
         {

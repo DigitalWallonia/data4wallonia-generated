@@ -87,12 +87,12 @@
   "contributors-column": "D4WTA-AP",
   "contributors-file": "stakeholders.csv",
   "diagram": "Model",
-  "documentcommit": "c6f4e7468c744852fa46bd2c8de77f1cc1c15370",
+  "documentcommit": "08346a71e125bf57bdf1ba8aa48ab91024638766",
   "documentconfig": {
     "editorDocumentroot": "https://digitalwallonia.github.io/data4wallonia-generated/D4WMO-Generic/releases/1.0.0",
     "statuslabel": "Draft"
   },
-  "dummy": "17",
+  "dummy": "18",
   "eap": "Data4WalloniaModel-Generic.eap",
   "editors": [
     {
@@ -292,6 +292,89 @@
           "EA-Name": "Text",
           "EA-Package": "DataTypes",
           "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ]
+    },
+    {
+      "@id": "http://data.europa.eu/m8g/birthDate",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{15D928F9-59B5-4ff9-ACED-051DB1CC6882}",
+      "ap-definition-en": {
+        "en": "The point in time on which the Person was born."
+      },
+      "ap-label-en": {
+        "en": "date of birth"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "The point in time on which the Person was born."
+      },
+      "domain": [
+        {
+          "EA-Name": "Person",
+          "uri": "http://www.w3.org/ns/person#Person"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Person",
+        "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
+        "EA-Guid": "{15D928F9-59B5-4ff9-ACED-051DB1CC6882}",
+        "EA-Name": "dateOfBirth",
+        "EA-Package": "cv",
+        "EA-Range": "Date",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "Date",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "date of birth"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "The point in time on which the Person was born."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://data.europa.eu/m8g/birthDate"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "The point in time on which the Person was born."
+        },
+        "ap-label-en": {
+          "en": "date of birth"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "The point in time on which the Person was born."
+        },
+        "label": {
+          "en": "date of birth"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "date of birth"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "dateOfBirth",
+      "range": [
+        {
+          "EA-Name": "Date",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#date"
         }
       ]
     },
@@ -690,6 +773,91 @@
           "EA-Name": "Literal",
           "EA-Package": "",
           "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      ]
+    },
+    {
+      "@id": "http://data.europa.eu/m8g/gender",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{D757C97C-1059-4133-9489-4B220FF7CC74}",
+      "ap-definition-en": {
+        "en": "The identities, expressions and societal roles of the Person."
+      },
+      "ap-label-en": {
+        "en": "gender"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "The identities, expressions and societal roles of the Person."
+      },
+      "domain": [
+        {
+          "EA-Name": "Person",
+          "uri": "http://www.w3.org/ns/person#Person"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Person",
+        "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
+        "EA-Guid": "{D757C97C-1059-4133-9489-4B220FF7CC74}",
+        "EA-Name": "gender",
+        "EA-Package": "cv",
+        "EA-Range": "Code",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
+          "EA-Name": "Code",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "gender"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "The identities, expressions and societal roles of the Person."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://data.europa.eu/m8g/gender"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "The identities, expressions and societal roles of the Person."
+        },
+        "ap-label-en": {
+          "en": "gender"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "The identities, expressions and societal roles of the Person."
+        },
+        "label": {
+          "en": "gender"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "gender"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "gender",
+      "range": [
+        {
+          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
+          "EA-Name": "Code",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
         }
       ]
     },
@@ -1764,6 +1932,296 @@
       ]
     },
     {
+      "@id": "http://data4wallonia.be/model/departement",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{BB914AA3-8334-410c-A06E-791DD9441882}",
+      "ap-definition-en": {
+        "en": "The department in which the person is affiliated to."
+      },
+      "ap-label-en": {
+        "en": "department"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "The department in which the person is affiliated to."
+      },
+      "domain": [
+        {
+          "EA-Name": "LegalEntityPerson",
+          "uri": "http://data4wallonia/mode/LegalEntityPerson"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "LegalEntityPerson",
+        "EA-Domain-Guid": "{E577100F-E1FE-46b1-A6A0-93F89EDCD283}",
+        "EA-Guid": "{BB914AA3-8334-410c-A06E-791DD9441882}",
+        "EA-Name": "department",
+        "EA-Package": "d4w",
+        "EA-Range": "Code",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
+          "EA-Name": "Code",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "department"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "The department in which the person is affiliated to."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://data4wallonia.be/model/departement"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "The department in which the person is affiliated to."
+        },
+        "ap-label-en": {
+          "en": "department"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "The department in which the person is affiliated to."
+        },
+        "label": {
+          "en": "department"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "department"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "department",
+      "range": [
+        {
+          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
+          "EA-Name": "Code",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ]
+    },
+    {
+      "@id": "http://data4wallonia.be/model/department",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{EEFD2A9D-B6D1-4057-AF49-34DC735F81E7}",
+      "ap-definition-en": {
+        "en": "The department in which the person is affiliated to."
+      },
+      "ap-label-en": {
+        "en": "department"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "The department in which the person is affiliated to."
+      },
+      "domain": [
+        {
+          "EA-Name": "ProfilePerson",
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "ProfilePerson",
+        "EA-Domain-Guid": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
+        "EA-Guid": "{EEFD2A9D-B6D1-4057-AF49-34DC735F81E7}",
+        "EA-Name": "department",
+        "EA-Package": "d4w",
+        "EA-Range": "Code",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
+          "EA-Name": "Code",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://data4wallonia.be/model/department"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "The department in which the person is affiliated to."
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "department"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "The department in which the person is affiliated to."
+        },
+        "ap-label-en": {
+          "en": "department"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "The department in which the person is affiliated to."
+        },
+        "label": {
+          "en": "department"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "department"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "department",
+      "range": [
+        {
+          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
+          "EA-Name": "Code",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ]
+    },
+    {
+      "@id": "http://data4wallonia.be/model/legalEntity",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{D9448151-59FD-481c-82F4-2795F7FC4F68}",
+      "ap-definition-en": {
+        "en": "A legal entity"
+      },
+      "ap-label-en": {
+        "en": "legal entity"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A legal entity"
+      },
+      "domain": [
+        {
+          "EA-Name": "ProfileLEgalEntity",
+          "uri": "http://data4wallonia.com/model/ProfileLegalEntity"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "uri",
+            "note": "http://data4wallonia.be/model/legalEntity",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "legal entity",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "A legal entity",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "NOTE",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "ProfileLEgalEntity",
+        "EA-Domain-Guid": "{F3EE5450-C88D-41a3-8497-0240D6574258}",
+        "EA-Guid": "{D9448151-59FD-481c-82F4-2795F7FC4F68}",
+        "EA-Name": "legalEntity",
+        "EA-Package": "",
+        "EA-Range": "LegalEntity",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{C8F06838-37A0-4789-AD31-1F6601965598}",
+          "EA-Name": "LegalEntity",
+          "EA-Package": "cv",
+          "uri": "http://www.w3.org/ns/legal#LegalEntity"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "http://data4wallonia.be/model/legalEntity",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "legal entity",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "A legal entity",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "NOTE",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A legal entity"
+        },
+        "ap-label-en": {
+          "en": "legal entity"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A legal entity"
+        },
+        "derived": "false",
+        "destRole": "legalEntity",
+        "label": {
+          "en": "legal entity"
+        },
+        "sourceRole": "null",
+        "usage": {
+          "en": "NOTE"
+        }
+      },
+      "generalization": [],
+      "inpackage": "UNKNOWN",
+      "label": {
+        "en": "legal entity"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "legalEntity",
+      "range": [
+        {
+          "EA-GUID": "{C8F06838-37A0-4789-AD31-1F6601965598}",
+          "EA-Name": "LegalEntity",
+          "EA-Package": "cv",
+          "uri": "http://www.w3.org/ns/legal#LegalEntity"
+        }
+      ],
+      "usage": {
+        "en": "NOTE"
+      }
+    },
+    {
       "@id": "http://data4wallonia.com/model/S3Thema",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{DA3D4C84-A2E6-42fc-B561-A23E316E7349}",
@@ -1901,13 +2359,13 @@
         "EA-Guid": "{397D1175-615C-4644-9F6C-6B7D04B7D35B}",
         "EA-Name": "accompanyingPerson",
         "EA-Package": "",
-        "EA-Range": "QualifiedPerson",
+        "EA-Range": "ProfilePerson",
         "EA-Type": "connector",
         "RangeData": {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         },
         "RawTags": [
           {
@@ -1957,9 +2415,9 @@
       "range": [
         {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         }
       ]
     },
@@ -2128,91 +2586,6 @@
           "EA-Name": "Text",
           "EA-Package": "DataTypes",
           "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ]
-    },
-    {
-      "@id": "http://data4wallonia.com/model/activityNature",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{985BD8B5-8962-430d-9B0D-3539E4DAEB20}",
-      "ap-definition-en": {
-        "en": "Nature of the activity of the entity"
-      },
-      "ap-label-en": {
-        "en": "activity nature"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "Nature of the activity of the entity"
-      },
-      "domain": [
-        {
-          "EA-Name": "LegalEntity",
-          "uri": "http://www.w3.org/ns/legal#LegalEntity"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "LegalEntity",
-        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-        "EA-Guid": "{985BD8B5-8962-430d-9B0D-3539E4DAEB20}",
-        "EA-Name": "activityNature",
-        "EA-Package": "cv",
-        "EA-Range": "Code",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
-          "EA-Name": "Code",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-        },
-        "RawTags": [
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "activity nature"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "Nature of the activity of the entity"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/model/activityNature"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "Nature of the activity of the entity"
-        },
-        "ap-label-en": {
-          "en": "activity nature"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "Nature of the activity of the entity"
-        },
-        "label": {
-          "en": "activity nature"
-        },
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "activity nature"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "activityNature",
-      "range": [
-        {
-          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
-          "EA-Name": "Code",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
         }
       ]
     },
@@ -3194,7 +3567,7 @@
     {
       "@id": "http://data4wallonia.com/model/ambition",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{85BEC74F-7687-4895-A2D2-0BD86B754EF3}",
+      "EA-Guid": "{22A41E9A-660C-4d3c-8E21-98D1DEA859B2}",
       "ap-definition-en": {
         "en": "An ambition"
       },
@@ -3207,8 +3580,8 @@
       },
       "domain": [
         {
-          "EA-Name": "ActionPlan",
-          "uri": "http://data4wallonia.com/model/ActionPlan"
+          "EA-Name": "Person",
+          "uri": "http://www.w3.org/ns/person#Person"
         }
       ],
       "extra": {
@@ -3229,9 +3602,9 @@
             "value": "NOTE"
           }
         ],
-        "EA-Domain": "ActionPlan",
-        "EA-Domain-Guid": "{922CDABF-F6EF-47c3-80A5-F231384B6CF2}",
-        "EA-Guid": "{85BEC74F-7687-4895-A2D2-0BD86B754EF3}",
+        "EA-Domain": "Person",
+        "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
+        "EA-Guid": "{22A41E9A-660C-4d3c-8E21-98D1DEA859B2}",
         "EA-Name": "ambition",
         "EA-Package": "",
         "EA-Range": "Ambition",
@@ -3280,7 +3653,7 @@
         "usage": ""
       },
       "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
+      "inpackage": "UNKNOWN",
       "label": {
         "en": "ambition"
       },
@@ -3404,7 +3777,7 @@
     {
       "@id": "http://data4wallonia.com/model/ambition",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{54C8D220-F5C7-4930-88C6-6B6D383EE941}",
+      "EA-Guid": "{85BEC74F-7687-4895-A2D2-0BD86B754EF3}",
       "ap-definition-en": {
         "en": "An ambition"
       },
@@ -3417,113 +3790,8 @@
       },
       "domain": [
         {
-          "EA-Name": "Post",
-          "uri": "http://data4wallonia.com/model/Post"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "definition-en",
-            "note": "An ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/ambition",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Post",
-        "EA-Domain-Guid": "{FE699782-80E3-4690-8E9A-C5410064CE18}",
-        "EA-Guid": "{54C8D220-F5C7-4930-88C6-6B6D383EE941}",
-        "EA-Name": "ambition",
-        "EA-Package": "",
-        "EA-Range": "Ambition",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-          "EA-Name": "Ambition",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        },
-        "RawTags": [
-          {
-            "key": "definition-en",
-            "note": "An ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/ambition",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "An ambition"
-        },
-        "ap-label-en": {
-          "en": "ambition"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "An ambition"
-        },
-        "derived": "false",
-        "destRole": "ambition",
-        "label": {
-          "en": "ambition"
-        },
-        "sourceRole": "null",
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "ambition"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "ambition",
-      "range": [
-        {
-          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-          "EA-Name": "Ambition",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        }
-      ]
-    },
-    {
-      "@id": "http://data4wallonia.com/model/ambition",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{F34853C9-A2C8-49f5-BCC0-7EE05C6EB9F5}",
-      "ap-definition-en": {
-        "en": "An ambition"
-      },
-      "ap-label-en": {
-        "en": "ambition"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "An ambition"
-      },
-      "domain": [
-        {
-          "EA-Name": "PressReview",
-          "uri": "http://data4wallonia.com/model/PressReview"
+          "EA-Name": "ActionPlan",
+          "uri": "http://data4wallonia.com/model/ActionPlan"
         }
       ],
       "extra": {
@@ -3534,19 +3802,19 @@
             "value": "NOTE"
           },
           {
-            "key": "label-en",
-            "note": "ambition",
-            "value": "NOTE"
-          },
-          {
             "key": "definition-en",
             "note": "An ambition",
             "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "ambition",
+            "value": "NOTE"
           }
         ],
-        "EA-Domain": "PressReview",
-        "EA-Domain-Guid": "{C88ADBBA-74E2-4bf9-BFF9-3A5A80D78C4C}",
-        "EA-Guid": "{F34853C9-A2C8-49f5-BCC0-7EE05C6EB9F5}",
+        "EA-Domain": "ActionPlan",
+        "EA-Domain-Guid": "{922CDABF-F6EF-47c3-80A5-F231384B6CF2}",
+        "EA-Guid": "{85BEC74F-7687-4895-A2D2-0BD86B754EF3}",
         "EA-Name": "ambition",
         "EA-Package": "",
         "EA-Range": "Ambition",
@@ -3564,13 +3832,13 @@
             "value": "NOTE"
           },
           {
-            "key": "label-en",
-            "note": "ambition",
+            "key": "definition-en",
+            "note": "An ambition",
             "value": "NOTE"
           },
           {
-            "key": "definition-en",
-            "note": "An ambition",
+            "key": "label-en",
+            "note": "ambition",
             "value": "NOTE"
           }
         ],
@@ -3719,111 +3987,6 @@
     {
       "@id": "http://data4wallonia.com/model/ambition",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{22A41E9A-660C-4d3c-8E21-98D1DEA859B2}",
-      "ap-definition-en": {
-        "en": "An ambition"
-      },
-      "ap-label-en": {
-        "en": "ambition"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "An ambition"
-      },
-      "domain": [
-        {
-          "EA-Name": "Person",
-          "uri": "http://www.w3.org/ns/person#Person"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "An ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "ambition",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Person",
-        "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
-        "EA-Guid": "{22A41E9A-660C-4d3c-8E21-98D1DEA859B2}",
-        "EA-Name": "ambition",
-        "EA-Package": "",
-        "EA-Range": "Ambition",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-          "EA-Name": "Ambition",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "An ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "ambition",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "An ambition"
-        },
-        "ap-label-en": {
-          "en": "ambition"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "An ambition"
-        },
-        "derived": "false",
-        "destRole": "ambition",
-        "label": {
-          "en": "ambition"
-        },
-        "sourceRole": "null",
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "UNKNOWN",
-      "label": {
-        "en": "ambition"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "ambition",
-      "range": [
-        {
-          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-          "EA-Name": "Ambition",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        }
-      ]
-    },
-    {
-      "@id": "http://data4wallonia.com/model/ambition",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{BE8424A7-D8B7-448f-9929-198EEB95D9A0}",
       "ap-definition-en": {
         "en": "An ambition"
@@ -3886,6 +4049,216 @@
           {
             "key": "label-en",
             "note": "ambition",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "An ambition"
+        },
+        "ap-label-en": {
+          "en": "ambition"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "An ambition"
+        },
+        "derived": "false",
+        "destRole": "ambition",
+        "label": {
+          "en": "ambition"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "ambition"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "ambition",
+      "range": [
+        {
+          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
+          "EA-Name": "Ambition",
+          "EA-Package": "d4w",
+          "uri": "http://data4wallonia.com/model/Ambition"
+        }
+      ]
+    },
+    {
+      "@id": "http://data4wallonia.com/model/ambition",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{F34853C9-A2C8-49f5-BCC0-7EE05C6EB9F5}",
+      "ap-definition-en": {
+        "en": "An ambition"
+      },
+      "ap-label-en": {
+        "en": "ambition"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "An ambition"
+      },
+      "domain": [
+        {
+          "EA-Name": "PressReview",
+          "uri": "http://data4wallonia.com/model/PressReview"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "uri",
+            "note": "http://data4wallonia.com/model/ambition",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "ambition",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "An ambition",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "PressReview",
+        "EA-Domain-Guid": "{C88ADBBA-74E2-4bf9-BFF9-3A5A80D78C4C}",
+        "EA-Guid": "{F34853C9-A2C8-49f5-BCC0-7EE05C6EB9F5}",
+        "EA-Name": "ambition",
+        "EA-Package": "",
+        "EA-Range": "Ambition",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
+          "EA-Name": "Ambition",
+          "EA-Package": "d4w",
+          "uri": "http://data4wallonia.com/model/Ambition"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "http://data4wallonia.com/model/ambition",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "ambition",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "An ambition",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "An ambition"
+        },
+        "ap-label-en": {
+          "en": "ambition"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "An ambition"
+        },
+        "derived": "false",
+        "destRole": "ambition",
+        "label": {
+          "en": "ambition"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "ambition"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "ambition",
+      "range": [
+        {
+          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
+          "EA-Name": "Ambition",
+          "EA-Package": "d4w",
+          "uri": "http://data4wallonia.com/model/Ambition"
+        }
+      ]
+    },
+    {
+      "@id": "http://data4wallonia.com/model/ambition",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{54C8D220-F5C7-4930-88C6-6B6D383EE941}",
+      "ap-definition-en": {
+        "en": "An ambition"
+      },
+      "ap-label-en": {
+        "en": "ambition"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "An ambition"
+      },
+      "domain": [
+        {
+          "EA-Name": "Post",
+          "uri": "http://data4wallonia.com/model/Post"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "definition-en",
+            "note": "An ambition",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "ambition",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://data4wallonia.com/model/ambition",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Post",
+        "EA-Domain-Guid": "{FE699782-80E3-4690-8E9A-C5410064CE18}",
+        "EA-Guid": "{54C8D220-F5C7-4930-88C6-6B6D383EE941}",
+        "EA-Name": "ambition",
+        "EA-Package": "",
+        "EA-Range": "Ambition",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
+          "EA-Name": "Ambition",
+          "EA-Package": "d4w",
+          "uri": "http://data4wallonia.com/model/Ambition"
+        },
+        "RawTags": [
+          {
+            "key": "definition-en",
+            "note": "An ambition",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "ambition",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://data4wallonia.com/model/ambition",
             "value": "NOTE"
           }
         ],
@@ -4052,13 +4425,13 @@
         "EA-Guid": "{08A07CD6-8ABD-4b35-8F45-013C7A9A8F75}",
         "EA-Name": "author",
         "EA-Package": "",
-        "EA-Range": "QualifiedPerson",
+        "EA-Range": "ProfilePerson",
         "EA-Type": "connector",
         "RangeData": {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         },
         "RawTags": [
           {
@@ -4108,9 +4481,9 @@
       "range": [
         {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         }
       ]
     },
@@ -4445,91 +4818,6 @@
       "maxCardinality": "*",
       "minCardinality": "0",
       "name": "baseline",
-      "range": [
-        {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ]
-    },
-    {
-      "@id": "http://data4wallonia.com/model/belgianEntreprise",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{6937BF3D-9801-4fef-95E2-657475FD5CD2}",
-      "ap-definition-en": {
-        "en": "A belgian entreprise"
-      },
-      "ap-label-en": {
-        "en": "belgian enterprise"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A belgian entreprise"
-      },
-      "domain": [
-        {
-          "EA-Name": "Profile",
-          "uri": "http://data4wallonia.com/model/Profile"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Profile",
-        "EA-Domain-Guid": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
-        "EA-Guid": "{6937BF3D-9801-4fef-95E2-657475FD5CD2}",
-        "EA-Name": "belgianEntreprises",
-        "EA-Package": "d4w",
-        "EA-Range": "Text",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/model/belgianEntreprise"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "A belgian entreprise"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "belgian enterprise"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A belgian entreprise"
-        },
-        "ap-label-en": {
-          "en": "belgian enterprise"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A belgian entreprise"
-        },
-        "label": {
-          "en": "belgian enterprise"
-        },
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "belgian enterprise"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "belgianEnterprise",
       "range": [
         {
           "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
@@ -5987,6 +6275,89 @@
       ]
     },
     {
+      "@id": "http://data4wallonia.com/model/clientSite",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{F8A93B81-D4C7-4361-AEB1-6F31EEDE8B03}",
+      "ap-definition-en": {
+        "en": "A client site"
+      },
+      "ap-label-en": {
+        "en": "client site"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A client site"
+      },
+      "domain": [
+        {
+          "EA-Name": "LegalEntity",
+          "uri": "http://www.w3.org/ns/legal#LegalEntity"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "LegalEntity",
+        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
+        "EA-Guid": "{F8A93B81-D4C7-4361-AEB1-6F31EEDE8B03}",
+        "EA-Name": "clientSite",
+        "EA-Package": "cv",
+        "EA-Range": "String",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "client site"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "A client site"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://data4wallonia.com/model/clientSite"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A client site"
+        },
+        "ap-label-en": {
+          "en": "client site"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A client site"
+        },
+        "label": {
+          "en": "client site"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "client site"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "clientSite",
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ]
+    },
+    {
       "@id": "http://data4wallonia.com/model/contactPerson",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{01E2AA6A-FF05-4910-8BF3-CF9DE33E7323}",
@@ -6029,13 +6400,13 @@
         "EA-Guid": "{01E2AA6A-FF05-4910-8BF3-CF9DE33E7323}",
         "EA-Name": "contactPerson",
         "EA-Package": "",
-        "EA-Range": "QualifiedPerson",
+        "EA-Range": "ProfilePerson",
         "EA-Type": "connector",
         "RangeData": {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         },
         "RawTags": [
           {
@@ -6085,9 +6456,114 @@
       "range": [
         {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
+        }
+      ]
+    },
+    {
+      "@id": "http://data4wallonia.com/model/contactPerson",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{E7AF9F19-EB51-4c26-99C6-4A494CD8A857}",
+      "ap-definition-en": {
+        "en": "A contact person"
+      },
+      "ap-label-en": {
+        "en": "contact person"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A contact person"
+      },
+      "domain": [
+        {
+          "EA-Name": "ActionPlan",
+          "uri": "http://data4wallonia.com/model/ActionPlan"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "label-en",
+            "note": "contact person",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://data4wallonia.com/model/contactPerson",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "A contact person",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "ActionPlan",
+        "EA-Domain-Guid": "{922CDABF-F6EF-47c3-80A5-F231384B6CF2}",
+        "EA-Guid": "{E7AF9F19-EB51-4c26-99C6-4A494CD8A857}",
+        "EA-Name": "contactPerson",
+        "EA-Package": "",
+        "EA-Range": "ProfilePerson",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
+          "EA-Name": "ProfilePerson",
+          "EA-Package": "d4w",
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "contact person",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://data4wallonia.com/model/contactPerson",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "A contact person",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A contact person"
+        },
+        "ap-label-en": {
+          "en": "contact person"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A contact person"
+        },
+        "derived": "false",
+        "destRole": "contactPerson",
+        "label": {
+          "en": "contact person"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "contact person"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "contactPerson",
+      "range": [
+        {
+          "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
+          "EA-Name": "ProfilePerson",
+          "EA-Package": "d4w",
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         }
       ]
     },
@@ -6134,13 +6610,13 @@
         "EA-Guid": "{6F0D1440-6A7D-42bb-82DD-C66E6E89C6F5}",
         "EA-Name": "contactPerson",
         "EA-Package": "",
-        "EA-Range": "QualifiedPerson",
+        "EA-Range": "ProfilePerson",
         "EA-Type": "connector",
         "RangeData": {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         },
         "RawTags": [
           {
@@ -6190,114 +6666,9 @@
       "range": [
         {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
-        }
-      ]
-    },
-    {
-      "@id": "http://data4wallonia.com/model/contactPerson",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{E7AF9F19-EB51-4c26-99C6-4A494CD8A857}",
-      "ap-definition-en": {
-        "en": "A contact person"
-      },
-      "ap-label-en": {
-        "en": "contact person"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A contact person"
-      },
-      "domain": [
-        {
-          "EA-Name": "ActionPlan",
-          "uri": "http://data4wallonia.com/model/ActionPlan"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "label-en",
-            "note": "contact person",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/contactPerson",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A contact person",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "ActionPlan",
-        "EA-Domain-Guid": "{922CDABF-F6EF-47c3-80A5-F231384B6CF2}",
-        "EA-Guid": "{E7AF9F19-EB51-4c26-99C6-4A494CD8A857}",
-        "EA-Name": "contactPerson",
-        "EA-Package": "",
-        "EA-Range": "QualifiedPerson",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
-        },
-        "RawTags": [
-          {
-            "key": "label-en",
-            "note": "contact person",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/contactPerson",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A contact person",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A contact person"
-        },
-        "ap-label-en": {
-          "en": "contact person"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A contact person"
-        },
-        "derived": "false",
-        "destRole": "contactPerson",
-        "label": {
-          "en": "contact person"
-        },
-        "sourceRole": "null",
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "contact person"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "contactPerson",
-      "range": [
-        {
-          "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         }
       ]
     },
@@ -6361,111 +6732,6 @@
           {
             "key": "label-en",
             "note": "contact point",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/contactPoint",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A contact point"
-        },
-        "ap-label-en": {
-          "en": "contact point"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A contact point"
-        },
-        "derived": "false",
-        "destRole": "contactPoint",
-        "label": {
-          "en": "contact point"
-        },
-        "sourceRole": "null",
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "UNKNOWN",
-      "label": {
-        "en": "contact point"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "contactPoint",
-      "range": [
-        {
-          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
-          "EA-Name": "ContactPoint",
-          "EA-Package": "cv",
-          "uri": "http://data.europa.eu/m8g/ContactPoint"
-        }
-      ]
-    },
-    {
-      "@id": "http://data4wallonia.com/model/contactPoint",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{136BAE7C-CACB-41b6-A007-C0078EAE20C9}",
-      "ap-definition-en": {
-        "en": "A contact point"
-      },
-      "ap-label-en": {
-        "en": "contact point"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A contact point"
-      },
-      "domain": [
-        {
-          "EA-Name": "ActionPlan",
-          "uri": "http://data4wallonia.com/model/ActionPlan"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "label-en",
-            "note": "contact point",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A contact point",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/contactPoint",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "ActionPlan",
-        "EA-Domain-Guid": "{922CDABF-F6EF-47c3-80A5-F231384B6CF2}",
-        "EA-Guid": "{136BAE7C-CACB-41b6-A007-C0078EAE20C9}",
-        "EA-Name": "contactPoint",
-        "EA-Package": "",
-        "EA-Range": "ContactPoint",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
-          "EA-Name": "ContactPoint",
-          "EA-Package": "cv",
-          "uri": "http://data.europa.eu/m8g/ContactPoint"
-        },
-        "RawTags": [
-          {
-            "key": "label-en",
-            "note": "contact point",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A contact point",
             "value": "NOTE"
           },
           {
@@ -6601,6 +6867,111 @@
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "contact point"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "contactPoint",
+      "range": [
+        {
+          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
+          "EA-Name": "ContactPoint",
+          "EA-Package": "cv",
+          "uri": "http://data.europa.eu/m8g/ContactPoint"
+        }
+      ]
+    },
+    {
+      "@id": "http://data4wallonia.com/model/contactPoint",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{136BAE7C-CACB-41b6-A007-C0078EAE20C9}",
+      "ap-definition-en": {
+        "en": "A contact point"
+      },
+      "ap-label-en": {
+        "en": "contact point"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A contact point"
+      },
+      "domain": [
+        {
+          "EA-Name": "ActionPlan",
+          "uri": "http://data4wallonia.com/model/ActionPlan"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "label-en",
+            "note": "contact point",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "A contact point",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://data4wallonia.com/model/contactPoint",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "ActionPlan",
+        "EA-Domain-Guid": "{922CDABF-F6EF-47c3-80A5-F231384B6CF2}",
+        "EA-Guid": "{136BAE7C-CACB-41b6-A007-C0078EAE20C9}",
+        "EA-Name": "contactPoint",
+        "EA-Package": "",
+        "EA-Range": "ContactPoint",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
+          "EA-Name": "ContactPoint",
+          "EA-Package": "cv",
+          "uri": "http://data.europa.eu/m8g/ContactPoint"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "contact point",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "A contact point",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://data4wallonia.com/model/contactPoint",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A contact point"
+        },
+        "ap-label-en": {
+          "en": "contact point"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A contact point"
+        },
+        "derived": "false",
+        "destRole": "contactPoint",
+        "label": {
+          "en": "contact point"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "UNKNOWN",
       "label": {
         "en": "contact point"
       },
@@ -7774,13 +8145,13 @@
         "EA-Guid": "{6522A78D-AC9E-4e11-9720-8E06F8053D78}",
         "EA-Name": "featuredPerson",
         "EA-Package": "",
-        "EA-Range": "QualifiedPerson",
+        "EA-Range": "ProfilePerson",
         "EA-Type": "connector",
         "RangeData": {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         },
         "RawTags": [
           {
@@ -7830,9 +8201,9 @@
       "range": [
         {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         }
       ]
     },
@@ -8258,7 +8629,7 @@
         "EA-Domain": "ContactPoint",
         "EA-Domain-Guid": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
         "EA-Guid": "{4E2C9F61-8A99-40f0-B694-359A1FA42D02}",
-        "EA-Name": "hasNonFeaturedEmail",
+        "EA-Name": "hasPrivateEmail",
         "EA-Package": "cv",
         "EA-Range": "Literal",
         "EA-Type": "attribute",
@@ -8606,8 +8977,8 @@
       },
       "domain": [
         {
-          "EA-Name": "QualifiedPerson",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "EA-Name": "ProfilePerson",
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         }
       ],
       "extra": {
@@ -8628,7 +8999,7 @@
             "value": "NOTE"
           }
         ],
-        "EA-Domain": "QualifiedPerson",
+        "EA-Domain": "ProfilePerson",
         "EA-Domain-Guid": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
         "EA-Guid": "{6DCF9BD6-6D83-471b-AE1F-20B580D7B2A7}",
         "EA-Name": "hasProfile",
@@ -8884,91 +9255,6 @@
       ]
     },
     {
-      "@id": "http://data4wallonia.com/model/internalName",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{040447B4-A036-488e-8416-2A71370326F6}",
-      "ap-definition-en": {
-        "en": "An internal name"
-      },
-      "ap-label-en": {
-        "en": "internal name"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "An internal name"
-      },
-      "domain": [
-        {
-          "EA-Name": "QualifiedPerson",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "QualifiedPerson",
-        "EA-Domain-Guid": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-        "EA-Guid": "{040447B4-A036-488e-8416-2A71370326F6}",
-        "EA-Name": "internalName",
-        "EA-Package": "d4w",
-        "EA-Range": "Text",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/model/internalName"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "An internal name"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "internal name"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "An internal name"
-        },
-        "ap-label-en": {
-          "en": "internal name"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "An internal name"
-        },
-        "label": {
-          "en": "internal name"
-        },
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "internal name"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "internalName",
-      "range": [
-        {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ]
-    },
-    {
       "@id": "http://data4wallonia.com/model/introduction",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{9E2E45F1-0274-496f-B610-A2C2D63E0103}",
@@ -9155,89 +9441,6 @@
           "EA-Name": "Program",
           "EA-Package": "d4w",
           "uri": "http://data4wallonia.com/model/Program"
-        }
-      ]
-    },
-    {
-      "@id": "http://data4wallonia.com/model/isOpenByProfile",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{2D8BF6C6-A2F5-4de2-AFA9-819B1E0D20F6}",
-      "ap-definition-en": {
-        "en": "A boolean to indicate that is open by profile"
-      },
-      "ap-label-en": {
-        "en": "is open by profile"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A boolean to indicate that is open by profile"
-      },
-      "domain": [
-        {
-          "EA-Name": "QualifiedPerson",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "QualifiedPerson",
-        "EA-Domain-Guid": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-        "EA-Guid": "{2D8BF6C6-A2F5-4de2-AFA9-819B1E0D20F6}",
-        "EA-Name": "isOpenByProfile",
-        "EA-Package": "d4w",
-        "EA-Range": "Boolean",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-Name": "Boolean",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/model/isOpenByProfile"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "A boolean to indicate that is open by profile"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "is open by profile"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A boolean to indicate that is open by profile"
-        },
-        "ap-label-en": {
-          "en": "is open by profile"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A boolean to indicate that is open by profile"
-        },
-        "label": {
-          "en": "is open by profile"
-        },
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "is open by profile"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "isOpenByProfile",
-      "range": [
-        {
-          "EA-Name": "Boolean",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
         }
       ]
     },
@@ -10684,13 +10887,13 @@
         "EA-Guid": "{4482CBCD-639B-4d2d-B37D-299AD460B8DF}",
         "EA-Name": "nonFeaturedPerson",
         "EA-Package": "",
-        "EA-Range": "QualifiedPerson",
+        "EA-Range": "ProfilePerson",
         "EA-Type": "connector",
         "RangeData": {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         },
         "RawTags": [
           {
@@ -10740,9 +10943,9 @@
       "range": [
         {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         }
       ]
     },
@@ -11248,13 +11451,13 @@
         "EA-Guid": "{ABEBC1F1-B737-4a15-9903-AD75EB1FF8A3}",
         "EA-Name": "participant",
         "EA-Package": "",
-        "EA-Range": "QualifiedPerson",
+        "EA-Range": "ProfilePerson",
         "EA-Type": "connector",
         "RangeData": {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         },
         "RawTags": [
           {
@@ -11304,9 +11507,114 @@
       "range": [
         {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
+        }
+      ]
+    },
+    {
+      "@id": "http://data4wallonia.com/model/partner",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{0D659D88-5D13-4a6b-B310-78D4CD70DF11}",
+      "ap-definition-en": {
+        "en": "A partner"
+      },
+      "ap-label-en": {
+        "en": "partner"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A partner"
+      },
+      "domain": [
+        {
+          "EA-Name": "PublicEvent",
+          "uri": "http://data.europa.eu/m8g/PublicEvent"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "label-en",
+            "note": "partner",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://data4wallonia.com/model/partner",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "A partner",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "PublicEvent",
+        "EA-Domain-Guid": "{00DBB60C-FE76-4410-A1F1-B7A3BB34F49A}",
+        "EA-Guid": "{0D659D88-5D13-4a6b-B310-78D4CD70DF11}",
+        "EA-Name": "partner",
+        "EA-Package": "",
+        "EA-Range": "Profile",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
+          "EA-Name": "Profile",
+          "EA-Package": "d4w",
+          "uri": "http://data4wallonia.com/model/Profile"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "partner",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://data4wallonia.com/model/partner",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "A partner",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A partner"
+        },
+        "ap-label-en": {
+          "en": "partner"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A partner"
+        },
+        "derived": "false",
+        "destRole": "partner",
+        "label": {
+          "en": "partner"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "UNKNOWN",
+      "label": {
+        "en": "partner"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "partner",
+      "range": [
+        {
+          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
+          "EA-Name": "Profile",
+          "EA-Package": "d4w",
+          "uri": "http://data4wallonia.com/model/Profile"
         }
       ]
     },
@@ -11505,111 +11813,6 @@
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "partner"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "partner",
-      "range": [
-        {
-          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
-          "EA-Name": "Profile",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Profile"
-        }
-      ]
-    },
-    {
-      "@id": "http://data4wallonia.com/model/partner",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{0D659D88-5D13-4a6b-B310-78D4CD70DF11}",
-      "ap-definition-en": {
-        "en": "A partner"
-      },
-      "ap-label-en": {
-        "en": "partner"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A partner"
-      },
-      "domain": [
-        {
-          "EA-Name": "PublicEvent",
-          "uri": "http://data.europa.eu/m8g/PublicEvent"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "label-en",
-            "note": "partner",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/partner",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A partner",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "PublicEvent",
-        "EA-Domain-Guid": "{00DBB60C-FE76-4410-A1F1-B7A3BB34F49A}",
-        "EA-Guid": "{0D659D88-5D13-4a6b-B310-78D4CD70DF11}",
-        "EA-Name": "partner",
-        "EA-Package": "",
-        "EA-Range": "Profile",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
-          "EA-Name": "Profile",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Profile"
-        },
-        "RawTags": [
-          {
-            "key": "label-en",
-            "note": "partner",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/partner",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A partner",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A partner"
-        },
-        "ap-label-en": {
-          "en": "partner"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A partner"
-        },
-        "derived": "false",
-        "destRole": "partner",
-        "label": {
-          "en": "partner"
-        },
-        "sourceRole": "null",
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "UNKNOWN",
       "label": {
         "en": "partner"
       },
@@ -11943,13 +12146,13 @@
         "EA-Guid": "{E4BEEBEB-EB9B-4723-8FE8-78675BFCFB7C}",
         "EA-Name": "plateformContactPerson",
         "EA-Package": "",
-        "EA-Range": "QualifiedPerson",
+        "EA-Range": "ProfilePerson",
         "EA-Type": "connector",
         "RangeData": {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         },
         "RawTags": [
           {
@@ -11999,9 +12202,9 @@
       "range": [
         {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         }
       ]
     },
@@ -12166,228 +12369,138 @@
       ]
     },
     {
-      "@id": "http://data4wallonia.com/model/program",
+      "@id": "http://data4wallonia.com/model/profile",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{847A3655-09F5-4512-891F-974C15A92CE6}",
+      "EA-Guid": "{E83E777C-9339-4512-9141-D39C80994829}",
       "ap-definition-en": {
-        "en": "A program"
+        "en": "A profile"
       },
       "ap-label-en": {
-        "en": "program"
+        "en": "profile"
       },
       "codelist": [],
       "definition": {
-        "en": "A program"
+        "en": "A profile"
       },
       "domain": [
         {
-          "EA-Name": "Post",
-          "uri": "http://data4wallonia.com/model/Post"
+          "EA-Name": "ProfileLEgalEntity",
+          "uri": "http://data4wallonia.com/model/ProfileLegalEntity"
         }
       ],
       "extra": {
         "DestRoleTags": [
           {
-            "key": "label-en",
-            "note": "program",
+            "key": "usageNote-en",
+            "note": "NOTE",
             "value": "NOTE"
           },
           {
             "key": "uri",
-            "note": "http://data4wallonia.com/model/program",
+            "note": "http://data4wallonia.com/model/profile",
             "value": "NOTE"
           },
           {
             "key": "definition-en",
-            "note": "A program",
+            "note": "A profile",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "profile",
             "value": "NOTE"
           }
         ],
-        "EA-Domain": "Post",
-        "EA-Domain-Guid": "{FE699782-80E3-4690-8E9A-C5410064CE18}",
-        "EA-Guid": "{847A3655-09F5-4512-891F-974C15A92CE6}",
-        "EA-Name": "program",
+        "EA-Domain": "ProfileLEgalEntity",
+        "EA-Domain-Guid": "{F3EE5450-C88D-41a3-8497-0240D6574258}",
+        "EA-Guid": "{E83E777C-9339-4512-9141-D39C80994829}",
+        "EA-Name": "profile",
         "EA-Package": "",
-        "EA-Range": "Program",
+        "EA-Range": "Profile",
         "EA-Type": "connector",
         "RangeData": {
-          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-          "EA-Name": "Program",
+          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
+          "EA-Name": "Profile",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Program"
+          "uri": "http://data4wallonia.com/model/Profile"
         },
         "RawTags": [
           {
-            "key": "label-en",
-            "note": "program",
+            "key": "usageNote-en",
+            "note": "NOTE",
             "value": "NOTE"
           },
           {
             "key": "uri",
-            "note": "http://data4wallonia.com/model/program",
+            "note": "http://data4wallonia.com/model/profile",
             "value": "NOTE"
           },
           {
             "key": "definition-en",
-            "note": "A program",
+            "note": "A profile",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "profile",
             "value": "NOTE"
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A program"
+          "en": "A profile"
         },
         "ap-label-en": {
-          "en": "program"
+          "en": "profile"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A program"
+          "en": "A profile"
         },
         "derived": "false",
-        "destRole": "program",
+        "destRole": "profile",
         "label": {
-          "en": "program"
+          "en": "profile"
         },
-        "sourceRole": "null",
-        "usage": ""
+        "sourceRole": "profileLegalEntity",
+        "usage": {
+          "en": "NOTE"
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "program"
+        "en": "profile"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
-      "name": "program",
+      "name": "profile",
       "range": [
         {
-          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-          "EA-Name": "Program",
+          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
+          "EA-Name": "Profile",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ]
-    },
-    {
-      "@id": "http://data4wallonia.com/model/program",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{8B8D9D54-B8B6-4f3c-BD79-A3993B99340A}",
-      "ap-definition-en": {
-        "en": "A program"
-      },
-      "ap-label-en": {
-        "en": "program"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A program"
-      },
-      "domain": [
-        {
-          "EA-Name": "PublicEvent",
-          "uri": "http://data.europa.eu/m8g/PublicEvent"
+          "uri": "http://data4wallonia.com/model/Profile"
         }
       ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "label-en",
-            "note": "program",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/program",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A program",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "PublicEvent",
-        "EA-Domain-Guid": "{00DBB60C-FE76-4410-A1F1-B7A3BB34F49A}",
-        "EA-Guid": "{8B8D9D54-B8B6-4f3c-BD79-A3993B99340A}",
-        "EA-Name": "program",
-        "EA-Package": "",
-        "EA-Range": "Program",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-          "EA-Name": "Program",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Program"
-        },
-        "RawTags": [
-          {
-            "key": "label-en",
-            "note": "program",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/program",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A program",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A program"
-        },
-        "ap-label-en": {
-          "en": "program"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A program"
-        },
-        "derived": "false",
-        "destRole": "program",
-        "label": {
-          "en": "program"
-        },
-        "sourceRole": "null",
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "UNKNOWN",
-      "label": {
-        "en": "program"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "program",
-      "range": [
-        {
-          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-          "EA-Name": "Program",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ]
+      "usage": {
+        "en": "NOTE"
+      }
     },
     {
-      "@id": "http://data4wallonia.com/model/program",
+      "@id": "http://data4wallonia.com/model/profileLegalEntity",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{81876B2C-67F3-4d9a-B72F-A901BAA9C5C6}",
+      "EA-Guid": "{E83E777C-9339-4512-9141-D39C80994829}",
       "ap-definition-en": {
-        "en": "A program"
+        "en": "A profile legal entity"
       },
       "ap-label-en": {
-        "en": "program"
+        "en": "profile legal entity"
       },
       "codelist": [],
       "definition": {
-        "en": "A program"
+        "en": "A profile legal entity"
       },
       "domain": [
         {
@@ -12398,87 +12511,102 @@
       "extra": {
         "DestRoleTags": [
           {
-            "key": "definition-en",
-            "note": "A program",
+            "key": "uri",
+            "note": "http://data4wallonia.com/model/profileLegalEntity",
             "value": "NOTE"
           },
           {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/program",
+            "key": "usageNote-en",
+            "note": "NOTE",
             "value": "NOTE"
           },
           {
             "key": "label-en",
-            "note": "program",
+            "note": "profile legal entity",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "A profile legal entity",
             "value": "NOTE"
           }
         ],
         "EA-Domain": "Profile",
         "EA-Domain-Guid": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
-        "EA-Guid": "{81876B2C-67F3-4d9a-B72F-A901BAA9C5C6}",
-        "EA-Name": "program",
+        "EA-Guid": "{E83E777C-9339-4512-9141-D39C80994829}",
+        "EA-Name": "profileLegalEntity",
         "EA-Package": "",
-        "EA-Range": "Program",
+        "EA-Range": "ProfileLEgalEntity",
         "EA-Type": "connector",
         "RangeData": {
-          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-          "EA-Name": "Program",
+          "EA-GUID": "{F3EE5450-C88D-41a3-8497-0240D6574258}",
+          "EA-Name": "ProfileLEgalEntity",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Program"
+          "uri": "http://data4wallonia.com/model/ProfileLegalEntity"
         },
         "RawTags": [
           {
-            "key": "definition-en",
-            "note": "A program",
+            "key": "uri",
+            "note": "http://data4wallonia.com/model/profileLegalEntity",
             "value": "NOTE"
           },
           {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/program",
+            "key": "usageNote-en",
+            "note": "NOTE",
             "value": "NOTE"
           },
           {
             "key": "label-en",
-            "note": "program",
+            "note": "profile legal entity",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "A profile legal entity",
             "value": "NOTE"
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A program"
+          "en": "A profile legal entity"
         },
         "ap-label-en": {
-          "en": "program"
+          "en": "profile legal entity"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A program"
+          "en": "A profile legal entity"
         },
         "derived": "false",
-        "destRole": "program",
+        "destRole": "profileLegalEntity",
         "label": {
-          "en": "program"
+          "en": "profile legal entity"
         },
-        "sourceRole": "null",
-        "usage": ""
+        "sourceRole": "profile",
+        "usage": {
+          "en": "NOTE"
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "program"
+        "en": "profile legal entity"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
-      "name": "program",
+      "name": "profileLegalEntity",
       "range": [
         {
-          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-          "EA-Name": "Program",
+          "EA-GUID": "{F3EE5450-C88D-41a3-8497-0240D6574258}",
+          "EA-Name": "ProfileLEgalEntity",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Program"
+          "uri": "http://data4wallonia.com/model/ProfileLegalEntity"
         }
-      ]
+      ],
+      "usage": {
+        "en": "NOTE"
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/program",
@@ -12689,6 +12817,321 @@
       ]
     },
     {
+      "@id": "http://data4wallonia.com/model/program",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{81876B2C-67F3-4d9a-B72F-A901BAA9C5C6}",
+      "ap-definition-en": {
+        "en": "A program"
+      },
+      "ap-label-en": {
+        "en": "program"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A program"
+      },
+      "domain": [
+        {
+          "EA-Name": "Profile",
+          "uri": "http://data4wallonia.com/model/Profile"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "definition-en",
+            "note": "A program",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://data4wallonia.com/model/program",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "program",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Profile",
+        "EA-Domain-Guid": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
+        "EA-Guid": "{81876B2C-67F3-4d9a-B72F-A901BAA9C5C6}",
+        "EA-Name": "program",
+        "EA-Package": "",
+        "EA-Range": "Program",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
+          "EA-Name": "Program",
+          "EA-Package": "d4w",
+          "uri": "http://data4wallonia.com/model/Program"
+        },
+        "RawTags": [
+          {
+            "key": "definition-en",
+            "note": "A program",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://data4wallonia.com/model/program",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "program",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A program"
+        },
+        "ap-label-en": {
+          "en": "program"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A program"
+        },
+        "derived": "false",
+        "destRole": "program",
+        "label": {
+          "en": "program"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "program"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "program",
+      "range": [
+        {
+          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
+          "EA-Name": "Program",
+          "EA-Package": "d4w",
+          "uri": "http://data4wallonia.com/model/Program"
+        }
+      ]
+    },
+    {
+      "@id": "http://data4wallonia.com/model/program",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{8B8D9D54-B8B6-4f3c-BD79-A3993B99340A}",
+      "ap-definition-en": {
+        "en": "A program"
+      },
+      "ap-label-en": {
+        "en": "program"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A program"
+      },
+      "domain": [
+        {
+          "EA-Name": "PublicEvent",
+          "uri": "http://data.europa.eu/m8g/PublicEvent"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "label-en",
+            "note": "program",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://data4wallonia.com/model/program",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "A program",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "PublicEvent",
+        "EA-Domain-Guid": "{00DBB60C-FE76-4410-A1F1-B7A3BB34F49A}",
+        "EA-Guid": "{8B8D9D54-B8B6-4f3c-BD79-A3993B99340A}",
+        "EA-Name": "program",
+        "EA-Package": "",
+        "EA-Range": "Program",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
+          "EA-Name": "Program",
+          "EA-Package": "d4w",
+          "uri": "http://data4wallonia.com/model/Program"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "program",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://data4wallonia.com/model/program",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "A program",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A program"
+        },
+        "ap-label-en": {
+          "en": "program"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A program"
+        },
+        "derived": "false",
+        "destRole": "program",
+        "label": {
+          "en": "program"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "UNKNOWN",
+      "label": {
+        "en": "program"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "program",
+      "range": [
+        {
+          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
+          "EA-Name": "Program",
+          "EA-Package": "d4w",
+          "uri": "http://data4wallonia.com/model/Program"
+        }
+      ]
+    },
+    {
+      "@id": "http://data4wallonia.com/model/program",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{847A3655-09F5-4512-891F-974C15A92CE6}",
+      "ap-definition-en": {
+        "en": "A program"
+      },
+      "ap-label-en": {
+        "en": "program"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A program"
+      },
+      "domain": [
+        {
+          "EA-Name": "Post",
+          "uri": "http://data4wallonia.com/model/Post"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "label-en",
+            "note": "program",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://data4wallonia.com/model/program",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "A program",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Post",
+        "EA-Domain-Guid": "{FE699782-80E3-4690-8E9A-C5410064CE18}",
+        "EA-Guid": "{847A3655-09F5-4512-891F-974C15A92CE6}",
+        "EA-Name": "program",
+        "EA-Package": "",
+        "EA-Range": "Program",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
+          "EA-Name": "Program",
+          "EA-Package": "d4w",
+          "uri": "http://data4wallonia.com/model/Program"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "program",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://data4wallonia.com/model/program",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "A program",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A program"
+        },
+        "ap-label-en": {
+          "en": "program"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A program"
+        },
+        "derived": "false",
+        "destRole": "program",
+        "label": {
+          "en": "program"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "program"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "program",
+      "range": [
+        {
+          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
+          "EA-Name": "Program",
+          "EA-Package": "d4w",
+          "uri": "http://data4wallonia.com/model/Program"
+        }
+      ]
+    },
+    {
       "@id": "http://data4wallonia.com/model/progressStatus",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{FDE4150C-319D-40a0-A0E0-EFC97888BAE0}",
@@ -12816,13 +13259,13 @@
         "EA-Guid": "{9ECF441C-01EB-463c-8BBC-E7BA286F5A84}",
         "EA-Name": "projectHolder",
         "EA-Package": "",
-        "EA-Range": "QualifiedPerson",
+        "EA-Range": "ProfilePerson",
         "EA-Type": "connector",
         "RangeData": {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         },
         "RawTags": [
           {
@@ -12872,9 +13315,9 @@
       "range": [
         {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         }
       ]
     },
@@ -13087,13 +13530,13 @@
         "EA-Guid": "{C02ED55F-DCAC-4e79-9727-F9799BA4129E}",
         "EA-Name": "quotedPerson",
         "EA-Package": "",
-        "EA-Range": "QualifiedPerson",
+        "EA-Range": "ProfilePerson",
         "EA-Type": "connector",
         "RangeData": {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         },
         "RawTags": [
           {
@@ -13143,9 +13586,9 @@
       "range": [
         {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         }
       ]
     },
@@ -14122,13 +14565,13 @@
         "EA-Guid": "{6A8D9114-551B-4eaa-9274-7E772AA4F9BE}",
         "EA-Name": "relatedPerson",
         "EA-Package": "",
-        "EA-Range": "QualifiedPerson",
+        "EA-Range": "ProfilePerson",
         "EA-Type": "connector",
         "RangeData": {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         },
         "RawTags": [
           {
@@ -14178,9 +14621,9 @@
       "range": [
         {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         }
       ]
     },
@@ -14598,12 +15041,12 @@
       },
       "domain": [
         {
-          "EA-Name": "QualifiedPerson",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "EA-Name": "ProfilePerson",
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         }
       ],
       "extra": {
-        "EA-Domain": "QualifiedPerson",
+        "EA-Domain": "ProfilePerson",
         "EA-Domain-Guid": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
         "EA-Guid": "{A3FC8D4D-34D8-4330-B0CA-D4F0A9BBDC83}",
         "EA-Name": "role",
@@ -14644,6 +15087,91 @@
         "ap-usageNote-en": "",
         "definition": {
           "en": "The function of a qualified person."
+        },
+        "label": {
+          "en": "role"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "role"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "role",
+      "range": [
+        {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ]
+    },
+    {
+      "@id": "http://data4wallonia.com/model/role",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{8497933B-68B8-4de1-9AA7-430CE2F57316}",
+      "ap-definition-en": {
+        "en": "The function of a person."
+      },
+      "ap-label-en": {
+        "en": "role"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "The function of a person."
+      },
+      "domain": [
+        {
+          "EA-Name": "LegalEntityPerson",
+          "uri": "http://data4wallonia/mode/LegalEntityPerson"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "LegalEntityPerson",
+        "EA-Domain-Guid": "{E577100F-E1FE-46b1-A6A0-93F89EDCD283}",
+        "EA-Guid": "{8497933B-68B8-4de1-9AA7-430CE2F57316}",
+        "EA-Name": "function",
+        "EA-Package": "d4w",
+        "EA-Range": "Text",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "role"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "The function of a person."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://data4wallonia.com/model/role"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "The function of a person."
+        },
+        "ap-label-en": {
+          "en": "role"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "The function of a person."
         },
         "label": {
           "en": "role"
@@ -14832,6 +15360,91 @@
           "EA-Name": "Boolean",
           "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+        }
+      ]
+    },
+    {
+      "@id": "http://data4wallonia.com/model/shortDescription",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{0B3E3A88-1877-4037-94A4-400BDF83842D}",
+      "ap-definition-en": {
+        "en": "A short description"
+      },
+      "ap-label-en": {
+        "en": "short description"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A short description"
+      },
+      "domain": [
+        {
+          "EA-Name": "ProfilePerson",
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "ProfilePerson",
+        "EA-Domain-Guid": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
+        "EA-Guid": "{0B3E3A88-1877-4037-94A4-400BDF83842D}",
+        "EA-Name": "shortDescription",
+        "EA-Package": "d4w",
+        "EA-Range": "Text",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "short description"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "A short description"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://data4wallonia.com/model/shortDescription"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A short description"
+        },
+        "ap-label-en": {
+          "en": "short description"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A short description"
+        },
+        "label": {
+          "en": "short description"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "short description"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "shortDescription",
+      "range": [
+        {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
         }
       ]
     },
@@ -15309,6 +15922,91 @@
             "key": "label-en",
             "note": "null",
             "value": "short description"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A short description"
+        },
+        "ap-label-en": {
+          "en": "short description"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A short description"
+        },
+        "label": {
+          "en": "short description"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "short description"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "shortDescription",
+      "range": [
+        {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ]
+    },
+    {
+      "@id": "http://data4wallonia.com/model/shortDescription",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{F1F5A860-8661-463a-B497-4E5DA7B0A0D7}",
+      "ap-definition-en": {
+        "en": "A short description"
+      },
+      "ap-label-en": {
+        "en": "short description"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A short description"
+      },
+      "domain": [
+        {
+          "EA-Name": "LegalEntityPerson",
+          "uri": "http://data4wallonia/mode/LegalEntityPerson"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "LegalEntityPerson",
+        "EA-Domain-Guid": "{E577100F-E1FE-46b1-A6A0-93F89EDCD283}",
+        "EA-Guid": "{F1F5A860-8661-463a-B497-4E5DA7B0A0D7}",
+        "EA-Name": "shortDescription",
+        "EA-Package": "d4w",
+        "EA-Range": "Text",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "short description"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "A short description"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://data4wallonia.com/model/shortDescription"
           }
         ],
         "Scope": "NOTHING",
@@ -16256,13 +16954,13 @@
         "EA-Guid": "{84E20B80-3505-4cb7-8DA8-FEC635CF9C50}",
         "EA-Name": "speaker",
         "EA-Package": "",
-        "EA-Range": "QualifiedPerson",
+        "EA-Range": "ProfilePerson",
         "EA-Type": "connector",
         "RangeData": {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         },
         "RawTags": [
           {
@@ -16312,9 +17010,9 @@
       "range": [
         {
           "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
+          "EA-Name": "ProfilePerson",
           "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
+          "uri": "http://data4wallonia.com/model/ProfilePerson"
         }
       ]
     },
@@ -20759,6 +21457,176 @@
       ]
     },
     {
+      "@id": "http://purl.org/dc/terms/identifier",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{B343EE5B-08E0-4cac-B4F4-33CEB551895A}",
+      "ap-definition-en": {
+        "en": "TODO"
+      },
+      "ap-label-en": {
+        "en": "identifier"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A person identifier"
+      },
+      "domain": [
+        {
+          "EA-Name": "Person",
+          "uri": "http://www.w3.org/ns/person#Person"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Person",
+        "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
+        "EA-Guid": "{B343EE5B-08E0-4cac-B4F4-33CEB551895A}",
+        "EA-Name": "identifier",
+        "EA-Package": "cv",
+        "EA-Range": "Text",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "identifier"
+          },
+          {
+            "key": "definition",
+            "note": "null",
+            "value": "A person identifier"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://purl.org/dc/terms/identifier"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "TODO"
+        },
+        "ap-label-en": {
+          "en": "identifier"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A person identifier"
+        },
+        "label": {
+          "en": "identifier"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "identifier"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "identifier",
+      "range": [
+        {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.org/dc/terms/identifier",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{3A160C07-8CC4-4eec-99B4-3D72C14B0365}",
+      "ap-definition-en": {
+        "en": "A profile identifier"
+      },
+      "ap-label-en": {
+        "en": "Identifier"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A profile identifier"
+      },
+      "domain": [
+        {
+          "EA-Name": "Profile",
+          "uri": "http://data4wallonia.com/model/Profile"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Profile",
+        "EA-Domain-Guid": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
+        "EA-Guid": "{3A160C07-8CC4-4eec-99B4-3D72C14B0365}",
+        "EA-Name": "identifier",
+        "EA-Package": "d4w",
+        "EA-Range": "Text",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "Identifier"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "A profile identifier"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://purl.org/dc/terms/identifier"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A profile identifier"
+        },
+        "ap-label-en": {
+          "en": "Identifier"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A profile identifier"
+        },
+        "label": {
+          "en": "Identifier"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "Identifier"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "identifier",
+      "range": [
+        {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ]
+    },
+    {
       "@id": "http://purl.org/dc/terms/issued",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{A638E713-006E-42c7-A8E5-7C0120FEFE19}",
@@ -21381,18 +22249,123 @@
       ]
     },
     {
+      "@id": "http://www.w3.org/ns/legal#LegalEntity",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{145FD2A6-F6A9-4e22-8E0D-F04BF7E76843}",
+      "ap-definition-en": {
+        "en": "The legal entity to which the person belongs to."
+      },
+      "ap-label-en": {
+        "en": "has legal entity"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "The legal entity to which the person belongs to."
+      },
+      "domain": [
+        {
+          "EA-Name": "LegalEntityPerson",
+          "uri": "http://data4wallonia/mode/LegalEntityPerson"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "definition-en",
+            "note": "The legal entity to which the person belongs to.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://www.w3.org/ns/legal#LegalEntity",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "has legal entity",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "LegalEntityPerson",
+        "EA-Domain-Guid": "{E577100F-E1FE-46b1-A6A0-93F89EDCD283}",
+        "EA-Guid": "{145FD2A6-F6A9-4e22-8E0D-F04BF7E76843}",
+        "EA-Name": "hasLegalEntity",
+        "EA-Package": "",
+        "EA-Range": "LegalEntity",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{C8F06838-37A0-4789-AD31-1F6601965598}",
+          "EA-Name": "LegalEntity",
+          "EA-Package": "cv",
+          "uri": "http://www.w3.org/ns/legal#LegalEntity"
+        },
+        "RawTags": [
+          {
+            "key": "definition-en",
+            "note": "The legal entity to which the person belongs to.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://www.w3.org/ns/legal#LegalEntity",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "has legal entity",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "The legal entity to which the person belongs to."
+        },
+        "ap-label-en": {
+          "en": "has legal entity"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "The legal entity to which the person belongs to."
+        },
+        "derived": "false",
+        "destRole": "hasLegalEntity",
+        "label": {
+          "en": "has legal entity"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "UNKNOWN",
+      "label": {
+        "en": "has legal entity"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "hasLegalEntity",
+      "range": [
+        {
+          "EA-GUID": "{C8F06838-37A0-4789-AD31-1F6601965598}",
+          "EA-Name": "LegalEntity",
+          "EA-Package": "cv",
+          "uri": "http://www.w3.org/ns/legal#LegalEntity"
+        }
+      ]
+    },
+    {
       "@id": "http://www.w3.org/ns/legal#companyActivity",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{D49009A6-2D1B-4eee-B3FB-BCF74E19D7DE}",
       "ap-definition-en": {
-        "en": "The area of work in which the Legal Entity is engaged."
+        "en": "The area of work in which the Legal Entity is engaged. Represented by a NACE code."
       },
       "ap-label-en": {
         "en": "legal entity activity"
       },
       "codelist": [],
       "definition": {
-        "en": "The area of work in which the Legal Entity is engaged."
+        "en": "The area of work in which the Legal Entity is engaged. Represented by a NACE code."
       },
       "domain": [
         {
@@ -21423,7 +22396,7 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "The area of work in which the Legal Entity is engaged."
+            "value": "The area of work in which the Legal Entity is engaged. Represented by a NACE code."
           },
           {
             "key": "label-en",
@@ -21439,14 +22412,14 @@
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "The area of work in which the Legal Entity is engaged."
+          "en": "The area of work in which the Legal Entity is engaged. Represented by a NACE code."
         },
         "ap-label-en": {
           "en": "legal entity activity"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "The area of work in which the Legal Entity is engaged."
+          "en": "The area of work in which the Legal Entity is engaged. Represented by a NACE code."
         },
         "label": {
           "en": "legal entity activity"
@@ -22070,14 +23043,14 @@
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{4CB772FA-4981-4dae-872C-9302EF66ED71}",
       "ap-definition-en": {
-        "en": "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."
+        "en": "The name of a secondary level/region of the address, Here the province."
       },
       "ap-label-en": {
         "en": "administrative unit level 2"
       },
       "codelist": [],
       "definition": {
-        "en": "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."
+        "en": "The name of a secondary level/region of the address, Here the province."
       },
       "domain": [
         {
@@ -22108,7 +23081,7 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."
+            "value": "The name of a secondary level/region of the address, Here the province."
           },
           {
             "key": "uri",
@@ -22124,14 +23097,14 @@
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."
+          "en": "The name of a secondary level/region of the address, Here the province."
         },
         "ap-label-en": {
           "en": "administrative unit level 2"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."
+          "en": "The name of a secondary level/region of the address, Here the province."
         },
         "label": {
           "en": "administrative unit level 2"
@@ -22727,6 +23700,111 @@
       }
     },
     {
+      "@id": "http://www.w3.org/ns/person#Person",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{82747421-BD5D-41f2-9DF2-134722DC2CF4}",
+      "ap-definition-en": {
+        "en": "The person that belong to a legal entity."
+      },
+      "ap-label-en": {
+        "en": "has person"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "The person that belong to a legal entity."
+      },
+      "domain": [
+        {
+          "EA-Name": "LegalEntityPerson",
+          "uri": "http://data4wallonia/mode/LegalEntityPerson"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "uri",
+            "note": "http://www.w3.org/ns/person#Person",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "has person",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "The person that belong to a legal entity.",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "LegalEntityPerson",
+        "EA-Domain-Guid": "{E577100F-E1FE-46b1-A6A0-93F89EDCD283}",
+        "EA-Guid": "{82747421-BD5D-41f2-9DF2-134722DC2CF4}",
+        "EA-Name": "hasPerson",
+        "EA-Package": "",
+        "EA-Range": "Person",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
+          "EA-Name": "Person",
+          "EA-Package": "cv",
+          "uri": "http://www.w3.org/ns/person#Person"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "http://www.w3.org/ns/person#Person",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "has person",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "The person that belong to a legal entity.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "The person that belong to a legal entity."
+        },
+        "ap-label-en": {
+          "en": "has person"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "The person that belong to a legal entity."
+        },
+        "derived": "false",
+        "destRole": "hasPerson",
+        "label": {
+          "en": "has person"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "UNKNOWN",
+      "label": {
+        "en": "has person"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "hasPerson",
+      "range": [
+        {
+          "EA-GUID": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
+          "EA-Name": "Person",
+          "EA-Package": "cv",
+          "uri": "http://www.w3.org/ns/person#Person"
+        }
+      ]
+    },
+    {
       "@id": "http://xmlns.com/foaf/0.1/familyName",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{55EFC170-D6B1-4c09-AB67-8DB5158E63AB}",
@@ -23010,6 +24088,367 @@
       "usage": {
         "en": "The value of this property is a URL, like the URL of a webinar."
       }
+    },
+    {
+      "@id": "http://xmlns.com/foaf/spec/#term_name",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{BAE59088-FFEB-4b3b-8555-4C71319192B8}",
+      "ap-definition-en": {
+        "en": "A person full name. Usually the composition of the person given name and family name."
+      },
+      "ap-label-en": {
+        "en": "full name"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A person full name. Usually the composition of the person given name and family name."
+      },
+      "domain": [
+        {
+          "EA-Name": "Person",
+          "uri": "http://www.w3.org/ns/person#Person"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Person",
+        "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
+        "EA-Guid": "{BAE59088-FFEB-4b3b-8555-4C71319192B8}",
+        "EA-Name": "fullname",
+        "EA-Package": "cv",
+        "EA-Range": "Text",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "full name"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "A person full name. Usually the composition of the person given name and family name."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://xmlns.com/foaf/spec/#term_name"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A person full name. Usually the composition of the person given name and family name."
+        },
+        "ap-label-en": {
+          "en": "full name"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A person full name. Usually the composition of the person given name and family name."
+        },
+        "label": {
+          "en": "full name"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "full name"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "fullName",
+      "range": [
+        {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ]
+    },
+    {
+      "@id": "https://d4w-digitalwallonia.opendatasoft.com/role",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{F18055AC-372F-44c7-A1BD-C4F3785B3D55}",
+      "ap-definition-en": {
+        "en": "TODO"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "ProfileLEgalEntity",
+          "uri": "http://data4wallonia.com/model/ProfileLegalEntity"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "ProfileLEgalEntity",
+        "EA-Domain-Guid": "{F3EE5450-C88D-41a3-8497-0240D6574258}",
+        "EA-Guid": "{F18055AC-372F-44c7-A1BD-C4F3785B3D55}",
+        "EA-Name": "role",
+        "EA-Package": "d4w",
+        "EA-Range": "Code",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
+          "EA-Name": "Code",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "TODO"
+        },
+        "ap-label-en": "",
+        "ap-usageNote-en": "",
+        "definition": "",
+        "label": "",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "",
+      "range": [
+        {
+          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
+          "EA-Name": "Code",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ]
+    },
+    {
+      "@id": "https://d4w-digitalwallonia.opendatasoft.com/shortDescription",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{FBF7CDA0-EC14-49e2-8898-D51D7BE807A7}",
+      "ap-definition-en": {
+        "en": "TODO"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "EA-Name": "ProfileLEgalEntity",
+          "uri": "http://data4wallonia.com/model/ProfileLegalEntity"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "ProfileLEgalEntity",
+        "EA-Domain-Guid": "{F3EE5450-C88D-41a3-8497-0240D6574258}",
+        "EA-Guid": "{FBF7CDA0-EC14-49e2-8898-D51D7BE807A7}",
+        "EA-Name": "shortDescription",
+        "EA-Package": "d4w",
+        "EA-Range": "Text",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "TODO"
+        },
+        "ap-label-en": "",
+        "ap-usageNote-en": "",
+        "definition": "",
+        "label": "",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "",
+      "range": [
+        {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ]
+    },
+    {
+      "@id": "https://purl.org/dc/terms/alternative",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{49422D5B-1F5D-4f39-8949-F45A8BE5F4E8}",
+      "ap-definition-en": {
+        "en": "Any name by which a LegalEntity is known, other than their legal name."
+      },
+      "ap-label-en": {
+        "en": "Alternative name"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "Any name by which a LegalEntity is known, other than their legal name."
+      },
+      "domain": [
+        {
+          "EA-Name": "LegalEntity",
+          "uri": "http://www.w3.org/ns/legal#LegalEntity"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "LegalEntity",
+        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
+        "EA-Guid": "{49422D5B-1F5D-4f39-8949-F45A8BE5F4E8}",
+        "EA-Name": "alternativeName",
+        "EA-Package": "cv",
+        "EA-Range": "Text",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "Alternative name"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "Any name by which a LegalEntity is known, other than their legal name."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://purl.org/dc/terms/alternative"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "Any name by which a LegalEntity is known, other than their legal name."
+        },
+        "ap-label-en": {
+          "en": "Alternative name"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "Any name by which a LegalEntity is known, other than their legal name."
+        },
+        "label": {
+          "en": "Alternative name"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "Alternative name"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "alternativeName",
+      "range": [
+        {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ]
+    },
+    {
+      "@id": "https://schema.org/contactType",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{55341A77-B932-4773-84B3-8768CE8D359E}",
+      "ap-definition-en": {
+        "en": "Classification that describes the specific purpose or function of the contact point, indicating the nature of the inquiries it handles."
+      },
+      "ap-label-en": {
+        "en": "contact type"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "Classification that describes the specific purpose or function of the contact point, indicating the nature of the inquiries it handles."
+      },
+      "domain": [
+        {
+          "EA-Name": "ContactPoint",
+          "uri": "http://data.europa.eu/m8g/ContactPoint"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "ContactPoint",
+        "EA-Domain-Guid": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
+        "EA-Guid": "{55341A77-B932-4773-84B3-8768CE8D359E}",
+        "EA-Name": "contactType",
+        "EA-Package": "cv",
+        "EA-Range": "String",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "contact type"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "Classification that describes the specific purpose or function of the contact point, indicating the nature of the inquiries it handles."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://schema.org/contactType"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "Classification that describes the specific purpose or function of the contact point, indicating the nature of the inquiries it handles."
+        },
+        "ap-label-en": {
+          "en": "contact type"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "Classification that describes the specific purpose or function of the contact point, indicating the nature of the inquiries it handles."
+        },
+        "label": {
+          "en": "contact type"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "contact type"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "contactType",
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ]
     },
     {
       "@id": "https://www.w3.org/ns/org#classification",
@@ -24348,6 +25787,145 @@
       "name": "Profile"
     },
     {
+      "@id": "http://data4wallonia.com/model/ProfileLegalEntity",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{F3EE5450-C88D-41a3-8497-0240D6574258}",
+      "ap-definition-en": {
+        "en": "A profile legal entity"
+      },
+      "ap-label-en": {
+        "en": "Profile Legal Entity"
+      },
+      "definition": {
+        "en": "A profile legal entity"
+      },
+      "extra": {
+        "EA-Guid": "{F3EE5450-C88D-41a3-8497-0240D6574258}",
+        "EA-Name": "ProfileLEgalEntity",
+        "EA-Package": "d4w",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "class-usage-scope",
+            "note": "null",
+            "value": "supportive"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "A profile legal entity"
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "Profile Legal Entity"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://data4wallonia.com/model/ProfileLegalEntity"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A profile legal entity"
+        },
+        "ap-label-en": {
+          "en": "Profile Legal Entity"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A profile legal entity"
+        },
+        "label": {
+          "en": "Profile Legal Entity"
+        },
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "Profile Legal Entity"
+      },
+      "name": "ProfileLegalEntity"
+    },
+    {
+      "@id": "http://data4wallonia.com/model/ProfilePerson",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
+      "ap-definition-en": {
+        "en": "A person with a role and profile."
+      },
+      "ap-label-en": {
+        "en": "Profile Person"
+      },
+      "definition": {
+        "en": "A person with a role and profile."
+      },
+      "extra": {
+        "EA-Guid": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
+        "EA-Name": "ProfilePerson",
+        "EA-Package": "d4w",
+        "EA-Parents": "Person",
+        "EA-Parents2": [
+          {
+            "label": "Person",
+            "name": "Person",
+            "package": "cv",
+            "uri": "http://www.w3.org/ns/person#Person"
+          }
+        ],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://data4wallonia.com/model/ProfilePerson"
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "Profile Person"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "A person with a role and profile."
+          },
+          {
+            "key": "class-usage-scope",
+            "note": "null",
+            "value": "main"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A person with a role and profile."
+        },
+        "ap-label-en": {
+          "en": "Profile Person"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A person with a role and profile."
+        },
+        "label": {
+          "en": "Profile Person"
+        },
+        "parentclasses": "http://www.w3.org/ns/person#Person",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "Profile Person"
+      },
+      "name": "ProfilePerson"
+    },
+    {
       "@id": "http://data4wallonia.com/model/Program",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
@@ -24412,79 +25990,6 @@
         "en": "Program"
       },
       "name": "Program"
-    },
-    {
-      "@id": "http://data4wallonia.com/model/QualifiedPerson",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-      "ap-definition-en": {
-        "en": "A person with a role and profile."
-      },
-      "ap-label-en": {
-        "en": "Qualified Person"
-      },
-      "definition": {
-        "en": "A person with a role and profile."
-      },
-      "extra": {
-        "EA-Guid": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-        "EA-Name": "QualifiedPerson",
-        "EA-Package": "d4w",
-        "EA-Parents": "Person",
-        "EA-Parents2": [
-          {
-            "label": "Person",
-            "name": "Person",
-            "package": "cv",
-            "uri": "http://www.w3.org/ns/person#Person"
-          }
-        ],
-        "EA-Type": "CLASS",
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/model/QualifiedPerson"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "Qualified Person"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "A person with a role and profile."
-          },
-          {
-            "key": "class-usage-scope",
-            "note": "null",
-            "value": "main"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A person with a role and profile."
-        },
-        "ap-label-en": {
-          "en": "Qualified Person"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A person with a role and profile."
-        },
-        "label": {
-          "en": "Qualified Person"
-        },
-        "parentclasses": "http://www.w3.org/ns/person#Person",
-        "usage": ""
-      },
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "Qualified Person"
-      },
-      "name": "QualifiedPerson"
     },
     {
       "@id": "http://data4wallonia.com/model/ServicePlace",
@@ -24749,6 +26254,67 @@
         "en": "File"
       },
       "name": "File"
+    },
+    {
+      "@id": "http://data4wallonia/mode/LegalEntityPerson",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{E577100F-E1FE-46b1-A6A0-93F89EDCD283}",
+      "ap-definition-en": {
+        "en": "A person legal entity"
+      },
+      "ap-label-en": {
+        "en": "Legal Entity Person"
+      },
+      "definition": {
+        "en": "A person legal entity"
+      },
+      "extra": {
+        "EA-Guid": "{E577100F-E1FE-46b1-A6A0-93F89EDCD283}",
+        "EA-Name": "LegalEntityPerson",
+        "EA-Package": "d4w",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://data4wallonia/mode/LegalEntityPerson"
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "Legal Entity Person"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "A person legal entity"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A person legal entity"
+        },
+        "ap-label-en": {
+          "en": "Legal Entity Person"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A person legal entity"
+        },
+        "label": {
+          "en": "Legal Entity Person"
+        },
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "Legal Entity Person"
+      },
+      "name": "LegalEntityPerson"
     },
     {
       "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -26040,7 +27606,7 @@
   "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.0/Changelog.md",
   "template": "d4wmo-generic_en.j2",
   "title": "Data4Wallonia Generic Model",
-  "toolchaincommit": "85fca3c44d6657e3b77de875fb67994bad42f161",
+  "toolchaincommit": "1017a1e6b3aed0c9818ad1c456706687d4efbcd0",
   "toolchainversion": "3",
   "translation": [
     {

@@ -108,6 +108,18 @@
       "sh:closed": false,
       "sh:property": [
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContactPointShape/0650098884a60b74715ab8be67d87fa83c5a6cc8",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContactPoint.contacttype",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "Classification that describes the specific purpose or function of the contact point, indicating the nature of the inquiries it handles."
+          },
+          "sh:name": {
+            "en": "contact type"
+          },
+          "sh:path": "https://schema.org/contactType"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContactPointShape/0c404fa56c64463c15f65878d02efa16eec065b0",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContactPoint.hasemail",
           "sh:description": {
@@ -130,6 +142,18 @@
           },
           "sh:nodeKind": "sh:Literal",
           "sh:path": "http://data4wallonia.com/model/socialNetwork"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContactPointShape/513558da226113ad183c983dd78127cab5580bf0",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContactPoint.contacttype",
+          "sh:description": {
+            "en": "Classification that describes the specific purpose or function of the contact point, indicating the nature of the inquiries it handles."
+          },
+          "sh:name": {
+            "en": "contact type"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "https://schema.org/contactType"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ContactPointShape/618f127e0303ba0e73789767171e3f28d551151a",
@@ -405,7 +429,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEventShape/27527cf24fa0c1ffa7a699f94e3ba85f78ccfeb3",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEvent.contactperson",
-          "sh:class": "http://data4wallonia.com/model/QualifiedPerson",
+          "sh:class": "http://data4wallonia.com/model/ProfilePerson",
           "sh:description": {
             "en": "A contact person"
           },
@@ -573,7 +597,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEventShape/588c76f267c935f8143e04d8f6c8883232a1ec81",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PublicEvent.speaker",
-          "sh:class": "http://data4wallonia.com/model/QualifiedPerson",
+          "sh:class": "http://data4wallonia.com/model/ProfilePerson",
           "sh:description": {
             "en": "A speaker"
           },
@@ -1157,7 +1181,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/27527cf24fa0c1ffa7a699f94e3ba85f78ccfeb3",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.contactperson",
-          "sh:class": "http://data4wallonia.com/model/QualifiedPerson",
+          "sh:class": "http://data4wallonia.com/model/ProfilePerson",
           "sh:description": {
             "en": "A contact person"
           },
@@ -1217,7 +1241,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/2ff39ef4035ac575a18c6a0658b48d18d59c9527",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.projectholder",
-          "sh:class": "http://data4wallonia.com/model/QualifiedPerson",
+          "sh:class": "http://data4wallonia.com/model/ProfilePerson",
           "sh:description": {
             "en": "A project holder"
           },
@@ -1529,7 +1553,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlanShape/655e8fa4564a8c89b7279eea9e49e9d2cf451540",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ActionPlan.participant",
-          "sh:class": "http://data4wallonia.com/model/QualifiedPerson",
+          "sh:class": "http://data4wallonia.com/model/ProfilePerson",
           "sh:description": {
             "en": "A participant"
           },
@@ -3051,7 +3075,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/ddbd86b3769591bfe52afac34aa25fb04b95dc6e",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Post.relatedperson",
-          "sh:class": "http://data4wallonia.com/model/QualifiedPerson",
+          "sh:class": "http://data4wallonia.com/model/ProfilePerson",
           "sh:description": {
             "en": "A related person"
           },
@@ -3087,7 +3111,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PostShape/e7516c04fbaa8d28f2daca54c3ccfccf726ca6bc",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Post.author",
-          "sh:class": "http://data4wallonia.com/model/QualifiedPerson",
+          "sh:class": "http://data4wallonia.com/model/ProfilePerson",
           "sh:description": {
             "en": "An author"
           },
@@ -3347,7 +3371,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReviewShape/8fb9b73c0271de42839f95455dd892a92fe9e4dc",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PressReview.quotedperson",
-          "sh:class": "http://data4wallonia.com/model/QualifiedPerson",
+          "sh:class": "http://data4wallonia.com/model/ProfilePerson",
           "sh:description": {
             "en": "A quoted person"
           },
@@ -3535,7 +3559,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/1119b043ceb649e0e603d821f73e437e90781ce2",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.featuredperson",
-          "sh:class": "http://data4wallonia.com/model/QualifiedPerson",
+          "sh:class": "http://data4wallonia.com/model/ProfilePerson",
           "sh:description": {
             "en": "A featured Person"
           },
@@ -3665,6 +3689,18 @@
           "sh:uniqueLang": "true"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/41c47bba4bf2c3625dcad82596768e84b7abca08",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.profilelegalentity",
+          "sh:description": {
+            "en": "A profile legal entity"
+          },
+          "sh:name": {
+            "en": "profile legal entity"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/profileLegalEntity"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/44230c0d2715c1e962b05f7c087cd9dd4c90278d",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.plateformcontactperson",
           "sh:description": {
@@ -3687,18 +3723,6 @@
             "en": "title"
           },
           "sh:path": "http://data4wallonia.com/model/title"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/49a4c9817c845f044baad4ba3bbe7f64f3a96fae",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.belgianenterprise",
-          "sh:description": {
-            "en": "A belgian entreprise"
-          },
-          "sh:name": {
-            "en": "belgian enterprise"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/belgianEntreprise"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/4e0e9bb393f71a2b0944e1bfb297b3253d30835b",
@@ -3883,7 +3907,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/80b95f6e85a0aa7467b0004b72c9891b1a09ab4d",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.plateformcontactperson",
-          "sh:class": "http://data4wallonia.com/model/QualifiedPerson",
+          "sh:class": "http://data4wallonia.com/model/ProfilePerson",
           "sh:description": {
             "en": "A plateform contact person"
           },
@@ -3917,6 +3941,18 @@
           "sh:path": "http://data4wallonia.com/model/founder"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/8c3dc03001b022c1ecc74a493e19a8048bbf5ad0",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.Identifier",
+          "sh:description": {
+            "en": "A profile identifier"
+          },
+          "sh:name": {
+            "en": "Identifier"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "sh:uniqueLang": "true"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.title",
           "sh:description": {
@@ -3931,7 +3967,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/933cf1439c785b33c1e1ab713a519ad6ce871764",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.nonfeaturedperson",
-          "sh:class": "http://data4wallonia.com/model/QualifiedPerson",
+          "sh:class": "http://data4wallonia.com/model/ProfilePerson",
           "sh:description": {
             "en": "A non featured person"
           },
@@ -3939,6 +3975,18 @@
             "en": "non featured person"
           },
           "sh:path": "http://data4wallonia.com/model/nonFeaturedPerson"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/9a8f9222d1a05cfb8b6d310bc2b185e6808d6fce",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.profilelegalentity",
+          "sh:class": "http://data4wallonia.com/model/ProfileLegalEntity",
+          "sh:description": {
+            "en": "A profile legal entity"
+          },
+          "sh:name": {
+            "en": "profile legal entity"
+          },
+          "sh:path": "http://data4wallonia.com/model/profileLegalEntity"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/9adf9f5890592909cf3e67021ae7ab4f895a7745",
@@ -3965,16 +4013,16 @@
           "sh:path": "http://data4wallonia.com/model/ambition"
         },
         {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/a663b376104894cdf804c1341a96daccdcf76e16",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.belgianenterprise",
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/a2024ca18c575475cb2f17b09b6ce2558b9b1be6",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.Identifier",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
-            "en": "A belgian entreprise"
+            "en": "A profile identifier"
           },
           "sh:name": {
-            "en": "belgian enterprise"
+            "en": "Identifier"
           },
-          "sh:path": "http://data4wallonia.com/model/belgianEntreprise"
+          "sh:path": "http://purl.org/dc/terms/identifier"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/b7707a7d12adfe39ed5fc9b262c71e85d9cf404b",
@@ -4073,6 +4121,30 @@
           "sh:path": "http://data4wallonia.com/model/logo"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/e05d4379f0e783872f2f5720b6ef482be5afabf5",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.Identifier",
+          "sh:description": {
+            "en": "A profile identifier"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "Identifier"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/e8e810b60ddf789c441b4a5f1069b0c49121887e",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.Identifier",
+          "sh:description": {
+            "en": "A profile identifier"
+          },
+          "sh:name": {
+            "en": "Identifier"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/e99658d8dce2abcab55b39649462e2f78d374962",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.additionaldescription",
           "sh:description": {
@@ -4109,6 +4181,18 @@
           "sh:path": "http://data4wallonia.com/model/incubator"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/f06277c6a787d710dc77f69b3bf5cd9d11c69889",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.Identifier",
+          "sh:description": {
+            "en": "A profile identifier"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "Identifier"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/f1249f171bcbfa12f01658d50155b64beb61e40f",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.category",
           "sh:description": {
@@ -4131,21 +4215,228 @@
           },
           "sh:path": "http://data4wallonia.com/model/shortDescription",
           "sh:uniqueLang": "true"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileShape/f7ea8d6749f8ad5ed379c2a4d2c61619c58567b1",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Profile.belgianenterprise",
-          "sh:description": {
-            "en": "A belgian entreprise"
-          },
-          "sh:name": {
-            "en": "belgian enterprise"
-          },
-          "sh:path": "http://data4wallonia.com/model/belgianEntreprise",
-          "sh:uniqueLang": "true"
         }
       ],
       "sh:targetClass": "http://data4wallonia.com/model/Profile"
+    },
+    {
+      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/0959a9f84b13ab85d20ac60b34d3367449afe3a6",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLegalEntity.profile",
+          "sh:description": {
+            "en": "A profile"
+          },
+          "sh:name": {
+            "en": "profile"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/profile"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/4d55af37dbbb6a42088d917caa1ca25428ec42c9",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLegalEntity.",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": "",
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/role"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/4d55af37dbbb6a42088d917caa1ca25428ec42c9",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLegalEntity.",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": "",
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/shortDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/650640d8ab8757a1d48ce70b28fc517009337078",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLegalEntity.legalentity",
+          "sh:description": {
+            "en": "A legal entity"
+          },
+          "sh:name": {
+            "en": "legal entity"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.be/model/legalEntity"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/679c57b69f9f8bacb9d3bc369cb8737462f08d77",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLegalEntity.legalentity",
+          "sh:class": "http://www.w3.org/ns/legal#LegalEntity",
+          "sh:description": {
+            "en": "A legal entity"
+          },
+          "sh:name": {
+            "en": "legal entity"
+          },
+          "sh:path": "http://data4wallonia.be/model/legalEntity"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/9f1d53fe2a94a609d479193c606e349a965dc068",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLegalEntity.profile",
+          "sh:class": "http://data4wallonia.com/model/Profile",
+          "sh:description": {
+            "en": "A profile"
+          },
+          "sh:name": {
+            "en": "profile"
+          },
+          "sh:path": "http://data4wallonia.com/model/profile"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/b156ce63f4ea7955d31ac9be007b87ce0c56b44f",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLegalEntity.",
+          "sh:description": "",
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/shortDescription",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/b41e904f152a5e9ac34b45665787f02461d7a0b3",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLegalEntity.",
+          "sh:description": "",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/role"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/b41e904f152a5e9ac34b45665787f02461d7a0b3",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLegalEntity.",
+          "sh:description": "",
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "https://d4w-digitalwallonia.opendatasoft.com/shortDescription"
+        }
+      ],
+      "sh:targetClass": "http://data4wallonia.com/model/ProfileLegalEntity"
+    },
+    {
+      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePersonShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePersonShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePerson.shortdescription",
+          "sh:description": {
+            "en": "A short description"
+          },
+          "sh:name": {
+            "en": "short description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/shortDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePersonShape/24a51f741f7dc54cc225d47abc4d51600b2eb0e4",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePerson.shortdescription",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A short description"
+          },
+          "sh:name": {
+            "en": "short description"
+          },
+          "sh:path": "http://data4wallonia.com/model/shortDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePersonShape/4cc6676c9059b5863bc4c4e548c7303b6d0c7bfb",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePerson.department",
+          "sh:description": {
+            "en": "The department in which the person is affiliated to."
+          },
+          "sh:name": {
+            "en": "department"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.be/model/department"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePersonShape/604437f9045931d5c3916199ca60510c39439a59",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePerson.role",
+          "sh:description": {
+            "en": "The function of a qualified person."
+          },
+          "sh:name": {
+            "en": "role"
+          },
+          "sh:path": "http://data4wallonia.com/model/role",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePersonShape/91fca326def04ee4ef7ed1efba4e59fae00d1faa",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePerson.role",
+          "sh:description": {
+            "en": "The function of a qualified person."
+          },
+          "sh:name": {
+            "en": "role"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/role"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePersonShape/afd9a27ccaa20adc43578d2297410e5ec6193f0d",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePerson.hasprofile",
+          "sh:description": {
+            "en": "The profile to which the person belongs to."
+          },
+          "sh:name": {
+            "en": "has profile"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.com/model/inOperation"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePersonShape/bb1e3194ebfc8a5a6a3dce4b59d9f24825921f9c",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePerson.hasprofile",
+          "sh:class": "http://data4wallonia.com/model/Profile",
+          "sh:description": {
+            "en": "The profile to which the person belongs to."
+          },
+          "sh:name": {
+            "en": "has profile"
+          },
+          "sh:path": "http://data4wallonia.com/model/inOperation"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePersonShape/c3c38991802f961e360240c97662ed6df0ca0fd9",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePerson.department",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "The department in which the person is affiliated to."
+          },
+          "sh:name": {
+            "en": "department"
+          },
+          "sh:path": "http://data4wallonia.be/model/department"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePersonShape/d2254b8259635ec986bc7c65b0227299193c6c16",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePerson.role",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "The function of a qualified person."
+          },
+          "sh:name": {
+            "en": "role"
+          },
+          "sh:path": "http://data4wallonia.com/model/role"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePersonShape/f1a1c433a19bfaca2c3fd9cea584ddf10495be0f",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePerson.shortdescription",
+          "sh:description": {
+            "en": "A short description"
+          },
+          "sh:name": {
+            "en": "short description"
+          },
+          "sh:path": "http://data4wallonia.com/model/shortDescription",
+          "sh:uniqueLang": "true"
+        }
+      ],
+      "sh:targetClass": "http://data4wallonia.com/model/ProfilePerson"
     },
     {
       "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProgramShape",
@@ -4203,7 +4494,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProgramShape/27527cf24fa0c1ffa7a699f94e3ba85f78ccfeb3",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Program.contactperson",
-          "sh:class": "http://data4wallonia.com/model/QualifiedPerson",
+          "sh:class": "http://data4wallonia.com/model/ProfilePerson",
           "sh:description": {
             "en": "A contact person"
           },
@@ -4706,134 +4997,6 @@
         }
       ],
       "sh:targetClass": "http://data4wallonia.com/model/Program"
-    },
-    {
-      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/245bc89a6c735f27fa08033a9a63ae5d5d7d5acd",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPerson.internalname",
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:description": {
-            "en": "An internal name"
-          },
-          "sh:name": {
-            "en": "internal name"
-          },
-          "sh:path": "http://data4wallonia.com/model/internalName"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/27d80fd06327a52ab3580ad24144c541bda9fbc5",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPerson.internalname",
-          "sh:description": {
-            "en": "An internal name"
-          },
-          "sh:name": {
-            "en": "internal name"
-          },
-          "sh:path": "http://data4wallonia.com/model/internalName",
-          "sh:uniqueLang": "true"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/604437f9045931d5c3916199ca60510c39439a59",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPerson.role",
-          "sh:description": {
-            "en": "The function of a qualified person."
-          },
-          "sh:name": {
-            "en": "role"
-          },
-          "sh:path": "http://data4wallonia.com/model/role",
-          "sh:uniqueLang": "true"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/91be2d6f842ddff429910d152006249f53939d5b",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPerson.isopenbyprofile",
-          "sh:description": {
-            "en": "A boolean to indicate that is open by profile"
-          },
-          "sh:name": {
-            "en": "is open by profile"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/isOpenByProfile"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/91fca326def04ee4ef7ed1efba4e59fae00d1faa",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPerson.role",
-          "sh:description": {
-            "en": "The function of a qualified person."
-          },
-          "sh:name": {
-            "en": "role"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/role"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/afd9a27ccaa20adc43578d2297410e5ec6193f0d",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPerson.hasprofile",
-          "sh:description": {
-            "en": "The profile to which the person belongs to."
-          },
-          "sh:name": {
-            "en": "has profile"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/inOperation"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/b96c16ba737f9ae66cd79d59c5077c682d5051e0",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPerson.internalname",
-          "sh:description": {
-            "en": "An internal name"
-          },
-          "sh:name": {
-            "en": "internal name"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data4wallonia.com/model/internalName"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/bb1e3194ebfc8a5a6a3dce4b59d9f24825921f9c",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPerson.hasprofile",
-          "sh:class": "http://data4wallonia.com/model/Profile",
-          "sh:description": {
-            "en": "The profile to which the person belongs to."
-          },
-          "sh:name": {
-            "en": "has profile"
-          },
-          "sh:path": "http://data4wallonia.com/model/inOperation"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/d2254b8259635ec986bc7c65b0227299193c6c16",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPerson.role",
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:description": {
-            "en": "The function of a qualified person."
-          },
-          "sh:name": {
-            "en": "role"
-          },
-          "sh:path": "http://data4wallonia.com/model/role"
-        },
-        {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPersonShape/ff8463efe126214000d0659ea21bf51efa1543df",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#QualifiedPerson.isopenbyprofile",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#boolean",
-          "sh:description": {
-            "en": "A boolean to indicate that is open by profile"
-          },
-          "sh:name": {
-            "en": "is open by profile"
-          },
-          "sh:path": "http://data4wallonia.com/model/isOpenByProfile"
-        }
-      ],
-      "sh:targetClass": "http://data4wallonia.com/model/QualifiedPerson"
     },
     {
       "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ServicesPlaceShape",
@@ -5419,7 +5582,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ServicesPlaceShape/e8f23b52a59c37af895abf8f193c45cd001d006a",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ServicesPlace.accompanyperson",
-          "sh:class": "http://data4wallonia.com/model/QualifiedPerson",
+          "sh:class": "http://data4wallonia.com/model/ProfilePerson",
           "sh:description": {
             "en": "An accompany person"
           },
@@ -5743,6 +5906,158 @@
       "sh:targetClass": "http://data4wallonia.com/resource/model/File"
     },
     {
+      "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPersonShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPersonShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPerson.shortdescription",
+          "sh:description": {
+            "en": "A short description"
+          },
+          "sh:name": {
+            "en": "short description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/shortDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPersonShape/24a51f741f7dc54cc225d47abc4d51600b2eb0e4",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPerson.shortdescription",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A short description"
+          },
+          "sh:name": {
+            "en": "short description"
+          },
+          "sh:path": "http://data4wallonia.com/model/shortDescription"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPersonShape/4cc6676c9059b5863bc4c4e548c7303b6d0c7bfb",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPerson.department",
+          "sh:description": {
+            "en": "The department in which the person is affiliated to."
+          },
+          "sh:name": {
+            "en": "department"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data4wallonia.be/model/departement"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPersonShape/604437f9045931d5c3916199ca60510c39439a59",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPerson.role",
+          "sh:description": {
+            "en": "The function of a person."
+          },
+          "sh:name": {
+            "en": "role"
+          },
+          "sh:path": "http://data4wallonia.com/model/role",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPersonShape/76bd010bec194cc93d6864d358e82618747907b0",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPerson.hasperson",
+          "sh:description": {
+            "en": "The person that belong to a legal entity."
+          },
+          "sh:name": {
+            "en": "has person"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/person#Person"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPersonShape/91fca326def04ee4ef7ed1efba4e59fae00d1faa",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPerson.role",
+          "sh:description": {
+            "en": "The function of a person."
+          },
+          "sh:name": {
+            "en": "role"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/role"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPersonShape/93de76a990bf0a1f3ab991d333f0cc73216d5a09",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPerson.haslegalentity",
+          "sh:description": {
+            "en": "The legal entity to which the person belongs to."
+          },
+          "sh:name": {
+            "en": "has legal entity"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/legal#LegalEntity"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPersonShape/9c2032c4263e0d8c5ecc47b95bfd8064c104a7fc",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPerson.haslegalentity",
+          "sh:class": "http://www.w3.org/ns/legal#LegalEntity",
+          "sh:description": {
+            "en": "The legal entity to which the person belongs to."
+          },
+          "sh:name": {
+            "en": "has legal entity"
+          },
+          "sh:path": "http://www.w3.org/ns/legal#LegalEntity"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPersonShape/b59f54bb210c219097d945077cb73d3ad8461336",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPerson.hasperson",
+          "sh:class": "http://www.w3.org/ns/person#Person",
+          "sh:description": {
+            "en": "The person that belong to a legal entity."
+          },
+          "sh:name": {
+            "en": "has person"
+          },
+          "sh:path": "http://www.w3.org/ns/person#Person"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPersonShape/c3c38991802f961e360240c97662ed6df0ca0fd9",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPerson.department",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "The department in which the person is affiliated to."
+          },
+          "sh:name": {
+            "en": "department"
+          },
+          "sh:path": "http://data4wallonia.be/model/departement"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPersonShape/d2254b8259635ec986bc7c65b0227299193c6c16",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPerson.role",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "The function of a person."
+          },
+          "sh:name": {
+            "en": "role"
+          },
+          "sh:path": "http://data4wallonia.com/model/role"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPersonShape/f1a1c433a19bfaca2c3fd9cea584ddf10495be0f",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityPerson.shortdescription",
+          "sh:description": {
+            "en": "A short description"
+          },
+          "sh:name": {
+            "en": "short description"
+          },
+          "sh:path": "http://data4wallonia.com/model/shortDescription",
+          "sh:uniqueLang": "true"
+        }
+      ],
+      "sh:targetClass": "http://data4wallonia/mode/LegalEntityPerson"
+    },
+    {
       "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#TextShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -6009,6 +6324,18 @@
           "sh:path": "http://data4wallonia.com/model/logo"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/0dfe82a798d5b60018ff636d6f6a9faf3f49e7c6",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.Alternativename",
+          "sh:description": {
+            "en": "Any name by which a LegalEntity is known, other than their legal name."
+          },
+          "sh:name": {
+            "en": "Alternative name"
+          },
+          "sh:path": "https://purl.org/dc/terms/alternative",
+          "sh:uniqueLang": "true"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/16a2ae1bd10ecd1b71a5d7733636716b16dec57b",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.legalformtype",
           "sh:description": {
@@ -6019,6 +6346,18 @@
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/legal#companyType"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/2ac9a3c220f91c81dc48760f7c320f11bc66efbf",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.Alternativename",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "Any name by which a LegalEntity is known, other than their legal name."
+          },
+          "sh:name": {
+            "en": "Alternative name"
+          },
+          "sh:path": "https://purl.org/dc/terms/alternative"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/35f2aebe69acb8ef31dbdb743a8c29a0f6ab50cf",
@@ -6093,16 +6432,16 @@
           "sh:path": "http://data.europa.eu/m8g/registeredAddress"
         },
         {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/4fcbd4782084e3ddb6267da4ad497ce149cea8c2",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.activitynature",
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/54f09a2ec1df3a48b497c8c664277f160685ce04",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.clientsite",
           "sh:description": {
-            "en": "Nature of the activity of the entity"
+            "en": "A client site"
           },
           "sh:name": {
-            "en": "activity nature"
+            "en": "client site"
           },
-          "sh:path": "http://data4wallonia.com/model/activityNature"
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data4wallonia.com/model/clientSite"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/584beab9b274893ecd7bb3f425d0400d1f9f9255",
@@ -6127,6 +6466,18 @@
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "https://www.w3.org/ns/org#unitOf"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/5de5e3fa7d25498318d38386224340b36e1d139a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.clientsite",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "en": "A client site"
+          },
+          "sh:name": {
+            "en": "client site"
+          },
+          "sh:path": "http://data4wallonia.com/model/clientSite"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/5de7dd3454af7271c3bf268f0cf8723b4a9667ec",
@@ -6156,7 +6507,7 @@
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/6b95f7afa0acb115254af4469b3de83d9414e899",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.legalentityactivity",
           "sh:description": {
-            "en": "The area of work in which the Legal Entity is engaged."
+            "en": "The area of work in which the Legal Entity is engaged. Represented by a NACE code."
           },
           "sh:name": {
             "en": "legal entity activity"
@@ -6253,7 +6604,7 @@
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.legalentityactivity",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
-            "en": "The area of work in which the Legal Entity is engaged."
+            "en": "The area of work in which the Legal Entity is engaged. Represented by a NACE code."
           },
           "sh:name": {
             "en": "legal entity activity"
@@ -6357,16 +6708,16 @@
           "sh:path": "https://www.w3.org/ns/org#classification"
         },
         {
-          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/c204d79b82f54de97e719ddae91dd8f905613b9a",
-          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.activitynature",
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/ba0522c6d595f3fabc2a3aaf58c64e0f556aa3dc",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.Alternativename",
           "sh:description": {
-            "en": "Nature of the activity of the entity"
+            "en": "Any name by which a LegalEntity is known, other than their legal name."
           },
           "sh:name": {
-            "en": "activity nature"
+            "en": "Alternative name"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data4wallonia.com/model/activityNature"
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "https://purl.org/dc/terms/alternative"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/c45783ad1c8e58de138faa9d4e93b79b55f94898",
@@ -6548,7 +6899,7 @@
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/256ffe464f9c7682e950f7853ef0b6060580435b",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.administrativeunitlevel2",
           "sh:description": {
-            "en": "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."
+            "en": "The name of a secondary level/region of the address, Here the province."
           },
           "sh:name": {
             "en": "administrative unit level 2"
@@ -6621,7 +6972,7 @@
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.administrativeunitlevel2",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
-            "en": "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."
+            "en": "The name of a secondary level/region of the address, Here the province."
           },
           "sh:name": {
             "en": "administrative unit level 2"
@@ -6716,7 +7067,7 @@
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#AddressShape/ae24e9fc95115753cabe5ad6bd3c05b9751cd13c",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Address.administrativeunitlevel2",
           "sh:description": {
-            "en": "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."
+            "en": "The name of a secondary level/region of the address, Here the province."
           },
           "sh:name": {
             "en": "administrative unit level 2"
@@ -6933,6 +7284,18 @@
           "sh:path": "https://www.w3.org/ns/org#headOf"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/23e0d5b7e102a68f695e96d6488725cad24bf86e",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.fullname",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A person full name. Usually the composition of the person given name and family name."
+          },
+          "sh:name": {
+            "en": "full name"
+          },
+          "sh:path": "http://xmlns.com/foaf/spec/#term_name"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/24a51f741f7dc54cc225d47abc4d51600b2eb0e4",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.shortdescription",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -6991,6 +7354,18 @@
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/locn#address"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/334d3973959379776995cf58843d5c7d9053dd25",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.fullname",
+          "sh:description": {
+            "en": "A person full name. Usually the composition of the person given name and family name."
+          },
+          "sh:name": {
+            "en": "full name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://xmlns.com/foaf/spec/#term_name"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/36e301d7cf972fb9d011a055a8c6f87202fcffd3",
@@ -7075,6 +7450,42 @@
             "en": "client site"
           },
           "sh:path": "http://data4wallonia.com/model/clientSite"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/61567f2fc886ceca43a76f7bd890d6f2c6708ecf",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.gender",
+          "sh:description": {
+            "en": "The identities, expressions and societal roles of the Person."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "gender"
+          },
+          "sh:path": "http://data.europa.eu/m8g/gender"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/6c7c1bd2ab3b7761e5be759a078a9fd93f411a57",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.identifier",
+          "sh:description": {
+            "en": "A person identifier"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/6d07a6f17c0156d68d0b7a224fecde7e8de989ef",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.identifier",
+          "sh:description": {
+            "en": "A person identifier"
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "sh:uniqueLang": "true"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/7349aedd98256d90685571bddc6da8ac9eab1767",
@@ -7185,6 +7596,54 @@
           "sh:path": "http://data4wallonia.com/model/displayRefusal"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/a19b499d3e09af07721918e266dc7b096e12538d",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.dateofbirth",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "sh:description": {
+            "en": "The point in time on which the Person was born."
+          },
+          "sh:name": {
+            "en": "date of birth"
+          },
+          "sh:path": "http://data.europa.eu/m8g/birthDate"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/aadbd67a77a624f073be2076627fb9dc883cbe48",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.identifier",
+          "sh:description": {
+            "en": "A person identifier"
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/add99084b28b7f1f702646fec9ee5516646831c7",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.fullname",
+          "sh:description": {
+            "en": "A person full name. Usually the composition of the person given name and family name."
+          },
+          "sh:name": {
+            "en": "full name"
+          },
+          "sh:path": "http://xmlns.com/foaf/spec/#term_name",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/b3a65155abdf78e609997919f6f053e252c52153",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.gender",
+          "sh:description": {
+            "en": "The identities, expressions and societal roles of the Person."
+          },
+          "sh:name": {
+            "en": "gender"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/gender"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/b7707a7d12adfe39ed5fc9b262c71e85d9cf404b",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.slug",
           "sh:description": {
@@ -7197,6 +7656,18 @@
           "sh:path": "http://data4wallonia.com/model/slug"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/b9da0bb511b75552c4edec2383d2c9ebb35f0774",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.dateofbirth",
+          "sh:description": {
+            "en": "The point in time on which the Person was born."
+          },
+          "sh:name": {
+            "en": "date of birth"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data.europa.eu/m8g/birthDate"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/ba21b6c4a9251ed67b6b3113dc1d857640fd4534",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.givenname",
           "sh:description": {
@@ -7207,6 +7678,30 @@
           },
           "sh:path": "http://xmlns.com/foaf/0.1/givenName",
           "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/c0d17764e84e711728581fda7356a51e99a9040a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.identifier",
+          "sh:description": {
+            "en": "A person identifier"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/c2c54ded0a433cc00911573f794f1aeab900c624",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.gender",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "The identities, expressions and societal roles of the Person."
+          },
+          "sh:name": {
+            "en": "gender"
+          },
+          "sh:path": "http://data.europa.eu/m8g/gender"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/c56ed5a233a70e9c4a6338f07a2aee5cfc6bacbf",
@@ -7281,6 +7776,18 @@
           "sh:path": "http://data4wallonia.com/model/language"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/e2017f72421063cd9ff494011ec78f35f9632a4a",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.identifier",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "A person identifier"
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/e99658d8dce2abcab55b39649462e2f78d374962",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.additionaldescription",
           "sh:description": {
@@ -7351,6 +7858,18 @@
             "en": "given name"
           },
           "sh:path": "http://xmlns.com/foaf/0.1/givenName"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/fdfe074a1ad00eedfc7e5646885cf8fa19e8e5af",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.gender",
+          "sh:description": {
+            "en": "The identities, expressions and societal roles of the Person."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "gender"
+          },
+          "sh:path": "http://data.europa.eu/m8g/gender"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/person#Person"
