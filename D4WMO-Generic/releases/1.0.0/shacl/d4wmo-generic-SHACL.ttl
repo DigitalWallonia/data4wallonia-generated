@@ -2869,12 +2869,14 @@
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/0959a9f84b13ab85d20ac60b34d3367449afe3a6>,
-    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/4d55af37dbbb6a42088d917caa1ca25428ec42c9>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/24a51f741f7dc54cc225d47abc4d51600b2eb0e4>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/650640d8ab8757a1d48ce70b28fc517009337078>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/679c57b69f9f8bacb9d3bc369cb8737462f08d77>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/91fca326def04ee4ef7ed1efba4e59fae00d1faa>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/9f1d53fe2a94a609d479193c606e349a965dc068>,
-    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/b156ce63f4ea7955d31ac9be007b87ce0c56b44f>,
-    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/b41e904f152a5e9ac34b45665787f02461d7a0b3>;
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/d2254b8259635ec986bc7c65b0227299193c6c16>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/f1a1c433a19bfaca2c3fd9cea584ddf10495be0f>;
   shacl:targetClass <http://data4wallonia.com/model/ProfileLegalEntity> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/0959a9f84b13ab85d20ac60b34d3367449afe3a6> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLegalEntity.profile";
@@ -2883,12 +2885,17 @@
   shacl:nodeKind shacl:BlankNodeOrIRI;
   shacl:path <http://data4wallonia.com/model/profile> .
 
-<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/4d55af37dbbb6a42088d917caa1ca25428ec42c9> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLegalEntity.";
-  shacl:class skos:Concept;
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/0d360e9e918a09115c9d5127a514c69aabd1a1ae> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLegalEntity.shortdescription";
+  shacl:description "A short description"@en;
+  shacl:name "short description"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data4wallonia.com/model/shortDescription> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/24a51f741f7dc54cc225d47abc4d51600b2eb0e4> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLegalEntity.shortdescription";
   shacl:datatype rdf:langString;
-  shacl:description "";
-  shacl:path <https://d4w-digitalwallonia.opendatasoft.com/role>,
-    <https://d4w-digitalwallonia.opendatasoft.com/shortDescription> .
+  shacl:description "A short description"@en;
+  shacl:name "short description"@en;
+  shacl:path <http://data4wallonia.com/model/shortDescription> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/650640d8ab8757a1d48ce70b28fc517009337078> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLegalEntity.legalentity";
   shacl:description "A legal entity"@en;
@@ -2902,23 +2909,29 @@
   shacl:name "legal entity"@en;
   shacl:path <http://data4wallonia.be/model/legalEntity> .
 
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/91fca326def04ee4ef7ed1efba4e59fae00d1faa> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLegalEntity.role";
+  shacl:description "The role held by the legal entity in the profile."@en;
+  shacl:name "role"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data4wallonia.be/model/role> .
+
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/9f1d53fe2a94a609d479193c606e349a965dc068> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLegalEntity.profile";
   shacl:class <http://data4wallonia.com/model/Profile>;
   shacl:description "A profile"@en;
   shacl:name "profile"@en;
   shacl:path <http://data4wallonia.com/model/profile> .
 
-<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/b156ce63f4ea7955d31ac9be007b87ce0c56b44f> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLegalEntity.";
-  shacl:description "";
-  shacl:path <https://d4w-digitalwallonia.opendatasoft.com/shortDescription>;
-  shacl:uniqueLang true .
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/d2254b8259635ec986bc7c65b0227299193c6c16> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLegalEntity.role";
+  shacl:class skos:Concept;
+  shacl:description "The role held by the legal entity in the profile."@en;
+  shacl:name "role"@en;
+  shacl:path <http://data4wallonia.be/model/role> .
 
-<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/b41e904f152a5e9ac34b45665787f02461d7a0b3> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLegalEntity.";
-  shacl:description "";
-  shacl:nodeKind shacl:BlankNodeOrIRI,
-    shacl:Literal;
-  shacl:path <https://d4w-digitalwallonia.opendatasoft.com/role>,
-    <https://d4w-digitalwallonia.opendatasoft.com/shortDescription> .
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLEgalEntityShape/f1a1c433a19bfaca2c3fd9cea584ddf10495be0f> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfileLegalEntity.shortdescription";
+  shacl:description "A short description"@en;
+  shacl:name "short description"@en;
+  shacl:path <http://data4wallonia.com/model/shortDescription>;
+  shacl:uniqueLang true .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProfilePersonShape> a shacl:NodeShape;
   shacl:closed false;
@@ -3657,8 +3670,8 @@
   shacl:path <http://data4wallonia.com/model/slug> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProgramShape/be0272a9c84278a3023c9077f1df0705f9ab3b33> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Program.sticky";
-  shacl:class <http://data.europa.eu/m8g/PublicEvent>,
-    <http://data4wallonia.com/model/Post>;
+  shacl:class <http://data4wallonia.com/model/Post>,
+    <http://data.europa.eu/m8g/PublicEvent>;
   shacl:description "A sticky"@en;
   shacl:name "sticky"@en;
   shacl:path <http://data4wallonia.com/model/sticky> .

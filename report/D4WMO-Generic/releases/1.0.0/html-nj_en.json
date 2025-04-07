@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/08346a71e125bf57bdf1ba8aa48ab91024638766",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/08346a71e125bf57bdf1ba8aa48ab91024638766/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/4433cd714370087c07b6e92ad8688e1ae81abdcb",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/4433cd714370087c07b6e92ad8688e1ae81abdcb/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-Generic/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -6330,6 +6330,46 @@
           }
         },
         {
+          "uri": "http://data4wallonia.be/model/role",
+          "name": "role",
+          "sort": "role",
+          "label": {
+            "en": "role"
+          },
+          "description": {
+            "en": "The role held by the legal entity in the profile."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ProfileLEgalEntity",
+              "uri": "http://data4wallonia.com/model/ProfileLegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Code",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Code",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Code"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "role",
+            "definition-en": "The role held by the legal entity in the profile.",
+            "uri": "http://data4wallonia.be/model/role"
+          }
+        },
+        {
           "uri": "http://data4wallonia.com/model/profile",
           "name": "profile",
           "sort": "profile",
@@ -6373,43 +6413,15 @@
           }
         },
         {
-          "uri": "https://d4w-digitalwallonia.opendatasoft.com/role",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "ProfileLEgalEntity",
-              "uri": "http://data4wallonia.com/model/ProfileLegalEntity"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Code",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Code",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "en": "Code"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {}
-        },
-        {
-          "uri": "https://d4w-digitalwallonia.opendatasoft.com/shortDescription",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
+          "uri": "http://data4wallonia.com/model/shortDescription",
+          "name": "shortDescription",
+          "sort": "short description",
+          "label": {
+            "en": "short description"
+          },
+          "description": {
+            "en": "A short description"
+          },
           "usage": {},
           "domain": [
             {
@@ -6434,7 +6446,11 @@
           ],
           "cardinality": "0..*",
           "codelist_uri": "",
-          "rawTags": {}
+          "rawTags": {
+            "label-en": "short description",
+            "definition-en": "A short description",
+            "uri": "http://data4wallonia.com/model/shortDescription"
+          }
         }
       ]
     },
@@ -7305,25 +7321,25 @@
           ],
           "range": [
             {
-              "range_label": "PublicEvent",
-              "range_uri": "http://data.europa.eu/m8g/PublicEvent"
+              "range_label": "Post",
+              "range_uri": "http://data4wallonia.com/model/Post"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Public Event",
-              "range_puri": "http://data.europa.eu/m8g/PublicEvent",
+              "range_uri": "#Post",
+              "range_puri": "http://data4wallonia.com/model/Post",
               "range_label": {
-                "en": "Public Event"
+                "en": "Post"
               }
             }
           ],
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "http://data4wallonia.com/model/sticky",
             "label-en": "sticky",
-            "definition-en": "A sticky"
+            "definition-en": "A sticky",
+            "uri": "http://data4wallonia.com/model/sticky"
           }
         },
         {
@@ -7345,25 +7361,25 @@
           ],
           "range": [
             {
-              "range_label": "Post",
-              "range_uri": "http://data4wallonia.com/model/Post"
+              "range_label": "PublicEvent",
+              "range_uri": "http://data.europa.eu/m8g/PublicEvent"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Post",
-              "range_puri": "http://data4wallonia.com/model/Post",
+              "range_uri": "#Public Event",
+              "range_puri": "http://data.europa.eu/m8g/PublicEvent",
               "range_label": {
-                "en": "Post"
+                "en": "Public Event"
               }
             }
           ],
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
+            "uri": "http://data4wallonia.com/model/sticky",
             "label-en": "sticky",
-            "definition-en": "A sticky",
-            "uri": "http://data4wallonia.com/model/sticky"
+            "definition-en": "A sticky"
           }
         },
         {
