@@ -1948,7 +1948,6 @@
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/0fdca125b883c133fa07f7f2da282872bf817f37>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/144c4f635c27258a37c86c5b543b4a5d670c81fe>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/1572a063cf6e42858dabf5017baf40a96bf7155d>,
-    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/20e72c692090ea97cd328f03c7904cac5e165bc2>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/23e0d5b7e102a68f695e96d6488725cad24bf86e>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/24a51f741f7dc54cc225d47abc4d51600b2eb0e4>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/283a2eac2ede7261981ee11092c4a1c218c5c831>,
@@ -1969,7 +1968,6 @@
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/7349aedd98256d90685571bddc6da8ac9eab1767>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/7d0aad3aaae427f799249eafced4cbb0b8a36dc5>,
-    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/803b12f15a761ac251e073bd57d79d58d35c7186>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/8e510cc7632711dd514f7f5da44b1cce8440d2d5>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/8f5629615dc7e807d12e277c0bd488843337da73>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/9adf9f5890592909cf3e67021ae7ab4f895a7745>,
@@ -2041,12 +2039,6 @@
   shacl:description "The hereditary surname of a family."@en;
   shacl:name "family name"@en;
   shacl:path foaf:familyName .
-
-<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/20e72c692090ea97cd328f03c7904cac5e165bc2> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.headof";
-  shacl:class <http://www.w3.org/ns/legal#LegalEntity>;
-  shacl:description "Indicates that a person (or other agent) is the leader or formal head of the Organization."@en;
-  shacl:name "head of"@en;
-  shacl:path <https://www.w3.org/ns/org#headOf> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/23e0d5b7e102a68f695e96d6488725cad24bf86e> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.fullname";
   shacl:datatype rdf:langString;
@@ -2167,12 +2159,6 @@
   shacl:name "family name"@en;
   shacl:nodeKind shacl:Literal;
   shacl:path foaf:familyName .
-
-<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/803b12f15a761ac251e073bd57d79d58d35c7186> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.headof";
-  shacl:description "Indicates that a person (or other agent) is the leader or formal head of the Organization."@en;
-  shacl:name "head of"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path <https://www.w3.org/ns/org#headOf> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/8e510cc7632711dd514f7f5da44b1cce8440d2d5> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.iscontactFor";
   shacl:description "The Program in which a Person is contact for."@en;
