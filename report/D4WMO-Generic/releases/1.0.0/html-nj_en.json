@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/4a8086317d9ba3c078e53997f647d8b404853bfe",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/4a8086317d9ba3c078e53997f647d8b404853bfe/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/11151c5046518b4a2667535dae09d1842b11ec23",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/11151c5046518b4a2667535dae09d1842b11ec23/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-Generic/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -6227,13 +6227,13 @@
         },
         {
           "uri": "http://purl.org/dc/terms/identifier",
-          "name": "identifier",
-          "sort": "Identifier",
+          "name": "id",
+          "sort": "id",
           "label": {
-            "en": "Identifier"
+            "en": "id"
           },
           "description": {
-            "en": "A profile identifier"
+            "en": "A common and non-nullable profile identifier"
           },
           "usage": {},
           "domain": [
@@ -6260,8 +6260,8 @@
           "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "Identifier",
-            "definition-en": "A profile identifier",
+            "label-en": "id",
+            "definition-en": "A common and non-nullable profile identifier",
             "uri": "http://purl.org/dc/terms/identifier"
           }
         }
@@ -7321,25 +7321,25 @@
           ],
           "range": [
             {
-              "range_label": "Post",
-              "range_uri": "http://data4wallonia.com/model/Post"
+              "range_label": "PublicEvent",
+              "range_uri": "http://data.europa.eu/m8g/PublicEvent"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Post",
-              "range_puri": "http://data4wallonia.com/model/Post",
+              "range_uri": "#Public Event",
+              "range_puri": "http://data.europa.eu/m8g/PublicEvent",
               "range_label": {
-                "en": "Post"
+                "en": "Public Event"
               }
             }
           ],
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
+            "uri": "http://data4wallonia.com/model/sticky",
             "label-en": "sticky",
-            "definition-en": "A sticky",
-            "uri": "http://data4wallonia.com/model/sticky"
+            "definition-en": "A sticky"
           }
         },
         {
@@ -7361,25 +7361,25 @@
           ],
           "range": [
             {
-              "range_label": "PublicEvent",
-              "range_uri": "http://data.europa.eu/m8g/PublicEvent"
+              "range_label": "Post",
+              "range_uri": "http://data4wallonia.com/model/Post"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Public Event",
-              "range_puri": "http://data.europa.eu/m8g/PublicEvent",
+              "range_uri": "#Post",
+              "range_puri": "http://data4wallonia.com/model/Post",
               "range_label": {
-                "en": "Public Event"
+                "en": "Post"
               }
             }
           ],
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "http://data4wallonia.com/model/sticky",
             "label-en": "sticky",
-            "definition-en": "A sticky"
+            "definition-en": "A sticky",
+            "uri": "http://data4wallonia.com/model/sticky"
           }
         },
         {
@@ -9763,6 +9763,46 @@
           }
         },
         {
+          "uri": "http://purl.org/dc/terms/identifier",
+          "name": "id",
+          "sort": "id",
+          "label": {
+            "en": "id"
+          },
+          "description": {
+            "en": "A common and non-nullable legal entity identifier."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "id",
+            "definition-en": "A common and non-nullable legal entity identifier.",
+            "uri": "http://purl.org/dc/terms/identifier"
+          }
+        },
+        {
           "uri": "http://www.w3.org/ns/adms#identifier",
           "name": "identifier",
           "sort": "identifier",
@@ -11370,13 +11410,13 @@
         },
         {
           "uri": "http://purl.org/dc/terms/identifier",
-          "name": "identifier",
-          "sort": "identifier",
+          "name": "id",
+          "sort": "id",
           "label": {
-            "en": "identifier"
+            "en": "id"
           },
           "description": {
-            "en": "A person identifier"
+            "en": "A common and non-nullable person identifier"
           },
           "usage": {},
           "domain": [
@@ -11403,8 +11443,8 @@
           "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "identifier",
-            "definition": "A person identifier",
+            "label-en": "id",
+            "definition": "A common and non-nullable person identifier",
             "uri": "http://purl.org/dc/terms/identifier"
           }
         },
@@ -11621,10 +11661,50 @@
   "contributors": [
     {
       "role": "E",
+      "first_name": "Thomas",
+      "last_name": "Bouteille",
+      "affiliation": {
+        "name": "Agence du Numérique"
+      }
+    },
+    {
+      "role": "E",
+      "first_name": "Nicolas",
+      "last_name": "Carra",
+      "affiliation": {
+        "name": "Agence du Numérique"
+      }
+    },
+    {
+      "role": "E",
+      "first_name": "Christelle",
+      "last_name": "Darville",
+      "affiliation": {
+        "name": "Agence du Numérique"
+      }
+    },
+    {
+      "role": "E",
+      "first_name": "Philippe",
+      "last_name": "Pisseta",
+      "affiliation": {
+        "name": "Agence du Numérique"
+      }
+    },
+    {
+      "role": "E",
       "first_name": "Emidio",
       "last_name": "Stani",
       "affiliation": {
         "name": "PwC EU Services"
+      }
+    },
+    {
+      "role": "E",
+      "first_name": "Camille",
+      "last_name": "Struckmeyer",
+      "affiliation": {
+        "name": "Wallonie Entreprendre"
       }
     }
   ],

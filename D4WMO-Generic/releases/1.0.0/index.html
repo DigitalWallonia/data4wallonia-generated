@@ -19,10 +19,60 @@
 	    
 		
 		   {
+		    name: "Thomas Bouteille",
+		      
+		      
+		    company: "Agence du Numérique",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Nicolas Carra",
+		      
+		      
+		    company: "Agence du Numérique",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Christelle Darville",
+		      
+		      
+		    company: "Agence du Numérique",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Philippe Pisseta",
+		      
+		      
+		    company: "Agence du Numérique",
+		      
+		      
+		    }
+		, 
+		
+		   {
 		    name: "Emidio Stani",
 		      
 		      
 		    company: "PwC EU Services",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Camille Struckmeyer",
+		      
+		      
+		    company: "Wallonie Entreprendre",
 		      
 		      
 		    }
@@ -3087,6 +3137,7 @@ The main entities are those that form the core of the Application Profile.
                             , <a href="#LegalEntity.classification">classification</a>
                             , <a href="#LegalEntity.clientsite">client site</a>
                             , <a href="#LegalEntity.contactpoint">contact point</a>
+                            , <a href="#LegalEntity.id">id</a>
                             , <a href="#LegalEntity.identifier">identifier</a>
                             , <a href="#LegalEntity.legalentityactivity">legal entity activity</a>
                             , <a href="#LegalEntity.legalentitystatus">legal entity status</a>
@@ -3387,6 +3438,49 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                                 <td property="rdfs:comment">
                                     A contact point
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.id"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/identifier"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20id%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.id" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/identifier"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/identifier"
+                                           data-placement="right">
+                                        id</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    A common and non-nullable legal entity identifier.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -4200,7 +4294,7 @@ A business might have more than one legal name, particularly in countries with m
                             , <a href="#Person.gender">gender</a>
                             , <a href="#Person.givenname">given name</a>
                             , <a href="#Person.honorificprefix">honorific prefix</a>
-                            , <a href="#Person.identifier">identifier</a>
+                            , <a href="#Person.id">id</a>
                             , <a href="#Person.iscontactFor">is contactFor</a>
                             , <a href="#Person.language">language</a>
                             , <a href="#Person.photo">photo</a>
@@ -4890,12 +4984,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Person.identifier"
+                            <tr id="Person.id"
                                 typeof="rdfs:Property"
                                 resource="http://purl.org/dc/terms/identifier"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20identifier%20in%20Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Person.identifier" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20id%20in%20Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Person.id" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -4905,7 +4999,7 @@ A business might have more than one legal name, particularly in countries with m
                                            data-toggle="tooltip"
                                            data-content="http://purl.org/dc/terms/identifier"
                                            data-placement="right">
-                                        identifier</a>
+                                        id</a>
                                 </td>
                                 <td>
                                     
@@ -4918,7 +5012,7 @@ A business might have more than one legal name, particularly in countries with m
                                     1
                                 </td>
                                 <td property="rdfs:comment">
-                                    A person identifier
+                                    A common and non-nullable person identifier
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -6942,7 +7036,7 @@ A business might have more than one legal name, particularly in countries with m
                             , <a href="#Profile.contactpoint">contact point</a>
                             , <a href="#Profile.featuredperson">featured person</a>
                             , <a href="#Profile.founder">founder</a>
-                            , <a href="#Profile.Identifier">Identifier</a>
+                            , <a href="#Profile.id">id</a>
                             , <a href="#Profile.incubator">incubator</a>
                             , <a href="#Profile.logo">logo</a>
                             , <a href="#Profile.mainNACEcode">main NACE code</a>
@@ -7383,12 +7477,12 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Profile.Identifier"
+                            <tr id="Profile.id"
                                 typeof="rdfs:Property"
                                 resource="http://purl.org/dc/terms/identifier"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20Identifier%20in%20Profile&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Profile.Identifier" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20id%20in%20Profile&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Profile.id" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -7398,7 +7492,7 @@ A business might have more than one legal name, particularly in countries with m
                                            data-toggle="tooltip"
                                            data-content="http://purl.org/dc/terms/identifier"
                                            data-placement="right">
-                                        Identifier</a>
+                                        id</a>
                                 </td>
                                 <td>
                                     
@@ -7411,7 +7505,7 @@ A business might have more than one legal name, particularly in countries with m
                                     1
                                 </td>
                                 <td property="rdfs:comment">
-                                    A profile identifier
+                                    A common and non-nullable profile identifier
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -9100,7 +9194,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#Post" data-placement="right">Post</a>
+                                            <a href="#PublicEvent" data-placement="right">Public Event</a>
                                         
                                     
                                 </td>
@@ -9143,7 +9237,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#PublicEvent" data-placement="right">Public Event</a>
+                                            <a href="#Post" data-placement="right">Post</a>
                                         
                                     
                                 </td>
@@ -16170,6 +16264,10 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+					
+						
 					
 						
 					
@@ -16275,6 +16373,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#LegalEntity.contactpoint">contact point </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/contactPoint</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.id">id </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/identifier</div></td>
 							</tr>
 						
 					
@@ -16820,7 +16928,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#Person">Person</a></td>
 								<td><div class="shorten">http://www.w3.org/ns/person#Person</div></td>
 								<td></td>
-								<td><a href="#Person.identifier">identifier </a></td>
+								<td><a href="#Person.id">id </a></td>
 								<td><div class="shorten">http://purl.org/dc/terms/identifier</div></td>
 							</tr>
 						
@@ -17591,7 +17699,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#Profile">Profile</a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/Profile</div></td>
 								<td></td>
-								<td><a href="#Profile.Identifier">Identifier </a></td>
+								<td><a href="#Profile.id">id </a></td>
 								<td><div class="shorten">http://purl.org/dc/terms/identifier</div></td>
 							</tr>
 						
