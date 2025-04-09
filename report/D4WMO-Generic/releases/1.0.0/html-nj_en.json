@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/4433cd714370087c07b6e92ad8688e1ae81abdcb",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/4433cd714370087c07b6e92ad8688e1ae81abdcb/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/3cc8f01f8ac2411604f5a0c6633d65d2117bec5c",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/3cc8f01f8ac2411604f5a0c6633d65d2117bec5c/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-Generic/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -9360,6 +9360,86 @@
             "label-en": "registration date",
             "uri": "http://data.europa.eu/m8g/registrationDate",
             "definition-en": "The date on which the legal entity has registered in some jurisdiction for regulatory and / or for tax purposes."
+          }
+        },
+        {
+          "uri": "http://data4wallonia.be/mode/liableToVAT",
+          "name": "liableToVat",
+          "sort": "Liable to VAT",
+          "label": {
+            "en": "Liable to VAT"
+          },
+          "description": {
+            "en": "Specify if the legal entity is liable to VAT."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Boolean",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Boolean",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_label": {
+                "en": "Boolean"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "Liable to VAT",
+            "definition-en": "Specify if the legal entity is liable to VAT.",
+            "uri": "http://data4wallonia.be/mode/liableToVAT"
+          }
+        },
+        {
+          "uri": "http://data4wallonia.be/model/VATNumber",
+          "name": "vatNumber",
+          "sort": "VAT number",
+          "label": {
+            "en": "VAT number"
+          },
+          "description": {
+            "en": "A VAT number."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "VAT number",
+            "definition-en": "A VAT number.",
+            "uri": "http://data4wallonia.be/model/VATNumber"
           }
         },
         {
