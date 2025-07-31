@@ -11,7 +11,7 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "Information (e.g. e-mail address, telephone number) of a person or department through which the user can get in touch with.",
+        "en": "Information (e.g. e-mail address, telephone number) about a person or service that the user can contact.",
         "fr": "Enter your translation here"
       },
       "usage": {
@@ -27,7 +27,7 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "The Cost class represents any costs related to the execution of a Public Service that the Agent consuming it needs to pay.",
+        "en": "The Cost class represents any cost or price relating to an expenditure or financial commitment on the part of an organisation or individual.",
         "fr": "Enter your translation here"
       }
     },
@@ -111,7 +111,7 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A post",
+        "en": "A post is editorial content specific to users of the database.  It cannot be a copy of a press article or any other type of protected external source.",
         "fr": "Enter your translation here"
       }
     },
@@ -123,7 +123,7 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A press review",
+        "en": "A press article is a reference to an article published in the press (daily newspaper, magazine, specialised website) highlighting elements of the database of different types (profile, person, etc.).",
         "fr": "Enter your translation here"
       }
     },
@@ -152,18 +152,6 @@
       }
     },
     {
-      "EA-Guid": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-      "name": "ProfilePerson",
-      "label": {
-        "en": "Profile Person",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "en": "A person with a role and profile.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
       "EA-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
       "name": "Program",
       "label": {
@@ -176,6 +164,18 @@
       }
     },
     {
+      "EA-Guid": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
+      "name": "QualifiedPerson",
+      "label": {
+        "en": "Qualified Person",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A Qualified Person is a Person / profile pair defining the linked email and the person's role within the profile.  The binomial is unique in the database (only one Person X / profile Y binomial can exist).",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
       "EA-Guid": "{87AB34FF-0C8E-4c50-A899-615FCC17BD71}",
       "name": "ServicesPlace",
       "label": {
@@ -183,7 +183,7 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A service place",
+        "en": "Extension of information, strongly linked to a profile and making it possible to specify the services offered to the target audience, the provision of equipment, etc.",
         "fr": "Enter your translation here"
       }
     },
@@ -195,7 +195,7 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "An action plan profile",
+        "en": "An action plan profile defines the role of a profile within an action.",
         "fr": "Enter your translation here"
       }
     },
@@ -403,7 +403,7 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A self-employed person,company,or organization that has legal rights and obligations.",
+        "en": "A self-employed person, company or organization that has legal rights and obligations.",
         "fr": "Enter your translation here"
       },
       "usage": {
@@ -451,7 +451,7 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A individual human being who may be dead or alive,but not imaginary.",
+        "en": "A individual human being who may be dead or alive, but not imaginary.",
         "fr": "Enter your translation here"
       },
       "usage": {
@@ -481,7 +481,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "\tThe main contact information of the resource.",
+        "en": "A reference to a contact point.  ",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The contact point brings together all the general contact information for an event: website, telephone numbers, emails, etc.",
         "fr": "Enter your translation here"
       }
     },
@@ -494,6 +498,10 @@
       },
       "definition": {
         "en": "The target group of people for whom the Public Event is created.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "A few words and terms defining the event's target audience: citizens, companies in a particular sector, public bodies, students, etc.",
         "fr": "Enter your translation here"
       }
     },
@@ -513,11 +521,15 @@
       "EA-Guid": "{5D20DD4D-0394-44fa-9F2E-50FE53D98036}",
       "name": "contactPage",
       "label": {
-        "en": "contact page",
+        "en": "Contact page",
         "fr": "Enter your translation here"
       },
       "definition": {
         "en": "A web page that could be used to reach out the Contact Point.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Allows you to give a direct reference to the contact page of a website.",
         "fr": "Enter your translation here"
       }
     },
@@ -529,11 +541,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "The main contact information of the resource.",
+        "en": "A reference to a Contact Point, the main contact information of the resource.",
         "fr": "Enter your translation here"
       },
       "usage": {
-        "en": "Usually a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization's homepage that may or may not provide contact information.",
+        "en": "Usually a phone number and e-mail address. Other contact methods may be included, including online contact information.$ea_notes=Usually a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization's homepage that may or may not provide contact information.",
         "fr": "Enter your translation here"
       }
     },
@@ -541,15 +553,11 @@
       "EA-Guid": "{1675C839-F080-469d-87F8-79F6ED96CAE3}",
       "name": "currency",
       "label": {
-        "en": "currency",
+        "en": "Currency",
         "fr": "Enter your translation here"
       },
       "definition": {
         "en": "The currency in which the Cost needs to be paid and the value of the Cost is expressed.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "en": "The possible values for this property are described in the controlled vocabulary \r\n<a href=\"https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/currency\">Currency</a> Authority Table of Publications Office.",
         "fr": "Enter your translation here"
       }
     },
@@ -562,6 +570,10 @@
       },
       "definition": {
         "en": "An electronic address through which the Contact Point can be contacted.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "This email can be shared via the delivery APIs",
         "fr": "Enter your translation here"
       }
     },
@@ -651,6 +663,10 @@
       "definition": {
         "en": "Another photo",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Photos of the location, atmosphere, equipment, etc. representing the services place.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -661,7 +677,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A partner",
+        "en": "A reference to a services place.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Services place representing a partner of the place.",
         "fr": "Enter your translation here"
       }
     },
@@ -701,7 +721,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A responsible profile",
+        "en": "A reference to a profile partner",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Profile representing the profile responsible of the place.",
         "fr": "Enter your translation here"
       }
     },
@@ -763,6 +787,10 @@
       "definition": {
         "en": "The department in which the person is affiliated to.",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Specifies the department or service of the linked profile in which the person works.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -794,18 +822,6 @@
       }
     },
     {
-      "EA-Guid": "{DA3D4C84-A2E6-42fc-B561-A23E316E7349}",
-      "name": "s3Thema",
-      "label": {
-        "en": "S3 thema",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "en": "S3 thema related to the entity",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
       "EA-Guid": "{397D1175-615C-4644-9F6C-6B7D04B7D35B}",
       "name": "accompanyPerson",
       "label": {
@@ -814,6 +830,10 @@
       },
       "definition": {
         "en": "An accompany person",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "A person offering specific help to a target audience.",
         "fr": "Enter your translation here"
       }
     },
@@ -827,6 +847,10 @@
       "definition": {
         "en": "Defines the activity status of the entity",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "True if the entity is still active. It can be determined by the legal entity status, but it is much clearer.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -839,6 +863,10 @@
       "definition": {
         "en": "Description of the activity of the entity",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Describes the entity's actual activity, clearly stated in relation to the business.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -849,7 +877,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "An additional description",
+        "en": "An additional descriptive text to the Short Description",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc.",
         "fr": "Enter your translation here"
       }
     },
@@ -861,7 +893,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "An additional description",
+        "en": "An additional descriptive text to the Short Description",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc.",
         "fr": "Enter your translation here"
       }
     },
@@ -873,7 +909,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "An additional description",
+        "en": "An additional descriptive text to the Short Description",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc.",
         "fr": "Enter your translation here"
       }
     },
@@ -885,7 +925,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "An additional description",
+        "en": "An additional descriptive text to the Short Description",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc.",
         "fr": "Enter your translation here"
       }
     },
@@ -906,18 +950,6 @@
       }
     },
     {
-      "EA-Guid": "{1D8556AF-0680-435e-8EC4-E17C2D86BE02}",
-      "name": "additionalInformation",
-      "label": {
-        "en": "additional information",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "en": "An additional information",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
       "EA-Guid": "{D0EFFECC-F816-4be9-B49F-FEB73537024D}",
       "name": "additionalInformationOnEquipment",
       "label": {
@@ -926,6 +958,42 @@
       },
       "definition": {
         "en": "An additional information on equipment",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Information that completes the sub-categories of the « Services > Facilities available » category.",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{9C86F42B-C305-435b-9436-A394ED3F1FAA}",
+      "name": "addtionnalInformationOnOpeningHours",
+      "label": {
+        "en": "Addtionnal information on opening hours",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "An additional information on opening hours.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Information added to the Opening hours attribute.",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{1D8556AF-0680-435e-8EC4-E17C2D86BE02}",
+      "name": "additionalInformationOnSupport",
+      "label": {
+        "en": "Additional information on support",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "An additional information on support.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Information that completes the sub-categories of the « Services > Citizen support » category.",
         "fr": "Enter your translation here"
       }
     },
@@ -939,6 +1007,10 @@
       "definition": {
         "en": "An additional target audience",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Information that completes the sub-categories of the « Business position > Target audiences » category.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -951,6 +1023,10 @@
       "definition": {
         "en": "An additional type and condition access",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Information that completes the sub-categories of the « Services > Accessibility » category.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -961,7 +1037,7 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "An address",
+        "en": "Postal address.",
         "fr": "Enter your translation here"
       }
     },
@@ -973,19 +1049,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "An address",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{A8C35051-EEC1-49d4-B894-016880084375}",
-      "name": "ambition",
-      "label": {
-        "en": "ambition",
+        "en": "Postal address.",
         "fr": "Enter your translation here"
       },
-      "definition": {
-        "en": "An ambition",
+      "usage": {
+        "en": "The actual address of the service if it is at a fixed, non-travelling address.",
         "fr": "Enter your translation here"
       }
     },
@@ -997,7 +1065,27 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "An ambition",
+        "en": "A reference to a strategic ambition.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{A8C35051-EEC1-49d4-B894-016880084375}",
+      "name": "ambition",
+      "label": {
+        "en": "ambition",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A reference to a strategic ambition.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
         "fr": "Enter your translation here"
       }
     },
@@ -1009,7 +1097,59 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "An ambition",
+        "en": "A reference to a strategic ambition.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{22A41E9A-660C-4d3c-8E21-98D1DEA859B2}",
+      "name": "ambition",
+      "label": {
+        "en": "ambition",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A reference to a strategic ambition.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{54C8D220-F5C7-4930-88C6-6B6D383EE941}",
+      "name": "ambition",
+      "label": {
+        "en": "ambition",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A reference to a strategic ambition.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{F34853C9-A2C8-49f5-BCC0-7EE05C6EB9F5}",
+      "name": "ambition",
+      "label": {
+        "en": "ambition",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A reference to a strategic ambition.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
         "fr": "Enter your translation here"
       }
     },
@@ -1030,42 +1170,6 @@
       }
     },
     {
-      "EA-Guid": "{54C8D220-F5C7-4930-88C6-6B6D383EE941}",
-      "name": "ambition",
-      "label": {
-        "en": "ambition",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "en": "An ambition",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{22A41E9A-660C-4d3c-8E21-98D1DEA859B2}",
-      "name": "ambition",
-      "label": {
-        "en": "ambition",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "en": "An ambition",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{F34853C9-A2C8-49f5-BCC0-7EE05C6EB9F5}",
-      "name": "ambition",
-      "label": {
-        "en": "ambition",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "en": "An ambition",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
       "EA-Guid": "{B0D8BA38-3D5C-458c-86B9-3712A4268574}",
       "name": "articleLink",
       "label": {
@@ -1074,6 +1178,10 @@
       },
       "definition": {
         "en": "An article link",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Gives the URL at which the source press article is available.",
         "fr": "Enter your translation here"
       }
     },
@@ -1085,7 +1193,7 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "An author",
+        "en": "Reference to a Qualified Person, author of the article.",
         "fr": "Enter your translation here"
       }
     },
@@ -1097,7 +1205,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A banner",
+        "en": "Reference to an Asset.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Link to a reusable image, a banner representing the main subject of the programme.",
         "fr": "Enter your translation here"
       }
     },
@@ -1109,7 +1221,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A banner",
+        "en": "Reference to an Asset.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Link to a reusable image, the banner can be the official visual for the event or any visual relating to the main subject.",
         "fr": "Enter your translation here"
       }
     },
@@ -1121,19 +1237,27 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A banner",
+        "en": "Reference to an Asset.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Link to a reusable image, a banner representing the main subject of the post.",
         "fr": "Enter your translation here"
       }
     },
     {
       "EA-Guid": "{70B6606A-0458-470c-A89C-1A47AC28CB98}",
-      "name": "baseline",
+      "name": "aTextBaseline.",
       "label": {
-        "en": "baseline",
+        "en": "A text baseline. ",
         "fr": "Enter your translation here"
       },
       "definition": {
         "en": "A baseline",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Short marketing description of the programme and its objectives.",
         "fr": "Enter your translation here"
       }
     },
@@ -1163,6 +1287,10 @@
       "definition": {
         "en": "A capacity",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Number of people who can be accommodated together.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -1173,7 +1301,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A classification",
+        "en": "A reference to an element in the taxonomy",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The taxonomy categories can be used to enrich the person by linking to other content, filtering and sorting.  Categories are useful for enriching, for example, a person's skills or areas of expertise.",
         "fr": "Enter your translation here"
       }
     },
@@ -1185,7 +1317,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A category",
+        "en": "A reference to an element in the taxonomy",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The taxonomy categories can be used to enrich the profile by linking to other content, filtering and sorting.  ",
         "fr": "Enter your translation here"
       }
     },
@@ -1197,7 +1333,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A category",
+        "en": "A reference to an element in the taxonomy",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The taxonomy categories can be used to enrich the event by linking to other content, filtering and sorting.  ",
         "fr": "Enter your translation here"
       }
     },
@@ -1209,7 +1349,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A category",
+        "en": "A reference to an element in the taxonomy",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The taxonomy categories can be used to enrich the post by linking to other content, filtering and sorting.  Categories are useful for enriching a post with, for instance, the main themes covered.",
         "fr": "Enter your translation here"
       }
     },
@@ -1221,7 +1365,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A category",
+        "en": "A reference to an element in the taxonomy",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The taxonomy categories can be used to enrich the event by linking to other content, filtering and sorting.",
         "fr": "Enter your translation here"
       }
     },
@@ -1249,7 +1397,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A category",
+        "en": "A reference to an element in the taxonomy",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The taxonomy categories can be used to enrich the press review by linking to other content, filtering and sorting. ",
         "fr": "Enter your translation here"
       }
     },
@@ -1261,7 +1413,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A client site",
+        "en": "A reference to a Client site",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Identification of a client application (website, business application or other) using the person record.",
         "fr": "Enter your translation here"
       }
     },
@@ -1273,7 +1429,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A client site",
+        "en": "A reference to a Client site",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Identification of a client application (website, business application or other) using the programme. ",
         "fr": "Enter your translation here"
       }
     },
@@ -1285,7 +1445,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A client site",
+        "en": "A reference to a Client site",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Identification of a client application (website, business application or other) using the profile.",
         "fr": "Enter your translation here"
       }
     },
@@ -1297,7 +1461,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A client site",
+        "en": "A reference to a Client site",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Identification of a client application (website, business application or other) using the event.  ",
         "fr": "Enter your translation here"
       }
     },
@@ -1309,7 +1477,7 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A client site",
+        "en": "A reference to a Client site",
         "fr": "Enter your translation here"
       }
     },
@@ -1321,7 +1489,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A client site",
+        "en": "A reference to a Client site",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Identification of a client application (website, business application or other) using the services place. ",
         "fr": "Enter your translation here"
       }
     },
@@ -1349,7 +1521,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A client site",
+        "en": "A reference to a Client site",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Identification of a client application (website, business application or other) using the press article.  ",
         "fr": "Enter your translation here"
       }
     },
@@ -1361,7 +1537,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A client site",
+        "en": "A reference to a Client site",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Identification of a client application (website, business application or other) using the legal entity.  ",
         "fr": "Enter your translation here"
       }
     },
@@ -1373,7 +1553,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A contact person",
+        "en": "A reference to a Qualified Person",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "A person to whom the target audience can turn for explanations and more information about the event. This person will often be attached to the organizer or a partner.",
         "fr": "Enter your translation here"
       }
     },
@@ -1401,7 +1585,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A contact person",
+        "en": "Contact person, referent.  A reference to a Qualified Person",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "A person to whom the target audience can turn for explanations and more information about the programme.",
         "fr": "Enter your translation here"
       }
     },
@@ -1429,7 +1617,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A contact point",
+        "en": "A reference to a contact point.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The contact point brings together all the general contact information of a profile : website, telephone numbers, emails, etc.",
         "fr": "Enter your translation here"
       }
     },
@@ -1441,7 +1633,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A contact point",
+        "en": "A reference to a contact point.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc.",
         "fr": "Enter your translation here"
       }
     },
@@ -1453,7 +1649,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A content",
+        "en": "Editorial text describing the programme and its objectives in detail.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc.",
         "fr": "Enter your translation here"
       }
     },
@@ -1465,7 +1665,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A content",
+        "en": "Editorial text of the article, news item or other type of Post.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc.",
         "fr": "Enter your translation here"
       }
     },
@@ -1479,6 +1683,10 @@
       "definition": {
         "en": "A content summary",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The content summary is essential for describing the content succinctly and clearly. It allows the reader to understand whether the programme is likely to be of interest to them before going any further.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -1490,6 +1698,10 @@
       },
       "definition": {
         "en": "A content title",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Title associated to the content text",
         "fr": "Enter your translation here"
       }
     },
@@ -1513,7 +1725,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A display refusal",
+        "en": "A refusal to release any information to the public.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "This makes it possible to keep (often professional) information about the person for the proper operation of the database, but to prohibit any public dissemination, for example via a website.",
         "fr": "Enter your translation here"
       }
     },
@@ -1525,7 +1741,7 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A dynamic list",
+        "en": "A reference to a Dynamic List",
         "fr": "Enter your translation here"
       }
     },
@@ -1537,7 +1753,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A end date",
+        "en": "An event end date",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The end date indicates the day and time of the end of the event. The day may be identical to that of the start date, but the time may be different, later.",
         "fr": "Enter your translation here"
       }
     },
@@ -1565,7 +1785,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A end publication date",
+        "en": "An event end publication date.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Indicates whether promotion of the event should stop before the end date is reached. This date can be used, for example, to stop the promotion of an event lasting several days that is impossible to register for once it has started.",
         "fr": "Enter your translation here"
       }
     },
@@ -1579,6 +1803,10 @@
       "definition": {
         "en": "An estimated reading time",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Indicates the average time taken to read the article (in minutes).",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -1589,7 +1817,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "An expertise",
+        "en": "Specific expertise of the person",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Allows you to express a person's specific expertise, whether in terms of knowledge or technical skills, in a few sentences or key words.",
         "fr": "Enter your translation here"
       }
     },
@@ -1603,6 +1835,10 @@
       "definition": {
         "en": "A facade photo",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Photo of the façade of the building housing the service place. This photo enables visitors to recognise the building.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -1613,7 +1849,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A featured Person",
+        "en": "A reference to a Qualified Person",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Person working within the profile and displayed as the profile reference person on sites and applications.",
         "fr": "Enter your translation here"
       }
     },
@@ -1625,7 +1865,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A founder",
+        "en": "A reference to a profile founder",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Profile representing the parent company of the activity or an organisation at the source of the activity.",
         "fr": "Enter your translation here"
       }
     },
@@ -1655,6 +1899,10 @@
       "definition": {
         "en": "A cost.",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The cost, the price, is not necessarily given in a monetary format, but can be an explanatory text of price variants according to circumstances or conditions.  It should therefore be possible to explain this in free text.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -1666,6 +1914,10 @@
       },
       "definition": {
         "en": "A cost",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The cost, the price, is not necessarily given in a monetary format, but can be an explanatory text of price variants according to circumstances or conditions.  It should therefore be possible to explain this in free text.",
         "fr": "Enter your translation here"
       }
     },
@@ -1761,7 +2013,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "An incubator",
+        "en": "A reference to a profile incubator",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Profile representing an organisation that can incubate young companies or start-ups.",
         "fr": "Enter your translation here"
       }
     },
@@ -1773,19 +2029,27 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "An introduction",
+        "en": "A short introduction of the post.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The introduction is essential for describing the content succinctly and clearly. It allows the reader to understand whether the post is likely to be of interest to them before going any further.",
         "fr": "Enter your translation here"
       }
     },
     {
       "EA-Guid": "{CEE101B6-C393-493e-9B93-0F7AA53183C3}",
-      "name": "isContactfor",
+      "name": "program",
       "label": {
-        "en": "is contactFor",
+        "en": "program",
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "The Program in which a Person is contact for.",
+        "en": "Program (e.g. Digital Wallonia) to which the person is linked.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Characterises the person by its link with an economic strategy programme.",
         "fr": "Enter your translation here"
       }
     },
@@ -1799,6 +2063,10 @@
       "definition": {
         "en": "An itinerant",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The place of service does not have to be in a building or a fixed location.  It may be a mobile service.  For example, a mobile support service, awareness-raising, etc. possibly in a bus or other equipped vehicle.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -1810,6 +2078,10 @@
       },
       "definition": {
         "en": "A journalist",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Journalist who wrote the article.",
         "fr": "Enter your translation here"
       }
     },
@@ -1823,6 +2095,10 @@
       "definition": {
         "en": "A language",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Represents the person's main language.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -1834,6 +2110,10 @@
       },
       "definition": {
         "en": "A language",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Language in which the referenced article is written or distributed.",
         "fr": "Enter your translation here"
       }
     },
@@ -1861,7 +2141,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A logo",
+        "en": "Reference to an Asset.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Link to a reusable image, the official logo of the programme.",
         "fr": "Enter your translation here"
       }
     },
@@ -1873,7 +2157,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A logo",
+        "en": "The profile logo.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "If the logo contains text, it may be different in different languages.",
         "fr": "Enter your translation here"
       }
     },
@@ -1885,7 +2173,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A logo",
+        "en": "The entity logo.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "If the logo contains text, it may be different in different languages.",
         "fr": "Enter your translation here"
       }
     },
@@ -1899,6 +2191,10 @@
       "definition": {
         "en": "A main NACE code",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "NACE code best representing the profile's main activity.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -1909,7 +2205,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A main NACE code",
+        "en": "Preferred NACE code.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "NACE code that best represents the activity.",
         "fr": "Enter your translation here"
       }
     },
@@ -1923,17 +2223,9 @@
       "definition": {
         "en": "A making appointment",
         "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{97E9E40A-782F-4a95-A4AC-00616232DE1F}",
-      "name": "market",
-      "label": {
-        "en": "market",
-        "fr": "Enter your translation here"
       },
-      "definition": {
-        "en": "Market of the entity",
+      "usage": {
+        "en": "Notification of the need to make an appointment.  Mandatory, not mandatory or recommended.",
         "fr": "Enter your translation here"
       }
     },
@@ -1977,7 +2269,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A master ambition",
+        "en": "A reference to a strategic ambition.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Indicates the main ambition of the programme.",
         "fr": "Enter your translation here"
       }
     },
@@ -1989,7 +2285,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A more recent post",
+        "en": "A reference to a more recent post on the same subject.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "To alert readers to the existence of a more recent article on the same subject.",
         "fr": "Enter your translation here"
       }
     },
@@ -2001,7 +2301,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A non featured person",
+        "en": "A reference to a Qualified Person",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Person working within the profile but not displayed as the profile reference person on sites and applications.",
         "fr": "Enter your translation here"
       }
     },
@@ -2073,7 +2377,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "An organizer",
+        "en": "A reference to a profile organizer",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Profile representing an organizer of the event.",
         "fr": "Enter your translation here"
       }
     },
@@ -2101,7 +2409,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A partner",
+        "en": "A reference to a profile partner",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Profile representing a partner of the event.",
         "fr": "Enter your translation here"
       }
     },
@@ -2113,7 +2425,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A partner",
+        "en": "A reference to a profile partner",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Profile representing a partner of the activity.",
         "fr": "Enter your translation here"
       }
     },
@@ -2125,7 +2441,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A partner",
+        "en": "A reference to a profile partner",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Profile representing a partner of the programme.",
         "fr": "Enter your translation here"
       }
     },
@@ -2139,6 +2459,10 @@
       "definition": {
         "en": "A partner additional description",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Thanks to its Site Client, a partner can use this description as an alternative to, or in addition to, the classic.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -2150,6 +2474,10 @@
       },
       "definition": {
         "en": "A pdf file",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "PDF file presenting the content of the article. Mainly used for studies.",
         "fr": "Enter your translation here"
       }
     },
@@ -2175,6 +2503,10 @@
       "definition": {
         "en": "A plateform contact person",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Represents the main point of contact for the purposes of managing the profile within the Platform or for sending a targeted letter (request for an update or verification, etc.).",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -2185,7 +2517,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A popularized title",
+        "en": "Title in simple terms.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Simplified title or theme linked to the programme, the name of which is that of a strategy.",
         "fr": "Enter your translation here"
       }
     },
@@ -2193,7 +2529,15 @@
       "EA-Guid": "{05C37A65-3BC3-47fa-AA9A-99B09D800386}",
       "name": "price",
       "label": {
-        "en": "price",
+        "en": "Price",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "Indication of cost or price in free text",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Price or amount and conditions of participation. The price or cost may vary depending on membership of a network or any other condition. Free text is used to express these conditions.\nExample: x  for members, y  for non-members of an organisation.",
         "fr": "Enter your translation here"
       }
     },
@@ -2225,7 +2569,7 @@
         "fr": "Enter your translation here"
       },
       "usage": {
-        "en": "NOTE",
+        "en": "Legal entity responsible for the profile",
         "fr": "Enter your translation here"
       }
     },
@@ -2237,7 +2581,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A program",
+        "en": "Program (e.g. Digital Wallonia) to which the profile is linked.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Characterises the profile by its link with an economic strategy programme.",
         "fr": "Enter your translation here"
       }
     },
@@ -2265,7 +2613,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A program",
+        "en": "Program (e.g. Digital Wallonia) to which the article is linked.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Characterises the press article by its link with an economic strategy programme.",
         "fr": "Enter your translation here"
       }
     },
@@ -2277,7 +2629,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A program",
+        "en": "Program (e.g. Digital Wallonia) to which the post is linked.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Characterises the post by its link with an economic strategy programme.",
         "fr": "Enter your translation here"
       }
     },
@@ -2289,7 +2645,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A program",
+        "en": "Program (e.g. Digital Wallonia) to which the action is linked.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Characterises the event by its link with an economic strategy programme.",
         "fr": "Enter your translation here"
       }
     },
@@ -2331,6 +2691,10 @@
       "definition": {
         "en": "A published date",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Date the post was first published (put online), before any updates.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -2343,6 +2707,10 @@
       "definition": {
         "en": "A published date",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Date the press article was officialy published (put online).",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -2354,6 +2722,22 @@
       },
       "definition": {
         "en": "A quoted person",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{CF1AC349-3AEB-4fbd-A2C9-955F0B435909}",
+      "name": "quotedProfile",
+      "label": {
+        "en": "Quoted profile",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A quoted profil",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Profile linked to the article because it is quoted there.",
         "fr": "Enter your translation here"
       }
     },
@@ -2381,7 +2765,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A reference category",
+        "en": "The reference category.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The reference category is the category of the taxonomy that the programme develops in detail.",
         "fr": "Enter your translation here"
       }
     },
@@ -2439,6 +2827,10 @@
       "definition": {
         "en": "A reference web site",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The official website for the strategic programme.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -2450,6 +2842,10 @@
       },
       "definition": {
         "en": "A related event",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Refers to an event directly linked to the publication. For example, an international event whose objectives, organisation, participants, etc. are described in the post.",
         "fr": "Enter your translation here"
       }
     },
@@ -2463,6 +2859,10 @@
       "definition": {
         "en": "A related external link",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Reference a URL directly related to the subject of the post.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -2473,7 +2873,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A related file",
+        "en": "A file to download, an available file.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Used to make documents available for download (PDF, for example).",
         "fr": "Enter your translation here"
       }
     },
@@ -2501,7 +2905,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A related person",
+        "en": "A reference to a Qualified Person",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Used to highlight a person mentioned in the post.",
         "fr": "Enter your translation here"
       }
     },
@@ -2513,7 +2921,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A related post",
+        "en": "A reference to a specific post.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Allows you to highlight a post whose subject is related to the current post.",
         "fr": "Enter your translation here"
       }
     },
@@ -2525,7 +2937,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A related press",
+        "en": "A reference to a press review.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Allows you to refer to a press article directly related to the subject of the post.",
         "fr": "Enter your translation here"
       }
     },
@@ -2537,7 +2953,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A related profile",
+        "en": "A reference to a profile.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Allows you to refer to a profile named in the post.",
         "fr": "Enter your translation here"
       }
     },
@@ -2550,6 +2970,10 @@
       },
       "definition": {
         "en": "A remote assistance",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Remote assistance via telephone or video-conferencing.",
         "fr": "Enter your translation here"
       }
     },
@@ -2587,6 +3011,10 @@
       "definition": {
         "en": "A schedule additional information",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Allows you to specify some information about the timetable: nocture on one of the days of the event, variable times depending on the day, etc.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -2598,6 +3026,10 @@
       },
       "definition": {
         "en": "A schedule not specified",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Used to indicate to a client application whether hours should be ignored.  Defaults to false, the variable is set to True if the hours are to be ignored.",
         "fr": "Enter your translation here"
       }
     },
@@ -2621,7 +3053,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A short description",
+        "en": "A short description of the programme.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The description is essential for describing the programme succinctly and clearly.  As a complement to the title, it must convey the entire objective of the programme and enable its scope to be understood, without any further explanation.",
         "fr": "Enter your translation here"
       }
     },
@@ -2633,7 +3069,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A short description",
+        "en": "A short description of the profile.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The description is essential for describing the profile succinctly and clearly.  It must convey the main activity of the profile and enable its products and/or services to be understood, without any further explanation.",
         "fr": "Enter your translation here"
       }
     },
@@ -2645,7 +3085,7 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A short description",
+        "en": "A short description of the event.",
         "fr": "Enter your translation here"
       }
     },
@@ -2657,7 +3097,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A short description",
+        "en": "A short description of the services place.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The description is essential for describing the services place succinctly and clearly.  As a complement to the title, it must convey the entire objective of the services and enable its scope to be understood, without any further explanation.",
         "fr": "Enter your translation here"
       }
     },
@@ -2685,7 +3129,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A short description",
+        "en": "A short description of the article.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The description is essential for describing the article succinctly and clearly.  As a complement to the title, it summarises the content of the referenced press article. It should enable the reader to understand its content.",
         "fr": "Enter your translation here"
       }
     },
@@ -2723,6 +3171,10 @@
       "definition": {
         "en": "A short title",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Acronym or recognised abbreviation, alternative name for the profile.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -2733,7 +3185,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A slug",
+        "en": " Last section of a URL.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Unique across all persons, it is used to create a unique URL for a domain (https://domain/lg/resource/slug).",
         "fr": "Enter your translation here"
       }
     },
@@ -2745,7 +3201,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A slug",
+        "en": "Last section of a URL.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Unique across all action plans, it is used to create a unique URL for a domain (https://domain/lg/resource/slug).",
         "fr": "Enter your translation here"
       }
     },
@@ -2757,7 +3217,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A slug",
+        "en": "Last section of a URL.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Unique across all posts, it is used to create a unique URL for a domain (https://domain/lg/resource/slug).",
         "fr": "Enter your translation here"
       }
     },
@@ -2769,7 +3233,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A slug",
+        "en": "Last section of a URL.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Usage : Unique across all public events, it is used to create a unique URL for a domain (https://domain/lg/resource/slug).",
         "fr": "Enter your translation here"
       }
     },
@@ -2781,7 +3249,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A slug",
+        "en": "Last section of a URL.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Unique across all posts, it is used to create a unique URL for a domain (https://domain/lg/resource/slug).",
         "fr": "Enter your translation here"
       }
     },
@@ -2793,7 +3265,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A slug",
+        "en": "Last section of a URL.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Unique across all services places, it is used to create a unique URL for a domain (https://domain/lg/resource/slug).",
         "fr": "Enter your translation here"
       }
     },
@@ -2833,7 +3309,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A source",
+        "en": "Reference to the article's source profile.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Newspaper, magazine, source organisation of the article.",
         "fr": "Enter your translation here"
       }
     },
@@ -2845,7 +3325,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A speaker",
+        "en": "A reference to a Qualified Person",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Person speaking at the event.",
         "fr": "Enter your translation here"
       }
     },
@@ -2859,6 +3343,10 @@
       "definition": {
         "en": "A staffing",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The actual number of full-time equivalents for the profile and activity described.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -2869,7 +3357,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A start date",
+        "en": "An event start date",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The start date indicates the day and time of the start of the event. The day may be identical to that of the end date, but the time may be different, earlier.",
         "fr": "Enter your translation here"
       }
     },
@@ -2897,7 +3389,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A sticky",
+        "en": "A reference to an event or a post.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The most topical element of the programme.",
         "fr": "Enter your translation here"
       }
     },
@@ -2909,7 +3405,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A sticky",
+        "en": "A reference to an event or a post.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The most topical element of the programme.",
         "fr": "Enter your translation here"
       }
     },
@@ -2921,7 +3421,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A title",
+        "en": "Title of the programme.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The official name of the programme.",
         "fr": "Enter your translation here"
       }
     },
@@ -2935,6 +3439,10 @@
       "definition": {
         "en": "A title",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The full name of the profile or activity.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -2945,7 +3453,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A title",
+        "en": "title of the post.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The title describes, in a few words, the content of the post and its scope.",
         "fr": "Enter your translation here"
       }
     },
@@ -2958,6 +3470,10 @@
       },
       "definition": {
         "en": "A title",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The full name of the services place.",
         "fr": "Enter your translation here"
       }
     },
@@ -2982,6 +3498,10 @@
       },
       "definition": {
         "en": "A title",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Title of article as published in the press.",
         "fr": "Enter your translation here"
       }
     },
@@ -3025,7 +3545,7 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A type",
+        "en": "Type of the event.",
         "fr": "Enter your translation here"
       }
     },
@@ -3037,7 +3557,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A type",
+        "en": "Type of the post",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Indicates the type of post currently being read: feature article, news, study, etc. This type is used to classify posts and present them appropriately.",
         "fr": "Enter your translation here"
       }
     },
@@ -3061,7 +3585,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A type",
+        "en": "Type of format.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Format in which the article or content is made available (editorial, media, etc.).",
         "fr": "Enter your translation here"
       }
     },
@@ -3205,7 +3733,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "Date of last contact with the company validating the information.",
+        "en": "Date of the last contact while editing de profile.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Date of last contact with the company validating the updated information.",
         "fr": "Enter your translation here"
       }
     },
@@ -3255,6 +3787,10 @@
       "definition": {
         "en": "A financial participation",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The financial contribution can be both an amount of funding and a calculation of full-time equivalent costs.",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -3278,6 +3814,10 @@
       },
       "definition": {
         "en": "An internal name pour une resource",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The internal name is useful for finding the record among others in an application such as a back office. The internal name of the Action Plan Profile is made up of the profile's Title and its role in the Action.",
         "fr": "Enter your translation here"
       }
     },
@@ -3477,7 +4017,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "Brief description of the person.",
+        "en": "A short description of the person.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The description briefly describes the person and their skills.",
         "fr": "Enter your translation here"
       }
     },
@@ -3503,6 +4047,42 @@
       "definition": {
         "en": "A common and non-nullable person identifier",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "A single ID for all uses and connections between databases",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{04FD3035-CFAD-4489-B56E-D1BF3B74CCB9}",
+      "name": "id",
+      "label": {
+        "en": "Id",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A common and non-nullable contact point identifier",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "A single ID for all uses and connections between databases",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{3AD9C0C3-3649-469b-9C85-209A989E6C2A}",
+      "name": "id",
+      "label": {
+        "en": "Id",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A common and non-nullable programme identifier",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "A single ID for all uses and connections between databases",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -3513,7 +4093,43 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A common and non-nullable profile identifier",
+        "en": "A common and non-nullable identifier.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "A single ID for all uses and connections between databases.",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{2E8CAF4D-F45E-47d7-AE5A-1F74E9B70C61}",
+      "name": "id",
+      "label": {
+        "en": "Id",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A common and non-nullable event identifier",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "A single ID for all uses and connections between databases",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{33804A3F-54CD-4fc5-8BF0-F9EBA747DEC7}",
+      "name": "id",
+      "label": {
+        "en": "Id",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A common and non-nullable post identifier",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "A single ID for all uses and connections between databases",
         "fr": "Enter your translation here"
       }
     },
@@ -3534,6 +4150,22 @@
       }
     },
     {
+      "EA-Guid": "{D32532A2-3A98-4c15-9348-3A0F8BCA1296}",
+      "name": "id",
+      "label": {
+        "en": "Id",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "en": "A common and non-nullable press review identifier",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "A single ID for all uses and connections between databases",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
       "EA-Guid": "{4B0A3911-B30D-4f1e-9EB7-4F975B23F805}",
       "name": "id",
       "label": {
@@ -3541,7 +4173,7 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "A common and non-nullable legal entity identifier.",
+        "en": "A single ID for all uses and connections between databases",
         "fr": "Enter your translation here"
       }
     },
@@ -3565,7 +4197,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "The name given to the Public Event.",
+        "en": "title of the event.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "Title as close as possible to that given to the event by the organiser.",
         "fr": "Enter your translation here"
       }
     },
@@ -3590,6 +4226,10 @@
       },
       "definition": {
         "en": "A string of characters to uniquely identify a concept.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "This information may, for example, be the unique identifier of a record, a company number, etc.",
         "fr": "Enter your translation here"
       }
     },
@@ -3631,6 +4271,10 @@
       "definition": {
         "en": "The name of the agency that issued the identifier.",
         "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "For example, in the case of a company number, the issuing agency is the Banque-Carrefour des Entreprises (BCE).",
+        "fr": "Enter your translation here"
       }
     },
     {
@@ -3658,38 +4302,6 @@
       },
       "usage": {
         "en": "This is a general term that encompasses all the economic activities carried out by a company during the course of business. The activity of a company should be recorded using a controlled vocabulary. Several such vocabularies exist, many of which map to the UN's <a href=\"https://unstats.un.org/unsd/classifications/Econ/ISIC.cshtml\">ISIC</a> codes. Where a particular controlled vocabulary is in use within a given context, such as <a href=\"https://resources.companieshouse.gov.uk/sic/\">SIC codes</a> in the UK, it is acceptable to use these, however, the preferred choice for European interoperability is <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nace2\">NACE</a>.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{180CFE17-CDB6-4584-8728-FBE956AEDF53}",
-      "name": "legalEntityStatus",
-      "label": {
-        "en": "legal entity status",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "en": "Information about the viability of the current position of the legal entity.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "en": "Recording the status of a company presents the same issues as its type. The terms 'insolvent', 'bankrupt' and 'in receivership,' for example, are likely to mean slightly different things with different legal implications in different jurisdictions. Best practice for recording various other status levels is to use the relevant jurisdiction's terms and to identify the controlled vocabulary used.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{258B9CC8-224E-4e87-9F6C-53B86163B0F2}",
-      "name": "legalFormType",
-      "label": {
-        "en": "legal form type",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "en": "The classification of the Legal Entity as a member of a particular group in the context of legal registration.",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "en": "To indicate the legal form type of a Legal Entity the <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/entity-legal-form\">Entity Legal Form code list</a> published by the Publications Office of the EU and maintained by <a href=\"https://www.gleif.org/en/about-lei/code-lists/iso-20275-entity-legal-forms-code-list\">GLEIF</a> can be used.",
         "fr": "Enter your translation here"
       }
     },
@@ -3729,7 +4341,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "The Address of a Resource.",
+        "en": "Postal address.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "The person's place of residence or the address at which they can receive postal mail.",
         "fr": "Enter your translation here"
       }
     },
@@ -3913,11 +4529,11 @@
         "fr": "Enter your translation here"
       },
       "definition": {
-        "en": "The website of the Public Event.",
+        "en": "the source web page of the event. ",
         "fr": "Enter your translation here"
       },
       "usage": {
-        "en": "The value of this property is a URL, like the URL of a webinar.",
+        "en": "Gives the URL at which the source information is available. Usually a details page on the organiser's website or an event registration page.",
         "fr": "Enter your translation here"
       }
     },
@@ -3942,6 +4558,10 @@
       },
       "definition": {
         "en": "Any name by which a LegalEntity is known, other than their legal name.",
+        "fr": "Enter your translation here"
+      },
+      "usage": {
+        "en": "For example, via the name of a brand or product.",
         "fr": "Enter your translation here"
       }
     },
@@ -3969,15 +4589,15 @@
         "fr": "Enter your translation here"
       },
       "usage": {
-        "en": "Extension vocabularies may wish to specialize this property to have a range corresponding to a specific skos:ConceptScheme",
+        "en": "Extension vocabularies may wish to specialize this property to have a range corresponding to a specific skos:ConceptScheme. Examples: company, non-profit organisation, local authority, etc. It may refer to an economic classification such as the NACE code.",
         "fr": "Enter your translation here"
       }
     },
     {
       "EA-Guid": "{0E4439AC-5BD9-4328-8EFD-D12076B34C70}",
-      "name": "numéroD'établissement",
+      "name": "establishmentNumber",
       "label": {
-        "en": "numéro d'établissement",
+        "en": "Establishment number",
         "fr": "Enter your translation here"
       },
       "definition": {
@@ -3998,22 +4618,6 @@
       },
       "definition": {
         "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
-      "EA-Guid": "{9DF5DBB4-4367-45f6-8DD4-2396BC2B6ABE}",
-      "name": "purpose",
-      "label": {
-        "en": "purpose",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "en": "Indicates the purpose of this Organization. There can be many purposes at different levels of abstraction but the nature of an organization is to have a reason for existence and this property is a means to document that reason. An Organization may have mu",
-        "fr": "Enter your translation here"
-      },
-      "usage": {
-        "en": "It is recommended that the purpose be denoted by a controlled term or code list, ideally a skos:Concept. However, the range is left open to allow for other types of descriptive schemes. It is expected that profiles of this vocabulary will constrain the range of org:purpose. Alternative names: remit, responsibility (esp. if applied to OrganizationalUnits such as Government Departments).",
         "fr": "Enter your translation here"
       }
     },
