@@ -87,12 +87,12 @@
   "contributors-column": "D4WTA-AP",
   "contributors-file": "stakeholders.csv",
   "diagram": "Model",
-  "documentcommit": "2795badf5fac0c62eaf581970ec084fea648f248",
+  "documentcommit": "272ac33187ad6df1b82f3b8fe98b9a6dc461d984",
   "documentconfig": {
     "editorDocumentroot": "https://digitalwallonia.github.io/data4wallonia-generated/D4WMO-Generic/releases/1.0.0",
     "statuslabel": "Draft"
   },
-  "dummy": "23",
+  "dummy": "24",
   "eap": "Data4WalloniaModel-Generic.eap",
   "editors": [
     {
@@ -3227,14 +3227,14 @@
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{6BEF6F6F-D37E-401a-A574-6541BF4369A9}",
       "ap-definition-en": {
-        "en": "An additional description"
+        "en": "An additional descriptive text to the Short Description"
       },
       "ap-label-en": {
-        "en": "additional description"
+        "en": "Additional Description"
       },
       "codelist": [],
       "definition": {
-        "en": "An additional description"
+        "en": "An additional descriptive text to the Short Description"
       },
       "domain": [
         {
@@ -3265,35 +3265,42 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "An additional description"
+            "value": "An additional descriptive text to the Short Description"
           },
           {
             "key": "label-en",
             "note": "null",
-            "value": "additional description"
+            "value": "Additional Description"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "An additional description"
+          "en": "An additional descriptive text to the Short Description"
         },
         "ap-label-en": {
-          "en": "additional description"
+          "en": "Additional Description"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "An additional description"
+          "en": "An additional descriptive text to the Short Description"
         },
         "label": {
-          "en": "additional description"
+          "en": "Additional Description"
         },
-        "usage": ""
+        "usage": {
+          "en": "Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "additional description"
+        "en": "Additional Description"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -3305,7 +3312,10 @@
           "EA-Package": "DataTypes",
           "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
         }
-      ]
+      ],
+      "usage": {
+        "en": "Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/additionalInformation",
@@ -4177,14 +4187,14 @@
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{85BEC74F-7687-4895-A2D2-0BD86B754EF3}",
       "ap-definition-en": {
-        "en": "An ambition"
+        "en": "A reference to a strategic ambition."
       },
       "ap-label-en": {
-        "en": "ambition"
+        "en": "Ambition"
       },
       "codelist": [],
       "definition": {
-        "en": "An ambition"
+        "en": "A reference to a strategic ambition."
       },
       "domain": [
         {
@@ -4201,12 +4211,17 @@
           },
           {
             "key": "definition-en",
-            "note": "An ambition",
+            "note": "A reference to a strategic ambition.",
             "value": "NOTE"
           },
           {
             "key": "label-en",
-            "note": "ambition",
+            "note": "Ambition",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
             "value": "NOTE"
           }
         ],
@@ -4231,39 +4246,46 @@
           },
           {
             "key": "definition-en",
-            "note": "An ambition",
+            "note": "A reference to a strategic ambition.",
             "value": "NOTE"
           },
           {
             "key": "label-en",
-            "note": "ambition",
+            "note": "Ambition",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
             "value": "NOTE"
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "An ambition"
+          "en": "A reference to a strategic ambition."
         },
         "ap-label-en": {
-          "en": "ambition"
+          "en": "Ambition"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "An ambition"
+          "en": "A reference to a strategic ambition."
         },
         "derived": "false",
         "destRole": "ambition",
         "label": {
-          "en": "ambition"
+          "en": "Ambition"
         },
         "sourceRole": "null",
-        "usage": ""
+        "usage": {
+          "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.)."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "ambition"
+        "en": "Ambition"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -4275,7 +4297,10 @@
           "EA-Package": "d4w",
           "uri": "http://data4wallonia.com/model/Ambition"
         }
-      ]
+      ],
+      "usage": {
+        "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.)."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/ambition",
@@ -5125,14 +5150,14 @@
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{861E42F8-AD7D-4b41-BFBD-A9ED0E3342BE}",
       "ap-definition-en": {
-        "en": "A beneficiarie"
+        "en": "A list of beneficiaries (profiles)."
       },
       "ap-label-en": {
-        "en": "beneficiarie"
+        "en": "Beneficiaries"
       },
       "codelist": [],
       "definition": {
-        "en": "A beneficiarie"
+        "en": "A list of beneficiaries (profiles)."
       },
       "domain": [
         {
@@ -5144,12 +5169,17 @@
         "DestRoleTags": [
           {
             "key": "definition-en",
-            "note": "A beneficiarie",
+            "note": "A list of beneficiaries (profiles).",
             "value": "NOTE"
           },
           {
             "key": "label-en",
-            "note": "beneficiarie",
+            "note": "Beneficiaries",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
             "value": "NOTE"
           },
           {
@@ -5161,7 +5191,7 @@
         "EA-Domain": "ActionPlan",
         "EA-Domain-Guid": "{922CDABF-F6EF-47c3-80A5-F231384B6CF2}",
         "EA-Guid": "{861E42F8-AD7D-4b41-BFBD-A9ED0E3342BE}",
-        "EA-Name": "beneficiarie",
+        "EA-Name": "beneficiaries",
         "EA-Package": "",
         "EA-Range": "ContentDynamicList",
         "EA-Type": "connector",
@@ -5174,12 +5204,17 @@
         "RawTags": [
           {
             "key": "definition-en",
-            "note": "A beneficiarie",
+            "note": "A list of beneficiaries (profiles).",
             "value": "NOTE"
           },
           {
             "key": "label-en",
-            "note": "beneficiarie",
+            "note": "Beneficiaries",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
             "value": "NOTE"
           },
           {
@@ -5191,31 +5226,33 @@
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A beneficiarie"
+          "en": "A list of beneficiaries (profiles)."
         },
         "ap-label-en": {
-          "en": "beneficiarie"
+          "en": "Beneficiaries"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A beneficiarie"
+          "en": "A list of beneficiaries (profiles)."
         },
         "derived": "false",
-        "destRole": "beneficiarie",
+        "destRole": "beneficiaries",
         "label": {
-          "en": "beneficiarie"
+          "en": "Beneficiaries"
         },
         "sourceRole": "null",
-        "usage": ""
+        "usage": {
+          "en": "TODO"
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "beneficiarie"
+        "en": "Beneficiaries"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
-      "name": "beneficiarie",
+      "name": "beneficiaries",
       "range": [
         {
           "EA-GUID": "{624D5B5F-6450-484d-8E32-648573DF9333}",
@@ -5223,7 +5260,10 @@
           "EA-Package": "d4w",
           "uri": "http://data4wallonia.com/model/ContentDynamicList"
         }
-      ]
+      ],
+      "usage": {
+        "en": "TODO"
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/capacity",
@@ -5738,14 +5778,14 @@
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{1ABA778E-7C41-438a-BD6B-9338743927E1}",
       "ap-definition-en": {
-        "en": "A classification"
+        "en": "A reference to an element in the taxonomy"
       },
       "ap-label-en": {
-        "en": "category"
+        "en": "Category"
       },
       "codelist": [],
       "definition": {
-        "en": "A classification"
+        "en": "A reference to an element in the taxonomy"
       },
       "domain": [
         {
@@ -5776,35 +5816,42 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "A classification"
+            "value": "A reference to an element in the taxonomy"
           },
           {
             "key": "label-en",
             "note": "null",
-            "value": "category"
+            "value": "Category"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "The taxonomy categories can be used to enrich the action by linking to other content, filtering and sorting."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A classification"
+          "en": "A reference to an element in the taxonomy"
         },
         "ap-label-en": {
-          "en": "category"
+          "en": "Category"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A classification"
+          "en": "A reference to an element in the taxonomy"
         },
         "label": {
-          "en": "category"
+          "en": "Category"
         },
-        "usage": ""
+        "usage": {
+          "en": "The taxonomy categories can be used to enrich the action by linking to other content, filtering and sorting."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "category"
+        "en": "Category"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -5816,7 +5863,10 @@
           "EA-Package": "DataTypes",
           "uri": "http://www.w3.org/2004/02/skos/core#Concept"
         }
-      ]
+      ],
+      "usage": {
+        "en": "The taxonomy categories can be used to enrich the action by linking to other content, filtering and sorting."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/category",
@@ -6406,14 +6456,14 @@
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{C99BE139-3B62-443c-BE72-B5A4D6093DEC}",
       "ap-definition-en": {
-        "en": "A client site"
+        "en": "A reference to a Client site"
       },
       "ap-label-en": {
-        "en": "client site"
+        "en": "Client Site"
       },
       "codelist": [],
       "definition": {
-        "en": "A client site"
+        "en": "A reference to a Client site"
       },
       "domain": [
         {
@@ -6443,35 +6493,42 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "A client site"
+            "value": "A reference to a Client site"
           },
           {
             "key": "label-en",
             "note": "null",
-            "value": "client site"
+            "value": "Client Site"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "Identification of a client application (website, business application or other) using the action form."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A client site"
+          "en": "A reference to a Client site"
         },
         "ap-label-en": {
-          "en": "client site"
+          "en": "Client Site"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A client site"
+          "en": "A reference to a Client site"
         },
         "label": {
-          "en": "client site"
+          "en": "Client Site"
         },
-        "usage": ""
+        "usage": {
+          "en": "Identification of a client application (website, business application or other) using the action form."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "client site"
+        "en": "Client Site"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -6482,7 +6539,10 @@
           "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#string"
         }
-      ]
+      ],
+      "usage": {
+        "en": "Identification of a client application (website, business application or other) using the action form."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/clientSite",
@@ -6760,14 +6820,14 @@
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{E7AF9F19-EB51-4c26-99C6-4A494CD8A857}",
       "ap-definition-en": {
-        "en": "A contact person"
+        "en": "Contact person, referent. A reference to a Qualified Person"
       },
       "ap-label-en": {
-        "en": "contact person"
+        "en": "Contact Person"
       },
       "codelist": [],
       "definition": {
-        "en": "A contact person"
+        "en": "Contact person, referent. A reference to a Qualified Person"
       },
       "domain": [
         {
@@ -6779,7 +6839,7 @@
         "DestRoleTags": [
           {
             "key": "label-en",
-            "note": "contact person",
+            "note": "Contact Person",
             "value": "NOTE"
           },
           {
@@ -6789,7 +6849,12 @@
           },
           {
             "key": "definition-en",
-            "note": "A contact person",
+            "note": "Contact person, referent. A reference to a Qualified Person",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "A person to whom the target audience can turn for explanations and more information about the project. This person will often be attached to the coordinator or promoter",
             "value": "NOTE"
           }
         ],
@@ -6809,7 +6874,7 @@
         "RawTags": [
           {
             "key": "label-en",
-            "note": "contact person",
+            "note": "Contact Person",
             "value": "NOTE"
           },
           {
@@ -6819,34 +6884,41 @@
           },
           {
             "key": "definition-en",
-            "note": "A contact person",
+            "note": "Contact person, referent. A reference to a Qualified Person",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "A person to whom the target audience can turn for explanations and more information about the project. This person will often be attached to the coordinator or promoter",
             "value": "NOTE"
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A contact person"
+          "en": "Contact person, referent. A reference to a Qualified Person"
         },
         "ap-label-en": {
-          "en": "contact person"
+          "en": "Contact Person"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A contact person"
+          "en": "Contact person, referent. A reference to a Qualified Person"
         },
         "derived": "false",
         "destRole": "contactPerson",
         "label": {
-          "en": "contact person"
+          "en": "Contact Person"
         },
         "sourceRole": "null",
-        "usage": ""
+        "usage": {
+          "en": "A person to whom the target audience can turn for explanations and more information about the project. This person will often be attached to the coordinator or promoter"
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "contact person"
+        "en": "Contact Person"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -6858,7 +6930,10 @@
           "EA-Package": "d4w",
           "uri": "http://data4wallonia.com/model/ProfilePerson"
         }
-      ]
+      ],
+      "usage": {
+        "en": "A person to whom the target audience can turn for explanations and more information about the project. This person will often be attached to the coordinator or promoter"
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/contactPerson",
@@ -6970,14 +7045,14 @@
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{136BAE7C-CACB-41b6-A007-C0078EAE20C9}",
       "ap-definition-en": {
-        "en": "A contact point"
+        "en": "A reference to a contact point."
       },
       "ap-label-en": {
-        "en": "contact point"
+        "en": "Contact Point"
       },
       "codelist": [],
       "definition": {
-        "en": "A contact point"
+        "en": "A reference to a contact point."
       },
       "domain": [
         {
@@ -6988,13 +7063,18 @@
       "extra": {
         "DestRoleTags": [
           {
+            "key": "usageNote-en",
+            "note": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc.",
+            "value": "NOTE"
+          },
+          {
             "key": "label-en",
-            "note": "contact point",
+            "note": "Contact Point",
             "value": "NOTE"
           },
           {
             "key": "definition-en",
-            "note": "A contact point",
+            "note": "A reference to a contact point.",
             "value": "NOTE"
           },
           {
@@ -7018,13 +7098,18 @@
         },
         "RawTags": [
           {
+            "key": "usageNote-en",
+            "note": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc.",
+            "value": "NOTE"
+          },
+          {
             "key": "label-en",
-            "note": "contact point",
+            "note": "Contact Point",
             "value": "NOTE"
           },
           {
             "key": "definition-en",
-            "note": "A contact point",
+            "note": "A reference to a contact point.",
             "value": "NOTE"
           },
           {
@@ -7036,27 +7121,29 @@
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A contact point"
+          "en": "A reference to a contact point."
         },
         "ap-label-en": {
-          "en": "contact point"
+          "en": "Contact Point"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A contact point"
+          "en": "A reference to a contact point."
         },
         "derived": "false",
         "destRole": "contactPoint",
         "label": {
-          "en": "contact point"
+          "en": "Contact Point"
         },
         "sourceRole": "null",
-        "usage": ""
+        "usage": {
+          "en": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc."
+        }
       },
       "generalization": [],
       "inpackage": "UNKNOWN",
       "label": {
-        "en": "contact point"
+        "en": "Contact Point"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -7068,7 +7155,10 @@
           "EA-Package": "cv",
           "uri": "http://data.europa.eu/m8g/ContactPoint"
         }
-      ]
+      ],
+      "usage": {
+        "en": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/contactPoint",
@@ -7981,14 +8071,14 @@
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{86DD5F89-F458-46bc-9804-A17B95AD9C76}",
       "ap-definition-en": {
-        "en": "A end date"
+        "en": "An action end date"
       },
       "ap-label-en": {
-        "en": "end date"
+        "en": "End Date"
       },
       "codelist": [],
       "definition": {
-        "en": "A end date"
+        "en": "An action end date"
       },
       "domain": [
         {
@@ -8018,35 +8108,42 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "A end date"
+            "value": "An action end date"
           },
           {
             "key": "label-en",
             "note": "null",
-            "value": "end date"
+            "value": "End Date"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "The end date indicates the expected (if in progress) or actual (if completed) completion date."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A end date"
+          "en": "An action end date"
         },
         "ap-label-en": {
-          "en": "end date"
+          "en": "End Date"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A end date"
+          "en": "An action end date"
         },
         "label": {
-          "en": "end date"
+          "en": "End Date"
         },
-        "usage": ""
+        "usage": {
+          "en": "The end date indicates the expected (if in progress) or actual (if completed) completion date."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "end date"
+        "en": "End Date"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -8057,7 +8154,10 @@
           "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
         }
-      ]
+      ],
+      "usage": {
+        "en": "The end date indicates the expected (if in progress) or actual (if completed) completion date."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/endPublicationDate",
@@ -8610,14 +8710,14 @@
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{46772F1F-FB15-47df-8758-51A64A70D5D4}",
       "ap-definition-en": {
-        "en": "A full time equivalent"
+        "en": "Number of full-time equivalent employees"
       },
       "ap-label-en": {
-        "en": "full time equivalent"
+        "en": "Full time equivalent"
       },
       "codelist": [],
       "definition": {
-        "en": "A full time equivalent"
+        "en": "Number of full-time equivalent employees"
       },
       "domain": [
         {
@@ -8647,35 +8747,42 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "A full time equivalent"
+            "value": "Number of full-time equivalent employees"
           },
           {
             "key": "label-en",
             "note": "null",
-            "value": "full time equivalent"
+            "value": "Full time equivalent"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "Number of people (full-time equivalent) working on an action."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A full time equivalent"
+          "en": "Number of full-time equivalent employees"
         },
         "ap-label-en": {
-          "en": "full time equivalent"
+          "en": "Full time equivalent"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A full time equivalent"
+          "en": "Number of full-time equivalent employees"
         },
         "label": {
-          "en": "full time equivalent"
+          "en": "Full time equivalent"
         },
-        "usage": ""
+        "usage": {
+          "en": "Number of people (full-time equivalent) working on an action."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "full time equivalent"
+        "en": "Full time equivalent"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -8686,7 +8793,10 @@
           "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#integer"
         }
-      ]
+      ],
+      "usage": {
+        "en": "Number of people (full-time equivalent) working on an action."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/hasCos",
@@ -9091,14 +9201,14 @@
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{88CAEB6A-C4FC-42c8-BF9E-37AA17CFB4C0}",
       "ap-definition-en": {
-        "en": "An id for accounting"
+        "en": "Relationship with the funder accounting system."
       },
       "ap-label-en": {
-        "en": "id for accounting"
+        "en": "Id for accounting"
       },
       "codelist": [],
       "definition": {
-        "en": "An id for accounting"
+        "en": "Relationship with the funder accounting system."
       },
       "domain": [
         {
@@ -9128,35 +9238,42 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "An id for accounting"
+            "value": "Relationship with the funder accounting system."
           },
           {
             "key": "label-en",
             "note": "null",
-            "value": "id for accounting"
+            "value": "Id for accounting"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "Enables a link to be established between a project and the accounts of the funding organisation."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "An id for accounting"
+          "en": "Relationship with the funder accounting system."
         },
         "ap-label-en": {
-          "en": "id for accounting"
+          "en": "Id for accounting"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "An id for accounting"
+          "en": "Relationship with the funder accounting system."
         },
         "label": {
-          "en": "id for accounting"
+          "en": "Id for accounting"
         },
-        "usage": ""
+        "usage": {
+          "en": "Enables a link to be established between a project and the accounts of the funding organisation."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "id for accounting"
+        "en": "Id for accounting"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -9167,21 +9284,24 @@
           "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#string"
         }
-      ]
+      ],
+      "usage": {
+        "en": "Enables a link to be established between a project and the accounts of the funding organisation."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/image",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{0C5D17E0-A4DC-49b9-980D-CBA7FA198780}",
       "ap-definition-en": {
-        "en": "An image"
+        "en": "Reference to an Asset."
       },
       "ap-label-en": {
-        "en": "image"
+        "en": "Image"
       },
       "codelist": [],
       "definition": {
-        "en": "An image"
+        "en": "Reference to an Asset."
       },
       "domain": [
         {
@@ -9212,35 +9332,42 @@
           {
             "key": "label-en",
             "note": "null",
-            "value": "image"
+            "value": "Image"
           },
           {
             "key": "definition-en",
             "note": "null",
-            "value": "An image"
+            "value": "Reference to an Asset."
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "Link to a reusable image.  This can be a simple image, or a banner representing the action."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "An image"
+          "en": "Reference to an Asset."
         },
         "ap-label-en": {
-          "en": "image"
+          "en": "Image"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "An image"
+          "en": "Reference to an Asset."
         },
         "label": {
-          "en": "image"
+          "en": "Image"
         },
-        "usage": ""
+        "usage": {
+          "en": "Link to a reusable image.  This can be a simple image, or a banner representing the action."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "image"
+        "en": "Image"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -9252,7 +9379,10 @@
           "EA-Package": "d4w",
           "uri": "http://data4wallonia.com/model/File"
         }
-      ]
+      ],
+      "usage": {
+        "en": "Link to a reusable image.  This can be a simple image, or a banner representing the action."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/inOperation",
@@ -9364,14 +9494,14 @@
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{B990BC3A-B324-4640-B986-0E0B2E6DEE57}",
       "ap-definition-en": {
-        "en": "An operation"
+        "en": "A boolean indicating whether the action leads to a concrete result."
       },
       "ap-label-en": {
-        "en": "in operation"
+        "en": "In operation"
       },
       "codelist": [],
       "definition": {
-        "en": "An operation"
+        "en": "A boolean indicating whether the action leads to a concrete result."
       },
       "domain": [
         {
@@ -9401,35 +9531,42 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "An operation"
+            "value": "A boolean indicating whether the action leads to a concrete result."
           },
           {
             "key": "label-en",
             "note": "null",
-            "value": "in operation"
+            "value": "In operation"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "This information specifies whether the action resulted in commercial exploitation, or has an impact on another current or future action."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "An operation"
+          "en": "A boolean indicating whether the action leads to a concrete result."
         },
         "ap-label-en": {
-          "en": "in operation"
+          "en": "In operation"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "An operation"
+          "en": "A boolean indicating whether the action leads to a concrete result."
         },
         "label": {
-          "en": "in operation"
+          "en": "In operation"
         },
-        "usage": ""
+        "usage": {
+          "en": "This information specifies whether the action resulted in commercial exploitation, or has an impact on another current or future action."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "in operation"
+        "en": "In operation"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -9440,7 +9577,10 @@
           "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#boolean"
         }
-      ]
+      ],
+      "usage": {
+        "en": "This information specifies whether the action resulted in commercial exploitation, or has an impact on another current or future action."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/incubator",
@@ -10100,14 +10240,14 @@
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{C2FDF8E5-104F-4b98-BC5F-796661368556}",
       "ap-definition-en": {
-        "en": "A leader mission"
+        "en": "Action leader's mission"
       },
       "ap-label-en": {
-        "en": "leader mission"
+        "en": "Leader mission"
       },
       "codelist": [],
       "definition": {
-        "en": "A leader mission"
+        "en": "Action leader's mission"
       },
       "domain": [
         {
@@ -10137,35 +10277,42 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "A leader mission"
+            "value": "Action leader's mission"
           },
           {
             "key": "label-en",
             "note": "null",
-            "value": "leader mission"
+            "value": "Leader mission"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "Indicates the main missions of the action leader (role of this stakeholder). Potential missions : Communication, Governance, Transformation, Watch."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A leader mission"
+          "en": "Action leader's mission"
         },
         "ap-label-en": {
-          "en": "leader mission"
+          "en": "Leader mission"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A leader mission"
+          "en": "Action leader's mission"
         },
         "label": {
-          "en": "leader mission"
+          "en": "Leader mission"
         },
-        "usage": ""
+        "usage": {
+          "en": "Indicates the main missions of the action leader (role of this stakeholder). Potential missions : Communication, Governance, Transformation, Watch."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "leader mission"
+        "en": "Leader mission"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -10176,7 +10323,10 @@
           "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#string"
         }
-      ]
+      ],
+      "usage": {
+        "en": "Indicates the main missions of the action leader (role of this stakeholder). Potential missions : Communication, Governance, Transformation, Watch."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/logo",
@@ -10778,14 +10928,14 @@
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{E34F396F-9DDF-4e66-B7B2-C943CA1ABDA4}",
       "ap-definition-en": {
-        "en": "A marketing short description"
+        "en": "Brief marketing description of an action"
       },
       "ap-label-en": {
-        "en": "marketing short description"
+        "en": "Marketing short description"
       },
       "codelist": [],
       "definition": {
-        "en": "A marketing short description"
+        "en": "Brief marketing description of an action"
       },
       "domain": [
         {
@@ -10816,35 +10966,42 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "A marketing short description"
+            "value": "Brief marketing description of an action"
           },
           {
             "key": "label-en",
             "note": "null",
-            "value": "marketing short description"
+            "value": "Marketing short description"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "This is a succinct and clear description of the project, in « promotional » form, i.e. aimed at the target audience, and is often not very technical.  In addition to the marketing title, it should give a full account of the objective of the action and ena"
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A marketing short description"
+          "en": "Brief marketing description of an action"
         },
         "ap-label-en": {
-          "en": "marketing short description"
+          "en": "Marketing short description"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A marketing short description"
+          "en": "Brief marketing description of an action"
         },
         "label": {
-          "en": "marketing short description"
+          "en": "Marketing short description"
         },
-        "usage": ""
+        "usage": {
+          "en": "This is a succinct and clear description of the project, in « promotional » form, i.e. aimed at the target audience, and is often not very technical.  In addition to the marketing title, it should give a full account of the objective of the action and ena"
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "marketing short description"
+        "en": "Marketing short description"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -10856,21 +11013,24 @@
           "EA-Package": "DataTypes",
           "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
         }
-      ]
+      ],
+      "usage": {
+        "en": "This is a succinct and clear description of the project, in « promotional » form, i.e. aimed at the target audience, and is often not very technical.  In addition to the marketing title, it should give a full account of the objective of the action and ena"
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/marketingTitle",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{7F766661-BE26-4b1b-8208-BAA7258F1C6F}",
       "ap-definition-en": {
-        "en": "A marketing title"
+        "en": "Promotional title or catchphrase aimed at a specific audience."
       },
       "ap-label-en": {
-        "en": "marketing title"
+        "en": "Marketing title"
       },
       "codelist": [],
       "definition": {
-        "en": "A marketing title"
+        "en": "Promotional title or catchphrase aimed at a specific audience."
       },
       "domain": [
         {
@@ -10901,35 +11061,42 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "A marketing title"
+            "value": "Promotional title or catchphrase aimed at a specific audience."
           },
           {
             "key": "label-en",
             "note": "null",
-            "value": "marketing title"
+            "value": "Marketing title"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "If the title is difficult to understand (the technical name of a measure, for example), it is a good idea to use a Marketing Title.  This allows you to name the action with a title, a catchphrase that the target audience can understand."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A marketing title"
+          "en": "Promotional title or catchphrase aimed at a specific audience."
         },
         "ap-label-en": {
-          "en": "marketing title"
+          "en": "Marketing title"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A marketing title"
+          "en": "Promotional title or catchphrase aimed at a specific audience."
         },
         "label": {
-          "en": "marketing title"
+          "en": "Marketing title"
         },
-        "usage": ""
+        "usage": {
+          "en": "If the title is difficult to understand (the technical name of a measure, for example), it is a good idea to use a Marketing Title.  This allows you to name the action with a title, a catchphrase that the target audience can understand."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "marketing title"
+        "en": "Marketing title"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -10941,7 +11108,10 @@
           "EA-Package": "DataTypes",
           "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
         }
-      ]
+      ],
+      "usage": {
+        "en": "If the title is difficult to understand (the technical name of a measure, for example), it is a good idea to use a Marketing Title.  This allows you to name the action with a title, a catchphrase that the target audience can understand."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/masterAmbition",
@@ -11247,14 +11417,14 @@
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{BDC7078A-4DD1-4852-84B2-187C64249C9A}",
       "ap-definition-en": {
-        "en": "A number of equipments"
+        "en": "Number of pieces of equipment used."
       },
       "ap-label-en": {
-        "en": "number of equipments"
+        "en": "Number of equipments"
       },
       "codelist": [],
       "definition": {
-        "en": "A number of equipments"
+        "en": "Number of pieces of equipment used."
       },
       "domain": [
         {
@@ -11284,35 +11454,42 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "A number of equipments"
+            "value": "Number of pieces of equipment used."
           },
           {
             "key": "label-en",
             "note": "null",
-            "value": "number of equipments"
+            "value": "Number of equipments"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "Equipment is a material resource provided as part of an action. Depending on the programme, this may include computers, interactive whiteboards, WiFi connections, etc."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A number of equipments"
+          "en": "Number of pieces of equipment used."
         },
         "ap-label-en": {
-          "en": "number of equipments"
+          "en": "Number of equipments"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A number of equipments"
+          "en": "Number of pieces of equipment used."
         },
         "label": {
-          "en": "number of equipments"
+          "en": "Number of equipments"
         },
-        "usage": ""
+        "usage": {
+          "en": "Equipment is a material resource provided as part of an action. Depending on the programme, this may include computers, interactive whiteboards, WiFi connections, etc."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "number of equipments"
+        "en": "Number of equipments"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -11323,21 +11500,24 @@
           "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#integer"
         }
-      ]
+      ],
+      "usage": {
+        "en": "Equipment is a material resource provided as part of an action. Depending on the programme, this may include computers, interactive whiteboards, WiFi connections, etc."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/numberOfParticipants",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{931BD173-0F8D-4531-BB0B-8150A89B3565}",
       "ap-definition-en": {
-        "en": "A number of participants"
+        "en": "Number of people attending a conference or other gathering."
       },
       "ap-label-en": {
-        "en": "number of participants"
+        "en": "Number of attendees"
       },
       "codelist": [],
       "definition": {
-        "en": "A number of participants"
+        "en": "Number of people attending a conference or other gathering."
       },
       "domain": [
         {
@@ -11349,7 +11529,7 @@
         "EA-Domain": "ActionPlan",
         "EA-Domain-Guid": "{922CDABF-F6EF-47c3-80A5-F231384B6CF2}",
         "EA-Guid": "{931BD173-0F8D-4531-BB0B-8150A89B3565}",
-        "EA-Name": "numberOfParticipants",
+        "EA-Name": "numberOfAttendees",
         "EA-Package": "d4w",
         "EA-Range": "Integer",
         "EA-Type": "attribute",
@@ -11367,60 +11547,70 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "A number of participants"
+            "value": "Number of people attending a conference or other gathering."
           },
           {
             "key": "label-en",
             "note": "null",
-            "value": "number of participants"
+            "value": "Number of attendees"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "Number of people taking part in action-related activities, such as events. "
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A number of participants"
+          "en": "Number of people attending a conference or other gathering."
         },
         "ap-label-en": {
-          "en": "number of participants"
+          "en": "Number of attendees"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A number of participants"
+          "en": "Number of people attending a conference or other gathering."
         },
         "label": {
-          "en": "number of participants"
+          "en": "Number of attendees"
         },
-        "usage": ""
+        "usage": {
+          "en": "Number of people taking part in action-related activities, such as events. "
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "number of participants"
+        "en": "Number of attendees"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
-      "name": "numberOfParticipants",
+      "name": "numberOfAttendees",
       "range": [
         {
           "EA-Name": "Integer",
           "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#integer"
         }
-      ]
+      ],
+      "usage": {
+        "en": "Number of people taking part in action-related activities, such as events. "
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/occurence",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{62557F04-AFDE-4a9e-89B6-F030AEF414D1}",
       "ap-definition-en": {
-        "en": "An occurence"
+        "en": "Occurrence of event"
       },
       "ap-label-en": {
-        "en": "occurence"
+        "en": "Occurence"
       },
       "codelist": [],
       "definition": {
-        "en": "An occurence"
+        "en": "Occurrence of event"
       },
       "domain": [
         {
@@ -11432,12 +11622,17 @@
         "DestRoleTags": [
           {
             "key": "definition-en",
-            "note": "An occurence",
+            "note": "Occurrence of event",
             "value": "NOTE"
           },
           {
             "key": "label-en",
-            "note": "occurence",
+            "note": "Occurence",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "Occurrence of action-related event",
             "value": "NOTE"
           },
           {
@@ -11462,12 +11657,17 @@
         "RawTags": [
           {
             "key": "definition-en",
-            "note": "An occurence",
+            "note": "Occurrence of event",
             "value": "NOTE"
           },
           {
             "key": "label-en",
-            "note": "occurence",
+            "note": "Occurence",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "Occurrence of action-related event",
             "value": "NOTE"
           },
           {
@@ -11479,27 +11679,29 @@
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "An occurence"
+          "en": "Occurrence of event"
         },
         "ap-label-en": {
-          "en": "occurence"
+          "en": "Occurence"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "An occurence"
+          "en": "Occurrence of event"
         },
         "derived": "false",
         "destRole": "occurence",
         "label": {
-          "en": "occurence"
+          "en": "Occurence"
         },
         "sourceRole": "null",
-        "usage": ""
+        "usage": {
+          "en": "Occurrence of action-related event"
+        }
       },
       "generalization": [],
       "inpackage": "UNKNOWN",
       "label": {
-        "en": "occurence"
+        "en": "Occurence"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -11511,7 +11713,10 @@
           "EA-Package": "cv",
           "uri": "http://data.europa.eu/m8g/PublicEvent"
         }
-      ]
+      ],
+      "usage": {
+        "en": "Occurrence of action-related event"
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/operating system",
@@ -11706,14 +11911,14 @@
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{ABEBC1F1-B737-4a15-9903-AD75EB1FF8A3}",
       "ap-definition-en": {
-        "en": "A participant"
+        "en": "A participant to an action. A reference to a Qualified Person"
       },
       "ap-label-en": {
-        "en": "participant"
+        "en": "Participant"
       },
       "codelist": [],
       "definition": {
-        "en": "A participant"
+        "en": "A participant to an action. A reference to a Qualified Person"
       },
       "domain": [
         {
@@ -11729,13 +11934,18 @@
             "value": "NOTE"
           },
           {
+            "key": "usageNote-en",
+            "note": "Person taking part in the action, in the project. For example, a researcher in a research project, a participant in a promotional project or project, etc.",
+            "value": "NOTE"
+          },
+          {
             "key": "definition-en",
-            "note": "A participant",
+            "note": "A participant to an action. A reference to a Qualified Person",
             "value": "NOTE"
           },
           {
             "key": "label-en",
-            "note": "participant",
+            "note": "Participant",
             "value": "NOTE"
           }
         ],
@@ -11759,40 +11969,47 @@
             "value": "NOTE"
           },
           {
+            "key": "usageNote-en",
+            "note": "Person taking part in the action, in the project. For example, a researcher in a research project, a participant in a promotional project or project, etc.",
+            "value": "NOTE"
+          },
+          {
             "key": "definition-en",
-            "note": "A participant",
+            "note": "A participant to an action. A reference to a Qualified Person",
             "value": "NOTE"
           },
           {
             "key": "label-en",
-            "note": "participant",
+            "note": "Participant",
             "value": "NOTE"
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A participant"
+          "en": "A participant to an action. A reference to a Qualified Person"
         },
         "ap-label-en": {
-          "en": "participant"
+          "en": "Participant"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A participant"
+          "en": "A participant to an action. A reference to a Qualified Person"
         },
         "derived": "false",
         "destRole": "participant",
         "label": {
-          "en": "participant"
+          "en": "Participant"
         },
         "sourceRole": "null",
-        "usage": ""
+        "usage": {
+          "en": "Person taking part in the action, in the project. For example, a researcher in a research project, a participant in a promotional project or project, etc."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "participant"
+        "en": "Participant"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -11804,7 +12021,10 @@
           "EA-Package": "d4w",
           "uri": "http://data4wallonia.com/model/ProfilePerson"
         }
-      ]
+      ],
+      "usage": {
+        "en": "Person taking part in the action, in the project. For example, a researcher in a research project, a participant in a promotional project or project, etc."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/partner",
@@ -13011,14 +13231,14 @@
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{E9F51D94-156A-4c60-908E-4E504BFC45FC}",
       "ap-definition-en": {
-        "en": "A program"
+        "en": "Program (e.g. Digital Wallonia) to which the action is linked."
       },
       "ap-label-en": {
-        "en": "program"
+        "en": "Program"
       },
       "codelist": [],
       "definition": {
-        "en": "A program"
+        "en": "Program (e.g. Digital Wallonia) to which the action is linked."
       },
       "domain": [
         {
@@ -13034,13 +13254,18 @@
             "value": "NOTE"
           },
           {
+            "key": "usageNote-en",
+            "note": "Characterises the action by its link with an economic strategy programme.",
+            "value": "NOTE"
+          },
+          {
             "key": "definition-en",
-            "note": "A program",
+            "note": "Program (e.g. Digital Wallonia) to which the action is linked.",
             "value": "NOTE"
           },
           {
             "key": "label-en",
-            "note": "program",
+            "note": "Program",
             "value": "NOTE"
           }
         ],
@@ -13064,40 +13289,47 @@
             "value": "NOTE"
           },
           {
+            "key": "usageNote-en",
+            "note": "Characterises the action by its link with an economic strategy programme.",
+            "value": "NOTE"
+          },
+          {
             "key": "definition-en",
-            "note": "A program",
+            "note": "Program (e.g. Digital Wallonia) to which the action is linked.",
             "value": "NOTE"
           },
           {
             "key": "label-en",
-            "note": "program",
+            "note": "Program",
             "value": "NOTE"
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A program"
+          "en": "Program (e.g. Digital Wallonia) to which the action is linked."
         },
         "ap-label-en": {
-          "en": "program"
+          "en": "Program"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A program"
+          "en": "Program (e.g. Digital Wallonia) to which the action is linked."
         },
         "derived": "false",
         "destRole": "program",
         "label": {
-          "en": "program"
+          "en": "Program"
         },
         "sourceRole": "null",
-        "usage": ""
+        "usage": {
+          "en": "Characterises the action by its link with an economic strategy programme."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "program"
+        "en": "Program"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -13109,7 +13341,10 @@
           "EA-Package": "d4w",
           "uri": "http://data4wallonia.com/model/Program"
         }
-      ]
+      ],
+      "usage": {
+        "en": "Characterises the action by its link with an economic strategy programme."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/program",
@@ -13429,14 +13664,14 @@
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{FDE4150C-319D-40a0-A0E0-EFC97888BAE0}",
       "ap-definition-en": {
-        "en": "A progress status"
+        "en": "Progress status of the action."
       },
       "ap-label-en": {
-        "en": "progress status"
+        "en": "Progress status"
       },
       "codelist": [],
       "definition": {
-        "en": "A progress status"
+        "en": "Progress status of the action."
       },
       "domain": [
         {
@@ -13467,35 +13702,35 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "A progress status"
+            "value": "Progress status of the action."
           },
           {
             "key": "label-en",
             "note": "null",
-            "value": "progress status"
+            "value": "Progress status"
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A progress status"
+          "en": "Progress status of the action."
         },
         "ap-label-en": {
-          "en": "progress status"
+          "en": "Progress status"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A progress status"
+          "en": "Progress status of the action."
         },
         "label": {
-          "en": "progress status"
+          "en": "Progress status"
         },
         "usage": ""
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "progress status"
+        "en": "Progress status"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -13514,14 +13749,14 @@
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{9ECF441C-01EB-463c-8BBC-E7BA286F5A84}",
       "ap-definition-en": {
-        "en": "A project holder"
+        "en": "Person responsible for the action.  A reference to a Qualified Person"
       },
       "ap-label-en": {
-        "en": "project holder"
+        "en": "Project holder"
       },
       "codelist": [],
       "definition": {
-        "en": "A project holder"
+        "en": "Person responsible for the action.  A reference to a Qualified Person"
       },
       "domain": [
         {
@@ -13533,12 +13768,17 @@
         "DestRoleTags": [
           {
             "key": "definition-en",
-            "note": "A project holder",
+            "note": "Person responsible for the action.  A reference to a Qualified Person",
             "value": "NOTE"
           },
           {
             "key": "label-en",
-            "note": "project holder",
+            "note": "Project holder",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "The project holder is the person carrying out the the action.",
             "value": "NOTE"
           },
           {
@@ -13563,12 +13803,17 @@
         "RawTags": [
           {
             "key": "definition-en",
-            "note": "A project holder",
+            "note": "Person responsible for the action.  A reference to a Qualified Person",
             "value": "NOTE"
           },
           {
             "key": "label-en",
-            "note": "project holder",
+            "note": "Project holder",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "The project holder is the person carrying out the the action.",
             "value": "NOTE"
           },
           {
@@ -13580,27 +13825,29 @@
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A project holder"
+          "en": "Person responsible for the action.  A reference to a Qualified Person"
         },
         "ap-label-en": {
-          "en": "project holder"
+          "en": "Project holder"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A project holder"
+          "en": "Person responsible for the action.  A reference to a Qualified Person"
         },
         "derived": "false",
         "destRole": "projectHolder",
         "label": {
-          "en": "project holder"
+          "en": "Project holder"
         },
         "sourceRole": "null",
-        "usage": ""
+        "usage": {
+          "en": "The project holder is the person carrying out the the action."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "project holder"
+        "en": "Project holder"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -13612,7 +13859,10 @@
           "EA-Package": "d4w",
           "uri": "http://data4wallonia.com/model/ProfilePerson"
         }
-      ]
+      ],
+      "usage": {
+        "en": "The project holder is the person carrying out the the action."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/published date",
@@ -13890,14 +14140,14 @@
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{08F82D87-B7C4-4e20-AE15-7A1623FDC3F0}",
       "ap-definition-en": {
-        "en": "A reference action plan"
+        "en": "The reference Action Plan, the parent."
       },
       "ap-label-en": {
-        "en": "reference action plan"
+        "en": "Reference action plan"
       },
       "codelist": [],
       "definition": {
-        "en": "A reference action plan"
+        "en": "The reference Action Plan, the parent."
       },
       "domain": [
         {
@@ -13909,7 +14159,7 @@
         "DestRoleTags": [
           {
             "key": "label-en",
-            "note": "reference action plan",
+            "note": "Reference action plan",
             "value": "NOTE"
           },
           {
@@ -13919,7 +14169,12 @@
           },
           {
             "key": "definition-en",
-            "note": "A reference action plan",
+            "note": "The reference Action Plan, the parent.",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "The reference action is the action from which the current action may result.  The action may be a continuation of the previous action or a sub-action.",
             "value": "NOTE"
           }
         ],
@@ -13939,7 +14194,7 @@
         "RawTags": [
           {
             "key": "label-en",
-            "note": "reference action plan",
+            "note": "Reference action plan",
             "value": "NOTE"
           },
           {
@@ -13949,34 +14204,41 @@
           },
           {
             "key": "definition-en",
-            "note": "A reference action plan",
+            "note": "The reference Action Plan, the parent.",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "The reference action is the action from which the current action may result.  The action may be a continuation of the previous action or a sub-action.",
             "value": "NOTE"
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A reference action plan"
+          "en": "The reference Action Plan, the parent."
         },
         "ap-label-en": {
-          "en": "reference action plan"
+          "en": "Reference action plan"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A reference action plan"
+          "en": "The reference Action Plan, the parent."
         },
         "derived": "false",
         "destRole": "referenceActionPlan",
         "label": {
-          "en": "reference action plan"
+          "en": "Reference action plan"
         },
         "sourceRole": "null",
-        "usage": ""
+        "usage": {
+          "en": "The reference action is the action from which the current action may result.  The action may be a continuation of the previous action or a sub-action."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "reference action plan"
+        "en": "Reference action plan"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -13988,7 +14250,10 @@
           "EA-Package": "d4w",
           "uri": "http://data4wallonia.com/model/ActionPlan"
         }
-      ]
+      ],
+      "usage": {
+        "en": "The reference action is the action from which the current action may result.  The action may be a continuation of the previous action or a sub-action."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/referenceCategory",
@@ -14080,14 +14345,14 @@
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{62D9391A-41CB-496d-BBD5-DD4BC0A47F66}",
       "ap-definition-en": {
-        "en": "A reference category"
+        "en": "The reference category."
       },
       "ap-label-en": {
-        "en": "reference Category"
+        "en": "Reference Category"
       },
       "codelist": [],
       "definition": {
-        "en": "A reference category"
+        "en": "The reference category."
       },
       "domain": [
         {
@@ -14118,35 +14383,42 @@
           {
             "key": "label-en",
             "note": "null",
-            "value": "reference Category"
+            "value": "Reference Category"
           },
           {
             "key": "definition-en",
             "note": "null",
-            "value": "A reference category"
+            "value": "The reference category."
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "The reference category is the category of the taxonomy that the action plan develops in detail.  For example, an action may detail a funding method that has been implemented and is included in the taxonomy of a regional strategy."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A reference category"
+          "en": "The reference category."
         },
         "ap-label-en": {
-          "en": "reference Category"
+          "en": "Reference Category"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A reference category"
+          "en": "The reference category."
         },
         "label": {
-          "en": "reference Category"
+          "en": "Reference Category"
         },
-        "usage": ""
+        "usage": {
+          "en": "The reference category is the category of the taxonomy that the action plan develops in detail.  For example, an action may detail a funding method that has been implemented and is included in the taxonomy of a regional strategy."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "reference Category"
+        "en": "Reference Category"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -14158,21 +14430,24 @@
           "EA-Package": "DataTypes",
           "uri": "http://www.w3.org/2004/02/skos/core#Concept"
         }
-      ]
+      ],
+      "usage": {
+        "en": "The reference category is the category of the taxonomy that the action plan develops in detail.  For example, an action may detail a funding method that has been implemented and is included in the taxonomy of a regional strategy."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/referenceEvent",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{314E94FB-59ED-4777-8005-46F91A4CC5BA}",
       "ap-definition-en": {
-        "en": "A reference event"
+        "en": "The reference event."
       },
       "ap-label-en": {
-        "en": "reference event"
+        "en": "Reference event"
       },
       "codelist": [],
       "definition": {
-        "en": "A reference event"
+        "en": "The reference event."
       },
       "domain": [
         {
@@ -14184,7 +14459,7 @@
         "DestRoleTags": [
           {
             "key": "definition-en",
-            "note": "A reference event",
+            "note": "The reference event.",
             "value": "NOTE"
           },
           {
@@ -14194,7 +14469,7 @@
           },
           {
             "key": "label-en",
-            "note": "reference event",
+            "note": "Reference event",
             "value": "NOTE"
           }
         ],
@@ -14214,7 +14489,7 @@
         "RawTags": [
           {
             "key": "definition-en",
-            "note": "A reference event",
+            "note": "The reference event.",
             "value": "NOTE"
           },
           {
@@ -14224,26 +14499,26 @@
           },
           {
             "key": "label-en",
-            "note": "reference event",
+            "note": "Reference event",
             "value": "NOTE"
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A reference event"
+          "en": "The reference event."
         },
         "ap-label-en": {
-          "en": "reference event"
+          "en": "Reference event"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A reference event"
+          "en": "The reference event."
         },
         "derived": "false",
         "destRole": "referenceEvent",
         "label": {
-          "en": "reference event"
+          "en": "Reference event"
         },
         "sourceRole": "null",
         "usage": ""
@@ -14251,7 +14526,7 @@
       "generalization": [],
       "inpackage": "UNKNOWN",
       "label": {
-        "en": "reference event"
+        "en": "Reference event"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -14270,14 +14545,14 @@
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{D6EAF2B0-C092-45f3-8481-E4F112888BD4}",
       "ap-definition-en": {
-        "en": "A reference post"
+        "en": "The reference Post of the action."
       },
       "ap-label-en": {
-        "en": "reference post"
+        "en": "Reference post"
       },
       "codelist": [],
       "definition": {
-        "en": "A reference post"
+        "en": "The reference Post of the action."
       },
       "domain": [
         {
@@ -14289,12 +14564,17 @@
         "DestRoleTags": [
           {
             "key": "label-en",
-            "note": "reference post",
+            "note": "Reference post",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "The reference post (article) allows you to communicate freely on an action plan, to monitor it, to publish the results of the action, a list of prize-winners, etc. with complete editorial freedom.",
             "value": "NOTE"
           },
           {
             "key": "definition-en",
-            "note": "A reference post",
+            "note": "The reference Post of the action.",
             "value": "NOTE"
           },
           {
@@ -14319,12 +14599,17 @@
         "RawTags": [
           {
             "key": "label-en",
-            "note": "reference post",
+            "note": "Reference post",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "The reference post (article) allows you to communicate freely on an action plan, to monitor it, to publish the results of the action, a list of prize-winners, etc. with complete editorial freedom.",
             "value": "NOTE"
           },
           {
             "key": "definition-en",
-            "note": "A reference post",
+            "note": "The reference Post of the action.",
             "value": "NOTE"
           },
           {
@@ -14336,27 +14621,29 @@
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A reference post"
+          "en": "The reference Post of the action."
         },
         "ap-label-en": {
-          "en": "reference post"
+          "en": "Reference post"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A reference post"
+          "en": "The reference Post of the action."
         },
         "derived": "false",
         "destRole": "referencePost",
         "label": {
-          "en": "reference post"
+          "en": "Reference post"
         },
         "sourceRole": "null",
-        "usage": ""
+        "usage": {
+          "en": "The reference post (article) allows you to communicate freely on an action plan, to monitor it, to publish the results of the action, a list of prize-winners, etc. with complete editorial freedom."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "reference post"
+        "en": "Reference post"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -14368,7 +14655,10 @@
           "EA-Package": "d4w",
           "uri": "http://data4wallonia.com/model/Post"
         }
-      ]
+      ],
+      "usage": {
+        "en": "The reference post (article) allows you to communicate freely on an action plan, to monitor it, to publish the results of the action, a list of prize-winners, etc. with complete editorial freedom."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/referenceWebSite",
@@ -14735,14 +15025,14 @@
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{E6BB0979-1027-49c7-A30E-C7B6829F994D}",
       "ap-definition-en": {
-        "en": "A related file"
+        "en": "A file to download, an available file."
       },
       "ap-label-en": {
-        "en": "related file"
+        "en": "Related file"
       },
       "codelist": [],
       "definition": {
-        "en": "A related file"
+        "en": "A file to download, an available file."
       },
       "domain": [
         {
@@ -14773,35 +15063,42 @@
           {
             "key": "label-en",
             "note": "null",
-            "value": "related file"
+            "value": "Related file"
           },
           {
             "key": "definition-en",
             "note": "null",
-            "value": "A related file"
+            "value": "A file to download, an available file."
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "Used to make documents available for download (PDF, for example)."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A related file"
+          "en": "A file to download, an available file."
         },
         "ap-label-en": {
-          "en": "related file"
+          "en": "Related file"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A related file"
+          "en": "A file to download, an available file."
         },
         "label": {
-          "en": "related file"
+          "en": "Related file"
         },
-        "usage": ""
+        "usage": {
+          "en": "Used to make documents available for download (PDF, for example)."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "related file"
+        "en": "Related file"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -14813,7 +15110,10 @@
           "EA-Package": "d4w",
           "uri": "http://data4wallonia.com/model/File"
         }
-      ]
+      ],
+      "usage": {
+        "en": "Used to make documents available for download (PDF, for example)."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/relatedPerson",
@@ -16086,14 +16386,14 @@
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{35864668-A1D5-4410-9305-7727AA5F3C93}",
       "ap-definition-en": {
-        "en": "A short description"
+        "en": "A short description of the action."
       },
       "ap-label-en": {
-        "en": "short description"
+        "en": "Short description"
       },
       "codelist": [],
       "definition": {
-        "en": "A short description"
+        "en": "A short description of the action."
       },
       "domain": [
         {
@@ -16124,35 +16424,42 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "A short description"
+            "value": "A short description of the action."
           },
           {
             "key": "label-en",
             "note": "null",
-            "value": "short description"
+            "value": "Short description"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "The description is essential for describing the action succinctly and clearly.  As a complement to the title, it must convey the entire objective of the action and enable its scope to be understood, without any further explanation."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A short description"
+          "en": "A short description of the action."
         },
         "ap-label-en": {
-          "en": "short description"
+          "en": "Short description"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A short description"
+          "en": "A short description of the action."
         },
         "label": {
-          "en": "short description"
+          "en": "Short description"
         },
-        "usage": ""
+        "usage": {
+          "en": "The description is essential for describing the action succinctly and clearly.  As a complement to the title, it must convey the entire objective of the action and enable its scope to be understood, without any further explanation."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "short description"
+        "en": "Short description"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -16164,7 +16471,10 @@
           "EA-Package": "DataTypes",
           "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
         }
-      ]
+      ],
+      "usage": {
+        "en": "The description is essential for describing the action succinctly and clearly.  As a complement to the title, it must convey the entire objective of the action and enable its scope to be understood, without any further explanation."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/shortDescription",
@@ -17021,14 +17331,14 @@
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{C12F5634-80B4-4b1d-AE3F-F452E4C51356}",
       "ap-definition-en": {
-        "en": "A slug"
+        "en": "Last section of a URL."
       },
       "ap-label-en": {
-        "en": "slug"
+        "en": "Slug"
       },
       "codelist": [],
       "definition": {
-        "en": "A slug"
+        "en": "Last section of a URL."
       },
       "domain": [
         {
@@ -17059,35 +17369,42 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "A slug"
+            "value": "Last section of a URL."
           },
           {
             "key": "label-en",
             "note": "null",
-            "value": "slug"
+            "value": "Slug"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "Unique across all action plans, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A slug"
+          "en": "Last section of a URL."
         },
         "ap-label-en": {
-          "en": "slug"
+          "en": "Slug"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A slug"
+          "en": "Last section of a URL."
         },
         "label": {
-          "en": "slug"
+          "en": "Slug"
         },
-        "usage": ""
+        "usage": {
+          "en": "Unique across all action plans, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "slug"
+        "en": "Slug"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -17099,7 +17416,10 @@
           "EA-Package": "DataTypes",
           "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
         }
-      ]
+      ],
+      "usage": {
+        "en": "Unique across all action plans, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/socialNetwork",
@@ -17567,14 +17887,14 @@
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{C0286EC1-4733-444b-80B3-2E014B9711C5}",
       "ap-definition-en": {
-        "en": "A start date"
+        "en": "Start date of the action plan."
       },
       "ap-label-en": {
-        "en": "start date"
+        "en": "Start date "
       },
       "codelist": [],
       "definition": {
-        "en": "A start date"
+        "en": "Start date of the action plan."
       },
       "domain": [
         {
@@ -17604,35 +17924,42 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "A start date"
+            "value": "Start date of the action plan."
           },
           {
             "key": "label-en",
             "note": "null",
-            "value": "start date"
+            "value": "Start date "
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "Start date of the action or financial support linked to the action."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A start date"
+          "en": "Start date of the action plan."
         },
         "ap-label-en": {
-          "en": "start date"
+          "en": "Start date "
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A start date"
+          "en": "Start date of the action plan."
         },
         "label": {
-          "en": "start date"
+          "en": "Start date "
         },
-        "usage": ""
+        "usage": {
+          "en": "Start date of the action or financial support linked to the action."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "start date"
+        "en": "Start date "
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -17643,7 +17970,10 @@
           "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
         }
-      ]
+      ],
+      "usage": {
+        "en": "Start date of the action or financial support linked to the action."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/sticky",
@@ -18200,14 +18530,14 @@
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{940CAC98-7389-4acd-A893-BF2F2393764F}",
       "ap-definition-en": {
-        "en": "A title"
+        "en": "title of the action plan."
       },
       "ap-label-en": {
-        "en": "title"
+        "en": "Title"
       },
       "codelist": [],
       "definition": {
-        "en": "A title"
+        "en": "title of the action plan."
       },
       "domain": [
         {
@@ -18238,35 +18568,35 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "A title"
+            "value": "title of the action plan."
           },
           {
             "key": "label-en",
             "note": "null",
-            "value": "title"
+            "value": "Title"
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A title"
+          "en": "title of the action plan."
         },
         "ap-label-en": {
-          "en": "title"
+          "en": "Title"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A title"
+          "en": "title of the action plan."
         },
         "label": {
-          "en": "title"
+          "en": "Title"
         },
         "usage": ""
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "title"
+        "en": "Title"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -18370,14 +18700,14 @@
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{E76DFA52-44B4-4648-9981-CDCE4AD3F6F5}",
       "ap-definition-en": {
-        "en": "A total budget"
+        "en": "Total budget for the action"
       },
       "ap-label-en": {
-        "en": "total budget"
+        "en": "Total budget"
       },
       "codelist": [],
       "definition": {
-        "en": "A total budget"
+        "en": "Total budget for the action"
       },
       "domain": [
         {
@@ -18407,35 +18737,42 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "A total budget"
+            "value": "Total budget for the action"
           },
           {
             "key": "label-en",
             "note": "null",
-            "value": "total budget"
+            "value": "Total budget"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "Total budget allocated to the action, by the various public and private funding sources. Details may or may not be included in the Action Plan Profiles."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A total budget"
+          "en": "Total budget for the action"
         },
         "ap-label-en": {
-          "en": "total budget"
+          "en": "Total budget"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A total budget"
+          "en": "Total budget for the action"
         },
         "label": {
-          "en": "total budget"
+          "en": "Total budget"
         },
-        "usage": ""
+        "usage": {
+          "en": "Total budget allocated to the action, by the various public and private funding sources. Details may or may not be included in the Action Plan Profiles."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "total budget"
+        "en": "Total budget"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -18446,21 +18783,24 @@
           "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#decimal"
         }
-      ]
+      ],
+      "usage": {
+        "en": "Total budget allocated to the action, by the various public and private funding sources. Details may or may not be included in the Action Plan Profiles."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/totalWaloonBudget",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{B9138DEB-F4B0-45f5-ADC0-873445E78F07}",
       "ap-definition-en": {
-        "en": "A total wallong budget"
+        "en": "Walloon budget dedicated to the action. "
       },
       "ap-label-en": {
-        "en": "total walloon budget"
+        "en": "Total walloon budget"
       },
       "codelist": [],
       "definition": {
-        "en": "A total wallong budget"
+        "en": "Walloon budget dedicated to the action. "
       },
       "domain": [
         {
@@ -18490,35 +18830,42 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "A total wallong budget"
+            "value": "Walloon budget dedicated to the action. "
           },
           {
             "key": "label-en",
             "note": "null",
-            "value": "total walloon budget"
+            "value": "Total walloon budget"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "Total budget allocated by the Walloon Region to the action. Details may or may not be included in the Action Plan Profiles."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A total wallong budget"
+          "en": "Walloon budget dedicated to the action. "
         },
         "ap-label-en": {
-          "en": "total walloon budget"
+          "en": "Total walloon budget"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A total wallong budget"
+          "en": "Walloon budget dedicated to the action. "
         },
         "label": {
-          "en": "total walloon budget"
+          "en": "Total walloon budget"
         },
-        "usage": ""
+        "usage": {
+          "en": "Total budget allocated by the Walloon Region to the action. Details may or may not be included in the Action Plan Profiles."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "total walloon budget"
+        "en": "Total walloon budget"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -18529,7 +18876,10 @@
           "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#decimal"
         }
-      ]
+      ],
+      "usage": {
+        "en": "Total budget allocated by the Walloon Region to the action. Details may or may not be included in the Action Plan Profiles."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/type",
@@ -18702,14 +19052,14 @@
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{8ABAF383-F0B6-4ab4-8442-B92D0C3D18D7}",
       "ap-definition-en": {
-        "en": "A type"
+        "en": "Type of action taken"
       },
       "ap-label-en": {
-        "en": "type"
+        "en": "Type"
       },
       "codelist": [],
       "definition": {
-        "en": "A type"
+        "en": "Type of action taken"
       },
       "domain": [
         {
@@ -18739,35 +19089,35 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "A type"
+            "value": "Type of action taken"
           },
           {
             "key": "label-en",
             "note": "null",
-            "value": "type"
+            "value": "Type"
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A type"
+          "en": "Type of action taken"
         },
         "ap-label-en": {
-          "en": "type"
+          "en": "Type"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A type"
+          "en": "Type of action taken"
         },
         "label": {
-          "en": "type"
+          "en": "Type"
         },
         "usage": ""
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "type"
+        "en": "Type"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -18868,14 +19218,14 @@
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{86F1B936-6561-4af6-8B8A-1F343FC83169}",
       "ap-definition-en": {
-        "en": "A wallon region convention number"
+        "en": "A Walloon convention number"
       },
       "ap-label-en": {
-        "en": "wallon region convention number"
+        "en": "Walloon region convention number"
       },
       "codelist": [],
       "definition": {
-        "en": "A wallon region convention number"
+        "en": "A Walloon convention number"
       },
       "domain": [
         {
@@ -18906,39 +19256,46 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "A wallon region convention number"
+            "value": "A Walloon convention number"
           },
           {
             "key": "label-en",
             "note": "null",
-            "value": "wallon region convention number"
+            "value": "Walloon region convention number"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "Some actions have an agreement number granted by the Region."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "A wallon region convention number"
+          "en": "A Walloon convention number"
         },
         "ap-label-en": {
-          "en": "wallon region convention number"
+          "en": "Walloon region convention number"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "A wallon region convention number"
+          "en": "A Walloon convention number"
         },
         "label": {
-          "en": "wallon region convention number"
+          "en": "Walloon region convention number"
         },
-        "usage": ""
+        "usage": {
+          "en": "Some actions have an agreement number granted by the Region."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "wallon region convention number"
+        "en": "Walloon region convention number"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
-      "name": "wallonRegionConventionNumber",
+      "name": "walloonRegionConventionNumber",
       "range": [
         {
           "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
@@ -18946,7 +19303,10 @@
           "EA-Package": "DataTypes",
           "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
         }
-      ]
+      ],
+      "usage": {
+        "en": "Some actions have an agreement number granted by the Region."
+      }
     },
     {
       "@id": "http://data4wallonia.com/model/website",
@@ -19141,14 +19501,14 @@
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{9803528A-31E7-45ed-A93F-291704862340}",
       "ap-definition-en": {
-        "en": "An Action Plan Profile"
+        "en": "A link to a profile with a role in it."
       },
       "ap-label-en": {
-        "en": "action plan profile"
+        "en": "Action Plan Profile"
       },
       "codelist": [],
       "definition": {
-        "en": "An Action Plan Profile"
+        "en": "A link to a profile with a role in it."
       },
       "domain": [
         {
@@ -19164,13 +19524,18 @@
             "value": "NOTE"
           },
           {
+            "key": "usageNote-en",
+            "note": "The link indicates the profile, its role and any financial commitment (investment, salary costs, etc.).",
+            "value": "NOTE"
+          },
+          {
             "key": "definition-en",
-            "note": "An Action Plan Profile",
+            "note": "A link to a profile with a role in it.",
             "value": "NOTE"
           },
           {
             "key": "label-en",
-            "note": "action plan profile",
+            "note": "Action Plan Profile",
             "value": "NOTE"
           }
         ],
@@ -19194,40 +19559,47 @@
             "value": "NOTE"
           },
           {
+            "key": "usageNote-en",
+            "note": "The link indicates the profile, its role and any financial commitment (investment, salary costs, etc.).",
+            "value": "NOTE"
+          },
+          {
             "key": "definition-en",
-            "note": "An Action Plan Profile",
+            "note": "A link to a profile with a role in it.",
             "value": "NOTE"
           },
           {
             "key": "label-en",
-            "note": "action plan profile",
+            "note": "Action Plan Profile",
             "value": "NOTE"
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "An Action Plan Profile"
+          "en": "A link to a profile with a role in it."
         },
         "ap-label-en": {
-          "en": "action plan profile"
+          "en": "Action Plan Profile"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "An Action Plan Profile"
+          "en": "A link to a profile with a role in it."
         },
         "derived": "false",
         "destRole": "actionPlanProfile",
         "label": {
-          "en": "action plan profile"
+          "en": "Action Plan Profile"
         },
         "sourceRole": "actionPlan",
-        "usage": ""
+        "usage": {
+          "en": "The link indicates the profile, its role and any financial commitment (investment, salary costs, etc.)."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "action plan profile"
+        "en": "Action Plan Profile"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -19239,7 +19611,10 @@
           "EA-Package": "d4w",
           "uri": "http://data4wallonia.com/resource/model/ActionPlanProfile"
         }
-      ]
+      ],
+      "usage": {
+        "en": "The link indicates the profile, its role and any financial commitment (investment, salary costs, etc.)."
+      }
     },
     {
       "@id": "http://data4wallonia.com/resource/model/additionalDescription",
@@ -19416,14 +19791,14 @@
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{85725371-9490-4f3d-89AF-034E11F21C6C}",
       "ap-definition-en": {
-        "en": "An annual budget allocation"
+        "en": "A reference to an annual budget"
       },
       "ap-label-en": {
-        "en": "annual budget allocation"
+        "en": "Annual Budget Allocation"
       },
       "codelist": [],
       "definition": {
-        "en": "An annual budget allocation"
+        "en": "A reference to an annual budget"
       },
       "domain": [
         {
@@ -19439,13 +19814,18 @@
             "value": "NOTE"
           },
           {
+            "key": "usageNote-en",
+            "note": "Indicates a sum allocated to the action for a specific year",
+            "value": "NOTE"
+          },
+          {
             "key": "label-en",
-            "note": "annual budget allocation",
+            "note": "Annual Budget Allocation",
             "value": "NOTE"
           },
           {
             "key": "definition-en",
-            "note": "An annual budget allocation",
+            "note": "A reference to an annual budget",
             "value": "NOTE"
           }
         ],
@@ -19469,40 +19849,47 @@
             "value": "NOTE"
           },
           {
+            "key": "usageNote-en",
+            "note": "Indicates a sum allocated to the action for a specific year",
+            "value": "NOTE"
+          },
+          {
             "key": "label-en",
-            "note": "annual budget allocation",
+            "note": "Annual Budget Allocation",
             "value": "NOTE"
           },
           {
             "key": "definition-en",
-            "note": "An annual budget allocation",
+            "note": "A reference to an annual budget",
             "value": "NOTE"
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "An annual budget allocation"
+          "en": "A reference to an annual budget"
         },
         "ap-label-en": {
-          "en": "annual budget allocation"
+          "en": "Annual Budget Allocation"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "An annual budget allocation"
+          "en": "A reference to an annual budget"
         },
         "derived": "false",
         "destRole": "annualBudgetAllocation",
         "label": {
-          "en": "annual budget allocation"
+          "en": "Annual Budget Allocation"
         },
         "sourceRole": "null",
-        "usage": ""
+        "usage": {
+          "en": "Indicates a sum allocated to the action for a specific year"
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "annual budget allocation"
+        "en": "Annual Budget Allocation"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -19514,7 +19901,10 @@
           "EA-Package": "d4w",
           "uri": "http://data4wallonia.com/resource/model/AnnualBudget"
         }
-      ]
+      ],
+      "usage": {
+        "en": "Indicates a sum allocated to the action for a specific year"
+      }
     },
     {
       "@id": "http://data4wallonia.com/resource/model/budget",
@@ -20440,14 +20830,14 @@
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{CF569294-405F-4e7e-A64B-FC423D3C0197}",
       "ap-definition-en": {
-        "en": "The number of beneficiaries of the Action Plan."
+        "en": "Number of beneficiaries of the action."
       },
       "ap-label-en": {
-        "en": "number of beneficiaries"
+        "en": "Number of beneficiaries"
       },
       "codelist": [],
       "definition": {
-        "en": "The number of beneficiaries of the Action Plan."
+        "en": "Number of beneficiaries of the action."
       },
       "domain": [
         {
@@ -20477,35 +20867,42 @@
           {
             "key": "label-en",
             "note": "null",
-            "value": "number of beneficiaries"
+            "value": "Number of beneficiaries"
           },
           {
             "key": "definition-en",
             "note": "null",
-            "value": "The number of beneficiaries of the Action Plan."
+            "value": "Number of beneficiaries of the action."
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "A beneficiary is a stakeholder (company, school, etc.) that has received aid, won a call for projects, received support for certification, exhibited on an international mission stand, received digital equipment, etc."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "The number of beneficiaries of the Action Plan."
+          "en": "Number of beneficiaries of the action."
         },
         "ap-label-en": {
-          "en": "number of beneficiaries"
+          "en": "Number of beneficiaries"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "The number of beneficiaries of the Action Plan."
+          "en": "Number of beneficiaries of the action."
         },
         "label": {
-          "en": "number of beneficiaries"
+          "en": "Number of beneficiaries"
         },
-        "usage": ""
+        "usage": {
+          "en": "A beneficiary is a stakeholder (company, school, etc.) that has received aid, won a call for projects, received support for certification, exhibited on an international mission stand, received digital equipment, etc."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "number of beneficiaries"
+        "en": "Number of beneficiaries"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -20516,21 +20913,24 @@
           "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#integer"
         }
-      ]
+      ],
+      "usage": {
+        "en": "A beneficiary is a stakeholder (company, school, etc.) that has received aid, won a call for projects, received support for certification, exhibited on an international mission stand, received digital equipment, etc."
+      }
     },
     {
       "@id": "http://data4wallonia.com/resource/model/numberOfOccurences",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{8F57685A-5FC3-4940-9C36-A7A1FE8B0B5B}",
       "ap-definition-en": {
-        "en": "The number of occurences of the Action Plan."
+        "en": "Number of events linked to the action."
       },
       "ap-label-en": {
-        "en": "number of occurences"
+        "en": "Number of occurences"
       },
       "codelist": [],
       "definition": {
-        "en": "The number of occurences of the Action Plan."
+        "en": "Number of events linked to the action."
       },
       "domain": [
         {
@@ -20560,35 +20960,42 @@
           {
             "key": "label-en",
             "note": "null",
-            "value": "number of occurences"
+            "value": "Number of occurences"
           },
           {
             "key": "definition-en",
             "note": "null",
-            "value": "The number of occurences of the Action Plan."
+            "value": "Number of events linked to the action."
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "An event is a physical or virtual gathering of participants. Depending on the programme, these may include conferences, webinars, coding training courses, international missions, etc."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "The number of occurences of the Action Plan."
+          "en": "Number of events linked to the action."
         },
         "ap-label-en": {
-          "en": "number of occurences"
+          "en": "Number of occurences"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "The number of occurences of the Action Plan."
+          "en": "Number of events linked to the action."
         },
         "label": {
-          "en": "number of occurences"
+          "en": "Number of occurences"
         },
-        "usage": ""
+        "usage": {
+          "en": "An event is a physical or virtual gathering of participants. Depending on the programme, these may include conferences, webinars, coding training courses, international missions, etc."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "number of occurences"
+        "en": "Number of occurences"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -20599,7 +21006,10 @@
           "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#integer"
         }
-      ]
+      ],
+      "usage": {
+        "en": "An event is a physical or virtual gathering of participants. Depending on the programme, these may include conferences, webinars, coding training courses, international missions, etc."
+      }
     },
     {
       "@id": "http://data4wallonia.com/resource/model/profile",
@@ -22003,6 +22413,101 @@
           "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
         }
       ]
+    },
+    {
+      "@id": "http://purl.org/dc/terms/identifier",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{A33F01C5-65A8-4f6c-B995-ABE270F105A7}",
+      "ap-definition-en": {
+        "en": "A common and non-nullable action plan identifier"
+      },
+      "ap-label-en": {
+        "en": "Id"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A common and non-nullable action plan identifier"
+      },
+      "domain": [
+        {
+          "EA-Name": "ActionPlan",
+          "uri": "http://data4wallonia.com/model/ActionPlan"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "ActionPlan",
+        "EA-Domain-Guid": "{922CDABF-F6EF-47c3-80A5-F231384B6CF2}",
+        "EA-Guid": "{A33F01C5-65A8-4f6c-B995-ABE270F105A7}",
+        "EA-Name": "id",
+        "EA-Package": "d4w",
+        "EA-Range": "Text",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "Id"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "A common and non-nullable action plan identifier"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "A single ID for all uses and connections between databases"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://purl.org/dc/terms/identifier"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A common and non-nullable action plan identifier"
+        },
+        "ap-label-en": {
+          "en": "Id"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A common and non-nullable action plan identifier"
+        },
+        "label": {
+          "en": "Id"
+        },
+        "usage": {
+          "en": "A single ID for all uses and connections between databases"
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "Id"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "id",
+      "range": [
+        {
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "usage": {
+        "en": "A single ID for all uses and connections between databases"
+      }
     },
     {
       "@id": "http://purl.org/dc/terms/identifier",
@@ -25513,13 +26018,13 @@
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{922CDABF-F6EF-47c3-80A5-F231384B6CF2}",
       "ap-definition-en": {
-        "en": "An action plan"
+        "en": "An Action Plan can represent any action carried out with public and/or private funding, and for which clear and precise objectives have been set. Examples: regional funding for a particular theme or strategy, calls for projects, etc."
       },
       "ap-label-en": {
         "en": "Action Plan"
       },
       "definition": {
-        "en": "An action plan"
+        "en": "An Action Plan can represent any action carried out with public and/or private funding, and for which clear and precise objectives have been set. Examples: regional funding for a particular theme or strategy, calls for projects, etc."
       },
       "extra": {
         "EA-Guid": "{922CDABF-F6EF-47c3-80A5-F231384B6CF2}",
@@ -25537,7 +26042,7 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "An action plan"
+            "value": "An Action Plan can represent any action carried out with public and/or private funding, and for which clear and precise objectives have been set. Examples: regional funding for a particular theme or strategy, calls for projects, etc."
           },
           {
             "key": "label-en",
@@ -25553,14 +26058,14 @@
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "An action plan"
+          "en": "An Action Plan can represent any action carried out with public and/or private funding, and for which clear and precise objectives have been set. Examples: regional funding for a particular theme or strategy, calls for projects, etc."
         },
         "ap-label-en": {
           "en": "Action Plan"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "An action plan"
+          "en": "An Action Plan can represent any action carried out with public and/or private funding, and for which clear and precise objectives have been set. Examples: regional funding for a particular theme or strategy, calls for projects, etc."
         },
         "label": {
           "en": "Action Plan"
@@ -27856,7 +28361,7 @@
   "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.0/Changelog.md",
   "template": "d4wmo-generic_en.j2",
   "title": "Data4Wallonia Generic Model",
-  "toolchaincommit": "db555d70dc9df9be56af3f1c02918ebc53346ee3",
+  "toolchaincommit": "a92c53e229210d89a4626a49ee4ef280dc439c29",
   "toolchainversion": "3",
   "translation": [
     {

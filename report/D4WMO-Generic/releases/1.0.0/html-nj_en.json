@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/2795badf5fac0c62eaf581970ec084fea648f248",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/2795badf5fac0c62eaf581970ec084fea648f248/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/272ac33187ad6df1b82f3b8fe98b9a6dc461d984",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/272ac33187ad6df1b82f3b8fe98b9a6dc461d984/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-Generic/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -1546,13 +1546,13 @@
       },
       "sort": "Action Plan",
       "description": {
-        "en": "An action plan"
+        "en": "An Action Plan can represent any action carried out with public and/or private funding, and for which clear and precise objectives have been set. Examples: regional funding for a particular theme or strategy, calls for projects, etc."
       },
       "usage": {},
       "parents": [],
       "rawTags": {
         "uri": "http://data4wallonia.com/model/ActionPlan",
-        "definition-en": "An action plan",
+        "definition-en": "An Action Plan can represent any action carried out with public and/or private funding, and for which clear and precise objectives have been set. Examples: regional funding for a particular theme or strategy, calls for projects, etc.",
         "label-en": "Action Plan",
         "class-usage-scope": "main"
       },
@@ -1560,14 +1560,16 @@
         {
           "uri": "http://data4wallonia.com/model/additionalDescription",
           "name": "additionalDescription",
-          "sort": "additional description",
+          "sort": "Additional Description",
           "label": {
-            "en": "additional description"
+            "en": "Additional Description"
           },
           "description": {
-            "en": "An additional description"
+            "en": "An additional descriptive text to the Short Description"
           },
-          "usage": {},
+          "usage": {
+            "en": "Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -1593,21 +1595,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/additionalDescription",
-            "definition-en": "An additional description",
-            "label-en": "additional description"
+            "definition-en": "An additional descriptive text to the Short Description",
+            "label-en": "Additional Description",
+            "usageNote-en": "Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc."
           }
         },
         {
           "uri": "http://data4wallonia.com/model/ambition",
           "name": "ambition",
-          "sort": "ambition",
+          "sort": "Ambition",
           "label": {
-            "en": "ambition"
+            "en": "Ambition"
           },
           "description": {
-            "en": "An ambition"
+            "en": "A reference to a strategic ambition."
           },
-          "usage": {},
+          "usage": {
+            "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.)."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -1633,21 +1638,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/ambition",
-            "definition-en": "An ambition",
-            "label-en": "ambition"
+            "definition-en": "A reference to a strategic ambition.",
+            "label-en": "Ambition",
+            "usageNote-en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.)."
           }
         },
         {
           "uri": "http://data4wallonia.com/model/beneficiarie",
-          "name": "beneficiarie",
-          "sort": "beneficiarie",
+          "name": "beneficiaries",
+          "sort": "Beneficiaries",
           "label": {
-            "en": "beneficiarie"
+            "en": "Beneficiaries"
           },
           "description": {
-            "en": "A beneficiarie"
+            "en": "A list of beneficiaries (profiles)."
           },
-          "usage": {},
+          "usage": {
+            "en": "TODO"
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -1672,22 +1680,25 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "definition-en": "A beneficiarie",
-            "label-en": "beneficiarie",
+            "definition-en": "A list of beneficiaries (profiles).",
+            "label-en": "Beneficiaries",
+            "usageNote-en": "null",
             "uri": "http://data4wallonia.com/model/beneficiarie"
           }
         },
         {
           "uri": "http://data4wallonia.com/model/category",
           "name": "category",
-          "sort": "category",
+          "sort": "Category",
           "label": {
-            "en": "category"
+            "en": "Category"
           },
           "description": {
-            "en": "A classification"
+            "en": "A reference to an element in the taxonomy"
           },
-          "usage": {},
+          "usage": {
+            "en": "The taxonomy categories can be used to enrich the action by linking to other content, filtering and sorting."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -1713,21 +1724,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/category",
-            "definition-en": "A classification",
-            "label-en": "category"
+            "definition-en": "A reference to an element in the taxonomy",
+            "label-en": "Category",
+            "usageNote-en": "The taxonomy categories can be used to enrich the action by linking to other content, filtering and sorting."
           }
         },
         {
           "uri": "http://data4wallonia.com/model/clientSite",
           "name": "clientSite",
-          "sort": "client site",
+          "sort": "Client Site",
           "label": {
-            "en": "client site"
+            "en": "Client Site"
           },
           "description": {
-            "en": "A client site"
+            "en": "A reference to a Client site"
           },
-          "usage": {},
+          "usage": {
+            "en": "Identification of a client application (website, business application or other) using the action form."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -1753,21 +1767,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/clientSite",
-            "definition-en": "A client site",
-            "label-en": "client site"
+            "definition-en": "A reference to a Client site",
+            "label-en": "Client Site",
+            "usageNote-en": "Identification of a client application (website, business application or other) using the action form."
           }
         },
         {
           "uri": "http://data4wallonia.com/model/contactPerson",
           "name": "contactPerson",
-          "sort": "contact person",
+          "sort": "Contact Person",
           "label": {
-            "en": "contact person"
+            "en": "Contact Person"
           },
           "description": {
-            "en": "A contact person"
+            "en": "Contact person, referent. A reference to a Qualified Person"
           },
-          "usage": {},
+          "usage": {
+            "en": "A person to whom the target audience can turn for explanations and more information about the project. This person will often be attached to the coordinator or promoter"
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -1792,22 +1809,25 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "contact person",
+            "label-en": "Contact Person",
             "uri": "http://data4wallonia.com/model/contactPerson",
-            "definition-en": "A contact person"
+            "definition-en": "Contact person, referent. A reference to a Qualified Person",
+            "usageNote-en": "A person to whom the target audience can turn for explanations and more information about the project. This person will often be attached to the coordinator or promoter"
           }
         },
         {
           "uri": "http://data4wallonia.com/model/contactPoint",
           "name": "contactPoint",
-          "sort": "contact point",
+          "sort": "Contact Point",
           "label": {
-            "en": "contact point"
+            "en": "Contact Point"
           },
           "description": {
-            "en": "A contact point"
+            "en": "A reference to a contact point."
           },
-          "usage": {},
+          "usage": {
+            "en": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -1832,22 +1852,25 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "contact point",
-            "definition-en": "A contact point",
+            "usageNote-en": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc.",
+            "label-en": "Contact Point",
+            "definition-en": "A reference to a contact point.",
             "uri": "http://data4wallonia.com/model/contactPoint"
           }
         },
         {
           "uri": "http://data4wallonia.com/model/endDate",
           "name": "endDate",
-          "sort": "end date",
+          "sort": "End Date",
           "label": {
-            "en": "end date"
+            "en": "End Date"
           },
           "description": {
-            "en": "A end date"
+            "en": "An action end date"
           },
-          "usage": {},
+          "usage": {
+            "en": "The end date indicates the expected (if in progress) or actual (if completed) completion date."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -1873,21 +1896,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/endDate",
-            "definition-en": "A end date",
-            "label-en": "end date"
+            "definition-en": "An action end date",
+            "label-en": "End Date",
+            "usageNote-en": "The end date indicates the expected (if in progress) or actual (if completed) completion date."
           }
         },
         {
           "uri": "http://data4wallonia.com/model/fullTimeEquivalent",
           "name": "fullTimeEquivalent",
-          "sort": "full time equivalent",
+          "sort": "Full time equivalent",
           "label": {
-            "en": "full time equivalent"
+            "en": "Full time equivalent"
           },
           "description": {
-            "en": "A full time equivalent"
+            "en": "Number of full-time equivalent employees"
           },
-          "usage": {},
+          "usage": {
+            "en": "Number of people (full-time equivalent) working on an action."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -1913,21 +1939,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/fullTimeEquivalent",
-            "definition-en": "A full time equivalent",
-            "label-en": "full time equivalent"
+            "definition-en": "Number of full-time equivalent employees",
+            "label-en": "Full time equivalent",
+            "usageNote-en": "Number of people (full-time equivalent) working on an action."
           }
         },
         {
           "uri": "http://data4wallonia.com/model/idForAccounting",
           "name": "idForAccounting",
-          "sort": "id for accounting",
+          "sort": "Id for accounting",
           "label": {
-            "en": "id for accounting"
+            "en": "Id for accounting"
           },
           "description": {
-            "en": "An id for accounting"
+            "en": "Relationship with the funder accounting system."
           },
-          "usage": {},
+          "usage": {
+            "en": "Enables a link to be established between a project and the accounts of the funding organisation."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -1953,21 +1982,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/idForAccounting",
-            "definition-en": "An id for accounting",
-            "label-en": "id for accounting"
+            "definition-en": "Relationship with the funder accounting system.",
+            "label-en": "Id for accounting",
+            "usageNote-en": "Enables a link to be established between a project and the accounts of the funding organisation."
           }
         },
         {
           "uri": "http://data4wallonia.com/model/image",
           "name": "image",
-          "sort": "image",
+          "sort": "Image",
           "label": {
-            "en": "image"
+            "en": "Image"
           },
           "description": {
-            "en": "An image"
+            "en": "Reference to an Asset."
           },
-          "usage": {},
+          "usage": {
+            "en": "Link to a reusable image.  This can be a simple image, or a banner representing the action."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -1993,21 +2025,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/image",
-            "label-en": "image",
-            "definition-en": "An image"
+            "label-en": "Image",
+            "definition-en": "Reference to an Asset.",
+            "usageNote-en": "Link to a reusable image.  This can be a simple image, or a banner representing the action."
           }
         },
         {
           "uri": "http://data4wallonia.com/model/inOperation",
           "name": "inOperation",
-          "sort": "in operation",
+          "sort": "In operation",
           "label": {
-            "en": "in operation"
+            "en": "In operation"
           },
           "description": {
-            "en": "An operation"
+            "en": "A boolean indicating whether the action leads to a concrete result."
           },
-          "usage": {},
+          "usage": {
+            "en": "This information specifies whether the action resulted in commercial exploitation, or has an impact on another current or future action."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2033,21 +2068,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/inOperation",
-            "definition-en": "An operation",
-            "label-en": "in operation"
+            "definition-en": "A boolean indicating whether the action leads to a concrete result.",
+            "label-en": "In operation",
+            "usageNote-en": "This information specifies whether the action resulted in commercial exploitation, or has an impact on another current or future action."
           }
         },
         {
           "uri": "http://data4wallonia.com/model/leaderMission",
           "name": "leaderMission",
-          "sort": "leader mission",
+          "sort": "Leader mission",
           "label": {
-            "en": "leader mission"
+            "en": "Leader mission"
           },
           "description": {
-            "en": "A leader mission"
+            "en": "Action leader's mission"
           },
-          "usage": {},
+          "usage": {
+            "en": "Indicates the main missions of the action leader (role of this stakeholder). Potential missions : Communication, Governance, Transformation, Watch."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2073,21 +2111,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/leaderMission",
-            "definition-en": "A leader mission",
-            "label-en": "leader mission"
+            "definition-en": "Action leader's mission",
+            "label-en": "Leader mission",
+            "usageNote-en": "Indicates the main missions of the action leader (role of this stakeholder). Potential missions : Communication, Governance, Transformation, Watch."
           }
         },
         {
           "uri": "http://data4wallonia.com/model/marketingShortDescription",
           "name": "marketingShortDescription",
-          "sort": "marketing short description",
+          "sort": "Marketing short description",
           "label": {
-            "en": "marketing short description"
+            "en": "Marketing short description"
           },
           "description": {
-            "en": "A marketing short description"
+            "en": "Brief marketing description of an action"
           },
-          "usage": {},
+          "usage": {
+            "en": "This is a succinct and clear description of the project, in « promotional » form, i.e. aimed at the target audience, and is often not very technical.  In addition to the marketing title, it should give a full account of the objective of the action and ena"
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2113,21 +2154,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/marketingShortDescription",
-            "definition-en": "A marketing short description",
-            "label-en": "marketing short description"
+            "definition-en": "Brief marketing description of an action",
+            "label-en": "Marketing short description",
+            "usageNote-en": "This is a succinct and clear description of the project, in « promotional » form, i.e. aimed at the target audience, and is often not very technical.  In addition to the marketing title, it should give a full account of the objective of the action and ena"
           }
         },
         {
           "uri": "http://data4wallonia.com/model/marketingTitle",
           "name": "marketingTitle",
-          "sort": "marketing title",
+          "sort": "Marketing title",
           "label": {
-            "en": "marketing title"
+            "en": "Marketing title"
           },
           "description": {
-            "en": "A marketing title"
+            "en": "Promotional title or catchphrase aimed at a specific audience."
           },
-          "usage": {},
+          "usage": {
+            "en": "If the title is difficult to understand (the technical name of a measure, for example), it is a good idea to use a Marketing Title.  This allows you to name the action with a title, a catchphrase that the target audience can understand."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2153,21 +2197,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/marketingTitle",
-            "definition-en": "A marketing title",
-            "label-en": "marketing title"
+            "definition-en": "Promotional title or catchphrase aimed at a specific audience.",
+            "label-en": "Marketing title",
+            "usageNote-en": "If the title is difficult to understand (the technical name of a measure, for example), it is a good idea to use a Marketing Title.  This allows you to name the action with a title, a catchphrase that the target audience can understand."
           }
         },
         {
           "uri": "http://data4wallonia.com/model/numberOfEquipments",
           "name": "numberOfEquipments",
-          "sort": "number of equipments",
+          "sort": "Number of equipments",
           "label": {
-            "en": "number of equipments"
+            "en": "Number of equipments"
           },
           "description": {
-            "en": "A number of equipments"
+            "en": "Number of pieces of equipment used."
           },
-          "usage": {},
+          "usage": {
+            "en": "Equipment is a material resource provided as part of an action. Depending on the programme, this may include computers, interactive whiteboards, WiFi connections, etc."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2193,21 +2240,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/numberOfEquipments",
-            "definition-en": "A number of equipments",
-            "label-en": "number of equipments"
+            "definition-en": "Number of pieces of equipment used.",
+            "label-en": "Number of equipments",
+            "usageNote-en": "Equipment is a material resource provided as part of an action. Depending on the programme, this may include computers, interactive whiteboards, WiFi connections, etc."
           }
         },
         {
           "uri": "http://data4wallonia.com/model/numberOfParticipants",
-          "name": "numberOfParticipants",
-          "sort": "number of participants",
+          "name": "numberOfAttendees",
+          "sort": "Number of attendees",
           "label": {
-            "en": "number of participants"
+            "en": "Number of attendees"
           },
           "description": {
-            "en": "A number of participants"
+            "en": "Number of people attending a conference or other gathering."
           },
-          "usage": {},
+          "usage": {
+            "en": "Number of people taking part in action-related activities, such as events. "
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2233,21 +2283,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/numberOfParticipants",
-            "definition-en": "A number of participants",
-            "label-en": "number of participants"
+            "definition-en": "Number of people attending a conference or other gathering.",
+            "label-en": "Number of attendees",
+            "usageNote-en": "Number of people taking part in action-related activities, such as events. "
           }
         },
         {
           "uri": "http://data4wallonia.com/model/occurence",
           "name": "occurence",
-          "sort": "occurence",
+          "sort": "Occurence",
           "label": {
-            "en": "occurence"
+            "en": "Occurence"
           },
           "description": {
-            "en": "An occurence"
+            "en": "Occurrence of event"
           },
-          "usage": {},
+          "usage": {
+            "en": "Occurrence of action-related event"
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2272,22 +2325,25 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "definition-en": "An occurence",
-            "label-en": "occurence",
+            "definition-en": "Occurrence of event",
+            "label-en": "Occurence",
+            "usageNote-en": "Occurrence of action-related event",
             "uri": "http://data4wallonia.com/model/occurence"
           }
         },
         {
           "uri": "http://data4wallonia.com/model/participant",
           "name": "participant",
-          "sort": "participant",
+          "sort": "Participant",
           "label": {
-            "en": "participant"
+            "en": "Participant"
           },
           "description": {
-            "en": "A participant"
+            "en": "A participant to an action. A reference to a Qualified Person"
           },
-          "usage": {},
+          "usage": {
+            "en": "Person taking part in the action, in the project. For example, a researcher in a research project, a participant in a promotional project or project, etc."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2313,21 +2369,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/participant",
-            "definition-en": "A participant",
-            "label-en": "participant"
+            "usageNote-en": "Person taking part in the action, in the project. For example, a researcher in a research project, a participant in a promotional project or project, etc.",
+            "definition-en": "A participant to an action. A reference to a Qualified Person",
+            "label-en": "Participant"
           }
         },
         {
           "uri": "http://data4wallonia.com/model/program",
           "name": "program",
-          "sort": "program",
+          "sort": "Program",
           "label": {
-            "en": "program"
+            "en": "Program"
           },
           "description": {
-            "en": "A program"
+            "en": "Program (e.g. Digital Wallonia) to which the action is linked."
           },
-          "usage": {},
+          "usage": {
+            "en": "Characterises the action by its link with an economic strategy programme."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2353,19 +2412,20 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/program",
-            "definition-en": "A program",
-            "label-en": "program"
+            "usageNote-en": "Characterises the action by its link with an economic strategy programme.",
+            "definition-en": "Program (e.g. Digital Wallonia) to which the action is linked.",
+            "label-en": "Program"
           }
         },
         {
           "uri": "http://data4wallonia.com/model/progressStatus",
           "name": "progressStatus",
-          "sort": "progress status",
+          "sort": "Progress status",
           "label": {
-            "en": "progress status"
+            "en": "Progress status"
           },
           "description": {
-            "en": "A progress status"
+            "en": "Progress status of the action."
           },
           "usage": {},
           "domain": [
@@ -2393,21 +2453,23 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/progressStatus",
-            "definition-en": "A progress status",
-            "label-en": "progress status"
+            "definition-en": "Progress status of the action.",
+            "label-en": "Progress status"
           }
         },
         {
           "uri": "http://data4wallonia.com/model/projectHolder",
           "name": "projectHolder",
-          "sort": "project holder",
+          "sort": "Project holder",
           "label": {
-            "en": "project holder"
+            "en": "Project holder"
           },
           "description": {
-            "en": "A project holder"
+            "en": "Person responsible for the action.  A reference to a Qualified Person"
           },
-          "usage": {},
+          "usage": {
+            "en": "The project holder is the person carrying out the the action."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2432,22 +2494,25 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "definition-en": "A project holder",
-            "label-en": "project holder",
+            "definition-en": "Person responsible for the action.  A reference to a Qualified Person",
+            "label-en": "Project holder",
+            "usageNote-en": "The project holder is the person carrying out the the action.",
             "uri": "http://data4wallonia.com/model/projectHolder"
           }
         },
         {
           "uri": "http://data4wallonia.com/model/referenceActionPlan",
           "name": "referenceActionPlan",
-          "sort": "reference action plan",
+          "sort": "Reference action plan",
           "label": {
-            "en": "reference action plan"
+            "en": "Reference action plan"
           },
           "description": {
-            "en": "A reference action plan"
+            "en": "The reference Action Plan, the parent."
           },
-          "usage": {},
+          "usage": {
+            "en": "The reference action is the action from which the current action may result.  The action may be a continuation of the previous action or a sub-action."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2472,22 +2537,25 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "reference action plan",
+            "label-en": "Reference action plan",
             "uri": "http://data4wallonia.com/model/referenceActionPlan",
-            "definition-en": "A reference action plan"
+            "definition-en": "The reference Action Plan, the parent.",
+            "usageNote-en": "The reference action is the action from which the current action may result.  The action may be a continuation of the previous action or a sub-action."
           }
         },
         {
           "uri": "http://data4wallonia.com/model/referenceCategory",
           "name": "referenceCategory",
-          "sort": "reference Category",
+          "sort": "Reference Category",
           "label": {
-            "en": "reference Category"
+            "en": "Reference Category"
           },
           "description": {
-            "en": "A reference category"
+            "en": "The reference category."
           },
-          "usage": {},
+          "usage": {
+            "en": "The reference category is the category of the taxonomy that the action plan develops in detail.  For example, an action may detail a funding method that has been implemented and is included in the taxonomy of a regional strategy."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2513,19 +2581,20 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/referenceCategory",
-            "label-en": "reference Category",
-            "definition-en": "A reference category"
+            "label-en": "Reference Category",
+            "definition-en": "The reference category.",
+            "usageNote-en": "The reference category is the category of the taxonomy that the action plan develops in detail.  For example, an action may detail a funding method that has been implemented and is included in the taxonomy of a regional strategy."
           }
         },
         {
           "uri": "http://data4wallonia.com/model/referenceEvent",
           "name": "referenceEvent",
-          "sort": "reference event",
+          "sort": "Reference event",
           "label": {
-            "en": "reference event"
+            "en": "Reference event"
           },
           "description": {
-            "en": "A reference event"
+            "en": "The reference event."
           },
           "usage": {},
           "domain": [
@@ -2552,22 +2621,24 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "definition-en": "A reference event",
+            "definition-en": "The reference event.",
             "uri": "http://data4wallonia.com/model/referenceEvent",
-            "label-en": "reference event"
+            "label-en": "Reference event"
           }
         },
         {
           "uri": "http://data4wallonia.com/model/referencePost",
           "name": "referencePost",
-          "sort": "reference post",
+          "sort": "Reference post",
           "label": {
-            "en": "reference post"
+            "en": "Reference post"
           },
           "description": {
-            "en": "A reference post"
+            "en": "The reference Post of the action."
           },
-          "usage": {},
+          "usage": {
+            "en": "The reference post (article) allows you to communicate freely on an action plan, to monitor it, to publish the results of the action, a list of prize-winners, etc. with complete editorial freedom."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2592,22 +2663,25 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "reference post",
-            "definition-en": "A reference post",
+            "label-en": "Reference post",
+            "usageNote-en": "The reference post (article) allows you to communicate freely on an action plan, to monitor it, to publish the results of the action, a list of prize-winners, etc. with complete editorial freedom.",
+            "definition-en": "The reference Post of the action.",
             "uri": "http://data4wallonia.com/model/referencePost"
           }
         },
         {
           "uri": "http://data4wallonia.com/model/relatedFile",
           "name": "relatedFile",
-          "sort": "related file",
+          "sort": "Related file",
           "label": {
-            "en": "related file"
+            "en": "Related file"
           },
           "description": {
-            "en": "A related file"
+            "en": "A file to download, an available file."
           },
-          "usage": {},
+          "usage": {
+            "en": "Used to make documents available for download (PDF, for example)."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2633,21 +2707,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/relatedFile",
-            "label-en": "related file",
-            "definition-en": "A related file"
+            "label-en": "Related file",
+            "definition-en": "A file to download, an available file.",
+            "usageNote-en": "Used to make documents available for download (PDF, for example)."
           }
         },
         {
           "uri": "http://data4wallonia.com/model/shortDescription",
           "name": "shortDescription",
-          "sort": "short description",
+          "sort": "Short description",
           "label": {
-            "en": "short description"
+            "en": "Short description"
           },
           "description": {
-            "en": "A short description"
+            "en": "A short description of the action."
           },
-          "usage": {},
+          "usage": {
+            "en": "The description is essential for describing the action succinctly and clearly.  As a complement to the title, it must convey the entire objective of the action and enable its scope to be understood, without any further explanation."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2673,21 +2750,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/shortDescription",
-            "definition-en": "A short description",
-            "label-en": "short description"
+            "definition-en": "A short description of the action.",
+            "label-en": "Short description",
+            "usageNote-en": "The description is essential for describing the action succinctly and clearly.  As a complement to the title, it must convey the entire objective of the action and enable its scope to be understood, without any further explanation."
           }
         },
         {
           "uri": "http://data4wallonia.com/model/slug",
           "name": "slug",
-          "sort": "slug",
+          "sort": "Slug",
           "label": {
-            "en": "slug"
+            "en": "Slug"
           },
           "description": {
-            "en": "A slug"
+            "en": "Last section of a URL."
           },
-          "usage": {},
+          "usage": {
+            "en": "Unique across all action plans, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2713,21 +2793,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/slug",
-            "definition-en": "A slug",
-            "label-en": "slug"
+            "definition-en": "Last section of a URL.",
+            "label-en": "Slug",
+            "usageNote-en": "Unique across all action plans, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
           }
         },
         {
           "uri": "http://data4wallonia.com/model/startDate",
           "name": "startDate",
-          "sort": "start date",
+          "sort": "Start date ",
           "label": {
-            "en": "start date"
+            "en": "Start date "
           },
           "description": {
-            "en": "A start date"
+            "en": "Start date of the action plan."
           },
-          "usage": {},
+          "usage": {
+            "en": "Start date of the action or financial support linked to the action."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2753,19 +2836,20 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/startDate",
-            "definition-en": "A start date",
-            "label-en": "start date"
+            "definition-en": "Start date of the action plan.",
+            "label-en": "Start date ",
+            "usageNote-en": "Start date of the action or financial support linked to the action."
           }
         },
         {
           "uri": "http://data4wallonia.com/model/title",
           "name": "title",
-          "sort": "title",
+          "sort": "Title",
           "label": {
-            "en": "title"
+            "en": "Title"
           },
           "description": {
-            "en": "A title"
+            "en": "title of the action plan."
           },
           "usage": {},
           "domain": [
@@ -2793,21 +2877,23 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/title",
-            "definition-en": "A title",
-            "label-en": "title"
+            "definition-en": "title of the action plan.",
+            "label-en": "Title"
           }
         },
         {
           "uri": "http://data4wallonia.com/model/totalBudget",
           "name": "totalBudget",
-          "sort": "total budget",
+          "sort": "Total budget",
           "label": {
-            "en": "total budget"
+            "en": "Total budget"
           },
           "description": {
-            "en": "A total budget"
+            "en": "Total budget for the action"
           },
-          "usage": {},
+          "usage": {
+            "en": "Total budget allocated to the action, by the various public and private funding sources. Details may or may not be included in the Action Plan Profiles."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2833,21 +2919,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/totalBudget",
-            "definition-en": "A total budget",
-            "label-en": "total budget"
+            "definition-en": "Total budget for the action",
+            "label-en": "Total budget",
+            "usageNote-en": "Total budget allocated to the action, by the various public and private funding sources. Details may or may not be included in the Action Plan Profiles."
           }
         },
         {
           "uri": "http://data4wallonia.com/model/totalWaloonBudget",
           "name": "totalWalloonBudget",
-          "sort": "total walloon budget",
+          "sort": "Total walloon budget",
           "label": {
-            "en": "total walloon budget"
+            "en": "Total walloon budget"
           },
           "description": {
-            "en": "A total wallong budget"
+            "en": "Walloon budget dedicated to the action. "
           },
-          "usage": {},
+          "usage": {
+            "en": "Total budget allocated by the Walloon Region to the action. Details may or may not be included in the Action Plan Profiles."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2873,19 +2962,20 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/totalWaloonBudget",
-            "definition-en": "A total wallong budget",
-            "label-en": "total walloon budget"
+            "definition-en": "Walloon budget dedicated to the action. ",
+            "label-en": "Total walloon budget",
+            "usageNote-en": "Total budget allocated by the Walloon Region to the action. Details may or may not be included in the Action Plan Profiles."
           }
         },
         {
           "uri": "http://data4wallonia.com/model/type",
           "name": "type",
-          "sort": "type",
+          "sort": "Type",
           "label": {
-            "en": "type"
+            "en": "Type"
           },
           "description": {
-            "en": "A type"
+            "en": "Type of action taken"
           },
           "usage": {},
           "domain": [
@@ -2913,21 +3003,23 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/type",
-            "definition-en": "A type",
-            "label-en": "type"
+            "definition-en": "Type of action taken",
+            "label-en": "Type"
           }
         },
         {
           "uri": "http://data4wallonia.com/model/wallonRegionConvetionNumber",
-          "name": "wallonRegionConventionNumber",
-          "sort": "wallon region convention number",
+          "name": "walloonRegionConventionNumber",
+          "sort": "Walloon region convention number",
           "label": {
-            "en": "wallon region convention number"
+            "en": "Walloon region convention number"
           },
           "description": {
-            "en": "A wallon region convention number"
+            "en": "A Walloon convention number"
           },
-          "usage": {},
+          "usage": {
+            "en": "Some actions have an agreement number granted by the Region."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2953,21 +3045,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/wallonRegionConvetionNumber",
-            "definition-en": "A wallon region convention number",
-            "label-en": "wallon region convention number"
+            "definition-en": "A Walloon convention number",
+            "label-en": "Walloon region convention number",
+            "usageNote-en": "Some actions have an agreement number granted by the Region."
           }
         },
         {
           "uri": "http://data4wallonia.com/resource/model/actionPlanProfile",
           "name": "actionPlanProfile",
-          "sort": "action plan profile",
+          "sort": "Action Plan Profile",
           "label": {
-            "en": "action plan profile"
+            "en": "Action Plan Profile"
           },
           "description": {
-            "en": "An Action Plan Profile"
+            "en": "A link to a profile with a role in it."
           },
-          "usage": {},
+          "usage": {
+            "en": "The link indicates the profile, its role and any financial commitment (investment, salary costs, etc.)."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2993,21 +3088,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/resource/model/actionPlanProfile",
-            "definition-en": "An Action Plan Profile",
-            "label-en": "action plan profile"
+            "usageNote-en": "The link indicates the profile, its role and any financial commitment (investment, salary costs, etc.).",
+            "definition-en": "A link to a profile with a role in it.",
+            "label-en": "Action Plan Profile"
           }
         },
         {
           "uri": "http://data4wallonia.com/resource/model/annualBudgetAllocation",
           "name": "annualBudgetAllocation",
-          "sort": "annual budget allocation",
+          "sort": "Annual Budget Allocation",
           "label": {
-            "en": "annual budget allocation"
+            "en": "Annual Budget Allocation"
           },
           "description": {
-            "en": "An annual budget allocation"
+            "en": "A reference to an annual budget"
           },
-          "usage": {},
+          "usage": {
+            "en": "Indicates a sum allocated to the action for a specific year"
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -3033,21 +3131,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/resource/model/annualBudgetAllocation",
-            "label-en": "annual budget allocation",
-            "definition-en": "An annual budget allocation"
+            "usageNote-en": "Indicates a sum allocated to the action for a specific year",
+            "label-en": "Annual Budget Allocation",
+            "definition-en": "A reference to an annual budget"
           }
         },
         {
           "uri": "http://data4wallonia.com/resource/model/numberOfBeneficiaries",
           "name": "numberOfBeneficiaries",
-          "sort": "number of beneficiaries",
+          "sort": "Number of beneficiaries",
           "label": {
-            "en": "number of beneficiaries"
+            "en": "Number of beneficiaries"
           },
           "description": {
-            "en": "The number of beneficiaries of the Action Plan."
+            "en": "Number of beneficiaries of the action."
           },
-          "usage": {},
+          "usage": {
+            "en": "A beneficiary is a stakeholder (company, school, etc.) that has received aid, won a call for projects, received support for certification, exhibited on an international mission stand, received digital equipment, etc."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -3073,21 +3174,24 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/resource/model/numberOfBeneficiaries",
-            "label-en": "number of beneficiaries",
-            "definition-en": "The number of beneficiaries of the Action Plan."
+            "label-en": "Number of beneficiaries",
+            "definition-en": "Number of beneficiaries of the action.",
+            "usageNote-en": "A beneficiary is a stakeholder (company, school, etc.) that has received aid, won a call for projects, received support for certification, exhibited on an international mission stand, received digital equipment, etc."
           }
         },
         {
           "uri": "http://data4wallonia.com/resource/model/numberOfOccurences",
           "name": "numberOfOccurences",
-          "sort": "number of occurences",
+          "sort": "Number of occurences",
           "label": {
-            "en": "number of occurences"
+            "en": "Number of occurences"
           },
           "description": {
-            "en": "The number of occurences of the Action Plan."
+            "en": "Number of events linked to the action."
           },
-          "usage": {},
+          "usage": {
+            "en": "An event is a physical or virtual gathering of participants. Depending on the programme, these may include conferences, webinars, coding training courses, international missions, etc."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -3113,8 +3217,52 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/resource/model/numberOfOccurences",
-            "label-en": "number of occurences",
-            "definition-en": "The number of occurences of the Action Plan."
+            "label-en": "Number of occurences",
+            "definition-en": "Number of events linked to the action.",
+            "usageNote-en": "An event is a physical or virtual gathering of participants. Depending on the programme, these may include conferences, webinars, coding training courses, international missions, etc."
+          }
+        },
+        {
+          "uri": "http://purl.org/dc/terms/identifier",
+          "name": "id",
+          "sort": "Id",
+          "label": {
+            "en": "Id"
+          },
+          "description": {
+            "en": "A common and non-nullable action plan identifier"
+          },
+          "usage": {
+            "en": "A single ID for all uses and connections between databases"
+          },
+          "domain": [
+            {
+              "EA-Name": "ActionPlan",
+              "uri": "http://data4wallonia.com/model/ActionPlan"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "Id",
+            "definition-en": "A common and non-nullable action plan identifier",
+            "usageNote-en": "A single ID for all uses and connections between databases",
+            "uri": "http://purl.org/dc/terms/identifier"
           }
         }
       ]
