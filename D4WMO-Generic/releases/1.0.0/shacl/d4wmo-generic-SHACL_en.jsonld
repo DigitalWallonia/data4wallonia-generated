@@ -5096,7 +5096,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProgramShape/be0272a9c84278a3023c9077f1df0705f9ab3b33",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Program.sticky",
-          "sh:class": "http://data.europa.eu/m8g/PublicEvent",
+          "sh:class": "http://data4wallonia.com/model/Post",
           "sh:description": {
             "en": "A reference to an event or a post."
           },
@@ -5108,7 +5108,7 @@
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#ProgramShape/be0272a9c84278a3023c9077f1df0705f9ab3b33",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Program.sticky",
-          "sh:class": "http://data4wallonia.com/model/Post",
+          "sh:class": "http://data.europa.eu/m8g/PublicEvent",
           "sh:description": {
             "en": "A reference to an event or a post."
           },
@@ -6766,6 +6766,18 @@
           "sh:uniqueLang": "true"
         },
         {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/16a2ae1bd10ecd1b71a5d7733636716b16dec57b",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.legalformtype",
+          "sh:description": {
+            "en": "The classification of the Legal Entity as a member of a particular group in the context of legal registration."
+          },
+          "sh:name": {
+            "en": "legal form type"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/legal-entity#companyType"
+        },
+        {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/1bf6b202f78591cc7dc23e70eebefda2d3e72ec5",
           "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.id",
           "sh:description": {
@@ -6991,7 +7003,19 @@
             "en": "legal entity activity"
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://www.w3.org/ns/legal#companyActivity"
+          "sh:path": "http://www.w3.org/ns/legal-entity#companyActivity"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/718ae9bbdedff1ecd80c1da376fb9ece011dd216",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.legalentitystatus",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "Information about the viability of the current position of the legal entity."
+          },
+          "sh:name": {
+            "en": "legal entity status"
+          },
+          "sh:path": "http://www.w3.org/ns/legal-entity#companyStatus"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/7759c36d0b3bec936584ed4f5bcbd9a6440f55b2",
@@ -7016,6 +7040,18 @@
             "en": "contact point"
           },
           "sh:path": "http://data4wallonia.com/model/contactPoint"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/888031c72afb09e066acb8fcd23afb4db1e22f13",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.legalformtype",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "The classification of the Legal Entity as a member of a particular group in the context of legal registration."
+          },
+          "sh:name": {
+            "en": "legal form type"
+          },
+          "sh:path": "http://www.w3.org/ns/legal-entity#companyType"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/88c7bac3bf428d0c0abcd15cc9806d565ab6e8b4",
@@ -7051,7 +7087,7 @@
           "sh:name": {
             "en": "legal entity activity"
           },
-          "sh:path": "http://www.w3.org/ns/legal#companyActivity"
+          "sh:path": "http://www.w3.org/ns/legal-entity#companyActivity"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/9adf9f5890592909cf3e67021ae7ab4f895a7745",
@@ -7244,6 +7280,18 @@
             "en": "identifier"
           },
           "sh:path": "http://www.w3.org/ns/adms#identifier"
+        },
+        {
+          "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/e397ea40389111be56f8ee88be0d4571f77cd3fc",
+          "rdfs:seeAlso": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntity.legalentitystatus",
+          "sh:description": {
+            "en": "Information about the viability of the current position of the legal entity."
+          },
+          "sh:name": {
+            "en": "legal entity status"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/legal-entity#companyStatus"
         },
         {
           "@id": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#LegalEntityShape/eded55bfab7ff7790d23262cda4890f653f74311",

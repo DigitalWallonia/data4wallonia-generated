@@ -3229,6 +3229,8 @@ Example: x  for members, y  for non-members of an organisation.
                             , <a href="#LegalEntity.id">id</a>
                             , <a href="#LegalEntity.identifier">identifier</a>
                             , <a href="#LegalEntity.legalentityactivity">legal entity activity</a>
+                            , <a href="#LegalEntity.legalentitystatus">legal entity status</a>
+                            , <a href="#LegalEntity.legalformtype">legal form type</a>
                             , <a href="#LegalEntity.legalname">legal name</a>
                             , <a href="#LegalEntity.LiabletoVAT">Liable to VAT</a>
                             , <a href="#LegalEntity.logo">logo</a>
@@ -3666,7 +3668,7 @@ Example: x  for members, y  for non-members of an organisation.
                         
                             <tr id="LegalEntity.legalentityactivity"
                                 typeof="rdfs:Property"
-                                resource="http://www.w3.org/ns/legal#companyActivity"
+                                resource="http://www.w3.org/ns/legal-entity#companyActivity"
                                 class="class mandatory">
                                 <td>
 				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20legal entity activity%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.legalentityactivity" target="_blank" rel="noopener noreferrer" >
@@ -3675,9 +3677,9 @@ Example: x  for members, y  for non-members of an organisation.
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://www.w3.org/ns/legal#companyActivity"
+                                        <a href="http://www.w3.org/ns/legal-entity#companyActivity"
                                            data-toggle="tooltip"
-                                           data-content="http://www.w3.org/ns/legal#companyActivity"
+                                           data-content="http://www.w3.org/ns/legal-entity#companyActivity"
                                            data-placement="right">
                                         legal entity activity</a>
                                 </td>
@@ -3696,6 +3698,92 @@ Example: x  for members, y  for non-members of an organisation.
                                 </td>
                                 <td property="skos:scopeNote">
                                     This is a general term that encompasses all the economic activities carried out by a company during the course of business. The activity of a company should be recorded using a controlled vocabulary. Several such vocabularies exist, many of which map to the UN's <a href="https://unstats.un.org/unsd/classifications/Econ/ISIC.cshtml">ISIC</a> codes. Where a particular controlled vocabulary is in use within a given context, such as <a href="https://resources.companieshouse.gov.uk/sic/">SIC codes</a> in the UK, it is acceptable to use these, however, the preferred choice for European interoperability is <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nace2">NACE</a>.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.legalentitystatus"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/legal-entity#companyStatus"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20legal entity status%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.legalentitystatus" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/legal-entity#companyStatus"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/legal-entity#companyStatus"
+                                           data-placement="right">
+                                        legal entity status</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Code" data-placement="right">Code</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Information about the viability of the current position of the legal entity.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    Recording the status of a company presents the same issues as its type. The terms 'insolvent', 'bankrupt' and 'in receivership,' for example, are likely to mean slightly different things with different legal implications in different jurisdictions. Best practice for recording various other status levels is to use the relevant jurisdiction's terms and to identify the controlled vocabulary used.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalEntity.legalformtype"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/legal-entity#companyType"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20legal form type%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.legalformtype" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/legal-entity#companyType"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/legal-entity#companyType"
+                                           data-placement="right">
+                                        legal form type</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Code" data-placement="right">Code</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The classification of the Legal Entity as a member of a particular group in the context of legal registration.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    To indicate the legal form type of a Legal Entity the <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/entity-legal-form">Entity Legal Form code list</a> published by the Publications Office of the EU and maintained by <a href="https://www.gleif.org/en/about-lei/code-lists/iso-20275-entity-legal-forms-code-list">GLEIF</a> can be used.
                                 </td>
 				<!--
                                 <td>
@@ -8975,7 +9063,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#PublicEvent" data-placement="right">Public Event</a>
+                                            <a href="#Post" data-placement="right">Post</a>
                                         
                                     
                                 </td>
@@ -9018,7 +9106,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#Post" data-placement="right">Post</a>
+                                            <a href="#PublicEvent" data-placement="right">Public Event</a>
                                         
                                     
                                 </td>
@@ -16416,6 +16504,14 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+						
+					
+					
+						
+					
+						
 					
 						
 					
@@ -16552,7 +16648,27 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
 								<td></td>
 								<td><a href="#LegalEntity.legalentityactivity">legal entity activity </a></td>
-								<td><div class="shorten">http://www.w3.org/ns/legal#companyActivity</div></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal-entity#companyActivity</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.legalentitystatus">legal entity status </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal-entity#companyStatus</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalEntity">Legal Entity</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
+								<td></td>
+								<td><a href="#LegalEntity.legalformtype">legal form type </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/legal-entity#companyType</div></td>
 							</tr>
 						
 					
