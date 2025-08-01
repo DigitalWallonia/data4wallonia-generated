@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/373d28d01edb40ef20301b3cc877b49ef992ec5f",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/373d28d01edb40ef20301b3cc877b49ef992ec5f/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/5e345aef360e3d4dbcf0eec3cda76e373c5c4910",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/5e345aef360e3d4dbcf0eec3cda76e373c5c4910/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-Generic/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -1494,7 +1494,9 @@
           "description": {
             "en": "Type of the event."
           },
-          "usage": {},
+          "usage": {
+            "en": "<memo>"
+          },
           "domain": [
             {
               "EA-Name": "PublicEvent",
@@ -1521,7 +1523,8 @@
           "rawTags": {
             "uri": "http://data4wallonia.com/model/type",
             "definition-en": "Type of the event.",
-            "label-en": "type"
+            "label-en": "type",
+            "usageNote-en": "<memo>"
           }
         },
         {
@@ -1705,13 +1708,16 @@
       "description": {
         "en": "An Action Plan can represent any action carried out with public and/or private funding, and for which clear and precise objectives have been set. Examples: regional funding for a particular theme or strategy, calls for projects, etc."
       },
-      "usage": {},
+      "usage": {
+        "en": "<memo>"
+      },
       "parents": [],
       "rawTags": {
         "uri": "http://data4wallonia.com/model/ActionPlan",
         "definition-en": "An Action Plan can represent any action carried out with public and/or private funding, and for which clear and precise objectives have been set. Examples: regional funding for a particular theme or strategy, calls for projects, etc.",
         "label-en": "Action Plan",
-        "class-usage-scope": "main"
+        "class-usage-scope": "main",
+        "usageNote-en": "<memo>"
       },
       "properties": [
         {
@@ -1811,7 +1817,7 @@
             "en": "A list of beneficiaries (profiles)."
           },
           "usage": {
-            "en": "TODO"
+            "en": "<memo>$ea_notes=Indicates the list of stakeholders benefiting from the action (Dynamic List). A beneficiary is a stakeholder (company, school, etc.) that has received aid, won a call for projects, received support for certification, exhibited on an international mission stand, received digital equipment, etc."
           },
           "domain": [
             {
@@ -1839,7 +1845,7 @@
           "rawTags": {
             "definition-en": "A list of beneficiaries (profiles).",
             "label-en": "Beneficiaries",
-            "usageNote-en": "null",
+            "usageNote-en": "<memo>$ea_notes=Indicates the list of stakeholders benefiting from the action (Dynamic List). A beneficiary is a stakeholder (company, school, etc.) that has received aid, won a call for projects, received support for certification, exhibited on an international mission stand, received digital equipment, etc.",
             "uri": "http://data4wallonia.com/model/beneficiarie"
           }
         },
@@ -1897,7 +1903,7 @@
             "en": "A reference to a Client site"
           },
           "usage": {
-            "en": "Identification of a client application (website, business application or other) using the action form."
+            "en": "<memo>"
           },
           "domain": [
             {
@@ -1926,7 +1932,7 @@
             "uri": "http://data4wallonia.com/model/clientSite",
             "definition-en": "A reference to a Client site",
             "label-en": "Client Site",
-            "usageNote-en": "Identification of a client application (website, business application or other) using the action form."
+            "usageNote-en": "<memo>"
           }
         },
         {
@@ -2584,7 +2590,9 @@
           "description": {
             "en": "Progress status of the action."
           },
-          "usage": {},
+          "usage": {
+            "en": "<memo>"
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2611,7 +2619,8 @@
           "rawTags": {
             "uri": "http://data4wallonia.com/model/progressStatus",
             "definition-en": "Progress status of the action.",
-            "label-en": "Progress status"
+            "label-en": "Progress status",
+            "usageNote-en": "<memo>"
           }
         },
         {
@@ -2753,7 +2762,9 @@
           "description": {
             "en": "The reference event."
           },
-          "usage": {},
+          "usage": {
+            "en": "<memo>$ea_notes=The reference event is an action plan launch event.  It enables the action to be promoted and registrations to be opened. \nFor example, a call for projects, which will last for the duration of the project's development, i.e. several months minimum, will be represented by a call for projects event encouraging participants to apply. This event inviting participants to apply will last from a few days to a few weeks."
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -2778,6 +2789,7 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
+            "usageNote-en": "<memo>$ea_notes=The reference event is an action plan launch event.  It enables the action to be promoted and registrations to be opened. \nFor example, a call for projects, which will last for the duration of the project's development, i.e. several months minimum, will be represented by a call for projects event encouraging participants to apply. This event inviting participants to apply will last from a few days to a few weeks.",
             "definition-en": "The reference event.",
             "uri": "http://data4wallonia.com/model/referenceEvent",
             "label-en": "Reference event"
@@ -3008,7 +3020,9 @@
           "description": {
             "en": "title of the action plan."
           },
-          "usage": {},
+          "usage": {
+            "en": "<memo>"
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -3035,7 +3049,8 @@
           "rawTags": {
             "uri": "http://data4wallonia.com/model/title",
             "definition-en": "title of the action plan.",
-            "label-en": "Title"
+            "label-en": "Title",
+            "usageNote-en": "<memo>"
           }
         },
         {
@@ -3134,7 +3149,9 @@
           "description": {
             "en": "Type of action taken"
           },
-          "usage": {},
+          "usage": {
+            "en": "<memo>"
+          },
           "domain": [
             {
               "EA-Name": "ActionPlan",
@@ -3161,7 +3178,8 @@
           "rawTags": {
             "uri": "http://data4wallonia.com/model/type",
             "definition-en": "Type of action taken",
-            "label-en": "Type"
+            "label-en": "Type",
+            "usageNote-en": "<memo>"
           }
         },
         {
@@ -4304,7 +4322,9 @@
           "description": {
             "en": "A reference to a Client site"
           },
-          "usage": {},
+          "usage": {
+            "en": "<memo>"
+          },
           "domain": [
             {
               "EA-Name": "Post",
@@ -4331,7 +4351,8 @@
           "rawTags": {
             "uri": "http://data4wallonia.com/model/clientSite",
             "definition-en": "A reference to a Client site",
-            "label-en": "client site"
+            "label-en": "client site",
+            "usageNote-en": "<memo>"
           }
         },
         {
@@ -4387,7 +4408,9 @@
           "description": {
             "en": "A reference to a Dynamic List"
           },
-          "usage": {},
+          "usage": {
+            "en": "<memo>$ea_notes=The dynamic List is a shortcode that automatically creates a list of items in the database.  The shortcode indicates the type of content required (profiles, events, press articles, etc.), the type of display required (card, map) and the conditions for retrieving the list (for example, by sorting on one or more categories)."
+          },
           "domain": [
             {
               "EA-Name": "Post",
@@ -4414,6 +4437,7 @@
           "rawTags": {
             "label-en": "dynamic list",
             "uri": "http://data4wallonia.com/model/dynamicList",
+            "usageNote-en": "<memo>$ea_notes=The dynamic List is a shortcode that automatically creates a list of items in the database.  The shortcode indicates the type of content required (profiles, events, press articles, etc.), the type of display required (card, map) and the conditions for retrieving the list (for example, by sorting on one or more categories).",
             "definition-en": "A reference to a Dynamic List"
           }
         },
@@ -5821,14 +5845,14 @@
       },
       "sort": "Profile",
       "description": {
-        "en": "A short article giving a description of a person or organization."
+        "en": "<memo>"
       },
       "usage": {},
       "parents": [],
       "rawTags": {
         "uri": "http://data4wallonia.com/model/Profile",
         "label-en": "Profile",
-        "definition-en": "A short article giving a description of a person or organization.",
+        "definition-en": "<memo>",
         "class-usage-scope": "main"
       },
       "properties": [
@@ -7779,26 +7803,26 @@
           ],
           "range": [
             {
-              "range_label": "Post",
-              "range_uri": "http://data4wallonia.com/model/Post"
+              "range_label": "PublicEvent",
+              "range_uri": "http://data.europa.eu/m8g/PublicEvent"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Post",
-              "range_puri": "http://data4wallonia.com/model/Post",
+              "range_uri": "#Public Event",
+              "range_puri": "http://data.europa.eu/m8g/PublicEvent",
               "range_label": {
-                "en": "Post"
+                "en": "Public Event"
               }
             }
           ],
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "usageNote-en": "The most topical element of the programme.",
+            "uri": "http://data4wallonia.com/model/sticky",
             "label-en": "sticky",
             "definition-en": "A reference to an event or a post.",
-            "uri": "http://data4wallonia.com/model/sticky"
+            "usageNote-en": "The most topical element of the programme."
           }
         },
         {
@@ -7822,26 +7846,26 @@
           ],
           "range": [
             {
-              "range_label": "PublicEvent",
-              "range_uri": "http://data.europa.eu/m8g/PublicEvent"
+              "range_label": "Post",
+              "range_uri": "http://data4wallonia.com/model/Post"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Public Event",
-              "range_puri": "http://data.europa.eu/m8g/PublicEvent",
+              "range_uri": "#Post",
+              "range_puri": "http://data4wallonia.com/model/Post",
               "range_label": {
-                "en": "Public Event"
+                "en": "Post"
               }
             }
           ],
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "http://data4wallonia.com/model/sticky",
+            "usageNote-en": "The most topical element of the programme.",
             "label-en": "sticky",
             "definition-en": "A reference to an event or a post.",
-            "usageNote-en": "The most topical element of the programme."
+            "uri": "http://data4wallonia.com/model/sticky"
           }
         },
         {
@@ -11611,7 +11635,9 @@
           "description": {
             "en": "The identities, expressions and societal roles of the Person."
           },
-          "usage": {},
+          "usage": {
+            "en": "<memo>"
+          },
           "domain": [
             {
               "EA-Name": "Person",
@@ -11638,7 +11664,8 @@
           "rawTags": {
             "label-en": "gender",
             "definition-en": "The identities, expressions and societal roles of the Person.",
-            "uri": "http://data.europa.eu/m8g/gender"
+            "uri": "http://data.europa.eu/m8g/gender",
+            "usageNote-en": "<memo>"
           }
         },
         {
