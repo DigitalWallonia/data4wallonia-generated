@@ -1536,7 +1536,7 @@ The main entities are those that form the core of the Application Profile.
                                     Program (e.g. Digital Wallonia) to which the action is linked.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    Characterises the action by its link with an economic strategy programme.
+                                    Characterises the action by its link with an economic strategy program.
                                 </td>
 				<!--
                                 <td>
@@ -2254,7 +2254,7 @@ The main entities are those that form the core of the Application Profile.
                             For this entity the following properties are defined: <a href="#ContactPoint.Contactpage">Contact page</a>
                             , <a href="#ContactPoint.contacttype">contact type</a>
                             , <a href="#ContactPoint.hasemail">has email</a>
-                            , <a href="#ContactPoint.hasnonfeaturedemail">has non featured email</a>
+                            , <a href="#ContactPoint.hasprivateemail">has private email</a>
                             , <a href="#ContactPoint.hastelehpone">has telehpone</a>
                             , <a href="#ContactPoint.Id">Id</a>
                             , <a href="#ContactPoint.socialnetwork">social network</a>
@@ -2427,12 +2427,12 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                             </tr>
                         
-                            <tr id="ContactPoint.hasnonfeaturedemail"
+                            <tr id="ContactPoint.hasprivateemail"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/hasNonFeaturedEmail"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20has non featured email%20in%20Contact Point&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23ContactPoint.hasnonfeaturedemail" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20has private email%20in%20Contact Point&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23ContactPoint.hasprivateemail" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -2442,7 +2442,7 @@ The main entities are those that form the core of the Application Profile.
                                            data-toggle="tooltip"
                                            data-content="http://data4wallonia.com/model/hasNonFeaturedEmail"
                                            data-placement="right">
-                                        has non featured email</a>
+                                        has private email</a>
                                 </td>
                                 <td>
                                     
@@ -3229,8 +3229,6 @@ Example: x  for members, y  for non-members of an organisation.
                             , <a href="#LegalEntity.id">id</a>
                             , <a href="#LegalEntity.identifier">identifier</a>
                             , <a href="#LegalEntity.legalentityactivity">legal entity activity</a>
-                            , <a href="#LegalEntity.legalentitystatus">legal entity status</a>
-                            , <a href="#LegalEntity.legalformtype">legal form type</a>
                             , <a href="#LegalEntity.legalname">legal name</a>
                             , <a href="#LegalEntity.LiabletoVAT">Liable to VAT</a>
                             , <a href="#LegalEntity.logo">logo</a>
@@ -3605,7 +3603,7 @@ Example: x  for members, y  for non-members of an organisation.
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..1
                                 </td>
                                 <td property="rdfs:comment">
                                     A single ID for all uses and connections between databases
@@ -3698,92 +3696,6 @@ Example: x  for members, y  for non-members of an organisation.
                                 </td>
                                 <td property="skos:scopeNote">
                                     This is a general term that encompasses all the economic activities carried out by a company during the course of business. The activity of a company should be recorded using a controlled vocabulary. Several such vocabularies exist, many of which map to the UN's <a href="https://unstats.un.org/unsd/classifications/Econ/ISIC.cshtml">ISIC</a> codes. Where a particular controlled vocabulary is in use within a given context, such as <a href="https://resources.companieshouse.gov.uk/sic/">SIC codes</a> in the UK, it is acceptable to use these, however, the preferred choice for European interoperability is <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nace2">NACE</a>.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="LegalEntity.legalentitystatus"
-                                typeof="rdfs:Property"
-                                resource="http://www.w3.org/ns/legal-entity#companyStatus"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20legal entity status%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.legalentitystatus" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://www.w3.org/ns/legal-entity#companyStatus"
-                                           data-toggle="tooltip"
-                                           data-content="http://www.w3.org/ns/legal-entity#companyStatus"
-                                           data-placement="right">
-                                        legal entity status</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Code" data-placement="right">Code</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Information about the viability of the current position of the legal entity.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Recording the status of a company presents the same issues as its type. The terms 'insolvent', 'bankrupt' and 'in receivership,' for example, are likely to mean slightly different things with different legal implications in different jurisdictions. Best practice for recording various other status levels is to use the relevant jurisdiction's terms and to identify the controlled vocabulary used.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="LegalEntity.legalformtype"
-                                typeof="rdfs:Property"
-                                resource="http://www.w3.org/ns/legal-entity#companyType"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20legal form type%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23LegalEntity.legalformtype" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://www.w3.org/ns/legal-entity#companyType"
-                                           data-toggle="tooltip"
-                                           data-content="http://www.w3.org/ns/legal-entity#companyType"
-                                           data-placement="right">
-                                        legal form type</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Code" data-placement="right">Code</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    The classification of the Legal Entity as a member of a particular group in the context of legal registration.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    To indicate the legal form type of a Legal Entity the <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/entity-legal-form">Entity Legal Form code list</a> published by the Publications Office of the EU and maintained by <a href="https://www.gleif.org/en/about-lei/code-lists/iso-20275-entity-legal-forms-code-list">GLEIF</a> can be used.
                                 </td>
 				<!--
                                 <td>
@@ -4584,7 +4496,7 @@ A business might have more than one legal name, particularly in countries with m
                                     A reference to a Contact Point, the main contact information of the resource.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    Usually a phone number and e-mail address. Other contact methods may be included, including online contact information.$ea_notes=Usually a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization's homepage that may or may not provide contact information.
+                                    Usually a phone number and e-mail address. Other contact methods may be included, including online contact information.
                                 </td>
 				<!--
                                 <td>
@@ -5849,7 +5761,7 @@ A business might have more than one legal name, particularly in countries with m
                                     Program (e.g. Digital Wallonia) to which the post is linked.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    Characterises the post by its link with an economic strategy programme.
+                                    Characterises the post by its link with an economic strategy program.
                                 </td>
 				<!--
                                 <td>
@@ -6761,7 +6673,7 @@ A business might have more than one legal name, particularly in countries with m
                                     Program (e.g. Digital Wallonia) to which the article is linked.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    Characterises the press article by its link with an economic strategy programme.
+                                    Characterises the press article by its link with an economic strategy program.
                                 </td>
 				<!--
                                 <td>
@@ -6847,7 +6759,7 @@ A business might have more than one legal name, particularly in countries with m
                                     A quoted person
                                 </td>
                                 <td property="skos:scopeNote">
-                                    
+                                    Preson linked to the article because they are mentioned in it.
                                 </td>
 				<!--
                                 <td>
@@ -7252,7 +7164,7 @@ A business might have more than one legal name, particularly in countries with m
                                     Postal address.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    
+                                    Legal or business address. This may be a registered office, an office, a place of business, etc.
                                 </td>
 				<!--
                                 <td>
@@ -7983,7 +7895,7 @@ A business might have more than one legal name, particularly in countries with m
                                     Program (e.g. Digital Wallonia) to which the profile is linked.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    Characterises the profile by its link with an economic strategy programme.
+                                    Characterises the profile by its link with an economic strategy program.
                                 </td>
 				<!--
                                 <td>
@@ -8253,9 +8165,9 @@ A business might have more than one legal name, particularly in countries with m
                     </dt>
                     
                         <dd>
-                            For this entity the following properties are defined: <a href="#Program.Atextbaseline.">A text baseline. </a>
-                            , <a href="#Program.ambition">ambition</a>
+                            For this entity the following properties are defined: <a href="#Program.ambition">ambition</a>
                             , <a href="#Program.banner">banner</a>
+                            , <a href="#Program.Baseline">Baseline </a>
                             , <a href="#Program.clientsite">client site</a>
                             , <a href="#Program.contactperson">contact person</a>
                             , <a href="#Program.content">content</a>
@@ -8311,49 +8223,6 @@ A business might have more than one legal name, particularly in countries with m
                         </tr>
                     </thead>
                     <tbody class="supertype">
-                        
-                            <tr id="Program.Atextbaseline."
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/baseline"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20A text baseline. %20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.Atextbaseline." target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/baseline"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/baseline"
-                                           data-placement="right">
-                                        A text baseline. </a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A baseline
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Short marketing description of the programme and its objectives.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
                         
                             <tr id="Program.ambition"
                                 typeof="rdfs:Property"
@@ -8429,7 +8298,50 @@ A business might have more than one legal name, particularly in countries with m
                                     Reference to an Asset.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    Link to a reusable image, a banner representing the main subject of the programme.
+                                    Link to a reusable image, a banner representing the main subject of the program.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Program.Baseline"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/model/baseline"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20Baseline %20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.Baseline" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/model/baseline"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/model/baseline"
+                                           data-placement="right">
+                                        Baseline </a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A text baseline.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    Short marketing description of the programme and its objectives.
                                 </td>
 				<!--
                                 <td>
@@ -8472,7 +8384,7 @@ A business might have more than one legal name, particularly in countries with m
                                     A reference to a Client site
                                 </td>
                                 <td property="skos:scopeNote">
-                                    Identification of a client application (website, business application or other) using the programme. 
+                                    Identification of a client application (website, business application or other) using the program. 
                                 </td>
 				<!--
                                 <td>
@@ -8515,7 +8427,7 @@ A business might have more than one legal name, particularly in countries with m
                                     Contact person, referent.  A reference to a Qualified Person
                                 </td>
                                 <td property="skos:scopeNote">
-                                    A person to whom the target audience can turn for explanations and more information about the programme.
+                                    A person to whom the target audience can turn for explanations and more information about the program.
                                 </td>
 				<!--
                                 <td>
@@ -8730,7 +8642,7 @@ A business might have more than one legal name, particularly in countries with m
                                     Reference to an Asset.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    Link to a reusable image, the official logo of the programme.
+                                    Link to a reusable image, the official logo of the program.
                                 </td>
 				<!--
                                 <td>
@@ -8773,7 +8685,7 @@ A business might have more than one legal name, particularly in countries with m
                                     A reference to a strategic ambition.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    Indicates the main ambition of the programme.
+                                    Indicates the main ambition of the program.
                                 </td>
 				<!--
                                 <td>
@@ -8816,7 +8728,7 @@ A business might have more than one legal name, particularly in countries with m
                                     A reference to a profile partner
                                 </td>
                                 <td property="skos:scopeNote">
-                                    Profile representing a partner of the programme.
+                                    Profile representing a partner of the program.
                                 </td>
 				<!--
                                 <td>
@@ -8945,7 +8857,7 @@ A business might have more than one legal name, particularly in countries with m
                                     A reference web site
                                 </td>
                                 <td property="skos:scopeNote">
-                                    The official website for the strategic programme.
+                                    The official website for the strategic program.
                                 </td>
 				<!--
                                 <td>
@@ -9063,7 +8975,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#Post" data-placement="right">Post</a>
+                                            <a href="#PublicEvent" data-placement="right">Public Event</a>
                                         
                                     
                                 </td>
@@ -9074,7 +8986,7 @@ A business might have more than one legal name, particularly in countries with m
                                     A reference to an event or a post.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    The most topical element of the programme.
+                                    The most topical element of the program.
                                 </td>
 				<!--
                                 <td>
@@ -9106,7 +9018,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#PublicEvent" data-placement="right">Public Event</a>
+                                            <a href="#Post" data-placement="right">Post</a>
                                         
                                     
                                 </td>
@@ -9160,7 +9072,7 @@ A business might have more than one legal name, particularly in countries with m
                                     Title of the programme.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    The official name of the programme.
+                                    The official name of the program.
                                 </td>
 				<!--
                                 <td>
@@ -10084,7 +9996,7 @@ A business might have more than one legal name, particularly in countries with m
                                     Program (e.g. Digital Wallonia) to which the action is linked.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    Characterises the event by its link with an economic strategy programme.
+                                    Characterises the event by its link with an economic strategy program.
                                 </td>
 				<!--
                                 <td>
@@ -10213,7 +10125,7 @@ A business might have more than one legal name, particularly in countries with m
                                     A short description of the event.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    
+                                    The description is essential for describing the event succinctly and clearly.  As a complement to the title, it must convey the entire objective of the event and enable its scope to be understood, without any further explanation.
                                 </td>
 				<!--
                                 <td>
@@ -16209,7 +16121,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#ContactPoint">Contact Point</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/ContactPoint</div></td>
 								<td></td>
-								<td><a href="#ContactPoint.hasnonfeaturedemail">has non featured email </a></td>
+								<td><a href="#ContactPoint.hasprivateemail">has private email </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/hasNonFeaturedEmail</div></td>
 							</tr>
 						
@@ -16504,14 +16416,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
-						
-					
-						
-					
-					
-						
-					
-						
 					
 						
 					
@@ -16649,26 +16553,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#LegalEntity.legalentityactivity">legal entity activity </a></td>
 								<td><div class="shorten">http://www.w3.org/ns/legal-entity#companyActivity</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#LegalEntity">Legal Entity</a></td>
-								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
-								<td></td>
-								<td><a href="#LegalEntity.legalentitystatus">legal entity status </a></td>
-								<td><div class="shorten">http://www.w3.org/ns/legal-entity#companyStatus</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#LegalEntity">Legal Entity</a></td>
-								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
-								<td></td>
-								<td><a href="#LegalEntity.legalformtype">legal form type </a></td>
-								<td><div class="shorten">http://www.w3.org/ns/legal-entity#companyType</div></td>
 							</tr>
 						
 					
@@ -18247,16 +18131,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#Program">Program</a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
 								<td></td>
-								<td><a href="#Program.Atextbaseline.">A text baseline.  </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/baseline</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
-								<td></td>
 								<td><a href="#Program.ambition">ambition </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/ambition</div></td>
 							</tr>
@@ -18269,6 +18143,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Program.banner">banner </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/banner</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Program">Program</a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
+								<td></td>
+								<td><a href="#Program.Baseline">Baseline  </a></td>
+								<td><div class="shorten">http://data4wallonia.com/model/baseline</div></td>
 							</tr>
 						
 					

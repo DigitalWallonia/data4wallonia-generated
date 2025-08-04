@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/62ebe1d634622578138a2817e4ea0a235c9ac61e",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/62ebe1d634622578138a2817e4ea0a235c9ac61e/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/1ea17340cb8b50b909dc83bb6296dec6b908489e",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/1ea17340cb8b50b909dc83bb6296dec6b908489e/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-Generic/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.0/Changelog.md",
     "usesVocs": [],
@@ -177,10 +177,10 @@
         },
         {
           "uri": "http://data4wallonia.com/model/hasNonFeaturedEmail",
-          "name": "hasNonFeaturedEmail",
-          "sort": "has non featured email",
+          "name": "hasPrivateEmail",
+          "sort": "has private email",
           "label": {
-            "en": "has non featured email"
+            "en": "has private email"
           },
           "description": {
             "en": "An non featured email"
@@ -212,7 +212,7 @@
           "rawTags": {
             "uri": "http://data4wallonia.com/model/hasNonFeaturedEmail",
             "definition-en": "An non featured email",
-            "label-en": "has non featured email",
+            "label-en": "has private email",
             "usageNote-ne": "This email cannot be shared via the delivery APIs."
           }
         },
@@ -1196,7 +1196,7 @@
             "en": "Program (e.g. Digital Wallonia) to which the action is linked."
           },
           "usage": {
-            "en": "Characterises the event by its link with an economic strategy programme."
+            "en": "Characterises the event by its link with an economic strategy program."
           },
           "domain": [
             {
@@ -1224,7 +1224,7 @@
           "rawTags": {
             "label-en": "program",
             "uri": "http://data4wallonia.com/model/program",
-            "usageNote-en": "Characterises the event by its link with an economic strategy programme.",
+            "usageNote-en": "Characterises the event by its link with an economic strategy program.",
             "definition-en": "Program (e.g. Digital Wallonia) to which the action is linked."
           }
         },
@@ -1324,7 +1324,9 @@
           "description": {
             "en": "A short description of the event."
           },
-          "usage": {},
+          "usage": {
+            "en": "The description is essential for describing the event succinctly and clearly.  As a complement to the title, it must convey the entire objective of the event and enable its scope to be understood, without any further explanation."
+          },
           "domain": [
             {
               "EA-Name": "PublicEvent",
@@ -1352,7 +1354,7 @@
             "uri": "http://data4wallonia.com/model/shortDescription",
             "definition-en": "A short description of the event.",
             "label-en": "short description",
-            "usageNote": "The description is essential for describing the event succinctly and clearly.  As a complement to the title, it must convey the entire objective of the event and enable its scope to be understood, without any further explanation."
+            "usageNote-en": "The description is essential for describing the event succinctly and clearly.  As a complement to the title, it must convey the entire objective of the event and enable its scope to be understood, without any further explanation."
           }
         },
         {
@@ -2542,7 +2544,7 @@
             "en": "Program (e.g. Digital Wallonia) to which the action is linked."
           },
           "usage": {
-            "en": "Characterises the action by its link with an economic strategy programme."
+            "en": "Characterises the action by its link with an economic strategy program."
           },
           "domain": [
             {
@@ -2569,7 +2571,7 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/program",
-            "usageNote-en": "Characterises the action by its link with an economic strategy programme.",
+            "usageNote-en": "Characterises the action by its link with an economic strategy program.",
             "definition-en": "Program (e.g. Digital Wallonia) to which the action is linked.",
             "label-en": "Program"
           }
@@ -4600,7 +4602,7 @@
             "en": "Program (e.g. Digital Wallonia) to which the post is linked."
           },
           "usage": {
-            "en": "Characterises the post by its link with an economic strategy programme."
+            "en": "Characterises the post by its link with an economic strategy program."
           },
           "domain": [
             {
@@ -4626,7 +4628,7 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "usageNote-en": "Characterises the post by its link with an economic strategy programme.",
+            "usageNote-en": "Characterises the post by its link with an economic strategy program.",
             "label-en": "program",
             "uri": "http://data4wallonia.com/model/program",
             "definition-en": "Program (e.g. Digital Wallonia) to which the post is linked."
@@ -5438,7 +5440,7 @@
             "en": "Program (e.g. Digital Wallonia) to which the article is linked."
           },
           "usage": {
-            "en": "Characterises the press article by its link with an economic strategy programme."
+            "en": "Characterises the press article by its link with an economic strategy program."
           },
           "domain": [
             {
@@ -5466,7 +5468,7 @@
           "rawTags": {
             "definition-en": "Program (e.g. Digital Wallonia) to which the article is linked.",
             "label-en": "program",
-            "usageNote-en": "Characterises the press article by its link with an economic strategy programme.",
+            "usageNote-en": "Characterises the press article by its link with an economic strategy program.",
             "uri": "http://data4wallonia.com/model/program"
           }
         },
@@ -5523,7 +5525,9 @@
           "description": {
             "en": "A quoted person"
           },
-          "usage": {},
+          "usage": {
+            "en": "Preson linked to the article because they are mentioned in it."
+          },
           "domain": [
             {
               "EA-Name": "PressReview",
@@ -5550,6 +5554,7 @@
           "rawTags": {
             "label-en": "quoted person",
             "uri": "http://data4wallonia.com/model/quotedPerson",
+            "usageNote-en": "Preson linked to the article because they are mentioned in it.",
             "definition-en": "A quoted person"
           }
         },
@@ -5885,7 +5890,9 @@
           "description": {
             "en": "Postal address."
           },
-          "usage": {},
+          "usage": {
+            "en": "Legal or business address. This may be a registered office, an office, a place of business, etc."
+          },
           "domain": [
             {
               "EA-Name": "Profile",
@@ -5911,9 +5918,9 @@
           "codelist_uri": "",
           "rawTags": {
             "label-en": "address",
-            "Address": "Legal or business address.  This may be a registered office, an office, a place of business, etc.",
             "uri": "http://data4wallonia.com/model/address",
-            "definition-en": "Postal address."
+            "definition-en": "Postal address.",
+            "usageNote-en": "Legal or business address. This may be a registered office, an office, a place of business, etc."
           }
         },
         {
@@ -6529,7 +6536,7 @@
             "en": "Program (e.g. Digital Wallonia) to which the profile is linked."
           },
           "usage": {
-            "en": "Characterises the profile by its link with an economic strategy programme."
+            "en": "Characterises the profile by its link with an economic strategy program."
           },
           "domain": [
             {
@@ -6557,7 +6564,7 @@
           "rawTags": {
             "definition-en": "Program (e.g. Digital Wallonia) to which the profile is linked.",
             "uri": "http://data4wallonia.com/model/program",
-            "usageNote-en": "Characterises the profile by its link with an economic strategy programme.",
+            "usageNote-en": "Characterises the profile by its link with an economic strategy program.",
             "label-en": "program"
           }
         },
@@ -7124,7 +7131,7 @@
             "en": "Reference to an Asset."
           },
           "usage": {
-            "en": "Link to a reusable image, a banner representing the main subject of the programme."
+            "en": "Link to a reusable image, a banner representing the main subject of the program."
           },
           "domain": [
             {
@@ -7153,18 +7160,18 @@
             "uri": "http://data4wallonia.com/model/banner",
             "label-en": "banner",
             "definition-en": "Reference to an Asset.",
-            "usageNote-en": "Link to a reusable image, a banner representing the main subject of the programme."
+            "usageNote-en": "Link to a reusable image, a banner representing the main subject of the program."
           }
         },
         {
           "uri": "http://data4wallonia.com/model/baseline",
-          "name": "aTextBaseline.",
-          "sort": "A text baseline. ",
+          "name": "baseline",
+          "sort": "Baseline ",
           "label": {
-            "en": "A text baseline. "
+            "en": "Baseline "
           },
           "description": {
-            "en": "A baseline"
+            "en": "A text baseline."
           },
           "usage": {
             "en": "Short marketing description of the programme and its objectives."
@@ -7194,8 +7201,8 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "http://data4wallonia.com/model/baseline",
-            "definition-en": "A baseline",
-            "label-en": "A text baseline. ",
+            "definition-en": "A text baseline.",
+            "label-en": "Baseline ",
             "usageNote-en": "Short marketing description of the programme and its objectives."
           }
         },
@@ -7210,7 +7217,7 @@
             "en": "A reference to a Client site"
           },
           "usage": {
-            "en": "Identification of a client application (website, business application or other) using the programme. "
+            "en": "Identification of a client application (website, business application or other) using the program. "
           },
           "domain": [
             {
@@ -7239,7 +7246,7 @@
             "uri": "http://data4wallonia.com/model/clientSite",
             "definition-en": "A reference to a Client site",
             "label-en": "client site",
-            "usageNote-en": "Identification of a client application (website, business application or other) using the programme. "
+            "usageNote-en": "Identification of a client application (website, business application or other) using the program. "
           }
         },
         {
@@ -7253,7 +7260,7 @@
             "en": "Contact person, referent.  A reference to a Qualified Person"
           },
           "usage": {
-            "en": "A person to whom the target audience can turn for explanations and more information about the programme."
+            "en": "A person to whom the target audience can turn for explanations and more information about the program."
           },
           "domain": [
             {
@@ -7282,7 +7289,7 @@
             "uri": "http://data4wallonia.com/model/contactPerson",
             "label-en": "contact person",
             "definition-en": "Contact person, referent.  A reference to a Qualified Person",
-            "usageNote-en": "A person to whom the target audience can turn for explanations and more information about the programme."
+            "usageNote-en": "A person to whom the target audience can turn for explanations and more information about the program."
           }
         },
         {
@@ -7425,7 +7432,7 @@
             "en": "Reference to an Asset."
           },
           "usage": {
-            "en": "Link to a reusable image, the official logo of the programme."
+            "en": "Link to a reusable image, the official logo of the program."
           },
           "domain": [
             {
@@ -7454,7 +7461,7 @@
             "uri": "http://data4wallonia.com/model/logo",
             "label-en": "logo",
             "definition-en": "Reference to an Asset.",
-            "usageNote-en": "Link to a reusable image, the official logo of the programme."
+            "usageNote-en": "Link to a reusable image, the official logo of the program."
           }
         },
         {
@@ -7468,7 +7475,7 @@
             "en": "A reference to a strategic ambition."
           },
           "usage": {
-            "en": "Indicates the main ambition of the programme."
+            "en": "Indicates the main ambition of the program."
           },
           "domain": [
             {
@@ -7494,7 +7501,7 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "usageNote-en": "Indicates the main ambition of the programme.",
+            "usageNote-en": "Indicates the main ambition of the program.",
             "label-en": "master ambition",
             "definition-en": "A reference to a strategic ambition.",
             "uri": "http://data4wallonia.com/model/masterAmbition"
@@ -7511,7 +7518,7 @@
             "en": "A reference to a profile partner"
           },
           "usage": {
-            "en": "Profile representing a partner of the programme."
+            "en": "Profile representing a partner of the program."
           },
           "domain": [
             {
@@ -7537,7 +7544,7 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "usageNote-en": "Profile representing a partner of the programme.",
+            "usageNote-en": "Profile representing a partner of the program.",
             "label-en": "partner",
             "uri": "http://data4wallonia.com/model/partner",
             "definition-en": "A reference to a profile partner"
@@ -7640,7 +7647,7 @@
             "en": "A reference web site"
           },
           "usage": {
-            "en": "The official website for the strategic programme."
+            "en": "The official website for the strategic program."
           },
           "domain": [
             {
@@ -7669,7 +7676,7 @@
             "uri": "http://data4wallonia.com/model/referenceWebSite",
             "definition-en": "A reference web site",
             "label-en": "reference web site",
-            "usageNote-en": "The official website for the strategic programme."
+            "usageNote-en": "The official website for the strategic program."
           }
         },
         {
@@ -7769,6 +7776,49 @@
             "en": "A reference to an event or a post."
           },
           "usage": {
+            "en": "The most topical element of the program."
+          },
+          "domain": [
+            {
+              "EA-Name": "Program",
+              "uri": "http://data4wallonia.com/model/Program"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "PublicEvent",
+              "range_uri": "http://data.europa.eu/m8g/PublicEvent"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Public Event",
+              "range_puri": "http://data.europa.eu/m8g/PublicEvent",
+              "range_label": {
+                "en": "Public Event"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data4wallonia.com/model/sticky",
+            "label-en": "sticky",
+            "definition-en": "A reference to an event or a post.",
+            "usageNote-en": "The most topical element of the program."
+          }
+        },
+        {
+          "uri": "http://data4wallonia.com/model/sticky",
+          "name": "sticky",
+          "sort": "sticky",
+          "label": {
+            "en": "sticky"
+          },
+          "description": {
+            "en": "A reference to an event or a post."
+          },
+          "usage": {
             "en": "The most topical element of the programme."
           },
           "domain": [
@@ -7802,49 +7852,6 @@
           }
         },
         {
-          "uri": "http://data4wallonia.com/model/sticky",
-          "name": "sticky",
-          "sort": "sticky",
-          "label": {
-            "en": "sticky"
-          },
-          "description": {
-            "en": "A reference to an event or a post."
-          },
-          "usage": {
-            "en": "The most topical element of the programme."
-          },
-          "domain": [
-            {
-              "EA-Name": "Program",
-              "uri": "http://data4wallonia.com/model/Program"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "PublicEvent",
-              "range_uri": "http://data.europa.eu/m8g/PublicEvent"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Public Event",
-              "range_puri": "http://data.europa.eu/m8g/PublicEvent",
-              "range_label": {
-                "en": "Public Event"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://data4wallonia.com/model/sticky",
-            "label-en": "sticky",
-            "definition-en": "A reference to an event or a post.",
-            "usageNote-en": "The most topical element of the programme."
-          }
-        },
-        {
           "uri": "http://data4wallonia.com/model/title",
           "name": "title",
           "sort": "title",
@@ -7855,7 +7862,7 @@
             "en": "Title of the programme."
           },
           "usage": {
-            "en": "The official name of the programme."
+            "en": "The official name of the program."
           },
           "domain": [
             {
@@ -7884,7 +7891,7 @@
             "uri": "http://data4wallonia.com/model/title",
             "definition-en": "Title of the programme.",
             "label-en": "title",
-            "usageNote-en": "The official name of the programme."
+            "usageNote-en": "The official name of the program."
           }
         },
         {
@@ -10550,7 +10557,7 @@
               }
             }
           ],
-          "cardinality": "1",
+          "cardinality": "0..1",
           "codelist_uri": "",
           "rawTags": {
             "label-en": "id",
@@ -10685,92 +10692,6 @@
             "definition-en": "The area of work in which the Legal Entity is engaged. Represented by a NACE code.",
             "label-en": "legal entity activity",
             "usageNote-en": "This is a general term that encompasses all the economic activities carried out by a company during the course of business. The activity of a company should be recorded using a controlled vocabulary. Several such vocabularies exist, many of which map to the UN's <a href=\"https://unstats.un.org/unsd/classifications/Econ/ISIC.cshtml\">ISIC</a> codes. Where a particular controlled vocabulary is in use within a given context, such as <a href=\"https://resources.companieshouse.gov.uk/sic/\">SIC codes</a> in the UK, it is acceptable to use these, however, the preferred choice for European interoperability is <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nace2\">NACE</a>."
-          }
-        },
-        {
-          "uri": "http://www.w3.org/ns/legal-entity#companyStatus",
-          "name": "legalEntityStatus",
-          "sort": "legal entity status",
-          "label": {
-            "en": "legal entity status"
-          },
-          "description": {
-            "en": "Information about the viability of the current position of the legal entity."
-          },
-          "usage": {
-            "en": "Recording the status of a company presents the same issues as its type. The terms 'insolvent', 'bankrupt' and 'in receivership,' for example, are likely to mean slightly different things with different legal implications in different jurisdictions. Best practice for recording various other status levels is to use the relevant jurisdiction's terms and to identify the controlled vocabulary used."
-          },
-          "domain": [
-            {
-              "EA-Name": "LegalEntity",
-              "uri": "http://www.w3.org/ns/legal#LegalEntity"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Code",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Code",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "en": "Code"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://www.w3.org/ns/legal-entity#companyStatus",
-            "label-en": "legal entity status",
-            "definition-en": "Information about the viability of the current position of the legal entity.",
-            "usageNote-en": "Recording the status of a company presents the same issues as its type. The terms 'insolvent', 'bankrupt' and 'in receivership,' for example, are likely to mean slightly different things with different legal implications in different jurisdictions. Best practice for recording various other status levels is to use the relevant jurisdiction's terms and to identify the controlled vocabulary used."
-          }
-        },
-        {
-          "uri": "http://www.w3.org/ns/legal-entity#companyType",
-          "name": "legalFormType",
-          "sort": "legal form type",
-          "label": {
-            "en": "legal form type"
-          },
-          "description": {
-            "en": "The classification of the Legal Entity as a member of a particular group in the context of legal registration."
-          },
-          "usage": {
-            "en": "To indicate the legal form type of a Legal Entity the <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/entity-legal-form\">Entity Legal Form code list</a> published by the Publications Office of the EU and maintained by <a href=\"https://www.gleif.org/en/about-lei/code-lists/iso-20275-entity-legal-forms-code-list\">GLEIF</a> can be used."
-          },
-          "domain": [
-            {
-              "EA-Name": "LegalEntity",
-              "uri": "http://www.w3.org/ns/legal#LegalEntity"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Code",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Code",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "en": "Code"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "http://www.w3.org/ns/legal-entity#companyType",
-            "label-en": "legal form type",
-            "definition-en": "The classification of the Legal Entity as a member of a particular group in the context of legal registration.",
-            "usageNote-en": "To indicate the legal form type of a Legal Entity the <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/entity-legal-form\">Entity Legal Form code list</a> published by the Publications Office of the EU and maintained by <a href=\"https://www.gleif.org/en/about-lei/code-lists/iso-20275-entity-legal-forms-code-list\">GLEIF</a> can be used."
           }
         },
         {
@@ -11569,7 +11490,7 @@
             "en": "A reference to a Contact Point, the main contact information of the resource."
           },
           "usage": {
-            "en": "Usually a phone number and e-mail address. Other contact methods may be included, including online contact information.$ea_notes=Usually a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization's homepage that may or may not provide contact information."
+            "en": "Usually a phone number and e-mail address. Other contact methods may be included, including online contact information."
           },
           "domain": [
             {
@@ -11595,10 +11516,10 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
+            "usageNote-en": "Usually a phone number and e-mail address. Other contact methods may be included, including online contact information.",
             "label-en": "contact point",
             "uri": "http://data.europa.eu/m8g/contactPoint",
-            "definition-en": "A reference to a Contact Point, the main contact information of the resource.",
-            "usageNote-en": "Usually a phone number and e-mail address. Other contact methods may be included, including online contact information.$ea_notes=Usually a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization's homepage that may or may not provide contact information."
+            "definition-en": "A reference to a Contact Point, the main contact information of the resource."
           }
         },
         {
