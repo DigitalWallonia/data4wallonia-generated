@@ -312,7 +312,6 @@ This specification uses the following prefixes to shorten the URIs for readabili
 			      <a href="#Post">Post</a> |
 			      <a href="#PressReview">Press Review</a> |
 			      <a href="#Profile">Profile</a> |
-			      <a href="#Program">Program</a> |
 			      <a href="#PublicEvent">Public Event</a> |
 			      <a href="#QualifiedPerson">Qualified Person</a> |
 			      <a href="#ServicesPlace">Services Place</a> |
@@ -323,7 +322,6 @@ This specification uses the following prefixes to shorten the URIs for readabili
                             |
 			      <a href="#ActionPlanProfile">Action Plan Profile</a> |
 			      <a href="#Address">Address</a> |
-			      <a href="#Ambition">Ambition</a> |
 			      <a href="#AnnualBudget">Annual Budget</a> |
 			      <a href="#Asset">Asset</a> |
 			      <a href="#ContentDynamicList">Content Dynamic List</a> |
@@ -396,7 +394,6 @@ The main entities are those that form the core of the Application Profile.
                         <dd>
                             For this entity the following properties are defined: <a href="#ActionPlan.ActionPlanProfile">Action Plan Profile</a>
                             , <a href="#ActionPlan.AdditionalDescription">Additional Description</a>
-                            , <a href="#ActionPlan.Ambition">Ambition</a>
                             , <a href="#ActionPlan.AnnualBudgetAllocation">Annual Budget Allocation</a>
                             , <a href="#ActionPlan.Beneficiaries">Beneficiaries</a>
                             , <a href="#ActionPlan.Category">Category</a>
@@ -418,7 +415,6 @@ The main entities are those that form the core of the Application Profile.
                             , <a href="#ActionPlan.Numberofoccurences">Number of occurences</a>
                             , <a href="#ActionPlan.Occurence">Occurence</a>
                             , <a href="#ActionPlan.Participant">Participant</a>
-                            , <a href="#ActionPlan.Program">Program</a>
                             , <a href="#ActionPlan.Progressstatus">Progress status</a>
                             , <a href="#ActionPlan.Projectholder">Project holder</a>
                             , <a href="#ActionPlan.Referenceactionplan">Reference action plan</a>
@@ -548,49 +544,6 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                                 <td property="skos:scopeNote">
                                     Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="ActionPlan.Ambition"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/ambition"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20Ambition%20in%20Action Plan&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23ActionPlan.Ambition" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/ambition"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/ambition"
-                                           data-placement="right">
-                                        Ambition</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Ambition" data-placement="right">Ambition</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A reference to a strategic ambition.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).
                                 </td>
 				<!--
                                 <td>
@@ -1505,49 +1458,6 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                             </tr>
                         
-                            <tr id="ActionPlan.Program"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/program"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20Program%20in%20Action Plan&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23ActionPlan.Program" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/program"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/program"
-                                           data-placement="right">
-                                        Program</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Program" data-placement="right">Program</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Program (e.g. Digital Wallonia) to which the action is linked.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Characterises the action by its link with an economic strategy program.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
                             <tr id="ActionPlan.Progressstatus"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/progressStatus"
@@ -2199,8 +2109,6 @@ The main entities are those that form the core of the Application Profile.
         
     </div>
 </section>
-
-
 
 
 
@@ -4150,7 +4058,6 @@ A business might have more than one legal name, particularly in countries with m
                             For this entity the following properties are defined: <a href="#Person.additionaldescription">additional description</a>
                             , <a href="#Person.address">address</a>
                             , <a href="#Person.alternativename">alternative name</a>
-                            , <a href="#Person.ambition">ambition</a>
                             , <a href="#Person.category">category</a>
                             , <a href="#Person.clientsite">client site</a>
                             , <a href="#Person.contactpoint">contact point</a>
@@ -4165,7 +4072,6 @@ A business might have more than one legal name, particularly in countries with m
                             , <a href="#Person.id">id</a>
                             , <a href="#Person.language">language</a>
                             , <a href="#Person.photo">photo</a>
-                            , <a href="#Person.program">program</a>
                             , <a href="#Person.shortdescription">short description</a>
                             , <a href="#Person.slug">slug</a>
                             .
@@ -4325,49 +4231,6 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                                 <td property="skos:scopeNote">
                                     Many individuals use a short form of their name, a 'middle' name as a 'first' name or a professional name. For example, the British politician and former UN High Representative for Bosnia and Herzegovina, Jeremy John Durham Ashdown, Baron Ashdown of Norton-sub-Hamdon, is usually referred to simply as 'Paddy Ashdown' or 'Lord Ashdown.' It is not the role of the alternative name property to record nick names, pet names or other 'familiar names' that will be of no consequence in public sector data exchange. Furthermore, some individuals have more than one legal name in which case the full name property should be used multiple times. Alternative name gives a means of recording names by which an individual is generally known, or professionally known, even though such names are no more than secondary from a legal point of view.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Person.ambition"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/ambition"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20ambition%20in%20Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Person.ambition" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/ambition"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/ambition"
-                                           data-placement="right">
-                                        ambition</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Ambition" data-placement="right">Ambition</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A reference to a strategic ambition.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).
                                 </td>
 				<!--
                                 <td>
@@ -4981,49 +4844,6 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Person.program"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/isContactFor"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20program%20in%20Person&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Person.program" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/isContactFor"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/isContactFor"
-                                           data-placement="right">
-                                        program</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Program" data-placement="right">Program</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Program (e.g. Digital Wallonia) to which the person is linked.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Characterises the person by its link with an economic strategy programme.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
                             <tr id="Person.shortdescription"
                                 typeof="rdfs:Property"
                                 resource="http://purl.org/dc/terms/description"
@@ -5151,8 +4971,7 @@ A business might have more than one legal name, particularly in countries with m
                     </dt>
                     
                         <dd>
-                            For this entity the following properties are defined: <a href="#Post.ambition">ambition</a>
-                            , <a href="#Post.author">author</a>
+                            For this entity the following properties are defined: <a href="#Post.author">author</a>
                             , <a href="#Post.banner">banner</a>
                             , <a href="#Post.category">category</a>
                             , <a href="#Post.clientsite">client site</a>
@@ -5163,7 +4982,6 @@ A business might have more than one legal name, particularly in countries with m
                             , <a href="#Post.introduction">introduction</a>
                             , <a href="#Post.morerecentpost">more recent post</a>
                             , <a href="#Post.pdffile">pdf file</a>
-                            , <a href="#Post.program">program</a>
                             , <a href="#Post.publisheddate">published date</a>
                             , <a href="#Post.relatedevent">related event</a>
                             , <a href="#Post.relatedexternallink">related external link</a>
@@ -5213,49 +5031,6 @@ A business might have more than one legal name, particularly in countries with m
                         </tr>
                     </thead>
                     <tbody class="supertype">
-                        
-                            <tr id="Post.ambition"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/ambition"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20ambition%20in%20Post&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Post.ambition" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/ambition"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/ambition"
-                                           data-placement="right">
-                                        ambition</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Ambition" data-placement="right">Ambition</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A reference to a strategic ambition.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
                         
                             <tr id="Post.author"
                                 typeof="rdfs:Property"
@@ -5719,49 +5494,6 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                                 <td property="skos:scopeNote">
                                     PDF file presenting the content of the article. Mainly used for studies.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Post.program"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/program"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20program%20in%20Post&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Post.program" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/program"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/program"
-                                           data-placement="right">
-                                        program</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Program" data-placement="right">Program</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Program (e.g. Digital Wallonia) to which the post is linked.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Characterises the post by its link with an economic strategy program.
                                 </td>
 				<!--
                                 <td>
@@ -6287,14 +6019,12 @@ A business might have more than one legal name, particularly in countries with m
                     </dt>
                     
                         <dd>
-                            For this entity the following properties are defined: <a href="#PressReview.ambition">ambition</a>
-                            , <a href="#PressReview.articlelink">article link</a>
+                            For this entity the following properties are defined: <a href="#PressReview.articlelink">article link</a>
                             , <a href="#PressReview.category">category</a>
                             , <a href="#PressReview.clientsite">client site</a>
                             , <a href="#PressReview.Id">Id</a>
                             , <a href="#PressReview.journalist">journalist</a>
                             , <a href="#PressReview.language">language</a>
-                            , <a href="#PressReview.program">program</a>
                             , <a href="#PressReview.publisheddate">published date</a>
                             , <a href="#PressReview.quotedperson">quoted person</a>
                             , <a href="#PressReview.Quotedprofile">Quoted profile</a>
@@ -6340,49 +6070,6 @@ A business might have more than one legal name, particularly in countries with m
                         </tr>
                     </thead>
                     <tbody class="supertype">
-                        
-                            <tr id="PressReview.ambition"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/ambition"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20ambition%20in%20Press Review&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PressReview.ambition" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/ambition"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/ambition"
-                                           data-placement="right">
-                                        ambition</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Ambition" data-placement="right">Ambition</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A reference to a strategic ambition.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
                         
                             <tr id="PressReview.articlelink"
                                 typeof="rdfs:Property"
@@ -6631,49 +6318,6 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                                 <td property="skos:scopeNote">
                                     Language in which the referenced article is written or distributed.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="PressReview.program"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/program"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20program%20in%20Press Review&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PressReview.program" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/program"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/program"
-                                           data-placement="right">
-                                        program</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Program" data-placement="right">Program</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    
-                                </td>
-                                <td property="rdfs:comment">
-                                    Program (e.g. Digital Wallonia) to which the article is linked.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Characterises the press article by its link with an economic strategy program.
                                 </td>
 				<!--
                                 <td>
@@ -7029,7 +6673,6 @@ A business might have more than one legal name, particularly in countries with m
                         <dd>
                             For this entity the following properties are defined: <a href="#Profile.additionaldescription">additional description</a>
                             , <a href="#Profile.address">address</a>
-                            , <a href="#Profile.ambition">ambition</a>
                             , <a href="#Profile.category">category</a>
                             , <a href="#Profile.clientsite">client site</a>
                             , <a href="#Profile.companyvalidationdate">company validation date</a>
@@ -7045,7 +6688,6 @@ A business might have more than one legal name, particularly in countries with m
                             , <a href="#Profile.partneradditionaldescription">partner additional description</a>
                             , <a href="#Profile.plateformcontactperson">plateform contact person</a>
                             , <a href="#Profile.profilelegalentity">profile legal entity</a>
-                            , <a href="#Profile.program">program</a>
                             , <a href="#Profile.shortdescription">short description</a>
                             , <a href="#Profile.shorttitle">short title</a>
                             , <a href="#Profile.slug">slug</a>
@@ -7165,49 +6807,6 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                                 <td property="skos:scopeNote">
                                     Legal or business address. This may be a registered office, an office, a place of business, etc.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Profile.ambition"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/ambition"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20ambition%20in%20Profile&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Profile.ambition" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/ambition"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/ambition"
-                                           data-placement="right">
-                                        ambition</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Ambition" data-placement="right">Ambition</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A reference to a strategic ambition.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).
                                 </td>
 				<!--
                                 <td>
@@ -7864,49 +7463,6 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="Profile.program"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/program"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20program%20in%20Profile&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Profile.program" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/program"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/program"
-                                           data-placement="right">
-                                        program</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Program" data-placement="right">Program</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Program (e.g. Digital Wallonia) to which the profile is linked.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Characterises the profile by its link with an economic strategy program.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
                             <tr id="Profile.shortdescription"
                                 typeof="rdfs:Property"
                                 resource="http://data4wallonia.com/model/shortDescription"
@@ -8137,966 +7693,6 @@ A business might have more than one legal name, particularly in countries with m
 
    
         <section>
-            <h3 id="Program">
-                <a href="http://data4wallonia.com/model/Program"
-                   data-toggle="tooltip"
-                   data-content="http://data4wallonia.com/model/Program"
-                   data-placement="right">Program</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20Program&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    The coordinated management of a number of related projects and other activities
-                </dd>
-                
-                
-                
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                        <dd>
-                            For this entity the following properties are defined: <a href="#Program.ambition">ambition</a>
-                            , <a href="#Program.banner">banner</a>
-                            , <a href="#Program.Baseline">Baseline </a>
-                            , <a href="#Program.clientsite">client site</a>
-                            , <a href="#Program.contactperson">contact person</a>
-                            , <a href="#Program.content">content</a>
-                            , <a href="#Program.contentsummary">content summary</a>
-                            , <a href="#Program.contenttitle">content title</a>
-                            , <a href="#Program.Id">Id</a>
-                            , <a href="#Program.logo">logo</a>
-                            , <a href="#Program.masterambition">master ambition</a>
-                            , <a href="#Program.partner">partner</a>
-                            , <a href="#Program.popularizedtitle">popularized title</a>
-                            , <a href="#Program.referencecategory">reference category</a>
-                            , <a href="#Program.referencewebsite">reference web site</a>
-                            , <a href="#Program.shortdescription">short description</a>
-                            , <a href="#Program.slug">slug</a>
-                            , <a href="#Program.sticky">sticky</a>
-                            , <a href="#Program.sticky">sticky</a>
-                            , <a href="#Program.title">title</a>
-                            .
-                    </dd>
-                
-            </dl>
-        </div>
-        
-            <div class="u-table-overflow">
-                <table class="data-table simple" id="table-mandatory-classes">
-                    <thead>
-                        <tr class="data-table__header">
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                            </th>
-                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
-                                Property
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:14%">
-                                Range
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                                Card
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Definition 
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Usage
-                            </th>
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Codelist
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:5%">
-                                DCAT
-                            </th>
-			    -->
-                        </tr>
-                    </thead>
-                    <tbody class="supertype">
-                        
-                            <tr id="Program.ambition"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/ambition"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20ambition%20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.ambition" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/ambition"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/ambition"
-                                           data-placement="right">
-                                        ambition</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Ambition" data-placement="right">Ambition</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A reference to a strategic ambition.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Program.banner"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/banner"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20banner%20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.banner" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/banner"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/banner"
-                                           data-placement="right">
-                                        banner</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Asset" data-placement="right">Asset</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Reference to an Asset.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Link to a reusable image, a banner representing the main subject of the program.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Program.Baseline"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/baseline"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20Baseline %20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.Baseline" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/baseline"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/baseline"
-                                           data-placement="right">
-                                        Baseline </a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A text baseline.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Short marketing description of the programme and its objectives.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Program.clientsite"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/clientSite"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20client site%20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.clientsite" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/clientSite"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/clientSite"
-                                           data-placement="right">
-                                        client site</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#String" data-placement="right">String</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A reference to a Client site
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Identification of a client application (website, business application or other) using the program. 
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Program.contactperson"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/contactPerson"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20contact person%20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.contactperson" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/contactPerson"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/contactPerson"
-                                           data-placement="right">
-                                        contact person</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#QualifiedPerson" data-placement="right">Qualified Person</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Contact person, referent.  A reference to a Qualified Person
-                                </td>
-                                <td property="skos:scopeNote">
-                                    A person to whom the target audience can turn for explanations and more information about the program.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Program.content"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/content"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20content%20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.content" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/content"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/content"
-                                           data-placement="right">
-                                        content</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Editorial text describing the programme and its objectives in detail.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Program.contentsummary"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/contentSummary"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20content summary%20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.contentsummary" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/contentSummary"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/contentSummary"
-                                           data-placement="right">
-                                        content summary</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A content summary
-                                </td>
-                                <td property="skos:scopeNote">
-                                    The content summary is essential for describing the content succinctly and clearly. It allows the reader to understand whether the programme is likely to be of interest to them before going any further.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Program.contenttitle"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/contentTitle"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20content title%20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.contenttitle" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/contentTitle"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/contentTitle"
-                                           data-placement="right">
-                                        content title</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A content title
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Title associated to the content text
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Program.Id"
-                                typeof="rdfs:Property"
-                                resource="http://purl.org/dc/terms/identifier"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20Id%20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.Id" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://purl.org/dc/terms/identifier"
-                                           data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/identifier"
-                                           data-placement="right">
-                                        Id</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..1
-                                </td>
-                                <td property="rdfs:comment">
-                                    A common and non-nullable programme identifier
-                                </td>
-                                <td property="skos:scopeNote">
-                                    A single ID for all uses and connections between databases
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Program.logo"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/logo"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20logo%20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.logo" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/logo"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/logo"
-                                           data-placement="right">
-                                        logo</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Asset" data-placement="right">Asset</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Reference to an Asset.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Link to a reusable image, the official logo of the program.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Program.masterambition"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/masterAmbition"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20master ambition%20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.masterambition" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/masterAmbition"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/masterAmbition"
-                                           data-placement="right">
-                                        master ambition</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Ambition" data-placement="right">Ambition</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A reference to a strategic ambition.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Indicates the main ambition of the program.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Program.partner"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/partner"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20partner%20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.partner" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/partner"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/partner"
-                                           data-placement="right">
-                                        partner</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Profile" data-placement="right">Profile</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A reference to a profile partner
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Profile representing a partner of the program.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Program.popularizedtitle"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/popularizedTitle"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20popularized title%20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.popularizedtitle" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/popularizedTitle"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/popularizedTitle"
-                                           data-placement="right">
-                                        popularized title</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Title in simple terms.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Simplified title or theme linked to the programme, the name of which is that of a strategy.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Program.referencecategory"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/referenceCategory"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20reference category%20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.referencecategory" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/referenceCategory"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/referenceCategory"
-                                           data-placement="right">
-                                        reference category</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Code" data-placement="right">Code</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    The reference category.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    The reference category is the category of the taxonomy that the programme develops in detail.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Program.referencewebsite"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/referenceWebSite"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20reference web site%20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.referencewebsite" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/referenceWebSite"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/referenceWebSite"
-                                           data-placement="right">
-                                        reference web site</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Document" data-placement="right">Document</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A reference web site
-                                </td>
-                                <td property="skos:scopeNote">
-                                    The official website for the strategic program.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Program.shortdescription"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/shortDescription"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20short description%20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.shortdescription" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/shortDescription"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/shortDescription"
-                                           data-placement="right">
-                                        short description</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A short description of the programme.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    The description is essential for describing the programme succinctly and clearly.  As a complement to the title, it must convey the entire objective of the programme and enable its scope to be understood, without any further explanation.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Program.slug"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/slug"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20slug%20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.slug" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/slug"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/slug"
-                                           data-placement="right">
-                                        slug</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Last section of a URL.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Unique across all action plans, it is used to create a unique URL for a domain (https://domain/lg/resource/slug).
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Program.sticky"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/sticky"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20sticky%20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.sticky" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/sticky"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/sticky"
-                                           data-placement="right">
-                                        sticky</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Post" data-placement="right">Post</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A reference to an event or a post.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    The most topical element of the programme.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Program.sticky"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/sticky"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20sticky%20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.sticky" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/sticky"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/sticky"
-                                           data-placement="right">
-                                        sticky</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#PublicEvent" data-placement="right">Public Event</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A reference to an event or a post.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    The most topical element of the program.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Program.title"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/title"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20title%20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Program.title" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/title"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/title"
-                                           data-placement="right">
-                                        title</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Title of the programme.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    The official name of the program.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        
-    </div>
-</section>
-
-
-
-
-
-   
-        <section>
             <h3 id="PublicEvent">
                 <a href="http://data.europa.eu/m8g/PublicEvent"
                    data-toggle="tooltip"
@@ -9126,7 +7722,6 @@ A business might have more than one legal name, particularly in countries with m
                     
                         <dd>
                             For this entity the following properties are defined: <a href="#PublicEvent.additionaldescription">additional description</a>
-                            , <a href="#PublicEvent.ambition">ambition</a>
                             , <a href="#PublicEvent.audience">audience</a>
                             , <a href="#PublicEvent.banner">banner</a>
                             , <a href="#PublicEvent.category">category</a>
@@ -9143,7 +7738,6 @@ A business might have more than one legal name, particularly in countries with m
                             , <a href="#PublicEvent.location">location</a>
                             , <a href="#PublicEvent.organizer">organizer</a>
                             , <a href="#PublicEvent.partner">partner</a>
-                            , <a href="#PublicEvent.program">program</a>
                             , <a href="#PublicEvent.scheduleadditionalinformation">schedule additional information</a>
                             , <a href="#PublicEvent.schedulenotspecified">schedule not specified</a>
                             , <a href="#PublicEvent.shortdescription">short description</a>
@@ -9223,49 +7817,6 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                                 <td property="skos:scopeNote">
                                     Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="PublicEvent.ambition"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/ambition"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20ambition%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.ambition" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/ambition"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/ambition"
-                                           data-placement="right">
-                                        ambition</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Ambition" data-placement="right">Ambition</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A reference to a strategic ambition.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).
                                 </td>
 				<!--
                                 <td>
@@ -9954,49 +8505,6 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                                 <td property="skos:scopeNote">
                                     Profile representing a partner of the event.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="PublicEvent.program"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/model/program"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20program%20in%20Public Event&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23PublicEvent.program" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/model/program"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/model/program"
-                                           data-placement="right">
-                                        program</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Program" data-placement="right">Program</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Program (e.g. Digital Wallonia) to which the action is linked.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    Characterises the event by its link with an economic strategy program.
                                 </td>
 				<!--
                                 <td>
@@ -12589,394 +11097,6 @@ The key difference between a locator designator and a locator name is that the l
 
    
         <section>
-            <h3 id="Ambition">
-                <a href="http://data4wallonia.com/model/Ambition"
-                   data-toggle="tooltip"
-                   data-content="http://data4wallonia.com/model/Ambition"
-                   data-placement="right">Ambition</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20Ambition&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    An ambition
-                </dd>
-                
-                
-                
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                        <dd>
-                            For this entity the following properties are defined: <a href="#Ambition.additionaldescription">additional description</a>
-                            , <a href="#Ambition.clientsite">client site</a>
-                            , <a href="#Ambition.logo">logo</a>
-                            , <a href="#Ambition.referencepost">reference post</a>
-                            , <a href="#Ambition.shortdescription">short description</a>
-                            , <a href="#Ambition.slug">slug</a>
-                            , <a href="#Ambition.title">title</a>
-                            .
-                    </dd>
-                
-            </dl>
-        </div>
-        
-            <div class="u-table-overflow">
-                <table class="data-table simple" id="table-mandatory-classes">
-                    <thead>
-                        <tr class="data-table__header">
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                            </th>
-                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
-                                Property
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:14%">
-                                Range
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                                Card
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Definition 
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Usage
-                            </th>
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Codelist
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:5%">
-                                DCAT
-                            </th>
-			    -->
-                        </tr>
-                    </thead>
-                    <tbody class="supertype">
-                        
-                            <tr id="Ambition.additionaldescription"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/resource/model/additionalDescription"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20additional description%20in%20Ambition&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Ambition.additionaldescription" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/resource/model/additionalDescription"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/resource/model/additionalDescription"
-                                           data-placement="right">
-                                        additional description</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    An additional description
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Ambition.clientsite"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/resource/model/clientSite"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20client site%20in%20Ambition&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Ambition.clientsite" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/resource/model/clientSite"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/resource/model/clientSite"
-                                           data-placement="right">
-                                        client site</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#String" data-placement="right">String</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A client site
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Ambition.logo"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/resource/model/logo"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20logo%20in%20Ambition&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Ambition.logo" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/resource/model/logo"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/resource/model/logo"
-                                           data-placement="right">
-                                        logo</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Asset" data-placement="right">Asset</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A logo
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Ambition.referencepost"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/resource/model/referencePost"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20reference post%20in%20Ambition&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Ambition.referencepost" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/resource/model/referencePost"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/resource/model/referencePost"
-                                           data-placement="right">
-                                        reference post</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Post" data-placement="right">Post</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Ambition.shortdescription"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/resource/model/shortDescription"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20short description%20in%20Ambition&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Ambition.shortdescription" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/resource/model/shortDescription"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/resource/model/shortDescription"
-                                           data-placement="right">
-                                        short description</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A short description
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Ambition.slug"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/resource/model/slug"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20slug%20in%20Ambition&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Ambition.slug" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/resource/model/slug"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/resource/model/slug"
-                                           data-placement="right">
-                                        slug</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A slug
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Ambition.title"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/resource/model/title"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20title%20in%20Ambition&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/%23Ambition.title" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/resource/model/title"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/resource/model/title"
-                                           data-placement="right">
-                                        title</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A title
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        
-    </div>
-</section>
-
-
-
-
-
-   
-        <section>
             <h3 id="AnnualBudget">
                 <a href="http://data4wallonia.com/resource/model/AnnualBudget"
                    data-toggle="tooltip"
@@ -14575,8 +12695,6 @@ The key difference between a locator designator and a locator name is that the l
 
 
 
-
-
    
         <section>
             <h3 id="TemporalEntity">
@@ -15148,14 +13266,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
-						
-					
-						
-					
-					
-						
-					
-						
 					
 						
 					
@@ -15251,16 +13361,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#ActionPlan.AdditionalDescription">Additional Description </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/additionalDescription</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#ActionPlan">Action Plan</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/ActionPlan</div></td>
-								<td></td>
-								<td><a href="#ActionPlan.Ambition">Ambition </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/ambition</div></td>
 							</tr>
 						
 					
@@ -15471,16 +13571,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#ActionPlan.Participant">Participant </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/participant</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#ActionPlan">Action Plan</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/ActionPlan</div></td>
-								<td></td>
-								<td><a href="#ActionPlan.Program">Program </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/program</div></td>
 							</tr>
 						
 					
@@ -15841,111 +13931,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Address.thoroughfare">thoroughfare </a></td>
 								<td><div class="shorten">http://www.w3.org/ns/locn#thoroughfare</div></td>
-							</tr>
-						
-					
-				
-			</tr>
-		
-				
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-					
-						
-							<tr>
-								<td><a href="#Ambition">Ambition</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Ambition</div></td>
-								<td></td>
-								<td><a href="#Ambition.additionaldescription">additional description </a></td>
-								<td><div class="shorten">http://data4wallonia.com/resource/model/additionalDescription</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Ambition">Ambition</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Ambition</div></td>
-								<td></td>
-								<td><a href="#Ambition.clientsite">client site </a></td>
-								<td><div class="shorten">http://data4wallonia.com/resource/model/clientSite</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Ambition">Ambition</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Ambition</div></td>
-								<td></td>
-								<td><a href="#Ambition.logo">logo </a></td>
-								<td><div class="shorten">http://data4wallonia.com/resource/model/logo</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Ambition">Ambition</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Ambition</div></td>
-								<td></td>
-								<td><a href="#Ambition.referencepost">reference post </a></td>
-								<td><div class="shorten">http://data4wallonia.com/resource/model/referencePost</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Ambition">Ambition</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Ambition</div></td>
-								<td></td>
-								<td><a href="#Ambition.shortdescription">short description </a></td>
-								<td><div class="shorten">http://data4wallonia.com/resource/model/shortDescription</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Ambition">Ambition</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Ambition</div></td>
-								<td></td>
-								<td><a href="#Ambition.slug">slug </a></td>
-								<td><div class="shorten">http://data4wallonia.com/resource/model/slug</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Ambition">Ambition</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Ambition</div></td>
-								<td></td>
-								<td><a href="#Ambition.title">title </a></td>
-								<td><div class="shorten">http://data4wallonia.com/resource/model/title</div></td>
 							</tr>
 						
 					
@@ -16815,14 +14800,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
-						
-					
-						
-					
-					
-						
-					
-						
 					
 						
 					
@@ -16890,16 +14867,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Person.alternativename">alternative name </a></td>
 								<td><div class="shorten">http://purl.org/dc/terms/alternative</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://www.w3.org/ns/person#Person</div></td>
-								<td></td>
-								<td><a href="#Person.ambition">ambition </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/ambition</div></td>
 							</tr>
 						
 					
@@ -17048,16 +15015,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#Person">Person</a></td>
 								<td><div class="shorten">http://www.w3.org/ns/person#Person</div></td>
 								<td></td>
-								<td><a href="#Person.program">program </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/isContactFor</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Person">Person</a></td>
-								<td><div class="shorten">http://www.w3.org/ns/person#Person</div></td>
-								<td></td>
 								<td><a href="#Person.shortdescription">short description </a></td>
 								<td><div class="shorten">http://purl.org/dc/terms/description</div></td>
 							</tr>
@@ -17122,10 +15079,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
-						
-					
-						
-					
 					
 						
 					
@@ -17171,20 +15124,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
-						
-					
-						
-					
-					
-						
-							<tr>
-								<td><a href="#Post">Post</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Post</div></td>
-								<td></td>
-								<td><a href="#Post.ambition">ambition </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/ambition</div></td>
-							</tr>
-						
 					
 						
 							<tr>
@@ -17293,16 +15232,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Post.pdffile">pdf file </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/pdfFile</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Post">Post</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Post</div></td>
-								<td></td>
-								<td><a href="#Post.program">program </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/program</div></td>
 							</tr>
 						
 					
@@ -17447,10 +15376,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
-						
-					
-						
-					
 					
 						
 					
@@ -17478,20 +15403,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
-						
-					
-						
-					
-					
-						
-							<tr>
-								<td><a href="#PressReview">Press Review</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/PressReview</div></td>
-								<td></td>
-								<td><a href="#PressReview.ambition">ambition </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/ambition</div></td>
-							</tr>
-						
 					
 						
 							<tr>
@@ -17550,16 +15461,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#PressReview.language">language </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/language</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#PressReview">Press Review</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/PressReview</div></td>
-								<td></td>
-								<td><a href="#PressReview.program">program </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/program</div></td>
 							</tr>
 						
 					
@@ -17682,14 +15583,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
-						
-					
-						
-					
-					
-						
-					
-						
 					
 						
 					
@@ -17753,16 +15646,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Profile.address">address </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/address</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Profile">Profile</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Profile</div></td>
-								<td></td>
-								<td><a href="#Profile.ambition">ambition </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/ambition</div></td>
 							</tr>
 						
 					
@@ -17913,16 +15796,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Profile.profilelegalentity">profile legal entity </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/profileLegalEntity</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Profile">Profile</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Profile</div></td>
-								<td></td>
-								<td><a href="#Profile.program">program </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/program</div></td>
 							</tr>
 						
 					
@@ -18084,264 +15957,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-					
-						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
-								<td></td>
-								<td><a href="#Program.ambition">ambition </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/ambition</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
-								<td></td>
-								<td><a href="#Program.banner">banner </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/banner</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
-								<td></td>
-								<td><a href="#Program.Baseline">Baseline  </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/baseline</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
-								<td></td>
-								<td><a href="#Program.clientsite">client site </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/clientSite</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
-								<td></td>
-								<td><a href="#Program.contactperson">contact person </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/contactPerson</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
-								<td></td>
-								<td><a href="#Program.content">content </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/content</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
-								<td></td>
-								<td><a href="#Program.contentsummary">content summary </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/contentSummary</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
-								<td></td>
-								<td><a href="#Program.contenttitle">content title </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/contentTitle</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
-								<td></td>
-								<td><a href="#Program.Id">Id </a></td>
-								<td><div class="shorten">http://purl.org/dc/terms/identifier</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
-								<td></td>
-								<td><a href="#Program.logo">logo </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/logo</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
-								<td></td>
-								<td><a href="#Program.masterambition">master ambition </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/masterAmbition</div></td>
-							</tr>
-						
-					
 						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
-								<td></td>
-								<td><a href="#Program.partner">partner </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/partner</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
-								<td></td>
-								<td><a href="#Program.popularizedtitle">popularized title </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/popularizedTitle</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
-								<td></td>
-								<td><a href="#Program.referencecategory">reference category </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/referenceCategory</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
-								<td></td>
-								<td><a href="#Program.referencewebsite">reference web site </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/referenceWebSite</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
-								<td></td>
-								<td><a href="#Program.shortdescription">short description </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/shortDescription</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
-								<td></td>
-								<td><a href="#Program.slug">slug </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/slug</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
-								<td></td>
-								<td><a href="#Program.sticky">sticky </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/sticky</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
-								<td></td>
-								<td><a href="#Program.sticky">sticky </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/sticky</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/Program</div></td>
-								<td></td>
-								<td><a href="#Program.title">title </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/title</div></td>
-							</tr>
-						
-					
-				
-			</tr>
-		
-				
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
 					
 						
 					
@@ -18351,44 +15967,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-					
-						
-					
-						
 					
 						
 					
@@ -18448,16 +16026,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#PublicEvent.additionaldescription">additional description </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/additionalDescription</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#PublicEvent">Public Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#PublicEvent.ambition">ambition </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/ambition</div></td>
 							</tr>
 						
 					
@@ -18618,16 +16186,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#PublicEvent.partner">partner </a></td>
 								<td><div class="shorten">http://data4wallonia.com/model/partner</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#PublicEvent">Public Event</a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></td>
-								<td></td>
-								<td><a href="#PublicEvent.program">program </a></td>
-								<td><div class="shorten">http://data4wallonia.com/model/program</div></td>
 							</tr>
 						
 					

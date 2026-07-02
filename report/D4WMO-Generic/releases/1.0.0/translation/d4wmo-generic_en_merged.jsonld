@@ -87,12 +87,12 @@
   "contributors-column": "D4WTA-AP",
   "contributors-file": "stakeholders.csv",
   "diagram": "Model",
-  "documentcommit": "7a839c2f8ab24d418c80a0538d95bfd8032a3144",
+  "documentcommit": "02e7dd80e9cf91572539f47ab8b99da8f1e045ac",
   "documentconfig": {
     "editorDocumentroot": "https://digitalwallonia.github.io/data4wallonia-generated/D4WMO-Generic/releases/1.0.0",
     "statuslabel": "Draft"
   },
-  "dummy": "29",
+  "dummy": "30",
   "eap": "Data4WalloniaModel-Generic.eap",
   "editors": [
     {
@@ -2410,7 +2410,7 @@
       },
       "domain": [
         {
-          "EA-Name": "ProfileLEgalEntity",
+          "EA-Name": "ProfileLegalEntity",
           "uri": "http://data4wallonia.com/model/ProfileLegalEntity"
         }
       ],
@@ -2437,7 +2437,7 @@
             "value": "NOTE"
           }
         ],
-        "EA-Domain": "ProfileLEgalEntity",
+        "EA-Domain": "ProfileLegalEntity",
         "EA-Domain-Guid": "{F3EE5450-C88D-41a3-8497-0240D6574258}",
         "EA-Guid": "{D9448151-59FD-481c-82F4-2795F7FC4F68}",
         "EA-Name": "legalEntity",
@@ -2530,12 +2530,12 @@
       },
       "domain": [
         {
-          "EA-Name": "ProfileLEgalEntity",
+          "EA-Name": "ProfileLegalEntity",
           "uri": "http://data4wallonia.com/model/ProfileLegalEntity"
         }
       ],
       "extra": {
-        "EA-Domain": "ProfileLEgalEntity",
+        "EA-Domain": "ProfileLegalEntity",
         "EA-Domain-Guid": "{F3EE5450-C88D-41a3-8497-0240D6574258}",
         "EA-Guid": "{F18055AC-372F-44c7-A1BD-C4F3785B3D55}",
         "EA-Name": "role",
@@ -4098,846 +4098,6 @@
       }
     },
     {
-      "@id": "http://data4wallonia.com/model/ambition",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{BE8424A7-D8B7-448f-9929-198EEB95D9A0}",
-      "ap-definition-en": {
-        "en": "A reference to a strategic ambition."
-      },
-      "ap-label-en": {
-        "en": "ambition"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A reference to a strategic ambition."
-      },
-      "domain": [
-        {
-          "EA-Name": "Program",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a strategic ambition.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "ambition",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Program",
-        "EA-Domain-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-        "EA-Guid": "{BE8424A7-D8B7-448f-9929-198EEB95D9A0}",
-        "EA-Name": "ambition",
-        "EA-Package": "",
-        "EA-Range": "Ambition",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-          "EA-Name": "Ambition",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a strategic ambition.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "ambition",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A reference to a strategic ambition."
-        },
-        "ap-label-en": {
-          "en": "ambition"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A reference to a strategic ambition."
-        },
-        "derived": "false",
-        "destRole": "ambition",
-        "label": {
-          "en": "ambition"
-        },
-        "sourceRole": "null",
-        "usage": {
-          "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.)."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "ambition"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "ambition",
-      "range": [
-        {
-          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-          "EA-Name": "Ambition",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        }
-      ],
-      "usage": {
-        "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.)."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/ambition",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{F34853C9-A2C8-49f5-BCC0-7EE05C6EB9F5}",
-      "ap-definition-en": {
-        "en": "A reference to a strategic ambition."
-      },
-      "ap-label-en": {
-        "en": "ambition"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A reference to a strategic ambition."
-      },
-      "domain": [
-        {
-          "EA-Name": "PressReview",
-          "uri": "http://data4wallonia.com/model/PressReview"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a strategic ambition.",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "PressReview",
-        "EA-Domain-Guid": "{C88ADBBA-74E2-4bf9-BFF9-3A5A80D78C4C}",
-        "EA-Guid": "{F34853C9-A2C8-49f5-BCC0-7EE05C6EB9F5}",
-        "EA-Name": "ambition",
-        "EA-Package": "",
-        "EA-Range": "Ambition",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-          "EA-Name": "Ambition",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a strategic ambition.",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A reference to a strategic ambition."
-        },
-        "ap-label-en": {
-          "en": "ambition"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A reference to a strategic ambition."
-        },
-        "derived": "false",
-        "destRole": "ambition",
-        "label": {
-          "en": "ambition"
-        },
-        "sourceRole": "null",
-        "usage": {
-          "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.)."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "ambition"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "ambition",
-      "range": [
-        {
-          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-          "EA-Name": "Ambition",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        }
-      ],
-      "usage": {
-        "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.)."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/ambition",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{54C8D220-F5C7-4930-88C6-6B6D383EE941}",
-      "ap-definition-en": {
-        "en": "A reference to a strategic ambition."
-      },
-      "ap-label-en": {
-        "en": "ambition"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A reference to a strategic ambition."
-      },
-      "domain": [
-        {
-          "EA-Name": "Post",
-          "uri": "http://data4wallonia.com/model/Post"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "usageNote-en",
-            "note": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a strategic ambition.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/ambition",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Post",
-        "EA-Domain-Guid": "{FE699782-80E3-4690-8E9A-C5410064CE18}",
-        "EA-Guid": "{54C8D220-F5C7-4930-88C6-6B6D383EE941}",
-        "EA-Name": "ambition",
-        "EA-Package": "",
-        "EA-Range": "Ambition",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-          "EA-Name": "Ambition",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        },
-        "RawTags": [
-          {
-            "key": "usageNote-en",
-            "note": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a strategic ambition.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/ambition",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A reference to a strategic ambition."
-        },
-        "ap-label-en": {
-          "en": "ambition"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A reference to a strategic ambition."
-        },
-        "derived": "false",
-        "destRole": "ambition",
-        "label": {
-          "en": "ambition"
-        },
-        "sourceRole": "null",
-        "usage": {
-          "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.)."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "ambition"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "ambition",
-      "range": [
-        {
-          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-          "EA-Name": "Ambition",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        }
-      ],
-      "usage": {
-        "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.)."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/ambition",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{A8C35051-EEC1-49d4-B894-016880084375}",
-      "ap-definition-en": {
-        "en": "A reference to a strategic ambition."
-      },
-      "ap-label-en": {
-        "en": "ambition"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A reference to a strategic ambition."
-      },
-      "domain": [
-        {
-          "EA-Name": "Profile",
-          "uri": "http://data4wallonia.com/model/Profile"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "usageNote-en",
-            "note": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a strategic ambition.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/ambition",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Profile",
-        "EA-Domain-Guid": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
-        "EA-Guid": "{A8C35051-EEC1-49d4-B894-016880084375}",
-        "EA-Name": "ambition",
-        "EA-Package": "",
-        "EA-Range": "Ambition",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-          "EA-Name": "Ambition",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        },
-        "RawTags": [
-          {
-            "key": "usageNote-en",
-            "note": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a strategic ambition.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/ambition",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A reference to a strategic ambition."
-        },
-        "ap-label-en": {
-          "en": "ambition"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A reference to a strategic ambition."
-        },
-        "derived": "false",
-        "destRole": "ambition",
-        "label": {
-          "en": "ambition"
-        },
-        "sourceRole": "null",
-        "usage": {
-          "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.)."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "ambition"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "ambition",
-      "range": [
-        {
-          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-          "EA-Name": "Ambition",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        }
-      ],
-      "usage": {
-        "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.)."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/ambition",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{82936B7A-9B5D-450b-935A-A281283906FD}",
-      "ap-definition-en": {
-        "en": "A reference to a strategic ambition."
-      },
-      "ap-label-en": {
-        "en": "ambition"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A reference to a strategic ambition."
-      },
-      "domain": [
-        {
-          "EA-Name": "PublicEvent",
-          "uri": "http://data.europa.eu/m8g/PublicEvent"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a strategic ambition.",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "PublicEvent",
-        "EA-Domain-Guid": "{00DBB60C-FE76-4410-A1F1-B7A3BB34F49A}",
-        "EA-Guid": "{82936B7A-9B5D-450b-935A-A281283906FD}",
-        "EA-Name": "ambition",
-        "EA-Package": "",
-        "EA-Range": "Ambition",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-          "EA-Name": "Ambition",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a strategic ambition.",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A reference to a strategic ambition."
-        },
-        "ap-label-en": {
-          "en": "ambition"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A reference to a strategic ambition."
-        },
-        "derived": "false",
-        "destRole": "ambition",
-        "label": {
-          "en": "ambition"
-        },
-        "sourceRole": "null",
-        "usage": {
-          "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.)."
-        }
-      },
-      "generalization": [],
-      "inpackage": "UNKNOWN",
-      "label": {
-        "en": "ambition"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "ambition",
-      "range": [
-        {
-          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-          "EA-Name": "Ambition",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        }
-      ],
-      "usage": {
-        "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.)."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/ambition",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{22A41E9A-660C-4d3c-8E21-98D1DEA859B2}",
-      "ap-definition-en": {
-        "en": "A reference to a strategic ambition."
-      },
-      "ap-label-en": {
-        "en": "ambition"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A reference to a strategic ambition."
-      },
-      "domain": [
-        {
-          "EA-Name": "Person",
-          "uri": "http://www.w3.org/ns/person#Person"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a strategic ambition.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "ambition",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Person",
-        "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
-        "EA-Guid": "{22A41E9A-660C-4d3c-8E21-98D1DEA859B2}",
-        "EA-Name": "ambition",
-        "EA-Package": "",
-        "EA-Range": "Ambition",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-          "EA-Name": "Ambition",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a strategic ambition.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "ambition",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A reference to a strategic ambition."
-        },
-        "ap-label-en": {
-          "en": "ambition"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A reference to a strategic ambition."
-        },
-        "derived": "false",
-        "destRole": "ambition",
-        "label": {
-          "en": "ambition"
-        },
-        "sourceRole": "null",
-        "usage": {
-          "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.)."
-        }
-      },
-      "generalization": [],
-      "inpackage": "UNKNOWN",
-      "label": {
-        "en": "ambition"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "ambition",
-      "range": [
-        {
-          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-          "EA-Name": "Ambition",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        }
-      ],
-      "usage": {
-        "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.)."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/ambition",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{85BEC74F-7687-4895-A2D2-0BD86B754EF3}",
-      "ap-definition-en": {
-        "en": "A reference to a strategic ambition."
-      },
-      "ap-label-en": {
-        "en": "Ambition"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A reference to a strategic ambition."
-      },
-      "domain": [
-        {
-          "EA-Name": "ActionPlan",
-          "uri": "http://data4wallonia.com/model/ActionPlan"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a strategic ambition.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "Ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "ActionPlan",
-        "EA-Domain-Guid": "{922CDABF-F6EF-47c3-80A5-F231384B6CF2}",
-        "EA-Guid": "{85BEC74F-7687-4895-A2D2-0BD86B754EF3}",
-        "EA-Name": "ambition",
-        "EA-Package": "",
-        "EA-Range": "Ambition",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-          "EA-Name": "Ambition",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a strategic ambition.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "Ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.).",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A reference to a strategic ambition."
-        },
-        "ap-label-en": {
-          "en": "Ambition"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A reference to a strategic ambition."
-        },
-        "derived": "false",
-        "destRole": "ambition",
-        "label": {
-          "en": "Ambition"
-        },
-        "sourceRole": "null",
-        "usage": {
-          "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.)."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "Ambition"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "ambition",
-      "range": [
-        {
-          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-          "EA-Name": "Ambition",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        }
-      ],
-      "usage": {
-        "en": "Indicates the ambitions of the Digital Wallonia strategy to which the resource is linked. For example, Smart territory (connectivity, health, mobility, climate, environment, etc.)."
-      }
-    },
-    {
       "@id": "http://data4wallonia.com/model/articleLink",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{B0D8BA38-3D5C-458c-86B9-3712A4268574}",
@@ -5138,101 +4298,6 @@
     {
       "@id": "http://data4wallonia.com/model/banner",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{74131F80-982C-4561-844C-2402B8FCC83B}",
-      "ap-definition-en": {
-        "en": "Reference to an Asset."
-      },
-      "ap-label-en": {
-        "en": "banner"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "Reference to an Asset."
-      },
-      "domain": [
-        {
-          "EA-Name": "Program",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Program",
-        "EA-Domain-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-        "EA-Guid": "{74131F80-982C-4561-844C-2402B8FCC83B}",
-        "EA-Name": "banner",
-        "EA-Package": "d4w",
-        "EA-Range": "Asset",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{9E0A534F-5918-4cbc-ADF4-5BBCD03359AE}",
-          "EA-Name": "Asset",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/File"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/model/banner"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "banner"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "Reference to an Asset."
-          },
-          {
-            "key": "usageNote-en",
-            "note": "null",
-            "value": "Link to a reusable image, a banner representing the main subject of the program."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "Reference to an Asset."
-        },
-        "ap-label-en": {
-          "en": "banner"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "Reference to an Asset."
-        },
-        "label": {
-          "en": "banner"
-        },
-        "usage": {
-          "en": "Link to a reusable image, a banner representing the main subject of the program."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "banner"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "banner",
-      "range": [
-        {
-          "EA-GUID": "{9E0A534F-5918-4cbc-ADF4-5BBCD03359AE}",
-          "EA-Name": "Asset",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/File"
-        }
-      ],
-      "usage": {
-        "en": "Link to a reusable image, a banner representing the main subject of the program."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/banner",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{48196BA3-CCD3-4155-AF22-D7D2A7A66AFA}",
       "ap-definition-en": {
         "en": "Reference to an Asset."
@@ -5418,101 +4483,6 @@
       ],
       "usage": {
         "en": "Link to a reusable image, a banner representing the main subject of the post."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/baseline",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{70B6606A-0458-470c-A89C-1A47AC28CB98}",
-      "ap-definition-en": {
-        "en": "A text baseline."
-      },
-      "ap-label-en": {
-        "en": "Baseline "
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A text baseline."
-      },
-      "domain": [
-        {
-          "EA-Name": "Program",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Program",
-        "EA-Domain-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-        "EA-Guid": "{70B6606A-0458-470c-A89C-1A47AC28CB98}",
-        "EA-Name": "baseLine",
-        "EA-Package": "d4w",
-        "EA-Range": "Text",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/model/baseline"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "A text baseline."
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "Baseline "
-          },
-          {
-            "key": "usageNote-en",
-            "note": "null",
-            "value": "Short marketing description of the programme and its objectives."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A text baseline."
-        },
-        "ap-label-en": {
-          "en": "Baseline "
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A text baseline."
-        },
-        "label": {
-          "en": "Baseline "
-        },
-        "usage": {
-          "en": "Short marketing description of the programme and its objectives."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "Baseline "
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "baseline",
-      "range": [
-        {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ],
-      "usage": {
-        "en": "Short marketing description of the programme and its objectives."
       }
     },
     {
@@ -6489,99 +5459,6 @@
     {
       "@id": "http://data4wallonia.com/model/clientSite",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{BF356519-587D-4e91-9B23-73CE1CEEF654}",
-      "ap-definition-en": {
-        "en": "A reference to a Client site"
-      },
-      "ap-label-en": {
-        "en": "client site"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A reference to a Client site"
-      },
-      "domain": [
-        {
-          "EA-Name": "Program",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Program",
-        "EA-Domain-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-        "EA-Guid": "{BF356519-587D-4e91-9B23-73CE1CEEF654}",
-        "EA-Name": "clientSite",
-        "EA-Package": "d4w",
-        "EA-Range": "String",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-Name": "String",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/model/clientSite"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "A reference to a Client site"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "client site"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "null",
-            "value": "Identification of a client application (website, business application or other) using the program. "
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A reference to a Client site"
-        },
-        "ap-label-en": {
-          "en": "client site"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A reference to a Client site"
-        },
-        "label": {
-          "en": "client site"
-        },
-        "usage": {
-          "en": "Identification of a client application (website, business application or other) using the program. "
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "client site"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "clientSite",
-      "range": [
-        {
-          "EA-Name": "String",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
-        }
-      ],
-      "usage": {
-        "en": "Identification of a client application (website, business application or other) using the program. "
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/clientSite",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{01D6F71D-2EDB-486a-8491-CA865CAEB217}",
       "ap-definition-en": {
         "en": "A reference to a Client site"
@@ -7461,134 +6338,14 @@
       }
     },
     {
-      "@id": "http://data4wallonia.com/model/contactPerson",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{01E2AA6A-FF05-4910-8BF3-CF9DE33E7323}",
-      "ap-definition-en": {
-        "en": "Contact person, referent.  A reference to a Qualified Person"
-      },
-      "ap-label-en": {
-        "en": "contact person"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "Contact person, referent.  A reference to a Qualified Person"
-      },
-      "domain": [
-        {
-          "EA-Name": "Program",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/contactPerson",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "contact person",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "Contact person, referent.  A reference to a Qualified Person",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "A person to whom the target audience can turn for explanations and more information about the program.",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Program",
-        "EA-Domain-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-        "EA-Guid": "{01E2AA6A-FF05-4910-8BF3-CF9DE33E7323}",
-        "EA-Name": "contactPerson",
-        "EA-Package": "",
-        "EA-Range": "QualifiedPerson",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/contactPerson",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "contact person",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "Contact person, referent.  A reference to a Qualified Person",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "A person to whom the target audience can turn for explanations and more information about the program.",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "Contact person, referent.  A reference to a Qualified Person"
-        },
-        "ap-label-en": {
-          "en": "contact person"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "Contact person, referent.  A reference to a Qualified Person"
-        },
-        "derived": "false",
-        "destRole": "contactPerson",
-        "label": {
-          "en": "contact person"
-        },
-        "sourceRole": "null",
-        "usage": {
-          "en": "A person to whom the target audience can turn for explanations and more information about the program."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "contact person"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "contactPerson",
-      "range": [
-        {
-          "EA-GUID": "{CD497760-31AC-47fe-A715-9E6E41AED1C4}",
-          "EA-Name": "QualifiedPerson",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/QualifiedPerson"
-        }
-      ],
-      "usage": {
-        "en": "A person to whom the target audience can turn for explanations and more information about the program."
-      }
-    },
-    {
       "@id": "http://data4wallonia.com/model/contactPoint",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{136BAE7C-CACB-41b6-A007-C0078EAE20C9}",
+      "EA-Guid": "{D864EABE-E0F4-4c21-B305-8F1877985A3B}",
       "ap-definition-en": {
         "en": "A reference to a contact point."
       },
       "ap-label-en": {
-        "en": "Contact Point"
+        "en": "contact point"
       },
       "codelist": [],
       "definition": {
@@ -7596,20 +6353,15 @@
       },
       "domain": [
         {
-          "EA-Name": "ActionPlan",
-          "uri": "http://data4wallonia.com/model/ActionPlan"
+          "EA-Name": "Profile",
+          "uri": "http://data4wallonia.com/model/Profile"
         }
       ],
       "extra": {
         "DestRoleTags": [
           {
             "key": "usageNote-en",
-            "note": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "Contact Point",
+            "note": "The contact point brings together all the general contact information of a profile : website, telephone numbers, emails, etc.",
             "value": "NOTE"
           },
           {
@@ -7618,14 +6370,19 @@
             "value": "NOTE"
           },
           {
+            "key": "label-en",
+            "note": "contact point",
+            "value": "NOTE"
+          },
+          {
             "key": "uri",
             "note": "http://data4wallonia.com/model/contactPoint",
             "value": "NOTE"
           }
         ],
-        "EA-Domain": "ActionPlan",
-        "EA-Domain-Guid": "{922CDABF-F6EF-47c3-80A5-F231384B6CF2}",
-        "EA-Guid": "{136BAE7C-CACB-41b6-A007-C0078EAE20C9}",
+        "EA-Domain": "Profile",
+        "EA-Domain-Guid": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
+        "EA-Guid": "{D864EABE-E0F4-4c21-B305-8F1877985A3B}",
         "EA-Name": "contactPoint",
         "EA-Package": "",
         "EA-Range": "ContactPoint",
@@ -7639,17 +6396,17 @@
         "RawTags": [
           {
             "key": "usageNote-en",
-            "note": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "Contact Point",
+            "note": "The contact point brings together all the general contact information of a profile : website, telephone numbers, emails, etc.",
             "value": "NOTE"
           },
           {
             "key": "definition-en",
             "note": "A reference to a contact point.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "contact point",
             "value": "NOTE"
           },
           {
@@ -7664,7 +6421,7 @@
           "en": "A reference to a contact point."
         },
         "ap-label-en": {
-          "en": "Contact Point"
+          "en": "contact point"
         },
         "ap-usageNote-en": "",
         "definition": {
@@ -7673,17 +6430,17 @@
         "derived": "false",
         "destRole": "contactPoint",
         "label": {
-          "en": "Contact Point"
+          "en": "contact point"
         },
         "sourceRole": "null",
         "usage": {
-          "en": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc."
+          "en": "The contact point brings together all the general contact information of a profile : website, telephone numbers, emails, etc."
         }
       },
       "generalization": [],
       "inpackage": "UNKNOWN",
       "label": {
-        "en": "Contact Point"
+        "en": "contact point"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -7697,7 +6454,7 @@
         }
       ],
       "usage": {
-        "en": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc."
+        "en": "The contact point brings together all the general contact information of a profile : website, telephone numbers, emails, etc."
       }
     },
     {
@@ -7823,12 +6580,12 @@
     {
       "@id": "http://data4wallonia.com/model/contactPoint",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{D864EABE-E0F4-4c21-B305-8F1877985A3B}",
+      "EA-Guid": "{136BAE7C-CACB-41b6-A007-C0078EAE20C9}",
       "ap-definition-en": {
         "en": "A reference to a contact point."
       },
       "ap-label-en": {
-        "en": "contact point"
+        "en": "Contact Point"
       },
       "codelist": [],
       "definition": {
@@ -7836,15 +6593,20 @@
       },
       "domain": [
         {
-          "EA-Name": "Profile",
-          "uri": "http://data4wallonia.com/model/Profile"
+          "EA-Name": "ActionPlan",
+          "uri": "http://data4wallonia.com/model/ActionPlan"
         }
       ],
       "extra": {
         "DestRoleTags": [
           {
             "key": "usageNote-en",
-            "note": "The contact point brings together all the general contact information of a profile : website, telephone numbers, emails, etc.",
+            "note": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "Contact Point",
             "value": "NOTE"
           },
           {
@@ -7853,19 +6615,14 @@
             "value": "NOTE"
           },
           {
-            "key": "label-en",
-            "note": "contact point",
-            "value": "NOTE"
-          },
-          {
             "key": "uri",
             "note": "http://data4wallonia.com/model/contactPoint",
             "value": "NOTE"
           }
         ],
-        "EA-Domain": "Profile",
-        "EA-Domain-Guid": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
-        "EA-Guid": "{D864EABE-E0F4-4c21-B305-8F1877985A3B}",
+        "EA-Domain": "ActionPlan",
+        "EA-Domain-Guid": "{922CDABF-F6EF-47c3-80A5-F231384B6CF2}",
+        "EA-Guid": "{136BAE7C-CACB-41b6-A007-C0078EAE20C9}",
         "EA-Name": "contactPoint",
         "EA-Package": "",
         "EA-Range": "ContactPoint",
@@ -7879,17 +6636,17 @@
         "RawTags": [
           {
             "key": "usageNote-en",
-            "note": "The contact point brings together all the general contact information of a profile : website, telephone numbers, emails, etc.",
+            "note": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "Contact Point",
             "value": "NOTE"
           },
           {
             "key": "definition-en",
             "note": "A reference to a contact point.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "contact point",
             "value": "NOTE"
           },
           {
@@ -7904,7 +6661,7 @@
           "en": "A reference to a contact point."
         },
         "ap-label-en": {
-          "en": "contact point"
+          "en": "Contact Point"
         },
         "ap-usageNote-en": "",
         "definition": {
@@ -7913,17 +6670,17 @@
         "derived": "false",
         "destRole": "contactPoint",
         "label": {
-          "en": "contact point"
+          "en": "Contact Point"
         },
         "sourceRole": "null",
         "usage": {
-          "en": "The contact point brings together all the general contact information of a profile : website, telephone numbers, emails, etc."
+          "en": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc."
         }
       },
       "generalization": [],
       "inpackage": "UNKNOWN",
       "label": {
-        "en": "contact point"
+        "en": "Contact Point"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
@@ -7937,102 +6694,7 @@
         }
       ],
       "usage": {
-        "en": "The contact point brings together all the general contact information of a profile : website, telephone numbers, emails, etc."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/content",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{AA1FD6F4-4209-4060-917C-8CA6CCA1DFED}",
-      "ap-definition-en": {
-        "en": "Editorial text describing the programme and its objectives in detail."
-      },
-      "ap-label-en": {
-        "en": "content"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "Editorial text describing the programme and its objectives in detail."
-      },
-      "domain": [
-        {
-          "EA-Name": "Program",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Program",
-        "EA-Domain-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-        "EA-Guid": "{AA1FD6F4-4209-4060-917C-8CA6CCA1DFED}",
-        "EA-Name": "content",
-        "EA-Package": "d4w",
-        "EA-Range": "Text",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/model/content"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "Editorial text describing the programme and its objectives in detail."
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "content"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "null",
-            "value": "Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "Editorial text describing the programme and its objectives in detail."
-        },
-        "ap-label-en": {
-          "en": "content"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "Editorial text describing the programme and its objectives in detail."
-        },
-        "label": {
-          "en": "content"
-        },
-        "usage": {
-          "en": "Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "content"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "content",
-      "range": [
-        {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ],
-      "usage": {
-        "en": "Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc."
+        "en": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc."
       }
     },
     {
@@ -8128,196 +6790,6 @@
       ],
       "usage": {
         "en": "Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/contentSummary",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{37F961F6-05EC-46f2-857A-0B8451699D22}",
-      "ap-definition-en": {
-        "en": "A content summary"
-      },
-      "ap-label-en": {
-        "en": "content summary"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A content summary"
-      },
-      "domain": [
-        {
-          "EA-Name": "Program",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Program",
-        "EA-Domain-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-        "EA-Guid": "{37F961F6-05EC-46f2-857A-0B8451699D22}",
-        "EA-Name": "contentSummary",
-        "EA-Package": "d4w",
-        "EA-Range": "Text",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/model/contentSummary"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "A content summary"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "content summary"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "null",
-            "value": "The content summary is essential for describing the content succinctly and clearly. It allows the reader to understand whether the programme is likely to be of interest to them before going any further."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A content summary"
-        },
-        "ap-label-en": {
-          "en": "content summary"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A content summary"
-        },
-        "label": {
-          "en": "content summary"
-        },
-        "usage": {
-          "en": "The content summary is essential for describing the content succinctly and clearly. It allows the reader to understand whether the programme is likely to be of interest to them before going any further."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "content summary"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "contentSummary",
-      "range": [
-        {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ],
-      "usage": {
-        "en": "The content summary is essential for describing the content succinctly and clearly. It allows the reader to understand whether the programme is likely to be of interest to them before going any further."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/contentTitle",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{FB734CD8-ADF6-4c69-ADE2-04ACCAE8DE02}",
-      "ap-definition-en": {
-        "en": "A content title"
-      },
-      "ap-label-en": {
-        "en": "content title"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A content title"
-      },
-      "domain": [
-        {
-          "EA-Name": "Program",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Program",
-        "EA-Domain-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-        "EA-Guid": "{FB734CD8-ADF6-4c69-ADE2-04ACCAE8DE02}",
-        "EA-Name": "contentTitle",
-        "EA-Package": "d4w",
-        "EA-Range": "Text",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/model/contentTitle"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "A content title"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "content title"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "null",
-            "value": "Title associated to the content text"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A content title"
-        },
-        "ap-label-en": {
-          "en": "content title"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A content title"
-        },
-        "label": {
-          "en": "content title"
-        },
-        "usage": {
-          "en": "Title associated to the content text"
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "content title"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "contentTitle",
-      "range": [
-        {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ],
-      "usage": {
-        "en": "Title associated to the content text"
       }
     },
     {
@@ -10533,126 +9005,6 @@
       }
     },
     {
-      "@id": "http://data4wallonia.com/model/isContactFor",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{CEE101B6-C393-493e-9B93-0F7AA53183C3}",
-      "ap-definition-en": {
-        "en": "Program (e.g. Digital Wallonia) to which the person is linked."
-      },
-      "ap-label-en": {
-        "en": "program"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "Program (e.g. Digital Wallonia) to which the person is linked."
-      },
-      "domain": [
-        {
-          "EA-Name": "Person",
-          "uri": "http://www.w3.org/ns/person#Person"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "definition-en",
-            "note": "Program (e.g. Digital Wallonia) to which the person is linked.",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "Characterises the person by its link with an economic strategy programme.",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/isContactFor",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "program",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Person",
-        "EA-Domain-Guid": "{E444F278-9C73-4871-9290-C9B09FDADCAE}",
-        "EA-Guid": "{CEE101B6-C393-493e-9B93-0F7AA53183C3}",
-        "EA-Name": "program",
-        "EA-Package": "",
-        "EA-Range": "Program",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-          "EA-Name": "Program",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Program"
-        },
-        "RawTags": [
-          {
-            "key": "definition-en",
-            "note": "Program (e.g. Digital Wallonia) to which the person is linked.",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "Characterises the person by its link with an economic strategy programme.",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/isContactFor",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "program",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "Program (e.g. Digital Wallonia) to which the person is linked."
-        },
-        "ap-label-en": {
-          "en": "program"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "Program (e.g. Digital Wallonia) to which the person is linked."
-        },
-        "derived": "false",
-        "destRole": "program",
-        "label": {
-          "en": "program"
-        },
-        "sourceRole": "null",
-        "usage": {
-          "en": "Characterises the person by its link with an economic strategy programme."
-        }
-      },
-      "generalization": [],
-      "inpackage": "UNKNOWN",
-      "label": {
-        "en": "program"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "program",
-      "range": [
-        {
-          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-          "EA-Name": "Program",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "usage": {
-        "en": "Characterises the person by its link with an economic strategy programme."
-      }
-    },
-    {
       "@id": "http://data4wallonia.com/model/itinerant",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{634BC55B-0CA9-4334-A3E4-6443D6B38267}",
@@ -11146,101 +9498,6 @@
       ],
       "usage": {
         "en": "Indicates the main missions of the action leader (role of this stakeholder). Potential missions : Communication, Governance, Transformation, Watch."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/logo",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{A8B80B63-CAFC-4f2b-B11E-5D08F7218724}",
-      "ap-definition-en": {
-        "en": "Reference to an Asset."
-      },
-      "ap-label-en": {
-        "en": "logo"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "Reference to an Asset."
-      },
-      "domain": [
-        {
-          "EA-Name": "Program",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Program",
-        "EA-Domain-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-        "EA-Guid": "{A8B80B63-CAFC-4f2b-B11E-5D08F7218724}",
-        "EA-Name": "logo",
-        "EA-Package": "d4w",
-        "EA-Range": "Asset",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{9E0A534F-5918-4cbc-ADF4-5BBCD03359AE}",
-          "EA-Name": "Asset",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/File"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/model/logo"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "logo"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "Reference to an Asset."
-          },
-          {
-            "key": "usageNote-en",
-            "note": "null",
-            "value": "Link to a reusable image, the official logo of the program."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "Reference to an Asset."
-        },
-        "ap-label-en": {
-          "en": "logo"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "Reference to an Asset."
-        },
-        "label": {
-          "en": "logo"
-        },
-        "usage": {
-          "en": "Link to a reusable image, the official logo of the program."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "logo"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "logo",
-      "range": [
-        {
-          "EA-GUID": "{9E0A534F-5918-4cbc-ADF4-5BBCD03359AE}",
-          "EA-Name": "Asset",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/File"
-        }
-      ],
-      "usage": {
-        "en": "Link to a reusable image, the official logo of the program."
       }
     },
     {
@@ -11906,126 +10163,6 @@
       ],
       "usage": {
         "en": "If the title is difficult to understand (the technical name of a measure, for example), it is a good idea to use a Marketing Title.  This allows you to name the action with a title, a catchphrase that the target audience can understand."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/masterAmbition",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{CAF95949-0CEF-4e94-8C37-842F66956062}",
-      "ap-definition-en": {
-        "en": "A reference to a strategic ambition."
-      },
-      "ap-label-en": {
-        "en": "master ambition"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A reference to a strategic ambition."
-      },
-      "domain": [
-        {
-          "EA-Name": "Program",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "usageNote-en",
-            "note": "Indicates the main ambition of the program.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "master ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a strategic ambition.",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/masterAmbition",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Program",
-        "EA-Domain-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-        "EA-Guid": "{CAF95949-0CEF-4e94-8C37-842F66956062}",
-        "EA-Name": "masterAmbition",
-        "EA-Package": "",
-        "EA-Range": "Ambition",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-          "EA-Name": "Ambition",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        },
-        "RawTags": [
-          {
-            "key": "usageNote-en",
-            "note": "Indicates the main ambition of the program.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "master ambition",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a strategic ambition.",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/masterAmbition",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A reference to a strategic ambition."
-        },
-        "ap-label-en": {
-          "en": "master ambition"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A reference to a strategic ambition."
-        },
-        "derived": "false",
-        "destRole": "masterAmbition",
-        "label": {
-          "en": "master ambition"
-        },
-        "sourceRole": "null",
-        "usage": {
-          "en": "Indicates the main ambition of the program."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "master ambition"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "masterAmbition",
-      "range": [
-        {
-          "EA-GUID": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-          "EA-Name": "Ambition",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        }
-      ],
-      "usage": {
-        "en": "Indicates the main ambition of the program."
       }
     },
     {
@@ -12999,126 +11136,6 @@
     {
       "@id": "http://data4wallonia.com/model/partner",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{6F1D3DE9-302E-4833-AE2B-2BAE4FFEEB7A}",
-      "ap-definition-en": {
-        "en": "A reference to a profile partner"
-      },
-      "ap-label-en": {
-        "en": "partner"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A reference to a profile partner"
-      },
-      "domain": [
-        {
-          "EA-Name": "Program",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "usageNote-en",
-            "note": "Profile representing a partner of the program.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "partner",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/partner",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a profile partner",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Program",
-        "EA-Domain-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-        "EA-Guid": "{6F1D3DE9-302E-4833-AE2B-2BAE4FFEEB7A}",
-        "EA-Name": "partner",
-        "EA-Package": "",
-        "EA-Range": "Profile",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
-          "EA-Name": "Profile",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Profile"
-        },
-        "RawTags": [
-          {
-            "key": "usageNote-en",
-            "note": "Profile representing a partner of the program.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "partner",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/partner",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a profile partner",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A reference to a profile partner"
-        },
-        "ap-label-en": {
-          "en": "partner"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A reference to a profile partner"
-        },
-        "derived": "false",
-        "destRole": "partner",
-        "label": {
-          "en": "partner"
-        },
-        "sourceRole": "null",
-        "usage": {
-          "en": "Profile representing a partner of the program."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "partner"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "partner",
-      "range": [
-        {
-          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
-          "EA-Name": "Profile",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Profile"
-        }
-      ],
-      "usage": {
-        "en": "Profile representing a partner of the program."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/partner",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{7EA2456E-DD45-48de-9559-2AB2321AE57C}",
       "ap-definition-en": {
         "en": "A reference to a profile partner"
@@ -13657,101 +11674,6 @@
       }
     },
     {
-      "@id": "http://data4wallonia.com/model/popularizedTitle",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{7F22172D-F541-49af-B2D1-99071E5A572C}",
-      "ap-definition-en": {
-        "en": "Title in simple terms."
-      },
-      "ap-label-en": {
-        "en": "popularized title"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "Title in simple terms."
-      },
-      "domain": [
-        {
-          "EA-Name": "Program",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Program",
-        "EA-Domain-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-        "EA-Guid": "{7F22172D-F541-49af-B2D1-99071E5A572C}",
-        "EA-Name": "popularizedTitle",
-        "EA-Package": "d4w",
-        "EA-Range": "Text",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/model/popularizedTitle"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "Title in simple terms."
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "popularized title"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "null",
-            "value": "Simplified title or theme linked to the programme, the name of which is that of a strategy."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "Title in simple terms."
-        },
-        "ap-label-en": {
-          "en": "popularized title"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "Title in simple terms."
-        },
-        "label": {
-          "en": "popularized title"
-        },
-        "usage": {
-          "en": "Simplified title or theme linked to the programme, the name of which is that of a strategy."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "popularized title"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "popularizedTitle",
-      "range": [
-        {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ],
-      "usage": {
-        "en": "Simplified title or theme linked to the programme, the name of which is that of a strategy."
-      }
-    },
-    {
       "@id": "http://data4wallonia.com/model/price",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{05C37A65-3BC3-47fa-AA9A-99B09D800386}",
@@ -13862,7 +11784,7 @@
       },
       "domain": [
         {
-          "EA-Name": "ProfileLEgalEntity",
+          "EA-Name": "ProfileLegalEntity",
           "uri": "http://data4wallonia.com/model/ProfileLegalEntity"
         }
       ],
@@ -13889,7 +11811,7 @@
             "value": "NOTE"
           }
         ],
-        "EA-Domain": "ProfileLEgalEntity",
+        "EA-Domain": "ProfileLegalEntity",
         "EA-Domain-Guid": "{F3EE5450-C88D-41a3-8497-0240D6574258}",
         "EA-Guid": "{E83E777C-9339-4512-9141-D39C80994829}",
         "EA-Name": "profile",
@@ -14019,11 +11941,11 @@
         "EA-Guid": "{E83E777C-9339-4512-9141-D39C80994829}",
         "EA-Name": "profileLegalEntity",
         "EA-Package": "",
-        "EA-Range": "ProfileLEgalEntity",
+        "EA-Range": "ProfileLegalEntity",
         "EA-Type": "connector",
         "RangeData": {
           "EA-GUID": "{F3EE5450-C88D-41a3-8497-0240D6574258}",
-          "EA-Name": "ProfileLEgalEntity",
+          "EA-Name": "ProfileLegalEntity",
           "EA-Package": "d4w",
           "uri": "http://data4wallonia.com/model/ProfileLegalEntity"
         },
@@ -14087,611 +12009,13 @@
       "range": [
         {
           "EA-GUID": "{F3EE5450-C88D-41a3-8497-0240D6574258}",
-          "EA-Name": "ProfileLEgalEntity",
+          "EA-Name": "ProfileLegalEntity",
           "EA-Package": "d4w",
           "uri": "http://data4wallonia.com/model/ProfileLegalEntity"
         }
       ],
       "usage": {
         "en": "Legal entity responsible for the profile"
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/program",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{62518AF5-3A34-4d04-8619-EAB6FDCEEA1A}",
-      "ap-definition-en": {
-        "en": "Program (e.g. Digital Wallonia) to which the article is linked."
-      },
-      "ap-label-en": {
-        "en": "program"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "Program (e.g. Digital Wallonia) to which the article is linked."
-      },
-      "domain": [
-        {
-          "EA-Name": "PressReview",
-          "uri": "http://data4wallonia.com/model/PressReview"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "definition-en",
-            "note": "Program (e.g. Digital Wallonia) to which the article is linked.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "program",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "Characterises the press article by its link with an economic strategy program.",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/program",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "PressReview",
-        "EA-Domain-Guid": "{C88ADBBA-74E2-4bf9-BFF9-3A5A80D78C4C}",
-        "EA-Guid": "{62518AF5-3A34-4d04-8619-EAB6FDCEEA1A}",
-        "EA-Name": "program",
-        "EA-Package": "",
-        "EA-Range": "Program",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-          "EA-Name": "Program",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Program"
-        },
-        "RawTags": [
-          {
-            "key": "definition-en",
-            "note": "Program (e.g. Digital Wallonia) to which the article is linked.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "program",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "Characterises the press article by its link with an economic strategy program.",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/program",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "Program (e.g. Digital Wallonia) to which the article is linked."
-        },
-        "ap-label-en": {
-          "en": "program"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "Program (e.g. Digital Wallonia) to which the article is linked."
-        },
-        "derived": "false",
-        "destRole": "program",
-        "label": {
-          "en": "program"
-        },
-        "sourceRole": "null",
-        "usage": {
-          "en": "Characterises the press article by its link with an economic strategy program."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "program"
-      },
-      "name": "program",
-      "range": [
-        {
-          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-          "EA-Name": "Program",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "usage": {
-        "en": "Characterises the press article by its link with an economic strategy program."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/program",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{81876B2C-67F3-4d9a-B72F-A901BAA9C5C6}",
-      "ap-definition-en": {
-        "en": "Program (e.g. Digital Wallonia) to which the profile is linked."
-      },
-      "ap-label-en": {
-        "en": "program"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "Program (e.g. Digital Wallonia) to which the profile is linked."
-      },
-      "domain": [
-        {
-          "EA-Name": "Profile",
-          "uri": "http://data4wallonia.com/model/Profile"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "definition-en",
-            "note": "Program (e.g. Digital Wallonia) to which the profile is linked.",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/program",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "Characterises the profile by its link with an economic strategy program.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "program",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Profile",
-        "EA-Domain-Guid": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
-        "EA-Guid": "{81876B2C-67F3-4d9a-B72F-A901BAA9C5C6}",
-        "EA-Name": "program",
-        "EA-Package": "",
-        "EA-Range": "Program",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-          "EA-Name": "Program",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Program"
-        },
-        "RawTags": [
-          {
-            "key": "definition-en",
-            "note": "Program (e.g. Digital Wallonia) to which the profile is linked.",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/program",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "Characterises the profile by its link with an economic strategy program.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "program",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "Program (e.g. Digital Wallonia) to which the profile is linked."
-        },
-        "ap-label-en": {
-          "en": "program"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "Program (e.g. Digital Wallonia) to which the profile is linked."
-        },
-        "derived": "false",
-        "destRole": "program",
-        "label": {
-          "en": "program"
-        },
-        "sourceRole": "null",
-        "usage": {
-          "en": "Characterises the profile by its link with an economic strategy program."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "program"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "program",
-      "range": [
-        {
-          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-          "EA-Name": "Program",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "usage": {
-        "en": "Characterises the profile by its link with an economic strategy program."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/program",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{847A3655-09F5-4512-891F-974C15A92CE6}",
-      "ap-definition-en": {
-        "en": "Program (e.g. Digital Wallonia) to which the post is linked."
-      },
-      "ap-label-en": {
-        "en": "program"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "Program (e.g. Digital Wallonia) to which the post is linked."
-      },
-      "domain": [
-        {
-          "EA-Name": "Post",
-          "uri": "http://data4wallonia.com/model/Post"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "usageNote-en",
-            "note": "Characterises the post by its link with an economic strategy program.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "program",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/program",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "Program (e.g. Digital Wallonia) to which the post is linked.",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Post",
-        "EA-Domain-Guid": "{FE699782-80E3-4690-8E9A-C5410064CE18}",
-        "EA-Guid": "{847A3655-09F5-4512-891F-974C15A92CE6}",
-        "EA-Name": "program",
-        "EA-Package": "",
-        "EA-Range": "Program",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-          "EA-Name": "Program",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Program"
-        },
-        "RawTags": [
-          {
-            "key": "usageNote-en",
-            "note": "Characterises the post by its link with an economic strategy program.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "program",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/program",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "Program (e.g. Digital Wallonia) to which the post is linked.",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "Program (e.g. Digital Wallonia) to which the post is linked."
-        },
-        "ap-label-en": {
-          "en": "program"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "Program (e.g. Digital Wallonia) to which the post is linked."
-        },
-        "derived": "false",
-        "destRole": "program",
-        "label": {
-          "en": "program"
-        },
-        "sourceRole": "null",
-        "usage": {
-          "en": "Characterises the post by its link with an economic strategy program."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "program"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "program",
-      "range": [
-        {
-          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-          "EA-Name": "Program",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "usage": {
-        "en": "Characterises the post by its link with an economic strategy program."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/program",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{8B8D9D54-B8B6-4f3c-BD79-A3993B99340A}",
-      "ap-definition-en": {
-        "en": "Program (e.g. Digital Wallonia) to which the action is linked."
-      },
-      "ap-label-en": {
-        "en": "program"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "Program (e.g. Digital Wallonia) to which the action is linked."
-      },
-      "domain": [
-        {
-          "EA-Name": "PublicEvent",
-          "uri": "http://data.europa.eu/m8g/PublicEvent"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "label-en",
-            "note": "program",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/program",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "Characterises the event by its link with an economic strategy program.",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "Program (e.g. Digital Wallonia) to which the action is linked.",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "PublicEvent",
-        "EA-Domain-Guid": "{00DBB60C-FE76-4410-A1F1-B7A3BB34F49A}",
-        "EA-Guid": "{8B8D9D54-B8B6-4f3c-BD79-A3993B99340A}",
-        "EA-Name": "program",
-        "EA-Package": "",
-        "EA-Range": "Program",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-          "EA-Name": "Program",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Program"
-        },
-        "RawTags": [
-          {
-            "key": "label-en",
-            "note": "program",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/program",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "Characterises the event by its link with an economic strategy program.",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "Program (e.g. Digital Wallonia) to which the action is linked.",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "Program (e.g. Digital Wallonia) to which the action is linked."
-        },
-        "ap-label-en": {
-          "en": "program"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "Program (e.g. Digital Wallonia) to which the action is linked."
-        },
-        "derived": "false",
-        "destRole": "program",
-        "label": {
-          "en": "program"
-        },
-        "sourceRole": "null",
-        "usage": {
-          "en": "Characterises the event by its link with an economic strategy program."
-        }
-      },
-      "generalization": [],
-      "inpackage": "UNKNOWN",
-      "label": {
-        "en": "program"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "program",
-      "range": [
-        {
-          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-          "EA-Name": "Program",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "usage": {
-        "en": "Characterises the event by its link with an economic strategy program."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/program",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{E9F51D94-156A-4c60-908E-4E504BFC45FC}",
-      "ap-definition-en": {
-        "en": "Program (e.g. Digital Wallonia) to which the action is linked."
-      },
-      "ap-label-en": {
-        "en": "Program"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "Program (e.g. Digital Wallonia) to which the action is linked."
-      },
-      "domain": [
-        {
-          "EA-Name": "ActionPlan",
-          "uri": "http://data4wallonia.com/model/ActionPlan"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/program",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "Characterises the action by its link with an economic strategy program.",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "Program (e.g. Digital Wallonia) to which the action is linked.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "Program",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "ActionPlan",
-        "EA-Domain-Guid": "{922CDABF-F6EF-47c3-80A5-F231384B6CF2}",
-        "EA-Guid": "{E9F51D94-156A-4c60-908E-4E504BFC45FC}",
-        "EA-Name": "program",
-        "EA-Package": "",
-        "EA-Range": "Program",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-          "EA-Name": "Program",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Program"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/program",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "Characterises the action by its link with an economic strategy program.",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "Program (e.g. Digital Wallonia) to which the action is linked.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "Program",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "Program (e.g. Digital Wallonia) to which the action is linked."
-        },
-        "ap-label-en": {
-          "en": "Program"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "Program (e.g. Digital Wallonia) to which the action is linked."
-        },
-        "derived": "false",
-        "destRole": "program",
-        "label": {
-          "en": "Program"
-        },
-        "sourceRole": "null",
-        "usage": {
-          "en": "Characterises the action by its link with an economic strategy program."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "Program"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "program",
-      "range": [
-        {
-          "EA-GUID": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-          "EA-Name": "Program",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "usage": {
-        "en": "Characterises the action by its link with an economic strategy program."
       }
     },
     {
@@ -15448,101 +12772,6 @@
     {
       "@id": "http://data4wallonia.com/model/referenceCategory",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{3F211A4B-3F67-4662-84A4-634D098C629B}",
-      "ap-definition-en": {
-        "en": "The reference category."
-      },
-      "ap-label-en": {
-        "en": "reference category"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "The reference category."
-      },
-      "domain": [
-        {
-          "EA-Name": "Program",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Program",
-        "EA-Domain-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-        "EA-Guid": "{3F211A4B-3F67-4662-84A4-634D098C629B}",
-        "EA-Name": "referenceCategory",
-        "EA-Package": "d4w",
-        "EA-Range": "Code",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
-          "EA-Name": "Code",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/model/referenceCategory"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "The reference category."
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "reference category"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "null",
-            "value": "The reference category is the category of the taxonomy that the programme develops in detail."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "The reference category."
-        },
-        "ap-label-en": {
-          "en": "reference category"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "The reference category."
-        },
-        "label": {
-          "en": "reference category"
-        },
-        "usage": {
-          "en": "The reference category is the category of the taxonomy that the programme develops in detail."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "reference category"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "referenceCategory",
-      "range": [
-        {
-          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
-          "EA-Name": "Code",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-        }
-      ],
-      "usage": {
-        "en": "The reference category is the category of the taxonomy that the programme develops in detail."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/referenceCategory",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{62D9391A-41CB-496d-BBD5-DD4BC0A47F66}",
       "ap-definition-en": {
         "en": "The reference category."
@@ -15858,101 +13087,6 @@
       ],
       "usage": {
         "en": "The reference post (article) allows you to communicate freely on an action plan, to monitor it, to publish the results of the action, a list of prize-winners, etc. with complete editorial freedom."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/referenceWebSite",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{10232B48-1558-4d32-9A42-C2BF93719786}",
-      "ap-definition-en": {
-        "en": "A reference web site"
-      },
-      "ap-label-en": {
-        "en": "reference web site"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A reference web site"
-      },
-      "domain": [
-        {
-          "EA-Name": "Program",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Program",
-        "EA-Domain-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-        "EA-Guid": "{10232B48-1558-4d32-9A42-C2BF93719786}",
-        "EA-Name": "referenceWebSite",
-        "EA-Package": "d4w",
-        "EA-Range": "Document",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{39C8A551-9263-4b6d-B7CC-2B940A957CB0}",
-          "EA-Name": "Document",
-          "EA-Package": "foaf",
-          "uri": "http://xmlns.com/foaf/0.1/Document"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/model/referenceWebSite"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "A reference web site"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "reference web site"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "null",
-            "value": "The official website for the strategic program."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A reference web site"
-        },
-        "ap-label-en": {
-          "en": "reference web site"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A reference web site"
-        },
-        "label": {
-          "en": "reference web site"
-        },
-        "usage": {
-          "en": "The official website for the strategic program."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "reference web site"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "referenceWebSite",
-      "range": [
-        {
-          "EA-GUID": "{39C8A551-9263-4b6d-B7CC-2B940A957CB0}",
-          "EA-Name": "Document",
-          "EA-Package": "foaf",
-          "uri": "http://xmlns.com/foaf/0.1/Document"
-        }
-      ],
-      "usage": {
-        "en": "The official website for the strategic program."
       }
     },
     {
@@ -17379,101 +14513,6 @@
     {
       "@id": "http://data4wallonia.com/model/shortDescription",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{524B6F5F-8AD4-4708-A379-26163EC9F8B7}",
-      "ap-definition-en": {
-        "en": "A short description of the programme."
-      },
-      "ap-label-en": {
-        "en": "short description"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A short description of the programme."
-      },
-      "domain": [
-        {
-          "EA-Name": "Program",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Program",
-        "EA-Domain-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-        "EA-Guid": "{524B6F5F-8AD4-4708-A379-26163EC9F8B7}",
-        "EA-Name": "shortDescription",
-        "EA-Package": "d4w",
-        "EA-Range": "Text",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/model/shortDescription"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "A short description of the programme."
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "short description"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "null",
-            "value": "The description is essential for describing the programme succinctly and clearly.  As a complement to the title, it must convey the entire objective of the programme and enable its scope to be understood, without any further explanation."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A short description of the programme."
-        },
-        "ap-label-en": {
-          "en": "short description"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A short description of the programme."
-        },
-        "label": {
-          "en": "short description"
-        },
-        "usage": {
-          "en": "The description is essential for describing the programme succinctly and clearly.  As a complement to the title, it must convey the entire objective of the programme and enable its scope to be understood, without any further explanation."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "short description"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "shortDescription",
-      "range": [
-        {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ],
-      "usage": {
-        "en": "The description is essential for describing the programme succinctly and clearly.  As a complement to the title, it must convey the entire objective of the programme and enable its scope to be understood, without any further explanation."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/shortDescription",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{EECF3072-8E9F-459a-8AA9-A17BA2E1F896}",
       "ap-definition-en": {
         "en": "A short description of the profile."
@@ -17962,12 +15001,12 @@
       },
       "domain": [
         {
-          "EA-Name": "ProfileLEgalEntity",
+          "EA-Name": "ProfileLegalEntity",
           "uri": "http://data4wallonia.com/model/ProfileLegalEntity"
         }
       ],
       "extra": {
-        "EA-Domain": "ProfileLEgalEntity",
+        "EA-Domain": "ProfileLegalEntity",
         "EA-Domain-Guid": "{F3EE5450-C88D-41a3-8497-0240D6574258}",
         "EA-Guid": "{FBF7CDA0-EC14-49e2-8898-D51D7BE807A7}",
         "EA-Name": "shortDescription",
@@ -18304,101 +15343,6 @@
       ],
       "usage": {
         "en": "Unique across all persons, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/slug",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{F4168BD9-802D-4a3f-98AE-3C60587297CD}",
-      "ap-definition-en": {
-        "en": "Last section of a URL."
-      },
-      "ap-label-en": {
-        "en": "slug"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "Last section of a URL."
-      },
-      "domain": [
-        {
-          "EA-Name": "Program",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Program",
-        "EA-Domain-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-        "EA-Guid": "{F4168BD9-802D-4a3f-98AE-3C60587297CD}",
-        "EA-Name": "slug",
-        "EA-Package": "d4w",
-        "EA-Range": "Text",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/model/slug"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "Last section of a URL."
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "slug"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "null",
-            "value": "Unique across all action plans, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "Last section of a URL."
-        },
-        "ap-label-en": {
-          "en": "slug"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "Last section of a URL."
-        },
-        "label": {
-          "en": "slug"
-        },
-        "usage": {
-          "en": "Unique across all action plans, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "slug"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "slug",
-      "range": [
-        {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ],
-      "usage": {
-        "en": "Unique across all action plans, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
       }
     },
     {
@@ -19478,341 +16422,6 @@
       ],
       "usage": {
         "en": "Start date of the action or financial support linked to the action."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/sticky",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{6B132A8B-D288-4f06-B6F9-C8B609F87FD0}",
-      "ap-definition-en": {
-        "en": "A reference to an event or a post."
-      },
-      "ap-label-en": {
-        "en": "sticky"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A reference to an event or a post."
-      },
-      "domain": [
-        {
-          "EA-Name": "Program",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "usageNote-en",
-            "note": "The most topical element of the programme.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "sticky",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to an event or a post.",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/sticky",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Program",
-        "EA-Domain-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-        "EA-Guid": "{6B132A8B-D288-4f06-B6F9-C8B609F87FD0}",
-        "EA-Name": "sticky",
-        "EA-Package": "",
-        "EA-Range": "Post",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{FE699782-80E3-4690-8E9A-C5410064CE18}",
-          "EA-Name": "Post",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Post"
-        },
-        "RawTags": [
-          {
-            "key": "usageNote-en",
-            "note": "The most topical element of the programme.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "sticky",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to an event or a post.",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/sticky",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A reference to an event or a post."
-        },
-        "ap-label-en": {
-          "en": "sticky"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A reference to an event or a post."
-        },
-        "derived": "false",
-        "destRole": "sticky",
-        "label": {
-          "en": "sticky"
-        },
-        "sourceRole": "null",
-        "usage": {
-          "en": "The most topical element of the programme."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "sticky"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "sticky",
-      "range": [
-        {
-          "EA-GUID": "{FE699782-80E3-4690-8E9A-C5410064CE18}",
-          "EA-Name": "Post",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Post"
-        }
-      ],
-      "usage": {
-        "en": "The most topical element of the programme."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/sticky",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{12E2B51B-2AAB-4e31-B813-01B307EF6194}",
-      "ap-definition-en": {
-        "en": "A reference to an event or a post."
-      },
-      "ap-label-en": {
-        "en": "sticky"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A reference to an event or a post."
-      },
-      "domain": [
-        {
-          "EA-Name": "Program",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/sticky",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "sticky",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to an event or a post.",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "The most topical element of the program.",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Program",
-        "EA-Domain-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-        "EA-Guid": "{12E2B51B-2AAB-4e31-B813-01B307EF6194}",
-        "EA-Name": "sticky",
-        "EA-Package": "",
-        "EA-Range": "PublicEvent",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{00DBB60C-FE76-4410-A1F1-B7A3BB34F49A}",
-          "EA-Name": "PublicEvent",
-          "EA-Package": "cv",
-          "uri": "http://data.europa.eu/m8g/PublicEvent"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/model/sticky",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "sticky",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to an event or a post.",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "The most topical element of the program.",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A reference to an event or a post."
-        },
-        "ap-label-en": {
-          "en": "sticky"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A reference to an event or a post."
-        },
-        "derived": "false",
-        "destRole": "sticky",
-        "label": {
-          "en": "sticky"
-        },
-        "sourceRole": "null",
-        "usage": {
-          "en": "The most topical element of the program."
-        }
-      },
-      "generalization": [],
-      "inpackage": "UNKNOWN",
-      "label": {
-        "en": "sticky"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "sticky",
-      "range": [
-        {
-          "EA-GUID": "{00DBB60C-FE76-4410-A1F1-B7A3BB34F49A}",
-          "EA-Name": "PublicEvent",
-          "EA-Package": "cv",
-          "uri": "http://data.europa.eu/m8g/PublicEvent"
-        }
-      ],
-      "usage": {
-        "en": "The most topical element of the program."
-      }
-    },
-    {
-      "@id": "http://data4wallonia.com/model/title",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{4304C289-B4EF-4291-84FD-7FD9212B109A}",
-      "ap-definition-en": {
-        "en": "Title of the programme."
-      },
-      "ap-label-en": {
-        "en": "title"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "Title of the programme."
-      },
-      "domain": [
-        {
-          "EA-Name": "Program",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Program",
-        "EA-Domain-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-        "EA-Guid": "{4304C289-B4EF-4291-84FD-7FD9212B109A}",
-        "EA-Name": "title",
-        "EA-Package": "d4w",
-        "EA-Range": "Text",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/model/title"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "Title of the programme."
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "title"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "null",
-            "value": "The official name of the program."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "Title of the programme."
-        },
-        "ap-label-en": {
-          "en": "title"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "Title of the programme."
-        },
-        "label": {
-          "en": "title"
-        },
-        "usage": {
-          "en": "The official name of the program."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "title"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "title",
-      "range": [
-        {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ],
-      "usage": {
-        "en": "The official name of the program."
       }
     },
     {
@@ -21224,91 +17833,6 @@
     {
       "@id": "http://data4wallonia.com/resource/model/additionalDescription",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{D600379A-49A8-4255-A740-34B53AD0CFBC}",
-      "ap-definition-en": {
-        "en": "An additional description"
-      },
-      "ap-label-en": {
-        "en": "additional description"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "An additional description"
-      },
-      "domain": [
-        {
-          "EA-Name": "Ambition",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Ambition",
-        "EA-Domain-Guid": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-        "EA-Guid": "{D600379A-49A8-4255-A740-34B53AD0CFBC}",
-        "EA-Name": "additionalDescription",
-        "EA-Package": "d4w",
-        "EA-Range": "Text",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/resource/model/additionalDescription"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "additional description"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "An additional description"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "An additional description"
-        },
-        "ap-label-en": {
-          "en": "additional description"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "An additional description"
-        },
-        "label": {
-          "en": "additional description"
-        },
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "additional description"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "additionalDescription",
-      "range": [
-        {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ]
-    },
-    {
-      "@id": "http://data4wallonia.com/resource/model/additionalDescription",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{B9601C7D-EB08-4dd3-BA5F-1C8F4820ACB2}",
       "ap-definition-en": {
         "en": "An additional description"
@@ -21591,89 +18115,6 @@
           "EA-Name": "Decimal",
           "EA-Package": "",
           "uri": "http://www.w3.org/2001/XMLSchema#decimal"
-        }
-      ]
-    },
-    {
-      "@id": "http://data4wallonia.com/resource/model/clientSite",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{EBAC5111-6C25-4a65-A1C1-DEB7950F54E8}",
-      "ap-definition-en": {
-        "en": "A client site"
-      },
-      "ap-label-en": {
-        "en": "client site"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A client site"
-      },
-      "domain": [
-        {
-          "EA-Name": "Ambition",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Ambition",
-        "EA-Domain-Guid": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-        "EA-Guid": "{EBAC5111-6C25-4a65-A1C1-DEB7950F54E8}",
-        "EA-Name": "clientSite",
-        "EA-Package": "d4w",
-        "EA-Range": "String",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-Name": "String",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/resource/model/clientSite"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "client site"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "A client site"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A client site"
-        },
-        "ap-label-en": {
-          "en": "client site"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A client site"
-        },
-        "label": {
-          "en": "client site"
-        },
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "client site"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "clientSite",
-      "range": [
-        {
-          "EA-Name": "String",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
         }
       ]
     },
@@ -22376,91 +18817,6 @@
       }
     },
     {
-      "@id": "http://data4wallonia.com/resource/model/logo",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{44AE869A-7E81-4157-AB37-B32DE66AA54B}",
-      "ap-definition-en": {
-        "en": "A logo"
-      },
-      "ap-label-en": {
-        "en": "logo"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A logo"
-      },
-      "domain": [
-        {
-          "EA-Name": "Ambition",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Ambition",
-        "EA-Domain-Guid": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-        "EA-Guid": "{44AE869A-7E81-4157-AB37-B32DE66AA54B}",
-        "EA-Name": "logo",
-        "EA-Package": "d4w",
-        "EA-Range": "Asset",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{9E0A534F-5918-4cbc-ADF4-5BBCD03359AE}",
-          "EA-Name": "Asset",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/File"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/resource/model/logo"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "logo"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "A logo"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A logo"
-        },
-        "ap-label-en": {
-          "en": "logo"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A logo"
-        },
-        "label": {
-          "en": "logo"
-        },
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "logo"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "logo",
-      "range": [
-        {
-          "EA-GUID": "{9E0A534F-5918-4cbc-ADF4-5BBCD03359AE}",
-          "EA-Name": "Asset",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/File"
-        }
-      ]
-    },
-    {
       "@id": "http://data4wallonia.com/resource/model/numberOfBeneficiaries",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{CF569294-405F-4e7e-A64B-FC423D3C0197}",
@@ -22752,106 +19108,6 @@
       ]
     },
     {
-      "@id": "http://data4wallonia.com/resource/model/referencePost",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{A82941C0-40EF-4da7-97B9-749933EBC883}",
-      "ap-definition-en": {
-        "en": "TODO"
-      },
-      "ap-label-en": {
-        "en": "reference post"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "EA-Name": "Ambition",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/resource/model/referencePost",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "reference post",
-            "value": "NOTE"
-          },
-          {
-            "key": "definiton-en",
-            "note": "A reference post",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Ambition",
-        "EA-Domain-Guid": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-        "EA-Guid": "{A82941C0-40EF-4da7-97B9-749933EBC883}",
-        "EA-Name": "referencePost",
-        "EA-Package": "",
-        "EA-Range": "Post",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{FE699782-80E3-4690-8E9A-C5410064CE18}",
-          "EA-Name": "Post",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Post"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "http://data4wallonia.com/resource/model/referencePost",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "reference post",
-            "value": "NOTE"
-          },
-          {
-            "key": "definiton-en",
-            "note": "A reference post",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "TODO"
-        },
-        "ap-label-en": {
-          "en": "reference post"
-        },
-        "ap-usageNote-en": "",
-        "definition": "",
-        "derived": "false",
-        "destRole": "referencePost",
-        "label": {
-          "en": "reference post"
-        },
-        "sourceRole": "null",
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "reference post"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "referencePost",
-      "range": [
-        {
-          "EA-GUID": "{FE699782-80E3-4690-8E9A-C5410064CE18}",
-          "EA-Name": "Post",
-          "EA-Package": "d4w",
-          "uri": "http://data4wallonia.com/model/Post"
-        }
-      ]
-    },
-    {
       "@id": "http://data4wallonia.com/resource/model/role",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{2BC0B426-511B-4286-BC27-864A60B95C01}",
@@ -22937,176 +19193,6 @@
       ]
     },
     {
-      "@id": "http://data4wallonia.com/resource/model/shortDescription",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{B179637B-E032-4f89-9032-E08B69362E56}",
-      "ap-definition-en": {
-        "en": "A short description"
-      },
-      "ap-label-en": {
-        "en": "short description"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A short description"
-      },
-      "domain": [
-        {
-          "EA-Name": "Ambition",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Ambition",
-        "EA-Domain-Guid": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-        "EA-Guid": "{B179637B-E032-4f89-9032-E08B69362E56}",
-        "EA-Name": "shortDescription",
-        "EA-Package": "d4w",
-        "EA-Range": "Text",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/resource/model/shortDescription"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "short description"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "A short description"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A short description"
-        },
-        "ap-label-en": {
-          "en": "short description"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A short description"
-        },
-        "label": {
-          "en": "short description"
-        },
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "short description"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "shortDescription",
-      "range": [
-        {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ]
-    },
-    {
-      "@id": "http://data4wallonia.com/resource/model/slug",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{AC594F8B-5738-4cf5-A185-30D560FCDC31}",
-      "ap-definition-en": {
-        "en": "A slug"
-      },
-      "ap-label-en": {
-        "en": "slug"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A slug"
-      },
-      "domain": [
-        {
-          "EA-Name": "Ambition",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Ambition",
-        "EA-Domain-Guid": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-        "EA-Guid": "{AC594F8B-5738-4cf5-A185-30D560FCDC31}",
-        "EA-Name": "slug",
-        "EA-Package": "d4w",
-        "EA-Range": "Text",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/resource/model/slug"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "slug"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "A slug"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A slug"
-        },
-        "ap-label-en": {
-          "en": "slug"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A slug"
-        },
-        "label": {
-          "en": "slug"
-        },
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "slug"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "slug",
-      "range": [
-        {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ]
-    },
-    {
       "@id": "http://data4wallonia.com/resource/model/title",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{2BBFCBD7-AC41-40ad-9206-ACD289BD918B}",
@@ -23168,91 +19254,6 @@
         "ap-usageNote-en": "",
         "definition": {
           "en": "A title."
-        },
-        "label": {
-          "en": "title"
-        },
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "title"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "title",
-      "range": [
-        {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ]
-    },
-    {
-      "@id": "http://data4wallonia.com/resource/model/title",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{948A2B6F-D0C3-4af5-8B4A-4FFEEA4CB7D3}",
-      "ap-definition-en": {
-        "en": "A title"
-      },
-      "ap-label-en": {
-        "en": "title"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A title"
-      },
-      "domain": [
-        {
-          "EA-Name": "Ambition",
-          "uri": "http://data4wallonia.com/model/Ambition"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Ambition",
-        "EA-Domain-Guid": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-        "EA-Guid": "{948A2B6F-D0C3-4af5-8B4A-4FFEEA4CB7D3}",
-        "EA-Name": "title",
-        "EA-Package": "d4w",
-        "EA-Range": "Text",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        },
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/resource/model/title"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "title"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "A title"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A title"
-        },
-        "ap-label-en": {
-          "en": "title"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A title"
         },
         "label": {
           "en": "title"
@@ -24051,101 +20052,6 @@
         "ap-usageNote-en": "",
         "definition": {
           "en": "A common and non-nullable contact point identifier"
-        },
-        "label": {
-          "en": "Id"
-        },
-        "usage": {
-          "en": "A single ID for all uses and connections between databases"
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "Id"
-      },
-      "maxCardinality": "1",
-      "minCardinality": "0",
-      "name": "id",
-      "range": [
-        {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ],
-      "usage": {
-        "en": "A single ID for all uses and connections between databases"
-      }
-    },
-    {
-      "@id": "http://purl.org/dc/terms/identifier",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{3AD9C0C3-3649-469b-9C85-209A989E6C2A}",
-      "ap-definition-en": {
-        "en": "A common and non-nullable programme identifier"
-      },
-      "ap-label-en": {
-        "en": "Id"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A common and non-nullable programme identifier"
-      },
-      "domain": [
-        {
-          "EA-Name": "Program",
-          "uri": "http://data4wallonia.com/model/Program"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "Program",
-        "EA-Domain-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-        "EA-Guid": "{3AD9C0C3-3649-469b-9C85-209A989E6C2A}",
-        "EA-Name": "id",
-        "EA-Package": "d4w",
-        "EA-Range": "Text",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        },
-        "RawTags": [
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "Id"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "A common and non-nullable programme identifier"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "null",
-            "value": "A single ID for all uses and connections between databases"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://purl.org/dc/terms/identifier"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A common and non-nullable programme identifier"
-        },
-        "ap-label-en": {
-          "en": "Id"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A common and non-nullable programme identifier"
         },
         "label": {
           "en": "Id"
@@ -27990,72 +23896,6 @@
       "name": "ActionPlan"
     },
     {
-      "@id": "http://data4wallonia.com/model/Ambition",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-      "ap-definition-en": {
-        "en": "An ambition"
-      },
-      "ap-label-en": {
-        "en": "Ambition"
-      },
-      "definition": {
-        "en": "An ambition"
-      },
-      "extra": {
-        "EA-Guid": "{012BCEDE-2073-4edb-B563-591700A250E9}",
-        "EA-Name": "Ambition",
-        "EA-Package": "d4w",
-        "EA-Parents": "",
-        "EA-Parents2": [],
-        "EA-Type": "CLASS",
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/model/Ambition"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "An ambition"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "Ambition"
-          },
-          {
-            "key": "class-usage-scope",
-            "note": "null",
-            "value": "supportive"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "An ambition"
-        },
-        "ap-label-en": {
-          "en": "Ambition"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "An ambition"
-        },
-        "label": {
-          "en": "Ambition"
-        },
-        "parentclasses": "",
-        "usage": ""
-      },
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "Ambition"
-      },
-      "name": "Ambition"
-    },
-    {
       "@id": "http://data4wallonia.com/model/ContentDynamicList",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{624D5B5F-6450-484d-8E32-648573DF9333}",
@@ -28466,7 +24306,7 @@
       },
       "extra": {
         "EA-Guid": "{F3EE5450-C88D-41a3-8497-0240D6574258}",
-        "EA-Name": "ProfileLEgalEntity",
+        "EA-Name": "ProfileLegalEntity",
         "EA-Package": "d4w",
         "EA-Parents": "",
         "EA-Parents2": [],
@@ -28516,72 +24356,6 @@
         "en": "Profile Legal Entity"
       },
       "name": "ProfileLegalEntity"
-    },
-    {
-      "@id": "http://data4wallonia.com/model/Program",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-      "ap-definition-en": {
-        "en": "The coordinated management of a number of related projects and other activities"
-      },
-      "ap-label-en": {
-        "en": "Program"
-      },
-      "definition": {
-        "en": "The coordinated management of a number of related projects and other activities"
-      },
-      "extra": {
-        "EA-Guid": "{5F48A31F-475C-4c93-8A45-6B10433B2901}",
-        "EA-Name": "Program",
-        "EA-Package": "d4w",
-        "EA-Parents": "",
-        "EA-Parents2": [],
-        "EA-Type": "CLASS",
-        "RawTags": [
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia.com/model/Program"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "Program"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "The coordinated management of a number of related projects and other activities"
-          },
-          {
-            "key": "class-usage-scope",
-            "note": "null",
-            "value": "main"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "The coordinated management of a number of related projects and other activities"
-        },
-        "ap-label-en": {
-          "en": "Program"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "The coordinated management of a number of related projects and other activities"
-        },
-        "label": {
-          "en": "Program"
-        },
-        "parentclasses": "",
-        "usage": ""
-      },
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "Program"
-      },
-      "name": "Program"
     },
     {
       "@id": "http://data4wallonia.com/model/QualifiedPerson",
@@ -30271,7 +26045,7 @@
   "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.0/Changelog.md",
   "template": "d4wmo-generic_en.j2",
   "title": "Data4Wallonia Generic Model",
-  "toolchaincommit": "2288fd2f6c2622cfe701f41eb2fdbc2e7c6ed352",
+  "toolchaincommit": "a371eede5ecca63f95a99ba1a07702b54d707404",
   "toolchainversion": "3",
   "translation": [
     {
