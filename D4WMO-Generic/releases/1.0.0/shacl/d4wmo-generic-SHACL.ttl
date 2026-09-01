@@ -1812,6 +1812,7 @@
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/334d3973959379776995cf58843d5c7d9053dd25>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/36e301d7cf972fb9d011a055a8c6f87202fcffd3>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/45b15ba29c98ac584fc8a034f731f0f0183997ad>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/4a754d7b7c3ca572bec3cc0a92edd6bb13410ec2>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/4bd3f9f68f4f0f4782bac3a2890db31a4d7b5163>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/531cd7ec5123506ee59bced26bfc6edc8e1589a5>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/54f09a2ec1df3a48b497c8c664277f160685ce04>,
@@ -1822,12 +1823,11 @@
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/7349aedd98256d90685571bddc6da8ac9eab1767>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/7d0aad3aaae427f799249eafced4cbb0b8a36dc5>,
-    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/8f5629615dc7e807d12e277c0bd488843337da73>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/9adf9f5890592909cf3e67021ae7ab4f895a7745>,
-    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/9da1283953a94ba37e328c2172f20763ba261010>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/a19b499d3e09af07721918e266dc7b096e12538d>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/add99084b28b7f1f702646fec9ee5516646831c7>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/b3a65155abdf78e609997919f6f053e252c52153>,
+    <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/b3de25e26e1c35d90101c6319f3d46494ea05541>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/b7707a7d12adfe39ed5fc9b262c71e85d9cf404b>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/b9da0bb511b75552c4edec2383d2c9ebb35f0774>,
     <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/ba21b6c4a9251ed67b6b3113dc1d857640fd4534>,
@@ -1960,6 +1960,12 @@
   shacl:path dc:alternative;
   shacl:uniqueLang true .
 
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/4a754d7b7c3ca572bec3cc0a92edd6bb13410ec2> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.consentstatus";
+  shacl:description "The state or status of consent refers to the stage of information about a particular consent instance within its lifecycle."@en;
+  shacl:name "consent status"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <https://w3c-cg.github.io/dpv/2.3/dpv/modules/legal_basis#vocab-legal-basis-consent-status> .
+
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/4bd3f9f68f4f0f4782bac3a2890db31a4d7b5163> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.expertise";
   shacl:description "Specific expertise of the person"@en;
   shacl:name "expertise"@en;
@@ -2020,23 +2026,11 @@
   shacl:nodeKind shacl:Literal;
   shacl:path foaf:familyName .
 
-<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/8f5629615dc7e807d12e277c0bd488843337da73> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.displayrefusal";
-  shacl:datatype xsd:boolean;
-  shacl:description "A refusal to release any information to the public."@en;
-  shacl:name "display refusal"@en;
-  shacl:path <http://data4wallonia.com/model/displayRefusal> .
-
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/9adf9f5890592909cf3e67021ae7ab4f895a7745> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.contactpoint";
   shacl:description "A reference to a Contact Point, the main contact information of the resource."@en;
   shacl:name "contact point"@en;
   shacl:nodeKind shacl:BlankNodeOrIRI;
   shacl:path <http://data.europa.eu/m8g/contactPoint> .
-
-<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/9da1283953a94ba37e328c2172f20763ba261010> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.displayrefusal";
-  shacl:description "A refusal to release any information to the public."@en;
-  shacl:name "display refusal"@en;
-  shacl:nodeKind shacl:Literal;
-  shacl:path <http://data4wallonia.com/model/displayRefusal> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/a19b499d3e09af07721918e266dc7b096e12538d> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.dateofbirth";
   shacl:datatype xsd:date;
@@ -2055,6 +2049,12 @@
   shacl:name "gender"@en;
   shacl:nodeKind shacl:BlankNodeOrIRI;
   shacl:path <http://data.europa.eu/m8g/gender> .
+
+<https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/b3de25e26e1c35d90101c6319f3d46494ea05541> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.consentstatus";
+  shacl:class skos:Concept;
+  shacl:description "The state or status of consent refers to the stage of information about a particular consent instance within its lifecycle."@en;
+  shacl:name "consent status"@en;
+  shacl:path <https://w3c-cg.github.io/dpv/2.3/dpv/modules/legal_basis#vocab-legal-basis-consent-status> .
 
 <https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#PersonShape/b7707a7d12adfe39ed5fc9b262c71e85d9cf404b> rdfs:seeAlso "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.0/#Person.slug";
   shacl:description " Last section of a URL."@en;
