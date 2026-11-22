@@ -3,15 +3,14 @@
   <xs:element name="ContactPoint" type="ContactPointType"/>
   <xs:element name="Cost" type="CostType"/>
   <xs:element name="PublicEvent" type="PublicEventType"/>
-  <xs:element name="LegalEntityPerson" type="LegalEntityPersonType"/>
   <xs:element name="Text" type="TextType"/>
   <xs:element name="Literal" type="LiteralType"/>
   <xs:element name="Uri" type="UriType"/>
   <xs:element name="Boolean" type="BooleanType"/>
   <xs:element name="Date" type="DateType"/>
+  <xs:element name="DateTime" type="DateTimeType"/>
   <xs:element name="String" type="StringType"/>
   <xs:element name="Double" type="DoubleType"/>
-  <xs:element name="Date" type="DateType"/>
   <xs:element name="GYear" type="GYearType"/>
   <xs:element name="Integer" type="IntegerType"/>
   <xs:element name="Code" type="CodeType"/>
@@ -28,6 +27,7 @@
   <xs:element name="Asset" type="AssetType"/>
   <xs:element name="ContentDynamicList" type="ContentDynamicListType"/>
   <xs:element name="File" type="FileType"/>
+  <xs:element name="LegalEntityPerson" type="LegalEntityPersonType"/>
   <xs:element name="PartnerAdditionalDescription" type="PartnerAdditionalDescriptionType"/>
   <xs:element name="Post" type="PostType"/>
   <xs:element name="PressReview" type="PressReviewType"/>
@@ -75,7 +75,7 @@
           <xs:documentation xml:lang="en">A non-featured email</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="hasTelehpone" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="hasTelephone" type="xs:string" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A telephone number through which the Contact Point can be contacted.</xs:documentation>
         </xs:annotation>
@@ -260,40 +260,6 @@
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
-  <xs:complexType name="LegalEntityPersonType">
-    <xs:sequence>
-      <xs:element name="department" type="ConceptType" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">The department with which the person is affiliated.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="hasLegalEntity" ref="LegalEntityType" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">The legal entity to which the person belongs to.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="hasPerson" ref="PersonType" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">The person that belong to a legal entity.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="role" type="xs:string" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">The function of a person.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="shortDescription" type="xs:string" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A short description</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-    <xs:attribute name="LegalEntityPersonRef" type="xs:IDREF">
-      <xs:annotation>
-        <xs:documentation xml:lang="en">Reference to LegalEntityPerson ID</xs:documentation>
-      </xs:annotation>
-    </xs:attribute>
-  </xs:complexType>
   <xs:complexType name="TextType">
     <xs:sequence/>
     <xs:attribute name="TextRef" type="xs:IDREF">
@@ -334,6 +300,14 @@
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
+  <xs:complexType name="DateTimeType">
+    <xs:sequence/>
+    <xs:attribute name="DateTimeRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to DateTime ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
   <xs:complexType name="StringType">
     <xs:sequence/>
     <xs:attribute name="StringRef" type="xs:IDREF">
@@ -347,14 +321,6 @@
     <xs:attribute name="DoubleRef" type="xs:IDREF">
       <xs:annotation>
         <xs:documentation xml:lang="en">Reference to Double ID</xs:documentation>
-      </xs:annotation>
-    </xs:attribute>
-  </xs:complexType>
-  <xs:complexType name="DateType">
-    <xs:sequence/>
-    <xs:attribute name="DateRef" type="xs:IDREF">
-      <xs:annotation>
-        <xs:documentation xml:lang="en">Reference to Date ID</xs:documentation>
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
@@ -469,7 +435,7 @@
       </xs:element>
       <xs:element name="establishmentNumber" type="xs:string" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization.</xs:documentation>
+          <xs:documentation xml:lang="en">Gives an identifier, such as a company registration number, that can be used to uniquely identify the organization.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="id" type="xs:string" maxOccurs="1" minOccurs="0">
@@ -592,7 +558,7 @@
     <xs:sequence>
       <xs:element name="latitude" type="xs:string" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="en">The geographic coordinate that specifies the north / south position of the Geomerty on the Earth's surface.</xs:documentation>
+          <xs:documentation xml:lang="en">The geographic coordinate that specifies the north / south position of the Geometry on the Earth's surface.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="longitude" type="xs:string" maxOccurs="unbounded" minOccurs="0">
@@ -1024,6 +990,40 @@
     <xs:attribute name="FileRef" type="xs:IDREF">
       <xs:annotation>
         <xs:documentation xml:lang="en">Reference to File ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="LegalEntityPersonType">
+    <xs:sequence>
+      <xs:element name="department" type="ConceptType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The department with which the person is affiliated.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="hasLegalEntity" ref="LegalEntityType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The legal entity to which the person belongs.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="hasPerson" ref="PersonType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The person that belongs to a legal entity.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="role" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The function of a person.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="shortDescription" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A short description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="LegalEntityPersonRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to LegalEntityPerson ID</xs:documentation>
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>

@@ -87,12 +87,12 @@
   "contributors-column": "D4WTA-AP",
   "contributors-file": "stakeholders.csv",
   "diagram": "Model",
-  "documentcommit": "1cdeac0306d2045adcad832fe0c4a6a5ca98a146",
+  "documentcommit": "4a7624207df2982e81e837756d1dab2551432bde",
   "documentconfig": {
     "editorDocumentroot": "https://digitalwallonia.github.io/data4wallonia-generated/D4WMO-Generic/releases/1.0.2",
     "statuslabel": "Draft"
   },
-  "dummy": "35",
+  "dummy": "36",
   "eap": "Data4WalloniaModel-Generic.eap",
   "editors": [
     {
@@ -1134,14 +1134,14 @@
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{339B64DC-C678-4608-AA77-6E58E3E5435B}",
       "ap-definition-en": {
-        "en": "The geographic coordinate that specifies the north / south position of the Geomerty on the Earth's surface."
+        "en": "The geographic coordinate that specifies the north / south position of the Geometry on the Earth's surface."
       },
       "ap-label-en": {
         "en": "latitude"
       },
       "codelist": [],
       "definition": {
-        "en": "The geographic coordinate that specifies the north / south position of the Geomerty on the Earth's surface."
+        "en": "The geographic coordinate that specifies the north / south position of the Geometry on the Earth's surface."
       },
       "domain": [
         {
@@ -1176,20 +1176,20 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "The geographic coordinate that specifies the north / south position of the Geomerty on the Earth's surface."
+            "value": "The geographic coordinate that specifies the north / south position of the Geometry on the Earth's surface."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "The geographic coordinate that specifies the north / south position of the Geomerty on the Earth's surface."
+          "en": "The geographic coordinate that specifies the north / south position of the Geometry on the Earth's surface."
         },
         "ap-label-en": {
           "en": "latitude"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "The geographic coordinate that specifies the north / south position of the Geomerty on the Earth's surface."
+          "en": "The geographic coordinate that specifies the north / south position of the Geometry on the Earth's surface."
         },
         "label": {
           "en": "latitude"
@@ -1971,7 +1971,7 @@
         "en": "A telephone number through which the Contact Point can be contacted."
       },
       "ap-label-en": {
-        "en": "has telehpone"
+        "en": "has telephone"
       },
       "codelist": [],
       "definition": {
@@ -2010,7 +2010,7 @@
           {
             "key": "label-en",
             "note": "null",
-            "value": "has telehpone"
+            "value": "has telephone"
           }
         ],
         "Scope": "NOTHING",
@@ -2019,25 +2019,25 @@
           "en": "A telephone number through which the Contact Point can be contacted."
         },
         "ap-label-en": {
-          "en": "has telehpone"
+          "en": "has telephone"
         },
         "ap-usageNote-en": "",
         "definition": {
           "en": "A telephone number through which the Contact Point can be contacted."
         },
         "label": {
-          "en": "has telehpone"
+          "en": "has telephone"
         },
         "usage": ""
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "has telehpone"
+        "en": "has telephone"
       },
       "maxCardinality": "*",
       "minCardinality": "0",
-      "name": "hasTelehpone",
+      "name": "hasTelephone",
       "range": [
         {
           "EA-Name": "Literal",
@@ -2047,18 +2047,18 @@
       ]
     },
     {
-      "@id": "http://data4wallonia.be/mode/liableToVAT",
+      "@id": "http://purl.org/dc/terms/alternative",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{73901402-E2C2-49f8-8459-75D082865B01}",
+      "EA-Guid": "{49422D5B-1F5D-4f39-8949-F45A8BE5F4E8}",
       "ap-definition-en": {
-        "en": "Specify if the legal entity is liable to VAT."
+        "en": "Any name by which a LegalEntity is known, other than their legal name."
       },
       "ap-label-en": {
-        "en": "Liable to VAT"
+        "en": "Alternative name"
       },
       "codelist": [],
       "definition": {
-        "en": "Specify if the legal entity is liable to VAT."
+        "en": "Any name by which a LegalEntity is known, other than their legal name."
       },
       "domain": [
         {
@@ -2069,65 +2069,77 @@
       "extra": {
         "EA-Domain": "LegalEntity",
         "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-        "EA-Guid": "{73901402-E2C2-49f8-8459-75D082865B01}",
-        "EA-Name": "liableToVAT",
+        "EA-Guid": "{49422D5B-1F5D-4f39-8949-F45A8BE5F4E8}",
+        "EA-Name": "alternativeName",
         "EA-Package": "cv",
-        "EA-Range": "Boolean",
+        "EA-Range": "Text",
         "EA-Type": "attribute",
         "RangeData": {
-          "EA-Name": "Boolean",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
         },
         "RawTags": [
           {
             "key": "label-en",
             "note": "null",
-            "value": "Liable to VAT"
+            "value": "Alternative name"
           },
           {
             "key": "definition-en",
             "note": "null",
-            "value": "Specify if the legal entity is liable to VAT."
+            "value": "Any name by which a LegalEntity is known, other than their legal name."
           },
           {
             "key": "uri",
             "note": "null",
-            "value": "http://data4wallonia.be/mode/liableToVAT"
+            "value": "http://purl.org/dc/terms/alternative"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "For example, via the name of a brand or product."
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "Specify if the legal entity is liable to VAT."
+          "en": "Any name by which a LegalEntity is known, other than their legal name."
         },
         "ap-label-en": {
-          "en": "Liable to VAT"
+          "en": "Alternative name"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "Specify if the legal entity is liable to VAT."
+          "en": "Any name by which a LegalEntity is known, other than their legal name."
         },
         "label": {
-          "en": "Liable to VAT"
+          "en": "Alternative name"
         },
-        "usage": ""
+        "usage": {
+          "en": "For example, via the name of a brand or product."
+        }
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "en": "Liable to VAT"
+        "en": "Alternative name"
       },
-      "maxCardinality": "1",
+      "maxCardinality": "*",
       "minCardinality": "0",
-      "name": "liableToVat",
+      "name": "alternativeName",
       "range": [
         {
-          "EA-Name": "Boolean",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
+          "EA-Name": "Text",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
         }
-      ]
+      ],
+      "usage": {
+        "en": "For example, via the name of a brand or product."
+      }
     },
     {
       "@id": "http://purl.org/dc/terms/alternative",
@@ -3894,26 +3906,26 @@
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{145FD2A6-F6A9-4e22-8E0D-F04BF7E76843}",
       "ap-definition-en": {
-        "en": "The legal entity to which the person belongs to."
+        "en": "The legal entity to which the person belongs."
       },
       "ap-label-en": {
         "en": "has legal entity"
       },
       "codelist": [],
       "definition": {
-        "en": "The legal entity to which the person belongs to."
+        "en": "The legal entity to which the person belongs."
       },
       "domain": [
         {
           "EA-Name": "LegalEntityPerson",
-          "uri": "http://data4wallonia/mode/LegalEntityPerson"
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/LegalEntityPerson"
         }
       ],
       "extra": {
         "DestRoleTags": [
           {
             "key": "definition-en",
-            "note": "The legal entity to which the person belongs to.",
+            "note": "The legal entity to which the person belongs.",
             "value": "NOTE"
           },
           {
@@ -3943,7 +3955,7 @@
         "RawTags": [
           {
             "key": "definition-en",
-            "note": "The legal entity to which the person belongs to.",
+            "note": "The legal entity to which the person belongs.",
             "value": "NOTE"
           },
           {
@@ -3960,14 +3972,14 @@
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "The legal entity to which the person belongs to."
+          "en": "The legal entity to which the person belongs."
         },
         "ap-label-en": {
           "en": "has legal entity"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "The legal entity to which the person belongs to."
+          "en": "The legal entity to which the person belongs."
         },
         "derived": "false",
         "destRole": "hasLegalEntity",
@@ -5166,23 +5178,421 @@
       }
     },
     {
+      "@id": "http://www.w3.org/ns/org#classification",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{C2DDB3E1-02A2-4aee-BD14-10E86F539A63}",
+      "ap-definition-en": {
+        "en": "Indicates a classification for this Organization within some classification scheme."
+      },
+      "ap-label-en": {
+        "en": "classification"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "Indicates a classification for this Organization within some classification scheme."
+      },
+      "domain": [
+        {
+          "EA-Name": "LegalEntity",
+          "uri": "http://www.w3.org/ns/legal#LegalEntity"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "LegalEntity",
+        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
+        "EA-Guid": "{C2DDB3E1-02A2-4aee-BD14-10E86F539A63}",
+        "EA-Name": "classification",
+        "EA-Package": "cv",
+        "EA-Range": "Code",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
+          "EA-Name": "Code",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "classification"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "Indicates a classification for this Organization within some classification scheme."
+          },
+          {
+            "key": "usageNote-en",
+            "note": "null",
+            "value": "Extension vocabularies may wish to specialize this property to have a range corresponding to a specific skos:ConceptScheme. Examples: company, non-profit organisation, local authority, etc. It may refer to an economic classification such as the NACE code."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/org#classification"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "Indicates a classification for this Organization within some classification scheme."
+        },
+        "ap-label-en": {
+          "en": "classification"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "Indicates a classification for this Organization within some classification scheme."
+        },
+        "label": {
+          "en": "classification"
+        },
+        "usage": {
+          "en": "Extension vocabularies may wish to specialize this property to have a range corresponding to a specific skos:ConceptScheme. Examples: company, non-profit organisation, local authority, etc. It may refer to an economic classification such as the NACE code."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "classification"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "classification",
+      "range": [
+        {
+          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
+          "EA-Name": "Code",
+          "EA-Package": "DataTypes",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ],
+      "usage": {
+        "en": "Extension vocabularies may wish to specialize this property to have a range corresponding to a specific skos:ConceptScheme. Examples: company, non-profit organisation, local authority, etc. It may refer to an economic classification such as the NACE code."
+      }
+    },
+    {
+      "@id": "http://www.w3.org/ns/org#identifier",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{0E4439AC-5BD9-4328-8EFD-D12076B34C70}",
+      "ap-definition-en": {
+        "en": "Gives an identifier, such as a company registration number, that can be used to uniquely identify the organization."
+      },
+      "ap-label-en": {
+        "en": "Establishment number"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "Gives an identifier, such as a company registration number, that can be used to uniquely identify the organization."
+      },
+      "domain": [
+        {
+          "EA-Name": "LegalEntity",
+          "uri": "http://www.w3.org/ns/legal#LegalEntity"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "LegalEntity",
+        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
+        "EA-Guid": "{0E4439AC-5BD9-4328-8EFD-D12076B34C70}",
+        "EA-Name": "establishmentNumber",
+        "EA-Package": "cv",
+        "EA-Range": "Literal",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "Establishment number"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "Gives an identifier, such as a company registration number, that can be used to uniquely identify the organization."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/org#identifier"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "Many different national and international identifier schemes are available from other vocabularies. The ORG ontology is neutral to which schemes are used. The particular identifier scheme should be indicated by the datatype of the identifier value. Using datatypes to distinguish the notation scheme used is consistent with recommended best practice for skos:notation of which this property is a specialization.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "Gives an identifier, such as a company registration number, that can be used to uniquely identify the organization."
+        },
+        "ap-label-en": {
+          "en": "Establishment number"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "Gives an identifier, such as a company registration number, that can be used to uniquely identify the organization."
+        },
+        "label": {
+          "en": "Establishment number"
+        },
+        "usage": {
+          "en": "Many different national and international identifier schemes are available from other vocabularies. The ORG ontology is neutral to which schemes are used. The particular identifier scheme should be indicated by the datatype of the identifier value. Using datatypes to distinguish the notation scheme used is consistent with recommended best practice for skos:notation of which this property is a specialization."
+        }
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "Establishment number"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "establishmentNumber",
+      "range": [
+        {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      ],
+      "usage": {
+        "en": "Many different national and international identifier schemes are available from other vocabularies. The ORG ontology is neutral to which schemes are used. The particular identifier scheme should be indicated by the datatype of the identifier value. Using datatypes to distinguish the notation scheme used is consistent with recommended best practice for skos:notation of which this property is a specialization."
+      }
+    },
+    {
+      "@id": "http://www.w3.org/ns/org#memberOf",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{05865229-3887-46ad-8BDB-DB3CA4DBE1BB}",
+      "ap-definition-en": {
+        "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership."
+      },
+      "ap-label-en": {
+        "en": "member of"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership."
+      },
+      "domain": [
+        {
+          "EA-Name": "LegalEntity",
+          "uri": "http://www.w3.org/ns/legal#LegalEntity"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "label-en",
+            "note": "member of",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "NOTE$ea_notes=Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://www.w3.org/ns/org#memberOf",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "LegalEntity",
+        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
+        "EA-Guid": "{05865229-3887-46ad-8BDB-DB3CA4DBE1BB}",
+        "EA-Name": "memberOf",
+        "EA-Package": "",
+        "EA-Range": "LegalEntity",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{C8F06838-37A0-4789-AD31-1F6601965598}",
+          "EA-Name": "LegalEntity",
+          "EA-Package": "cv",
+          "uri": "http://www.w3.org/ns/legal#LegalEntity"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "member of",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "NOTE$ea_notes=Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://www.w3.org/ns/org#memberOf",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership."
+        },
+        "ap-label-en": {
+          "en": "member of"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership."
+        },
+        "derived": "false",
+        "destRole": "memberOf",
+        "label": {
+          "en": "member of"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "member of"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "memberOf",
+      "range": [
+        {
+          "EA-GUID": "{C8F06838-37A0-4789-AD31-1F6601965598}",
+          "EA-Name": "LegalEntity",
+          "EA-Package": "cv",
+          "uri": "http://www.w3.org/ns/legal#LegalEntity"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/ns/org#unitOf",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{12D86DC5-39CB-4d69-BDFD-4ADC9109362F}",
+      "ap-definition-en": {
+        "en": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization."
+      },
+      "ap-label-en": {
+        "en": "unit of"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization."
+      },
+      "domain": [
+        {
+          "EA-Name": "LegalEntity",
+          "uri": "http://www.w3.org/ns/legal#LegalEntity"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "definition-en",
+            "note": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "unit of",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://www.w3.org/ns/org#unitOf",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "LegalEntity",
+        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
+        "EA-Guid": "{12D86DC5-39CB-4d69-BDFD-4ADC9109362F}",
+        "EA-Name": "unitOf",
+        "EA-Package": "",
+        "EA-Range": "LegalEntity",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{C8F06838-37A0-4789-AD31-1F6601965598}",
+          "EA-Name": "LegalEntity",
+          "EA-Package": "cv",
+          "uri": "http://www.w3.org/ns/legal#LegalEntity"
+        },
+        "RawTags": [
+          {
+            "key": "definition-en",
+            "note": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "unit of",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://www.w3.org/ns/org#unitOf",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization."
+        },
+        "ap-label-en": {
+          "en": "unit of"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization."
+        },
+        "derived": "false",
+        "destRole": "unitOf",
+        "label": {
+          "en": "unit of"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "unit of"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "unitOf",
+      "range": [
+        {
+          "EA-GUID": "{C8F06838-37A0-4789-AD31-1F6601965598}",
+          "EA-Name": "LegalEntity",
+          "EA-Package": "cv",
+          "uri": "http://www.w3.org/ns/legal#LegalEntity"
+        }
+      ]
+    },
+    {
       "@id": "http://www.w3.org/ns/person#Person",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{82747421-BD5D-41f2-9DF2-134722DC2CF4}",
       "ap-definition-en": {
-        "en": "The person that belong to a legal entity."
+        "en": "The person that belongs to a legal entity."
       },
       "ap-label-en": {
         "en": "has person"
       },
       "codelist": [],
       "definition": {
-        "en": "The person that belong to a legal entity."
+        "en": "The person that belongs to a legal entity."
       },
       "domain": [
         {
           "EA-Name": "LegalEntityPerson",
-          "uri": "http://data4wallonia/mode/LegalEntityPerson"
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/LegalEntityPerson"
         }
       ],
       "extra": {
@@ -5199,7 +5609,7 @@
           },
           {
             "key": "definition-en",
-            "note": "The person that belong to a legal entity.",
+            "note": "The person that belongs to a legal entity.",
             "value": "NOTE"
           }
         ],
@@ -5229,21 +5639,21 @@
           },
           {
             "key": "definition-en",
-            "note": "The person that belong to a legal entity.",
+            "note": "The person that belongs to a legal entity.",
             "value": "NOTE"
           }
         ],
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "The person that belong to a legal entity."
+          "en": "The person that belongs to a legal entity."
         },
         "ap-label-en": {
           "en": "has person"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "The person that belong to a legal entity."
+          "en": "The person that belongs to a legal entity."
         },
         "derived": "false",
         "destRole": "hasPerson",
@@ -10155,6 +10565,126 @@
     {
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{D864EABE-E0F4-4c21-B305-8F1877985A3B}",
+      "ap-definition-en": {
+        "en": "A reference to a contact point."
+      },
+      "ap-label-en": {
+        "en": "contact point"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A reference to a contact point."
+      },
+      "domain": [
+        {
+          "EA-Name": "Profile",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "usageNote-en",
+            "note": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc.",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "A reference to a contact point.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "contact point",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Profile",
+        "EA-Domain-Guid": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
+        "EA-Guid": "{D864EABE-E0F4-4c21-B305-8F1877985A3B}",
+        "EA-Name": "contactPoint",
+        "EA-Package": "",
+        "EA-Range": "ContactPoint",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
+          "EA-Name": "ContactPoint",
+          "EA-Package": "cv",
+          "uri": "http://data.europa.eu/m8g/ContactPoint"
+        },
+        "RawTags": [
+          {
+            "key": "usageNote-en",
+            "note": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc.",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "A reference to a contact point.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "contact point",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A reference to a contact point."
+        },
+        "ap-label-en": {
+          "en": "contact point"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A reference to a contact point."
+        },
+        "derived": "false",
+        "destRole": "contactPoint",
+        "label": {
+          "en": "contact point"
+        },
+        "sourceRole": "null",
+        "usage": {
+          "en": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc."
+        }
+      },
+      "generalization": [],
+      "inpackage": "UNKNOWN",
+      "label": {
+        "en": "contact point"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "contactPoint",
+      "range": [
+        {
+          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
+          "EA-Name": "ContactPoint",
+          "EA-Package": "cv",
+          "uri": "http://data.europa.eu/m8g/ContactPoint"
+        }
+      ],
+      "usage": {
+        "en": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc."
+      }
+    },
+    {
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{136BAE7C-CACB-41b6-A007-C0078EAE20C9}",
       "ap-definition-en": {
         "en": "A reference to a contact point."
@@ -10393,126 +10923,6 @@
       }
     },
     {
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{D864EABE-E0F4-4c21-B305-8F1877985A3B}",
-      "ap-definition-en": {
-        "en": "A reference to a contact point."
-      },
-      "ap-label-en": {
-        "en": "contact point"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A reference to a contact point."
-      },
-      "domain": [
-        {
-          "EA-Name": "Profile",
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "usageNote-en",
-            "note": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc.",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a contact point.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "contact point",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "Profile",
-        "EA-Domain-Guid": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
-        "EA-Guid": "{D864EABE-E0F4-4c21-B305-8F1877985A3B}",
-        "EA-Name": "contactPoint",
-        "EA-Package": "",
-        "EA-Range": "ContactPoint",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
-          "EA-Name": "ContactPoint",
-          "EA-Package": "cv",
-          "uri": "http://data.europa.eu/m8g/ContactPoint"
-        },
-        "RawTags": [
-          {
-            "key": "usageNote-en",
-            "note": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc.",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a contact point.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "contact point",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A reference to a contact point."
-        },
-        "ap-label-en": {
-          "en": "contact point"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A reference to a contact point."
-        },
-        "derived": "false",
-        "destRole": "contactPoint",
-        "label": {
-          "en": "contact point"
-        },
-        "sourceRole": "null",
-        "usage": {
-          "en": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc."
-        }
-      },
-      "generalization": [],
-      "inpackage": "UNKNOWN",
-      "label": {
-        "en": "contact point"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "contactPoint",
-      "range": [
-        {
-          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
-          "EA-Name": "ContactPoint",
-          "EA-Package": "cv",
-          "uri": "http://data.europa.eu/m8g/ContactPoint"
-        }
-      ],
-      "usage": {
-        "en": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc."
-      }
-    },
-    {
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/content",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{91172F3E-BB3F-46c1-A76D-5C1960B6A40C}",
@@ -10709,7 +11119,7 @@
       "domain": [
         {
           "EA-Name": "LegalEntityPerson",
-          "uri": "http://data4wallonia/mode/LegalEntityPerson"
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/LegalEntityPerson"
         }
       ],
       "extra": {
@@ -12221,126 +12631,6 @@
     {
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/hasCost",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{38E3C061-DF9A-4bb9-9ED2-06CDBC1FB75F}",
-      "ap-definition-en": {
-        "en": "A cost"
-      },
-      "ap-label-en": {
-        "en": "has cost"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A cost"
-      },
-      "domain": [
-        {
-          "EA-Name": "ServicesPlace",
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "label-en",
-            "note": "has cost",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "The cost, the price, is not necessarily given in a monetary format, but can be an explanatory text of price variants according to circumstances or conditions.  It should therefore be possible to explain this in free text.",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/hasCost",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A cost",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "ServicesPlace",
-        "EA-Domain-Guid": "{87AB34FF-0C8E-4c50-A899-615FCC17BD71}",
-        "EA-Guid": "{38E3C061-DF9A-4bb9-9ED2-06CDBC1FB75F}",
-        "EA-Name": "hasCost",
-        "EA-Package": "",
-        "EA-Range": "Cost",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{F5796CF3-62ED-4d1d-A2A0-496F9F339946}",
-          "EA-Name": "Cost",
-          "EA-Package": "cv",
-          "uri": "http://data.europa.eu/m8g/Cost"
-        },
-        "RawTags": [
-          {
-            "key": "label-en",
-            "note": "has cost",
-            "value": "NOTE"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "The cost, the price, is not necessarily given in a monetary format, but can be an explanatory text of price variants according to circumstances or conditions.  It should therefore be possible to explain this in free text.",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/hasCost",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A cost",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A cost"
-        },
-        "ap-label-en": {
-          "en": "has cost"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A cost"
-        },
-        "derived": "false",
-        "destRole": "hasCost",
-        "label": {
-          "en": "has cost"
-        },
-        "sourceRole": "null",
-        "usage": {
-          "en": "The cost, the price, is not necessarily given in a monetary format, but can be an explanatory text of price variants according to circumstances or conditions.  It should therefore be possible to explain this in free text."
-        }
-      },
-      "generalization": [],
-      "inpackage": "UNKNOWN",
-      "label": {
-        "en": "has cost"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "hasCost",
-      "range": [
-        {
-          "EA-GUID": "{F5796CF3-62ED-4d1d-A2A0-496F9F339946}",
-          "EA-Name": "Cost",
-          "EA-Package": "cv",
-          "uri": "http://data.europa.eu/m8g/Cost"
-        }
-      ],
-      "usage": {
-        "en": "The cost, the price, is not necessarily given in a monetary format, but can be an explanatory text of price variants according to circumstances or conditions.  It should therefore be possible to explain this in free text."
-      }
-    },
-    {
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/hasCost",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{F306F36F-3EF6-46ff-A865-201B9C660C44}",
       "ap-definition-en": {
         "en": "A cost."
@@ -12440,6 +12730,126 @@
       },
       "generalization": [],
       "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "has cost"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "hasCost",
+      "range": [
+        {
+          "EA-GUID": "{F5796CF3-62ED-4d1d-A2A0-496F9F339946}",
+          "EA-Name": "Cost",
+          "EA-Package": "cv",
+          "uri": "http://data.europa.eu/m8g/Cost"
+        }
+      ],
+      "usage": {
+        "en": "The cost, the price, is not necessarily given in a monetary format, but can be an explanatory text of price variants according to circumstances or conditions.  It should therefore be possible to explain this in free text."
+      }
+    },
+    {
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/hasCost",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{38E3C061-DF9A-4bb9-9ED2-06CDBC1FB75F}",
+      "ap-definition-en": {
+        "en": "A cost"
+      },
+      "ap-label-en": {
+        "en": "has cost"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A cost"
+      },
+      "domain": [
+        {
+          "EA-Name": "ServicesPlace",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "label-en",
+            "note": "has cost",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "The cost, the price, is not necessarily given in a monetary format, but can be an explanatory text of price variants according to circumstances or conditions.  It should therefore be possible to explain this in free text.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/hasCost",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "A cost",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "ServicesPlace",
+        "EA-Domain-Guid": "{87AB34FF-0C8E-4c50-A899-615FCC17BD71}",
+        "EA-Guid": "{38E3C061-DF9A-4bb9-9ED2-06CDBC1FB75F}",
+        "EA-Name": "hasCost",
+        "EA-Package": "",
+        "EA-Range": "Cost",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{F5796CF3-62ED-4d1d-A2A0-496F9F339946}",
+          "EA-Name": "Cost",
+          "EA-Package": "cv",
+          "uri": "http://data.europa.eu/m8g/Cost"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "has cost",
+            "value": "NOTE"
+          },
+          {
+            "key": "usageNote-en",
+            "note": "The cost, the price, is not necessarily given in a monetary format, but can be an explanatory text of price variants according to circumstances or conditions.  It should therefore be possible to explain this in free text.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/hasCost",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "A cost",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A cost"
+        },
+        "ap-label-en": {
+          "en": "has cost"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A cost"
+        },
+        "derived": "false",
+        "destRole": "hasCost",
+        "label": {
+          "en": "has cost"
+        },
+        "sourceRole": "null",
+        "usage": {
+          "en": "The cost, the price, is not necessarily given in a monetary format, but can be an explanatory text of price variants according to circumstances or conditions.  It should therefore be possible to explain this in free text."
+        }
+      },
+      "generalization": [],
+      "inpackage": "UNKNOWN",
       "label": {
         "en": "has cost"
       },
@@ -14048,6 +14458,89 @@
       "usage": {
         "en": "TODO"
       }
+    },
+    {
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/liableToVAT",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{73901402-E2C2-49f8-8459-75D082865B01}",
+      "ap-definition-en": {
+        "en": "Specify if the legal entity is liable to VAT."
+      },
+      "ap-label-en": {
+        "en": "liable to vat"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "Specify if the legal entity is liable to VAT."
+      },
+      "domain": [
+        {
+          "EA-Name": "LegalEntity",
+          "uri": "http://www.w3.org/ns/legal#LegalEntity"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "LegalEntity",
+        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
+        "EA-Guid": "{73901402-E2C2-49f8-8459-75D082865B01}",
+        "EA-Name": "liableToVAT",
+        "EA-Package": "cv",
+        "EA-Range": "Boolean",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "Boolean",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "RawTags": [
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "liable to vat"
+          },
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "Specify if the legal entity is liable to VAT."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/liableToVAT"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "Specify if the legal entity is liable to VAT."
+        },
+        "ap-label-en": {
+          "en": "liable to vat"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "Specify if the legal entity is liable to VAT."
+        },
+        "label": {
+          "en": "liable to vat"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "liable to vat"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "liableToVat",
+      "range": [
+        {
+          "EA-Name": "Boolean",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+        }
+      ]
     },
     {
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/logo",
@@ -15751,126 +16244,6 @@
     {
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/partner",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{0D659D88-5D13-4a6b-B310-78D4CD70DF11}",
-      "ap-definition-en": {
-        "en": "A reference to a profile partner"
-      },
-      "ap-label-en": {
-        "en": "partner"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "A reference to a profile partner"
-      },
-      "domain": [
-        {
-          "EA-Name": "PublicEvent",
-          "uri": "http://data.europa.eu/m8g/PublicEvent"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "usageNote-en",
-            "note": "Profile representing a partner of the event.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "partner",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/partner",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a profile partner",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "PublicEvent",
-        "EA-Domain-Guid": "{00DBB60C-FE76-4410-A1F1-B7A3BB34F49A}",
-        "EA-Guid": "{0D659D88-5D13-4a6b-B310-78D4CD70DF11}",
-        "EA-Name": "partner",
-        "EA-Package": "",
-        "EA-Range": "Profile",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
-          "EA-Name": "Profile",
-          "EA-Package": "d4w",
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile"
-        },
-        "RawTags": [
-          {
-            "key": "usageNote-en",
-            "note": "Profile representing a partner of the event.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "partner",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/partner",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "A reference to a profile partner",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A reference to a profile partner"
-        },
-        "ap-label-en": {
-          "en": "partner"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A reference to a profile partner"
-        },
-        "derived": "false",
-        "destRole": "partner",
-        "label": {
-          "en": "partner"
-        },
-        "sourceRole": "null",
-        "usage": {
-          "en": "Profile representing a partner of the event."
-        }
-      },
-      "generalization": [],
-      "inpackage": "UNKNOWN",
-      "label": {
-        "en": "partner"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "partner",
-      "range": [
-        {
-          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
-          "EA-Name": "Profile",
-          "EA-Package": "d4w",
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile"
-        }
-      ],
-      "usage": {
-        "en": "Profile representing a partner of the event."
-      }
-    },
-    {
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/partner",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "EA-Guid": "{7EA2456E-DD45-48de-9559-2AB2321AE57C}",
       "ap-definition-en": {
         "en": "A reference to a profile partner"
@@ -15986,6 +16359,126 @@
       ],
       "usage": {
         "en": "Profile representing a partner of the activity."
+      }
+    },
+    {
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/partner",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{0D659D88-5D13-4a6b-B310-78D4CD70DF11}",
+      "ap-definition-en": {
+        "en": "A reference to a profile partner"
+      },
+      "ap-label-en": {
+        "en": "partner"
+      },
+      "codelist": [],
+      "definition": {
+        "en": "A reference to a profile partner"
+      },
+      "domain": [
+        {
+          "EA-Name": "PublicEvent",
+          "uri": "http://data.europa.eu/m8g/PublicEvent"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "usageNote-en",
+            "note": "Profile representing a partner of the event.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "partner",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/partner",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "A reference to a profile partner",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "PublicEvent",
+        "EA-Domain-Guid": "{00DBB60C-FE76-4410-A1F1-B7A3BB34F49A}",
+        "EA-Guid": "{0D659D88-5D13-4a6b-B310-78D4CD70DF11}",
+        "EA-Name": "partner",
+        "EA-Package": "",
+        "EA-Range": "Profile",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
+          "EA-Name": "Profile",
+          "EA-Package": "d4w",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile"
+        },
+        "RawTags": [
+          {
+            "key": "usageNote-en",
+            "note": "Profile representing a partner of the event.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "partner",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/partner",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "A reference to a profile partner",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A reference to a profile partner"
+        },
+        "ap-label-en": {
+          "en": "partner"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A reference to a profile partner"
+        },
+        "derived": "false",
+        "destRole": "partner",
+        "label": {
+          "en": "partner"
+        },
+        "sourceRole": "null",
+        "usage": {
+          "en": "Profile representing a partner of the event."
+        }
+      },
+      "generalization": [],
+      "inpackage": "UNKNOWN",
+      "label": {
+        "en": "partner"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "partner",
+      "range": [
+        {
+          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
+          "EA-Name": "Profile",
+          "EA-Package": "d4w",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile"
+        }
+      ],
+      "usage": {
+        "en": "Profile representing a partner of the event."
       }
     },
     {
@@ -18924,7 +19417,7 @@
       "domain": [
         {
           "EA-Name": "LegalEntityPerson",
-          "uri": "http://data4wallonia/mode/LegalEntityPerson"
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/LegalEntityPerson"
         }
       ],
       "extra": {
@@ -19452,7 +19945,7 @@
       "domain": [
         {
           "EA-Name": "LegalEntityPerson",
-          "uri": "http://data4wallonia/mode/LegalEntityPerson"
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/LegalEntityPerson"
         }
       ],
       "extra": {
@@ -22956,101 +23449,6 @@
       ]
     },
     {
-      "@id": "https://purl.org/dc/terms/alternative",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{49422D5B-1F5D-4f39-8949-F45A8BE5F4E8}",
-      "ap-definition-en": {
-        "en": "Any name by which a LegalEntity is known, other than their legal name."
-      },
-      "ap-label-en": {
-        "en": "Alternative name"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "Any name by which a LegalEntity is known, other than their legal name."
-      },
-      "domain": [
-        {
-          "EA-Name": "LegalEntity",
-          "uri": "http://www.w3.org/ns/legal#LegalEntity"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "LegalEntity",
-        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-        "EA-Guid": "{49422D5B-1F5D-4f39-8949-F45A8BE5F4E8}",
-        "EA-Name": "alternativeName",
-        "EA-Package": "cv",
-        "EA-Range": "Text",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        },
-        "RawTags": [
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "Alternative name"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "Any name by which a LegalEntity is known, other than their legal name."
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "https://purl.org/dc/terms/alternative"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "null",
-            "value": "For example, via the name of a brand or product."
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "Any name by which a LegalEntity is known, other than their legal name."
-        },
-        "ap-label-en": {
-          "en": "Alternative name"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "Any name by which a LegalEntity is known, other than their legal name."
-        },
-        "label": {
-          "en": "Alternative name"
-        },
-        "usage": {
-          "en": "For example, via the name of a brand or product."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "Alternative name"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "alternativeName",
-      "range": [
-        {
-          "EA-GUID": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
-          "EA-Name": "Text",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ],
-      "usage": {
-        "en": "For example, via the name of a brand or product."
-      }
-    },
-    {
       "@id": "https://schema.org/contactType",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "EA-Guid": "{55341A77-B932-4773-84B3-8768CE8D359E}",
@@ -23227,404 +23625,6 @@
       "usage": {
         "en": "For example, (given) consent first starts with the identification of need to ask consent, then issuing a request (to the individual), making a decision (by the individual), and then following it up with further actions such as the individual withdrawing it."
       }
-    },
-    {
-      "@id": "https://www.w3.org/ns/org#classification",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{C2DDB3E1-02A2-4aee-BD14-10E86F539A63}",
-      "ap-definition-en": {
-        "en": "Indicates a classification for this Organization within some classification scheme."
-      },
-      "ap-label-en": {
-        "en": "classification"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "Indicates a classification for this Organization within some classification scheme."
-      },
-      "domain": [
-        {
-          "EA-Name": "LegalEntity",
-          "uri": "http://www.w3.org/ns/legal#LegalEntity"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "LegalEntity",
-        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-        "EA-Guid": "{C2DDB3E1-02A2-4aee-BD14-10E86F539A63}",
-        "EA-Name": "classification",
-        "EA-Package": "cv",
-        "EA-Range": "Code",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
-          "EA-Name": "Code",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-        },
-        "RawTags": [
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "classification"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "Indicates a classification for this Organization within some classification scheme."
-          },
-          {
-            "key": "usageNote-en",
-            "note": "null",
-            "value": "Extension vocabularies may wish to specialize this property to have a range corresponding to a specific skos:ConceptScheme. Examples: company, non-profit organisation, local authority, etc. It may refer to an economic classification such as the NACE code."
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "https://www.w3.org/ns/org#classification"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "Indicates a classification for this Organization within some classification scheme."
-        },
-        "ap-label-en": {
-          "en": "classification"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "Indicates a classification for this Organization within some classification scheme."
-        },
-        "label": {
-          "en": "classification"
-        },
-        "usage": {
-          "en": "Extension vocabularies may wish to specialize this property to have a range corresponding to a specific skos:ConceptScheme. Examples: company, non-profit organisation, local authority, etc. It may refer to an economic classification such as the NACE code."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "classification"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "classification",
-      "range": [
-        {
-          "EA-GUID": "{C819F639-92F4-4235-BE20-2252B3AAC098}",
-          "EA-Name": "Code",
-          "EA-Package": "DataTypes",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-        }
-      ],
-      "usage": {
-        "en": "Extension vocabularies may wish to specialize this property to have a range corresponding to a specific skos:ConceptScheme. Examples: company, non-profit organisation, local authority, etc. It may refer to an economic classification such as the NACE code."
-      }
-    },
-    {
-      "@id": "https://www.w3.org/ns/org#identifier",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "EA-Guid": "{0E4439AC-5BD9-4328-8EFD-D12076B34C70}",
-      "ap-definition-en": {
-        "en": "Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization."
-      },
-      "ap-label-en": {
-        "en": "Establishment number"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization."
-      },
-      "domain": [
-        {
-          "EA-Name": "LegalEntity",
-          "uri": "http://www.w3.org/ns/legal#LegalEntity"
-        }
-      ],
-      "extra": {
-        "EA-Domain": "LegalEntity",
-        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-        "EA-Guid": "{0E4439AC-5BD9-4328-8EFD-D12076B34C70}",
-        "EA-Name": "establishmentNumber",
-        "EA-Package": "cv",
-        "EA-Range": "Literal",
-        "EA-Type": "attribute",
-        "RangeData": {
-          "EA-Name": "Literal",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-        },
-        "RawTags": [
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "Establishment number"
-          },
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization."
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "https://www.w3.org/ns/org#identifier"
-          },
-          {
-            "key": "usageNote-en",
-            "note": "Many different national and international identifier schemes are available from other vocabularies. The ORG ontology is neutral to which schemes are used. The particular identifier scheme should be indicated by the datatype of the identifier value. Using datatypes to distinguish the notation scheme used is consistent with recommended best practice for skos:notation of which this property is a specialization.",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization."
-        },
-        "ap-label-en": {
-          "en": "Establishment number"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization."
-        },
-        "label": {
-          "en": "Establishment number"
-        },
-        "usage": {
-          "en": "Many different national and international identifier schemes are available from other vocabularies. The ORG ontology is neutral to which schemes are used. The particular identifier scheme should be indicated by the datatype of the identifier value. Using datatypes to distinguish the notation scheme used is consistent with recommended best practice for skos:notation of which this property is a specialization."
-        }
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "Establishment number"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "establishmentNumber",
-      "range": [
-        {
-          "EA-Name": "Literal",
-          "EA-Package": "",
-          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-        }
-      ],
-      "usage": {
-        "en": "Many different national and international identifier schemes are available from other vocabularies. The ORG ontology is neutral to which schemes are used. The particular identifier scheme should be indicated by the datatype of the identifier value. Using datatypes to distinguish the notation scheme used is consistent with recommended best practice for skos:notation of which this property is a specialization."
-      }
-    },
-    {
-      "@id": "https://www.w3.org/ns/org#memberOf",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{05865229-3887-46ad-8BDB-DB3CA4DBE1BB}",
-      "ap-definition-en": {
-        "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership."
-      },
-      "ap-label-en": {
-        "en": "member of"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership."
-      },
-      "domain": [
-        {
-          "EA-Name": "LegalEntity",
-          "uri": "http://www.w3.org/ns/legal#LegalEntity"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "label-en",
-            "note": "member of",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "NOTE$ea_notes=Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership.",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "https://www.w3.org/ns/org#memberOf",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "LegalEntity",
-        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-        "EA-Guid": "{05865229-3887-46ad-8BDB-DB3CA4DBE1BB}",
-        "EA-Name": "memberOf",
-        "EA-Package": "",
-        "EA-Range": "LegalEntity",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-          "EA-Name": "LegalEntity",
-          "EA-Package": "cv",
-          "uri": "http://www.w3.org/ns/legal#LegalEntity"
-        },
-        "RawTags": [
-          {
-            "key": "label-en",
-            "note": "member of",
-            "value": "NOTE"
-          },
-          {
-            "key": "definition-en",
-            "note": "NOTE$ea_notes=Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership.",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "https://www.w3.org/ns/org#memberOf",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership."
-        },
-        "ap-label-en": {
-          "en": "member of"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership."
-        },
-        "derived": "false",
-        "destRole": "memberOf",
-        "label": {
-          "en": "member of"
-        },
-        "sourceRole": "null",
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "member of"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "memberOf",
-      "range": [
-        {
-          "EA-GUID": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-          "EA-Name": "LegalEntity",
-          "EA-Package": "cv",
-          "uri": "http://www.w3.org/ns/legal#LegalEntity"
-        }
-      ]
-    },
-    {
-      "@id": "https://www.w3.org/ns/org#unitOf",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "EA-Guid": "{12D86DC5-39CB-4d69-BDFD-4ADC9109362F}",
-      "ap-definition-en": {
-        "en": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization."
-      },
-      "ap-label-en": {
-        "en": "unit of"
-      },
-      "codelist": [],
-      "definition": {
-        "en": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization."
-      },
-      "domain": [
-        {
-          "EA-Name": "LegalEntity",
-          "uri": "http://www.w3.org/ns/legal#LegalEntity"
-        }
-      ],
-      "extra": {
-        "DestRoleTags": [
-          {
-            "key": "definition-en",
-            "note": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "unit of",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "https://www.w3.org/ns/org#unitOf",
-            "value": "NOTE"
-          }
-        ],
-        "EA-Domain": "LegalEntity",
-        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-        "EA-Guid": "{12D86DC5-39CB-4d69-BDFD-4ADC9109362F}",
-        "EA-Name": "unitOf",
-        "EA-Package": "",
-        "EA-Range": "LegalEntity",
-        "EA-Type": "connector",
-        "RangeData": {
-          "EA-GUID": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-          "EA-Name": "LegalEntity",
-          "EA-Package": "cv",
-          "uri": "http://www.w3.org/ns/legal#LegalEntity"
-        },
-        "RawTags": [
-          {
-            "key": "definition-en",
-            "note": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "unit of",
-            "value": "NOTE"
-          },
-          {
-            "key": "uri",
-            "note": "https://www.w3.org/ns/org#unitOf",
-            "value": "NOTE"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization."
-        },
-        "ap-label-en": {
-          "en": "unit of"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization."
-        },
-        "derived": "false",
-        "destRole": "unitOf",
-        "label": {
-          "en": "unit of"
-        },
-        "sourceRole": "null",
-        "usage": ""
-      },
-      "generalization": [],
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "unit of"
-      },
-      "maxCardinality": "*",
-      "minCardinality": "0",
-      "name": "unitOf",
-      "range": [
-        {
-          "EA-GUID": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-          "EA-Name": "LegalEntity",
-          "EA-Package": "cv",
-          "uri": "http://www.w3.org/ns/legal#LegalEntity"
-        }
-      ]
     }
   ],
   "externals": [
@@ -23835,67 +23835,6 @@
         "en": "Public Event"
       },
       "name": "PublicEvent"
-    },
-    {
-      "@id": "http://data4wallonia/mode/LegalEntityPerson",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{E577100F-E1FE-46b1-A6A0-93F89EDCD283}",
-      "ap-definition-en": {
-        "en": "A person legal entity"
-      },
-      "ap-label-en": {
-        "en": "Legal Entity Person"
-      },
-      "definition": {
-        "en": "A person legal entity"
-      },
-      "extra": {
-        "EA-Guid": "{E577100F-E1FE-46b1-A6A0-93F89EDCD283}",
-        "EA-Name": "LegalEntityPerson",
-        "EA-Package": "d4w",
-        "EA-Parents": "",
-        "EA-Parents2": [],
-        "EA-Type": "CLASS",
-        "RawTags": [
-          {
-            "key": "definition-en",
-            "note": "null",
-            "value": "A person legal entity"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "Legal Entity Person"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://data4wallonia/mode/LegalEntityPerson"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "A person legal entity"
-        },
-        "ap-label-en": {
-          "en": "Legal Entity Person"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "A person legal entity"
-        },
-        "label": {
-          "en": "Legal Entity Person"
-        },
-        "parentclasses": "",
-        "usage": ""
-      },
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "Legal Entity Person"
-      },
-      "name": "LegalEntityPerson"
     },
     {
       "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -24115,13 +24054,13 @@
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{BBF95D40-C287-42c6-B41E-A25972D8B551}",
       "ap-definition-en": {
-        "en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat"
+        "en": "boolean represents the values of two-valued logic."
       },
       "ap-label-en": {
         "en": "Boolean"
       },
       "definition": {
-        "en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat"
+        "en": "boolean represents the values of two-valued logic."
       },
       "extra": {
         "EA-Guid": "{BBF95D40-C287-42c6-B41E-A25972D8B551}",
@@ -24134,7 +24073,7 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat"
+            "value": "boolean represents the values of two-valued logic."
           },
           {
             "key": "label-en",
@@ -24150,14 +24089,14 @@
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat"
+          "en": "boolean represents the values of two-valued logic."
         },
         "ap-label-en": {
           "en": "Boolean"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat"
+          "en": "boolean represents the values of two-valued logic."
         },
         "label": {
           "en": "Boolean"
@@ -24176,13 +24115,13 @@
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{172EF7C3-3EFA-4acd-94EC-42BF3B7E5D70}",
       "ap-definition-en": {
-        "en": "The ï¿½value spaceï¿½ of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
+        "en": "The ·value space· of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
       },
       "ap-label-en": {
         "en": "Date"
       },
       "definition": {
-        "en": "The ï¿½value spaceï¿½ of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
+        "en": "The ·value space· of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
       },
       "extra": {
         "EA-Guid": "{172EF7C3-3EFA-4acd-94EC-42BF3B7E5D70}",
@@ -24199,7 +24138,7 @@
           },
           {
             "key": "definition-en",
-            "note": "The ï¿½value spaceï¿½ of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap.",
+            "note": "The ·value space· of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap.",
             "value": "NOTE"
           },
           {
@@ -24221,14 +24160,14 @@
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "The ï¿½value spaceï¿½ of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
+          "en": "The ·value space· of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
         },
         "ap-label-en": {
           "en": "Date"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "The ï¿½value spaceï¿½ of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
+          "en": "The ·value space· of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
         },
         "label": {
           "en": "Date"
@@ -24243,17 +24182,88 @@
       "name": "Date"
     },
     {
+      "@id": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{93158274-550F-43bf-BCA2-D8C45A3A7D70}",
+      "ap-definition-en": {
+        "en": "dateTime represents instants of time, optionally marked with a particular time zone offset. Values representing the same instant but having different time zone offsets are equal but not identical."
+      },
+      "ap-label-en": {
+        "en": "DateTime"
+      },
+      "definition": {
+        "en": "dateTime represents instants of time, optionally marked with a particular time zone offset. Values representing the same instant but having different time zone offsets are equal but not identical."
+      },
+      "extra": {
+        "EA-Guid": "{93158274-550F-43bf-BCA2-D8C45A3A7D70}",
+        "EA-Name": "DateTime",
+        "EA-Package": "DataTypes",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "class-usage-scope",
+            "note": "null",
+            "value": "datatype"
+          },
+          {
+            "key": "definition-en",
+            "note": "dateTime represents instants of time, optionally marked with a particular time zone offset. Values representing the same instant but having different time zone offsets are equal but not identical.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "DateTime"
+          },
+          {
+            "key": "literal",
+            "note": "null",
+            "value": "true"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2001/XMLSchema#dateTime"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "dateTime represents instants of time, optionally marked with a particular time zone offset. Values representing the same instant but having different time zone offsets are equal but not identical."
+        },
+        "ap-label-en": {
+          "en": "DateTime"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "dateTime represents instants of time, optionally marked with a particular time zone offset. Values representing the same instant but having different time zone offsets are equal but not identical."
+        },
+        "label": {
+          "en": "DateTime"
+        },
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "DateTime"
+      },
+      "name": "Datetime"
+    },
+    {
       "@id": "http://www.w3.org/2001/XMLSchema#double",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{1ABBF0E3-EEB0-4941-916E-6EE68AF8D8DC}",
       "ap-definition-en": {
-        "en": "The string datatype represents character strings in XML. The ï¿½value spaceï¿½ of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ï¿½matchï¿½ the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer."
+        "en": "The string datatype represents character strings in XML. The ·value space· of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ·match· the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer."
       },
       "ap-label-en": {
         "en": "String"
       },
       "definition": {
-        "en": "The string datatype represents character strings in XML. The ï¿½value spaceï¿½ of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ï¿½matchï¿½ the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer."
+        "en": "The string datatype represents character strings in XML. The ·value space· of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ·match· the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer."
       },
       "extra": {
         "EA-Guid": "{1ABBF0E3-EEB0-4941-916E-6EE68AF8D8DC}",
@@ -24270,7 +24280,7 @@
           },
           {
             "key": "definition-en",
-            "note": "The string datatype represents character strings in XML. The ï¿½value spaceï¿½ of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ï¿½matchï¿½ the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer.",
+            "note": "The string datatype represents character strings in XML. The ·value space· of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ·match· the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer.",
             "value": "NOTE"
           },
           {
@@ -24292,14 +24302,14 @@
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "The string datatype represents character strings in XML. The ï¿½value spaceï¿½ of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ï¿½matchï¿½ the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer."
+          "en": "The string datatype represents character strings in XML. The ·value space· of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ·match· the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer."
         },
         "ap-label-en": {
           "en": "String"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "The string datatype represents character strings in XML. The ï¿½value spaceï¿½ of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ï¿½matchï¿½ the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer."
+          "en": "The string datatype represents character strings in XML. The ·value space· of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ·match· the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer."
         },
         "label": {
           "en": "String"
@@ -24373,77 +24383,6 @@
         "en": "Double"
       },
       "name": "Double"
-    },
-    {
-      "@id": "http://www.w3.org/2001/XMLSchema#double",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{93158274-550F-43bf-BCA2-D8C45A3A7D70}",
-      "ap-definition-en": {
-        "en": "The ï¿½value spaceï¿½ of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
-      },
-      "ap-label-en": {
-        "en": "Date"
-      },
-      "definition": {
-        "en": "The ï¿½value spaceï¿½ of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
-      },
-      "extra": {
-        "EA-Guid": "{93158274-550F-43bf-BCA2-D8C45A3A7D70}",
-        "EA-Name": "DateTime",
-        "EA-Package": "DataTypes",
-        "EA-Parents": "",
-        "EA-Parents2": [],
-        "EA-Type": "DATATYPE",
-        "RawTags": [
-          {
-            "key": "class-usage-scope",
-            "note": "null",
-            "value": "datatype"
-          },
-          {
-            "key": "definition-en",
-            "note": "The ï¿½value spaceï¿½ of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap.",
-            "value": "NOTE"
-          },
-          {
-            "key": "label-en",
-            "note": "null",
-            "value": "Date"
-          },
-          {
-            "key": "literal",
-            "note": "null",
-            "value": "true"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://www.w3.org/2001/XMLSchema#double"
-          }
-        ],
-        "Scope": "NOTHING",
-        "ap-codelist": "",
-        "ap-definition-en": {
-          "en": "The ï¿½value spaceï¿½ of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
-        },
-        "ap-label-en": {
-          "en": "Date"
-        },
-        "ap-usageNote-en": "",
-        "definition": {
-          "en": "The ï¿½value spaceï¿½ of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
-        },
-        "label": {
-          "en": "Date"
-        },
-        "parentclasses": "",
-        "usage": ""
-      },
-      "inpackage": "OTHER_PACKAGE",
-      "label": {
-        "en": "Date"
-      },
-      "name": "Date"
     },
     {
       "@id": "http://www.w3.org/2001/XMLSchema#gYear",
@@ -24521,13 +24460,13 @@
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{D7234FA1-57B9-4eac-8CAD-73BFFF88F847}",
       "ap-definition-en": {
-        "en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat"
+        "en": "Integer is derived from decimal by fixing the value of fractionDigits to be 0 and disallowing the trailing decimal point. This results in the standard mathematical concept of the integer numbers."
       },
       "ap-label-en": {
         "en": "Integer"
       },
       "definition": {
-        "en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat"
+        "en": "Integer is derived from decimal by fixing the value of fractionDigits to be 0 and disallowing the trailing decimal point. This results in the standard mathematical concept of the integer numbers."
       },
       "extra": {
         "EA-Guid": "{D7234FA1-57B9-4eac-8CAD-73BFFF88F847}",
@@ -24540,7 +24479,7 @@
           {
             "key": "definition-en",
             "note": "null",
-            "value": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat"
+            "value": "Integer is derived from decimal by fixing the value of fractionDigits to be 0 and disallowing the trailing decimal point. This results in the standard mathematical concept of the integer numbers."
           },
           {
             "key": "label-en",
@@ -24556,14 +24495,14 @@
         "Scope": "NOTHING",
         "ap-codelist": "",
         "ap-definition-en": {
-          "en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat"
+          "en": "Integer is derived from decimal by fixing the value of fractionDigits to be 0 and disallowing the trailing decimal point. This results in the standard mathematical concept of the integer numbers."
         },
         "ap-label-en": {
           "en": "Integer"
         },
         "ap-usageNote-en": "",
         "definition": {
-          "en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat"
+          "en": "Integer is derived from decimal by fixing the value of fractionDigits to be 0 and disallowing the trailing decimal point. This results in the standard mathematical concept of the integer numbers."
         },
         "label": {
           "en": "Integer"
@@ -25547,6 +25486,67 @@
       "name": "File"
     },
     {
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/LegalEntityPerson",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{E577100F-E1FE-46b1-A6A0-93F89EDCD283}",
+      "ap-definition-en": {
+        "en": "A person legal entity"
+      },
+      "ap-label-en": {
+        "en": "Legal Entity Person"
+      },
+      "definition": {
+        "en": "A person legal entity"
+      },
+      "extra": {
+        "EA-Guid": "{E577100F-E1FE-46b1-A6A0-93F89EDCD283}",
+        "EA-Name": "LegalEntityPerson",
+        "EA-Package": "d4w",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "definition-en",
+            "note": "null",
+            "value": "A person legal entity"
+          },
+          {
+            "key": "label-en",
+            "note": "null",
+            "value": "Legal Entity Person"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/LegalEntityPerson"
+          }
+        ],
+        "Scope": "NOTHING",
+        "ap-codelist": "",
+        "ap-definition-en": {
+          "en": "A person legal entity"
+        },
+        "ap-label-en": {
+          "en": "Legal Entity Person"
+        },
+        "ap-usageNote-en": "",
+        "definition": {
+          "en": "A person legal entity"
+        },
+        "label": {
+          "en": "Legal Entity Person"
+        },
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "en": "Legal Entity Person"
+      },
+      "name": "LegalEntityPerson"
+    },
+    {
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/PartnerAdditionalDescription",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "EA-Guid": "{D7630626-AEAA-44eb-A6E5-EE01D60A18B4}",
@@ -26052,7 +26052,7 @@
   "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.2/Changelog.md",
   "template": "d4wmo-generic_en.j2",
   "title": "Data4Wallonia Generic Model",
-  "toolchaincommit": "220bb1a3a67434c965d0b501e39d1fc8a2cc11ac",
+  "toolchaincommit": "c69ca10095ecbad3c6a91f24458ba45742edcf09",
   "toolchainversion": "3",
   "translation": [
     {

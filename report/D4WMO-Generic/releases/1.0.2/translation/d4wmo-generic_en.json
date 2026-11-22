@@ -37,16 +37,6 @@
       }
     },
     {
-      "EA-Guid": "{E577100F-E1FE-46b1-A6A0-93F89EDCD283}",
-      "name": "LegalEntityPerson",
-      "label": {
-        "en": "Legal Entity Person"
-      },
-      "definition": {
-        "en": "A person legal entity"
-      }
-    },
-    {
       "EA-Guid": "{E4045FE6-F5D2-4c3f-881E-800F8C9AF85E}",
       "name": "Text",
       "label": {
@@ -83,7 +73,7 @@
         "en": "Boolean"
       },
       "definition": {
-        "en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat"
+        "en": "boolean represents the values of two-valued logic."
       }
     },
     {
@@ -93,7 +83,17 @@
         "en": "Date"
       },
       "definition": {
-        "en": "The ï¿½value spaceï¿½ of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
+        "en": "The ·value space· of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
+      }
+    },
+    {
+      "EA-Guid": "{93158274-550F-43bf-BCA2-D8C45A3A7D70}",
+      "name": "Datetime",
+      "label": {
+        "en": "DateTime"
+      },
+      "definition": {
+        "en": "dateTime represents instants of time, optionally marked with a particular time zone offset. Values representing the same instant but having different time zone offsets are equal but not identical."
       }
     },
     {
@@ -103,7 +103,7 @@
         "en": "String"
       },
       "definition": {
-        "en": "The string datatype represents character strings in XML. The ï¿½value spaceï¿½ of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ï¿½matchï¿½ the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer."
+        "en": "The string datatype represents character strings in XML. The ·value space· of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ·match· the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer."
       }
     },
     {
@@ -114,16 +114,6 @@
       },
       "definition": {
         "en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat"
-      }
-    },
-    {
-      "EA-Guid": "{93158274-550F-43bf-BCA2-D8C45A3A7D70}",
-      "name": "Date",
-      "label": {
-        "en": "Date"
-      },
-      "definition": {
-        "en": "The ï¿½value spaceï¿½ of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
       }
     },
     {
@@ -143,7 +133,7 @@
         "en": "Integer"
       },
       "definition": {
-        "en": "The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat"
+        "en": "Integer is derived from decimal by fixing the value of fractionDigits to be 0 and disallowing the trailing decimal point. This results in the standard mathematical concept of the integer numbers."
       }
     },
     {
@@ -299,6 +289,16 @@
       },
       "definition": {
         "en": "A file."
+      }
+    },
+    {
+      "EA-Guid": "{E577100F-E1FE-46b1-A6A0-93F89EDCD283}",
+      "name": "LegalEntityPerson",
+      "label": {
+        "en": "Legal Entity Person"
+      },
+      "definition": {
+        "en": "A person legal entity"
       }
     },
     {
@@ -495,7 +495,7 @@
         "en": "latitude"
       },
       "definition": {
-        "en": "The geographic coordinate that specifies the north / south position of the Geomerty on the Earth's surface."
+        "en": "The geographic coordinate that specifies the north / south position of the Geometry on the Earth's surface."
       }
     },
     {
@@ -585,22 +585,25 @@
     },
     {
       "EA-Guid": "{5F1B4C73-2B39-42c4-87B8-612130685D8D}",
-      "name": "hasTelehpone",
+      "name": "hasTelephone",
       "label": {
-        "en": "has telehpone"
+        "en": "has telephone"
       },
       "definition": {
         "en": "A telephone number through which the Contact Point can be contacted."
       }
     },
     {
-      "EA-Guid": "{73901402-E2C2-49f8-8459-75D082865B01}",
-      "name": "liableToVat",
+      "EA-Guid": "{49422D5B-1F5D-4f39-8949-F45A8BE5F4E8}",
+      "name": "alternativeName",
       "label": {
-        "en": "Liable to VAT"
+        "en": "Alternative name"
       },
       "definition": {
-        "en": "Specify if the legal entity is liable to VAT."
+        "en": "Any name by which a LegalEntity is known, other than their legal name."
+      },
+      "usage": {
+        "en": "For example, via the name of a brand or product."
       }
     },
     {
@@ -839,7 +842,7 @@
         "en": "has legal entity"
       },
       "definition": {
-        "en": "The legal entity to which the person belongs to."
+        "en": "The legal entity to which the person belongs."
       }
     },
     {
@@ -996,13 +999,59 @@
       }
     },
     {
+      "EA-Guid": "{C2DDB3E1-02A2-4aee-BD14-10E86F539A63}",
+      "name": "classification",
+      "label": {
+        "en": "classification"
+      },
+      "definition": {
+        "en": "Indicates a classification for this Organization within some classification scheme."
+      },
+      "usage": {
+        "en": "Extension vocabularies may wish to specialize this property to have a range corresponding to a specific skos:ConceptScheme. Examples: company, non-profit organisation, local authority, etc. It may refer to an economic classification such as the NACE code."
+      }
+    },
+    {
+      "EA-Guid": "{0E4439AC-5BD9-4328-8EFD-D12076B34C70}",
+      "name": "establishmentNumber",
+      "label": {
+        "en": "Establishment number"
+      },
+      "definition": {
+        "en": "Gives an identifier, such as a company registration number, that can be used to uniquely identify the organization."
+      },
+      "usage": {
+        "en": "Many different national and international identifier schemes are available from other vocabularies. The ORG ontology is neutral to which schemes are used. The particular identifier scheme should be indicated by the datatype of the identifier value. Using datatypes to distinguish the notation scheme used is consistent with recommended best practice for skos:notation of which this property is a specialization."
+      }
+    },
+    {
+      "EA-Guid": "{05865229-3887-46ad-8BDB-DB3CA4DBE1BB}",
+      "name": "memberOf",
+      "label": {
+        "en": "member of"
+      },
+      "definition": {
+        "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership."
+      }
+    },
+    {
+      "EA-Guid": "{12D86DC5-39CB-4d69-BDFD-4ADC9109362F}",
+      "name": "unitOf",
+      "label": {
+        "en": "unit of"
+      },
+      "definition": {
+        "en": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization."
+      }
+    },
+    {
       "EA-Guid": "{82747421-BD5D-41f2-9DF2-134722DC2CF4}",
       "name": "hasPerson",
       "label": {
         "en": "has person"
       },
       "definition": {
-        "en": "The person that belong to a legal entity."
+        "en": "The person that belongs to a legal entity."
       }
     },
     {
@@ -1632,6 +1681,19 @@
       }
     },
     {
+      "EA-Guid": "{D864EABE-E0F4-4c21-B305-8F1877985A3B}",
+      "name": "contactPoint",
+      "label": {
+        "en": "contact point"
+      },
+      "definition": {
+        "en": "A reference to a contact point."
+      },
+      "usage": {
+        "en": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc."
+      }
+    },
+    {
       "EA-Guid": "{136BAE7C-CACB-41b6-A007-C0078EAE20C9}",
       "name": "contactPoint",
       "label": {
@@ -1655,19 +1717,6 @@
       },
       "usage": {
         "en": "The contact point brings together all the contact information for a legal entity: website, telephone numbers, emails, etc."
-      }
-    },
-    {
-      "EA-Guid": "{D864EABE-E0F4-4c21-B305-8F1877985A3B}",
-      "name": "contactPoint",
-      "label": {
-        "en": "contact point"
-      },
-      "definition": {
-        "en": "A reference to a contact point."
-      },
-      "usage": {
-        "en": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc."
       }
     },
     {
@@ -1887,19 +1936,6 @@
       }
     },
     {
-      "EA-Guid": "{38E3C061-DF9A-4bb9-9ED2-06CDBC1FB75F}",
-      "name": "hasCost",
-      "label": {
-        "en": "has cost"
-      },
-      "definition": {
-        "en": "A cost"
-      },
-      "usage": {
-        "en": "The cost, the price, is not necessarily given in a monetary format, but can be an explanatory text of price variants according to circumstances or conditions.  It should therefore be possible to explain this in free text."
-      }
-    },
-    {
       "EA-Guid": "{F306F36F-3EF6-46ff-A865-201B9C660C44}",
       "name": "hasCost",
       "label": {
@@ -1907,6 +1943,19 @@
       },
       "definition": {
         "en": "A cost."
+      },
+      "usage": {
+        "en": "The cost, the price, is not necessarily given in a monetary format, but can be an explanatory text of price variants according to circumstances or conditions.  It should therefore be possible to explain this in free text."
+      }
+    },
+    {
+      "EA-Guid": "{38E3C061-DF9A-4bb9-9ED2-06CDBC1FB75F}",
+      "name": "hasCost",
+      "label": {
+        "en": "has cost"
+      },
+      "definition": {
+        "en": "A cost"
       },
       "usage": {
         "en": "The cost, the price, is not necessarily given in a monetary format, but can be an explanatory text of price variants according to circumstances or conditions.  It should therefore be possible to explain this in free text."
@@ -2109,6 +2158,16 @@
       },
       "usage": {
         "en": "TODO"
+      }
+    },
+    {
+      "EA-Guid": "{73901402-E2C2-49f8-8459-75D082865B01}",
+      "name": "liableToVat",
+      "label": {
+        "en": "liable to vat"
+      },
+      "definition": {
+        "en": "Specify if the legal entity is liable to VAT."
       }
     },
     {
@@ -2330,19 +2389,6 @@
       }
     },
     {
-      "EA-Guid": "{0D659D88-5D13-4a6b-B310-78D4CD70DF11}",
-      "name": "partner",
-      "label": {
-        "en": "partner"
-      },
-      "definition": {
-        "en": "A reference to a profile partner"
-      },
-      "usage": {
-        "en": "Profile representing a partner of the event."
-      }
-    },
-    {
       "EA-Guid": "{7EA2456E-DD45-48de-9559-2AB2321AE57C}",
       "name": "partner",
       "label": {
@@ -2353,6 +2399,19 @@
       },
       "usage": {
         "en": "Profile representing a partner of the activity."
+      }
+    },
+    {
+      "EA-Guid": "{0D659D88-5D13-4a6b-B310-78D4CD70DF11}",
+      "name": "partner",
+      "label": {
+        "en": "partner"
+      },
+      "definition": {
+        "en": "A reference to a profile partner"
+      },
+      "usage": {
+        "en": "Profile representing a partner of the event."
       }
     },
     {
@@ -3219,19 +3278,6 @@
       }
     },
     {
-      "EA-Guid": "{49422D5B-1F5D-4f39-8949-F45A8BE5F4E8}",
-      "name": "alternativeName",
-      "label": {
-        "en": "Alternative name"
-      },
-      "definition": {
-        "en": "Any name by which a LegalEntity is known, other than their legal name."
-      },
-      "usage": {
-        "en": "For example, via the name of a brand or product."
-      }
-    },
-    {
       "EA-Guid": "{55341A77-B932-4773-84B3-8768CE8D359E}",
       "name": "contactType",
       "label": {
@@ -3252,52 +3298,6 @@
       },
       "usage": {
         "en": "For example, (given) consent first starts with the identification of need to ask consent, then issuing a request (to the individual), making a decision (by the individual), and then following it up with further actions such as the individual withdrawing it."
-      }
-    },
-    {
-      "EA-Guid": "{C2DDB3E1-02A2-4aee-BD14-10E86F539A63}",
-      "name": "classification",
-      "label": {
-        "en": "classification"
-      },
-      "definition": {
-        "en": "Indicates a classification for this Organization within some classification scheme."
-      },
-      "usage": {
-        "en": "Extension vocabularies may wish to specialize this property to have a range corresponding to a specific skos:ConceptScheme. Examples: company, non-profit organisation, local authority, etc. It may refer to an economic classification such as the NACE code."
-      }
-    },
-    {
-      "EA-Guid": "{0E4439AC-5BD9-4328-8EFD-D12076B34C70}",
-      "name": "establishmentNumber",
-      "label": {
-        "en": "Establishment number"
-      },
-      "definition": {
-        "en": "Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization."
-      },
-      "usage": {
-        "en": "Many different national and international identifier schemes are available from other vocabularies. The ORG ontology is neutral to which schemes are used. The particular identifier scheme should be indicated by the datatype of the identifier value. Using datatypes to distinguish the notation scheme used is consistent with recommended best practice for skos:notation of which this property is a specialization."
-      }
-    },
-    {
-      "EA-Guid": "{05865229-3887-46ad-8BDB-DB3CA4DBE1BB}",
-      "name": "memberOf",
-      "label": {
-        "en": "member of"
-      },
-      "definition": {
-        "en": "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership."
-      }
-    },
-    {
-      "EA-Guid": "{12D86DC5-39CB-4d69-BDFD-4ADC9109362F}",
-      "name": "unitOf",
-      "label": {
-        "en": "unit of"
-      },
-      "definition": {
-        "en": "Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization."
       }
     }
   ]

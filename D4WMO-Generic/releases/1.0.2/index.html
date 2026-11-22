@@ -337,7 +337,7 @@ This specification uses the following prefixes to shorten the URIs for readabili
                         <p>
                             And supported by these datatypes:
                             <br />
-                            | <a href="#Boolean">Boolean</a> | <a href="#Code">Code</a> | <a href="#Date">Date</a> | <a href="#Date">Date</a> | <a href="#Document">Document</a> | <a href="#Double">Double</a> | <a href="#gYear">gYear</a> | <a href="#Integer">Integer</a> | <a href="#Literal">Literal</a> | <a href="#String">String</a> | <a href="#Text">Text</a> | <a href="#URI">URI</a> |
+                            | <a href="#Boolean">Boolean</a> | <a href="#Code">Code</a> | <a href="#Date">Date</a> | <a href="#DateTime">DateTime</a> | <a href="#Document">Document</a> | <a href="#Double">Double</a> | <a href="#gYear">gYear</a> | <a href="#Integer">Integer</a> | <a href="#Literal">Literal</a> | <a href="#String">String</a> | <a href="#Text">Text</a> | <a href="#URI">URI</a> |
                         </p>
                 
     </div>
@@ -833,7 +833,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#Date" data-placement="right">Date</a>
+                                            <a href="#DateTime" data-placement="right">DateTime</a>
                                         
                                     
                                 </td>
@@ -1865,7 +1865,7 @@ The main entities are those that form the core of the Application Profile.
                                 <td>
                                     
                                         
-                                            <a href="#Date" data-placement="right">Date</a>
+                                            <a href="#DateTime" data-placement="right">DateTime</a>
                                         
                                     
                                 </td>
@@ -2163,7 +2163,7 @@ The main entities are those that form the core of the Application Profile.
                             , <a href="#ContactPoint.contacttype">contact type</a>
                             , <a href="#ContactPoint.hasemail">has email</a>
                             , <a href="#ContactPoint.hasprivateemail">has private email</a>
-                            , <a href="#ContactPoint.hastelehpone">has telehpone</a>
+                            , <a href="#ContactPoint.hastelephone">has telephone</a>
                             , <a href="#ContactPoint.Id">Id</a>
                             , <a href="#ContactPoint.socialnetwork">social network</a>
                             , <a href="#ContactPoint.website">website</a>
@@ -2378,12 +2378,12 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                             </tr>
                         
-                            <tr id="ContactPoint.hastelehpone"
+                            <tr id="ContactPoint.hastelephone"
                                 typeof="rdfs:Property"
                                 resource="http://data.europa.eu/m8g/telephone"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20has telehpone%20in%20Contact Point&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.2/%23ContactPoint.hastelehpone" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20has telephone%20in%20Contact Point&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.2/%23ContactPoint.hastelephone" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -2393,7 +2393,7 @@ The main entities are those that form the core of the Application Profile.
                                            data-toggle="tooltip"
                                            data-content="http://data.europa.eu/m8g/telephone"
                                            data-placement="right">
-                                        has telehpone</a>
+                                        has telephone</a>
                                 </td>
                                 <td>
                                     
@@ -3138,7 +3138,7 @@ Example: x  for members, y  for non-members of an organisation.
                             , <a href="#LegalEntity.identifier">identifier</a>
                             , <a href="#LegalEntity.legalentityactivity">legal entity activity</a>
                             , <a href="#LegalEntity.legalname">legal name</a>
-                            , <a href="#LegalEntity.LiabletoVAT">Liable to VAT</a>
+                            , <a href="#LegalEntity.liabletovat">liable to vat</a>
                             , <a href="#LegalEntity.logo">logo</a>
                             , <a href="#LegalEntity.mainnacecode">main nace code</a>
                             , <a href="#LegalEntity.memberof">member of</a>
@@ -3273,7 +3273,7 @@ Example: x  for members, y  for non-members of an organisation.
                         
                             <tr id="LegalEntity.Alternativename"
                                 typeof="rdfs:Property"
-                                resource="https://purl.org/dc/terms/alternative"
+                                resource="http://purl.org/dc/terms/alternative"
                                 class="class mandatory">
                                 <td>
 				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20Alternative name%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.2/%23LegalEntity.Alternativename" target="_blank" rel="noopener noreferrer" >
@@ -3282,9 +3282,9 @@ Example: x  for members, y  for non-members of an organisation.
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="https://purl.org/dc/terms/alternative"
+                                        <a href="http://purl.org/dc/terms/alternative"
                                            data-toggle="tooltip"
-                                           data-content="https://purl.org/dc/terms/alternative"
+                                           data-content="http://purl.org/dc/terms/alternative"
                                            data-placement="right">
                                         Alternative name</a>
                                 </td>
@@ -3316,7 +3316,7 @@ Example: x  for members, y  for non-members of an organisation.
                         
                             <tr id="LegalEntity.classification"
                                 typeof="rdfs:Property"
-                                resource="https://www.w3.org/ns/org#classification"
+                                resource="http://www.w3.org/ns/org#classification"
                                 class="class mandatory">
                                 <td>
 				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20classification%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.2/%23LegalEntity.classification" target="_blank" rel="noopener noreferrer" >
@@ -3325,9 +3325,9 @@ Example: x  for members, y  for non-members of an organisation.
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="https://www.w3.org/ns/org#classification"
+                                        <a href="http://www.w3.org/ns/org#classification"
                                            data-toggle="tooltip"
-                                           data-content="https://www.w3.org/ns/org#classification"
+                                           data-content="http://www.w3.org/ns/org#classification"
                                            data-placement="right">
                                         classification</a>
                                 </td>
@@ -3445,7 +3445,7 @@ Example: x  for members, y  for non-members of an organisation.
                         
                             <tr id="LegalEntity.Establishmentnumber"
                                 typeof="rdfs:Property"
-                                resource="https://www.w3.org/ns/org#identifier"
+                                resource="http://www.w3.org/ns/org#identifier"
                                 class="class mandatory">
                                 <td>
 				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20Establishment number%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.2/%23LegalEntity.Establishmentnumber" target="_blank" rel="noopener noreferrer" >
@@ -3454,9 +3454,9 @@ Example: x  for members, y  for non-members of an organisation.
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="https://www.w3.org/ns/org#identifier"
+                                        <a href="http://www.w3.org/ns/org#identifier"
                                            data-toggle="tooltip"
-                                           data-content="https://www.w3.org/ns/org#identifier"
+                                           data-content="http://www.w3.org/ns/org#identifier"
                                            data-placement="right">
                                         Establishment number</a>
                                 </td>
@@ -3471,7 +3471,7 @@ Example: x  for members, y  for non-members of an organisation.
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization.
+                                    Gives an identifier, such as a company registration number, that can be used to uniquely identify the organization.
                                 </td>
                                 <td property="skos:scopeNote">
                                     Many different national and international identifier schemes are available from other vocabularies. The ORG ontology is neutral to which schemes are used. The particular identifier scheme should be indicated by the datatype of the identifier value. Using datatypes to distinguish the notation scheme used is consistent with recommended best practice for skos:notation of which this property is a specialization.
@@ -3659,22 +3659,22 @@ A business might have more than one legal name, particularly in countries with m
                                 </td>
                             </tr>
                         
-                            <tr id="LegalEntity.LiabletoVAT"
+                            <tr id="LegalEntity.liabletovat"
                                 typeof="rdfs:Property"
-                                resource="http://data4wallonia.be/mode/liableToVAT"
+                                resource="https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/liableToVAT"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20Liable to VAT%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.2/%23LegalEntity.LiabletoVAT" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20liable to vat%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.2/%23LegalEntity.liabletovat" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://data4wallonia.be/mode/liableToVAT"
+                                        <a href="https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/liableToVAT"
                                            data-toggle="tooltip"
-                                           data-content="http://data4wallonia.be/mode/liableToVAT"
+                                           data-content="https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/liableToVAT"
                                            data-placement="right">
-                                        Liable to VAT</a>
+                                        liable to vat</a>
                                 </td>
                                 <td>
                                     
@@ -3790,7 +3790,7 @@ A business might have more than one legal name, particularly in countries with m
                         
                             <tr id="LegalEntity.memberof"
                                 typeof="rdfs:Property"
-                                resource="https://www.w3.org/ns/org#memberOf"
+                                resource="http://www.w3.org/ns/org#memberOf"
                                 class="class mandatory">
                                 <td>
 				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20member of%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.2/%23LegalEntity.memberof" target="_blank" rel="noopener noreferrer" >
@@ -3799,9 +3799,9 @@ A business might have more than one legal name, particularly in countries with m
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="https://www.w3.org/ns/org#memberOf"
+                                        <a href="http://www.w3.org/ns/org#memberOf"
                                            data-toggle="tooltip"
-                                           data-content="https://www.w3.org/ns/org#memberOf"
+                                           data-content="http://www.w3.org/ns/org#memberOf"
                                            data-placement="right">
                                         member of</a>
                                 </td>
@@ -3919,7 +3919,7 @@ A business might have more than one legal name, particularly in countries with m
                         
                             <tr id="LegalEntity.unitof"
                                 typeof="rdfs:Property"
-                                resource="https://www.w3.org/ns/org#unitOf"
+                                resource="http://www.w3.org/ns/org#unitOf"
                                 class="class mandatory">
                                 <td>
 				    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20unit of%20in%20Legal Entity&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.2/%23LegalEntity.unitof" target="_blank" rel="noopener noreferrer" >
@@ -3928,9 +3928,9 @@ A business might have more than one legal name, particularly in countries with m
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="https://www.w3.org/ns/org#unitOf"
+                                        <a href="http://www.w3.org/ns/org#unitOf"
                                            data-toggle="tooltip"
-                                           data-content="https://www.w3.org/ns/org#unitOf"
+                                           data-content="http://www.w3.org/ns/org#unitOf"
                                            data-placement="right">
                                         unit of</a>
                                 </td>
@@ -5525,7 +5525,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#Date" data-placement="right">Date</a>
+                                            <a href="#DateTime" data-placement="right">DateTime</a>
                                         
                                     
                                 </td>
@@ -6349,7 +6349,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#Date" data-placement="right">Date</a>
+                                            <a href="#DateTime" data-placement="right">DateTime</a>
                                         
                                     
                                 </td>
@@ -8106,7 +8106,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#Date" data-placement="right">Date</a>
+                                            <a href="#DateTime" data-placement="right">DateTime</a>
                                         
                                     
                                 </td>
@@ -8149,7 +8149,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#Date" data-placement="right">Date</a>
+                                            <a href="#DateTime" data-placement="right">DateTime</a>
                                         
                                     
                                 </td>
@@ -8751,7 +8751,7 @@ A business might have more than one legal name, particularly in countries with m
                                 <td>
                                     
                                         
-                                            <a href="#Date" data-placement="right">Date</a>
+                                            <a href="#DateTime" data-placement="right">DateTime</a>
                                         
                                     
                                 </td>
@@ -11840,7 +11840,7 @@ The key difference between a locator designator and a locator name is that the l
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    The geographic coordinate that specifies the north / south position of the Geomerty on the Earth&#39;s surface.
+                                    The geographic coordinate that specifies the north / south position of the Geometry on the Earth&#39;s surface.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -11916,9 +11916,9 @@ The key difference between a locator designator and a locator name is that the l
    
         <section>
             <h3 id="LegalEntityPerson">
-                <a href="http://data4wallonia/mode/LegalEntityPerson"
+                <a href="https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/LegalEntityPerson"
                    data-toggle="tooltip"
-                   data-content="http://data4wallonia/mode/LegalEntityPerson"
+                   data-content="https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/LegalEntityPerson"
                    data-placement="right">Legal Entity Person</a>
 
             </h3>
@@ -12058,7 +12058,7 @@ The key difference between a locator designator and a locator name is that the l
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    The legal entity to which the person belongs to.
+                                    The legal entity to which the person belongs.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -12101,7 +12101,7 @@ The key difference between a locator designator and a locator name is that the l
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    The person that belong to a legal entity.
+                                    The person that belongs to a legal entity.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -12857,7 +12857,7 @@ The key difference between a locator designator and a locator name is that the l
                     </div>
                 
 		</td><td>
-                    The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat
+                    boolean represents the values of two-valued logic.
 		</td></tr>
 		<tr><td>
                    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20Code&body=Explain%20your%20issue"}}>
@@ -12889,23 +12889,23 @@ The key difference between a locator designator and a locator name is that the l
                     </div>
                 
 		</td><td>
-                    The ï¿½value spaceï¿½ of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. &#39;00:00:00&#39;, up to but not including &#39;24:00:00&#39; (which is identical with &#39;00:00:00&#39; of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap.
+                    The ·value space· of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. &#39;00:00:00&#39;, up to but not including &#39;24:00:00&#39; (which is identical with &#39;00:00:00&#39; of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap.
 		</td></tr>
 		<tr><td>
-                   <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20Date&body=Explain%20your%20issue"}}>
+                   <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20Datetime&body=Explain%20your%20issue"}}>
                      <img src="html/callout.png" loading="lazy" alt="(create issue)" width="50" height="50"/>
 		   </a>
 		</td><td>
                 
-                    <div id="Date">
-                        <a href="http://www.w3.org/2001/XMLSchema#double"
+                    <div id="DateTime">
+                        <a href="http://www.w3.org/2001/XMLSchema#dateTime"
                            data-toggle="tooltip"
-                           data-content="http://www.w3.org/2001/XMLSchema#double"
-                           data-placement="right">Date</a>
+                           data-content="http://www.w3.org/2001/XMLSchema#dateTime"
+                           data-placement="right">DateTime</a>
                     </div>
                 
 		</td><td>
-                    The ï¿½value spaceï¿½ of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. &#39;00:00:00&#39;, up to but not including &#39;24:00:00&#39; (which is identical with &#39;00:00:00&#39; of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap.
+                    dateTime represents instants of time, optionally marked with a particular time zone offset. Values representing the same instant but having different time zone offsets are equal but not identical.
 		</td></tr>
 		<tr><td>
                    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20Document&body=Explain%20your%20issue"}}>
@@ -12969,7 +12969,7 @@ The key difference between a locator designator and a locator name is that the l
                     </div>
                 
 		</td><td>
-                    The double datatype is patterned after the IEEE double-precision 64-bit floating point datatype [IEEE 754-2008].  Each floating point datatype has a value space that is a subset of the rational numbers.  Floating point numbers are often used to approximat
+                    Integer is derived from decimal by fixing the value of fractionDigits to be 0 and disallowing the trailing decimal point. This results in the standard mathematical concept of the integer numbers.
 		</td></tr>
 		<tr><td>
                    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20Literal&body=Explain%20your%20issue"}}>
@@ -13001,7 +13001,7 @@ The key difference between a locator designator and a locator name is that the l
                     </div>
                 
 		</td><td>
-                    The string datatype represents character strings in XML. The ï¿½value spaceï¿½ of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ï¿½matchï¿½ the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer.
+                    The string datatype represents character strings in XML. The ·value space· of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ·match· the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer.
 		</td></tr>
 		<tr><td>
                    <a href="https://github.com/DigitalWallonia/D4WMO-Generic/issues/new?title=Issue%20for%20Text&body=Explain%20your%20issue"}}>
@@ -14116,7 +14116,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#ContactPoint">Contact Point</a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/ContactPoint</div></td>
 								<td></td>
-								<td><a href="#ContactPoint.hastelehpone">has telehpone </a></td>
+								<td><a href="#ContactPoint.hastelephone">has telephone </a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/telephone</div></td>
 							</tr>
 						
@@ -14467,7 +14467,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
 								<td></td>
 								<td><a href="#LegalEntity.Alternativename">Alternative name </a></td>
-								<td><div class="shorten">https://purl.org/dc/terms/alternative</div></td>
+								<td><div class="shorten">http://purl.org/dc/terms/alternative</div></td>
 							</tr>
 						
 					
@@ -14477,7 +14477,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
 								<td></td>
 								<td><a href="#LegalEntity.classification">classification </a></td>
-								<td><div class="shorten">https://www.w3.org/ns/org#classification</div></td>
+								<td><div class="shorten">http://www.w3.org/ns/org#classification</div></td>
 							</tr>
 						
 					
@@ -14507,7 +14507,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
 								<td></td>
 								<td><a href="#LegalEntity.Establishmentnumber">Establishment number </a></td>
-								<td><div class="shorten">https://www.w3.org/ns/org#identifier</div></td>
+								<td><div class="shorten">http://www.w3.org/ns/org#identifier</div></td>
 							</tr>
 						
 					
@@ -14556,8 +14556,8 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#LegalEntity">Legal Entity</a></td>
 								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
 								<td></td>
-								<td><a href="#LegalEntity.LiabletoVAT">Liable to VAT </a></td>
-								<td><div class="shorten">http://data4wallonia.be/mode/liableToVAT</div></td>
+								<td><a href="#LegalEntity.liabletovat">liable to vat </a></td>
+								<td><div class="shorten">https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/liableToVAT</div></td>
 							</tr>
 						
 					
@@ -14587,7 +14587,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
 								<td></td>
 								<td><a href="#LegalEntity.memberof">member of </a></td>
-								<td><div class="shorten">https://www.w3.org/ns/org#memberOf</div></td>
+								<td><div class="shorten">http://www.w3.org/ns/org#memberOf</div></td>
 							</tr>
 						
 					
@@ -14617,7 +14617,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
 								<td></td>
 								<td><a href="#LegalEntity.unitof">unit of </a></td>
-								<td><div class="shorten">https://www.w3.org/ns/org#unitOf</div></td>
+								<td><div class="shorten">http://www.w3.org/ns/org#unitOf</div></td>
 							</tr>
 						
 					
@@ -14661,7 +14661,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#LegalEntityPerson">Legal Entity Person</a></td>
-								<td><div class="shorten">http://data4wallonia/mode/LegalEntityPerson</div></td>
+								<td><div class="shorten">https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/LegalEntityPerson</div></td>
 								<td></td>
 								<td><a href="#LegalEntityPerson.department">department </a></td>
 								<td><div class="shorten">https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/department</div></td>
@@ -14671,7 +14671,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#LegalEntityPerson">Legal Entity Person</a></td>
-								<td><div class="shorten">http://data4wallonia/mode/LegalEntityPerson</div></td>
+								<td><div class="shorten">https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/LegalEntityPerson</div></td>
 								<td></td>
 								<td><a href="#LegalEntityPerson.haslegalentity">has legal entity </a></td>
 								<td><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></td>
@@ -14681,7 +14681,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#LegalEntityPerson">Legal Entity Person</a></td>
-								<td><div class="shorten">http://data4wallonia/mode/LegalEntityPerson</div></td>
+								<td><div class="shorten">https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/LegalEntityPerson</div></td>
 								<td></td>
 								<td><a href="#LegalEntityPerson.hasperson">has person </a></td>
 								<td><div class="shorten">http://www.w3.org/ns/person#Person</div></td>
@@ -14691,7 +14691,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#LegalEntityPerson">Legal Entity Person</a></td>
-								<td><div class="shorten">http://data4wallonia/mode/LegalEntityPerson</div></td>
+								<td><div class="shorten">https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/LegalEntityPerson</div></td>
 								<td></td>
 								<td><a href="#LegalEntityPerson.role">role </a></td>
 								<td><div class="shorten">https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/role</div></td>
@@ -14701,7 +14701,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 							<tr>
 								<td><a href="#LegalEntityPerson">Legal Entity Person</a></td>
-								<td><div class="shorten">http://data4wallonia/mode/LegalEntityPerson</div></td>
+								<td><div class="shorten">https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/LegalEntityPerson</div></td>
 								<td></td>
 								<td><a href="#LegalEntityPerson.shortdescription">short description </a></td>
 								<td><div class="shorten">https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/shortDescription</div></td>
