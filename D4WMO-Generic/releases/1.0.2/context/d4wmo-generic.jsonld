@@ -29,7 +29,7 @@
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/internalName",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
-    "Asset": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File",
+    "Asset": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Asset",
     "Asset.description": {
       "@container": "@set",
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/description",
@@ -66,11 +66,6 @@
       "@type": "@id"
     },
     "LegalEntityPerson": "http://data4wallonia/mode/LegalEntityPerson",
-    "LegalEntityPerson.department": {
-      "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/departement",
-      "@type": "@id"
-    },
     "LegalEntityPerson.shortDescription": {
       "@container": "@set",
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/shortDescription",
@@ -105,22 +100,12 @@
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Post": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Post",
-    "Post.publishedDate": {
-      "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/published date",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
     "Post.title": {
       "@container": "@set",
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/title",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "PressReview": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/PressReview",
-    "PressReview.publishedDate": {
-      "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/publishedDate",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
     "PressReview.shortDescription": {
       "@container": "@set",
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/shortDescription",
@@ -174,11 +159,6 @@
       "@id": "hthttp://data.europa.eu/m8g/contactPoint",
       "@type": "@id"
     },
-    "PublicEvent.hasCost": {
-      "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/hasCos",
-      "@type": "@id"
-    },
     "PublicEvent.partner": {
       "@container": "@set",
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/partner",
@@ -195,22 +175,12 @@
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "QualifiedPerson": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/QualifiedPerson",
-    "QualifiedPerson.department": {
-      "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/department",
-      "@type": "@id"
-    },
     "QualifiedPerson.shortDescription": {
       "@container": "@set",
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/shortDescription",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
-    "ServicesPlace": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace",
-    "ServicesPlace.hasCost": {
-      "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/hasCost",
-      "@type": "@id"
-    },
+    "ServicesPlace": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace",
     "ServicesPlace.partner": {
       "@container": "@set",
       "@id": "http://data.europa.eu/m8g/partner",
@@ -242,7 +212,7 @@
     },
     "accompanyingPerson": {
       "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/accompanyPerson",
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/accompanyingPerson",
       "@type": "@id"
     },
     "actionPlan": {
@@ -265,11 +235,6 @@
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/activityDescription",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
-    "additionaInformaitonOnSupport": {
-      "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/additionalInformationOnSupport",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    },
     "additionalDescription": {
       "@container": "@set",
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/additionalDescription",
@@ -284,6 +249,11 @@
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/additionalInformationOnOpeningHours",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
+    "additionalInformationOnSupport": {
+      "@container": "@set",
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/additionalInformationOnSupport",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
     "additionalTargetAudience": {
       "@container": "@set",
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/additionalTargetAudience",
@@ -291,18 +261,13 @@
     },
     "additionalTypeAndConditionOfAccess": {
       "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/additionalTypeAndConditionAccess",
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/additionalTypeAndConditionOfAccess",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "addresses": {
       "@container": "@set",
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/addresses",
       "@type": "@id"
-    },
-    "addtionalDescription": {
-      "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/additionalDescription",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "adminUnitL1": {
       "@container": "@set",
@@ -346,7 +311,7 @@
     },
     "beneficiaries": {
       "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/beneficiarie",
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/beneficiaries",
       "@type": "@id"
     },
     "budget": {
@@ -423,6 +388,11 @@
       "@container": "@set",
       "@id": "http://purl.org/dc/terms/issued",
       "@type": "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "department": {
+      "@container": "@set",
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/department",
+      "@type": "@id"
     },
     "dynamicList": {
       "@container": "@set",
@@ -503,11 +473,6 @@
       "@id": "http://xmlns.com/foaf/spec/#term_name",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
-    "function": {
-      "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/role",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    },
     "gender": {
       "@id": "http://data.europa.eu/m8g/gender",
       "@type": "@id"
@@ -516,6 +481,11 @@
       "@container": "@set",
       "@id": "http://xmlns.com/foaf/0.1/givenName",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "hasCost": {
+      "@container": "@set",
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/hasCost",
+      "@type": "@id"
     },
     "hasEmail": {
       "@container": "@set",
@@ -542,7 +512,7 @@
     },
     "hasProfile": {
       "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/inOperation",
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/hasProfile",
       "@type": "@id"
     },
     "hasTelephone": {
@@ -611,7 +581,7 @@
     "language": {
       "@container": "@set",
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/language",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+      "@type": "@id"
     },
     "latitude": {
       "@container": "@set",
@@ -702,7 +672,7 @@
     },
     "numberOfAttendees": {
       "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/numberOfParticipants",
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/numberOfAttendees",
       "@type": "http://www.w3.org/2001/XMLSchema#integer"
     },
     "numberOfBeneficiaries": {
@@ -710,19 +680,19 @@
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/numberOfBeneficiaries",
       "@type": "http://www.w3.org/2001/XMLSchema#integer"
     },
-    "numberOfEquipments": {
+    "numberOfEquipment": {
       "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/numberOfEquipments",
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/numberOfEquipment",
       "@type": "http://www.w3.org/2001/XMLSchema#integer"
     },
-    "numberOfOccurences": {
+    "numberOfOccurrences": {
       "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/numberOfOccurences",
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/numberOfOccurrences",
       "@type": "http://www.w3.org/2001/XMLSchema#integer"
     },
-    "occurence": {
+    "occurrence": {
       "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/occurence",
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/occurrence",
       "@type": "@id"
     },
     "openingHours": {
@@ -732,7 +702,7 @@
     },
     "operatingSystems": {
       "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/operating system",
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/operatingSystems",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "organizer": {
@@ -765,9 +735,9 @@
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/photo",
       "@type": "@id"
     },
-    "plateformContactPerson": {
+    "platformContactPerson": {
       "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/plateformContactPerson",
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/platformContactPerson",
       "@type": "@id"
     },
     "postCode": {
@@ -785,6 +755,7 @@
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "profile": {
+      "@container": "@set",
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/profile",
       "@type": "@id"
     },
@@ -802,6 +773,11 @@
       "@container": "@set",
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/projectHolder",
       "@type": "@id"
+    },
+    "publishedDate": {
+      "@container": "@set",
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/publishedDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "quotedPerson": {
       "@container": "@set",
@@ -891,7 +867,7 @@
     "role": {
       "@container": "@set",
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/role",
-      "@type": "@id"
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "scheduleAdditionalInformation": {
       "@container": "@set",
@@ -963,7 +939,7 @@
     },
     "totalWalloonBudget": {
       "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/totalWaloonBudget",
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/totalWalloonBudget",
       "@type": "http://www.w3.org/2001/XMLSchema#decimal"
     },
     "type": {
@@ -981,9 +957,9 @@
       "@id": "http://data.europa.eu/m8g/hasValue",
       "@type": "http://www.w3.org/2001/XMLSchema#double"
     },
-    "walloonRegionConvetionNumber": {
+    "walloonRegionConventionNumber": {
       "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/wallonRegionConvetionNumber",
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/walloonRegionConventionNumber",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "website": {

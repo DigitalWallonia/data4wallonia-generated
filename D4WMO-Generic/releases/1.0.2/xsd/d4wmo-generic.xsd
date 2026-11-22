@@ -9,9 +9,9 @@
   <xs:element name="Uri" type="UriType"/>
   <xs:element name="Boolean" type="BooleanType"/>
   <xs:element name="Date" type="DateType"/>
-  <xs:element name="Date" type="DateType"/>
-  <xs:element name="Double" type="DoubleType"/>
   <xs:element name="String" type="StringType"/>
+  <xs:element name="Double" type="DoubleType"/>
+  <xs:element name="Date" type="DateType"/>
   <xs:element name="GYear" type="GYearType"/>
   <xs:element name="Integer" type="IntegerType"/>
   <xs:element name="Code" type="CodeType"/>
@@ -25,8 +25,8 @@
   <xs:element name="ActionPlan" type="ActionPlanType"/>
   <xs:element name="ActionPlanProfile" type="ActionPlanProfileType"/>
   <xs:element name="AnnualBudget" type="AnnualBudgetType"/>
-  <xs:element name="ContentDynamicList" type="ContentDynamicListType"/>
   <xs:element name="Asset" type="AssetType"/>
+  <xs:element name="ContentDynamicList" type="ContentDynamicListType"/>
   <xs:element name="File" type="FileType"/>
   <xs:element name="PartnerAdditionalDescription" type="PartnerAdditionalDescriptionType"/>
   <xs:element name="Post" type="PostType"/>
@@ -72,7 +72,7 @@
       </xs:element>
       <xs:element name="hasPrivateEmail" type="xs:string" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="en">An non featured email</xs:documentation>
+          <xs:documentation xml:lang="en">A non-featured email</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="hasTelehpone" type="xs:string" maxOccurs="unbounded" minOccurs="0">
@@ -264,12 +264,7 @@
     <xs:sequence>
       <xs:element name="department" type="ConceptType" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="en">The department in which the person is affiliated to.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="role" type="xs:string" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">The function of a person.</xs:documentation>
+          <xs:documentation xml:lang="en">The department with which the person is affiliated.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="hasLegalEntity" ref="LegalEntityType" maxOccurs="unbounded" minOccurs="0">
@@ -280,6 +275,11 @@
       <xs:element name="hasPerson" ref="PersonType" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">The person that belong to a legal entity.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="role" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The function of a person.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="shortDescription" type="xs:string" maxOccurs="unbounded" minOccurs="0">
@@ -334,11 +334,11 @@
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
-  <xs:complexType name="DateType">
+  <xs:complexType name="StringType">
     <xs:sequence/>
-    <xs:attribute name="DateRef" type="xs:IDREF">
+    <xs:attribute name="StringRef" type="xs:IDREF">
       <xs:annotation>
-        <xs:documentation xml:lang="en">Reference to Date ID</xs:documentation>
+        <xs:documentation xml:lang="en">Reference to String ID</xs:documentation>
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
@@ -350,11 +350,11 @@
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
-  <xs:complexType name="StringType">
+  <xs:complexType name="DateType">
     <xs:sequence/>
-    <xs:attribute name="StringRef" type="xs:IDREF">
+    <xs:attribute name="DateRef" type="xs:IDREF">
       <xs:annotation>
-        <xs:documentation xml:lang="en">Reference to String ID</xs:documentation>
+        <xs:documentation xml:lang="en">Reference to Date ID</xs:documentation>
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
@@ -816,17 +816,17 @@
           <xs:documentation xml:lang="en">Number of beneficiaries of the action.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="numberOfEquipments" type="xs:integer" maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="numberOfEquipment" type="xs:integer" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">Number of pieces of equipment used.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="numberOfOccurences" type="xs:integer" maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="numberOfOccurrences" type="xs:integer" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">Number of events linked to the action.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="occurence" ref="PublicEventType" maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="occurrence" ref="PublicEventType" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">Occurrence of event</xs:documentation>
         </xs:annotation>
@@ -888,7 +888,7 @@
       </xs:element>
       <xs:element name="title" type="xs:string" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="en">title of the action plan.</xs:documentation>
+          <xs:documentation xml:lang="en">Title of the action plan.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="totalBudget" type="xs:decimal" maxOccurs="unbounded" minOccurs="0">
@@ -932,7 +932,7 @@
       </xs:element>
       <xs:element name="internalName" type="xs:string" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="en">An internal name pour une resource</xs:documentation>
+          <xs:documentation xml:lang="en">An internal name for a resource</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="profile" ref="ProfileType" maxOccurs="1" minOccurs="1">
@@ -976,25 +976,6 @@
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
-  <xs:complexType name="ContentDynamicListType">
-    <xs:sequence>
-      <xs:element name="field" type="xs:string" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A field</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="title" type="xs:string" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A title</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-    <xs:attribute name="ContentDynamicListRef" type="xs:IDREF">
-      <xs:annotation>
-        <xs:documentation xml:lang="en">Reference to ContentDynamicList ID</xs:documentation>
-      </xs:annotation>
-    </xs:attribute>
-  </xs:complexType>
   <xs:complexType name="AssetType">
     <xs:sequence>
       <xs:element name="description" type="xs:string" maxOccurs="unbounded" minOccurs="0">
@@ -1016,6 +997,25 @@
     <xs:attribute name="AssetRef" type="xs:IDREF">
       <xs:annotation>
         <xs:documentation xml:lang="en">Reference to Asset ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="ContentDynamicListType">
+    <xs:sequence>
+      <xs:element name="field" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A field</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="title" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A title</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="ContentDynamicListRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to ContentDynamicList ID</xs:documentation>
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
@@ -1105,7 +1105,7 @@
       </xs:element>
       <xs:element name="pdfFile" ref="AssetType" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="en">A pdf file</xs:documentation>
+          <xs:documentation xml:lang="en">A PDF file</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="publishedDate" type="xs:dateTime" maxOccurs="unbounded" minOccurs="0">
@@ -1155,7 +1155,7 @@
       </xs:element>
       <xs:element name="title" type="xs:string" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="en">title of the post.</xs:documentation>
+          <xs:documentation xml:lang="en">Title of the post.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="type" type="xs:string" maxOccurs="unbounded" minOccurs="0">
@@ -1214,7 +1214,7 @@
       </xs:element>
       <xs:element name="quotedProfile" ref="ProfileType" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="en">A quoted profil</xs:documentation>
+          <xs:documentation xml:lang="en">A quoted profile</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="shortDescription" type="xs:string" maxOccurs="unbounded" minOccurs="0">
@@ -1246,14 +1246,14 @@
   </xs:complexType>
   <xs:complexType name="ProfileType">
     <xs:sequence>
-      <xs:element name="address" ref="AddressType" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Postal address.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
       <xs:element name="additionalDescription" type="xs:string" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">An additional descriptive text to the Short Description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="address" ref="AddressType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Postal address.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="category" type="ConceptType" maxOccurs="unbounded" minOccurs="0">
@@ -1268,7 +1268,7 @@
       </xs:element>
       <xs:element name="companyValidationDate" type="xs:date" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Date of the last contact while editing de profile.</xs:documentation>
+          <xs:documentation xml:lang="en">Date of the last contact while editing the profile.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="contactPoint" ref="ContactPointType" maxOccurs="unbounded" minOccurs="0">
@@ -1321,9 +1321,9 @@
           <xs:documentation xml:lang="en">A partner additional description</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="plateformContactPerson" ref="QualifiedPersonType" maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="platformContactPerson" ref="QualifiedPersonType" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="en">A plateform contact person</xs:documentation>
+          <xs:documentation xml:lang="en">A platform contact person</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="profileLegalEntity" ref="ProfileLegalEntityType" maxOccurs="unbounded" minOccurs="0">
@@ -1396,12 +1396,12 @@
     <xs:sequence>
       <xs:element name="department" type="ConceptType" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="en">The department in which the person is affiliated to.</xs:documentation>
+          <xs:documentation xml:lang="en">The department with which the person is affiliated.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="hasProfile" ref="ProfileType" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="en">The profile to which the person belongs to.</xs:documentation>
+          <xs:documentation xml:lang="en">The profile to which the person belongs.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="role" type="xs:string" maxOccurs="unbounded" minOccurs="0">
@@ -1423,14 +1423,9 @@
   </xs:complexType>
   <xs:complexType name="ServicesPlaceType">
     <xs:sequence>
-      <xs:element name="accompanyPerson" ref="QualifiedPersonType" maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="accompanyingPerson" ref="QualifiedPersonType" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="en">An accompany person</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="additionalInformationOnSupport" type="xs:string" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">An additional information on support.</xs:documentation>
+          <xs:documentation xml:lang="en">An accompanying person</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="additionalDescription" type="xs:string" maxOccurs="unbounded" minOccurs="0">
@@ -1440,12 +1435,17 @@
       </xs:element>
       <xs:element name="additionalInformationOnEquipment" type="xs:string" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="en">An additional information on equipment</xs:documentation>
+          <xs:documentation xml:lang="en">Additional information on equipment</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="addtionnalInformationOnOpeningHours" type="xs:string" maxOccurs="1" minOccurs="1">
+      <xs:element name="additionalInformationOnOpeningHours" type="xs:string" maxOccurs="1" minOccurs="1">
         <xs:annotation>
-          <xs:documentation xml:lang="en">An additional information on opening hours.</xs:documentation>
+          <xs:documentation xml:lang="en">Additional information on opening hours.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="additionalInformationOnSupport" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Additional information on support.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="additionalTargetAudience" type="xs:string" maxOccurs="unbounded" minOccurs="0">
@@ -1453,9 +1453,9 @@
           <xs:documentation xml:lang="en">An additional target audience</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="additionalTypeAndConditionAccess" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="additionalTypeAndConditionOfAccess" type="xs:string" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
-          <xs:documentation xml:lang="en">An additional type and condition access</xs:documentation>
+          <xs:documentation xml:lang="en">An additional type and condition of access</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="address" ref="AddressType" maxOccurs="unbounded" minOccurs="0">

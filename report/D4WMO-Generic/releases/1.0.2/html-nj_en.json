@@ -2,25 +2,25 @@
   "metadata": {
     "title": "Data4Wallonia Generic Model",
     "uri": "https://data.europa.eu/m8g",
-    "issued": "2024-09-04",
+    "issued": "2026-11-22",
     "baseURI": "https://data.europa.eu/m8g/",
     "filename": "d4wmo-generic",
     "navigation": {
-      "prev": "https://digitalwallonia.github.io/data4wallonia-generated/D4WMO-Generic/releases/1.0.0",
-      "self": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.1/"
+      "prev": "https://digitalwallonia.github.io/data4wallonia-generated/D4WMO-Generic/releases/1.0.1",
+      "self": "https://DigitalWallonia.github.io/D4WMO-Generic/releases/1.0.2/"
     },
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "documenttype": "ap",
     "documentconfig": {
-      "editorDocumentroot": "https://digitalwallonia.github.io/data4wallonia-generated/D4WMO-Generic/releases/1.0.0",
+      "editorDocumentroot": "https://digitalwallonia.github.io/data4wallonia-generated/D4WMO-Generic/releases/1.0.2",
       "statuslabel": "Draft"
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/8d93b87a4e448ed2f39b15cc99943e6b912b472e",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/8d93b87a4e448ed2f39b15cc99943e6b912b472e/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/1cdeac0306d2045adcad832fe0c4a6a5ca98a146",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/1cdeac0306d2045adcad832fe0c4a6a5ca98a146/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-Generic/issues",
-    "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.0/Changelog.md",
+    "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.2/Changelog.md",
     "usesVocs": [],
     "usesAPs": []
   },
@@ -40,11 +40,11 @@
       },
       "parents": [],
       "rawTags": {
+        "class-usage-scope": "main",
         "definition-en": "Information (e.g. e-mail address, telephone number) about a person or service that the user can contact.",
-        "uri": "http://data.europa.eu/m8g/ContactPoint",
         "label-en": "Contact Point",
-        "usageNote-en": "Similarly to the Channel class, a Contact Point may have regular opening hours that are then overridden by, for example, public holidays, using the Temporal Entity class.",
-        "class-usage-scope": "main"
+        "uri": "http://data.europa.eu/m8g/ContactPoint",
+        "usageNote-en": "Similarly to the Channel class, a Contact Point may have regular opening hours that are then overridden by, for example, public holidays, using the Temporal Entity class."
       },
       "properties": [
         {
@@ -226,9 +226,11 @@
             "en": "has private email"
           },
           "description": {
-            "en": "An non featured email"
+            "en": "A non-featured email"
           },
-          "usage": {},
+          "usage": {
+            "en": "This email cannot be shared via the delivery APIs."
+          },
           "domain": [
             {
               "EA-Name": "ContactPoint",
@@ -254,9 +256,9 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/hasNonFeaturedEmail",
-            "definition-en": "An non featured email",
+            "definition-en": "A non-featured email",
             "label-en": "has private email",
-            "usageNote-ne": "This email cannot be shared via the delivery APIs."
+            "usageNote-en": "This email cannot be shared via the delivery APIs."
           }
         },
         {
@@ -394,10 +396,10 @@
       "usage": {},
       "parents": [],
       "rawTags": {
+        "class-usage-scope": "main",
         "definition-en": "The Cost class represents any cost or price relating to an expenditure or financial commitment on the part of an organisation or individual.",
         "label-en": "Cost",
-        "uri": "http://data.europa.eu/m8g/Cost",
-        "class-usage-scope": "main"
+        "uri": "http://data.europa.eu/m8g/Cost"
       },
       "properties": [
         {
@@ -485,15 +487,15 @@
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/price",
           "name": "price",
-          "sort": "Price",
+          "sort": "price",
           "label": {
-            "en": "Price"
+            "en": "price"
           },
           "description": {
             "en": "Indication of cost or price in free text"
           },
           "usage": {
-            "en": "Price or amount and conditions of participation. The price or cost may vary depending on membership of a network or any other condition. Free text is used to express these conditions.\nExample: x  for members, y  for non-members of an organisation."
+            "en": "Price or amount and conditions of participation. The price or cost may vary depending on membership of a network or any other condition. Free text is used to express these conditions.\r\nExample: x  for members, y  for non-members of an organisation."
           },
           "domain": [
             {
@@ -520,9 +522,9 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/price",
-            "label-en": "Price",
+            "label-en": "price",
             "definition-en": "Indication of cost or price in free text",
-            "usageNote-en": "Price or amount and conditions of participation. The price or cost may vary depending on membership of a network or any other condition. Free text is used to express these conditions.\nExample: x  for members, y  for non-members of an organisation."
+            "usageNote-en": "Price or amount and conditions of participation. The price or cost may vary depending on membership of a network or any other condition. Free text is used to express these conditions.\r\nExample: x  for members, y  for non-members of an organisation."
           }
         }
       ]
@@ -540,10 +542,10 @@
       "usage": {},
       "parents": [],
       "rawTags": {
-        "uri": "http://data.europa.eu/m8g/PublicEvent",
+        "class-usage-scope": "main",
         "definition-en": "Something that happens at a particular place and time, organised by one or more agents for a particular purpose, and is of interest to a general audience. This definition excludes natural events such as earthquakes and volcanic eruptions.",
         "label-en": "Public Event",
-        "class-usage-scope": "main"
+        "uri": "http://data.europa.eu/m8g/PublicEvent"
       },
       "properties": [
         {
@@ -906,13 +908,13 @@
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File"
+              "range_uri": "http://www.w3.org/ns/adms#Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File",
+              "range_puri": "http://www.w3.org/ns/adms#Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -1110,7 +1112,7 @@
             "en": "An event end publication date."
           },
           "usage": {
-            "en": "Indicates whether promotion of the event should stop before the end date is reached. This date can be used, for example, to stop the promotion of an event lasting several days that is impossible to register for once it has started."
+            "en": "Indicates the date on which promotion of the event should stop, if this is before the end date. This date can be used, for example, to stop the promotion of an event lasting several days that is impossible to register for once it has started."
           },
           "domain": [
             {
@@ -1139,11 +1141,11 @@
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/endPublicationDate",
             "definition-en": "An event end publication date.",
             "label-en": "end publication date",
-            "usageNote-en": "Indicates whether promotion of the event should stop before the end date is reached. This date can be used, for example, to stop the promotion of an event lasting several days that is impossible to register for once it has started."
+            "usageNote-en": "Indicates the date on which promotion of the event should stop, if this is before the end date. This date can be used, for example, to stop the promotion of an event lasting several days that is impossible to register for once it has started."
           }
         },
         {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/hasCos",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/hasCost",
           "name": "hasCost",
           "sort": "has cost",
           "label": {
@@ -1180,7 +1182,7 @@
           "codelist_uri": "",
           "rawTags": {
             "label-en": "has cost",
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/hasCos",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/hasCost",
             "definition-en": "A cost.",
             "usageNote-en": "The cost, the price, is not necessarily given in a monetary format, but can be an explanatory text of price variants according to circumstances or conditions.  It should therefore be possible to explain this in free text."
           }
@@ -1322,7 +1324,7 @@
             "en": "A schedule additional information"
           },
           "usage": {
-            "en": "Allows you to specify some information about the timetable: nocture on one of the days of the event, variable times depending on the day, etc."
+            "en": "Allows you to specify some information about the timetable: a late-night opening (nocturne) on one of the days of the event, variable times depending on the day, etc."
           },
           "domain": [
             {
@@ -1351,7 +1353,7 @@
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/scheduleAdditionalInformation",
             "definition-en": "A schedule additional information",
             "label-en": "schedule additional information",
-            "usageNote-en": "Allows you to specify some information about the timetable: nocture on one of the days of the event, variable times depending on the day, etc."
+            "usageNote-en": "Allows you to specify some information about the timetable: a late-night opening (nocturne) on one of the days of the event, variable times depending on the day, etc."
           }
         },
         {
@@ -1365,7 +1367,7 @@
             "en": "A schedule not specified"
           },
           "usage": {
-            "en": "Used to indicate to a client application whether hours should be ignored.  Defaults to false, the variable is set to True if the hours are to be ignored."
+            "en": "Used to indicate to a client application whether the hours should be ignored. Defaults to false; set to true if the hours are to be ignored."
           },
           "domain": [
             {
@@ -1394,7 +1396,7 @@
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/scheduleNotSpecified",
             "definition-en": "A schedule not specified",
             "label-en": "schedule not specified",
-            "usageNote-en": "Used to indicate to a client application whether hours should be ignored.  Defaults to false, the variable is set to True if the hours are to be ignored."
+            "usageNote-en": "Used to indicate to a client application whether the hours should be ignored. Defaults to false; set to true if the hours are to be ignored."
           }
         },
         {
@@ -1451,7 +1453,7 @@
             "en": "Last section of a URL."
           },
           "usage": {
-            "en": "Usage : Unique across all public events, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
+            "en": "Unique across all public events, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
           },
           "domain": [
             {
@@ -1480,7 +1482,7 @@
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/slug",
             "definition-en": "Last section of a URL.",
             "label-en": "slug",
-            "usageNote-en": "Usage : Unique across all public events, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
+            "usageNote-en": "Unique across all public events, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
           }
         },
         {
@@ -1624,9 +1626,9 @@
       "usage": {},
       "parents": [],
       "rawTags": {
-        "uri": "http://data4wallonia/mode/LegalEntityPerson",
+        "definition-en": "A person legal entity",
         "label-en": "Legal Entity Person",
-        "definition-en": "A person legal entity"
+        "uri": "http://data4wallonia/mode/LegalEntityPerson"
       },
       "properties": [
         {
@@ -1710,14 +1712,14 @@
           }
         },
         {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/departement",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/department",
           "name": "department",
           "sort": "department",
           "label": {
             "en": "department"
           },
           "description": {
-            "en": "The department in which the person is affiliated to."
+            "en": "The department with which the person is affiliated."
           },
           "usage": {},
           "domain": [
@@ -1745,8 +1747,8 @@
           "codelist_uri": "",
           "rawTags": {
             "label-en": "department",
-            "definition-en": "The department in which the person is affiliated to.",
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/departement"
+            "definition-en": "The department with which the person is affiliated.",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/department"
           }
         },
         {
@@ -1844,10 +1846,10 @@
       "usage": {},
       "parents": [],
       "rawTags": {
+        "class-usage-scope": "supportive",
         "definition-en": "A temporal interval or instant.",
         "label-en": "Temporal Entity",
-        "uri": "http://www.w3.org/2006/time#TemporalEntity",
-        "class-usage-scope": "supportive"
+        "uri": "http://www.w3.org/2006/time#TemporalEntity"
       },
       "properties": [
         {
@@ -2223,9 +2225,9 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
+            "definition-en": "The date on which the legal entity has registered in some jurisdiction for regulatory and / or for tax purposes.",
             "label-en": "registration date",
-            "uri": "http://data.europa.eu/m8g/registrationDate",
-            "definition-en": "The date on which the legal entity has registered in some jurisdiction for regulatory and / or for tax purposes."
+            "uri": "http://data.europa.eu/m8g/registrationDate"
           }
         },
         {
@@ -2440,9 +2442,9 @@
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/VATNumber",
           "name": "vatNumber",
-          "sort": "VAT number",
+          "sort": "vat number",
           "label": {
-            "en": "VAT number"
+            "en": "vat number"
           },
           "description": {
             "en": "A VAT number."
@@ -2472,7 +2474,7 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "VAT number",
+            "label-en": "vat number",
             "definition-en": "A VAT number.",
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/VATNumber"
           }
@@ -2488,7 +2490,7 @@
             "en": "Defines the activity status of the entity"
           },
           "usage": {
-            "en": "True if the entity is still active. It can be determined by the legal entity status, but it is much clearer."
+            "en": "True if the entity is still active. It can be derived from the legal entity status, but an explicit flag is clearer."
           },
           "domain": [
             {
@@ -2517,7 +2519,7 @@
             "label-en": "active entity",
             "definition-en": "Defines the activity status of the entity",
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/activeEntity",
-            "usageNote-en": "True if the entity is still active. It can be determined by the legal entity status, but it is much clearer."
+            "usageNote-en": "True if the entity is still active. It can be derived from the legal entity status, but an explicit flag is clearer."
           }
         },
         {
@@ -2617,7 +2619,7 @@
             "en": "A reference to a contact point."
           },
           "usage": {
-            "en": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc."
+            "en": "The contact point brings together all the contact information for a legal entity: website, telephone numbers, emails, etc."
           },
           "domain": [
             {
@@ -2644,7 +2646,7 @@
           "codelist_uri": "",
           "rawTags": {
             "label-en": "contact point",
-            "usageNote-en": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc.",
+            "usageNote-en": "The contact point brings together all the contact information for a legal entity: website, telephone numbers, emails, etc.",
             "definition-en": "A reference to a contact point.",
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint"
           }
@@ -2671,13 +2673,13 @@
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File"
+              "range_uri": "http://www.w3.org/ns/adms#Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File",
+              "range_puri": "http://www.w3.org/ns/adms#Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -2695,9 +2697,9 @@
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/mainNACECode",
           "name": "mainNaceCode",
-          "sort": "main NACE code",
+          "sort": "main nace code",
           "label": {
-            "en": "main NACE code"
+            "en": "main nace code"
           },
           "description": {
             "en": "Preferred NACE code."
@@ -2729,7 +2731,7 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "main NACE code",
+            "label-en": "main nace code",
             "definition-en": "Preferred NACE code.",
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/mainNACECode",
             "usageNote-en": "NACE code that best represents the activity."
@@ -2961,11 +2963,11 @@
       },
       "parents": [],
       "rawTags": {
+        "class-usage-scope": "supportive",
         "definition-en": "A spatial object that in a human-readable way identifies a fixed location.",
         "label-en": "Address",
         "uri": "http://www.w3.org/ns/locn#Address",
-        "usageNote-en": "<p>\r\nAn \"address representation\" as conceptually defined by the <a href=\"https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/ScopeObjectDetail.action?objectDetailId=9353\r\n\">INSPIRE Address Representation data type</a>: \"Representation of an address spatial object for use in external application schemas that need to include the basic, address information in a readable way.\"\r\n</p></br>\r\n\r\n<p>\r\nThe representation of Addresses varies widely from one country's postal system to another. Even within countries, there are almost always examples of Addresses that do not conform to the stated national standard. However, <a href=\"https://www.iso.org/standard/61710.html\">ISO 19160-1</a> provides a method through which different Addresses can be converted from one conceptual model to another.\r\n</p></br>\r\n\r\n<p>\r\nThis specification was heavily based on the INSPIRE Address Representation data type. It is noteworthy that if an Address is provided using the detailed breakdown suggested by the properties for this class, then it will be INSPIRE-conformant. To this very granular set of\r\nproperties, we add two further properties:\r\n<ul>\r\n  <li> full address (the complete address as a formatted string)</li>\r\n  <li> addressID (a unique identifier for the address)</li>\r\n</ul>\r\nThe first of these allows publishers to simply provide the complete Address as one string, with or without formatting. This is analogous to <a href=\"https://www.w3.org/TR/vcard-rdf/#d4e953\">vCard's label property</a>.\r\n</p></br>\r\n\r\n<p>\r\nThe addressID is part of the <a href=\"https://knowledge-base.inspire.ec.europa.eu/index_en\">INSPIRE guidelines</a> and provides a hook that can be used to link the Address to an alternative representation, such as <a href=\"https://www.w3.org/TR/vcard-rdf\">vCard</a> or <a href=\"https://www.oasis-open.org/committees/ciq/ciq.html#6\">OASIS xAL</a>.\r\n</p></br>\r\n\r\nThis class belongs to <a href=\"https://semiceu.github.io/Core-Location-Vocabulary/releases/2.00/#Address\">Core Location Vocabulary</a>",
-        "class-usage-scope": "supportive"
+        "usageNote-en": "<p>\r\nAn \"address representation\" as conceptually defined by the <a href=\"https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/ScopeObjectDetail.action?objectDetailId=9353\r\n\">INSPIRE Address Representation data type</a>: \"Representation of an address spatial object for use in external application schemas that need to include the basic, address information in a readable way.\"\r\n</p></br>\r\n\r\n<p>\r\nThe representation of Addresses varies widely from one country's postal system to another. Even within countries, there are almost always examples of Addresses that do not conform to the stated national standard. However, <a href=\"https://www.iso.org/standard/61710.html\">ISO 19160-1</a> provides a method through which different Addresses can be converted from one conceptual model to another.\r\n</p></br>\r\n\r\n<p>\r\nThis specification was heavily based on the INSPIRE Address Representation data type. It is noteworthy that if an Address is provided using the detailed breakdown suggested by the properties for this class, then it will be INSPIRE-conformant. To this very granular set of\r\nproperties, we add two further properties:\r\n<ul>\r\n  <li> full address (the complete address as a formatted string)</li>\r\n  <li> addressID (a unique identifier for the address)</li>\r\n</ul>\r\nThe first of these allows publishers to simply provide the complete Address as one string, with or without formatting. This is analogous to <a href=\"https://www.w3.org/TR/vcard-rdf/#d4e953\">vCard's label property</a>.\r\n</p></br>\r\n\r\n<p>\r\nThe addressID is part of the <a href=\"https://knowledge-base.inspire.ec.europa.eu/index_en\">INSPIRE guidelines</a> and provides a hook that can be used to link the Address to an alternative representation, such as <a href=\"https://www.w3.org/TR/vcard-rdf\">vCard</a> or <a href=\"https://www.oasis-open.org/committees/ciq/ciq.html#6\">OASIS xAL</a>.\r\n</p></br>\r\n\r\nThis class belongs to <a href=\"https://semiceu.github.io/Core-Location-Vocabulary/releases/2.00/#Address\">Core Location Vocabulary</a>"
       },
       "properties": [
         {
@@ -3048,10 +3050,10 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "administrative unit level 2",
             "definition-en": "The name of a secondary level/region of the address, Here the province.",
             "uri": "http://www.w3.org/ns/locn#adminUnitL2",
-            "usageNote-en": "Values could be a region or province, more granular than level 1."
+            "usageNote-en": "Values could be a region or province, more granular than level 1.",
+            "label-en": "administrative unit level 2"
           }
         },
         {
@@ -3280,7 +3282,7 @@
             "en": "The name of a passage or way through from one location to another."
           },
           "usage": {
-            "en": "A thoroughfare is usually a street, but it might be a waterway or some other feature. For example, \"Avenue des Champs-Élysées\"."
+            "en": "A thoroughfare is usually a street, but it might be a waterway or some other feature. For example, \"Avenue des Champs-ï¿½lysï¿½es\"."
           },
           "domain": [
             {
@@ -3308,7 +3310,7 @@
           "rawTags": {
             "label-en": "thoroughfare",
             "definition-en": "The name of a passage or way through from one location to another.",
-            "usageNote-en": "A thoroughfare is usually a street, but it might be a waterway or some other feature. For example, \"Avenue des Champs-Élysées\".",
+            "usageNote-en": "A thoroughfare is usually a street, but it might be a waterway or some other feature. For example, \"Avenue des Champs-ï¿½lysï¿½es\".",
             "uri": "http://www.w3.org/ns/locn#thoroughfare"
           }
         },
@@ -3852,10 +3854,10 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "usageNote-en": "Usually referring to a group of people related by blood, marriage or adoption. This attribute also carries prefixes or suffixes which are part of the family name, e.g. \"de Boer\", \"van de Putte\", \"von und zu Orlow\". Multiple family names, such as are commonly found in Hispanic countries, are recorded in the single family name property so that, for example, Miguel de Cervantes Saavedra's family name would be recorded as \"de Cervantes Saavedra\".",
             "uri": "http://xmlns.com/foaf/0.1/familyName",
             "definition-en": "The hereditary surname of a family.",
-            "label-en": "family name"
+            "label-en": "family name",
+            "usageNote-en": "Usually referring to a group of people related by blood, marriage or adoption. This attribute also carries prefixes or suffixes which are part of the family name, e.g. \"de Boer\", \"van de Putte\", \"von und zu Orlow\". Multiple family names, such as are commonly found in Hispanic countries, are recorded in the single family name property so that, for example, Miguel de Cervantes Saavedra's family name would be recorded as \"de Cervantes Saavedra\"."
           }
         },
         {
@@ -4176,13 +4178,13 @@
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File"
+              "range_uri": "http://www.w3.org/ns/adms#Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File",
+              "range_puri": "http://www.w3.org/ns/adms#Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -4297,10 +4299,10 @@
       "usage": {},
       "parents": [],
       "rawTags": {
-        "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ActionPlan",
+        "class-usage-scope": "main",
         "definition-en": "An Action Plan can represent any action carried out with public and/or private funding, and for which clear and precise objectives have been set. Examples: regional funding for a particular theme or strategy, calls for projects, etc.",
         "label-en": "Action Plan",
-        "class-usage-scope": "main"
+        "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ActionPlan"
       },
       "properties": [
         {
@@ -4349,9 +4351,9 @@
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/actionPlanProfile",
           "name": "actionPlanProfile",
-          "sort": "Action Plan Profile",
+          "sort": "action plan profile",
           "label": {
-            "en": "Action Plan Profile"
+            "en": "action plan profile"
           },
           "description": {
             "en": "A link to a profile with a role in it."
@@ -4386,15 +4388,15 @@
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/actionPlanProfile",
             "usageNote-en": "The link indicates the profile, its role and any financial commitment (investment, salary costs, etc.).",
             "definition-en": "A link to a profile with a role in it.",
-            "label-en": "Action Plan Profile"
+            "label-en": "action plan profile"
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/additionalDescription",
           "name": "additionalDescription",
-          "sort": "Additional Description",
+          "sort": "additional description",
           "label": {
-            "en": "Additional Description"
+            "en": "additional description"
           },
           "description": {
             "en": "An additional descriptive text to the Short Description"
@@ -4428,16 +4430,16 @@
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/additionalDescription",
             "definition-en": "An additional descriptive text to the Short Description",
-            "label-en": "Additional Description",
+            "label-en": "additional description",
             "usageNote-en": "Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc."
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/annualBudgetAllocation",
           "name": "annualBudgetAllocation",
-          "sort": "Annual Budget Allocation",
+          "sort": "annual budget allocation",
           "label": {
-            "en": "Annual Budget Allocation"
+            "en": "annual budget allocation"
           },
           "description": {
             "en": "A reference to an annual budget"
@@ -4471,16 +4473,16 @@
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/annualBudgetAllocation",
             "usageNote-en": "Indicates a sum allocated to the action for a specific year",
-            "label-en": "Annual Budget Allocation",
+            "label-en": "annual budget allocation",
             "definition-en": "A reference to an annual budget"
           }
         },
         {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/beneficiarie",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/beneficiaries",
           "name": "beneficiaries",
-          "sort": "Beneficiaries",
+          "sort": "beneficiaries",
           "label": {
-            "en": "Beneficiaries"
+            "en": "beneficiaries"
           },
           "description": {
             "en": "A list of beneficiaries (profiles)."
@@ -4513,17 +4515,17 @@
           "codelist_uri": "",
           "rawTags": {
             "definition-en": "A list of beneficiaries (profiles).",
-            "label-en": "Beneficiaries",
+            "label-en": "beneficiaries",
             "usageNote-en": "null",
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/beneficiarie"
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/beneficiaries"
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/category",
           "name": "category",
-          "sort": "Category",
+          "sort": "category",
           "label": {
-            "en": "Category"
+            "en": "category"
           },
           "description": {
             "en": "A reference to an element in the taxonomy"
@@ -4557,22 +4559,22 @@
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/category",
             "definition-en": "A reference to an element in the taxonomy",
-            "label-en": "Category",
+            "label-en": "category",
             "usageNote-en": "The taxonomy categories can be used to enrich the action by linking to other content, filtering and sorting."
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/clientSite",
           "name": "clientSite",
-          "sort": "Client Site",
+          "sort": "client site",
           "label": {
-            "en": "Client Site"
+            "en": "client site"
           },
           "description": {
             "en": "A reference to a Client site"
           },
           "usage": {
-            "en": "Identification of a client application (website, business application or other) using the action form."
+            "en": "Identification of a client application (website, business application or other) using the action plan."
           },
           "domain": [
             {
@@ -4600,16 +4602,16 @@
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/clientSite",
             "definition-en": "A reference to a Client site",
-            "label-en": "Client Site",
-            "usageNote-en": "Identification of a client application (website, business application or other) using the action form."
+            "label-en": "client site",
+            "usageNote-en": "Identification of a client application (website, business application or other) using the action plan."
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPerson",
           "name": "contactPerson",
-          "sort": "Contact Person",
+          "sort": "contact person",
           "label": {
-            "en": "Contact Person"
+            "en": "contact person"
           },
           "description": {
             "en": "Contact person, referent. A reference to a Qualified Person"
@@ -4641,7 +4643,7 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "Contact Person",
+            "label-en": "contact person",
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPerson",
             "definition-en": "Contact person, referent. A reference to a Qualified Person",
             "usageNote-en": "A person to whom the target audience can turn for explanations and more information about the project. This person will often be attached to the coordinator or promoter"
@@ -4650,9 +4652,9 @@
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint",
           "name": "contactPoint",
-          "sort": "Contact Point",
+          "sort": "contact point",
           "label": {
-            "en": "Contact Point"
+            "en": "contact point"
           },
           "description": {
             "en": "A reference to a contact point."
@@ -4685,7 +4687,7 @@
           "codelist_uri": "",
           "rawTags": {
             "usageNote-en": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc.",
-            "label-en": "Contact Point",
+            "label-en": "contact point",
             "definition-en": "A reference to a contact point.",
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint"
           }
@@ -4693,9 +4695,9 @@
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/endDate",
           "name": "endDate",
-          "sort": "End Date",
+          "sort": "end date",
           "label": {
-            "en": "End Date"
+            "en": "end date"
           },
           "description": {
             "en": "An action end date"
@@ -4729,16 +4731,16 @@
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/endDate",
             "definition-en": "An action end date",
-            "label-en": "End Date",
+            "label-en": "end date",
             "usageNote-en": "The end date indicates the expected (if in progress) or actual (if completed) completion date."
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/fullTimeEquivalent",
           "name": "fullTimeEquivalent",
-          "sort": "Full time equivalent",
+          "sort": "full time equivalent",
           "label": {
-            "en": "Full time equivalent"
+            "en": "full time equivalent"
           },
           "description": {
             "en": "Number of full-time equivalent employees"
@@ -4772,16 +4774,16 @@
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/fullTimeEquivalent",
             "definition-en": "Number of full-time equivalent employees",
-            "label-en": "Full time equivalent",
+            "label-en": "full time equivalent",
             "usageNote-en": "Number of people (full-time equivalent) working on an action."
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/idForAccounting",
           "name": "idForAccounting",
-          "sort": "Id for accounting",
+          "sort": "id for accounting",
           "label": {
-            "en": "Id for accounting"
+            "en": "id for accounting"
           },
           "description": {
             "en": "Relationship with the funder accounting system."
@@ -4815,16 +4817,16 @@
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/idForAccounting",
             "definition-en": "Relationship with the funder accounting system.",
-            "label-en": "Id for accounting",
+            "label-en": "id for accounting",
             "usageNote-en": "Enables a link to be established between a project and the accounts of the funding organisation."
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/image",
           "name": "image",
-          "sort": "Image",
+          "sort": "image",
           "label": {
-            "en": "Image"
+            "en": "image"
           },
           "description": {
             "en": "Reference to an Asset."
@@ -4841,13 +4843,13 @@
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File"
+              "range_uri": "http://www.w3.org/ns/adms#Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File",
+              "range_puri": "http://www.w3.org/ns/adms#Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -4857,7 +4859,7 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/image",
-            "label-en": "Image",
+            "label-en": "image",
             "definition-en": "Reference to an Asset.",
             "usageNote-en": "Link to a reusable image.  This can be a simple image, or a banner representing the action."
           }
@@ -4865,9 +4867,9 @@
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/inOperation",
           "name": "inOperation",
-          "sort": "In operation",
+          "sort": "in operation",
           "label": {
-            "en": "In operation"
+            "en": "in operation"
           },
           "description": {
             "en": "A boolean indicating whether the action leads to a concrete result."
@@ -4901,22 +4903,22 @@
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/inOperation",
             "definition-en": "A boolean indicating whether the action leads to a concrete result.",
-            "label-en": "In operation",
+            "label-en": "in operation",
             "usageNote-en": "This information specifies whether the action resulted in commercial exploitation, or has an impact on another current or future action."
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/leaderMission",
           "name": "leaderMission",
-          "sort": "Leader mission",
+          "sort": "leader mission",
           "label": {
-            "en": "Leader mission"
+            "en": "leader mission"
           },
           "description": {
             "en": "Action leader's mission"
           },
           "usage": {
-            "en": "Indicates the main missions of the action leader (role of this stakeholder). Potential missions : Communication, Governance, Transformation, Watch."
+            "en": "Indicates the main missions of the action leader (role of this stakeholder). Potential missions: Communication, Governance, Transformation, Watch."
           },
           "domain": [
             {
@@ -4944,16 +4946,16 @@
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/leaderMission",
             "definition-en": "Action leader's mission",
-            "label-en": "Leader mission",
-            "usageNote-en": "Indicates the main missions of the action leader (role of this stakeholder). Potential missions : Communication, Governance, Transformation, Watch."
+            "label-en": "leader mission",
+            "usageNote-en": "Indicates the main missions of the action leader (role of this stakeholder). Potential missions: Communication, Governance, Transformation, Watch."
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/marketingShortDescription",
           "name": "marketingShortDescription",
-          "sort": "Marketing short description",
+          "sort": "marketing short description",
           "label": {
-            "en": "Marketing short description"
+            "en": "marketing short description"
           },
           "description": {
             "en": "Brief marketing description of an action"
@@ -4987,16 +4989,16 @@
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/marketingShortDescription",
             "definition-en": "Brief marketing description of an action",
-            "label-en": "Marketing short description",
+            "label-en": "marketing short description",
             "usageNote-en": "This is a succinct and clear description of the project, in « promotional » form, i.e. aimed at the target audience, and is often not very technical.  In addition to the marketing title, it should give a full account of the objective of the action and ena"
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/marketingTitle",
           "name": "marketingTitle",
-          "sort": "Marketing title",
+          "sort": "marketing title",
           "label": {
-            "en": "Marketing title"
+            "en": "marketing title"
           },
           "description": {
             "en": "Promotional title or catchphrase aimed at a specific audience."
@@ -5030,16 +5032,59 @@
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/marketingTitle",
             "definition-en": "Promotional title or catchphrase aimed at a specific audience.",
-            "label-en": "Marketing title",
+            "label-en": "marketing title",
             "usageNote-en": "If the title is difficult to understand (the technical name of a measure, for example), it is a good idea to use a Marketing Title.  This allows you to name the action with a title, a catchphrase that the target audience can understand."
+          }
+        },
+        {
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/numberOfAttendees",
+          "name": "numberOfAttendees",
+          "sort": "number of attendees",
+          "label": {
+            "en": "number of attendees"
+          },
+          "description": {
+            "en": "Number of people attending a conference or other gathering."
+          },
+          "usage": {
+            "en": "Number of people taking part in action-related activities, such as events."
+          },
+          "domain": [
+            {
+              "EA-Name": "ActionPlan",
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ActionPlan"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Integer",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Integer",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_label": {
+                "en": "Integer"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/numberOfAttendees",
+            "definition-en": "Number of people attending a conference or other gathering.",
+            "label-en": "number of attendees",
+            "usageNote-en": "Number of people taking part in action-related activities, such as events."
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/numberOfBeneficiaries",
           "name": "numberOfBeneficiaries",
-          "sort": "Number of beneficiaries",
+          "sort": "number of beneficiaries",
           "label": {
-            "en": "Number of beneficiaries"
+            "en": "number of beneficiaries"
           },
           "description": {
             "en": "Number of beneficiaries of the action."
@@ -5072,17 +5117,17 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/numberOfBeneficiaries",
-            "label-en": "Number of beneficiaries",
+            "label-en": "number of beneficiaries",
             "definition-en": "Number of beneficiaries of the action.",
             "usageNote-en": "A beneficiary is a stakeholder (company, school, etc.) that has received aid, won a call for projects, received support for certification, exhibited on an international mission stand, received digital equipment, etc."
           }
         },
         {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/numberOfEquipments",
-          "name": "numberOfEquipments",
-          "sort": "Number of equipments",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/numberOfEquipment",
+          "name": "numberOfEquipment",
+          "sort": "number of equipment",
           "label": {
-            "en": "Number of equipments"
+            "en": "number of equipment"
           },
           "description": {
             "en": "Number of pieces of equipment used."
@@ -5114,18 +5159,18 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/numberOfEquipments",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/numberOfEquipment",
             "definition-en": "Number of pieces of equipment used.",
-            "label-en": "Number of equipments",
+            "label-en": "number of equipment",
             "usageNote-en": "Equipment is a material resource provided as part of an action. Depending on the programme, this may include computers, interactive whiteboards, WiFi connections, etc."
           }
         },
         {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/numberOfOccurences",
-          "name": "numberOfOccurences",
-          "sort": "Number of occurences",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/numberOfOccurrences",
+          "name": "numberOfOccurrences",
+          "sort": "number of occurrences",
           "label": {
-            "en": "Number of occurences"
+            "en": "number of occurrences"
           },
           "description": {
             "en": "Number of events linked to the action."
@@ -5157,61 +5202,18 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/numberOfOccurences",
-            "label-en": "Number of occurences",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/numberOfOccurrences",
+            "label-en": "number of occurrences",
             "definition-en": "Number of events linked to the action.",
             "usageNote-en": "An event is a physical or virtual gathering of participants. Depending on the programme, these may include conferences, webinars, coding training courses, international missions, etc."
           }
         },
         {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/numberOfParticipants",
-          "name": "numberOfAttendees",
-          "sort": "Number of attendees",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/occurrence",
+          "name": "occurrence",
+          "sort": "occurrence",
           "label": {
-            "en": "Number of attendees"
-          },
-          "description": {
-            "en": "Number of people attending a conference or other gathering."
-          },
-          "usage": {
-            "en": "Number of people taking part in action-related activities, such as events."
-          },
-          "domain": [
-            {
-              "EA-Name": "ActionPlan",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ActionPlan"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Integer",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#integer"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Integer",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#integer",
-              "range_label": {
-                "en": "Integer"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/numberOfParticipants",
-            "definition-en": "Number of people attending a conference or other gathering.",
-            "label-en": "Number of attendees",
-            "usageNote-en": "Number of people taking part in action-related activities, such as events."
-          }
-        },
-        {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/occurence",
-          "name": "occurence",
-          "sort": "Occurence",
-          "label": {
-            "en": "Occurence"
+            "en": "occurrence"
           },
           "description": {
             "en": "Occurrence of event"
@@ -5244,23 +5246,23 @@
           "codelist_uri": "",
           "rawTags": {
             "definition-en": "Occurrence of event",
-            "label-en": "Occurence",
+            "label-en": "occurrence",
             "usageNote-en": "Occurrence of action-related event",
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/occurence"
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/occurrence"
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/participant",
           "name": "participant",
-          "sort": "Participant",
+          "sort": "participant",
           "label": {
-            "en": "Participant"
+            "en": "participant"
           },
           "description": {
             "en": "A participant to an action. A reference to a Qualified Person"
           },
           "usage": {
-            "en": "Person taking part in the action, in the project. For example, a researcher in a research project, a participant in a promotional project or project, etc."
+            "en": "Person taking part in the action, in the project. For example, a researcher in a research project, a participant in a promotional project, etc."
           },
           "domain": [
             {
@@ -5287,17 +5289,17 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/participant",
-            "usageNote-en": "Person taking part in the action, in the project. For example, a researcher in a research project, a participant in a promotional project or project, etc.",
+            "usageNote-en": "Person taking part in the action, in the project. For example, a researcher in a research project, a participant in a promotional project, etc.",
             "definition-en": "A participant to an action. A reference to a Qualified Person",
-            "label-en": "Participant"
+            "label-en": "participant"
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/progressStatus",
           "name": "progressStatus",
-          "sort": "Progress status",
+          "sort": "progress status",
           "label": {
-            "en": "Progress status"
+            "en": "progress status"
           },
           "description": {
             "en": "Progress status of the action."
@@ -5329,21 +5331,21 @@
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/progressStatus",
             "definition-en": "Progress status of the action.",
-            "label-en": "Progress status"
+            "label-en": "progress status"
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/projectHolder",
           "name": "projectHolder",
-          "sort": "Project holder",
+          "sort": "project holder",
           "label": {
-            "en": "Project holder"
+            "en": "project holder"
           },
           "description": {
             "en": "Person responsible for the action.  A reference to a Qualified Person"
           },
           "usage": {
-            "en": "The project holder is the person carrying out the the action."
+            "en": "The project holder is the person carrying out the action."
           },
           "domain": [
             {
@@ -5370,17 +5372,17 @@
           "codelist_uri": "",
           "rawTags": {
             "definition-en": "Person responsible for the action.  A reference to a Qualified Person",
-            "label-en": "Project holder",
-            "usageNote-en": "The project holder is the person carrying out the the action.",
+            "label-en": "project holder",
+            "usageNote-en": "The project holder is the person carrying out the action.",
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/projectHolder"
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/referenceActionPlan",
           "name": "referenceActionPlan",
-          "sort": "Reference action plan",
+          "sort": "reference action plan",
           "label": {
-            "en": "Reference action plan"
+            "en": "reference action plan"
           },
           "description": {
             "en": "The reference Action Plan, the parent."
@@ -5412,7 +5414,7 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "Reference action plan",
+            "label-en": "reference action plan",
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/referenceActionPlan",
             "definition-en": "The reference Action Plan, the parent.",
             "usageNote-en": "The reference action is the action from which the current action may result.  The action may be a continuation of the previous action or a sub-action."
@@ -5421,9 +5423,9 @@
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/referenceCategory",
           "name": "referenceCategory",
-          "sort": "Reference Category",
+          "sort": "reference category",
           "label": {
-            "en": "Reference Category"
+            "en": "reference category"
           },
           "description": {
             "en": "The reference category."
@@ -5456,7 +5458,7 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/referenceCategory",
-            "label-en": "Reference Category",
+            "label-en": "reference category",
             "definition-en": "The reference category.",
             "usageNote-en": "The reference category is the category of the taxonomy that the action plan develops in detail.  For example, an action may detail a funding method that has been implemented and is included in the taxonomy of a regional strategy."
           }
@@ -5464,9 +5466,9 @@
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/referenceEvent",
           "name": "referenceEvent",
-          "sort": "Reference event",
+          "sort": "reference event",
           "label": {
-            "en": "Reference event"
+            "en": "reference event"
           },
           "description": {
             "en": "The reference event."
@@ -5498,15 +5500,15 @@
           "rawTags": {
             "definition-en": "The reference event.",
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/referenceEvent",
-            "label-en": "Reference event"
+            "label-en": "reference event"
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/referencePost",
           "name": "referencePost",
-          "sort": "Reference post",
+          "sort": "reference post",
           "label": {
-            "en": "Reference post"
+            "en": "reference post"
           },
           "description": {
             "en": "The reference Post of the action."
@@ -5538,7 +5540,7 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "Reference post",
+            "label-en": "reference post",
             "usageNote-en": "The reference post (article) allows you to communicate freely on an action plan, to monitor it, to publish the results of the action, a list of prize-winners, etc. with complete editorial freedom.",
             "definition-en": "The reference Post of the action.",
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/referencePost"
@@ -5547,9 +5549,9 @@
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/relatedFile",
           "name": "relatedFile",
-          "sort": "Related file",
+          "sort": "related file",
           "label": {
-            "en": "Related file"
+            "en": "related file"
           },
           "description": {
             "en": "A file to download, an available file."
@@ -5566,13 +5568,13 @@
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File"
+              "range_uri": "http://www.w3.org/ns/adms#Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File",
+              "range_puri": "http://www.w3.org/ns/adms#Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -5582,7 +5584,7 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/relatedFile",
-            "label-en": "Related file",
+            "label-en": "related file",
             "definition-en": "A file to download, an available file.",
             "usageNote-en": "Used to make documents available for download (PDF, for example)."
           }
@@ -5590,9 +5592,9 @@
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/shortDescription",
           "name": "shortDescription",
-          "sort": "Short description",
+          "sort": "short description",
           "label": {
-            "en": "Short description"
+            "en": "short description"
           },
           "description": {
             "en": "A short description of the action."
@@ -5626,16 +5628,16 @@
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/shortDescription",
             "definition-en": "A short description of the action.",
-            "label-en": "Short description",
+            "label-en": "short description",
             "usageNote-en": "The description is essential for describing the action succinctly and clearly.  As a complement to the title, it must convey the entire objective of the action and enable its scope to be understood, without any further explanation."
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/slug",
           "name": "slug",
-          "sort": "Slug",
+          "sort": "slug",
           "label": {
-            "en": "Slug"
+            "en": "slug"
           },
           "description": {
             "en": "Last section of a URL."
@@ -5669,16 +5671,16 @@
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/slug",
             "definition-en": "Last section of a URL.",
-            "label-en": "Slug",
+            "label-en": "slug",
             "usageNote-en": "Unique across all action plans, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/startDate",
           "name": "startDate",
-          "sort": "Start date",
+          "sort": "start date",
           "label": {
-            "en": "Start date"
+            "en": "start date"
           },
           "description": {
             "en": "Start date of the action plan."
@@ -5712,19 +5714,19 @@
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/startDate",
             "definition-en": "Start date of the action plan.",
-            "label-en": "Start date",
+            "label-en": "start date",
             "usageNote-en": "Start date of the action or financial support linked to the action."
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/title",
           "name": "title",
-          "sort": "Title",
+          "sort": "title",
           "label": {
-            "en": "Title"
+            "en": "title"
           },
           "description": {
-            "en": "title of the action plan."
+            "en": "Title of the action plan."
           },
           "usage": {},
           "domain": [
@@ -5752,16 +5754,16 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/title",
-            "definition-en": "title of the action plan.",
-            "label-en": "Title"
+            "definition-en": "Title of the action plan.",
+            "label-en": "title"
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/totalBudget",
           "name": "totalBudget",
-          "sort": "Total budget",
+          "sort": "total budget",
           "label": {
-            "en": "Total budget"
+            "en": "total budget"
           },
           "description": {
             "en": "Total budget for the action"
@@ -5795,16 +5797,16 @@
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/totalBudget",
             "definition-en": "Total budget for the action",
-            "label-en": "Total budget",
+            "label-en": "total budget",
             "usageNote-en": "Total budget allocated to the action, by the various public and private funding sources. Details may or may not be included in the Action Plan Profiles."
           }
         },
         {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/totalWaloonBudget",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/totalWalloonBudget",
           "name": "totalWalloonBudget",
-          "sort": "Total walloon budget",
+          "sort": "total walloon budget",
           "label": {
-            "en": "Total walloon budget"
+            "en": "total walloon budget"
           },
           "description": {
             "en": "Walloon budget dedicated to the action."
@@ -5836,18 +5838,18 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/totalWaloonBudget",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/totalWalloonBudget",
             "definition-en": "Walloon budget dedicated to the action.",
-            "label-en": "Total walloon budget",
+            "label-en": "total walloon budget",
             "usageNote-en": "Total budget allocated by the Walloon Region to the action. Details may or may not be included in the Action Plan Profiles."
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/type",
           "name": "type",
-          "sort": "Type",
+          "sort": "type",
           "label": {
-            "en": "Type"
+            "en": "type"
           },
           "description": {
             "en": "Type of action taken"
@@ -5879,15 +5881,15 @@
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/type",
             "definition-en": "Type of action taken",
-            "label-en": "Type"
+            "label-en": "type"
           }
         },
         {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/wallonRegionConvetionNumber",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/walloonRegionConventionNumber",
           "name": "walloonRegionConventionNumber",
-          "sort": "Walloon region convention number",
+          "sort": "walloon region convention number",
           "label": {
-            "en": "Walloon region convention number"
+            "en": "walloon region convention number"
           },
           "description": {
             "en": "A Walloon convention number"
@@ -5919,9 +5921,9 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/wallonRegionConvetionNumber",
             "definition-en": "A Walloon convention number",
-            "label-en": "Walloon region convention number",
+            "label-en": "walloon region convention number",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/walloonRegionConventionNumber",
             "usageNote-en": "Some actions have an agreement number granted by the Region."
           }
         }
@@ -6037,7 +6039,7 @@
             "en": "internal name"
           },
           "description": {
-            "en": "An internal name pour une resource"
+            "en": "An internal name for a resource"
           },
           "usage": {
             "en": "The internal name is useful for finding the record among others in an application such as a back office. The internal name of the Action Plan Profile is made up of the profile's Title and its role in the Action."
@@ -6068,7 +6070,7 @@
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/internalName",
             "label-en": "internal name",
-            "definition-en": "An internal name pour une resource",
+            "definition-en": "An internal name for a resource",
             "usageNote-en": "The internal name is useful for finding the record among others in an application such as a back office. The internal name of the Action Plan Profile is made up of the profile's Title and its role in the Action."
           }
         },
@@ -6162,13 +6164,13 @@
       },
       "sort": "Annual Budget",
       "description": {
-        "en": "Annual Budget"
+        "en": "A sum allocated to an action for a specific year."
       },
       "usage": {},
       "parents": [],
       "rawTags": {
         "class-usage-scope": "supportive",
-        "definition-en": "Annual Budget",
+        "definition-en": "A sum allocated to an action for a specific year.",
         "label-en": "Annual Budget",
         "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/AnnualBudget"
       },
@@ -6296,6 +6298,147 @@
       ]
     },
     {
+      "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Asset",
+      "name": "Asset",
+      "label": {
+        "en": "Asset"
+      },
+      "sort": "Asset",
+      "description": {
+        "en": "A reusable file (logo, image, banner, document, etc.) that describes or represents an entity."
+      },
+      "usage": {},
+      "parents": [],
+      "rawTags": {
+        "class-usage-scope": "supportive",
+        "definition-en": "A reusable file (logo, image, banner, document, etc.) that describes or represents an entity.",
+        "label-en": "Asset",
+        "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Asset"
+      },
+      "properties": [
+        {
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/description",
+          "name": "description",
+          "sort": "description",
+          "label": {
+            "en": "description"
+          },
+          "description": {
+            "en": "A description."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asset",
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Asset"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "description",
+            "definition-en": "A description.",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/description"
+          }
+        },
+        {
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/file",
+          "name": "file",
+          "sort": "file",
+          "label": {
+            "en": "file"
+          },
+          "description": {
+            "en": "A file."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asset",
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Asset"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "File",
+              "range_uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#File",
+              "range_puri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File",
+              "range_label": {
+                "en": "File"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "file",
+            "definition-en": "A file.",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/file"
+          }
+        },
+        {
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/title",
+          "name": "title",
+          "sort": "title",
+          "label": {
+            "en": "title"
+          },
+          "description": {
+            "en": "A title."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Asset",
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Asset"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Text",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Text",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "en": "Text"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "title",
+            "definition-en": "A title.",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/title"
+          }
+        }
+      ]
+    },
+    {
       "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ContentDynamicList",
       "name": "ContentDynamicList",
       "label": {
@@ -6308,10 +6451,10 @@
       "usage": {},
       "parents": [],
       "rawTags": {
-        "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ContentDynamicList",
+        "class-usage-scope": "supportive",
         "definition-en": "A Content Dynamic List",
         "label-en": "Content Dynamic List",
-        "class-usage-scope": "supportive"
+        "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ContentDynamicList"
       },
       "properties": [
         {
@@ -6398,147 +6541,6 @@
     },
     {
       "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File",
-      "name": "Asset",
-      "label": {
-        "en": "Asset"
-      },
-      "sort": "Asset",
-      "description": {
-        "en": "A logo to describe / represent an entity."
-      },
-      "usage": {},
-      "parents": [],
-      "rawTags": {
-        "definition-en": "A logo to describe / represent an entity.",
-        "label-en": "Asset",
-        "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File",
-        "class-usage-scope": "supportive"
-      },
-      "properties": [
-        {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/description",
-          "name": "description",
-          "sort": "description",
-          "label": {
-            "en": "description"
-          },
-          "description": {
-            "en": "A description."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Asset",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-              "range_label": {
-                "en": "Text"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "description",
-            "definition-en": "A description.",
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/description"
-          }
-        },
-        {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/file",
-          "name": "file",
-          "sort": "file",
-          "label": {
-            "en": "file"
-          },
-          "description": {
-            "en": "A file."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Asset",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "File",
-              "range_uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#File",
-              "range_puri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File",
-              "range_label": {
-                "en": "File"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "file",
-            "definition-en": "A file.",
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/file"
-          }
-        },
-        {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/title",
-          "name": "title",
-          "sort": "title",
-          "label": {
-            "en": "title"
-          },
-          "description": {
-            "en": "A title."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Asset",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Text",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Text",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-              "range_label": {
-                "en": "Text"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "title",
-            "definition-en": "A title.",
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/title"
-          }
-        }
-      ]
-    },
-    {
-      "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File",
       "name": "File",
       "label": {
         "en": "File"
@@ -6570,10 +6572,10 @@
       "usage": {},
       "parents": [],
       "rawTags": {
-        "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/PartnerAdditionalDescription",
+        "class-usage-scope": "supportive",
         "definition-en": "A partner additional description",
         "label-en": "Partner Additional Description",
-        "class-usage-scope": "supportive"
+        "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/PartnerAdditionalDescription"
       },
       "properties": [
         {
@@ -6711,10 +6713,10 @@
       "usage": {},
       "parents": [],
       "rawTags": {
-        "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Post",
+        "class-usage-scope": "main",
         "definition-en": "A post is editorial content specific to users of the database.  It cannot be a copy of a press article or any other type of protected external source.",
         "label-en": "Post",
-        "class-usage-scope": "main"
+        "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Post"
       },
       "properties": [
         {
@@ -6822,13 +6824,13 @@
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File"
+              "range_uri": "http://www.w3.org/ns/adms#Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File",
+              "range_puri": "http://www.w3.org/ns/adms#Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -7146,7 +7148,7 @@
             "en": "pdf file"
           },
           "description": {
-            "en": "A pdf file"
+            "en": "A PDF file"
           },
           "usage": {
             "en": "PDF file presenting the content of the article. Mainly used for studies."
@@ -7160,13 +7162,13 @@
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File"
+              "range_uri": "http://www.w3.org/ns/adms#Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File",
+              "range_puri": "http://www.w3.org/ns/adms#Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -7177,12 +7179,12 @@
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/pdfFile",
             "label-en": "pdf file",
-            "definition-en": "A pdf file",
+            "definition-en": "A PDF file",
             "usageNote-en": "PDF file presenting the content of the article. Mainly used for studies."
           }
         },
         {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/published date",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/publishedDate",
           "name": "publishedDate",
           "sort": "published date",
           "label": {
@@ -7218,7 +7220,7 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/published date",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/publishedDate",
             "definition-en": "A published date",
             "label-en": "published date",
             "usageNote-en": "Date the post was first published (put online), before any updates."
@@ -7278,7 +7280,7 @@
             "en": "A related external link"
           },
           "usage": {
-            "en": "Reference a URL directly related to the subject of the post."
+            "en": "References a URL directly related to the subject of the post."
           },
           "domain": [
             {
@@ -7307,7 +7309,7 @@
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/relatedExternalLinks",
             "definition-en": "A related external link",
             "label-en": "related external link",
-            "usageNote-en": "Reference a URL directly related to the subject of the post."
+            "usageNote-en": "References a URL directly related to the subject of the post."
           }
         },
         {
@@ -7332,13 +7334,13 @@
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File"
+              "range_uri": "http://www.w3.org/ns/adms#Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File",
+              "range_puri": "http://www.w3.org/ns/adms#Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -7576,7 +7578,7 @@
             "en": "title"
           },
           "description": {
-            "en": "title of the post."
+            "en": "Title of the post."
           },
           "usage": {
             "en": "The title describes, in a few words, the content of the post and its scope."
@@ -7606,7 +7608,7 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/title",
-            "definition-en": "title of the post.",
+            "definition-en": "Title of the post.",
             "label-en": "title",
             "usageNote-en": "The title describes, in a few words, the content of the post and its scope."
           }
@@ -7664,15 +7666,15 @@
       },
       "sort": "Press Review",
       "description": {
-        "en": "A press article is a reference to an article published in the press (daily newspaper, magazine, specialised website) highlighting elements of the database of different types (profile, person, etc.)."
+        "en": "A press review is a reference to an article published in the press (daily newspaper, magazine, specialised website) highlighting elements of the database of different types (profile, person, etc.)."
       },
       "usage": {},
       "parents": [],
       "rawTags": {
-        "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/PressReview",
-        "definition-en": "A press article is a reference to an article published in the press (daily newspaper, magazine, specialised website) highlighting elements of the database of different types (profile, person, etc.).",
+        "class-usage-scope": "main",
+        "definition-en": "A press review is a reference to an article published in the press (daily newspaper, magazine, specialised website) highlighting elements of the database of different types (profile, person, etc.).",
         "label-en": "Press Review",
-        "class-usage-scope": "main"
+        "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/PressReview"
       },
       "properties": [
         {
@@ -7755,9 +7757,9 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/articleLink",
             "definition-en": "An article link",
             "label-en": "article link",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/articleLink",
             "usageNote-en": "Gives the URL at which the source press article is available."
           }
         },
@@ -7798,9 +7800,9 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/category",
             "definition-en": "A reference to an element in the taxonomy",
             "label-en": "category",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/category",
             "usageNote-en": "The taxonomy categories can be used to enrich the press review by linking to other content, filtering and sorting."
           }
         },
@@ -7841,8 +7843,8 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/clientSite",
             "definition-en": "A reference to a Client site",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/clientSite",
             "label-en": "client site",
             "usageNote-en": "Identification of a client application (website, business application or other) using the press article."
           }
@@ -7927,8 +7929,8 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/language",
             "definition-en": "A language",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/language",
             "label-en": "language",
             "usageNote-en": "Language in which the referenced article is written or distributed."
           }
@@ -7944,7 +7946,7 @@
             "en": "A published date"
           },
           "usage": {
-            "en": "Date the press article was officialy published (put online)."
+            "en": "Date the press article was officially published (put online)."
           },
           "domain": [
             {
@@ -7970,10 +7972,10 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/publishedDate",
             "definition-en": "A published date",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/publishedDate",
             "label-en": "published date",
-            "usageNote-en": "Date the press article was officialy published (put online)."
+            "usageNote-en": "Date the press article was officially published (put online)."
           }
         },
         {
@@ -7987,7 +7989,7 @@
             "en": "A quoted person"
           },
           "usage": {
-            "en": "Preson linked to the article because they are mentioned in it."
+            "en": "Person linked to the article because they are mentioned in it."
           },
           "domain": [
             {
@@ -8015,19 +8017,19 @@
           "rawTags": {
             "label-en": "quoted person",
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/quotedPerson",
-            "usageNote-en": "Preson linked to the article because they are mentioned in it.",
+            "usageNote-en": "Person linked to the article because they are mentioned in it.",
             "definition-en": "A quoted person"
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/quotedProfile",
           "name": "quotedProfile",
-          "sort": "Quoted profile",
+          "sort": "quoted profile",
           "label": {
-            "en": "Quoted profile"
+            "en": "quoted profile"
           },
           "description": {
-            "en": "A quoted profil"
+            "en": "A quoted profile"
           },
           "usage": {
             "en": "Profile linked to the article because it is quoted there."
@@ -8056,8 +8058,8 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "Quoted profile",
-            "definition-en": "A quoted profil",
+            "label-en": "quoted profile",
+            "definition-en": "A quoted profile",
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/quotedProfile",
             "usageNote-en": "Profile linked to the article because it is quoted there."
           }
@@ -8099,8 +8101,8 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/shortDescription",
             "definition-en": "A short description of the article.",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/shortDescription",
             "label-en": "short description",
             "usageNote-en": "The description is essential for describing the article succinctly and clearly.  As a complement to the title, it summarises the content of the referenced press article. It should enable the reader to understand its content."
           }
@@ -8185,8 +8187,8 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/title",
             "definition-en": "A title",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/title",
             "label-en": "title",
             "usageNote-en": "Title of article as published in the press."
           }
@@ -8228,8 +8230,8 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/type",
             "definition-en": "Type of format.",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/type",
             "label-en": "type",
             "usageNote-en": "Format in which the article or content is made available (editorial, media, etc.)."
           }
@@ -8249,10 +8251,10 @@
       "usage": {},
       "parents": [],
       "rawTags": {
-        "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile",
-        "label-en": "Profile",
+        "class-usage-scope": "main",
         "definition-en": "A short article giving a description of a person or organization.",
-        "class-usage-scope": "main"
+        "label-en": "Profile",
+        "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile"
       },
       "properties": [
         {
@@ -8478,7 +8480,7 @@
             "en": "company validation date"
           },
           "description": {
-            "en": "Date of the last contact while editing de profile."
+            "en": "Date of the last contact while editing the profile."
           },
           "usage": {
             "en": "Date of last contact with the company validating the updated information."
@@ -8509,7 +8511,7 @@
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/companyValidationDate",
             "label-en": "company validation date",
-            "definition-en": "Date of the last contact while editing de profile.",
+            "definition-en": "Date of the last contact while editing the profile.",
             "usageNote-en": "Date of last contact with the company validating the updated information."
           }
         },
@@ -8524,7 +8526,7 @@
             "en": "A reference to a contact point."
           },
           "usage": {
-            "en": "The contact point brings together all the general contact information of a profile : website, telephone numbers, emails, etc."
+            "en": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc."
           },
           "domain": [
             {
@@ -8550,7 +8552,7 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "usageNote-en": "The contact point brings together all the general contact information of a profile : website, telephone numbers, emails, etc.",
+            "usageNote-en": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc.",
             "definition-en": "A reference to a contact point.",
             "label-en": "contact point",
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint"
@@ -8707,13 +8709,13 @@
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File"
+              "range_uri": "http://www.w3.org/ns/adms#Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File",
+              "range_puri": "http://www.w3.org/ns/adms#Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -8731,9 +8733,9 @@
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/mainNACECode",
           "name": "mainNaceCode",
-          "sort": "main NACE code",
+          "sort": "main nace code",
           "label": {
-            "en": "main NACE code"
+            "en": "main nace code"
           },
           "description": {
             "en": "A main NACE code"
@@ -8767,16 +8769,16 @@
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/mainNACECode",
             "definition-en": "A main NACE code",
-            "label-en": "main NACE code",
+            "label-en": "main nace code",
             "usageNote-en": "NACE code best representing the profile's main activity."
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/nonFeaturedPerson",
-          "name": "nonFeaturedPerson",
-          "sort": "non featured person",
+          "name": "non-featuredPerson",
+          "sort": "non-featured person",
           "label": {
-            "en": "non featured person"
+            "en": "non-featured person"
           },
           "description": {
             "en": "A reference to a Qualified Person"
@@ -8808,10 +8810,10 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
+            "usageNote-en": "Person working within the profile but not displayed as the profile reference person on sites and applications.",
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/nonFeaturedPerson",
             "definition-en": "A reference to a Qualified Person",
-            "label-en": "non featured person",
-            "usageNote-en": "Person working within the profile but not displayed as the profile reference person on sites and applications."
+            "label-en": "non-featured person"
           }
         },
         {
@@ -8868,7 +8870,7 @@
             "en": "A partner additional description"
           },
           "usage": {
-            "en": "Thanks to its Site Client, a partner can use this description as an alternative to, or in addition to, the classic."
+            "en": "Thanks to its client site, a partner can use this description as an alternative to, or in addition to, the standard additional description."
           },
           "domain": [
             {
@@ -8896,19 +8898,19 @@
           "rawTags": {
             "definition-en": "A partner additional description",
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/partnerAdditionalDescription",
-            "usageNote-en": "Thanks to its Site Client, a partner can use this description as an alternative to, or in addition to, the classic.",
+            "usageNote-en": "Thanks to its client site, a partner can use this description as an alternative to, or in addition to, the standard additional description.",
             "label-en": "partner additional description"
           }
         },
         {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/plateformContactPerson",
-          "name": "plateformContactPerson",
-          "sort": "plateform contact person",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/platformContactPerson",
+          "name": "platformContactPerson",
+          "sort": "platform contact person",
           "label": {
-            "en": "plateform contact person"
+            "en": "platform contact person"
           },
           "description": {
-            "en": "A plateform contact person"
+            "en": "A platform contact person"
           },
           "usage": {
             "en": "Represents the main point of contact for the purposes of managing the profile within the Platform or for sending a targeted letter (request for an update or verification, etc.)."
@@ -8937,9 +8939,9 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "plateform contact person",
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/plateformContactPerson",
-            "definition-en": "A plateform contact person",
+            "label-en": "platform contact person",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/platformContactPerson",
+            "definition-en": "A platform contact person",
             "usageNote-en": "Represents the main point of contact for the purposes of managing the profile within the Platform or for sending a targeted letter (request for an update or verification, etc.)."
           }
         },
@@ -8954,7 +8956,7 @@
             "en": "A profile legal entity"
           },
           "usage": {
-            "en": "Legal entity responsible for the profile"
+            "en": "Legal entity responsible for the profile."
           },
           "domain": [
             {
@@ -8981,7 +8983,7 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/profileLegalEntity",
-            "usageNote-en": "Legal entity responsible for the profile",
+            "usageNote-en": "Legal entity responsible for the profile.",
             "label-en": "profile legal entity",
             "definition-en": "A profile legal entity"
           }
@@ -9066,8 +9068,8 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/shortTitle",
             "definition-en": "A short title",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/shortTitle",
             "label-en": "short title",
             "usageNote-en": "Acronym or recognised abbreviation, alternative name for the profile."
           }
@@ -9083,7 +9085,7 @@
             "en": "Last section of a URL."
           },
           "usage": {
-            "en": "Unique across all posts, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
+            "en": "Unique across all profiles, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
           },
           "domain": [
             {
@@ -9109,10 +9111,10 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/slug",
             "definition-en": "Last section of a URL.",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/slug",
             "label-en": "slug",
-            "usageNote-en": "Unique across all posts, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
+            "usageNote-en": "Unique across all profiles, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
           }
         },
         {
@@ -9233,7 +9235,7 @@
             "en": "A legal entity"
           },
           "usage": {
-            "en": "NOTE"
+            "en": "TODO"
           },
           "domain": [
             {
@@ -9262,7 +9264,7 @@
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/legalEntity",
             "label-en": "legal entity",
             "definition-en": "A legal entity",
-            "usageNote-en": "NOTE"
+            "usageNote-en": "null"
           }
         },
         {
@@ -9276,7 +9278,7 @@
             "en": "A profile"
           },
           "usage": {
-            "en": "NOTE"
+            "en": "TODO"
           },
           "domain": [
             {
@@ -9302,7 +9304,7 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "usageNote-en": "NOTE",
+            "usageNote-en": "null",
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/profile",
             "definition-en": "A profile",
             "label-en": "profile"
@@ -9398,7 +9400,7 @@
       },
       "sort": "Qualified Person",
       "description": {
-        "en": "A Qualified Person is a Person / profile pair defining the linked email and the person's role within the profile.  The binomial is unique in the database (only one Person X / profile Y binomial can exist)."
+        "en": "A Qualified Person is a Person / profile pair defining the linked email and the person's role within the profile.  The pair is unique in the database (only one Person X / profile Y pair can exist)."
       },
       "usage": {},
       "parents": [
@@ -9411,10 +9413,10 @@
         }
       ],
       "rawTags": {
-        "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/QualifiedPerson",
+        "class-usage-scope": "main",
+        "definition-en": "A Qualified Person is a Person / profile pair defining the linked email and the person's role within the profile.  The pair is unique in the database (only one Person X / profile Y pair can exist).",
         "label-en": "Qualified Person",
-        "definition-en": "A Qualified Person is a Person / profile pair defining the linked email and the person's role within the profile.  The binomial is unique in the database (only one Person X / profile Y binomial can exist).",
-        "class-usage-scope": "main"
+        "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/QualifiedPerson"
       },
       "properties": [
         {
@@ -9425,7 +9427,7 @@
             "en": "department"
           },
           "description": {
-            "en": "The department in which the person is affiliated to."
+            "en": "The department with which the person is affiliated."
           },
           "usage": {
             "en": "Specifies the department or service of the linked profile in which the person works."
@@ -9455,20 +9457,20 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/department",
-            "definition-en": "The department in which the person is affiliated to.",
+            "definition-en": "The department with which the person is affiliated.",
             "label-en": "department",
             "usageNote-en": "Specifies the department or service of the linked profile in which the person works."
           }
         },
         {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/inOperation",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/hasProfile",
           "name": "hasProfile",
           "sort": "has profile",
           "label": {
             "en": "has profile"
           },
           "description": {
-            "en": "The profile to which the person belongs to."
+            "en": "The profile to which the person belongs."
           },
           "usage": {},
           "domain": [
@@ -9495,8 +9497,8 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "definition-en": "The profile to which the person belongs to.",
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/inOperation",
+            "definition-en": "The profile to which the person belongs.",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/hasProfile",
             "label-en": "has profile"
           }
         },
@@ -9583,7 +9585,7 @@
       ]
     },
     {
-      "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace",
+      "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace",
       "name": "ServicesPlace",
       "label": {
         "en": "Services Place"
@@ -9595,10 +9597,10 @@
       "usage": {},
       "parents": [],
       "rawTags": {
-        "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace",
+        "class-usage-scope": "main",
         "definition-en": "Extension of information, strongly linked to a profile and making it possible to specify the services offered to the target audience, the provision of equipment, etc.",
         "label-en": "Services Place",
-        "class-usage-scope": "main"
+        "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
       },
       "properties": [
         {
@@ -9617,7 +9619,7 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
@@ -9661,19 +9663,19 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File"
+              "range_uri": "http://www.w3.org/ns/adms#Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File",
+              "range_puri": "http://www.w3.org/ns/adms#Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -9704,19 +9706,19 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
             {
               "range_label": "ServicesPlace",
-              "range_uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "range_uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Services Place",
-              "range_puri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace",
+              "range_puri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace",
               "range_label": {
                 "en": "Services Place"
               }
@@ -9747,7 +9749,7 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
@@ -9775,14 +9777,14 @@
           }
         },
         {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/accompanyPerson",
-          "name": "accompanyPerson",
-          "sort": "accompany person",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/accompanyingPerson",
+          "name": "accompanyingPerson",
+          "sort": "accompanying person",
           "label": {
-            "en": "accompany person"
+            "en": "accompanying person"
           },
           "description": {
-            "en": "An accompany person"
+            "en": "An accompanying person"
           },
           "usage": {
             "en": "A person offering specific help to a target audience."
@@ -9790,7 +9792,7 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
@@ -9811,9 +9813,9 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "accompany person",
-            "definition-en": "An accompany person",
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/accompanyPerson",
+            "label-en": "accompanying person",
+            "definition-en": "An accompanying person",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/accompanyingPerson",
             "usageNote-en": "A person offering specific help to a target audience."
           }
         },
@@ -9833,7 +9835,7 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
@@ -9868,7 +9870,7 @@
             "en": "additional information on equipment"
           },
           "description": {
-            "en": "An additional information on equipment"
+            "en": "Additional information on equipment"
           },
           "usage": {
             "en": "Information that completes the sub-categories of the « Services > Facilities available » category."
@@ -9876,7 +9878,7 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
@@ -9898,20 +9900,20 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/additionalInformationOnEquipment",
-            "definition-en": "An additional information on equipment",
+            "definition-en": "Additional information on equipment",
             "label-en": "additional information on equipment",
             "usageNote-en": "Information that completes the sub-categories of the « Services > Facilities available » category."
           }
         },
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/additionalInformationOnOpeningHours",
-          "name": "addtionnalInformationOnOpeningHours",
-          "sort": "Addtionnal information on opening hours",
+          "name": "additionalInformationOnOpeningHours",
+          "sort": "additional information on opening hours",
           "label": {
-            "en": "Addtionnal information on opening hours"
+            "en": "additional information on opening hours"
           },
           "description": {
-            "en": "An additional information on opening hours."
+            "en": "Additional information on opening hours."
           },
           "usage": {
             "en": "Information added to the Opening hours attribute."
@@ -9919,7 +9921,7 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
@@ -9940,8 +9942,8 @@
           "cardinality": "1",
           "codelist_uri": "",
           "rawTags": {
-            "label-en": "Addtionnal information on opening hours",
-            "definition-en": "An additional information on opening hours.",
+            "label-en": "additional information on opening hours",
+            "definition-en": "Additional information on opening hours.",
             "usageNote-en": "Information added to the Opening hours attribute.",
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/additionalInformationOnOpeningHours"
           }
@@ -9949,12 +9951,12 @@
         {
           "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/additionalInformationOnSupport",
           "name": "additionalInformationOnSupport",
-          "sort": "Additional information on support",
+          "sort": "additional information on support",
           "label": {
-            "en": "Additional information on support"
+            "en": "additional information on support"
           },
           "description": {
-            "en": "An additional information on support."
+            "en": "Additional information on support."
           },
           "usage": {
             "en": "Information that completes the sub-categories of the « Services > Citizen support » category."
@@ -9962,7 +9964,7 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
@@ -9984,8 +9986,8 @@
           "codelist_uri": "",
           "rawTags": {
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/additionalInformationOnSupport",
-            "definition-en": "An additional information on support.",
-            "label-en": "Additional information on support",
+            "definition-en": "Additional information on support.",
+            "label-en": "additional information on support",
             "usageNote-en": "Information that completes the sub-categories of the « Services > Citizen support » category."
           }
         },
@@ -10005,7 +10007,7 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
@@ -10033,14 +10035,14 @@
           }
         },
         {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/additionalTypeAndConditionAccess",
-          "name": "additionalTypeAndConditionAccess",
-          "sort": "additional type and condition access",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/additionalTypeAndConditionOfAccess",
+          "name": "additionalTypeAndConditionOfAccess",
+          "sort": "additional type and condition of access",
           "label": {
-            "en": "additional type and condition access"
+            "en": "additional type and condition of access"
           },
           "description": {
-            "en": "An additional type and condition access"
+            "en": "An additional type and condition of access"
           },
           "usage": {
             "en": "Information that completes the sub-categories of the « Services > Accessibility » category."
@@ -10048,7 +10050,7 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
@@ -10069,9 +10071,9 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/additionalTypeAndConditionAccess",
-            "definition-en": "An additional type and condition access",
-            "label-en": "additional type and condition access",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/additionalTypeAndConditionOfAccess",
+            "definition-en": "An additional type and condition of access",
+            "label-en": "additional type and condition of access",
             "usageNote-en": "Information that completes the sub-categories of the « Services > Accessibility » category."
           }
         },
@@ -10091,7 +10093,7 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
@@ -10134,7 +10136,7 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
@@ -10172,12 +10174,12 @@
             "en": "A reference to an element in the taxonomy"
           },
           "usage": {
-            "en": "The taxonomy categories can be used to enrich the event by linking to other content, filtering and sorting."
+            "en": "The taxonomy categories can be used to enrich the services place by linking to other content, filtering and sorting."
           },
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
@@ -10201,7 +10203,7 @@
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/category",
             "definition-en": "A reference to an element in the taxonomy",
             "label-en": "category",
-            "usageNote-en": "The taxonomy categories can be used to enrich the event by linking to other content, filtering and sorting."
+            "usageNote-en": "The taxonomy categories can be used to enrich the services place by linking to other content, filtering and sorting."
           }
         },
         {
@@ -10220,7 +10222,7 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
@@ -10258,24 +10260,24 @@
             "en": "A facade photo"
           },
           "usage": {
-            "en": "Photo of the façade of the building housing the service place. This photo enables visitors to recognise the building."
+            "en": "Photo of the façade of the building housing the services place. This photo enables visitors to recognise the building."
           },
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
             {
               "range_label": "Asset",
-              "range_uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File"
+              "range_uri": "http://www.w3.org/ns/adms#Asset"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Asset",
-              "range_puri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/File",
+              "range_puri": "http://www.w3.org/ns/adms#Asset",
               "range_label": {
                 "en": "Asset"
               }
@@ -10287,7 +10289,7 @@
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/facadePhoto",
             "label-en": "facade photo",
             "definition-en": "A facade photo",
-            "usageNote-en": "Photo of the façade of the building housing the service place. This photo enables visitors to recognise the building."
+            "usageNote-en": "Photo of the façade of the building housing the services place. This photo enables visitors to recognise the building."
           }
         },
         {
@@ -10306,7 +10308,7 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
@@ -10349,7 +10351,7 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
@@ -10392,7 +10394,7 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
@@ -10420,7 +10422,7 @@
           }
         },
         {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/operating system",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/operatingSystems",
           "name": "operatingSystems",
           "sort": "operating systems",
           "label": {
@@ -10433,7 +10435,7 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
@@ -10454,7 +10456,7 @@
           "cardinality": "0..*",
           "codelist_uri": "",
           "rawTags": {
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/operating system",
+            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/operatingSystems",
             "definition-en": "An operating system",
             "label-en": "operating systems"
           }
@@ -10475,7 +10477,7 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
@@ -10518,7 +10520,7 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
@@ -10561,7 +10563,7 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
@@ -10604,7 +10606,7 @@
           "domain": [
             {
               "EA-Name": "ServicesPlace",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicePlace"
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ServicesPlace"
             }
           ],
           "range": [
@@ -10699,11 +10701,11 @@
       "usage": {},
       "parents": [],
       "rawTags": {
-        "label-en": "Text",
-        "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+        "class-usage-scope": "datatype",
         "definition-en": "The text data type is a combination of a string and a language identifier.",
+        "label-en": "Text",
         "literal": "true",
-        "class-usage-scope": "datatype"
+        "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
       },
       "properties": []
     },
@@ -10720,11 +10722,11 @@
       "usage": {},
       "parents": [],
       "rawTags": {
-        "label-en": "Literal",
-        "uri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "class-usage-scope": "datatype",
         "definition-en": "The class of literal values, eg. textual strings and integers.",
+        "label-en": "Literal",
         "literal": "true",
-        "class-usage-scope": "datatype"
+        "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
       },
       "properties": []
     },
@@ -10741,9 +10743,9 @@
       "usage": {},
       "parents": [],
       "rawTags": {
+        "class-usage-scope": "datatype",
         "definition-en": "anyURI represents an Internationalized Resource Identifier Reference (IRI). An anyURI value can be absolute or relative, and may have an optional fragment identifier (i.e., it may be an IRI Reference).",
         "label-en": "URI",
-        "class-usage-scope": "datatype",
         "literal": "true",
         "uri": "http://www.w3.org/2001/XMLSchema#anyURI"
       },
@@ -10776,13 +10778,13 @@
       },
       "sort": "Date",
       "description": {
-        "en": "The ·value space· of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
+        "en": "The ï¿½value spaceï¿½ of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
       },
       "usage": {},
       "parents": [],
       "rawTags": {
         "class-usage-scope": "datatype",
-        "definition-en": "The ·value space· of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap.",
+        "definition-en": "The ï¿½value spaceï¿½ of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap.",
         "label-en": "Date",
         "literal": "True",
         "uri": "http://www.w3.org/2001/XMLSchema#date"
@@ -10791,22 +10793,22 @@
     },
     {
       "uri": "http://www.w3.org/2001/XMLSchema#double",
-      "name": "Date",
+      "name": "String",
       "label": {
-        "en": "Date"
+        "en": "String"
       },
-      "sort": "Date",
+      "sort": "String",
       "description": {
-        "en": "The ·value space· of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
+        "en": "The string datatype represents character strings in XML. The ï¿½value spaceï¿½ of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ï¿½matchï¿½ the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer."
       },
       "usage": {},
       "parents": [],
       "rawTags": {
-        "definition-en": "The ·value space· of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap.",
-        "label-en": "Date",
-        "uri": "http://www.w3.org/2001/XMLSchema#double",
         "class-usage-scope": "datatype",
-        "literal": "true"
+        "definition-en": "The string datatype represents character strings in XML. The ï¿½value spaceï¿½ of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ï¿½matchï¿½ the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer.",
+        "label-en": "String",
+        "literal": "true",
+        "uri": "http://www.w3.org/2001/XMLSchema#double"
       },
       "properties": []
     },
@@ -10831,22 +10833,22 @@
     },
     {
       "uri": "http://www.w3.org/2001/XMLSchema#double",
-      "name": "String",
+      "name": "Date",
       "label": {
-        "en": "String"
+        "en": "Date"
       },
-      "sort": "String",
+      "sort": "Date",
       "description": {
-        "en": "The string datatype represents character strings in XML. The ·value space· of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ·match· the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer."
+        "en": "The ï¿½value spaceï¿½ of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
       },
       "usage": {},
       "parents": [],
       "rawTags": {
-        "definition-en": "The string datatype represents character strings in XML. The ·value space· of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ·match· the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer.",
-        "label-en": "String",
-        "uri": "http://www.w3.org/2001/XMLSchema#double",
         "class-usage-scope": "datatype",
-        "literal": "true"
+        "definition-en": "The ï¿½value spaceï¿½ of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap.",
+        "label-en": "Date",
+        "literal": "true",
+        "uri": "http://www.w3.org/2001/XMLSchema#double"
       },
       "properties": []
     },
@@ -10903,9 +10905,9 @@
       "usage": {},
       "parents": [],
       "rawTags": {
+        "definition-en": "An idea or notion; a unit of thought.",
         "label-en": "Code",
-        "uri": "http://www.w3.org/2004/02/skos/core#Concept",
-        "definition-en": "An idea or notion; a unit of thought."
+        "uri": "http://www.w3.org/2004/02/skos/core#Concept"
       },
       "properties": []
     },
@@ -10930,5 +10932,5 @@
     }
   ],
   "parents": [],
-  "documentroot": "/D4WMO-Generic/releases/1.0.1/"
+  "documentroot": "/D4WMO-Generic/releases/1.0.2/"
 }

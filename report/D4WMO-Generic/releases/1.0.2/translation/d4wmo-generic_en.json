@@ -93,17 +93,17 @@
         "en": "Date"
       },
       "definition": {
-        "en": "The ·value space· of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
+        "en": "The ï¿½value spaceï¿½ of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
       }
     },
     {
-      "EA-Guid": "{93158274-550F-43bf-BCA2-D8C45A3A7D70}",
-      "name": "Date",
+      "EA-Guid": "{1ABBF0E3-EEB0-4941-916E-6EE68AF8D8DC}",
+      "name": "String",
       "label": {
-        "en": "Date"
+        "en": "String"
       },
       "definition": {
-        "en": "The ·value space· of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
+        "en": "The string datatype represents character strings in XML. The ï¿½value spaceï¿½ of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ï¿½matchï¿½ the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer."
       }
     },
     {
@@ -117,13 +117,13 @@
       }
     },
     {
-      "EA-Guid": "{1ABBF0E3-EEB0-4941-916E-6EE68AF8D8DC}",
-      "name": "String",
+      "EA-Guid": "{93158274-550F-43bf-BCA2-D8C45A3A7D70}",
+      "name": "Date",
       "label": {
-        "en": "String"
+        "en": "Date"
       },
       "definition": {
-        "en": "The string datatype represents character strings in XML. The ·value space· of string is the set of finite-length sequences of characters (as defined in [XML 1.0 (Second Edition)]) that ·match· the Char production from [XML 1.0 (Second Edition)]. A character is an atomic unit of communication; it is not further specified except to note that every character has a corresponding Universal Character Set code point, which is an integer."
+        "en": "The ï¿½value spaceï¿½ of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. '00:00:00', up to but not including '24:00:00' (which is identical with '00:00:00' of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap."
       }
     },
     {
@@ -268,7 +268,17 @@
         "en": "Annual Budget"
       },
       "definition": {
-        "en": "Annual Budget"
+        "en": "A sum allocated to an action for a specific year."
+      }
+    },
+    {
+      "EA-Guid": "{9E0A534F-5918-4cbc-ADF4-5BBCD03359AE}",
+      "name": "Asset",
+      "label": {
+        "en": "Asset"
+      },
+      "definition": {
+        "en": "A reusable file (logo, image, banner, document, etc.) that describes or represents an entity."
       }
     },
     {
@@ -279,16 +289,6 @@
       },
       "definition": {
         "en": "A Content Dynamic List"
-      }
-    },
-    {
-      "EA-Guid": "{9E0A534F-5918-4cbc-ADF4-5BBCD03359AE}",
-      "name": "Asset",
-      "label": {
-        "en": "Asset"
-      },
-      "definition": {
-        "en": "A logo to describe / represent an entity."
       }
     },
     {
@@ -328,7 +328,7 @@
         "en": "Press Review"
       },
       "definition": {
-        "en": "A press article is a reference to an article published in the press (daily newspaper, magazine, specialised website) highlighting elements of the database of different types (profile, person, etc.)."
+        "en": "A press review is a reference to an article published in the press (daily newspaper, magazine, specialised website) highlighting elements of the database of different types (profile, person, etc.)."
       }
     },
     {
@@ -358,7 +358,7 @@
         "en": "Qualified Person"
       },
       "definition": {
-        "en": "A Qualified Person is a Person / profile pair defining the linked email and the person's role within the profile.  The binomial is unique in the database (only one Person X / profile Y binomial can exist)."
+        "en": "A Qualified Person is a Person / profile pair defining the linked email and the person's role within the profile.  The pair is unique in the database (only one Person X / profile Y pair can exist)."
       }
     },
     {
@@ -627,6 +627,16 @@
       }
     },
     {
+      "EA-Guid": "{0C6BF2D1-62EE-4969-81B9-F449CC477ED3}",
+      "name": "description",
+      "label": {
+        "en": "description"
+      },
+      "definition": {
+        "en": "A  textual representation of the Temporal Entity."
+      }
+    },
+    {
       "EA-Guid": "{863E7940-DA4B-45ee-9506-A45C024CA0C6}",
       "name": "shortDescription",
       "label": {
@@ -640,68 +650,6 @@
       }
     },
     {
-      "EA-Guid": "{0C6BF2D1-62EE-4969-81B9-F449CC477ED3}",
-      "name": "description",
-      "label": {
-        "en": "description"
-      },
-      "definition": {
-        "en": "A  textual representation of the Temporal Entity."
-      }
-    },
-    {
-      "EA-Guid": "{B343EE5B-08E0-4cac-B4F4-33CEB551895A}",
-      "name": "id",
-      "label": {
-        "en": "id"
-      },
-      "definition": {
-        "en": "A common and non-nullable person identifier"
-      },
-      "usage": {
-        "en": "A single ID for all uses and connections between databases"
-      }
-    },
-    {
-      "EA-Guid": "{04FD3035-CFAD-4489-B56E-D1BF3B74CCB9}",
-      "name": "id",
-      "label": {
-        "en": "Id"
-      },
-      "definition": {
-        "en": "A common and non-nullable contact point identifier"
-      },
-      "usage": {
-        "en": "A single ID for all uses and connections between databases"
-      }
-    },
-    {
-      "EA-Guid": "{3A160C07-8CC4-4eec-99B4-3D72C14B0365}",
-      "name": "id",
-      "label": {
-        "en": "id"
-      },
-      "definition": {
-        "en": "A common and non-nullable identifier."
-      },
-      "usage": {
-        "en": "A single ID for all uses and connections between databases."
-      }
-    },
-    {
-      "EA-Guid": "{2E8CAF4D-F45E-47d7-AE5A-1F74E9B70C61}",
-      "name": "id",
-      "label": {
-        "en": "Id"
-      },
-      "definition": {
-        "en": "A common and non-nullable event identifier"
-      },
-      "usage": {
-        "en": "A single ID for all uses and connections between databases"
-      }
-    },
-    {
       "EA-Guid": "{33804A3F-54CD-4fc5-8BF0-F9EBA747DEC7}",
       "name": "id",
       "label": {
@@ -709,6 +657,29 @@
       },
       "definition": {
         "en": "A common and non-nullable post identifier"
+      },
+      "usage": {
+        "en": "A single ID for all uses and connections between databases"
+      }
+    },
+    {
+      "EA-Guid": "{4B0A3911-B30D-4f1e-9EB7-4F975B23F805}",
+      "name": "id",
+      "label": {
+        "en": "id"
+      },
+      "definition": {
+        "en": "A single ID for all uses and connections between databases"
+      }
+    },
+    {
+      "EA-Guid": "{D32532A2-3A98-4c15-9348-3A0F8BCA1296}",
+      "name": "id",
+      "label": {
+        "en": "Id"
+      },
+      "definition": {
+        "en": "A common and non-nullable press review identifier"
       },
       "usage": {
         "en": "A single ID for all uses and connections between databases"
@@ -728,25 +699,54 @@
       }
     },
     {
-      "EA-Guid": "{D32532A2-3A98-4c15-9348-3A0F8BCA1296}",
+      "EA-Guid": "{2E8CAF4D-F45E-47d7-AE5A-1F74E9B70C61}",
       "name": "id",
       "label": {
         "en": "Id"
       },
       "definition": {
-        "en": "A common and non-nullable press review identifier"
+        "en": "A common and non-nullable event identifier"
       },
       "usage": {
         "en": "A single ID for all uses and connections between databases"
       }
     },
     {
-      "EA-Guid": "{4B0A3911-B30D-4f1e-9EB7-4F975B23F805}",
+      "EA-Guid": "{3A160C07-8CC4-4eec-99B4-3D72C14B0365}",
       "name": "id",
       "label": {
         "en": "id"
       },
       "definition": {
+        "en": "A common and non-nullable identifier."
+      },
+      "usage": {
+        "en": "A single ID for all uses and connections between databases."
+      }
+    },
+    {
+      "EA-Guid": "{04FD3035-CFAD-4489-B56E-D1BF3B74CCB9}",
+      "name": "id",
+      "label": {
+        "en": "Id"
+      },
+      "definition": {
+        "en": "A common and non-nullable contact point identifier"
+      },
+      "usage": {
+        "en": "A single ID for all uses and connections between databases"
+      }
+    },
+    {
+      "EA-Guid": "{B343EE5B-08E0-4cac-B4F4-33CEB551895A}",
+      "name": "id",
+      "label": {
+        "en": "id"
+      },
+      "definition": {
+        "en": "A common and non-nullable person identifier"
+      },
+      "usage": {
         "en": "A single ID for all uses and connections between databases"
       }
     },
@@ -869,6 +869,16 @@
       }
     },
     {
+      "EA-Guid": "{158DEBC6-27F4-4591-BD8E-247D136A05DB}",
+      "name": "location",
+      "label": {
+        "en": "location"
+      },
+      "definition": {
+        "en": "\tAssociates any Resource with the corresponding Address."
+      }
+    },
+    {
       "EA-Guid": "{DD214B21-3E3E-4fc7-B1FA-8FE6E196D60C}",
       "name": "address",
       "label": {
@@ -879,16 +889,6 @@
       },
       "usage": {
         "en": "The person's place of residence or the address at which they can receive postal mail."
-      }
-    },
-    {
-      "EA-Guid": "{158DEBC6-27F4-4591-BD8E-247D136A05DB}",
-      "name": "location",
-      "label": {
-        "en": "location"
-      },
-      "definition": {
-        "en": "\tAssociates any Resource with the corresponding Address."
       }
     },
     {
@@ -992,7 +992,7 @@
         "en": "The name of a passage or way through from one location to another."
       },
       "usage": {
-        "en": "A thoroughfare is usually a street, but it might be a waterway or some other feature. For example, \"Avenue des Champs-Élysées\"."
+        "en": "A thoroughfare is usually a street, but it might be a waterway or some other feature. For example, \"Avenue des Champs-ï¿½lysï¿½es\"."
       }
     },
     {
@@ -1058,7 +1058,7 @@
       "EA-Guid": "{408F30B0-4185-4a88-8FB4-1B1CB4618153}",
       "name": "vatNumber",
       "label": {
-        "en": "VAT number"
+        "en": "vat number"
       },
       "definition": {
         "en": "A VAT number."
@@ -1066,12 +1066,12 @@
     },
     {
       "EA-Guid": "{397D1175-615C-4644-9F6C-6B7D04B7D35B}",
-      "name": "accompanyPerson",
+      "name": "accompanyingPerson",
       "label": {
-        "en": "accompany person"
+        "en": "accompanying person"
       },
       "definition": {
-        "en": "An accompany person"
+        "en": "An accompanying person"
       },
       "usage": {
         "en": "A person offering specific help to a target audience."
@@ -1091,7 +1091,7 @@
       "EA-Guid": "{9803528A-31E7-45ed-A93F-291704862340}",
       "name": "actionPlanProfile",
       "label": {
-        "en": "Action Plan Profile"
+        "en": "action plan profile"
       },
       "definition": {
         "en": "A link to a profile with a role in it."
@@ -1110,7 +1110,7 @@
         "en": "Defines the activity status of the entity"
       },
       "usage": {
-        "en": "True if the entity is still active. It can be determined by the legal entity status, but it is much clearer."
+        "en": "True if the entity is still active. It can be derived from the legal entity status, but an explicit flag is clearer."
       }
     },
     {
@@ -1127,33 +1127,17 @@
       }
     },
     {
-      "EA-Guid": "{7CAD0A7D-840F-4ecb-A76A-0D6558A0D8AC}",
+      "EA-Guid": "{B9601C7D-EB08-4dd3-BA5F-1C8F4820ACB2}",
       "name": "additionalDescription",
       "label": {
         "en": "additional description"
       },
       "definition": {
-        "en": "An additional descriptive text to the Short Description"
-      },
-      "usage": {
-        "en": "Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc."
+        "en": "An additional description"
       }
     },
     {
-      "EA-Guid": "{F7C4D7F6-0A6D-4810-AEAF-902749F4ABB7}",
-      "name": "additionalDescription",
-      "label": {
-        "en": "additional description"
-      },
-      "definition": {
-        "en": "An additional descriptive text to the Short Description"
-      },
-      "usage": {
-        "en": "Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc."
-      }
-    },
-    {
-      "EA-Guid": "{08BEE695-92F2-4ff6-84F6-698BBDD8263F}",
+      "EA-Guid": "{6BEF6F6F-D37E-401a-A574-6541BF4369A9}",
       "name": "additionalDescription",
       "label": {
         "en": "additional description"
@@ -1179,10 +1163,10 @@
       }
     },
     {
-      "EA-Guid": "{6BEF6F6F-D37E-401a-A574-6541BF4369A9}",
+      "EA-Guid": "{08BEE695-92F2-4ff6-84F6-698BBDD8263F}",
       "name": "additionalDescription",
       "label": {
-        "en": "Additional Description"
+        "en": "additional description"
       },
       "definition": {
         "en": "An additional descriptive text to the Short Description"
@@ -1192,13 +1176,29 @@
       }
     },
     {
-      "EA-Guid": "{B9601C7D-EB08-4dd3-BA5F-1C8F4820ACB2}",
+      "EA-Guid": "{F7C4D7F6-0A6D-4810-AEAF-902749F4ABB7}",
       "name": "additionalDescription",
       "label": {
         "en": "additional description"
       },
       "definition": {
-        "en": "An additional description"
+        "en": "An additional descriptive text to the Short Description"
+      },
+      "usage": {
+        "en": "Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc."
+      }
+    },
+    {
+      "EA-Guid": "{7CAD0A7D-840F-4ecb-A76A-0D6558A0D8AC}",
+      "name": "additionalDescription",
+      "label": {
+        "en": "additional description"
+      },
+      "definition": {
+        "en": "An additional descriptive text to the Short Description"
+      },
+      "usage": {
+        "en": "Long description, formatted (bulleted or numbered lists, bold, etc.), unlimited in size, which may include external links, references to other items in the database, videos, images, etc."
       }
     },
     {
@@ -1208,7 +1208,7 @@
         "en": "additional information on equipment"
       },
       "definition": {
-        "en": "An additional information on equipment"
+        "en": "Additional information on equipment"
       },
       "usage": {
         "en": "Information that completes the sub-categories of the « Services > Facilities available » category."
@@ -1216,12 +1216,12 @@
     },
     {
       "EA-Guid": "{9C86F42B-C305-435b-9436-A394ED3F1FAA}",
-      "name": "addtionnalInformationOnOpeningHours",
+      "name": "additionalInformationOnOpeningHours",
       "label": {
-        "en": "Addtionnal information on opening hours"
+        "en": "additional information on opening hours"
       },
       "definition": {
-        "en": "An additional information on opening hours."
+        "en": "Additional information on opening hours."
       },
       "usage": {
         "en": "Information added to the Opening hours attribute."
@@ -1231,10 +1231,10 @@
       "EA-Guid": "{1D8556AF-0680-435e-8EC4-E17C2D86BE02}",
       "name": "additionalInformationOnSupport",
       "label": {
-        "en": "Additional information on support"
+        "en": "additional information on support"
       },
       "definition": {
-        "en": "An additional information on support."
+        "en": "Additional information on support."
       },
       "usage": {
         "en": "Information that completes the sub-categories of the « Services > Citizen support » category."
@@ -1255,12 +1255,12 @@
     },
     {
       "EA-Guid": "{47A684F5-9569-4a8a-924C-069253C0CCC8}",
-      "name": "additionalTypeAndConditionAccess",
+      "name": "additionalTypeAndConditionOfAccess",
       "label": {
-        "en": "additional type and condition access"
+        "en": "additional type and condition of access"
       },
       "definition": {
-        "en": "An additional type and condition access"
+        "en": "An additional type and condition of access"
       },
       "usage": {
         "en": "Information that completes the sub-categories of the « Services > Accessibility » category."
@@ -1296,7 +1296,7 @@
       "EA-Guid": "{85725371-9490-4f3d-89AF-034E11F21C6C}",
       "name": "annualBudgetAllocation",
       "label": {
-        "en": "Annual Budget Allocation"
+        "en": "annual budget allocation"
       },
       "definition": {
         "en": "A reference to an annual budget"
@@ -1329,19 +1329,6 @@
       }
     },
     {
-      "EA-Guid": "{48196BA3-CCD3-4155-AF22-D7D2A7A66AFA}",
-      "name": "banner",
-      "label": {
-        "en": "banner"
-      },
-      "definition": {
-        "en": "Reference to an Asset."
-      },
-      "usage": {
-        "en": "Link to a reusable image, the banner can be the official visual for the event or any visual relating to the main subject."
-      }
-    },
-    {
       "EA-Guid": "{14DE9243-68F2-4728-9ABB-CC53D2439055}",
       "name": "banner",
       "label": {
@@ -1355,10 +1342,23 @@
       }
     },
     {
+      "EA-Guid": "{48196BA3-CCD3-4155-AF22-D7D2A7A66AFA}",
+      "name": "banner",
+      "label": {
+        "en": "banner"
+      },
+      "definition": {
+        "en": "Reference to an Asset."
+      },
+      "usage": {
+        "en": "Link to a reusable image, the banner can be the official visual for the event or any visual relating to the main subject."
+      }
+    },
+    {
       "EA-Guid": "{861E42F8-AD7D-4b41-BFBD-A9ED0E3342BE}",
       "name": "beneficiaries",
       "label": {
-        "en": "Beneficiaries"
+        "en": "beneficiaries"
       },
       "definition": {
         "en": "A list of beneficiaries (profiles)."
@@ -1391,45 +1391,6 @@
       }
     },
     {
-      "EA-Guid": "{81C0C73D-FC2D-40a6-9572-266CC7996AF6}",
-      "name": "category",
-      "label": {
-        "en": "category"
-      },
-      "definition": {
-        "en": "A reference to an element in the taxonomy"
-      },
-      "usage": {
-        "en": "The taxonomy categories can be used to enrich the person by linking to other content, filtering and sorting.  Categories are useful for enriching, for example, a person's skills or areas of expertise."
-      }
-    },
-    {
-      "EA-Guid": "{584A0E91-25AE-4e75-AEBF-46210C19D092}",
-      "name": "category",
-      "label": {
-        "en": "category"
-      },
-      "definition": {
-        "en": "A reference to an element in the taxonomy"
-      },
-      "usage": {
-        "en": "The taxonomy categories can be used to enrich the profile by linking to other content, filtering and sorting."
-      }
-    },
-    {
-      "EA-Guid": "{C456FC7D-CB44-4d8a-85B2-ACA27B7EC19B}",
-      "name": "category",
-      "label": {
-        "en": "category"
-      },
-      "definition": {
-        "en": "A reference to an element in the taxonomy"
-      },
-      "usage": {
-        "en": "The taxonomy categories can be used to enrich the event by linking to other content, filtering and sorting."
-      }
-    },
-    {
       "EA-Guid": "{9E32FAF0-3F4B-44c8-BFF5-8EC2A9A96C36}",
       "name": "category",
       "label": {
@@ -1440,32 +1401,6 @@
       },
       "usage": {
         "en": "The taxonomy categories can be used to enrich the post by linking to other content, filtering and sorting.  Categories are useful for enriching a post with, for instance, the main themes covered."
-      }
-    },
-    {
-      "EA-Guid": "{99C84888-5A7E-4cbf-81E6-391B8EF27B34}",
-      "name": "category",
-      "label": {
-        "en": "category"
-      },
-      "definition": {
-        "en": "A reference to an element in the taxonomy"
-      },
-      "usage": {
-        "en": "The taxonomy categories can be used to enrich the event by linking to other content, filtering and sorting."
-      }
-    },
-    {
-      "EA-Guid": "{1ABA778E-7C41-438a-BD6B-9338743927E1}",
-      "name": "category",
-      "label": {
-        "en": "Category"
-      },
-      "definition": {
-        "en": "A reference to an element in the taxonomy"
-      },
-      "usage": {
-        "en": "The taxonomy categories can be used to enrich the action by linking to other content, filtering and sorting."
       }
     },
     {
@@ -1482,42 +1417,68 @@
       }
     },
     {
-      "EA-Guid": "{DC699384-7038-45ae-9DAC-1B5352803374}",
-      "name": "clientSite",
+      "EA-Guid": "{1ABA778E-7C41-438a-BD6B-9338743927E1}",
+      "name": "category",
       "label": {
-        "en": "client site"
+        "en": "category"
       },
       "definition": {
-        "en": "A reference to a Client site"
+        "en": "A reference to an element in the taxonomy"
       },
       "usage": {
-        "en": "Identification of a client application (website, business application or other) using the person record."
+        "en": "The taxonomy categories can be used to enrich the action by linking to other content, filtering and sorting."
       }
     },
     {
-      "EA-Guid": "{01D6F71D-2EDB-486a-8491-CA865CAEB217}",
-      "name": "clientSite",
+      "EA-Guid": "{99C84888-5A7E-4cbf-81E6-391B8EF27B34}",
+      "name": "category",
       "label": {
-        "en": "client site"
+        "en": "category"
       },
       "definition": {
-        "en": "A reference to a Client site"
+        "en": "A reference to an element in the taxonomy"
       },
       "usage": {
-        "en": "Identification of a client application (website, business application or other) using the profile."
+        "en": "The taxonomy categories can be used to enrich the services place by linking to other content, filtering and sorting."
       }
     },
     {
-      "EA-Guid": "{2D13CF80-91EB-4951-BCA0-FC76B44607F4}",
-      "name": "clientSite",
+      "EA-Guid": "{C456FC7D-CB44-4d8a-85B2-ACA27B7EC19B}",
+      "name": "category",
       "label": {
-        "en": "client site"
+        "en": "category"
       },
       "definition": {
-        "en": "A reference to a Client site"
+        "en": "A reference to an element in the taxonomy"
       },
       "usage": {
-        "en": "Identification of a client application (website, business application or other) using the event."
+        "en": "The taxonomy categories can be used to enrich the event by linking to other content, filtering and sorting."
+      }
+    },
+    {
+      "EA-Guid": "{584A0E91-25AE-4e75-AEBF-46210C19D092}",
+      "name": "category",
+      "label": {
+        "en": "category"
+      },
+      "definition": {
+        "en": "A reference to an element in the taxonomy"
+      },
+      "usage": {
+        "en": "The taxonomy categories can be used to enrich the profile by linking to other content, filtering and sorting."
+      }
+    },
+    {
+      "EA-Guid": "{81C0C73D-FC2D-40a6-9572-266CC7996AF6}",
+      "name": "category",
+      "label": {
+        "en": "category"
+      },
+      "definition": {
+        "en": "A reference to an element in the taxonomy"
+      },
+      "usage": {
+        "en": "The taxonomy categories can be used to enrich the person by linking to other content, filtering and sorting.  Categories are useful for enriching, for example, a person's skills or areas of expertise."
       }
     },
     {
@@ -1528,55 +1489,6 @@
       },
       "definition": {
         "en": "A reference to a Client site"
-      }
-    },
-    {
-      "EA-Guid": "{5A4708CD-DDDE-493c-BC06-8C0897BAF02E}",
-      "name": "clientSite",
-      "label": {
-        "en": "client site"
-      },
-      "definition": {
-        "en": "A reference to a Client site"
-      },
-      "usage": {
-        "en": "Identification of a client application (website, business application or other) using the services place."
-      }
-    },
-    {
-      "EA-Guid": "{C99BE139-3B62-443c-BE72-B5A4D6093DEC}",
-      "name": "clientSite",
-      "label": {
-        "en": "Client Site"
-      },
-      "definition": {
-        "en": "A reference to a Client site"
-      },
-      "usage": {
-        "en": "Identification of a client application (website, business application or other) using the action form."
-      }
-    },
-    {
-      "EA-Guid": "{23FF9A39-8443-4fef-9F0B-4FF5C1CAD6B0}",
-      "name": "clientSite",
-      "label": {
-        "en": "client site"
-      },
-      "definition": {
-        "en": "A reference to a Client site"
-      },
-      "usage": {
-        "en": "Identification of a client application (website, business application or other) using the press article."
-      }
-    },
-    {
-      "EA-Guid": "{2952614A-714E-4b9d-A2E3-ED436B1EECAC}",
-      "name": "clientSite",
-      "label": {
-        "en": "client site"
-      },
-      "definition": {
-        "en": "A client site"
       }
     },
     {
@@ -1593,13 +1505,101 @@
       }
     },
     {
+      "EA-Guid": "{2952614A-714E-4b9d-A2E3-ED436B1EECAC}",
+      "name": "clientSite",
+      "label": {
+        "en": "client site"
+      },
+      "definition": {
+        "en": "A client site"
+      }
+    },
+    {
+      "EA-Guid": "{23FF9A39-8443-4fef-9F0B-4FF5C1CAD6B0}",
+      "name": "clientSite",
+      "label": {
+        "en": "client site"
+      },
+      "definition": {
+        "en": "A reference to a Client site"
+      },
+      "usage": {
+        "en": "Identification of a client application (website, business application or other) using the press article."
+      }
+    },
+    {
+      "EA-Guid": "{C99BE139-3B62-443c-BE72-B5A4D6093DEC}",
+      "name": "clientSite",
+      "label": {
+        "en": "client site"
+      },
+      "definition": {
+        "en": "A reference to a Client site"
+      },
+      "usage": {
+        "en": "Identification of a client application (website, business application or other) using the action plan."
+      }
+    },
+    {
+      "EA-Guid": "{5A4708CD-DDDE-493c-BC06-8C0897BAF02E}",
+      "name": "clientSite",
+      "label": {
+        "en": "client site"
+      },
+      "definition": {
+        "en": "A reference to a Client site"
+      },
+      "usage": {
+        "en": "Identification of a client application (website, business application or other) using the services place."
+      }
+    },
+    {
+      "EA-Guid": "{2D13CF80-91EB-4951-BCA0-FC76B44607F4}",
+      "name": "clientSite",
+      "label": {
+        "en": "client site"
+      },
+      "definition": {
+        "en": "A reference to a Client site"
+      },
+      "usage": {
+        "en": "Identification of a client application (website, business application or other) using the event."
+      }
+    },
+    {
+      "EA-Guid": "{01D6F71D-2EDB-486a-8491-CA865CAEB217}",
+      "name": "clientSite",
+      "label": {
+        "en": "client site"
+      },
+      "definition": {
+        "en": "A reference to a Client site"
+      },
+      "usage": {
+        "en": "Identification of a client application (website, business application or other) using the profile."
+      }
+    },
+    {
+      "EA-Guid": "{DC699384-7038-45ae-9DAC-1B5352803374}",
+      "name": "clientSite",
+      "label": {
+        "en": "client site"
+      },
+      "definition": {
+        "en": "A reference to a Client site"
+      },
+      "usage": {
+        "en": "Identification of a client application (website, business application or other) using the person record."
+      }
+    },
+    {
       "EA-Guid": "{F4935EDF-23BA-438c-BBE1-8B306F5BAD15}",
       "name": "companyValidationDate",
       "label": {
         "en": "company validation date"
       },
       "definition": {
-        "en": "Date of the last contact while editing de profile."
+        "en": "Date of the last contact while editing the profile."
       },
       "usage": {
         "en": "Date of last contact with the company validating the updated information."
@@ -1622,7 +1622,7 @@
       "EA-Guid": "{E7AF9F19-EB51-4c26-99C6-4A494CD8A857}",
       "name": "contactPerson",
       "label": {
-        "en": "Contact Person"
+        "en": "contact person"
       },
       "definition": {
         "en": "Contact person, referent. A reference to a Qualified Person"
@@ -1641,14 +1641,14 @@
         "en": "A reference to a contact point."
       },
       "usage": {
-        "en": "The contact point brings together all the general contact information of a profile : website, telephone numbers, emails, etc."
+        "en": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc."
       }
     },
     {
       "EA-Guid": "{136BAE7C-CACB-41b6-A007-C0078EAE20C9}",
       "name": "contactPoint",
       "label": {
-        "en": "Contact Point"
+        "en": "contact point"
       },
       "definition": {
         "en": "A reference to a contact point."
@@ -1667,7 +1667,7 @@
         "en": "A reference to a contact point."
       },
       "usage": {
-        "en": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc."
+        "en": "The contact point brings together all the contact information for a legal entity: website, telephone numbers, emails, etc."
       }
     },
     {
@@ -1700,7 +1700,7 @@
         "en": "department"
       },
       "definition": {
-        "en": "The department in which the person is affiliated to."
+        "en": "The department with which the person is affiliated."
       }
     },
     {
@@ -1710,7 +1710,7 @@
         "en": "department"
       },
       "definition": {
-        "en": "The department in which the person is affiliated to."
+        "en": "The department with which the person is affiliated."
       },
       "usage": {
         "en": "Specifies the department or service of the linked profile in which the person works."
@@ -1737,6 +1737,19 @@
       }
     },
     {
+      "EA-Guid": "{86DD5F89-F458-46bc-9804-A17B95AD9C76}",
+      "name": "endDate",
+      "label": {
+        "en": "end date"
+      },
+      "definition": {
+        "en": "An action end date"
+      },
+      "usage": {
+        "en": "The end date indicates the expected (if in progress) or actual (if completed) completion date."
+      }
+    },
+    {
       "EA-Guid": "{CDAD4AD1-4C0D-45f3-9059-13AF36946144}",
       "name": "endDate",
       "label": {
@@ -1750,19 +1763,6 @@
       }
     },
     {
-      "EA-Guid": "{86DD5F89-F458-46bc-9804-A17B95AD9C76}",
-      "name": "endDate",
-      "label": {
-        "en": "End Date"
-      },
-      "definition": {
-        "en": "An action end date"
-      },
-      "usage": {
-        "en": "The end date indicates the expected (if in progress) or actual (if completed) completion date."
-      }
-    },
-    {
       "EA-Guid": "{28A50B6E-7A77-4799-AA7E-3225F7E3F4C7}",
       "name": "endPublicationDate",
       "label": {
@@ -1772,7 +1772,7 @@
         "en": "An event end publication date."
       },
       "usage": {
-        "en": "Indicates whether promotion of the event should stop before the end date is reached. This date can be used, for example, to stop the promotion of an event lasting several days that is impossible to register for once it has started."
+        "en": "Indicates the date on which promotion of the event should stop, if this is before the end date. This date can be used, for example, to stop the promotion of an event lasting several days that is impossible to register for once it has started."
       }
     },
     {
@@ -1811,7 +1811,7 @@
         "en": "A facade photo"
       },
       "usage": {
-        "en": "Photo of the façade of the building housing the service place. This photo enables visitors to recognise the building."
+        "en": "Photo of the façade of the building housing the services place. This photo enables visitors to recognise the building."
       }
     },
     {
@@ -1877,7 +1877,7 @@
       "EA-Guid": "{46772F1F-FB15-47df-8758-51A64A70D5D4}",
       "name": "fullTimeEquivalent",
       "label": {
-        "en": "Full time equivalent"
+        "en": "full time equivalent"
       },
       "definition": {
         "en": "Number of full-time equivalent employees"
@@ -1919,7 +1919,20 @@
         "en": "has private email"
       },
       "definition": {
-        "en": "An non featured email"
+        "en": "A non-featured email"
+      },
+      "usage": {
+        "en": "This email cannot be shared via the delivery APIs."
+      }
+    },
+    {
+      "EA-Guid": "{6DCF9BD6-6D83-471b-AE1F-20B580D7B2A7}",
+      "name": "hasProfile",
+      "label": {
+        "en": "has profile"
+      },
+      "definition": {
+        "en": "The profile to which the person belongs."
       }
     },
     {
@@ -1936,7 +1949,7 @@
       "EA-Guid": "{88CAEB6A-C4FC-42c8-BF9E-37AA17CFB4C0}",
       "name": "idForAccounting",
       "label": {
-        "en": "Id for accounting"
+        "en": "id for accounting"
       },
       "definition": {
         "en": "Relationship with the funder accounting system."
@@ -1949,7 +1962,7 @@
       "EA-Guid": "{0C5D17E0-A4DC-49b9-980D-CBA7FA198780}",
       "name": "image",
       "label": {
-        "en": "Image"
+        "en": "image"
       },
       "definition": {
         "en": "Reference to an Asset."
@@ -1959,20 +1972,10 @@
       }
     },
     {
-      "EA-Guid": "{6DCF9BD6-6D83-471b-AE1F-20B580D7B2A7}",
-      "name": "hasProfile",
-      "label": {
-        "en": "has profile"
-      },
-      "definition": {
-        "en": "The profile to which the person belongs to."
-      }
-    },
-    {
       "EA-Guid": "{B990BC3A-B324-4640-B986-0E0B2E6DEE57}",
       "name": "inOperation",
       "label": {
-        "en": "In operation"
+        "en": "in operation"
       },
       "definition": {
         "en": "A boolean indicating whether the action leads to a concrete result."
@@ -1995,6 +1998,19 @@
       }
     },
     {
+      "EA-Guid": "{4CC87713-93E4-4a7f-B87A-46A6433DB88B}",
+      "name": "internalName",
+      "label": {
+        "en": "internal name"
+      },
+      "definition": {
+        "en": "An internal name for a resource"
+      },
+      "usage": {
+        "en": "The internal name is useful for finding the record among others in an application such as a back office. The internal name of the Action Plan Profile is made up of the profile's Title and its role in the Action."
+      }
+    },
+    {
       "EA-Guid": "{466FC394-1380-4e68-A423-8771631C318A}",
       "name": "internalName",
       "label": {
@@ -2002,19 +2018,6 @@
       },
       "definition": {
         "en": "An internal name"
-      }
-    },
-    {
-      "EA-Guid": "{4CC87713-93E4-4a7f-B87A-46A6433DB88B}",
-      "name": "internalName",
-      "label": {
-        "en": "internal name"
-      },
-      "definition": {
-        "en": "An internal name pour une resource"
-      },
-      "usage": {
-        "en": "The internal name is useful for finding the record among others in an application such as a back office. The internal name of the Action Plan Profile is made up of the profile's Title and its role in the Action."
       }
     },
     {
@@ -2057,19 +2060,6 @@
       }
     },
     {
-      "EA-Guid": "{91730F41-E4A4-4314-8AE5-43041D1FCC56}",
-      "name": "language",
-      "label": {
-        "en": "language"
-      },
-      "definition": {
-        "en": "A language"
-      },
-      "usage": {
-        "en": "Represents the person's main language."
-      }
-    },
-    {
       "EA-Guid": "{DB6C5628-CE22-4afb-AFA2-F14DFAD46885}",
       "name": "language",
       "label": {
@@ -2083,16 +2073,29 @@
       }
     },
     {
+      "EA-Guid": "{91730F41-E4A4-4314-8AE5-43041D1FCC56}",
+      "name": "language",
+      "label": {
+        "en": "language"
+      },
+      "definition": {
+        "en": "A language"
+      },
+      "usage": {
+        "en": "Represents the person's main language."
+      }
+    },
+    {
       "EA-Guid": "{C2FDF8E5-104F-4b98-BC5F-796661368556}",
       "name": "leaderMission",
       "label": {
-        "en": "Leader mission"
+        "en": "leader mission"
       },
       "definition": {
         "en": "Action leader's mission"
       },
       "usage": {
-        "en": "Indicates the main missions of the action leader (role of this stakeholder). Potential missions : Communication, Governance, Transformation, Watch."
+        "en": "Indicates the main missions of the action leader (role of this stakeholder). Potential missions: Communication, Governance, Transformation, Watch."
       }
     },
     {
@@ -2105,20 +2108,7 @@
         "en": "A legal entity"
       },
       "usage": {
-        "en": "NOTE"
-      }
-    },
-    {
-      "EA-Guid": "{584F65FA-39E1-4a3d-922B-C78C97D76608}",
-      "name": "logo",
-      "label": {
-        "en": "logo"
-      },
-      "definition": {
-        "en": "The profile logo."
-      },
-      "usage": {
-        "en": "If the logo contains text, it may be different in different languages."
+        "en": "TODO"
       }
     },
     {
@@ -2135,29 +2125,42 @@
       }
     },
     {
-      "EA-Guid": "{89A6D76E-F337-49bd-8744-16DC75C275A2}",
-      "name": "mainNaceCode",
+      "EA-Guid": "{584F65FA-39E1-4a3d-922B-C78C97D76608}",
+      "name": "logo",
       "label": {
-        "en": "main NACE code"
+        "en": "logo"
       },
       "definition": {
-        "en": "A main NACE code"
+        "en": "The profile logo."
       },
       "usage": {
-        "en": "NACE code best representing the profile's main activity."
+        "en": "If the logo contains text, it may be different in different languages."
       }
     },
     {
       "EA-Guid": "{6DBC5D77-05D0-46e8-AAF4-B81CE1C53C6F}",
       "name": "mainNaceCode",
       "label": {
-        "en": "main NACE code"
+        "en": "main nace code"
       },
       "definition": {
         "en": "Preferred NACE code."
       },
       "usage": {
         "en": "NACE code that best represents the activity."
+      }
+    },
+    {
+      "EA-Guid": "{89A6D76E-F337-49bd-8744-16DC75C275A2}",
+      "name": "mainNaceCode",
+      "label": {
+        "en": "main nace code"
+      },
+      "definition": {
+        "en": "A main NACE code"
+      },
+      "usage": {
+        "en": "NACE code best representing the profile's main activity."
       }
     },
     {
@@ -2177,7 +2180,7 @@
       "EA-Guid": "{E34F396F-9DDF-4e66-B7B2-C943CA1ABDA4}",
       "name": "marketingShortDescription",
       "label": {
-        "en": "Marketing short description"
+        "en": "marketing short description"
       },
       "definition": {
         "en": "Brief marketing description of an action"
@@ -2190,7 +2193,7 @@
       "EA-Guid": "{7F766661-BE26-4b1b-8208-BAA7258F1C6F}",
       "name": "marketingTitle",
       "label": {
-        "en": "Marketing title"
+        "en": "marketing title"
       },
       "definition": {
         "en": "Promotional title or catchphrase aimed at a specific audience."
@@ -2214,9 +2217,9 @@
     },
     {
       "EA-Guid": "{4482CBCD-639B-4d2d-B37D-299AD460B8DF}",
-      "name": "nonFeaturedPerson",
+      "name": "non-featuredPerson",
       "label": {
-        "en": "non featured person"
+        "en": "non-featured person"
       },
       "definition": {
         "en": "A reference to a Qualified Person"
@@ -2226,10 +2229,23 @@
       }
     },
     {
+      "EA-Guid": "{931BD173-0F8D-4531-BB0B-8150A89B3565}",
+      "name": "numberOfAttendees",
+      "label": {
+        "en": "number of attendees"
+      },
+      "definition": {
+        "en": "Number of people attending a conference or other gathering."
+      },
+      "usage": {
+        "en": "Number of people taking part in action-related activities, such as events."
+      }
+    },
+    {
       "EA-Guid": "{CF569294-405F-4e7e-A64B-FC423D3C0197}",
       "name": "numberOfBeneficiaries",
       "label": {
-        "en": "Number of beneficiaries"
+        "en": "number of beneficiaries"
       },
       "definition": {
         "en": "Number of beneficiaries of the action."
@@ -2240,9 +2256,9 @@
     },
     {
       "EA-Guid": "{BDC7078A-4DD1-4852-84B2-187C64249C9A}",
-      "name": "numberOfEquipments",
+      "name": "numberOfEquipment",
       "label": {
-        "en": "Number of equipments"
+        "en": "number of equipment"
       },
       "definition": {
         "en": "Number of pieces of equipment used."
@@ -2253,9 +2269,9 @@
     },
     {
       "EA-Guid": "{8F57685A-5FC3-4940-9C36-A7A1FE8B0B5B}",
-      "name": "numberOfOccurences",
+      "name": "numberOfOccurrences",
       "label": {
-        "en": "Number of occurences"
+        "en": "number of occurrences"
       },
       "definition": {
         "en": "Number of events linked to the action."
@@ -2265,23 +2281,10 @@
       }
     },
     {
-      "EA-Guid": "{931BD173-0F8D-4531-BB0B-8150A89B3565}",
-      "name": "numberOfAttendees",
-      "label": {
-        "en": "Number of attendees"
-      },
-      "definition": {
-        "en": "Number of people attending a conference or other gathering."
-      },
-      "usage": {
-        "en": "Number of people taking part in action-related activities, such as events."
-      }
-    },
-    {
       "EA-Guid": "{62557F04-AFDE-4a9e-89B6-F030AEF414D1}",
-      "name": "occurence",
+      "name": "occurrence",
       "label": {
-        "en": "Occurence"
+        "en": "occurrence"
       },
       "definition": {
         "en": "Occurrence of event"
@@ -2317,26 +2320,13 @@
       "EA-Guid": "{ABEBC1F1-B737-4a15-9903-AD75EB1FF8A3}",
       "name": "participant",
       "label": {
-        "en": "Participant"
+        "en": "participant"
       },
       "definition": {
         "en": "A participant to an action. A reference to a Qualified Person"
       },
       "usage": {
-        "en": "Person taking part in the action, in the project. For example, a researcher in a research project, a participant in a promotional project or project, etc."
-      }
-    },
-    {
-      "EA-Guid": "{0D659D88-5D13-4a6b-B310-78D4CD70DF11}",
-      "name": "partner",
-      "label": {
-        "en": "partner"
-      },
-      "definition": {
-        "en": "A reference to a profile partner"
-      },
-      "usage": {
-        "en": "Profile representing a partner of the event."
+        "en": "Person taking part in the action, in the project. For example, a researcher in a research project, a participant in a promotional project, etc."
       }
     },
     {
@@ -2353,6 +2343,19 @@
       }
     },
     {
+      "EA-Guid": "{0D659D88-5D13-4a6b-B310-78D4CD70DF11}",
+      "name": "partner",
+      "label": {
+        "en": "partner"
+      },
+      "definition": {
+        "en": "A reference to a profile partner"
+      },
+      "usage": {
+        "en": "Profile representing a partner of the event."
+      }
+    },
+    {
       "EA-Guid": "{CE7F42FA-D438-4715-949F-A78DEC7F544B}",
       "name": "partnerAdditionalDescription",
       "label": {
@@ -2362,7 +2365,7 @@
         "en": "A partner additional description"
       },
       "usage": {
-        "en": "Thanks to its Site Client, a partner can use this description as an alternative to, or in addition to, the classic."
+        "en": "Thanks to its client site, a partner can use this description as an alternative to, or in addition to, the standard additional description."
       }
     },
     {
@@ -2372,7 +2375,7 @@
         "en": "pdf file"
       },
       "definition": {
-        "en": "A pdf file"
+        "en": "A PDF file"
       },
       "usage": {
         "en": "PDF file presenting the content of the article. Mainly used for studies."
@@ -2390,12 +2393,12 @@
     },
     {
       "EA-Guid": "{E4BEEBEB-EB9B-4723-8FE8-78675BFCFB7C}",
-      "name": "plateformContactPerson",
+      "name": "platformContactPerson",
       "label": {
-        "en": "plateform contact person"
+        "en": "platform contact person"
       },
       "definition": {
-        "en": "A plateform contact person"
+        "en": "A platform contact person"
       },
       "usage": {
         "en": "Represents the main point of contact for the purposes of managing the profile within the Platform or for sending a targeted letter (request for an update or verification, etc.)."
@@ -2405,26 +2408,13 @@
       "EA-Guid": "{05C37A65-3BC3-47fa-AA9A-99B09D800386}",
       "name": "price",
       "label": {
-        "en": "Price"
+        "en": "price"
       },
       "definition": {
         "en": "Indication of cost or price in free text"
       },
       "usage": {
-        "en": "Price or amount and conditions of participation. The price or cost may vary depending on membership of a network or any other condition. Free text is used to express these conditions.\nExample: x  for members, y  for non-members of an organisation."
-      }
-    },
-    {
-      "EA-Guid": "{E83E777C-9339-4512-9141-D39C80994829}",
-      "name": "profile",
-      "label": {
-        "en": "profile"
-      },
-      "definition": {
-        "en": "A profile"
-      },
-      "usage": {
-        "en": "NOTE"
+        "en": "Price or amount and conditions of participation. The price or cost may vary depending on membership of a network or any other condition. Free text is used to express these conditions.\r\nExample: x  for members, y  for non-members of an organisation."
       }
     },
     {
@@ -2439,6 +2429,19 @@
     },
     {
       "EA-Guid": "{E83E777C-9339-4512-9141-D39C80994829}",
+      "name": "profile",
+      "label": {
+        "en": "profile"
+      },
+      "definition": {
+        "en": "A profile"
+      },
+      "usage": {
+        "en": "TODO"
+      }
+    },
+    {
+      "EA-Guid": "{E83E777C-9339-4512-9141-D39C80994829}",
       "name": "profileLegalEntity",
       "label": {
         "en": "profile legal entity"
@@ -2447,14 +2450,14 @@
         "en": "A profile legal entity"
       },
       "usage": {
-        "en": "Legal entity responsible for the profile"
+        "en": "Legal entity responsible for the profile."
       }
     },
     {
       "EA-Guid": "{FDE4150C-319D-40a0-A0E0-EFC97888BAE0}",
       "name": "progressStatus",
       "label": {
-        "en": "Progress status"
+        "en": "progress status"
       },
       "definition": {
         "en": "Progress status of the action."
@@ -2464,13 +2467,13 @@
       "EA-Guid": "{9ECF441C-01EB-463c-8BBC-E7BA286F5A84}",
       "name": "projectHolder",
       "label": {
-        "en": "Project holder"
+        "en": "project holder"
       },
       "definition": {
         "en": "Person responsible for the action.  A reference to a Qualified Person"
       },
       "usage": {
-        "en": "The project holder is the person carrying out the the action."
+        "en": "The project holder is the person carrying out the action."
       }
     },
     {
@@ -2496,7 +2499,7 @@
         "en": "A published date"
       },
       "usage": {
-        "en": "Date the press article was officialy published (put online)."
+        "en": "Date the press article was officially published (put online)."
       }
     },
     {
@@ -2509,17 +2512,17 @@
         "en": "A quoted person"
       },
       "usage": {
-        "en": "Preson linked to the article because they are mentioned in it."
+        "en": "Person linked to the article because they are mentioned in it."
       }
     },
     {
       "EA-Guid": "{CF1AC349-3AEB-4fbd-A2C9-955F0B435909}",
       "name": "quotedProfile",
       "label": {
-        "en": "Quoted profile"
+        "en": "quoted profile"
       },
       "definition": {
-        "en": "A quoted profil"
+        "en": "A quoted profile"
       },
       "usage": {
         "en": "Profile linked to the article because it is quoted there."
@@ -2529,7 +2532,7 @@
       "EA-Guid": "{08F82D87-B7C4-4e20-AE15-7A1623FDC3F0}",
       "name": "referenceActionPlan",
       "label": {
-        "en": "Reference action plan"
+        "en": "reference action plan"
       },
       "definition": {
         "en": "The reference Action Plan, the parent."
@@ -2542,7 +2545,7 @@
       "EA-Guid": "{62D9391A-41CB-496d-BBD5-DD4BC0A47F66}",
       "name": "referenceCategory",
       "label": {
-        "en": "Reference Category"
+        "en": "reference category"
       },
       "definition": {
         "en": "The reference category."
@@ -2555,7 +2558,7 @@
       "EA-Guid": "{314E94FB-59ED-4777-8005-46F91A4CC5BA}",
       "name": "referenceEvent",
       "label": {
-        "en": "Reference event"
+        "en": "reference event"
       },
       "definition": {
         "en": "The reference event."
@@ -2565,7 +2568,7 @@
       "EA-Guid": "{D6EAF2B0-C092-45f3-8481-E4F112888BD4}",
       "name": "referencePost",
       "label": {
-        "en": "Reference post"
+        "en": "reference post"
       },
       "definition": {
         "en": "The reference Post of the action."
@@ -2597,7 +2600,7 @@
         "en": "A related external link"
       },
       "usage": {
-        "en": "Reference a URL directly related to the subject of the post."
+        "en": "References a URL directly related to the subject of the post."
       }
     },
     {
@@ -2617,7 +2620,7 @@
       "EA-Guid": "{E6BB0979-1027-49c7-A30E-C7B6829F994D}",
       "name": "relatedFile",
       "label": {
-        "en": "Related file"
+        "en": "related file"
       },
       "definition": {
         "en": "A file to download, an available file."
@@ -2692,23 +2695,13 @@
       }
     },
     {
-      "EA-Guid": "{A3FC8D4D-34D8-4330-B0CA-D4F0A9BBDC83}",
+      "EA-Guid": "{8497933B-68B8-4de1-9AA7-430CE2F57316}",
       "name": "role",
       "label": {
         "en": "role"
       },
       "definition": {
-        "en": "The function of a qualified person."
-      }
-    },
-    {
-      "EA-Guid": "{2BC0B426-511B-4286-BC27-864A60B95C01}",
-      "name": "role",
-      "label": {
-        "en": "role"
-      },
-      "definition": {
-        "en": "A role"
+        "en": "The function of a person."
       }
     },
     {
@@ -2722,13 +2715,23 @@
       }
     },
     {
-      "EA-Guid": "{8497933B-68B8-4de1-9AA7-430CE2F57316}",
+      "EA-Guid": "{2BC0B426-511B-4286-BC27-864A60B95C01}",
       "name": "role",
       "label": {
         "en": "role"
       },
       "definition": {
-        "en": "The function of a person."
+        "en": "A role"
+      }
+    },
+    {
+      "EA-Guid": "{A3FC8D4D-34D8-4330-B0CA-D4F0A9BBDC83}",
+      "name": "role",
+      "label": {
+        "en": "role"
+      },
+      "definition": {
+        "en": "The function of a qualified person."
       }
     },
     {
@@ -2741,7 +2744,7 @@
         "en": "A schedule additional information"
       },
       "usage": {
-        "en": "Allows you to specify some information about the timetable: nocture on one of the days of the event, variable times depending on the day, etc."
+        "en": "Allows you to specify some information about the timetable: a late-night opening (nocturne) on one of the days of the event, variable times depending on the day, etc."
       }
     },
     {
@@ -2754,11 +2757,11 @@
         "en": "A schedule not specified"
       },
       "usage": {
-        "en": "Used to indicate to a client application whether hours should be ignored.  Defaults to false, the variable is set to True if the hours are to be ignored."
+        "en": "Used to indicate to a client application whether the hours should be ignored. Defaults to false; set to true if the hours are to be ignored."
       }
     },
     {
-      "EA-Guid": "{0B3E3A88-1877-4037-94A4-400BDF83842D}",
+      "EA-Guid": "{F1F5A860-8661-463a-B497-4E5DA7B0A0D7}",
       "name": "shortDescription",
       "label": {
         "en": "short description"
@@ -2768,55 +2771,13 @@
       }
     },
     {
-      "EA-Guid": "{EECF3072-8E9F-459a-8AA9-A17BA2E1F896}",
+      "EA-Guid": "{FBF7CDA0-EC14-49e2-8898-D51D7BE807A7}",
       "name": "shortDescription",
       "label": {
         "en": "short description"
       },
       "definition": {
-        "en": "A short description of the profile."
-      },
-      "usage": {
-        "en": "The description is essential for describing the profile succinctly and clearly.  It must convey the main activity of the profile and enable its products and/or services to be understood, without any further explanation."
-      }
-    },
-    {
-      "EA-Guid": "{B990E1A9-EE8B-4dbe-97AA-0CD50893C75F}",
-      "name": "shortDescription",
-      "label": {
-        "en": "short description"
-      },
-      "definition": {
-        "en": "A short description of the event."
-      },
-      "usage": {
-        "en": "The description is essential for describing the event succinctly and clearly.  As a complement to the title, it must convey the entire objective of the event and enable its scope to be understood, without any further explanation."
-      }
-    },
-    {
-      "EA-Guid": "{A21674CE-3D8E-418a-8157-6EE2BB5DE0AF}",
-      "name": "shortDescription",
-      "label": {
-        "en": "short description"
-      },
-      "definition": {
-        "en": "A short description of the services place."
-      },
-      "usage": {
-        "en": "The description is essential for describing the services place succinctly and clearly.  As a complement to the title, it must convey the entire objective of the services and enable its scope to be understood, without any further explanation."
-      }
-    },
-    {
-      "EA-Guid": "{35864668-A1D5-4410-9305-7727AA5F3C93}",
-      "name": "shortDescription",
-      "label": {
-        "en": "Short description"
-      },
-      "definition": {
-        "en": "A short description of the action."
-      },
-      "usage": {
-        "en": "The description is essential for describing the action succinctly and clearly.  As a complement to the title, it must convey the entire objective of the action and enable its scope to be understood, without any further explanation."
+        "en": "A short description"
       }
     },
     {
@@ -2833,17 +2794,59 @@
       }
     },
     {
-      "EA-Guid": "{FBF7CDA0-EC14-49e2-8898-D51D7BE807A7}",
+      "EA-Guid": "{35864668-A1D5-4410-9305-7727AA5F3C93}",
       "name": "shortDescription",
       "label": {
         "en": "short description"
       },
       "definition": {
-        "en": "A short description"
+        "en": "A short description of the action."
+      },
+      "usage": {
+        "en": "The description is essential for describing the action succinctly and clearly.  As a complement to the title, it must convey the entire objective of the action and enable its scope to be understood, without any further explanation."
       }
     },
     {
-      "EA-Guid": "{F1F5A860-8661-463a-B497-4E5DA7B0A0D7}",
+      "EA-Guid": "{A21674CE-3D8E-418a-8157-6EE2BB5DE0AF}",
+      "name": "shortDescription",
+      "label": {
+        "en": "short description"
+      },
+      "definition": {
+        "en": "A short description of the services place."
+      },
+      "usage": {
+        "en": "The description is essential for describing the services place succinctly and clearly.  As a complement to the title, it must convey the entire objective of the services and enable its scope to be understood, without any further explanation."
+      }
+    },
+    {
+      "EA-Guid": "{B990E1A9-EE8B-4dbe-97AA-0CD50893C75F}",
+      "name": "shortDescription",
+      "label": {
+        "en": "short description"
+      },
+      "definition": {
+        "en": "A short description of the event."
+      },
+      "usage": {
+        "en": "The description is essential for describing the event succinctly and clearly.  As a complement to the title, it must convey the entire objective of the event and enable its scope to be understood, without any further explanation."
+      }
+    },
+    {
+      "EA-Guid": "{EECF3072-8E9F-459a-8AA9-A17BA2E1F896}",
+      "name": "shortDescription",
+      "label": {
+        "en": "short description"
+      },
+      "definition": {
+        "en": "A short description of the profile."
+      },
+      "usage": {
+        "en": "The description is essential for describing the profile succinctly and clearly.  It must convey the main activity of the profile and enable its products and/or services to be understood, without any further explanation."
+      }
+    },
+    {
+      "EA-Guid": "{0B3E3A88-1877-4037-94A4-400BDF83842D}",
       "name": "shortDescription",
       "label": {
         "en": "short description"
@@ -2866,45 +2869,6 @@
       }
     },
     {
-      "EA-Guid": "{8F48D86A-0D84-4d2d-AC97-5568A327D3EF}",
-      "name": "slug",
-      "label": {
-        "en": "slug"
-      },
-      "definition": {
-        "en": "Last section of a URL."
-      },
-      "usage": {
-        "en": "Unique across all persons, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
-      }
-    },
-    {
-      "EA-Guid": "{091672DC-7D4B-4237-87FE-28A9712B32BD}",
-      "name": "slug",
-      "label": {
-        "en": "slug"
-      },
-      "definition": {
-        "en": "Last section of a URL."
-      },
-      "usage": {
-        "en": "Unique across all posts, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
-      }
-    },
-    {
-      "EA-Guid": "{DB31132D-5EC3-4da2-A6CE-5E2A8A0CF7B2}",
-      "name": "slug",
-      "label": {
-        "en": "slug"
-      },
-      "definition": {
-        "en": "Last section of a URL."
-      },
-      "usage": {
-        "en": "Usage : Unique across all public events, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
-      }
-    },
-    {
       "EA-Guid": "{DB95232A-540D-40b1-8C09-771147DC4DD0}",
       "name": "slug",
       "label": {
@@ -2915,6 +2879,19 @@
       },
       "usage": {
         "en": "Unique across all posts, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
+      }
+    },
+    {
+      "EA-Guid": "{C12F5634-80B4-4b1d-AE3F-F452E4C51356}",
+      "name": "slug",
+      "label": {
+        "en": "slug"
+      },
+      "definition": {
+        "en": "Last section of a URL."
+      },
+      "usage": {
+        "en": "Unique across all action plans, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
       }
     },
     {
@@ -2931,16 +2908,42 @@
       }
     },
     {
-      "EA-Guid": "{C12F5634-80B4-4b1d-AE3F-F452E4C51356}",
+      "EA-Guid": "{DB31132D-5EC3-4da2-A6CE-5E2A8A0CF7B2}",
       "name": "slug",
       "label": {
-        "en": "Slug"
+        "en": "slug"
       },
       "definition": {
         "en": "Last section of a URL."
       },
       "usage": {
-        "en": "Unique across all action plans, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
+        "en": "Unique across all public events, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
+      }
+    },
+    {
+      "EA-Guid": "{091672DC-7D4B-4237-87FE-28A9712B32BD}",
+      "name": "slug",
+      "label": {
+        "en": "slug"
+      },
+      "definition": {
+        "en": "Last section of a URL."
+      },
+      "usage": {
+        "en": "Unique across all profiles, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
+      }
+    },
+    {
+      "EA-Guid": "{8F48D86A-0D84-4d2d-AC97-5568A327D3EF}",
+      "name": "slug",
+      "label": {
+        "en": "slug"
+      },
+      "definition": {
+        "en": "Last section of a URL."
+      },
+      "usage": {
+        "en": "Unique across all persons, it is used to create a unique URL for a domain (https://domain/lg/resource/slug)."
       }
     },
     {
@@ -2993,6 +2996,19 @@
       }
     },
     {
+      "EA-Guid": "{C0286EC1-4733-444b-80B3-2E014B9711C5}",
+      "name": "startDate",
+      "label": {
+        "en": "start date"
+      },
+      "definition": {
+        "en": "Start date of the action plan."
+      },
+      "usage": {
+        "en": "Start date of the action or financial support linked to the action."
+      }
+    },
+    {
       "EA-Guid": "{64147DA3-BF3C-42f6-BB48-4372B9E2733E}",
       "name": "startDate",
       "label": {
@@ -3006,79 +3022,20 @@
       }
     },
     {
-      "EA-Guid": "{C0286EC1-4733-444b-80B3-2E014B9711C5}",
-      "name": "startDate",
-      "label": {
-        "en": "Start date"
-      },
-      "definition": {
-        "en": "Start date of the action plan."
-      },
-      "usage": {
-        "en": "Start date of the action or financial support linked to the action."
-      }
-    },
-    {
-      "EA-Guid": "{2BBFCBD7-AC41-40ad-9206-ACD289BD918B}",
-      "name": "title",
-      "label": {
-        "en": "title"
-      },
-      "definition": {
-        "en": "A title."
-      }
-    },
-    {
-      "EA-Guid": "{017F100D-42F9-4560-90DC-A65353B7335B}",
-      "name": "title",
-      "label": {
-        "en": "title"
-      },
-      "definition": {
-        "en": "A title"
-      },
-      "usage": {
-        "en": "The full name of the profile or activity."
-      }
-    },
-    {
       "EA-Guid": "{077DFF5E-40E3-4d23-89D6-1932B3FC5B67}",
       "name": "title",
       "label": {
         "en": "title"
       },
       "definition": {
-        "en": "title of the post."
+        "en": "Title of the post."
       },
       "usage": {
         "en": "The title describes, in a few words, the content of the post and its scope."
       }
     },
     {
-      "EA-Guid": "{65FF3CA6-DC0B-4a11-ACC0-CE8EF5616B4F}",
-      "name": "title",
-      "label": {
-        "en": "title"
-      },
-      "definition": {
-        "en": "A title"
-      },
-      "usage": {
-        "en": "The full name of the services place."
-      }
-    },
-    {
-      "EA-Guid": "{940CAC98-7389-4acd-A893-BF2F2393764F}",
-      "name": "title",
-      "label": {
-        "en": "Title"
-      },
-      "definition": {
-        "en": "title of the action plan."
-      }
-    },
-    {
-      "EA-Guid": "{FD255CE1-EEAE-4022-82E6-947F87D20588}",
+      "EA-Guid": "{0F1597AB-C63D-47f5-8512-15EB010A694A}",
       "name": "title",
       "label": {
         "en": "title"
@@ -3101,7 +3058,7 @@
       }
     },
     {
-      "EA-Guid": "{0F1597AB-C63D-47f5-8512-15EB010A694A}",
+      "EA-Guid": "{FD255CE1-EEAE-4022-82E6-947F87D20588}",
       "name": "title",
       "label": {
         "en": "title"
@@ -3111,10 +3068,56 @@
       }
     },
     {
+      "EA-Guid": "{940CAC98-7389-4acd-A893-BF2F2393764F}",
+      "name": "title",
+      "label": {
+        "en": "title"
+      },
+      "definition": {
+        "en": "Title of the action plan."
+      }
+    },
+    {
+      "EA-Guid": "{65FF3CA6-DC0B-4a11-ACC0-CE8EF5616B4F}",
+      "name": "title",
+      "label": {
+        "en": "title"
+      },
+      "definition": {
+        "en": "A title"
+      },
+      "usage": {
+        "en": "The full name of the services place."
+      }
+    },
+    {
+      "EA-Guid": "{017F100D-42F9-4560-90DC-A65353B7335B}",
+      "name": "title",
+      "label": {
+        "en": "title"
+      },
+      "definition": {
+        "en": "A title"
+      },
+      "usage": {
+        "en": "The full name of the profile or activity."
+      }
+    },
+    {
+      "EA-Guid": "{2BBFCBD7-AC41-40ad-9206-ACD289BD918B}",
+      "name": "title",
+      "label": {
+        "en": "title"
+      },
+      "definition": {
+        "en": "A title."
+      }
+    },
+    {
       "EA-Guid": "{E76DFA52-44B4-4648-9981-CDCE4AD3F6F5}",
       "name": "totalBudget",
       "label": {
-        "en": "Total budget"
+        "en": "total budget"
       },
       "definition": {
         "en": "Total budget for the action"
@@ -3127,23 +3130,13 @@
       "EA-Guid": "{B9138DEB-F4B0-45f5-ADC0-873445E78F07}",
       "name": "totalWalloonBudget",
       "label": {
-        "en": "Total walloon budget"
+        "en": "total walloon budget"
       },
       "definition": {
         "en": "Walloon budget dedicated to the action."
       },
       "usage": {
         "en": "Total budget allocated by the Walloon Region to the action. Details may or may not be included in the Action Plan Profiles."
-      }
-    },
-    {
-      "EA-Guid": "{2A0911AC-F5D1-4047-9E97-045CDC12A7B5}",
-      "name": "type",
-      "label": {
-        "en": "type"
-      },
-      "definition": {
-        "en": "Type of the event."
       }
     },
     {
@@ -3160,16 +3153,6 @@
       }
     },
     {
-      "EA-Guid": "{8ABAF383-F0B6-4ab4-8442-B92D0C3D18D7}",
-      "name": "type",
-      "label": {
-        "en": "Type"
-      },
-      "definition": {
-        "en": "Type of action taken"
-      }
-    },
-    {
       "EA-Guid": "{A2476854-ADC7-47f9-849E-25D52CAD7CFF}",
       "name": "type",
       "label": {
@@ -3183,10 +3166,30 @@
       }
     },
     {
+      "EA-Guid": "{8ABAF383-F0B6-4ab4-8442-B92D0C3D18D7}",
+      "name": "type",
+      "label": {
+        "en": "type"
+      },
+      "definition": {
+        "en": "Type of action taken"
+      }
+    },
+    {
+      "EA-Guid": "{2A0911AC-F5D1-4047-9E97-045CDC12A7B5}",
+      "name": "type",
+      "label": {
+        "en": "type"
+      },
+      "definition": {
+        "en": "Type of the event."
+      }
+    },
+    {
       "EA-Guid": "{86F1B936-6561-4af6-8B8A-1F343FC83169}",
       "name": "walloonRegionConventionNumber",
       "label": {
-        "en": "Walloon region convention number"
+        "en": "walloon region convention number"
       },
       "definition": {
         "en": "A Walloon convention number"
