@@ -1,11 +1,6 @@
 {
   "@context": {
     "ActionPlan": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ActionPlan",
-    "ActionPlan.contactPoint": {
-      "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint",
-      "@type": "@id"
-    },
     "ActionPlan.shortDescription": {
       "@container": "@set",
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/shortDescription",
@@ -60,11 +55,6 @@
     "Identifier": "http://www.w3.org/ns/adms#Identifier",
     "Integer": "http://www.w3.org/2001/XMLSchema#integer",
     "LegalEntity": "http://www.w3.org/ns/legal#LegalEntity",
-    "LegalEntity.contactPoint": {
-      "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint",
-      "@type": "@id"
-    },
     "LegalEntityPerson": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/LegalEntityPerson",
     "LegalEntityPerson.shortDescription": {
       "@container": "@set",
@@ -82,11 +72,6 @@
     "Person.address": {
       "@container": "@set",
       "@id": "http://www.w3.org/ns/locn#address",
-      "@type": "@id"
-    },
-    "Person.contactPoint": {
-      "@container": "@set",
-      "@id": "http://data.europa.eu/m8g/contactPoint",
       "@type": "@id"
     },
     "Person.internalName": {
@@ -122,11 +107,6 @@
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/address",
       "@type": "@id"
     },
-    "Profile.contactPoint": {
-      "@container": "@set",
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint",
-      "@type": "@id"
-    },
     "Profile.partner": {
       "@container": "@set",
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/partner",
@@ -152,11 +132,6 @@
     "PublicEvent.address": {
       "@container": "@set",
       "@id": "http://www.w3.org/ns/locn#address",
-      "@type": "@id"
-    },
-    "PublicEvent.contactPoint": {
-      "@container": "@set",
-      "@id": "hthttp://data.europa.eu/m8g/contactPoint",
       "@type": "@id"
     },
     "PublicEvent.partner": {
@@ -357,6 +332,11 @@
     "contactPerson": {
       "@container": "@set",
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPerson",
+      "@type": "@id"
+    },
+    "contactPoint": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/contactPoint",
       "@type": "@id"
     },
     "contactType": {
@@ -755,7 +735,6 @@
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "profile": {
-      "@container": "@set",
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/profile",
       "@type": "@id"
     },

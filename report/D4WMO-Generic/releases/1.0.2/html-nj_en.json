@@ -17,8 +17,8 @@
     },
     "status": "Draft",
     "statuslabel": "Onbekend",
-    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/82716ad9988dae078fcb76af6b72a055872ca716",
-    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/82716ad9988dae078fcb76af6b72a055872ca716/CHANGELOG",
+    "repositoryurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/tree/92b8f94171f5ec1bdeed14a70d8c8f76f6e3e634",
+    "changelogurl": "git@github.com:DigitalWallonia/data4wallonia-thema.git/blob/92b8f94171f5ec1bdeed14a70d8c8f76f6e3e634/CHANGELOG",
     "feedbackurl": "https://github.com/DigitalWallonia/D4WMO-Generic/issues",
     "standaardregisterurl": "https://github.com/DigitalWallonia/D4WMO-Generic/blob/master/releases/1.0.2/Changelog.md",
     "usesVocs": [],
@@ -549,49 +549,6 @@
       },
       "properties": [
         {
-          "uri": "hthttp://data.europa.eu/m8g/contactPoint",
-          "name": "contactPoint",
-          "sort": "contact point",
-          "label": {
-            "en": "contact point"
-          },
-          "description": {
-            "en": "A reference to a contact point."
-          },
-          "usage": {
-            "en": "The contact point brings together all the general contact information for an event: website, telephone numbers, emails, etc."
-          },
-          "domain": [
-            {
-              "EA-Name": "PublicEvent",
-              "uri": "http://data.europa.eu/m8g/PublicEvent"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "ContactPoint",
-              "range_uri": "http://data.europa.eu/m8g/ContactPoint"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Contact Point",
-              "range_puri": "http://data.europa.eu/m8g/ContactPoint",
-              "range_label": {
-                "en": "Contact Point"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "uri": "hthttp://data.europa.eu/m8g/contactPoint",
-            "definition-en": "A reference to a contact point.",
-            "usageNote-en": "The contact point brings together all the general contact information for an event: website, telephone numbers, emails, etc.",
-            "label-en": "contact point"
-          }
-        },
-        {
           "uri": "http://data.europa.eu/m8g/audience",
           "name": "audience",
           "sort": "audience",
@@ -632,6 +589,49 @@
             "definition-en": "The target group of people for whom the Public Event is created.",
             "label-en": "audience",
             "usageNote-en": "A few words and terms defining the event's target audience: citizens, companies in a particular sector, public bodies, students, etc."
+          }
+        },
+        {
+          "uri": "http://data.europa.eu/m8g/contactPoint",
+          "name": "contactPoint",
+          "sort": "contact point",
+          "label": {
+            "en": "contact point"
+          },
+          "description": {
+            "en": "A reference to a contact point."
+          },
+          "usage": {
+            "en": "The contact point brings together all the general contact information for an event: website, telephone numbers, emails, etc."
+          },
+          "domain": [
+            {
+              "EA-Name": "PublicEvent",
+              "uri": "http://data.europa.eu/m8g/PublicEvent"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "ContactPoint",
+              "range_uri": "http://data.europa.eu/m8g/ContactPoint"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Contact Point",
+              "range_puri": "http://data.europa.eu/m8g/ContactPoint",
+              "range_label": {
+                "en": "Contact Point"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "uri": "http://data.europa.eu/m8g/contactPoint",
+            "definition-en": "A reference to a contact point.",
+            "usageNote-en": "The contact point brings together all the general contact information for an event: website, telephone numbers, emails, etc.",
+            "label-en": "contact point"
           }
         },
         {
@@ -1928,6 +1928,49 @@
       },
       "properties": [
         {
+          "uri": "http://data.europa.eu/m8g/contactPoint",
+          "name": "contactPoint",
+          "sort": "contact point",
+          "label": {
+            "en": "contact point"
+          },
+          "description": {
+            "en": "A reference to a contact point."
+          },
+          "usage": {
+            "en": "The contact point brings together all the contact information for a legal entity: website, telephone numbers, emails, etc."
+          },
+          "domain": [
+            {
+              "EA-Name": "LegalEntity",
+              "uri": "http://www.w3.org/ns/legal#LegalEntity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "ContactPoint",
+              "range_uri": "http://data.europa.eu/m8g/ContactPoint"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Contact Point",
+              "range_puri": "http://data.europa.eu/m8g/ContactPoint",
+              "range_label": {
+                "en": "Contact Point"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "label-en": "contact point",
+            "usageNote-en": "The contact point brings together all the contact information for a legal entity: website, telephone numbers, emails, etc.",
+            "definition-en": "A reference to a contact point.",
+            "uri": "http://data.europa.eu/m8g/contactPoint"
+          }
+        },
+        {
           "uri": "http://data.europa.eu/m8g/registeredAddress",
           "name": "registeredAddress",
           "sort": "registered address",
@@ -2555,49 +2598,6 @@
             "definition-en": "A reference to a Client site",
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/clientSite",
             "usageNote-en": "Identification of a client application (website, business application or other) using the legal entity."
-          }
-        },
-        {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint",
-          "name": "contactPoint",
-          "sort": "contact point",
-          "label": {
-            "en": "contact point"
-          },
-          "description": {
-            "en": "A reference to a contact point."
-          },
-          "usage": {
-            "en": "The contact point brings together all the contact information for a legal entity: website, telephone numbers, emails, etc."
-          },
-          "domain": [
-            {
-              "EA-Name": "LegalEntity",
-              "uri": "http://www.w3.org/ns/legal#LegalEntity"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "ContactPoint",
-              "range_uri": "http://data.europa.eu/m8g/ContactPoint"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Contact Point",
-              "range_puri": "http://data.europa.eu/m8g/ContactPoint",
-              "range_label": {
-                "en": "Contact Point"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "label-en": "contact point",
-            "usageNote-en": "The contact point brings together all the contact information for a legal entity: website, telephone numbers, emails, etc.",
-            "definition-en": "A reference to a contact point.",
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint"
           }
         },
         {
@@ -4086,6 +4086,49 @@
       },
       "properties": [
         {
+          "uri": "http://data.europa.eu/m8g/contactPoint",
+          "name": "contactPoint",
+          "sort": "contact point",
+          "label": {
+            "en": "contact point"
+          },
+          "description": {
+            "en": "A reference to a contact point."
+          },
+          "usage": {
+            "en": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc."
+          },
+          "domain": [
+            {
+              "EA-Name": "ActionPlan",
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ActionPlan"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "ContactPoint",
+              "range_uri": "http://data.europa.eu/m8g/ContactPoint"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Contact Point",
+              "range_puri": "http://data.europa.eu/m8g/ContactPoint",
+              "range_label": {
+                "en": "Contact Point"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "usageNote-en": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc.",
+            "label-en": "contact point",
+            "definition-en": "A reference to a contact point.",
+            "uri": "http://data.europa.eu/m8g/contactPoint"
+          }
+        },
+        {
           "uri": "http://purl.org/dc/terms/identifier",
           "name": "id",
           "sort": "Id",
@@ -4427,49 +4470,6 @@
             "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPerson",
             "definition-en": "Contact person, referent. A reference to a Qualified Person",
             "usageNote-en": "A person to whom the target audience can turn for explanations and more information about the project. This person will often be attached to the coordinator or promoter"
-          }
-        },
-        {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint",
-          "name": "contactPoint",
-          "sort": "contact point",
-          "label": {
-            "en": "contact point"
-          },
-          "description": {
-            "en": "A reference to a contact point."
-          },
-          "usage": {
-            "en": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc."
-          },
-          "domain": [
-            {
-              "EA-Name": "ActionPlan",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ActionPlan"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "ContactPoint",
-              "range_uri": "http://data.europa.eu/m8g/ContactPoint"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Contact Point",
-              "range_puri": "http://data.europa.eu/m8g/ContactPoint",
-              "range_label": {
-                "en": "Contact Point"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "usageNote-en": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc.",
-            "label-en": "contact point",
-            "definition-en": "A reference to a contact point.",
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint"
           }
         },
         {
@@ -8258,6 +8258,49 @@
       },
       "properties": [
         {
+          "uri": "http://data.europa.eu/m8g/contactPoint",
+          "name": "contactPoint",
+          "sort": "contact point",
+          "label": {
+            "en": "contact point"
+          },
+          "description": {
+            "en": "A reference to a contact point."
+          },
+          "usage": {
+            "en": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc."
+          },
+          "domain": [
+            {
+              "EA-Name": "Profile",
+              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "ContactPoint",
+              "range_uri": "http://data.europa.eu/m8g/ContactPoint"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Contact Point",
+              "range_puri": "http://data.europa.eu/m8g/ContactPoint",
+              "range_label": {
+                "en": "Contact Point"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": "",
+          "rawTags": {
+            "usageNote-en": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc.",
+            "definition-en": "A reference to a contact point.",
+            "label-en": "contact point",
+            "uri": "http://data.europa.eu/m8g/contactPoint"
+          }
+        },
+        {
           "uri": "http://purl.org/dc/terms/identifier",
           "name": "id",
           "sort": "id",
@@ -8513,49 +8556,6 @@
             "label-en": "company validation date",
             "definition-en": "Date of the last contact while editing the profile.",
             "usageNote-en": "Date of last contact with the company validating the updated information."
-          }
-        },
-        {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint",
-          "name": "contactPoint",
-          "sort": "contact point",
-          "label": {
-            "en": "contact point"
-          },
-          "description": {
-            "en": "A reference to a contact point."
-          },
-          "usage": {
-            "en": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc."
-          },
-          "domain": [
-            {
-              "EA-Name": "Profile",
-              "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "ContactPoint",
-              "range_uri": "http://data.europa.eu/m8g/ContactPoint"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Contact Point",
-              "range_puri": "http://data.europa.eu/m8g/ContactPoint",
-              "range_label": {
-                "en": "Contact Point"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": "",
-          "rawTags": {
-            "usageNote-en": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc.",
-            "definition-en": "A reference to a contact point.",
-            "label-en": "contact point",
-            "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint"
           }
         },
         {

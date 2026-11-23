@@ -2509,125 +2509,6 @@
   ],
   "externalproperties": [
     {
-      "@id": "hthttp://data.europa.eu/m8g/contactPoint",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "contactPoint",
-      "inpackage": "OTHER_PACKAGE",
-      "ap-definition-en": {
-        "en": "A reference to a contact point."
-      },
-      "usage": {
-        "en": "The contact point brings together all the general contact information for an event: website, telephone numbers, emails, etc."
-      },
-      "ap-label-en": {
-        "en": "contact point"
-      },
-      "definition": {
-        "en": "A reference to a contact point."
-      },
-      "label": {
-        "en": "contact point"
-      },
-      "extra": {
-        "EA-Name": "contactPoint",
-        "EA-Guid": "{7E9E6583-E5F6-456a-A73D-C2EF333E2B66}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "PublicEvent",
-        "EA-Domain-Guid": "{00DBB60C-FE76-4410-A1F1-B7A3BB34F49A}",
-        "EA-Range": "ContactPoint",
-        "RangeData": {
-          "EA-Name": "ContactPoint",
-          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
-          "EA-Package": "cv",
-          "uri": "http://data.europa.eu/m8g/ContactPoint"
-        },
-        "sourceRole": "null",
-        "destRole": "contactPoint",
-        "label": {
-          "en": "contact point"
-        },
-        "definition": {
-          "en": "A reference to a contact point."
-        },
-        "usage": {
-          "en": "The contact point brings together all the general contact information for an event: website, telephone numbers, emails, etc."
-        },
-        "ap-label-en": {
-          "en": "contact point"
-        },
-        "ap-definition-en": {
-          "en": "A reference to a contact point."
-        },
-        "ap-usageNote-en": "",
-        "ap-codelist": "",
-        "RawTags": [
-          {
-            "key": "uri",
-            "value": "NOTE",
-            "note": "hthttp://data.europa.eu/m8g/contactPoint"
-          },
-          {
-            "key": "definition-en",
-            "value": "NOTE",
-            "note": "A reference to a contact point."
-          },
-          {
-            "key": "usageNote-en",
-            "value": "NOTE",
-            "note": "The contact point brings together all the general contact information for an event: website, telephone numbers, emails, etc."
-          },
-          {
-            "key": "label-en",
-            "value": "NOTE",
-            "note": "contact point"
-          }
-        ],
-        "DestRoleTags": [
-          {
-            "key": "uri",
-            "value": "NOTE",
-            "note": "hthttp://data.europa.eu/m8g/contactPoint"
-          },
-          {
-            "key": "definition-en",
-            "value": "NOTE",
-            "note": "A reference to a contact point."
-          },
-          {
-            "key": "usageNote-en",
-            "value": "NOTE",
-            "note": "The contact point brings together all the general contact information for an event: website, telephone numbers, emails, etc."
-          },
-          {
-            "key": "label-en",
-            "value": "NOTE",
-            "note": "contact point"
-          }
-        ],
-        "Scope": "NOTHING"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "http://data.europa.eu/m8g/PublicEvent",
-          "EA-Name": "PublicEvent"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "ContactPoint",
-          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
-          "EA-Package": "cv",
-          "uri": "http://data.europa.eu/m8g/ContactPoint"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "0",
-      "maxCardinality": "*"
-    },
-    {
       "@id": "http://data.europa.eu/m8g/audience",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "name": "audience",
@@ -3007,6 +2888,482 @@
         {
           "uri": "http://www.w3.org/ns/person#Person",
           "EA-Name": "Person"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "ContactPoint",
+          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
+          "EA-Package": "cv",
+          "uri": "http://data.europa.eu/m8g/ContactPoint"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "0",
+      "maxCardinality": "*"
+    },
+    {
+      "@id": "http://data.europa.eu/m8g/contactPoint",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "contactPoint",
+      "inpackage": "OTHER_PACKAGE",
+      "ap-definition-en": {
+        "en": "A reference to a contact point."
+      },
+      "usage": {
+        "en": "The contact point brings together all the general contact information for an event: website, telephone numbers, emails, etc."
+      },
+      "ap-label-en": {
+        "en": "contact point"
+      },
+      "definition": {
+        "en": "A reference to a contact point."
+      },
+      "label": {
+        "en": "contact point"
+      },
+      "extra": {
+        "EA-Name": "contactPoint",
+        "EA-Guid": "{7E9E6583-E5F6-456a-A73D-C2EF333E2B66}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "PublicEvent",
+        "EA-Domain-Guid": "{00DBB60C-FE76-4410-A1F1-B7A3BB34F49A}",
+        "EA-Range": "ContactPoint",
+        "RangeData": {
+          "EA-Name": "ContactPoint",
+          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
+          "EA-Package": "cv",
+          "uri": "http://data.europa.eu/m8g/ContactPoint"
+        },
+        "sourceRole": "null",
+        "destRole": "contactPoint",
+        "label": {
+          "en": "contact point"
+        },
+        "definition": {
+          "en": "A reference to a contact point."
+        },
+        "usage": {
+          "en": "The contact point brings together all the general contact information for an event: website, telephone numbers, emails, etc."
+        },
+        "ap-label-en": {
+          "en": "contact point"
+        },
+        "ap-definition-en": {
+          "en": "A reference to a contact point."
+        },
+        "ap-usageNote-en": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://data.europa.eu/m8g/contactPoint"
+          },
+          {
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "A reference to a contact point."
+          },
+          {
+            "key": "usageNote-en",
+            "value": "NOTE",
+            "note": "The contact point brings together all the general contact information for an event: website, telephone numbers, emails, etc."
+          },
+          {
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "contact point"
+          }
+        ],
+        "DestRoleTags": [
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://data.europa.eu/m8g/contactPoint"
+          },
+          {
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "A reference to a contact point."
+          },
+          {
+            "key": "usageNote-en",
+            "value": "NOTE",
+            "note": "The contact point brings together all the general contact information for an event: website, telephone numbers, emails, etc."
+          },
+          {
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "contact point"
+          }
+        ],
+        "Scope": "NOTHING"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://data.europa.eu/m8g/PublicEvent",
+          "EA-Name": "PublicEvent"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "ContactPoint",
+          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
+          "EA-Package": "cv",
+          "uri": "http://data.europa.eu/m8g/ContactPoint"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "0",
+      "maxCardinality": "*"
+    },
+    {
+      "@id": "http://data.europa.eu/m8g/contactPoint",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "contactPoint",
+      "inpackage": "OTHER_PACKAGE",
+      "ap-definition-en": {
+        "en": "A reference to a contact point."
+      },
+      "usage": {
+        "en": "The contact point brings together all the contact information for a legal entity: website, telephone numbers, emails, etc."
+      },
+      "ap-label-en": {
+        "en": "contact point"
+      },
+      "definition": {
+        "en": "A reference to a contact point."
+      },
+      "label": {
+        "en": "contact point"
+      },
+      "extra": {
+        "EA-Name": "contactPoint",
+        "EA-Guid": "{6A0DCECD-568E-429f-B0A2-C2ACC08709C8}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "LegalEntity",
+        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
+        "EA-Range": "ContactPoint",
+        "RangeData": {
+          "EA-Name": "ContactPoint",
+          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
+          "EA-Package": "cv",
+          "uri": "http://data.europa.eu/m8g/ContactPoint"
+        },
+        "sourceRole": "null",
+        "destRole": "contactPoint",
+        "label": {
+          "en": "contact point"
+        },
+        "definition": {
+          "en": "A reference to a contact point."
+        },
+        "usage": {
+          "en": "The contact point brings together all the contact information for a legal entity: website, telephone numbers, emails, etc."
+        },
+        "ap-label-en": {
+          "en": "contact point"
+        },
+        "ap-definition-en": {
+          "en": "A reference to a contact point."
+        },
+        "ap-usageNote-en": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "contact point"
+          },
+          {
+            "key": "usageNote-en",
+            "value": "NOTE",
+            "note": "The contact point brings together all the contact information for a legal entity: website, telephone numbers, emails, etc."
+          },
+          {
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "A reference to a contact point."
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://data.europa.eu/m8g/contactPoint"
+          }
+        ],
+        "DestRoleTags": [
+          {
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "contact point"
+          },
+          {
+            "key": "usageNote-en",
+            "value": "NOTE",
+            "note": "The contact point brings together all the contact information for a legal entity: website, telephone numbers, emails, etc."
+          },
+          {
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "A reference to a contact point."
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://data.europa.eu/m8g/contactPoint"
+          }
+        ],
+        "Scope": "NOTHING"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://www.w3.org/ns/legal#LegalEntity",
+          "EA-Name": "LegalEntity"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "ContactPoint",
+          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
+          "EA-Package": "cv",
+          "uri": "http://data.europa.eu/m8g/ContactPoint"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "0",
+      "maxCardinality": "*"
+    },
+    {
+      "@id": "http://data.europa.eu/m8g/contactPoint",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "contactPoint",
+      "inpackage": "UNKNOWN",
+      "ap-definition-en": {
+        "en": "A reference to a contact point."
+      },
+      "usage": {
+        "en": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc."
+      },
+      "ap-label-en": {
+        "en": "contact point"
+      },
+      "definition": {
+        "en": "A reference to a contact point."
+      },
+      "label": {
+        "en": "contact point"
+      },
+      "extra": {
+        "EA-Name": "contactPoint",
+        "EA-Guid": "{D864EABE-E0F4-4c21-B305-8F1877985A3B}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "Profile",
+        "EA-Domain-Guid": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
+        "EA-Range": "ContactPoint",
+        "RangeData": {
+          "EA-Name": "ContactPoint",
+          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
+          "EA-Package": "cv",
+          "uri": "http://data.europa.eu/m8g/ContactPoint"
+        },
+        "sourceRole": "null",
+        "destRole": "contactPoint",
+        "label": {
+          "en": "contact point"
+        },
+        "definition": {
+          "en": "A reference to a contact point."
+        },
+        "usage": {
+          "en": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc."
+        },
+        "ap-label-en": {
+          "en": "contact point"
+        },
+        "ap-definition-en": {
+          "en": "A reference to a contact point."
+        },
+        "ap-usageNote-en": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "usageNote-en",
+            "value": "NOTE",
+            "note": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc."
+          },
+          {
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "A reference to a contact point."
+          },
+          {
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "contact point"
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://data.europa.eu/m8g/contactPoint"
+          }
+        ],
+        "DestRoleTags": [
+          {
+            "key": "usageNote-en",
+            "value": "NOTE",
+            "note": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc."
+          },
+          {
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "A reference to a contact point."
+          },
+          {
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "contact point"
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://data.europa.eu/m8g/contactPoint"
+          }
+        ],
+        "Scope": "NOTHING"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile",
+          "EA-Name": "Profile"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "ContactPoint",
+          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
+          "EA-Package": "cv",
+          "uri": "http://data.europa.eu/m8g/ContactPoint"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "0",
+      "maxCardinality": "*"
+    },
+    {
+      "@id": "http://data.europa.eu/m8g/contactPoint",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "contactPoint",
+      "inpackage": "UNKNOWN",
+      "ap-definition-en": {
+        "en": "A reference to a contact point."
+      },
+      "usage": {
+        "en": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc."
+      },
+      "ap-label-en": {
+        "en": "contact point"
+      },
+      "definition": {
+        "en": "A reference to a contact point."
+      },
+      "label": {
+        "en": "contact point"
+      },
+      "extra": {
+        "EA-Name": "contactPoint",
+        "EA-Guid": "{136BAE7C-CACB-41b6-A007-C0078EAE20C9}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "ActionPlan",
+        "EA-Domain-Guid": "{922CDABF-F6EF-47c3-80A5-F231384B6CF2}",
+        "EA-Range": "ContactPoint",
+        "RangeData": {
+          "EA-Name": "ContactPoint",
+          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
+          "EA-Package": "cv",
+          "uri": "http://data.europa.eu/m8g/ContactPoint"
+        },
+        "sourceRole": "null",
+        "destRole": "contactPoint",
+        "label": {
+          "en": "contact point"
+        },
+        "definition": {
+          "en": "A reference to a contact point."
+        },
+        "usage": {
+          "en": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc."
+        },
+        "ap-label-en": {
+          "en": "contact point"
+        },
+        "ap-definition-en": {
+          "en": "A reference to a contact point."
+        },
+        "ap-usageNote-en": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "usageNote-en",
+            "value": "NOTE",
+            "note": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc."
+          },
+          {
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "contact point"
+          },
+          {
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "A reference to a contact point."
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://data.europa.eu/m8g/contactPoint"
+          }
+        ],
+        "DestRoleTags": [
+          {
+            "key": "usageNote-en",
+            "value": "NOTE",
+            "note": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc."
+          },
+          {
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "contact point"
+          },
+          {
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "A reference to a contact point."
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://data.europa.eu/m8g/contactPoint"
+          }
+        ],
+        "Scope": "NOTHING"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ActionPlan",
+          "EA-Name": "ActionPlan"
         }
       ],
       "range": [
@@ -12819,363 +13176,6 @@
       "maxCardinality": "*"
     },
     {
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "contactPoint",
-      "inpackage": "UNKNOWN",
-      "ap-definition-en": {
-        "en": "A reference to a contact point."
-      },
-      "usage": {
-        "en": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc."
-      },
-      "ap-label-en": {
-        "en": "contact point"
-      },
-      "definition": {
-        "en": "A reference to a contact point."
-      },
-      "label": {
-        "en": "contact point"
-      },
-      "extra": {
-        "EA-Name": "contactPoint",
-        "EA-Guid": "{D864EABE-E0F4-4c21-B305-8F1877985A3B}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "Profile",
-        "EA-Domain-Guid": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
-        "EA-Range": "ContactPoint",
-        "RangeData": {
-          "EA-Name": "ContactPoint",
-          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
-          "EA-Package": "cv",
-          "uri": "http://data.europa.eu/m8g/ContactPoint"
-        },
-        "sourceRole": "null",
-        "destRole": "contactPoint",
-        "label": {
-          "en": "contact point"
-        },
-        "definition": {
-          "en": "A reference to a contact point."
-        },
-        "usage": {
-          "en": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc."
-        },
-        "ap-label-en": {
-          "en": "contact point"
-        },
-        "ap-definition-en": {
-          "en": "A reference to a contact point."
-        },
-        "ap-usageNote-en": "",
-        "ap-codelist": "",
-        "RawTags": [
-          {
-            "key": "usageNote-en",
-            "value": "NOTE",
-            "note": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc."
-          },
-          {
-            "key": "definition-en",
-            "value": "NOTE",
-            "note": "A reference to a contact point."
-          },
-          {
-            "key": "label-en",
-            "value": "NOTE",
-            "note": "contact point"
-          },
-          {
-            "key": "uri",
-            "value": "NOTE",
-            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint"
-          }
-        ],
-        "DestRoleTags": [
-          {
-            "key": "usageNote-en",
-            "value": "NOTE",
-            "note": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc."
-          },
-          {
-            "key": "definition-en",
-            "value": "NOTE",
-            "note": "A reference to a contact point."
-          },
-          {
-            "key": "label-en",
-            "value": "NOTE",
-            "note": "contact point"
-          },
-          {
-            "key": "uri",
-            "value": "NOTE",
-            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint"
-          }
-        ],
-        "Scope": "NOTHING"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile",
-          "EA-Name": "Profile"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "ContactPoint",
-          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
-          "EA-Package": "cv",
-          "uri": "http://data.europa.eu/m8g/ContactPoint"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "0",
-      "maxCardinality": "*"
-    },
-    {
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "contactPoint",
-      "inpackage": "UNKNOWN",
-      "ap-definition-en": {
-        "en": "A reference to a contact point."
-      },
-      "usage": {
-        "en": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc."
-      },
-      "ap-label-en": {
-        "en": "contact point"
-      },
-      "definition": {
-        "en": "A reference to a contact point."
-      },
-      "label": {
-        "en": "contact point"
-      },
-      "extra": {
-        "EA-Name": "contactPoint",
-        "EA-Guid": "{136BAE7C-CACB-41b6-A007-C0078EAE20C9}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "ActionPlan",
-        "EA-Domain-Guid": "{922CDABF-F6EF-47c3-80A5-F231384B6CF2}",
-        "EA-Range": "ContactPoint",
-        "RangeData": {
-          "EA-Name": "ContactPoint",
-          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
-          "EA-Package": "cv",
-          "uri": "http://data.europa.eu/m8g/ContactPoint"
-        },
-        "sourceRole": "null",
-        "destRole": "contactPoint",
-        "label": {
-          "en": "contact point"
-        },
-        "definition": {
-          "en": "A reference to a contact point."
-        },
-        "usage": {
-          "en": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc."
-        },
-        "ap-label-en": {
-          "en": "contact point"
-        },
-        "ap-definition-en": {
-          "en": "A reference to a contact point."
-        },
-        "ap-usageNote-en": "",
-        "ap-codelist": "",
-        "RawTags": [
-          {
-            "key": "usageNote-en",
-            "value": "NOTE",
-            "note": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc."
-          },
-          {
-            "key": "label-en",
-            "value": "NOTE",
-            "note": "contact point"
-          },
-          {
-            "key": "definition-en",
-            "value": "NOTE",
-            "note": "A reference to a contact point."
-          },
-          {
-            "key": "uri",
-            "value": "NOTE",
-            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint"
-          }
-        ],
-        "DestRoleTags": [
-          {
-            "key": "usageNote-en",
-            "value": "NOTE",
-            "note": "The contact point brings together all the contact information for an action: website, telephone numbers, emails, etc."
-          },
-          {
-            "key": "label-en",
-            "value": "NOTE",
-            "note": "contact point"
-          },
-          {
-            "key": "definition-en",
-            "value": "NOTE",
-            "note": "A reference to a contact point."
-          },
-          {
-            "key": "uri",
-            "value": "NOTE",
-            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint"
-          }
-        ],
-        "Scope": "NOTHING"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ActionPlan",
-          "EA-Name": "ActionPlan"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "ContactPoint",
-          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
-          "EA-Package": "cv",
-          "uri": "http://data.europa.eu/m8g/ContactPoint"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "0",
-      "maxCardinality": "*"
-    },
-    {
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "contactPoint",
-      "inpackage": "OTHER_PACKAGE",
-      "ap-definition-en": {
-        "en": "A reference to a contact point."
-      },
-      "usage": {
-        "en": "The contact point brings together all the contact information for a legal entity: website, telephone numbers, emails, etc."
-      },
-      "ap-label-en": {
-        "en": "contact point"
-      },
-      "definition": {
-        "en": "A reference to a contact point."
-      },
-      "label": {
-        "en": "contact point"
-      },
-      "extra": {
-        "EA-Name": "contactPoint",
-        "EA-Guid": "{6A0DCECD-568E-429f-B0A2-C2ACC08709C8}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "LegalEntity",
-        "EA-Domain-Guid": "{C8F06838-37A0-4789-AD31-1F6601965598}",
-        "EA-Range": "ContactPoint",
-        "RangeData": {
-          "EA-Name": "ContactPoint",
-          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
-          "EA-Package": "cv",
-          "uri": "http://data.europa.eu/m8g/ContactPoint"
-        },
-        "sourceRole": "null",
-        "destRole": "contactPoint",
-        "label": {
-          "en": "contact point"
-        },
-        "definition": {
-          "en": "A reference to a contact point."
-        },
-        "usage": {
-          "en": "The contact point brings together all the contact information for a legal entity: website, telephone numbers, emails, etc."
-        },
-        "ap-label-en": {
-          "en": "contact point"
-        },
-        "ap-definition-en": {
-          "en": "A reference to a contact point."
-        },
-        "ap-usageNote-en": "",
-        "ap-codelist": "",
-        "RawTags": [
-          {
-            "key": "label-en",
-            "value": "NOTE",
-            "note": "contact point"
-          },
-          {
-            "key": "usageNote-en",
-            "value": "NOTE",
-            "note": "The contact point brings together all the contact information for a legal entity: website, telephone numbers, emails, etc."
-          },
-          {
-            "key": "definition-en",
-            "value": "NOTE",
-            "note": "A reference to a contact point."
-          },
-          {
-            "key": "uri",
-            "value": "NOTE",
-            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint"
-          }
-        ],
-        "DestRoleTags": [
-          {
-            "key": "label-en",
-            "value": "NOTE",
-            "note": "contact point"
-          },
-          {
-            "key": "usageNote-en",
-            "value": "NOTE",
-            "note": "The contact point brings together all the contact information for a legal entity: website, telephone numbers, emails, etc."
-          },
-          {
-            "key": "definition-en",
-            "value": "NOTE",
-            "note": "A reference to a contact point."
-          },
-          {
-            "key": "uri",
-            "value": "NOTE",
-            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/contactPoint"
-          }
-        ],
-        "Scope": "NOTHING"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "http://www.w3.org/ns/legal#LegalEntity",
-          "EA-Name": "LegalEntity"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "ContactPoint",
-          "EA-GUID": "{7D639772-5D88-47ce-A71A-F38481F36BDC}",
-          "EA-Package": "cv",
-          "uri": "http://data.europa.eu/m8g/ContactPoint"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "0",
-      "maxCardinality": "*"
-    },
-    {
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/content",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "name": "content",
@@ -18444,125 +18444,6 @@
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/partner",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "name": "partner",
-      "inpackage": "OTHER_PACKAGE",
-      "ap-definition-en": {
-        "en": "A reference to a profile partner"
-      },
-      "usage": {
-        "en": "Profile representing a partner of the activity."
-      },
-      "ap-label-en": {
-        "en": "partner"
-      },
-      "definition": {
-        "en": "A reference to a profile partner"
-      },
-      "label": {
-        "en": "partner"
-      },
-      "extra": {
-        "EA-Name": "partner",
-        "EA-Guid": "{7EA2456E-DD45-48de-9559-2AB2321AE57C}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "Profile",
-        "EA-Domain-Guid": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
-        "EA-Range": "Profile",
-        "RangeData": {
-          "EA-Name": "Profile",
-          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
-          "EA-Package": "d4w",
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile"
-        },
-        "sourceRole": "null",
-        "destRole": "partner",
-        "label": {
-          "en": "partner"
-        },
-        "definition": {
-          "en": "A reference to a profile partner"
-        },
-        "usage": {
-          "en": "Profile representing a partner of the activity."
-        },
-        "ap-label-en": {
-          "en": "partner"
-        },
-        "ap-definition-en": {
-          "en": "A reference to a profile partner"
-        },
-        "ap-usageNote-en": "",
-        "ap-codelist": "",
-        "RawTags": [
-          {
-            "key": "usageNote-en",
-            "value": "NOTE",
-            "note": "Profile representing a partner of the activity."
-          },
-          {
-            "key": "uri",
-            "value": "NOTE",
-            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/partner"
-          },
-          {
-            "key": "label-en",
-            "value": "NOTE",
-            "note": "partner"
-          },
-          {
-            "key": "definition-en",
-            "value": "NOTE",
-            "note": "A reference to a profile partner"
-          }
-        ],
-        "DestRoleTags": [
-          {
-            "key": "usageNote-en",
-            "value": "NOTE",
-            "note": "Profile representing a partner of the activity."
-          },
-          {
-            "key": "uri",
-            "value": "NOTE",
-            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/partner"
-          },
-          {
-            "key": "label-en",
-            "value": "NOTE",
-            "note": "partner"
-          },
-          {
-            "key": "definition-en",
-            "value": "NOTE",
-            "note": "A reference to a profile partner"
-          }
-        ],
-        "Scope": "NOTHING"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile",
-          "EA-Name": "Profile"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "Profile",
-          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
-          "EA-Package": "d4w",
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "0",
-      "maxCardinality": "*"
-    },
-    {
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/partner",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "partner",
       "inpackage": "UNKNOWN",
       "ap-definition-en": {
         "en": "A reference to a profile partner"
@@ -18664,6 +18545,125 @@
         {
           "uri": "http://data.europa.eu/m8g/PublicEvent",
           "EA-Name": "PublicEvent"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Profile",
+          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
+          "EA-Package": "d4w",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "0",
+      "maxCardinality": "*"
+    },
+    {
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/partner",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "partner",
+      "inpackage": "OTHER_PACKAGE",
+      "ap-definition-en": {
+        "en": "A reference to a profile partner"
+      },
+      "usage": {
+        "en": "Profile representing a partner of the activity."
+      },
+      "ap-label-en": {
+        "en": "partner"
+      },
+      "definition": {
+        "en": "A reference to a profile partner"
+      },
+      "label": {
+        "en": "partner"
+      },
+      "extra": {
+        "EA-Name": "partner",
+        "EA-Guid": "{7EA2456E-DD45-48de-9559-2AB2321AE57C}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "Profile",
+        "EA-Domain-Guid": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
+        "EA-Range": "Profile",
+        "RangeData": {
+          "EA-Name": "Profile",
+          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
+          "EA-Package": "d4w",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile"
+        },
+        "sourceRole": "null",
+        "destRole": "partner",
+        "label": {
+          "en": "partner"
+        },
+        "definition": {
+          "en": "A reference to a profile partner"
+        },
+        "usage": {
+          "en": "Profile representing a partner of the activity."
+        },
+        "ap-label-en": {
+          "en": "partner"
+        },
+        "ap-definition-en": {
+          "en": "A reference to a profile partner"
+        },
+        "ap-usageNote-en": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "usageNote-en",
+            "value": "NOTE",
+            "note": "Profile representing a partner of the activity."
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/partner"
+          },
+          {
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "partner"
+          },
+          {
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "A reference to a profile partner"
+          }
+        ],
+        "DestRoleTags": [
+          {
+            "key": "usageNote-en",
+            "value": "NOTE",
+            "note": "Profile representing a partner of the activity."
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/partner"
+          },
+          {
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "partner"
+          },
+          {
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "A reference to a profile partner"
+          }
+        ],
+        "Scope": "NOTHING"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile",
+          "EA-Name": "Profile"
         }
       ],
       "range": [
@@ -19196,110 +19196,6 @@
       "ap-definition-en": {
         "en": "A profile"
       },
-      "ap-label-en": {
-        "en": "profile"
-      },
-      "definition": {
-        "en": "A profile"
-      },
-      "label": {
-        "en": "profile"
-      },
-      "extra": {
-        "EA-Name": "profile",
-        "EA-Guid": "{9197F12E-134C-47ba-9A1B-7F03088E15A6}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "ActionPlanProfile",
-        "EA-Domain-Guid": "{BB48E6D5-CA2C-4628-AAD7-79B5EB7665E2}",
-        "EA-Range": "Profile",
-        "RangeData": {
-          "EA-Name": "Profile",
-          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
-          "EA-Package": "d4w",
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile"
-        },
-        "sourceRole": "null",
-        "destRole": "profile",
-        "label": {
-          "en": "profile"
-        },
-        "definition": {
-          "en": "A profile"
-        },
-        "usage": "",
-        "ap-label-en": {
-          "en": "profile"
-        },
-        "ap-definition-en": {
-          "en": "A profile"
-        },
-        "ap-usageNote-en": "",
-        "ap-codelist": "",
-        "RawTags": [
-          {
-            "key": "label-en",
-            "value": "NOTE",
-            "note": "profile"
-          },
-          {
-            "key": "uri",
-            "value": "NOTE",
-            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/profile"
-          },
-          {
-            "key": "definition-en",
-            "value": "NOTE",
-            "note": "A profile"
-          }
-        ],
-        "DestRoleTags": [
-          {
-            "key": "label-en",
-            "value": "NOTE",
-            "note": "profile"
-          },
-          {
-            "key": "uri",
-            "value": "NOTE",
-            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/profile"
-          },
-          {
-            "key": "definition-en",
-            "value": "NOTE",
-            "note": "A profile"
-          }
-        ],
-        "Scope": "NOTHING"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ActionPlanProfile",
-          "EA-Name": "ActionPlanProfile"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "Profile",
-          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
-          "EA-Package": "d4w",
-          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "1",
-      "maxCardinality": "1"
-    },
-    {
-      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/profile",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "profile",
-      "inpackage": "OTHER_PACKAGE",
-      "ap-definition-en": {
-        "en": "A profile"
-      },
       "usage": {
         "en": "TODO"
       },
@@ -19410,6 +19306,110 @@
       "generalization": [],
       "minCardinality": "0",
       "maxCardinality": "*"
+    },
+    {
+      "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/profile",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "profile",
+      "inpackage": "OTHER_PACKAGE",
+      "ap-definition-en": {
+        "en": "A profile"
+      },
+      "ap-label-en": {
+        "en": "profile"
+      },
+      "definition": {
+        "en": "A profile"
+      },
+      "label": {
+        "en": "profile"
+      },
+      "extra": {
+        "EA-Name": "profile",
+        "EA-Guid": "{9197F12E-134C-47ba-9A1B-7F03088E15A6}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "ActionPlanProfile",
+        "EA-Domain-Guid": "{BB48E6D5-CA2C-4628-AAD7-79B5EB7665E2}",
+        "EA-Range": "Profile",
+        "RangeData": {
+          "EA-Name": "Profile",
+          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
+          "EA-Package": "d4w",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile"
+        },
+        "sourceRole": "null",
+        "destRole": "profile",
+        "label": {
+          "en": "profile"
+        },
+        "definition": {
+          "en": "A profile"
+        },
+        "usage": "",
+        "ap-label-en": {
+          "en": "profile"
+        },
+        "ap-definition-en": {
+          "en": "A profile"
+        },
+        "ap-usageNote-en": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "profile"
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/profile"
+          },
+          {
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "A profile"
+          }
+        ],
+        "DestRoleTags": [
+          {
+            "key": "label-en",
+            "value": "NOTE",
+            "note": "profile"
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/profile"
+          },
+          {
+            "key": "definition-en",
+            "value": "NOTE",
+            "note": "A profile"
+          }
+        ],
+        "Scope": "NOTHING"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/ActionPlanProfile",
+          "EA-Name": "ActionPlanProfile"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Profile",
+          "EA-GUID": "{93EFC1D1-5DBA-4cc4-8DD1-34850D3E99B6}",
+          "EA-Package": "d4w",
+          "uri": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/Profile"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "1"
     },
     {
       "@id": "https://interoperability.digitalwallonia.be/uri/D4WMO-Generic/profileLegalEntity",
@@ -25782,14 +25782,14 @@
   },
   "config": "config/config-ap.json",
   "branchtag": "ReSpecCV",
-  "dummy": "38",
+  "dummy": "39",
   "filename": "config/data4wallonia.json",
   "navigation": {
     "prev": "https://digitalwallonia.github.io/data4wallonia-generated/D4WMO-Generic/releases/1.0.1"
   },
   "repository": "git@github.com:DigitalWallonia/data4wallonia-thema.git",
   "urlref": "/D4WMO-Generic/releases/1.0.2/",
-  "documentcommit": "82716ad9988dae078fcb76af6b72a055872ca716",
-  "toolchaincommit": "207f736c5beaaa601fab126bd6fed111b50c9218",
+  "documentcommit": "92b8f94171f5ec1bdeed14a70d8c8f76f6e3e634",
+  "toolchaincommit": "2b5d553cde8ac1751fc6048661d27f911b4ea070",
   "hostname": "https://DigitalWallonia.github.io"
 }
