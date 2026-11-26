@@ -410,16 +410,16 @@
       }
     },
     {
-      "EA-Guid": "{C68F32B3-08BC-4d04-BDD6-D9AB4D195AD3}",
+      "EA-Guid": "{6A0DCECD-568E-429f-B0A2-C2ACC08709C8}",
       "name": "contactPoint",
       "label": {
         "en": "contact point"
       },
       "definition": {
-        "en": "A reference to a Contact Point, the main contact information of the resource."
+        "en": "A reference to a contact point."
       },
       "usage": {
-        "en": "Usually a phone number and e-mail address. Other contact methods may be included, including online contact information."
+        "en": "The contact point brings together all the contact information for a legal entity: website, telephone numbers, emails, etc."
       }
     },
     {
@@ -436,19 +436,6 @@
       }
     },
     {
-      "EA-Guid": "{6A0DCECD-568E-429f-B0A2-C2ACC08709C8}",
-      "name": "contactPoint",
-      "label": {
-        "en": "contact point"
-      },
-      "definition": {
-        "en": "A reference to a contact point."
-      },
-      "usage": {
-        "en": "The contact point brings together all the contact information for a legal entity: website, telephone numbers, emails, etc."
-      }
-    },
-    {
       "EA-Guid": "{D864EABE-E0F4-4c21-B305-8F1877985A3B}",
       "name": "contactPoint",
       "label": {
@@ -459,6 +446,19 @@
       },
       "usage": {
         "en": "The contact point brings together all the general contact information of a profile: website, telephone numbers, emails, etc."
+      }
+    },
+    {
+      "EA-Guid": "{C68F32B3-08BC-4d04-BDD6-D9AB4D195AD3}",
+      "name": "contactPoint",
+      "label": {
+        "en": "contact point"
+      },
+      "definition": {
+        "en": "A reference to a Contact Point, the main contact information of the resource."
+      },
+      "usage": {
+        "en": "Usually a phone number and e-mail address. Other contact methods may be included, including online contact information."
       }
     },
     {
@@ -911,16 +911,6 @@
       }
     },
     {
-      "EA-Guid": "{158DEBC6-27F4-4591-BD8E-247D136A05DB}",
-      "name": "location",
-      "label": {
-        "en": "location"
-      },
-      "definition": {
-        "en": "\tAssociates any Resource with the corresponding Address."
-      }
-    },
-    {
       "EA-Guid": "{DD214B21-3E3E-4fc7-B1FA-8FE6E196D60C}",
       "name": "address",
       "label": {
@@ -931,6 +921,16 @@
       },
       "usage": {
         "en": "The person's place of residence or the address at which they can receive postal mail."
+      }
+    },
+    {
+      "EA-Guid": "{158DEBC6-27F4-4591-BD8E-247D136A05DB}",
+      "name": "location",
+      "label": {
+        "en": "location"
+      },
+      "definition": {
+        "en": "\tAssociates any Resource with the corresponding Address."
       }
     },
     {
@@ -1936,19 +1936,6 @@
       }
     },
     {
-      "EA-Guid": "{F306F36F-3EF6-46ff-A865-201B9C660C44}",
-      "name": "hasCost",
-      "label": {
-        "en": "has cost"
-      },
-      "definition": {
-        "en": "A cost."
-      },
-      "usage": {
-        "en": "The cost, the price, is not necessarily given in a monetary format, but can be an explanatory text of price variants according to circumstances or conditions.  It should therefore be possible to explain this in free text."
-      }
-    },
-    {
       "EA-Guid": "{38E3C061-DF9A-4bb9-9ED2-06CDBC1FB75F}",
       "name": "hasCost",
       "label": {
@@ -1956,6 +1943,19 @@
       },
       "definition": {
         "en": "A cost"
+      },
+      "usage": {
+        "en": "The cost, the price, is not necessarily given in a monetary format, but can be an explanatory text of price variants according to circumstances or conditions.  It should therefore be possible to explain this in free text."
+      }
+    },
+    {
+      "EA-Guid": "{F306F36F-3EF6-46ff-A865-201B9C660C44}",
+      "name": "hasCost",
+      "label": {
+        "en": "has cost"
+      },
+      "definition": {
+        "en": "A cost."
       },
       "usage": {
         "en": "The cost, the price, is not necessarily given in a monetary format, but can be an explanatory text of price variants according to circumstances or conditions.  It should therefore be possible to explain this in free text."
@@ -2389,19 +2389,6 @@
       }
     },
     {
-      "EA-Guid": "{0D659D88-5D13-4a6b-B310-78D4CD70DF11}",
-      "name": "partner",
-      "label": {
-        "en": "partner"
-      },
-      "definition": {
-        "en": "A reference to a profile partner"
-      },
-      "usage": {
-        "en": "Profile representing a partner of the event."
-      }
-    },
-    {
       "EA-Guid": "{7EA2456E-DD45-48de-9559-2AB2321AE57C}",
       "name": "partner",
       "label": {
@@ -2412,6 +2399,19 @@
       },
       "usage": {
         "en": "Profile representing a partner of the activity."
+      }
+    },
+    {
+      "EA-Guid": "{0D659D88-5D13-4a6b-B310-78D4CD70DF11}",
+      "name": "partner",
+      "label": {
+        "en": "partner"
+      },
+      "definition": {
+        "en": "A reference to a profile partner"
+      },
+      "usage": {
+        "en": "Profile representing a partner of the event."
       }
     },
     {
@@ -2477,6 +2477,16 @@
       }
     },
     {
+      "EA-Guid": "{9197F12E-134C-47ba-9A1B-7F03088E15A6}",
+      "name": "profile",
+      "label": {
+        "en": "profile"
+      },
+      "definition": {
+        "en": "A profile"
+      }
+    },
+    {
       "EA-Guid": "{E83E777C-9339-4512-9141-D39C80994829}",
       "name": "profile",
       "label": {
@@ -2487,16 +2497,6 @@
       },
       "usage": {
         "en": "TODO"
-      }
-    },
-    {
-      "EA-Guid": "{9197F12E-134C-47ba-9A1B-7F03088E15A6}",
-      "name": "profile",
-      "label": {
-        "en": "profile"
-      },
-      "definition": {
-        "en": "A profile"
       }
     },
     {
